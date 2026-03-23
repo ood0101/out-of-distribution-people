@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galen Mead · Out of Distribution</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <nav><a href="../index.html">&larr; index</a></nav>
+
+  <header>
+    <h1>Galen Mead</h1>
+    <p class="one-liner">Founder & CEO, Standard Intelligence (si.inc). Atlas Fellow. Building an aligned AGI lab from bare metal — 30 PB data clusters, open-source audio models, and the first general computer action model. All before most people finish undergrad.</p>
+  </header>
+
+  <!-- ── spike ── -->
+  <section class="spike-box">
+    <h2>The Spike</h2>
+    <p>Every personal repo is metalearning. Every company output is metalearning at scale. Galen didn't pivot from research to company-building — he <em>compiled</em> his obsession into an institution. He replicated GPICL, experimented with fast weight nets, hotswapped Llama attention layers with Hyena convolutions, built in-context MNIST learners — all solo, all in Jupyter notebooks. Then he incorporated Standard Intelligence and did the same thing with a team: built 30 petabytes of physical storage for under $500K, open-sourced an 8.5B-parameter conversational audio model that runs real-time on a single GPU, and trained the first model that can browse the web, do CAD modeling, <em>and</em> drive a real car at 30 FPS. The through-line from personal experiments to company artifacts is a single unbroken thread: how do you build systems that learn to learn? He's not a CEO who hired researchers. He's a researcher who incorporated.</p>
+  </section>
+
+  <!-- ── at a glance ── -->
+  <section>
+    <h2>At a Glance</h2>
+    <div class="stats-grid">
+      <div class="stat">
+        <span class="stat-value">CEO & Founder</span>
+        <span class="stat-label">Standard Intelligence PBC</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">Atlas Fellow</span>
+        <span class="stat-label">2022 · 1.6 % acceptance</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">3 shipped artifacts</span>
+        <span class="stat-label">FDM-1 · hertz-dev · The Heap</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">30 PB</span>
+        <span class="stat-label">storage built for &lt; $500 K</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">8.5 B params</span>
+        <span class="stat-label">hertz-dev audio model (open-source)</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">11 M hours</span>
+        <span class="stat-label">video training data for FDM-1</span>
+      </div>
+    </div>
+
+    <p class="small mono faint">
+      <strong>Tags:</strong>
+      <span class="tag spike">metalearning</span>
+      <span class="tag spike">aligned AGI</span>
+      <span class="tag">computer action models</span>
+      <span class="tag">speech generation</span>
+      <span class="tag">infrastructure</span>
+      <span class="tag">open-source</span>
+      <span class="tag">Atlas Fellowship</span>
+    </p>
+  </section>
+
+  <!-- ── background ── -->
+  <section>
+    <h2>Background</h2>
+    <p>Full name Tyler Galen Mead. Education at the University of Toronto. Atlas Fellow in the 2022 cohort — a program that selects ~110 students from 7,000+ applicants (1.6 % acceptance) to work on global challenges including AI risk. The Atlas Fellowship is backed by Open Philanthropy and previously the Future Fund, and runs intensive 11-day programs at Berkeley and Oxford.</p>
+    <p>He appears to have been very young when he started Standard Intelligence — the corporate filing is dated March 28, 2024 in San Francisco, and lists him as CEO, CFO, Secretary, and Treasurer. The co-founding team includes Devansh Pandey (who left high school to join Atlas Fellowship as its first employee, then studied at Oxford), Neel Redkar, and Yudhister Kumar (a mathematician interested in meta-learning alignment).</p>
+    <p>The team is small, San Francisco-based, and describes itself as "an aligned AGI lab." They believe AGI will be created within the decade. Their thesis: meta-learning-based alignment approaches are the path to safe general learners.</p>
+  </section>
+
+  <!-- ── timeline ── -->
+  <section>
+    <h2>Timeline</h2>
+    <ul class="timeline">
+      <li><span class="year">2022</span> Selected as Atlas Fellow (2022 cohort)</li>
+      <li><span class="year">~2023</span> Personal metalearning research: GPICL replications, fast weight nets, architecture distillation (Llama → Hyena), in-context MNIST learning, periodic RNN experiments</li>
+      <li><span class="year">Jan 2024</span> Posts custom 4× RTX 4090 deep learning rig build on X — serious personal compute</li>
+      <li><span class="year">Mar 2024</span> Incorporates Standard Intelligence, Inc. in San Francisco (CEO/CFO/Secretary/Treasurer)</li>
+      <li><span class="year">~2024</span> Builds The Heap — 30 PB storage cluster, 2,400 hard drives, under $500 K, 36-hour "Storage Stacking Saturday"</li>
+      <li><span class="year">Nov 2024</span> Releases hertz-dev — open-source 8.5 B-parameter full-duplex conversational audio model, 80 ms theoretical latency</li>
+      <li><span class="year">~Feb 2025</span> Ships FDM-1 — first fully general computer action model, trained on 11 M hours of video, operates at 30 FPS across web browsing, CAD, and real-world driving</li>
+    </ul>
+  </section>
+
+  <!-- ── company: standard intelligence ── -->
+  <section>
+    <h2>Standard Intelligence (si.inc)</h2>
+    <p>Self-described "aligned AGI lab." Small team in San Francisco. Three major shipped artifacts:</p>
+
+    <h3>FDM-1 — First Fully General Computer Action Model</h3>
+    <p>Trained on an 11-million-hour video dataset. Operates at 30 FPS. Can explore complex websites, complete multi-action CAD modeling sequences (e.g., gear extrusion in Blender), and drive a real car through San Francisco using arrow keys. Custom video encoder achieves 50× more token-efficient compression than prior approaches — encoding ~2 hours of 30 FPS video in 1 M tokens. Three-stage training pipeline: Inverse Dynamics Model on 40 K hours of labeled data → dataset labeling via IDM on full 11 M-hour corpus → Forward Dynamics Model training. Mouse movements tokenized via exponential binning into 49 discrete bins. ~50 % key press prediction accuracy on self-driving after minimal fine-tuning.</p>
+
+    <h3>The Heap — 30 PB Data Cluster</h3>
+    <p>30 petabytes of storage for under $500 K one-time cost, $17.5 K/month recurring. 38× cheaper than AWS, 10× cheaper than Cloudflare R2. Houses ~90 million hours of video for pretraining. Built in a 36-hour "Storage Stacking Saturday" (S3) — 2,400 enterprise hard drives (12–14 TB, SATA/SAS mix) into 100 NetApp DS4246 chassis. Software: 200 lines of Rust for writes, nginx for reads, SQLite for metadata. 100 Gbps dedicated internet via Zayo. 10 Intel RR2000 head nodes with dual Intel Gold processors.</p>
+
+    <h3>hertz-dev — Open-Source Conversational Audio</h3>
+    <p>8.5 B-parameter autoregressive model for interactive, full-duplex speech generation. First open-source base model for conversational audio. 80 ms theoretical latency, 120 ms real-world on a single RTX 4090. Architecture: hertz-codec (convolutional audio VAE, 16 kHz mono → 8 Hz latents, 1 kbps bitrate, 5 M encoder + 95 M decoder params, beats Soundstream and Encodec), hertz-VAE (1.8 B transformer decoder), hertz-transformer (6.6 B params, partially initialized from pre-trained LM weights, trained on 500 B tokens). Handles overlapping two-speaker audio natively. ~2× lower latency than any public model at release.</p>
+
+    <h3>Core Team</h3>
+    <p>Galen Mead (CEO), Devansh Pandey (co-founder, ex-Atlas Fellowship first employee, Oxford), Neel Redkar (NeurIPS — CLAMP text-to-material, favicon-diffusion in WebGPU, GRPO/r1 implementations), Yudhister Kumar (mathematician, scaling laws, decision theory, meta-learning alignment), Nicholas Charette, Robert Avery, and others.</p>
+  </section>
+
+  <!-- ── personal research ── -->
+  <section>
+    <h2>Personal Research (GitHub: calculating)</h2>
+    <p>19 public repos. Every pinned project is a metalearning experiment in Jupyter Notebook:</p>
+    <ul>
+      <li><strong>architecture-distillation</strong> — Hotswapping a Llama attention layer with a Hyena convolution. Tests whether you can transfer learned representations between fundamentally different architectures.</li>
+      <li><strong>meta-functions</strong> — Replication of the GPICL (General-Purpose In-Context Learner) paper. Core metalearning: training models to learn new tasks from context.</li>
+      <li><strong>fast-weight-net</strong> — Experimenting with second-order gradient steps in PyTorch. Fast weights = the meta-learning primitive.</li>
+      <li><strong>mnist-metalearner</strong> — In-context MNIST learning with gradient optimization on synthetic data. Learning to classify from a handful of examples.</li>
+      <li><strong>batch-synth-img</strong> — Efficient batch generation for synthetic classification data. Infrastructure for metalearning experiments.</li>
+      <li><strong>periodic-rnn</strong> — Testing RNN and FNN performance on periodic functions. Understanding inductive biases.</li>
+    </ul>
+    <p>GitHub bio lists role as "metalearning @ si.inc." Status: "wandering." Location: "localhost." 44 followers.</p>
+  </section>
+
+  <!-- ── public voice & social ── -->
+  <section>
+    <h2>Public Voice & Social</h2>
+    <ul>
+      <li><strong>X / Twitter:</strong> <a href="https://x.com/g413n">@G413N</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/calculating">calculating</a> (19 repos)</li>
+      <li><strong>Hugging Face:</strong> <a href="https://huggingface.co/g413n">g413n</a> (Standard Intelligence org member)</li>
+      <li><strong>Kaggle:</strong> <a href="https://www.kaggle.com/nel1ag">nel1ag</a></li>
+      <li><strong>Manifold Markets:</strong> <a href="https://manifold.markets/GalenMead">GalenMead</a></li>
+      <li><strong>Zotero:</strong> <a href="https://www.zotero.org/nelag/library">nelag</a> (research library)</li>
+      <li><strong>Goodreads:</strong> <a href="https://www.goodreads.com/nelag">nelag</a></li>
+      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/galenmead/">galenmead</a></li>
+      <li><strong>Website:</strong> <a href="https://nel.ag">nel.ag</a></li>
+    </ul>
+    <p>Very low public profile for someone running an AGI lab. No podcast appearances found. No blog posts under his own name (the si.inc blog posts are team-attributed). Website is three lines: name, "I enjoy building things," and links. The minimalism is itself a signal — output over signal, artifacts over audience.</p>
+  </section>
+
+  <!-- ── the overlooked angle ── -->
+  <section>
+    <h2>The Overlooked Angle</h2>
+    <p>Look at the infrastructure choices. Most AI labs start with cloud credits and API keys. Galen's team built 30 petabytes of physical storage in a colocation facility in downtown San Francisco — 2,400 hard drives, 200 lines of Rust, a 36-hour stacking party they called "S3." They built a custom video encoder that's 50× more token-efficient than prior work. They open-sourced their audio model instead of gating it behind an API.</p>
+    <p>This is someone who builds from the metal up. Not cloud-native. Not API-dependent. Not VC-signaling. The 4× RTX 4090 personal rig he posted in January 2024 is the same instinct as The Heap — own the compute, own the data, own the stack. The Atlas Fellowship connection matters too: this is the EA/AI-safety-adjacent world, but he's building artifacts, not writing policy papers.</p>
+    <p>The deepest tell is his GitHub handle: <em>calculating</em>. And his status: <em>wandering</em>. And his location: <em>localhost</em>. This is someone who treats the boundary between his personal curiosity and his company as non-existent — because it is. Standard Intelligence is his personal research agenda with a corporate filing.</p>
+  </section>
+
+  <!-- ── notes ── -->
+  <section>
+    <h2>Notes</h2>
+    <ul>
+      <li>Full legal name: Tyler Galen Mead (per California corporate filings)</li>
+      <li>Standard Intelligence Inc. filed March 28, 2024 — document number 6164402, 548 Market St #26142, San Francisco</li>
+      <li>All four corporate officer roles (CEO, CFO, Secretary, Treasurer) held by Galen alone at filing</li>
+      <li>No public funding round data found — the company may be self-funded or very quietly backed</li>
+      <li>Atlas Fellowship co-founders include Jonas Vollmer (ex-$20M grants) and Ashley Lin — EA/AI-safety ecosystem</li>
+      <li>Devansh Pandey (co-founder) left high school for Atlas, organized a hackathon in rural Japan, then studied at Oxford — same profile of young, high-agency builders</li>
+      <li>Yudhister Kumar committed to publishing a blog post daily throughout 2026 — the team culture is clearly "ship in public"</li>
+      <li>hertz-dev available on GitHub: github.com/Standard-Intelligence/hertz-dev</li>
+      <li>Zotero and Goodreads accounts exist but contents not publicly visible</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p class="small faint">Researched Mar 2025. Sources: nel.ag, si.inc, GitHub (calculating), HuggingFace (g413n), Atlas Fellowship, CA corporate filings, X (@G413N), MarkTechPost, devanshpanda.com, yudhister.me.</p>
+  </footer>
+</body>
+</html>

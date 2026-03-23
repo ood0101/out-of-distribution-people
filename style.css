@@ -1,0 +1,343 @@
+/* === Out of Distribution People — Digital Garden === */
+/* Minimalist hypertext aesthetic. Plain. Functional. Dense with signal. */
+
+:root {
+  --bg: #fafaf8;
+  --fg: #1a1a1a;
+  --fg-muted: #6b6b6b;
+  --fg-faint: #999;
+  --link: #1a1a1a;
+  --link-hover: #000;
+  --border: #e0e0dd;
+  --border-light: #eee;
+  --accent: #c43d2e;
+  --tag-bg: #f0efec;
+  --tag-fg: #555;
+  --mono: 'Berkeley Mono', 'JetBrains Mono', 'SF Mono', 'Fira Code', 'Consolas', monospace;
+  --sans: 'Inter', 'Helvetica Neue', 'Arial', sans-serif;
+  --serif: 'Georgia', 'Times New Roman', serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 6rem;
+}
+
+/* --- Navigation --- */
+nav {
+  margin-bottom: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+nav .site-title {
+  font-size: 0.8rem;
+  font-family: var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--fg-muted);
+  margin-bottom: 0.25rem;
+}
+
+nav .breadcrumb {
+  font-size: 0.8rem;
+  font-family: var(--mono);
+  color: var(--fg-faint);
+}
+
+nav .breadcrumb a {
+  color: var(--fg-muted);
+  text-decoration: none;
+}
+
+nav .breadcrumb a:hover {
+  color: var(--fg);
+  text-decoration: underline;
+}
+
+/* --- Headings --- */
+h1 {
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: 0.75rem;
+  font-family: var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--fg-muted);
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+
+/* --- Subtitle / Tagline --- */
+.subtitle {
+  font-size: 0.85rem;
+  color: var(--fg-muted);
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+/* --- Paragraphs & Text --- */
+p {
+  margin-bottom: 0.9rem;
+  font-size: 0.93rem;
+}
+
+.muted { color: var(--fg-muted); }
+.faint { color: var(--fg-faint); }
+.small { font-size: 0.8rem; }
+.mono { font-family: var(--mono); }
+
+strong { font-weight: 600; }
+em { font-style: italic; }
+
+/* --- Links --- */
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+  text-underline-offset: 2px;
+  transition: text-decoration-color 0.15s;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration-color: var(--fg);
+}
+
+/* --- Lists --- */
+ul, ol {
+  padding-left: 1.2rem;
+  margin-bottom: 0.9rem;
+}
+
+li {
+  font-size: 0.93rem;
+  margin-bottom: 0.3rem;
+}
+
+li::marker {
+  color: var(--fg-faint);
+}
+
+/* --- Tags / Labels --- */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.tag {
+  font-size: 0.7rem;
+  font-family: var(--mono);
+  background: var(--tag-bg);
+  color: var(--tag-fg);
+  padding: 0.15rem 0.5rem;
+  border-radius: 2px;
+  text-transform: lowercase;
+}
+
+.tag.spike {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* --- Person Entry (Index page) --- */
+.person-list {
+  list-style: none;
+  padding: 0;
+}
+
+.person-list li {
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--border-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.person-list li:last-child {
+  border-bottom: none;
+}
+
+.person-list .name {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.person-list .meta {
+  font-size: 0.75rem;
+  font-family: var(--mono);
+  color: var(--fg-faint);
+  white-space: nowrap;
+}
+
+/* --- Profile Page: Header --- */
+.profile-header {
+  margin-bottom: 2rem;
+}
+
+.profile-header .one-liner {
+  font-size: 0.88rem;
+  color: var(--fg-muted);
+  margin-bottom: 0.5rem;
+}
+
+.profile-header .links {
+  font-size: 0.8rem;
+  font-family: var(--mono);
+  color: var(--fg-faint);
+}
+
+.profile-header .links a {
+  margin-right: 1rem;
+}
+
+/* --- Spike Box --- */
+.spike-box {
+  background: #fdf6f5;
+  border-left: 3px solid var(--accent);
+  padding: 0.8rem 1rem;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+.spike-box .label {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+}
+
+/* --- Blockquote --- */
+blockquote {
+  border-left: 2px solid var(--border);
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: var(--fg-muted);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* --- Timeline --- */
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+.timeline li {
+  padding-left: 1.5rem;
+  margin-bottom: 0.6rem;
+  position: relative;
+  font-size: 0.88rem;
+}
+
+.timeline li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 5px;
+  height: 5px;
+  background: var(--border);
+  border-radius: 50%;
+}
+
+.timeline .year {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--fg-faint);
+  margin-right: 0.5rem;
+}
+
+/* --- Papers / Publications --- */
+.paper {
+  margin-bottom: 0.8rem;
+  font-size: 0.88rem;
+}
+
+.paper .title {
+  font-weight: 500;
+}
+
+.paper .venue {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--fg-faint);
+}
+
+/* --- Footer --- */
+footer {
+  margin-top: 4rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.75rem;
+  font-family: var(--mono);
+  color: var(--fg-faint);
+}
+
+/* --- Stats Grid --- */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.stat {
+  padding: 0.5rem;
+  background: var(--tag-bg);
+}
+
+.stat .stat-value {
+  font-family: var(--mono);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.stat .stat-label {
+  font-size: 0.7rem;
+  font-family: var(--mono);
+  color: var(--fg-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  body { padding: 1.5rem 1rem 4rem; }
+  h1 { font-size: 1.3rem; }
+  .person-list li { flex-direction: column; gap: 0.2rem; }
+}

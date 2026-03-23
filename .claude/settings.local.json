@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p .firecrawl)",
+      "Bash(firecrawl scrape \"https://research.google/people/105667/?&type=google\" -o .firecrawl/google-research-profile.md)",
+      "WebFetch(domain:research.google)",
+      "WebFetch(domain:www.neelnanda.io)",
+      "WebSearch",
+      "WebFetch(domain:en.wikipedia.org)",
+      "WebFetch(domain:www.imo-official.org)",
+      "WebFetch(domain:deltainstitutes.org)"
+    ]
+  }
+}

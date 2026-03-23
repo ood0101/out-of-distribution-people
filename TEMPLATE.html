@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{NAME}} — Out of Distribution People</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="site-title">Out of Distribution People</div>
+    <div class="breadcrumb"><a href="../index.html">/ index</a> / {{SLUG}}</div>
+  </nav>
+
+  <div class="profile-header">
+    <h1>{{NAME}}</h1>
+    <p class="one-liner">{{ONE_LINER}}</p>
+    <div class="tags">
+      <!-- e.g. <span class="tag">ml</span> <span class="tag spike">spike: ...</span> -->
+    </div>
+    <div class="links">
+      <!-- e.g. <a href="#">website</a> <a href="#">twitter</a> <a href="#">scholar</a> -->
+    </div>
+  </div>
+
+  <!-- THE SPIKE -->
+  <div class="spike-box">
+    <div class="label">&#9670; The Spike</div>
+    <p>{{SPIKE_DESCRIPTION}}</p>
+  </div>
+
+  <!-- QUICK STATS -->
+  <h2>At a Glance</h2>
+  <div class="stats">
+    <!-- e.g.
+    <div class="stat"><div class="stat-value">MIT</div><div class="stat-label">education</div></div>
+    <div class="stat"><div class="stat-value">3</div><div class="stat-label">companies</div></div>
+    -->
+  </div>
+
+  <!-- BACKGROUND -->
+  <h2>Background</h2>
+  <p>{{BACKGROUND_NARRATIVE}}</p>
+
+  <!-- TIMELINE -->
+  <h2>Timeline</h2>
+  <ul class="timeline">
+    <!-- e.g.
+    <li><span class="year">2024</span> Founded XYZ Corp</li>
+    <li><span class="year">2022</span> PhD, Stanford CS</li>
+    -->
+  </ul>
+
+  <!-- RESEARCH & PUBLICATIONS -->
+  <h2>Research &amp; Publications</h2>
+  <p class="small muted">Notable papers and research contributions.</p>
+  <!-- e.g.
+  <div class="paper">
+    <div class="title"><a href="#">Paper Title</a></div>
+    <div class="venue">NeurIPS 2024 &middot; 120 citations</div>
+  </div>
+  -->
+
+  <!-- COMPANIES & PROJECTS -->
+  <h2>Companies &amp; Projects</h2>
+  <!-- narrative or list -->
+
+  <!-- SOCIAL & PUBLIC VOICE -->
+  <h2>Public Voice &amp; Social</h2>
+  <p class="small muted">What they talk about, what they signal, recurring themes.</p>
+
+  <!-- OVERLOOKED / DIFFERENTIAL INSIGHT -->
+  <h2>The Overlooked Angle</h2>
+  <p>{{OVERLOOKED_INSIGHT}}</p>
+
+  <!-- NOTES -->
+  <h2>Notes</h2>
+  <p class="small muted">Raw observations, open questions, things to follow up on.</p>
+  <ul>
+    <li class="small">{{NOTE}}</li>
+  </ul>
+
+  <footer>
+    researched: {{DATE}} &middot; <a href="../index.html">back to index</a>
+  </footer>
+
+</body>
+</html>

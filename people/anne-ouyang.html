@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anne Ouyang &middot; Out of Distribution</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <nav><a href="../index.html">&larr; index</a></nav>
+
+  <header>
+    <h1>Anne Ouyang</h1>
+    <p class="one-liner">Co-founder, Standard Kernel Co. Stanford CS PhD (on leave) &mdash; Azalia Mirhoseini + Percy Liang. MIT BS+MEng. Ex-NVIDIA cuDNN. KernelBench creator. USACO Finalist &rsquo;18. PicoCTF 6th place. Building the compiler for the AI hardware stack.</p>
+  </header>
+
+  <!-- ── spike ── -->
+  <section class="spike-box">
+    <h2>The Spike</h2>
+    <p>Anne Ouyang identified the bottleneck that everyone in AI infrastructure talks about but nobody was solving systematically: kernel engineering. She wrote CUDA kernels professionally at NVIDIA on the cuDNN team &mdash; the library that accelerates every deep learning framework. She studied it academically at Stanford under Azalia Mirhoseini (the researcher behind Google&rsquo;s chip placement with RL) and Percy Liang (HELM, CRFM). She benchmarked it with KernelBench &mdash; a 250-problem suite that proved frontier models can&rsquo;t even write correct CUDA kernels, let alone fast ones (o1 and DeepSeek-R1 match PyTorch baseline on less than 20% of tasks). Then she left her PhD to <em>fix</em> it by co-founding Standard Kernel, which already has H100 BF16 matmul kernels in pure CUDA+PTX that beat PyTorch benchmarks. The USACO Finalist and PicoCTF placements are the early signal: she thinks in systems, optimizes at the metal level, and has been doing it since high school. She&rsquo;s building the compiler layer between AI algorithms and AI hardware &mdash; the most leveraged position in the entire stack.</p>
+  </section>
+
+  <!-- ── at a glance ── -->
+  <section>
+    <h2>At a Glance</h2>
+    <div class="stats-grid">
+      <div class="stat">
+        <span class="stat-value">Co-founder</span>
+        <span class="stat-label">Standard Kernel Co.</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">Stanford PhD</span>
+        <span class="stat-label">Mirhoseini + Liang (on leave)</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">MIT BS + MEng</span>
+        <span class="stat-label">Computer Science</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">NVIDIA cuDNN</span>
+        <span class="stat-label">CUDA kernel engineer</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">USACO Finalist</span>
+        <span class="stat-label">2018 &middot; Platinum since 2017</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">KernelBench</span>
+        <span class="stat-label">250 problems &middot; Torch &rarr; CUDA</span>
+      </div>
+    </div>
+
+    <p class="small mono faint">
+      <strong>Tags:</strong>
+      <span class="tag spike">kernel engineering</span>
+      <span class="tag spike">GPU systems</span>
+      <span class="tag">CUDA</span>
+      <span class="tag">self-improving ML</span>
+      <span class="tag">competitive programming</span>
+      <span class="tag">NVIDIA</span>
+      <span class="tag">Stanford CRFM</span>
+    </p>
+  </section>
+
+  <!-- ── background ── -->
+  <section>
+    <h2>Background</h2>
+    <p>MIT BS and MEng in Computer Science. USACO Finalist (2018) &mdash; Platinum division since February 2017. PicoCTF 6th place. HarkerCTF 2nd place. Strong competitive programming and cybersecurity foundations.</p>
+    <p>Worked on NVIDIA&rsquo;s cuDNN team, writing CUDA kernels to accelerate deep learning workloads on GPUs. This is the library underneath PyTorch, TensorFlow, and every major deep learning framework &mdash; the lowest-level performance-critical code in the AI stack.</p>
+    <p>Stanford CS PhD co-advised by Azalia Mirhoseini (chip placement via RL, now at Stanford after Google Brain) and Percy Liang (HELM benchmark, CRFM). Research focus: scalable self-improving machine learning systems. Currently on leave to build Standard Kernel.</p>
+  </section>
+
+  <!-- ── timeline ── -->
+  <section>
+    <h2>Timeline</h2>
+    <ul class="timeline">
+      <li><span class="year">Feb 2017</span> USACO Platinum division</li>
+      <li><span class="year">2018</span> USACO Finalist &middot; PicoCTF 6th place &middot; HarkerCTF 2nd place</li>
+      <li><span class="year">~2019</span> Enters MIT &mdash; BS in Computer Science</li>
+      <li><span class="year">~2022</span> MIT MEng in Computer Science</li>
+      <li><span class="year">~2022&ndash;23</span> NVIDIA cuDNN team &mdash; writing CUDA kernels for GPU-accelerated deep learning</li>
+      <li><span class="year">~2023</span> Begins Stanford CS PhD &mdash; Azalia Mirhoseini + Percy Liang</li>
+      <li><span class="year">2025</span> KernelBench published &mdash; 250-problem benchmark for LLM kernel generation</li>
+      <li><span class="year">2025</span> KernelTreeSearch &mdash; search-based methods for improving generated kernels</li>
+      <li><span class="year">2025</span> Co-founds Standard Kernel Co. with Chris Rinard &mdash; leaves PhD</li>
+    </ul>
+  </section>
+
+  <!-- ── research ── -->
+  <section>
+    <h2>Research &amp; Publications</h2>
+
+    <h3>KernelBench: Can LLMs Write Efficient GPU Kernels?</h3>
+    <div class="paper">
+      <div class="title">&ldquo;KernelBench: Can LLMs Write Efficient GPU Kernels?&rdquo;</div>
+      <div class="venue">Scaling Intelligence Lab, Stanford &middot; 2025</div>
+    </div>
+    <p>Open-source benchmark with 250 PyTorch ML workloads across 4 levels of difficulty: single operators (L1, 100 problems), fusion patterns (L2, 100 problems), full architectures (L3, 50 problems), and HuggingFace model architectures (L4). Introduced <code>fast_p</code> metric measuring correctness + speedup. Key finding: frontier models (o1, DeepSeek-R1) match PyTorch baseline on &lt;20% of tasks. CUDA is a low-resource language in training data &mdash; models can&rsquo;t learn to write it well from internet text alone.</p>
+
+    <h3>KernelTreeSearch</h3>
+    <p>Search-based methods for steadily improving LLM-generated kernels. Demonstrated progress on hard problems like flash attention generation. Part of the broader thesis: self-improving AI systems that get better at writing their own infrastructure code.</p>
+
+    <h3>Agentic Reviewer</h3>
+    <p>Building automated research paper review systems. Extending the self-improving systems thesis to the scientific process itself.</p>
+  </section>
+
+  <!-- ── companies ── -->
+  <section>
+    <h2>Companies &amp; Projects</h2>
+
+    <h3>Standard Kernel Co. (2025&ndash;)</h3>
+    <p>Co-founded with Chris Rinard (they met as TAs for MIT&rsquo;s Performance Engineering of Software Systems course). Funded by General Catalyst and Felicis, plus exceptional angels. Building automated kernel optimization for AI infrastructure &mdash; already shipping H100 BF16 matmul kernels in pure CUDA+PTX that beat PyTorch benchmarks. The thesis: manual kernel optimization is a critical bottleneck (months of engineering per new architecture or hardware platform), and AI-driven kernel generation can cut compute costs by double-digit percentages.</p>
+
+    <h3>NVIDIA cuDNN</h3>
+    <p>Wrote production CUDA kernels on the cuDNN team &mdash; the library that powers GPU-accelerated deep learning across every major framework. This is the credibility that makes Standard Kernel possible: she&rsquo;s done the manual work she&rsquo;s now automating.</p>
+  </section>
+
+  <!-- ── public voice ── -->
+  <section>
+    <h2>Public Voice &amp; Social</h2>
+    <ul>
+      <li><strong>Website:</strong> <a href="https://anneouyang.com">anneouyang.com</a></li>
+      <li><strong>X / Twitter:</strong> <a href="https://x.com/anneouyang">@anneouyang</a></li>
+      <li><strong>GitHub:</strong> <a href="https://github.com/anneouyang">anneouyang</a></li>
+      <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anneouyang/">anneouyang</a></li>
+      <li><strong>Stanford:</strong> Scaling Intelligence Lab (Mirhoseini group)</li>
+    </ul>
+    <p>Technical profile with modest public presence. Research output speaks louder than social media. KernelBench has become a widely-referenced benchmark in the AI infrastructure community. The research blog posts on Stanford CRFM and Scaling Intelligence Lab sites show the work clearly.</p>
+  </section>
+
+  <!-- ── overlooked angle ── -->
+  <section>
+    <h2>The Overlooked Angle</h2>
+    <p>The obvious story is &ldquo;Stanford PhD student starts GPU startup.&rdquo; But the structural insight is deeper. Anne identified that the AI stack has a missing compiler layer. GPUs have gotten exponentially more powerful. Models have gotten exponentially larger. But the translation layer between algorithms and hardware &mdash; the kernels &mdash; is still written by hand, one architecture at a time, by a tiny number of specialists. She <em>was</em> one of those specialists at NVIDIA. She <em>measured</em> the gap with KernelBench. Now she&rsquo;s <em>closing</em> it with Standard Kernel.</p>
+    <p>The competitive programming background is the early tell. USACO Platinum at 15, Finalist at 16. PicoCTF (cybersecurity). These are domains where you optimize within tight constraints &mdash; exactly what kernel engineering requires. The MIT Performance Engineering course where she met Chris Rinard is the bridge: it&rsquo;s the course that teaches you to think about every cache line, every branch prediction, every instruction-level optimization. That course produced both co-founders of the company that&rsquo;s trying to automate the hardest optimization problem in AI infrastructure.</p>
+    <p>The advisor pairing at Stanford is also telling: Mirhoseini (who used RL to design better chips) and Liang (who builds benchmarks to measure AI systems). Anne is the synthesis &mdash; she builds the benchmarks <em>and</em> the systems that pass them.</p>
+  </section>
+
+  <!-- ── notes ── -->
+  <section>
+    <h2>Notes</h2>
+    <ul>
+      <li>Co-founder Chris Rinard is also Stanford PhD (Computer Systems) &mdash; they met as MIT TAs for 6.172 Performance Engineering</li>
+      <li>General Catalyst investment blog specifically highlights kernel optimization bottleneck</li>
+      <li>KernelBench finding that CUDA is low-resource in training data suggests a data flywheel opportunity</li>
+      <li>USACO Platinum since Feb 2017 &mdash; was likely 14&ndash;15 years old</li>
+      <li>Harker school background (HarkerCTF) &mdash; elite Bay Area prep school known for STEM</li>
+      <li>Stanford CRFM blog published fast-kernels research in May 2025</li>
+      <li>The self-improving systems thesis connects KernelBench to KernelTreeSearch to Standard Kernel &mdash; each step builds on the last</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p class="small faint">Researched Mar 2025. Sources: anneouyang.com, LinkedIn, Stanford Scaling Intelligence Lab, Stanford CRFM, General Catalyst blog, GitHub (ScalingIntelligence/KernelBench), arXiv, X (@anneouyang).</p>
+  </footer>
+</body>
+</html>
