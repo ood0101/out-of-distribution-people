@@ -1,0 +1,107 @@
+{
+  "last_updated": "2026-03-26",
+  "tier0_weekly": [
+    {
+      "name": "Ronak Malde",
+      "slug": "ronak-malde",
+      "twitter": "rronak_",
+      "linkedin": "ronak-malde",
+      "last_checked": "2026-03-26",
+      "status": "stealth_founder",
+      "context": "Left DeepMind after ~7 months. Delta Fellows lists as 'Stealth, prev DeepMind'. Continual learning thesis. Walked away from est. $7.5-22.5M unvested.",
+      "keywords_to_watch": ["announcing", "building", "raising", "hiring", "co-founder", "stealth", "launch"]
+    },
+    {
+      "name": "Jimmy Ba",
+      "slug": "jimmy-ba",
+      "twitter": "jimmybajimmyba",
+      "linkedin": "jimmy-ba",
+      "last_checked": "2026-03-26",
+      "status": "stealth_founder",
+      "context": "Left xAI Feb 10, 2026. Bio: '100x | pumping MPI up'. 313K citations. Adam optimizer co-author. Signaling recursive self-improvement + distributed compute.",
+      "keywords_to_watch": ["announcing", "100x", "building", "raising", "hiring", "co-founder", "launch", "MPI"]
+    },
+    {
+      "name": "Zeeshan Patel",
+      "slug": "zeeshan-patel",
+      "twitter": null,
+      "linkedin": "zeeshan-patel",
+      "last_checked": "2026-03-26",
+      "status": "stealth_founder",
+      "context": "Stealth, prev xAI + NVIDIA Research. CVPR 2025. 461 citations. Delta Fellow.",
+      "keywords_to_watch": ["announcing", "building", "raising", "hiring", "launch"]
+    }
+  ],
+  "tier1_monthly": [
+    {
+      "name": "Jerry Tworek",
+      "slug": "jerry-tworek",
+      "twitter": "millionint",
+      "linkedin": "jerry-tworek-b5b9aa56",
+      "last_checked": "2026-03-26",
+      "status": "raising",
+      "context": "Core Automation. Seeking $500M-$1B at $5B+. Ex-OpenAI VP Research. 47K citations. Continual learning thesis.",
+      "next_check": "2026-04-26"
+    },
+    {
+      "name": "Hersh Godse",
+      "slug": "hersh-godse",
+      "twitter": null,
+      "linkedin": null,
+      "last_checked": "2026-03-26",
+      "status": "stealth",
+      "context": "Delta Fellow. Stealth, prev Adept (acquired by Amazon). Went stealth instead of staying.",
+      "next_check": "2026-04-26"
+    },
+    {
+      "name": "Yusuf Ozuysal",
+      "slug": "yusuf-ozuysal",
+      "twitter": null,
+      "linkedin": null,
+      "last_checked": "2026-03-26",
+      "status": "stealth",
+      "context": "Delta Fellow. Stealth, prev Snowflake (led Cortex AI engineering).",
+      "next_check": "2026-04-26"
+    },
+    {
+      "name": "Michael Elabd",
+      "slug": "michael-elabd",
+      "twitter": null,
+      "linkedin": null,
+      "last_checked": "2026-03-26",
+      "status": "stealth",
+      "context": "Delta Fellow. Stealth, prev DeepMind.",
+      "next_check": "2026-04-26"
+    },
+    {
+      "name": "Neil Kale",
+      "slug": "neil-kale",
+      "twitter": "neilkale",
+      "linkedin": null,
+      "last_checked": "2026-03-26",
+      "status": "stealth",
+      "context": "Delta Fellow. Stealth, prev CMU ML.",
+      "next_check": "2026-04-26"
+    },
+    {
+      "name": "Ally Nakamura",
+      "slug": "ally-nakamura",
+      "twitter": null,
+      "linkedin": null,
+      "last_checked": "2026-03-26",
+      "status": "stealth",
+      "context": "Delta Fellow. Stealth, prev Stanford CS.",
+      "next_check": "2026-04-26"
+    },
+    {
+      "name": "Allie Gu",
+      "slug": "allie-gu",
+      "twitter": null,
+      "linkedin": null,
+      "last_checked": "2026-03-26",
+      "status": "stealth",
+      "context": "Delta Fellow. prev xAI.",
+      "next_check": "2026-04-26"
+    }
+  ]
+}
