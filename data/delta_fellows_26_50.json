@@ -1,0 +1,782 @@
+[
+  {
+    "name": "Nikita Mounier",
+    "affiliation": "Penn M&T '27 (UPenn CS + Wharton), prev Ramp, Rox, Thrive Capital",
+    "problems_worked_on": [
+      "Text diffusion models and self-correcting inference-time systems",
+      "iOS architecture at scale (presented novel architecture for 100+ engineers)",
+      "Applied AI for sales (Rox - AI-powered revenue agents)",
+      "Blockchain/web3 sustainability apps",
+      "AI-powered healthcare (real-time AI doctor)"
+    ],
+    "what_makes_them_spiky": [
+      "Presented novel iOS architecture at one of the largest iOS conferences in Europe (NSLondon) as an undergrad",
+      "Penn M&T program (dual CS + Wharton, ~3% acceptance rate)",
+      "Hackathon finalist at Mercor x Etched x Cognition Labs inference-time compute hackathon",
+      "Built an app where two phones share social media by tapping together",
+      "Neo Scholar"
+    ],
+    "key_work": [
+      "R3 (Review, Remask, Refine): Process-Guided Block Diffusion for Text Generation - MOSS@ICML2025",
+      "Novel Composable Architecture framework presentation at NSLondon",
+      "Built client iOS app + web client + Ethereum Polygon L2 smart contracts + backend as a team of 3"
+    ],
+    "companies_founded": [],
+    "current_work": "Thrive Capital (summer), Penn M&T undergrad, text diffusion research",
+    "alpha_insight": "One of the few people bridging iOS engineering excellence with cutting-edge ML research (text diffusion). His R3 framework for self-correcting diffusion models requires no additional training and works on any pre-trained masked text diffusion model - a practical and generalizable approach to inference-time self-improvement.",
+    "linkedin_url": "https://www.linkedin.com/in/nikita-mounier/",
+    "twitter_url": "https://x.com/nikitamounier",
+    "website_url": null,
+    "scholar_url": null
+  },
+  {
+    "name": "Simon Guo",
+    "affiliation": "Stanford CS PhD (started 2024), prev UC Berkeley EECS",
+    "problems_worked_on": [
+      "Self-improvement in ML systems",
+      "Code generation via post-training and scaling synthetic data",
+      "GPU kernel optimization with LLMs (KernelBench)",
+      "Mixture-of-Experts architectures",
+      "Efficient model pre-training"
+    ],
+    "what_makes_them_spiky": [
+      "Best Paper award at DL4C workshop (ICML 2025) for multi-turn RL training for CUDA kernels",
+      "NeurIPS 2024 publication on MoE pre-training",
+      "Rotated with Christopher Re, Tatsunori Hashimoto, and Azalia Mirhoseini at Stanford",
+      "Worked at Cohere (pretraining), Apple (GPUs), Anyscale, NVIDIA (AV), Sakana AI (Tokyo)"
+    ],
+    "key_work": [
+      "KernelBench: benchmarking LLMs for GPU kernel generation",
+      "Multi-Turn RL Training for Generating CUDA Kernels (ICML 2025 Best Paper @ DL4C)",
+      "Think, Prune, Train, Improve: synthetic data for LLM fine-tuning",
+      "Upcycling MoE with Mixture-of-Attention (NeurIPS 2024)"
+    ],
+    "companies_founded": [],
+    "current_work": "Stanford CS PhD with Chris Re, Tatsunori Hashimoto, and Azalia Mirhoseini, working on ML systems self-improvement and code generation scaling",
+    "alpha_insight": "KernelBench fills a critical gap - most LLM coding benchmarks test correctness, not performance. His work on multi-turn RL for CUDA kernel generation points toward a future where AI systems iteratively optimize low-level compute, a massive lever for making all of AI cheaper and faster.",
+    "linkedin_url": "https://www.linkedin.com/in/simonguozirui/",
+    "twitter_url": "https://x.com/simonguozirui",
+    "website_url": "https://simonguo.tech/",
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=~Simon_Guo1"
+  },
+  {
+    "name": "Oam Patel",
+    "affiliation": "Harvard (Statistics + CS), Applied Compute",
+    "problems_worked_on": [
+      "AI safety and alignment (latent adversarial training)",
+      "Truthfulness in language models (inference-time intervention)",
+      "Interpretability and transparency of conversational AI",
+      "Enterprise AI deployment"
+    ],
+    "what_makes_them_spiky": [
+      "NeurIPS 2023 Spotlight paper on eliciting truthful answers from LLMs (Inference-Time Intervention)",
+      "Published at top venues as an undergrad at Harvard",
+      "From rural Mountain Home, Idaho - used online learning to supplement limited local coursework",
+      "Work at Together AI on LLM infrastructure"
+    ],
+    "key_work": [
+      "Inference-Time Intervention: Eliciting Truthful Answers from a Language Model (NeurIPS 2023 Spotlight)",
+      "Defending Against Unforeseen Failure Modes with Latent Adversarial Training",
+      "Designing a Dashboard for Transparency and Control of Conversational AI"
+    ],
+    "companies_founded": [],
+    "current_work": "Associated with Applied Compute; Harvard undergrad in Statistics + CS; AI safety and alignment research",
+    "alpha_insight": "His Inference-Time Intervention work showed you can make LLMs more truthful by intervening on specific attention heads during inference - no retraining needed. This lightweight approach to steering model behavior is a key building block for practical AI alignment. Note: Applied Compute was founded by ex-OpenAI researchers (Yash Patil, Rhythm Garg, Linden Li) - Oam's exact role there needs confirmation.",
+    "linkedin_url": "https://www.linkedin.com/in/oam-patel/",
+    "twitter_url": "https://x.com/_oampatel_",
+    "website_url": null,
+    "scholar_url": "https://scholar.google.com/citations?user=Jtg0_lcAAAAJ&hl=en"
+  },
+  {
+    "name": "Archer Wang",
+    "affiliation": "MIT CS PhD (started 2024), MIT BS '23 + MEng '24",
+    "problems_worked_on": [
+      "Generative models with factorized latent spaces",
+      "Unsupervised decomposition in diffusion models",
+      "Photonic integrated circuits (programmable liquid-crystal-on-silicon)",
+      "Compositional generation in vision"
+    ],
+    "what_makes_them_spiky": [
+      "MEng thesis on programmable photonic integrated circuits with millions of degrees of freedom (hardware + AI intersection)",
+      "Collaborates with Yilun Du and Marin Soljacic at MIT",
+      "Bridges physics/photonics hardware with generative AI research"
+    ],
+    "key_work": [
+      "Unsupervised Decomposition and Recombination with Discriminator-Driven Diffusion Models (2026 preprint)",
+      "Programmable Liquid-Crystal-on-Silicon Photonic Integrated Circuits with Millions of Degrees of Freedom (MIT MEng thesis, 2024)"
+    ],
+    "companies_founded": [],
+    "current_work": "MIT CS PhD student working on generative models, diffusion models with factorized latent spaces for unsupervised decomposition",
+    "alpha_insight": "Rare combination of photonics hardware expertise and generative AI research. His work on unsupervised decomposition in diffusion models - learning factorized latent spaces without supervision that capture background, illumination, and object attributes - could enable more controllable and compositional generation, with applications in robotics (reusable motion components).",
+    "linkedin_url": "https://www.linkedin.com/in/archerwang/",
+    "twitter_url": null,
+    "website_url": null,
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=gWJTcwUAAAAJ"
+  },
+  {
+    "name": "Hannah Gao",
+    "affiliation": "Stanford Math + CS '28, OpenAI connection, SAIL",
+    "problems_worked_on": [
+      "AI research at Stanford Artificial Intelligence Laboratory (SAIL)",
+      "Hackathon organization and AI community building",
+      "Competitive mathematics"
+    ],
+    "what_makes_them_spiky": [
+      "Co-director of TreeHacks 2026 (world's largest collegiate hackathon, 15,000 applicants)",
+      "Personally interviewed Sam Altman (OpenAI CEO) at TreeHacks opening ceremony",
+      "Top 5 women's AMC12A and AMC12B scores in MAA section",
+      "Won 1st place + $10,000 scholarship at IUPUI Hackathon",
+      "Stanford Class of 2028 - very early career with outsized impact"
+    ],
+    "key_work": [
+      "Co-directing TreeHacks 2026 with $500,000 in prizes, sponsored by OpenAI, Google, Anthropic",
+      "Research at Stanford Artificial Intelligence Laboratory (SAIL)"
+    ],
+    "companies_founded": [],
+    "current_work": "Stanford Math + CS undergrad, co-director of TreeHacks, researcher at SAIL",
+    "alpha_insight": "At the center of Stanford's AI ecosystem as TreeHacks co-director with direct access to leaders like Sam Altman. Strong math competition background (top AMC scores) combined with SAIL research suggests someone who can bridge theoretical depth with practical AI building. One of the most connected undergrads in the Stanford AI community.",
+    "linkedin_url": "https://www.linkedin.com/in/hannahsgao",
+    "twitter_url": null,
+    "website_url": null,
+    "scholar_url": null
+  },
+  {
+    "name": "Sally Zhu",
+    "affiliation": "Stanford Math + CS '27, Flapping Airplanes, Stanford NLP Group",
+    "problems_worked_on": [
+      "Language model reasoning and robustness",
+      "Synthetic data for LLMs",
+      "Model theft detection (detecting if someone has stolen a language model)",
+      "Internal waves and chess billiard flow (pure mathematics)",
+      "NLP research with Percy Liang and Rohith Kuditipudi"
+    ],
+    "what_makes_them_spiky": [
+      "Regeneron Science Talent Search 2023 Top 40 Finalist for math research on chess billiard flow",
+      "NeurIPS 2025 Spotlight paper on detecting language model theft",
+      "ICML 2025 Spotlight poster",
+      "Published first-author paper in Research Notes of the American Astronomical Society in high school",
+      "RSI (Research Science Institute) alumna",
+      "Works at Flapping Airplanes ($180M seed from GV, Sequoia, Index)"
+    ],
+    "key_work": [
+      "NeurIPS 2025 Spotlight: detecting stolen language models",
+      "ICML 2025 Spotlight poster (with Stanford NLP group)",
+      "Regeneron STS project: On the Smoothness and Regularity of the Chess Billiard Flow and the Poincare Problem",
+      "Research with Percy Liang and Rohith Kuditipudi at Stanford NLP"
+    ],
+    "companies_founded": [],
+    "current_work": "Working at Flapping Airplanes (research-first AI lab, $180M seed), Stanford NLP group research on language models",
+    "alpha_insight": "Flapping Airplanes is betting that current AI is 100,000-1,000,000x less data-efficient than humans and wants to find fundamentally new training approaches (new loss functions, possibly replacing gradient descent). Sally's deep math background (Regeneron finalist) combined with NLP research makes her well-positioned for this kind of foundational rethinking. Her model theft detection work is also commercially critical as model IP becomes more valuable.",
+    "linkedin_url": null,
+    "twitter_url": "https://x.com/SallyHZhu",
+    "website_url": "https://salzhu.github.io/",
+    "scholar_url": "https://scholar.google.com/citations?user=8JOQdDkAAAAJ&hl=en"
+  },
+  {
+    "name": "Ayush Alag",
+    "affiliation": "OpenAI, prev Stanford MS CS, Princeton BS",
+    "problems_worked_on": [
+      "Scaling large language models and reasoning",
+      "Compound AI systems",
+      "Federated learning and machine unlearning",
+      "Dataset auditing",
+      "3D computer vision and optical flow",
+      "Meta and reinforcement learning"
+    ],
+    "what_makes_them_spiky": [
+      "Currently at OpenAI working on frontier model scaling",
+      "Previously at Five Rings Capital (quant trading) for 2 years",
+      "Internships at Scale AI, AWS, and Meta AI Research",
+      "Runs 'Unsupervised Learning' podcast covering AGI timelines and what makes great AI researchers",
+      "Princeton undergrad + Stanford MS pipeline"
+    ],
+    "key_work": [
+      "Work at OpenAI on scaling LLMs and reasoning",
+      "Research at Princeton Visual AI Lab on 3D computer vision",
+      "Previously at Mithril/Foundry as Member of Technical Staff"
+    ],
+    "companies_founded": [],
+    "current_work": "OpenAI - working on scaling large language models and reasoning systems",
+    "alpha_insight": "Unusual trajectory from quant trading (Five Rings) to frontier AI research (OpenAI), suggesting strong quantitative foundations applied to AI scaling. His podcast 'Unsupervised Learning' gives him unique network effects across the AI research community. The combination of systems thinking from trading + AI scaling research is rare.",
+    "linkedin_url": "https://www.linkedin.com/in/ayushalag/",
+    "twitter_url": null,
+    "website_url": null,
+    "scholar_url": "https://scholar.google.com/citations?user=P77H_ZkAAAAJ&hl=en"
+  },
+  {
+    "name": "Brian Huang",
+    "affiliation": "Google DeepMind, MIT (BS Math + BS CS&E + MS CS), prev Haize Labs",
+    "problems_worked_on": [
+      "RL and post-training for code at DeepMind",
+      "AI safety and adversarial robustness",
+      "Automated jailbreaking and red teaming of LLMs",
+      "Bijection learning for bypassing model alignment"
+    ],
+    "what_makes_them_spiky": [
+      "Co-authored 'Endless Jailbreaks with Bijection Learning' (ICLR 2025) - attack stronger on higher-capability models following quadratic scaling law",
+      "Part of OpenAI o1 Red Team via Haize Labs",
+      "Appeared on 'The Cognitive Revolution' podcast discussing automated jailbreaking",
+      "MIT triple degree (BS Math + BS CS&E + MS CS)",
+      "Now at DeepMind working on RL for code"
+    ],
+    "key_work": [
+      "Endless Jailbreaks with Bijection Learning (ICLR 2025)",
+      "Red teaming OpenAI o1 and o1-mini with Haize Labs",
+      "RL and post-training for code at Google DeepMind"
+    ],
+    "companies_founded": [],
+    "current_work": "Google DeepMind - RL and post-training for code. Also recently announced joining Thinking Machines Lab.",
+    "alpha_insight": "His bijection learning jailbreak finding is deeply concerning for AI safety: the attack is STRONGER on more capable models (quadratic scaling law). This suggests alignment may get harder, not easier, as models improve. His transition from adversarial attack research to DeepMind's RL team suggests he's now applying that security mindset to making models more robust from the inside.",
+    "linkedin_url": "https://www.linkedin.com/in/brianryhuang/",
+    "twitter_url": "https://x.com/brianryhuang",
+    "website_url": "https://briteroses.github.io/",
+    "scholar_url": "https://scholar.google.com/citations?user=SEJQg6EAAAAJ&hl=en"
+  },
+  {
+    "name": "Aarav Wattal",
+    "affiliation": "Stanford EE + CS '27, Majestic Labs AI, prev AMD",
+    "problems_worked_on": [
+      "ML compilers and AI hardware optimization",
+      "AI-powered robotics for accessibility",
+      "Quantization for sparse accelerators",
+      "Statistical modeling of RRAM with deep neural networks",
+      "AI for elderly/disabled assistance"
+    ],
+    "what_makes_them_spiky": [
+      "TreeHacks 2024 Moonshot Grand Prize winner ($10,000 + trip to Japan) for Baymax AI robot arm",
+      "First-author research paper at SISPAD 2023 (Kobe, Japan) on RRAM modeling with DNNs",
+      "ML Compiler Engineer at Majestic Labs AI as an undergrad",
+      "Research under Prof. Raina at Stanford Accelerate on quantization for sparse accelerators",
+      "STVP XFund Ethics Fellow"
+    ],
+    "key_work": [
+      "Statistical Modeling of Metal-Oxide RRAM SET/RESET Behavior Using Deep Neural Networks (SISPAD 2023)",
+      "Baymax: AI-powered robot arm for elderly/disabled (TreeHacks Grand Prize)",
+      "Quantization for sparse accelerators at Stanford Accelerate",
+      "ML compiler engineering at Majestic Labs AI"
+    ],
+    "companies_founded": [],
+    "current_work": "Stanford EE + CS undergrad, ML Compiler Engineer at Majestic Labs AI, hardware-AI intersection research",
+    "alpha_insight": "Sits at the critical hardware-software intersection that will determine AI's future cost curve. His work spans from semiconductor device modeling (RRAM) to ML compilers to robotics applications. As AI scaling hits compute walls, people who understand both the hardware constraints and ML optimization (like ML compilers for sparse accelerators) become extremely valuable.",
+    "linkedin_url": "https://www.linkedin.com/in/aarav-wattal/",
+    "twitter_url": "https://x.com/aaravwattal",
+    "website_url": null,
+    "scholar_url": "https://scholar.google.com/citations?user=Ly5FXvAAAAAJ&hl=en"
+  },
+  {
+    "name": "Thijs Simonian",
+    "affiliation": "Stanford CS, prev LMArena (Employee #5)",
+    "problems_worked_on": [
+      "AI model evaluation at scale (Video Arena - 200K+ preference votes)",
+      "Generative video model benchmarking",
+      "Large-scale community products (Discord bots at 500K MAU)",
+      "Security research (bug bounties)"
+    ],
+    "what_makes_them_spiky": [
+      "Employee #5 at LMArena/Arena (now valued at $1.7B after $150M Series A)",
+      "Created Video Arena: largest generative video evaluation platform (200K+ preference votes)",
+      "Built Truth or Dare Discord bot used by 500,000 MAU in 1.6M communities",
+      "Earned $100,000 bug bounty for major security vulnerability discovery",
+      "Co-directing TreeHacks 2026 (world's largest collegiate hackathon)",
+      "Prev intern at a16z and Discord"
+    ],
+    "key_work": [
+      "Video Arena at LMArena - largest preference evaluation platform for generative video models",
+      "Truth or Dare - Discord bot with 500K MAU across 1.6M communities",
+      "$100K bug bounty discovery"
+    ],
+    "companies_founded": [],
+    "current_work": "Stanford CS student, co-directing TreeHacks 2026, building products that connect millions",
+    "alpha_insight": "Was Employee #5 at what became a $1.7B company (LMArena/Arena). Created the video evaluation equivalent of Chatbot Arena, which is becoming the standard for comparing generative video models. His instinct for building products with massive distribution (500K MAU Discord bot as a side project, $100K bug bounty) suggests a rare combination of technical depth and product sense.",
+    "linkedin_url": "https://www.linkedin.com/in/thijsdev/",
+    "twitter_url": "https://twitter.com/cdngdev",
+    "website_url": "https://thijs.gg/",
+    "scholar_url": null
+  },
+  {
+    "name": "Grace Luo",
+    "affiliation": "UC Berkeley EECS PhD (2022-2027), BAIR",
+    "problems_worked_on": [
+      "Interpreting and controlling generative models",
+      "Image synthesis and vision-language understanding",
+      "Diffusion model features and hyperfeatures",
+      "Multimodal vision and language",
+      "Out-of-context multimodal media detection",
+      "Generative meta-models of LLM activations"
+    ],
+    "what_makes_them_spiky": [
+      "Publications at ICLR 2026, ICCV 2025, CVPR 2024, NeurIPS 2023, EMNLP 2021 (Oral)",
+      "Advised by Trevor Darrell at BAIR - one of the most prestigious CV labs",
+      "BS + MS + PhD all at Berkeley EECS",
+      "Work spans both understanding (interpretability) and generation (synthesis) sides of generative models"
+    ],
+    "key_work": [
+      "Learning a Generative Meta-Model of LLM Activations (2026, with Alec Radford and Jacob Steinhardt)",
+      "Constantly Improving Image Models Need Constantly Improving Benchmarks (ICLR 2026)",
+      "Dual-Process Image Generation (ICCV 2025)",
+      "Readout Guidance (CVPR 2024)",
+      "Diffusion Hyperfeatures (NeurIPS 2023)",
+      "NewsCLIPpings: Automatic Generation of Out-of-Context Multimodal Media (EMNLP 2021 Oral)"
+    ],
+    "companies_founded": [],
+    "current_work": "Berkeley EECS PhD at BAIR, working on interpreting/controlling generative models and learning meta-models of LLM activations",
+    "alpha_insight": "Her 2026 work on 'Learning a Generative Meta-Model of LLM Activations' with Alec Radford (OpenAI co-founder) and Jacob Steinhardt is potentially paradigm-shifting - building models that understand and can generate the internal states of other models. This is a step toward 'models understanding models,' which has huge implications for interpretability, model editing, and AI safety.",
+    "linkedin_url": "https://www.linkedin.com/in/g-luo",
+    "twitter_url": null,
+    "website_url": "https://graceluo.net/",
+    "scholar_url": "https://scholar.google.com/citations?user=VjtXGlwAAAAJ&hl=en"
+  },
+  {
+    "name": "Nina Boord",
+    "affiliation": "Stanford BS Math + MS CS (Phi Beta Kappa), Cogent Security, prev Nuro",
+    "problems_worked_on": [
+      "AI security and vulnerability management (Cogent Security)",
+      "Autonomous vehicle simulation and validation",
+      "Meta-learning for efficient safety validation (SAVME)",
+      "Women in tech entrepreneurship"
+    ],
+    "what_makes_them_spiky": [
+      "Phi Beta Kappa from Stanford (BS Math + MS CS)",
+      "Founded Stanford Women In Tech Entrepreneurship (SWITE) - 160+ active members",
+      "Published SAVME paper on meta-learning for autonomous validation (IEEE ITSC)",
+      "Worked at Nuro (autonomous vehicle unicorn) as software engineer",
+      "Attended DEF CON 33 (major hacking conference)",
+      "YC alumna - shared advice on YC applications",
+      "Associated with Cogent Security ($42M Series A, AI-powered cybersecurity)"
+    ],
+    "key_work": [
+      "SAVME: Efficient Safety Validation for Autonomous Systems Using Meta-Learning (IEEE ITSC)",
+      "Software engineering at Nuro (autonomous vehicles)",
+      "Role at Cogent Security (AI agents for cybersecurity, backed by Greylock and Bain Capital)"
+    ],
+    "companies_founded": [
+      "Stanford Women In Tech Entrepreneurship (SWITE)"
+    ],
+    "current_work": "Associated with Cogent Security (AI-powered vulnerability management, $42M Series A). Cogent uses agentic AI to autonomously assess infrastructure risk, prioritize threats, coordinate fixes.",
+    "alpha_insight": "Cogent Security represents the application of agentic AI to cybersecurity at scale - autonomous agents that can assess, prioritize, and coordinate vulnerability remediation. The company went from $11M seed to $42M Series A quickly, suggesting strong product-market fit. Nina's combination of Stanford Math/CS rigor, autonomous systems research (Nuro), and security expertise (DEF CON) is a rare trifecta for the AI security space.",
+    "linkedin_url": "https://www.linkedin.com/in/nina-boord/",
+    "twitter_url": null,
+    "website_url": null,
+    "scholar_url": null
+  },
+  {
+    "name": "Alex Gu",
+    "affiliation": "MIT CS PhD, advised by Armando Solar-Lezama, founding research lead at Math Inc.",
+    "problems_worked_on": [
+      "AI for programming and code generation",
+      "Program synthesis and neurosymbolic programming",
+      "LLM benchmarking for code (CRUXEval, LiveCodeBench, BigCodeBench)",
+      "AI for mathematics",
+      "Steering LLMs between code execution and textual reasoning"
+    ],
+    "what_makes_them_spiky": [
+      "NSF GRFP recipient",
+      "Two papers accepted as Oral presentations at AISTATS and ICLR 2025",
+      "Created multiple influential code benchmarks (CRUXEval at ICML 2024, LiveCodeBench at ICLR 2025, BigCodeBench)",
+      "Contributor to StarCoder 2",
+      "Founding research lead at Math, Inc.",
+      "Internships at Amazon, NVIDIA, Meta AI Research, Jane Street, pony.ai"
+    ],
+    "key_work": [
+      "CRUXEval: Code Reasoning, Understanding and Execution benchmark (ICML 2024)",
+      "LiveCodeBench: Holistic and Contamination Free Evaluation of LLMs for Code (ICLR 2025 Oral)",
+      "BigCodeBench: Benchmarking Code Generation with Diverse Function Calls",
+      "Steering LLMs between Code Execution and Textual Reasoning (ICLR 2025 Oral)",
+      "Position paper: Future Research and Challenges Remain Towards AI for Software Engineering (ICML 2025)",
+      "Contributor to StarCoder 2 and The Stack v2"
+    ],
+    "companies_founded": [
+      "Math, Inc. (founding research lead)"
+    ],
+    "current_work": "MIT CS PhD student building the foundations for AI-powered programming and mathematics. Founding research lead at Math, Inc.",
+    "alpha_insight": "Alex is essentially building the evaluation infrastructure for AI coding. CRUXEval, LiveCodeBench, and BigCodeBench are becoming standard benchmarks that the entire industry uses to measure progress. If you control the benchmarks, you shape the research direction. His ICLR 2025 Oral on steering LLMs between code execution and reasoning hints at a future where AI systems dynamically choose between writing code and thinking through problems - a key capability for autonomous software engineering.",
+    "linkedin_url": "https://www.linkedin.com/in/alex-gu-8b7664175/",
+    "twitter_url": "https://x.com/minimario1729",
+    "website_url": "https://minimario.github.io/",
+    "scholar_url": "https://scholar.google.com/citations?user=jRQtBp0AAAAJ&hl=en"
+  },
+  {
+    "name": "Sachit Menon",
+    "affiliation": "Columbia CS PhD, advised by Carl Vondrick",
+    "problems_worked_on": [
+      "Multimodal vision-language modeling",
+      "Neurosymbolic reasoning (ViperGPT)",
+      "Visual classification via LLM descriptions",
+      "Image super-resolution (PULSE)",
+      "Video understanding and reasoning",
+      "Representation learning"
+    ],
+    "what_makes_them_spiky": [
+      "4,196+ citations on Google Scholar",
+      "Co-author of PULSE (CVPR 2020) - massively cited self-supervised photo upsampling",
+      "Co-author of ViperGPT (ICCV 2023) - visual inference via Python execution",
+      "Columbia Presidential Fellowship + NSF GRFP + CAIRFI Research Fellowship",
+      "Goldwater Scholar + Angier B. Duke Fellow (Duke's flagship merit scholarship)",
+      "Visiting researcher at Google DeepMind",
+      "Published at every major venue: CVPR, ICCV, ICLR, EMNLP, NeurIPS, UAI"
+    ],
+    "key_work": [
+      "PULSE: Self-Supervised Photo Upsampling via Latent Space Exploration (CVPR 2020)",
+      "ViperGPT: Visual Inference via Python Execution for Reasoning (ICCV 2023)",
+      "Visual Classification via Description from Large Language Models (ICLR 2023)",
+      "Whiteboard-of-Thought: Thinking Step-by-Step Across Modalities (EMNLP 2024)",
+      "MINERVA: Evaluating Complex Video Reasoning (2025)",
+      "CAViAR: Critic-Augmented Video Agentic Reasoning (2025)"
+    ],
+    "companies_founded": [],
+    "current_work": "Columbia CS PhD exploring video understanding/reasoning with multimodal LLMs, visiting researcher at Google DeepMind",
+    "alpha_insight": "Sachit's trajectory shows a clear pattern: he keeps finding new ways to bridge vision and language. PULSE went viral for face upsampling, ViperGPT showed you can use Python as an intermediate representation for visual reasoning, and Whiteboard-of-Thought lets models literally draw to think. His latest work on video reasoning (MINERVA, CAViAR) at DeepMind positions him at the frontier of multimodal agents that can actually understand and reason about the visual world.",
+    "linkedin_url": "https://www.linkedin.com/in/sachit-menon/",
+    "twitter_url": null,
+    "website_url": "https://sachit-menon.github.io/",
+    "scholar_url": "https://scholar.google.com/citations?user=ilLnLJEAAAAJ&hl=en"
+  },
+  {
+    "name": "Xingjian Bai",
+    "affiliation": "MIT CS PhD (1st year), advised by Kaiming He, prev Oxford (Math + CS)",
+    "problems_worked_on": [
+      "Generative modeling and causal video generation",
+      "Physics-inspired generative models",
+      "Fixed point diffusion models",
+      "Learning-augmented algorithms (sorting with predictions)",
+      "Goodhart's Law in reinforcement learning"
+    ],
+    "what_makes_them_spiky": [
+      "Advised by Kaiming He at MIT (creator of ResNet, one of the most cited researchers in AI)",
+      "CVPR 2024 paper on Fixed Point Diffusion Models",
+      "ICLR 2023 paper on Goodhart's Law in RL",
+      "NeurIPS 2023 paper on Sorting with Predictions",
+      "Oxford Math + CS background with research at VGG (Visual Geometry Group)",
+      "Visiting research intern at Stanford Vision & Learning Lab under Jiajun Wu"
+    ],
+    "key_work": [
+      "Fixed Point Diffusion Models (CVPR 2024)",
+      "Goodhart's Law in Reinforcement Learning (ICLR 2023)",
+      "Sorting with Predictions (NeurIPS 2023)",
+      "Unweighted Layered Graph Traversal (2024)"
+    ],
+    "companies_founded": [],
+    "current_work": "MIT CS PhD with Kaiming He, focusing on causal video generation and physics-inspired generative models in the He Vision Group at CSAIL",
+    "alpha_insight": "Working with Kaiming He (who created ResNet) on next-gen generative models inspired by physics. His unique background spans theory (algorithms with predictions at NeurIPS, Goodhart's Law at ICLR) and practice (diffusion models at CVPR). The 'physics-inspired generative models' direction could yield more principled and efficient generation than current brute-force approaches. His cross-pollination between Oxford math rigor and MIT systems building is distinctive.",
+    "linkedin_url": "https://www.linkedin.com/in/xingjian-bai-8103ba184/",
+    "twitter_url": null,
+    "website_url": "https://xingjianbai.com/",
+    "scholar_url": "https://scholar.google.com/citations?user=KCrwdnIAAAAJ&hl=en"
+  },
+  {
+    "name": "Joe Li",
+    "affiliation": "Stanford CS + EE, Nous Research",
+    "problems_worked_on": [
+      "Diffusion language models and inference-time scaling (LLaDA-R1)",
+      "Brain-computer interfaces (NeuroScribe)",
+      "Open-source AI and reinforcement learning"
+    ],
+    "what_makes_them_spiky": [
+      "Won 1st Place + $40K at Mercor x Etched x Cognition inference-time compute hackathon (LLaDA-R1)",
+      "Built NeuroScribe at TreeHacks: BCI keyboard using EEG + Huffman encoding, typing 2-3x faster than Stephen Hawking",
+      "Built LLaDA-R1 in 24 hours with a team of 4 Stanford freshmen",
+      "Affiliated with Nous Research (leading open-source AI organization)"
+    ],
+    "key_work": [
+      "LLaDA-R1: Scaling Reasoning at Inference Time with Diffusion-LLMs (hackathon 1st place)",
+      "NeuroScribe: BCI keyboard translating EEG data to text via binary mapping and Huffman encoding"
+    ],
+    "companies_founded": [],
+    "current_work": "Stanford CS + EE undergrad, affiliated with Nous Research, working on diffusion language models and BCI",
+    "alpha_insight": "His LLaDA-R1 work showed that diffusion-based language models (not just autoregressive transformers) can benefit from inference-time compute scaling - potentially opening a parallel track for reasoning models. The BCI project at TreeHacks shows hardware hacking instincts. Connection to Nous Research (major open-source AI org) gives him access to cutting-edge open models. Note: the Delta Institute listed 'Cognition' as an affiliation, likely referencing the hackathon rather than employment.",
+    "linkedin_url": "https://www.linkedin.com/in/joe-li-08791120b",
+    "twitter_url": "https://x.com/joeli5050",
+    "website_url": null,
+    "scholar_url": "https://scholar.google.com/citations?user=m4ZcAPQAAAAJ&hl=en"
+  },
+  {
+    "name": "Gauri Gupta",
+    "affiliation": "NeoSigma AI (Founder), prev Parallel AI, MIT Media Lab PhD (dropout)",
+    "problems_worked_on": [
+      "Custom evaluation and post-training for real-world AI agents",
+      "Decentralized and collaborative machine learning",
+      "Private machine learning",
+      "Multi-modal foundation models",
+      "Agent collaboration in untrusted environments"
+    ],
+    "what_makes_them_spiky": [
+      "Founded NeoSigma AI (custom eval and post-training for AI agents)",
+      "MIT PhD dropout who pivoted to entrepreneurship",
+      "Best Student Paper award at an AI venue",
+      "US Patent for research work at Adobe",
+      "Charpak Lab Research Scholarship recipient",
+      "IIT Delhi grad (Math + Computing), worked at Apple MLR with Samy Bengio's team",
+      "O-1 visa (extraordinary ability) approved",
+      "Published at AAAI, ICML, ICLR, AAMAS"
+    ],
+    "key_work": [
+      "NeoSigma AI: custom evaluation and post-training for real-world AI agents",
+      "Parallel AI: agentic proof of work / Basis with calibrated confidences",
+      "Research at MIT Media Lab on decentralized collaborative ML",
+      "Multi-modal foundation model work at Apple MLR",
+      "US Patent from Adobe research"
+    ],
+    "companies_founded": [
+      "NeoSigma AI (co-founded with Ritvik Kapila)"
+    ],
+    "current_work": "Founder of NeoSigma AI - building custom evaluation and post-training infrastructure for real-world AI agents",
+    "alpha_insight": "NeoSigma sits at a critical chokepoint: as everyone deploys AI agents, the ability to properly evaluate and post-train them for specific use cases becomes the bottleneck. Her MIT research on agent collaboration in untrusted environments directly informs building evaluation systems that can handle the messy reality of deployed agents. The pivot from MIT PhD to founding suggests urgency about getting this infrastructure built now.",
+    "linkedin_url": "https://www.linkedin.com/in/gauri-gupta-115567162/",
+    "twitter_url": "https://x.com/gauri__gupta",
+    "website_url": "https://gaurigupta19.github.io/",
+    "scholar_url": "https://scholar.google.com/citations?user=SPaOg4cAAAAJ&hl=en"
+  },
+  {
+    "name": "Mihika Dusad",
+    "affiliation": "MIT Math + CS (6-3 & 18), 2nd year",
+    "problems_worked_on": [
+      "Reinforcement learning at MIT LIDS",
+      "Representation learning and LLMs",
+      "Decentralized agent communication via MCP (Model Context Protocol)",
+      "Compute infrastructure and specialized hardware economics"
+    ],
+    "what_makes_them_spiky": [
+      "President of MIT Entrepreneurship Club (MEC)",
+      "RL research at MIT LIDS (Laboratory for Information and Decision Systems)",
+      "Research Science Institute (RSI) participant",
+      "Previously worked at AWS CV Labs and MITRE Corp",
+      "Associated with Genesis Fund (VC)",
+      "Working on decentralized agent communication at MIT Media Lab",
+      "Admitted to MIT, Stanford, Yale, and UPenn"
+    ],
+    "key_work": [
+      "RL research at MIT LIDS",
+      "Decentralized agent communication methods built on MCP at MIT Media Lab",
+      "Work at AWS CV Labs and MITRE Corp"
+    ],
+    "companies_founded": [],
+    "current_work": "MIT Math + CS undergrad, RL research at LIDS, president of MIT Entrepreneurship Club, exploring intersection of compute economics and AI",
+    "alpha_insight": "Her work on decentralized agent communication via MCP at MIT Media Lab is prescient - as AI agents proliferate, they need standardized ways to communicate while preserving user data privacy. She predicts this will become integral in ~3 years. Her combination of RL research (LIDS), entrepreneurship (MEC president), and VC exposure (Genesis Fund) positions her to both build and fund the next wave of agent infrastructure.",
+    "linkedin_url": "https://www.linkedin.com/in/mihika-dusad/",
+    "twitter_url": "https://x.com/mihikadusad",
+    "website_url": null,
+    "scholar_url": "https://scholar.google.com/citations?user=aZLPRAoAAAAJ&hl=en"
+  },
+  {
+    "name": "Etash Guha",
+    "affiliation": "Stanford CS PhD, advised by Ludwig Schmidt and Yejin Choi",
+    "problems_worked_on": [
+      "Training data curation for large text and image models",
+      "Synthetic data generation and filtering",
+      "Online data sampling protocols",
+      "LLM reliability",
+      "Approximate Bayesian inference"
+    ],
+    "what_makes_them_spiky": [
+      "NSF Graduate Research Fellowship",
+      "Advised by Ludwig Schmidt (LAION/OpenCLIP) and Yejin Choi (Mosaic Prize, MacArthur Fellow)",
+      "754+ citations on Google Scholar",
+      "Published at NeurIPS, ICML 2024, ICLR 2024, UAI 2024, ICML 2023, ICLR 2023",
+      "Research intern at RIKEN AIP in Tokyo under Emtiyaz Khan",
+      "Georgia Tech undergrad working with Vidya Muthukumar and Jacob Abernethy",
+      "Worked at SambaNova Systems on LLM reliability"
+    ],
+    "key_work": [
+      "Research on training data curation protocols for large models",
+      "Publications across NeurIPS, ICML, ICLR, UAI on data-centric AI",
+      "LLM reliability research at SambaNova Systems",
+      "Approximate Bayesian inference at RIKEN AIP"
+    ],
+    "companies_founded": [],
+    "current_work": "Stanford CS PhD designing and improving training data curation protocols for large text and image models, including synthetic data generation, filtering, and online sampling",
+    "alpha_insight": "Data curation is becoming the key differentiator in AI model quality, and Etash is working on this with two of the best advisors possible: Ludwig Schmidt (who built OpenCLIP/LAION, showing data quality matters more than architecture) and Yejin Choi (who pushes the boundaries of what LLMs can reason about). As synthetic data becomes the primary training fuel, his work on filtering and sampling protocols becomes critical infrastructure.",
+    "linkedin_url": "https://www.linkedin.com/in/etash-guha-00097116a/",
+    "twitter_url": null,
+    "website_url": "https://etash.me/",
+    "scholar_url": "https://scholar.google.com/citations?user=QMV3HxMAAAAJ&hl=en"
+  },
+  {
+    "name": "Stephen McAleer",
+    "affiliation": "Anthropic (Alignment Science team), PhD UC Irvine, postdoc CMU",
+    "problems_worked_on": [
+      "Reinforcement learning for LLM alignment and capability",
+      "Scalable oversight for agent alignment",
+      "Control/monitoring for coding agents",
+      "Adversarial training for robust reward models",
+      "Reward hacking and deception in agents",
+      "Multiagent RL and game theory",
+      "Solving combinatorial puzzles with deep RL"
+    ],
+    "what_makes_them_spiky": [
+      "5,804+ citations on Google Scholar",
+      "Featured in The Information: 'Will Reinforcement Learning Get Us to AGI? This Anthropic Researcher Thinks So'",
+      "Solved Rubik's Cube with Deep RL and Search (ICLR 2019)",
+      "PhD under Pierre Baldi (UC Irvine), postdoc with Tuomas Sandholm (CMU - leading game theory researcher)",
+      "Research scientist internships at Intel Labs and DeepMind during PhD",
+      "MATS mentor for AI safety",
+      "Publications at NeurIPS, ICML, ICLR, AISTATS"
+    ],
+    "key_work": [
+      "Solving the Rubik's Cube with Deep Reinforcement Learning and Search (ICLR 2019)",
+      "Research on scalable oversight and agent alignment at Anthropic",
+      "Multiagent RL and Nash equilibria in large games",
+      "Scheming evaluations and mitigations"
+    ],
+    "companies_founded": [],
+    "current_work": "Member of Technical Staff on Anthropic's Alignment Science team, working on RL-based approaches to agent alignment, scalable oversight, and monitoring for coding agents",
+    "alpha_insight": "Stephen represents Anthropic's bet that RL is the path to both more capable AND more aligned AI. His specific focus areas - control/monitoring for coding agents, adversarial training for robust monitors, reward hacking detection - are exactly the problems that need to be solved before autonomous AI agents can be safely deployed at scale. His game theory background (Nash equilibria, CMU with Sandholm) gives him a unique lens on multi-agent alignment.",
+    "linkedin_url": "https://www.linkedin.com/in/stephen-mcaleer/",
+    "twitter_url": "https://x.com/McaleerStephen",
+    "website_url": "https://mcaleste.github.io/",
+    "scholar_url": "https://scholar.google.com/citations?user=iEFL4-YAAAAJ&hl=en"
+  },
+  {
+    "name": "Elijah Kurien",
+    "affiliation": "Cursor (Anysphere), prev Dorm Room Fund Managing Partner, Waterloo SE",
+    "problems_worked_on": [
+      "AI-powered code editing and software development",
+      "Background coding agents on VMs",
+      "Computer vision and AI tooling",
+      "Early-stage venture capital (DRF)"
+    ],
+    "what_makes_them_spiky": [
+      "Software Engineer at Cursor/Anysphere ($29.3B valuation, $1B+ ARR)",
+      "Was Managing Partner at Dorm Room Fund (DRF backed Anysphere/Cursor itself)",
+      "Built background coding agent with 1.4K GitHub stars",
+      "University of Waterloo Software Engineering (top Canadian CS program)",
+      "Breadth across AI, hardware, and biology",
+      "Berkeley AI Hackathon finalist"
+    ],
+    "key_work": [
+      "Engineering at Cursor (the AI code editor defining the future of software development)",
+      "Background coding agent (1.4K GitHub stars) - async code execution on VMs",
+      "Engineer-4o: VSCode + GitHub-integrated SWE agent",
+      "Video-to-ASCII WebGL React component"
+    ],
+    "companies_founded": [],
+    "current_work": "Software Engineer at Cursor, building the AI-native code editor used by millions of developers",
+    "alpha_insight": "Elijah is building at the company that may be defining how all software is written in the future. Cursor went from 0 to $1B+ ARR faster than almost any software company in history. His DRF background (where he invested in early-stage startups including Anysphere itself) gives him unusual product intuition for what developers actually need. The background coding agent project (1.4K stars) shows he thinks about async/autonomous coding - likely informing Cursor's agent features.",
+    "linkedin_url": "https://www.linkedin.com/in/elijah-kurien/",
+    "twitter_url": "https://x.com/ElijahKurien",
+    "website_url": "https://www.elijahkurien.com/",
+    "scholar_url": null
+  },
+  {
+    "name": "James Chen",
+    "affiliation": "Stanford CS, Jane Street",
+    "problems_worked_on": [
+      "Operating systems development (built full OS from scratch in C on Raspberry Pi)",
+      "Quantitative trading and software engineering",
+      "Low-level systems programming (GPIO, malloc, virtual memory, threads, file system)",
+      "GPU rendering and hardware interfaces"
+    ],
+    "what_makes_them_spiky": [
+      "Built a full operating system from scratch in C on Raspberry Pi (GPIO, malloc, virtual memory, threads, file system)",
+      "Ported DOOM with HDMI/GPU rendering, custom GPIO controller, and PWM controlled speaker",
+      "Incoming SWE Intern at Jane Street (one of the most selective quant firms)",
+      "Judge at Stanford TreeHacks 2024",
+      "Co-authored publication with Stanford NLP researchers"
+    ],
+    "key_work": [
+      "Full OS implementation from scratch on Raspberry Pi",
+      "DOOM port with custom hardware rendering",
+      "Co-authored publication (with Harshit Joshi, Shicheng Liu, Robert Weigle, Monica S. Lam)"
+    ],
+    "companies_founded": [],
+    "current_work": "Stanford CS student, incoming SWE intern at Jane Street",
+    "alpha_insight": "Deep systems programming ability (building a full OS from scratch, porting DOOM to custom hardware) combined with Jane Street placement suggests someone who understands computing from the metal up. This kind of low-level expertise is increasingly rare and valuable as AI pushes hardware limits. Co-authorship with Monica Lam's group at Stanford suggests NLP research involvement alongside systems work.",
+    "linkedin_url": "https://www.linkedin.com/in/james-y-chen/",
+    "twitter_url": null,
+    "website_url": null,
+    "scholar_url": null
+  },
+  {
+    "name": "Lillian Sun",
+    "affiliation": "Harvard CS/Stat '26, prev HRT",
+    "problems_worked_on": [
+      "Weak-to-strong trustworthiness in language models",
+      "AI safety and alignment generalization",
+      "Quantitative trading (C++ at HRT)",
+      "Cognitive science"
+    ],
+    "what_makes_them_spiky": [
+      "ICML 2025 Outstanding Paper Award (1 of only 6 out of 15,000 submissions)",
+      "First paper at Harvard won one of the most prestigious ML awards",
+      "Multiple papers at ICML 2025 workshops (MOSS, CFAgentic, SIM, TTODLer-FM)",
+      "C++ software engineering intern at Hudson River Trading",
+      "Maintained daily GitHub commit streak since October 2019 (5+ years)",
+      "Attended CogSci 2024"
+    ],
+    "key_work": [
+      "Generalizing Trust: Weak-to-Strong Trustworthiness in Language Models (ICML 2025 Outstanding Paper)",
+      "Multiple ICML 2025 workshop papers on agents and LLM optimization",
+      "C++ quantitative engineering at Hudson River Trading"
+    ],
+    "companies_founded": [],
+    "current_work": "Harvard CS/Stat student, prolific AI safety researcher, publishing on trustworthiness generalization in language models",
+    "alpha_insight": "Her ICML Outstanding Paper on 'weak-to-strong trustworthiness' addresses one of the most important open questions in AI alignment: can we use weaker models to ensure stronger models are trustworthy? This directly relates to the scalable oversight problem that becomes critical as models surpass human ability. Winning this award as an undergrad's first paper is extraordinary. Her 5+ year daily commit streak signals exceptional consistency and discipline.",
+    "linkedin_url": "https://www.linkedin.com/in/lilsun/",
+    "twitter_url": null,
+    "website_url": null,
+    "scholar_url": null
+  },
+  {
+    "name": "Bonnie Li",
+    "affiliation": "Google DeepMind (Research Engineer), McGill University",
+    "problems_worked_on": [
+      "Frontier AI model development (Gemini 2.5, Gemini 3)",
+      "World models and embodied AI (Genie 2, SIMA 2)",
+      "In-context imitation learning (LMAct)",
+      "Domain adversarial reinforcement learning",
+      "Meta-learning for efficient exploration"
+    ],
+    "what_makes_them_spiky": [
+      "Contributor to Gemini 2.5 and Gemini 3 (Google's flagship AI models)",
+      "Key contributor to Genie 2 (large-scale foundation world model) and SIMA 2 (generalist embodied agent)",
+      "Started fundamental RL research at Mila under Yoshua Bengio at age 17",
+      "Published at ICML 2024, NeurIPS DRLW 2020",
+      "Experience at NVIDIA and Google before DeepMind",
+      "5,394+ followers on X/Twitter"
+    ],
+    "key_work": [
+      "Gemini 2.5 and Gemini 3 (Google's frontier AI models)",
+      "Genie 2: A Large-Scale Foundation World Model (key contributor)",
+      "SIMA 2: Generalist Embodied Agent for Virtual Worlds",
+      "LMAct: In-Context Imitation Learning with Long Multimodal Demonstrations (ICML 2024)",
+      "Domain Adversarial Reinforcement Learning (NeurIPS DRLW 2020)"
+    ],
+    "companies_founded": [],
+    "current_work": "Research Engineer at Google DeepMind working on frontier models (Gemini), world models (Genie), and embodied AI agents (SIMA)",
+    "alpha_insight": "Bonnie is at the center of DeepMind's most ambitious projects: Gemini (frontier LLMs), Genie 2 (world models that can generate entire interactive 3D environments), and SIMA 2 (generalist agents that operate in virtual worlds). The convergence of these three lines of research - language understanding, world simulation, and embodied agency - is likely DeepMind's path toward AGI. Starting RL research under Yoshua Bengio at 17 shows exceptional early trajectory.",
+    "linkedin_url": "https://www.linkedin.com/in/bonniesjli/",
+    "twitter_url": "https://x.com/bonniesjli",
+    "website_url": "https://bonniesjli.github.io/",
+    "scholar_url": null
+  },
+  {
+    "name": "Spruce Campbell",
+    "affiliation": "MIT Physics, prev OpenAI, Decart",
+    "problems_worked_on": [
+      "Real-time AI world models (Oasis)",
+      "Transformer-based interactive video generation",
+      "Computational biology (KellisLab at MIT)",
+      "AI applications in healthcare",
+      "Bioengineering"
+    ],
+    "what_makes_them_spiky": [
+      "Co-author of Oasis: A Universe in a Transformer (Decart, 2024) - first real-time AI world model",
+      "Worked at OpenAI",
+      "Research at MIT KellisLab (Manolis Kellis' Computational Biology Group)",
+      "Invited to 10 Downing Street",
+      "Bridges physics, computational biology, and AI",
+      "MIT Physics background applied to AI/world models"
+    ],
+    "key_work": [
+      "Oasis: A Universe in a Transformer (2024) - real-time open-world AI model that generates interactive gameplay frame-by-frame",
+      "Research at MIT KellisLab on computational biology",
+      "Work at OpenAI"
+    ],
+    "companies_founded": [],
+    "current_work": "MIT Physics student exploring AI, bioengineering, and healthcare. Thinking about applying AI to the American healthcare system. Research at KellisLab.",
+    "alpha_insight": "Oasis demonstrated that transformers can generate entire interactive worlds in real-time (47ms per frame) - a fundamental proof that AI can simulate reality, not just describe it. Spruce's pivot from world models to computational biology and healthcare suggests he sees an opportunity to apply similar generative/simulation approaches to biological systems. The combination of physics training, world model expertise, and computational biology research at KellisLab is an unusual and powerful intersection for AI-driven drug discovery or healthcare.",
+    "linkedin_url": "https://www.linkedin.com/in/spruce-campbell-5a13061a6/",
+    "twitter_url": null,
+    "website_url": null,
+    "scholar_url": null
+  }
+]

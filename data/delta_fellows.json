@@ -1,0 +1,722 @@
+[
+  {
+    "name": "Alexi Gladstone",
+    "affiliation": "Flapping Airplanes, UIUC CS PhD",
+    "photo": "https://framerusercontent.com/images/qYNLkwcNeWIQl2HqE9ItAevKwOs.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Luke Melas-Kyriazi",
+    "affiliation": "Cursor, prev Oxford PhD",
+    "photo": "https://framerusercontent.com/images/LGYweg5qQ7v3bzw3m9BDl1e4Q.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Rohan Pandey",
+    "affiliation": "Periodic Labs, prev OpenAI",
+    "photo": "https://framerusercontent.com/images/0fysHtiazR6b8HFhQiPH0ayeh8.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Eric Han",
+    "affiliation": "OpenAI, Stanford EE",
+    "photo": "https://framerusercontent.com/images/J7zwNE27BQm4L0Dj26gjnD7b3w.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Bo Peng",
+    "affiliation": "Peking, ICPC World 2nd Place",
+    "photo": "https://framerusercontent.com/images/H0nAleqJhkDdK7JVW9yxDoB4ToA.png?width=400&height=400"
+  },
+  {
+    "name": "Lisa Dunlap",
+    "affiliation": "Berkeley EECS PhD",
+    "photo": "https://framerusercontent.com/images/DoN6F9P8x6ZsaND7O8qB2sfcuQ.png?width=400&height=400"
+  },
+  {
+    "name": "Kshitij Sodani",
+    "affiliation": "MIT CS, 2x IOI Gold",
+    "photo": "https://framerusercontent.com/images/uoJWgrXxUrgr9vbupFv2TlRpAA.png?width=400&height=400"
+  },
+  {
+    "name": "Emily Han",
+    "affiliation": "Modal, Stanford CS",
+    "photo": "https://framerusercontent.com/images/sEC7P0OtcnZY7ZKRtp3kQJfJRk.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Alex Zhang",
+    "affiliation": "MIT CS PhD, RLM Author",
+    "photo": "https://framerusercontent.com/images/536Xwb9OvrGfkPCE6eI2foLLtc.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Laker Newhouse",
+    "affiliation": "Muon Author, prev MIT Math",
+    "photo": "https://framerusercontent.com/images/biEsr5HgouB9oRKkiEdgQqW0ADQ.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Stuart Sul",
+    "affiliation": "Cursor, Stanford CS PhD",
+    "photo": "https://framerusercontent.com/images/txTQzmJWfjRA0CiwElyUdxO1UY.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Haneul Shin",
+    "affiliation": "Jane Street, prev Harvard CS + Math",
+    "photo": "https://framerusercontent.com/images/NhlxGO01WxFmhFCuqsoxBH5QZQg.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Cynthia Chen",
+    "affiliation": "Decagon",
+    "photo": "https://framerusercontent.com/images/3v9QaMlQd64pyj5Uh5RJIuJzw.jpeg?width=400&height=400"
+  },
+  {
+    "name": "John Yang",
+    "affiliation": "Stanford CS PhD, SWE-Bench Author",
+    "photo": "https://framerusercontent.com/images/GHS37UokIZuSg1uXILESMtpQ9hI.png?width=400&height=400"
+  },
+  {
+    "name": "Dan Biderman",
+    "affiliation": "Stanford CS Postdoc",
+    "photo": "https://framerusercontent.com/images/Mj8qMXqwpC4ifBxQV0lnXCMRtY.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Kevin Lu",
+    "affiliation": "Thinking Machines, prev OpenAI",
+    "photo": "https://framerusercontent.com/images/Rd3pMt6u5gTudwuOu1o8z5lFyl4.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Ronak Malde",
+    "affiliation": "Stealth, prev DeepMind",
+    "photo": "https://framerusercontent.com/images/e4WRq3Rrsv9pPXcyfQQ426zHBs.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Avanika Narayan",
+    "affiliation": "Rox, Stanford CS PhD",
+    "photo": "https://framerusercontent.com/images/vzQFa48zFWCJvRrqJUaKz3OFZA.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Grace Li",
+    "affiliation": "Design Arena",
+    "photo": "https://framerusercontent.com/images/Pi1WpFR85iAAX6AF70q9b4SQ4i0.png?width=400&height=400"
+  },
+  {
+    "name": "Gashon Hussein",
+    "affiliation": "Physical Intelligence",
+    "photo": "https://framerusercontent.com/images/YQaM8K49TZ9wCV68gxWB4A0lRBk.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Jayesh Singla",
+    "affiliation": "Skild AI",
+    "photo": "https://framerusercontent.com/images/I1K7DEyWJJ7wbQF2qr0zGjorRns.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Welton Wang",
+    "affiliation": "OpenAI, prev Parallel",
+    "photo": "https://framerusercontent.com/images/4RSaFVWVfqBWD5s0OT1Bz9K0.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Rohan Kalahasty",
+    "affiliation": "a37, Caltech Physics",
+    "photo": "https://framerusercontent.com/images/0KCPw1bSA61jIcvNGBVfqjBMo.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Amy Jin",
+    "affiliation": "Decagon",
+    "photo": "https://framerusercontent.com/images/fVPEVfPrGxqQq28LjEjTnVF1Bo.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Zeyneb Kaya",
+    "affiliation": "Stanford CS",
+    "photo": "https://framerusercontent.com/images/rjxZPL5PiGvyqMiDhKdKoddRTI.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Nikita Mounier",
+    "affiliation": "Penn CS, prev Ramp, Rox",
+    "photo": "https://framerusercontent.com/images/fv6fShHaZUXEwfW8hx5dZNNYWrM.png?width=400&height=400"
+  },
+  {
+    "name": "Simon Guo",
+    "affiliation": "Stanford CS PhD",
+    "photo": "https://framerusercontent.com/images/g9FqGkxbHtIqlXwLvz2ndSZmc.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Oam Patel",
+    "affiliation": "Applied Compute",
+    "photo": "https://framerusercontent.com/images/gm4ItH6KDJsPfCPBW4cF8dJ3dUc.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Archer Wang",
+    "affiliation": "MIT CS PhD",
+    "photo": "https://framerusercontent.com/images/hPl9PcnMnTlAIWUkPkJQlL4g.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Hannah Gao",
+    "affiliation": "Stanford Math + CS, OpenAI",
+    "photo": "https://framerusercontent.com/images/MiV8kCTGWr6T1oqe5jx4L44gVk.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Sally Zhu",
+    "affiliation": "Flapping Airplanes, Stanford CS",
+    "photo": "https://framerusercontent.com/images/JBmn9iqhKIqJwwflrR9HQWK6Y.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Ayush Alag",
+    "affiliation": "OpenAI",
+    "photo": "https://framerusercontent.com/images/rr8g02Tyu6EjnfswRqhFD8dBw.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Brian Huang",
+    "affiliation": "DeepMind",
+    "photo": "https://framerusercontent.com/images/8bxQTOXOD0sCp23XBk39LxKU.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Aarav Wattal",
+    "affiliation": "Stanford EE + CS",
+    "photo": "https://framerusercontent.com/images/YPj6ZZAkAAbSwEBpLjJVHoM.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Thijs Simonian",
+    "affiliation": "Stanford CS, prev LMArena",
+    "photo": "https://framerusercontent.com/images/3D12QBmqHuPb5FTkKDzuoKo6k.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Grace Luo",
+    "affiliation": "Berkeley EECS PhD",
+    "photo": "https://framerusercontent.com/images/J3hfvmVEFpSZA2rfaEdOsYKF2ss.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Nina Boord",
+    "affiliation": "Cogent Security, prev Stanford CS",
+    "photo": "https://framerusercontent.com/images/KUJlBkTJNJHSQnXiQlBVCvyYA.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Alex Gu",
+    "affiliation": "MIT CS PhD",
+    "photo": "https://framerusercontent.com/images/rCELlkXcfhBk09bTyv12s2hHu3s.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Sachit Menon",
+    "affiliation": "Columbia CS PhD",
+    "photo": "https://framerusercontent.com/images/8mVqkKzfxAp3t0PxE0AHVqS5r0.png?width=400&height=400"
+  },
+  {
+    "name": "Xingjian Bai",
+    "affiliation": "MIT CS PhD",
+    "photo": "https://framerusercontent.com/images/xV4jylJcGlMXrqhZvOJjOTz5aI.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Joe Li",
+    "affiliation": "Stanford CS, Cognition",
+    "photo": "https://framerusercontent.com/images/YBdVUcl3K54B4VgxZWMGVZlz4RE.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Gauri Gupta",
+    "affiliation": "NeoSigma, prev Parallel, MIT CS PhD",
+    "photo": "https://framerusercontent.com/images/lnTcxQqNWp7DdFchh7cOT6g.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Mihika Dusad",
+    "affiliation": "MIT CS",
+    "photo": "https://framerusercontent.com/images/H16kddVi1s29tGPyA8yI8bwzCnY.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Etash Guha",
+    "affiliation": "Stanford CS PhD",
+    "photo": "https://framerusercontent.com/images/FCnYfGk3wMmOPFxpnN1FV2jk5UU.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Stephen McAleer",
+    "affiliation": "Anthropic",
+    "photo": "https://framerusercontent.com/images/VxBcELClmAlFtR5jX7GYxoqJE.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Elijah Kurien",
+    "affiliation": "Cursor",
+    "photo": "https://framerusercontent.com/images/jQWnkE7SpYlsdfR6m6DScYS0.jpeg?width=400&height=400"
+  },
+  {
+    "name": "James Chen",
+    "affiliation": "Stanford CS, Jane Street",
+    "photo": "https://framerusercontent.com/images/i37yXagEFT1GKNuXvlwTzFdKkpA.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Lillian Sun",
+    "affiliation": "Harvard CS, prev HRT",
+    "photo": "https://framerusercontent.com/images/m2G2VBXzuoGaJJ4VbHGrWRBKuk.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Bonnie Li",
+    "affiliation": "DeepMind",
+    "photo": "https://framerusercontent.com/images/vW2WJT7k3U7V6h1Kf0CJwDYIVQg.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Spruce Campbell",
+    "affiliation": "MIT Physics, prev OpenAI",
+    "photo": "https://framerusercontent.com/images/m6LrGdW3Qu8Shu7F5lnhdR9jv0.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Khush Gupta",
+    "affiliation": "Penn CS, Together AI",
+    "photo": "https://framerusercontent.com/images/UtfyF47qaPQdyyHAIPikV74qDo.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Leonard Tang",
+    "affiliation": "Haize Labs",
+    "photo": "https://framerusercontent.com/images/5vD0jRDiAL8fA2fDZ20AR8LQQJI.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Sai Konkimalla",
+    "affiliation": "Stanford CS, Jane Street",
+    "photo": "https://framerusercontent.com/images/WkfCffl2tqGGNKKvHaDq4jfP4.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Sonya Jin",
+    "affiliation": "Stealth, Stanford CS",
+    "photo": "https://framerusercontent.com/images/L3AuYA3tDLhLQ0iy4WbcK0QJvFQ.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Niloofar Mireshghallah",
+    "affiliation": "Humans&amp;",
+    "photo": "https://framerusercontent.com/images/T2k3IvKmaNNYnYdoGQ6gaNv8WbE.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Patrick Wang",
+    "affiliation": "Voyage AI",
+    "photo": "https://framerusercontent.com/images/PvzkD7x3mjC7bodzlLUfiMDMdw.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Zeeshan Patel",
+    "affiliation": "Stealth, prev xAI, NVIDIA Research",
+    "photo": "https://framerusercontent.com/images/8D8dsByqdMoWy7nsdxpdz1a9kU.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Zirui (Colin) Wang",
+    "affiliation": "Berkeley EECS PhD",
+    "photo": "https://framerusercontent.com/images/9lh4HPNUaQoCeUQ0b3Vemkp50.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Isaac Fung",
+    "affiliation": "Anthropic",
+    "photo": "https://framerusercontent.com/images/36fI9JLlJQXuDgqVMa00a3Eq9uY.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Ally Nakamura",
+    "affiliation": "Stealth, prev Stanford CS",
+    "photo": "https://framerusercontent.com/images/yRBsAJlL7qCsIlok2MfIhyR4fs.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Brooke Joseph",
+    "affiliation": "OpenAI",
+    "photo": "https://framerusercontent.com/images/FTtwveVLwUdstqXIedRjhweUG1k.jpg?width=400&height=400"
+  },
+  {
+    "name": "Alex Shan",
+    "affiliation": "Judgment Labs",
+    "photo": "https://framerusercontent.com/images/DpkWCmAKZpiII5dvNvQY85U.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Rohan Tibrewal",
+    "affiliation": "Cartesia",
+    "photo": "https://framerusercontent.com/images/TqwJMGyiLt8YVmwpFXbTZCAtaQ.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Fan-Yun Sun",
+    "affiliation": "Moonlake, Stanford CS PhD",
+    "photo": "https://framerusercontent.com/images/63R0JLO2MEtRY1poDvz7r88PZzU.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Suvansh Sanjeev",
+    "affiliation": "OpenAI",
+    "photo": "https://framerusercontent.com/images/jdGv9eRzzpH4qbc9wt4S592EpX0.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Grace Lam",
+    "affiliation": "Character AI, Palantir",
+    "photo": "https://framerusercontent.com/images/BbtQBexcyGPa7RMtM52amZd8Lw.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Kavya Anbarasu",
+    "affiliation": "OpenAI",
+    "photo": "https://framerusercontent.com/images/P4TD57OWIb3mvuAlTnHemSlIt0.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Neil Kale",
+    "affiliation": "Stealth, prev CMU ML",
+    "photo": "https://framerusercontent.com/images/zliPES4SDC8djJeAgpyg6xhnp60.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Stephen Xie",
+    "affiliation": "Berkeley EECS",
+    "photo": "https://framerusercontent.com/images/Dzhx7e0TfzTiFNiBmRrRdfLRRc.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Isaac Ong",
+    "affiliation": "Anthropic",
+    "photo": "https://framerusercontent.com/images/UwutOHLPsSkBLlXSBguGqO4xqgk.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Eric Zhang",
+    "affiliation": "Waterloo, prev Suno",
+    "photo": "https://framerusercontent.com/images/rPd6XKvQnqTP52ofV1nWEWUGtY.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Helen Wang",
+    "affiliation": "Anthropic",
+    "photo": "https://framerusercontent.com/images/hVxTyJW9TtQPcIlg9dqGMDkts.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Sandra Yang",
+    "affiliation": "Stanford CS + Math",
+    "photo": "https://framerusercontent.com/images/u6s4eB3FH9IFzHGGvNQW0cC3U.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Sijun Tan",
+    "affiliation": "Berkeley EECS PhD, rLLM Author",
+    "photo": "https://framerusercontent.com/images/Q8XY68vGpTuJbf2r6VJSxOOk.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Kevin Wang",
+    "affiliation": "OpenAI, NeurIPS Best Paper",
+    "photo": "https://framerusercontent.com/images/V86XPVQAA2VgHzJwC6KDo1QE.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Hamza Mostafa",
+    "affiliation": "Waterloo CS, prev OpenAI",
+    "photo": "https://framerusercontent.com/images/GyeGSgSRokivspAunzQlARzMIw.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Arin Weling",
+    "affiliation": "IIT Bombay",
+    "photo": "https://framerusercontent.com/images/M8sphVTFGohmFSDj8G6bLTabphQ.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Allie Gu",
+    "affiliation": "prev xAI",
+    "photo": "https://framerusercontent.com/images/czXSX9TwfFfrqfTEyQIh7avslzI.jpeg?width=401&height=401"
+  },
+  {
+    "name": "Serena Ge",
+    "affiliation": "Datacurve",
+    "photo": "https://framerusercontent.com/images/i9GRvRupkHUlp5Ns3UQqWw33oSE.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Francesco Crivelli",
+    "affiliation": "Berkeley EECS",
+    "photo": "https://framerusercontent.com/images/M8mgr2iBbDBzLhWph26SRnA4.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Rohan Jain",
+    "affiliation": "CMU CS, DRW",
+    "photo": "https://framerusercontent.com/images/zVIm1jhQPKTjLNsTT6gHdqO5hA.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Damian Ho",
+    "affiliation": "Stanford CS, prev HRT",
+    "photo": "https://framerusercontent.com/images/X8p1Csl98Ek1R97LNpZfGiAkE.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Mingyang Deng",
+    "affiliation": "MIT CS PhD",
+    "photo": "https://framerusercontent.com/images/eMC55K2d9MHQV62mcrbbh04fqo.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Preston Fu",
+    "affiliation": "Berkeley EECS",
+    "photo": "https://framerusercontent.com/images/lE9m5FIqDGfFIqLOOI2Vug9PiRc.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Karthik Balaji Ganesh",
+    "affiliation": "Databricks",
+    "photo": "https://framerusercontent.com/images/Wsa6qr6MwFqZv0rcYqGjcWLhH8.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Devvrit Khatri",
+    "affiliation": "UT Austin CS, prev MSL",
+    "photo": "https://framerusercontent.com/images/6L3lF3xCebz8XRqhJWfMXLqaHs.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Hersh Godse",
+    "affiliation": "Stealth, prev Adept",
+    "photo": "https://framerusercontent.com/images/4W7ULO5Dz7AJDmTqhKFKOKYgMwk.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Shobhit Agarwal",
+    "affiliation": "Stanford CS",
+    "photo": "https://framerusercontent.com/images/LVLxeSQVBJz9HjsWMN7TRpIJTsM.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Andrew Ma",
+    "affiliation": "Harvard CSE, prev Jane Street",
+    "photo": "https://framerusercontent.com/images/IqvNJlf44OGSJ7VVjPgpNH5gOJA.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Rajan Agarwal",
+    "affiliation": "Waterloo SWE",
+    "photo": "https://framerusercontent.com/images/VyFYmF5HZbTOC3JwEF4TqWPk.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Ian Moore",
+    "affiliation": "Harvard CS",
+    "photo": "https://framerusercontent.com/images/P7nz4Ky4KPYJh4xnrKE1f0oWc.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Fan Pu Zeng",
+    "affiliation": "Jane Street",
+    "photo": "https://framerusercontent.com/images/LfRwpSEMCRaNLKnZm6BUW6rFQ.png?width=400&height=400"
+  },
+  {
+    "name": "Abhay Venkatesh",
+    "affiliation": "Anduril",
+    "photo": "https://framerusercontent.com/images/UtKjF3N44m4dHO9IXdoZhz3UHA.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Bolaji Makinde",
+    "affiliation": "Tesla",
+    "photo": "https://framerusercontent.com/images/OFv6Lh1XwVFAqrH8tIyhewlBOM.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Michael Wornow",
+    "affiliation": "Kinetic Systems, Stanford CS PhD",
+    "photo": "https://framerusercontent.com/images/X4a8XfKVqCk6sHLHjYy1EAfjH8.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Yusuf Ozuysal",
+    "affiliation": "Stealth, prev Snowflake",
+    "photo": "https://framerusercontent.com/images/8XFcbkb0UMw9b11rlrR3NKdDmfo.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Raj Palleti",
+    "affiliation": "AlphaXiv",
+    "photo": "https://framerusercontent.com/images/hWjFf9eBMfrFNXhqTawf6WOg8.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Aadi Nashikkar",
+    "affiliation": "Stealth, Stanford CS",
+    "photo": "https://framerusercontent.com/images/y54H36QhtGKjb1bVFjhfTl3jSGg.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Nate Marquez",
+    "affiliation": "Netflix",
+    "photo": "https://framerusercontent.com/images/7rcxNTKWYMU7sVqGdHOt5OmVOiE.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Allen Nie",
+    "affiliation": "DeepMind, Stanford CS PhD",
+    "photo": "https://framerusercontent.com/images/SfNdkAqF16MRSqlmnnvtxqsJMM.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Aditya Gupta",
+    "affiliation": "Stanford CS",
+    "photo": "https://framerusercontent.com/images/tIfJbPDVjkKddMaZRdfjeSF238.jpg?width=400&height=400"
+  },
+  {
+    "name": "Ameen Patel",
+    "affiliation": "Prime Intellect",
+    "photo": "https://framerusercontent.com/images/Ptr8p8lW9QbfDeRcLW74b04Gss.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Kartik Srinivas",
+    "affiliation": "Waymo",
+    "photo": "https://framerusercontent.com/images/K6EiWvqYzdHwpcAZhOEfYbclcbA.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Jeffrey Ma",
+    "affiliation": "Harvard CS PhD",
+    "photo": "https://framerusercontent.com/images/WFLUSuv8JMrVzfrs1ZWZhgfeL0I.jpeg?width=400&height=400"
+  },
+  {
+    "name": "David Krajewski",
+    "affiliation": "Reve, CMU CS",
+    "photo": "https://framerusercontent.com/images/7hglBLj8WLP0Em1fFGDUMZKrwG4.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Ishaan Javali",
+    "affiliation": "Princeton CS",
+    "photo": "https://framerusercontent.com/images/mXEADeqYZhT43tRezjQXYOhwcec.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Kirill Acharya",
+    "affiliation": "Stanford CS PhD",
+    "photo": "https://framerusercontent.com/images/wK4idRa5glr3BFWAEZBrR32XzZQ.jpg?width=400&height=400"
+  },
+  {
+    "name": "Ari Webb",
+    "affiliation": "Letta",
+    "photo": "https://framerusercontent.com/images/RpovEtUY7RKHYwovAH27V6Sn4tE.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Charles Ding",
+    "affiliation": "Stanford CS",
+    "photo": "https://framerusercontent.com/images/cuRbzg0rXNI41PudJ29N4DpMSM.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Aakash Mishra",
+    "affiliation": "Meta AI, Stanford CS",
+    "photo": "https://framerusercontent.com/images/8JAqDNgV1zmuzAG1sGjCR4y2as0.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Maxwell Jones",
+    "affiliation": "CMU ML PhD",
+    "photo": "https://framerusercontent.com/images/1xuQ2ZwCEEQYI9zbkV1MRECxVoQ.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Jonathan Mengedoht",
+    "affiliation": "Jane Street",
+    "photo": "https://framerusercontent.com/images/EeyWwO66KnUpmBRtkQPPmn8r80Q.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Jon Saad-Falcon",
+    "affiliation": "Stanford CS PhD",
+    "photo": "https://framerusercontent.com/images/02dvAFUhoip37ccjhnRC1v0PE.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Rohin Manvi",
+    "affiliation": "Berkeley EECS PhD",
+    "photo": "https://framerusercontent.com/images/zp4Rnq73lghoyHV7s0PLi1jPLOo.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Hima Tammineedi",
+    "affiliation": "Forge, CMU ML",
+    "photo": "https://framerusercontent.com/images/X2XdnX2WUwo0AXezHgqVTlxIXYo.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Utkarsh Priyam",
+    "affiliation": "CMU ML PhD",
+    "photo": "https://framerusercontent.com/images/RZUnaOVv3HVinFxLmrlDmj1VbJM.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Yassine Kachrad",
+    "affiliation": "Jane Street",
+    "photo": "https://framerusercontent.com/images/fB5A451dg0Fqu0FY37d4GH74I.png?width=400&height=400"
+  },
+  {
+    "name": "Samarth Goel",
+    "affiliation": "Harvey, prev HRT",
+    "photo": "https://framerusercontent.com/images/ln7w2vzWWPWjG04Ma3dF8jZ7Ug.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Taarush Grover",
+    "affiliation": "Stanford CS",
+    "photo": "https://framerusercontent.com/images/SZQ81BVWuJTNdDaPL5PADU7wU4.jpeg?width=400&height=400"
+  },
+  {
+    "name": "James Liu",
+    "affiliation": "Stanford CS",
+    "photo": "https://framerusercontent.com/images/26olZuUfPzIW8RPIkQf6QPH9hNQ.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Sudarshan Nambiar",
+    "affiliation": "Conway",
+    "photo": "https://framerusercontent.com/images/MU7AZdlke06FCrJLjnLZBNBB8.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Jaeyeon Kim",
+    "affiliation": "Harvard CS PhD",
+    "photo": "https://framerusercontent.com/images/TdJHCTdC4q17FDo8S7cVPl1u2Q.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Rong Ye",
+    "affiliation": "Avoca",
+    "photo": "https://framerusercontent.com/images/PZdpAPfWXNbpwOF0JZ4BUbYM.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Niklas Muennighoff",
+    "affiliation": "Stanford CS PhD",
+    "photo": "https://framerusercontent.com/images/VcwNMXKUdlmVjZ4LxNuqPZHRVU.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Arjun Karanam",
+    "affiliation": "Stealth, Stanford CS",
+    "photo": "https://framerusercontent.com/images/IMGujKRI0ecbxcGqvOW26iFqaY.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Harsh Shah",
+    "affiliation": "Tesla AI",
+    "photo": "https://framerusercontent.com/images/6QI5f1O7nMrH3xKPqg9u9IQ.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Austin Chen",
+    "affiliation": "Rox",
+    "photo": "https://framerusercontent.com/images/ReBE3tsjvxQ4k1rqKvetjuGoEAE.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Parsa Idehpour",
+    "affiliation": "Penn CS",
+    "photo": "https://framerusercontent.com/images/BkGYlmrm98jk9GCaO8UdIo86Z8M.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Daniel Zeng",
+    "affiliation": "Genesis Molecular AI",
+    "photo": "https://framerusercontent.com/images/JmM9hgJxzcblFRmV1XWDDFtoAug.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Adam Lee",
+    "affiliation": "Berkeley CS",
+    "photo": "https://framerusercontent.com/images/P0RNJmz5cN6G8E8OUWdGUWrK6g.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Michael Elabd",
+    "affiliation": "Stealth, prev DeepMind",
+    "photo": "https://framerusercontent.com/images/Gn2LI7p5IRLAE75N8LtHHp3LS0c.jpeg?width=400&height=400"
+  },
+  {
+    "name": "John Rho",
+    "affiliation": "Datacurve",
+    "photo": "https://framerusercontent.com/images/FPLK6lqNJvzQlTEGPIXzGWMHYuk.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Raj Mehta",
+    "affiliation": "Percepta",
+    "photo": "https://framerusercontent.com/images/oaLt10dRPGXfDFp3nCfGhLnlR0.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Zhening Li",
+    "affiliation": "MIT CS PhD",
+    "photo": "https://framerusercontent.com/images/F26cj36UO7PzQd9xuhqFewKiAQ.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Matthew Yang",
+    "affiliation": "CMU ML",
+    "photo": "https://framerusercontent.com/images/Ej6pKZbMjxLOLPbHlW4aA1hgHao.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Jerry Zhou",
+    "affiliation": "Rox",
+    "photo": "https://framerusercontent.com/images/3NWYUJdwfL17lgaGF4kcMpOjjG4.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Seaver Dahlgren",
+    "affiliation": "Amazon",
+    "photo": "https://framerusercontent.com/images/c5IIajfMc3X8NMqpbWKbYJEy33Y.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Jacob Zietek",
+    "affiliation": "a16z Engineering",
+    "photo": "https://framerusercontent.com/images/DRLiW4eMc2xC2RYwCuMCsyKI.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Joseph Melkonian",
+    "affiliation": "Meta Superintelligence Labs",
+    "photo": "https://framerusercontent.com/images/oL4WKTd23LZCgHewH7sItaIYNE.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Vincent Tombari",
+    "affiliation": "NVIDIA",
+    "photo": "https://framerusercontent.com/images/aJGUoAvLPMrswlE7xYkT3UEyqfA.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Chenglei Si",
+    "affiliation": "Stanford CS PhD",
+    "photo": "https://framerusercontent.com/images/sFo4TGpNjlNdJ4eSNMaHsA7jEKg.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Shreyas Sreenivas",
+    "affiliation": "Exa",
+    "photo": "https://framerusercontent.com/images/LjgPr32WcspEvLGXw7Z8qSMr4Rs.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Sid Bharthulwar",
+    "affiliation": "Jump Trading",
+    "photo": "https://framerusercontent.com/images/1eNXv5TaJG3A8bO2NKZmUOl1Xk.jpeg?width=400&height=400"
+  },
+  {
+    "name": "Lawrence Jang",
+    "affiliation": "CMU ML PhD",
+    "photo": "https://framerusercontent.com/images/3FfpUKrqvJkPDPaxJWuQ2DsY.jpeg?width=400&height=400"
+  }
+]

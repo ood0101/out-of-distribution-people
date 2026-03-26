@@ -1,0 +1,781 @@
+[
+  {
+    "name": "Alexi Gladstone",
+    "affiliation": "UIUC CS PhD (BLENDER Lab), NSF Graduate Research Fellow",
+    "problems_worked_on": [
+      "Energy-Based Models / Energy-Based Transformers (EBTs)",
+      "World models",
+      "System 2 reasoning / thinking",
+      "Self-supervised learning",
+      "Multimodal learning",
+      "Speech LLMs (Speech-N-LlaMA)"
+    ],
+    "what_makes_them_spiky": [
+      "Invented Energy-Based Transformers (EBTs) — first model to outscale feed-forward transformers, unlocking generalized reasoning on any modality without rewards",
+      "NSF Graduate Research Fellow with Yann LeCun and Yilun Du on thesis committee",
+      "Louis T. Rader Research Award at UVA (1 of 5 out of 1,400+ CS undergrads)",
+      "Won CDC Accelerated AI Award for AI-backed news analysis app built during Palantir internship"
+    ],
+    "key_work": [
+      "Energy-Based Transformers are Scalable Learners and Thinkers (arXiv 2507.02092) — EBTs achieve 35% higher scaling rate than Transformer++ across data, params, FLOPs",
+      "Speech-N-LlaMA (ICASSP 2025) — addressing exposure bias in Speech LLMs with Meta's LlaMA Speech team"
+    ],
+    "companies_founded": [],
+    "current_work": "PhD at UIUC building Energy-Based Transformers — a new architecture paradigm that reframes next-token prediction as energy optimization, enabling generalized reasoning/thinking on any modality",
+    "alpha_insight": "EBTs represent a fundamental paradigm shift: instead of one-shot feed-forward prediction, they iteratively refine predictions via gradient descent on an energy landscape. This could be the architecture that makes System 2 thinking native rather than bolted on via chain-of-thought.",
+    "linkedin_url": "https://www.linkedin.com/in/alexiglad/",
+    "twitter_url": "https://x.com/AlexiGlad",
+    "website_url": "https://alexiglad.github.io/",
+    "scholar_url": "https://www.researchgate.net/profile/Alexi-Gladstone"
+  },
+  {
+    "name": "Luke Melas-Kyriazi",
+    "affiliation": "Cursor (Anysphere), prev Oxford PhD (Visual Geometry Group)",
+    "problems_worked_on": [
+      "Computer vision and 3D generation",
+      "Vision-language models",
+      "AI-powered code editing / developer tools",
+      "Health informatics and clinical AI"
+    ],
+    "what_makes_them_spiky": [
+      "Rhodes Scholar (Class of 2020) from Harvard",
+      "2,000+ citations on Google Scholar",
+      "Multiple oral presentations at top venues (CVPR 2022 Oral, EMNLP 2022 Oral)",
+      "Managed $1.2M reserve fund as treasurer of Harvard Student Agencies (largest student-run company in the world)"
+    ],
+    "key_work": [
+      "Papers at NeurIPS 2023, CVPR 2022 (Oral), EMNLP 2022 (Oral), ICLR 2022, CVPR 2021",
+      "Oxford PhD on computer vision and 3D generation under Andrea Vedaldi",
+      "Research at Meta AI"
+    ],
+    "companies_founded": [],
+    "current_work": "Building Cursor — the AI-native code editor that has become the dominant IDE for AI-assisted programming",
+    "alpha_insight": "Luke bridges deep academic research (Oxford VGG, Rhodes Scholar) with product velocity at Cursor. His computer vision / multimodal background likely informs Cursor's approach to understanding code visually and contextually beyond just text.",
+    "linkedin_url": "https://www.linkedin.com/in/lukemelas/",
+    "twitter_url": "https://x.com/lukemelas",
+    "website_url": "https://lukemelas.github.io/",
+    "scholar_url": "https://scholar.google.com/citations?user=btHxkDIAAAAJ"
+  },
+  {
+    "name": "Rohan Pandey",
+    "affiliation": "Periodic Labs (Co-Founder), prev OpenAI",
+    "problems_worked_on": [
+      "RL for scientific discovery",
+      "GPT-5 class model training",
+      "Model architecture (pretraining, RL, inference)",
+      "Multimodal language models",
+      "Syntax-semantics and psycholinguistics"
+    ],
+    "what_makes_them_spiky": [
+      "Helped train GPT-5 class models at OpenAI",
+      "Became 'RL-pilled' at OpenAI after seeing Strawberry team saturate environments every few weeks",
+      "Carnegie Mellon honors thesis on semantics in multimodal LLMs",
+      "Early conviction that autonomous science is the highest-value RL environment"
+    ],
+    "key_work": [
+      "GPT-5 series training contributions at OpenAI",
+      "Taking the Bitter Lesson Seriously (Substack essay on why AI for science is the ultimate application of scaling)",
+      "CMU honors thesis on semantics in multimodal LLMs"
+    ],
+    "companies_founded": [
+      "Periodic Labs — teaching machines to do science, founded with ex-VP of Post-training at OpenAI (Liam) and ex-Head of Quantum Materials at Google DeepMind (Dogus)"
+    ],
+    "current_work": "Building Periodic Labs — creating an AI scientist that accelerates scientific discovery through RL, where verification is easier than generation. The thesis: AI can hill-climb compute and energy through experimentally verifiable science.",
+    "alpha_insight": "Rohan's core insight from OpenAI: RL works when verification < generation in difficulty. Science is the ultimate such domain — you can experimentally verify hypotheses. Periodic Labs is applying frontier RL (from the team that built ChatGPT and GNoME) to make AI do science autonomously.",
+    "linkedin_url": null,
+    "twitter_url": "https://x.com/khoomeik",
+    "website_url": "https://rpandey.tech/",
+    "scholar_url": "https://scholar.google.com/citations?user=j7OhJCEAAAAJ"
+  },
+  {
+    "name": "Eric Han",
+    "affiliation": "OpenAI, prev Meta AI, MS Stanford EE, BS Caltech",
+    "problems_worked_on": [
+      "Chain-of-thought reasoning lower bounds in transformers",
+      "RLHF / Mixture of Judges",
+      "Reasoning chain necessity in large language models",
+      "Information throughput and attention head dynamics"
+    ],
+    "what_makes_them_spiky": [
+      "At OpenAI working on fundamental questions about why reasoning traces must be long",
+      "Caltech undergrad + Stanford MS — elite technical pipeline",
+      "Research on proving that long explanations in models like GPT-5 Thinking and DeepSeek are fundamentally necessary, not just inefficiency",
+      "Co-authored 'The Perfect Blend: Redefining RLHF with Mixture of Judges'"
+    ],
+    "key_work": [
+      "Research on Chain-of-Thought lower bounds for Transformers — exploring how attention heads, model precision, and information throughput determine shortest possible reasoning chains",
+      "The Perfect Blend: Redefining RLHF with Mixture of Judges (2024)"
+    ],
+    "companies_founded": [],
+    "current_work": "At OpenAI, researching fundamental limits of reasoning in transformers — specifically proving that long reasoning traces are an inherent requirement, not a bug",
+    "alpha_insight": "Eric's research question is deeply important for the industry: if long CoT is provably necessary for certain tasks, it means we cannot shortcut reasoning — we must invest in inference compute. This has massive implications for model deployment costs and architecture design.",
+    "linkedin_url": "https://www.linkedin.com/in/eric-han1/",
+    "twitter_url": null,
+    "website_url": null,
+    "scholar_url": "https://openreview.net/profile?id=~Eric_Han1"
+  },
+  {
+    "name": "Bo Peng",
+    "affiliation": "Peking University, Turing Class",
+    "problems_worked_on": [
+      "AI safety and alignment",
+      "Grounding alignment methods in empirical regularities stable at scale",
+      "Cryptography (with Zhengzhong Jin, Elaine Shi, Tianren Liu)",
+      "Competitive programming at world-class level"
+    ],
+    "what_makes_them_spiky": [
+      "ICPC World Finals 2nd Place (47th ICPC, Luxor, Egypt) — representing Peking University",
+      "Peking University Turing Class (elite CS program)",
+      "International Grandmaster-level competitive programmer (handle: p_b_p_b)",
+      "Dual expertise: cryptography theory + AI alignment — rare combination"
+    ],
+    "key_work": [
+      "ICPC World Finals 2nd Place with PKU team",
+      "Research on AI alignment grounded in empirical regularities that remain stable at scale and under adversarial circumstances",
+      "Cryptography research with top theorists (Elaine Shi, Tianren Liu)"
+    ],
+    "companies_founded": [],
+    "current_work": "Researching AI safety at Peking University — building alignment algorithms whose security is based on explicit assumptions about how large models learn and represent information, not ad-hoc heuristics",
+    "alpha_insight": "Bo's unique angle on alignment: treat it like cryptography — build security guarantees on explicit, falsifiable assumptions rather than empirical heuristics. His crypto background gives him the formal tools to think about adversarial robustness of alignment methods in ways most ML researchers cannot.",
+    "linkedin_url": null,
+    "twitter_url": null,
+    "website_url": "https://p-b-p-b.github.io/",
+    "scholar_url": null
+  },
+  {
+    "name": "Lisa Dunlap",
+    "affiliation": "UC Berkeley EECS PhD (advisors: Joseph Gonzalez, Trevor Darrell)",
+    "problems_worked_on": [
+      "LLM/VLM evaluation and benchmarking",
+      "Automated data analysis",
+      "Explainable AI",
+      "Vision and language",
+      "GenAI evaluation methodology"
+    ],
+    "what_makes_them_spiky": [
+      "1,575+ Google Scholar citations",
+      "Created VibeCheck (ICLR 2025) — automated qualitative analysis of LLMs",
+      "VisDiff (CVPR 2024 Oral) — describing differences in image sets with natural language",
+      "Affiliated with UC Berkeley RISE Lab and Berkeley Vision & Learning Center"
+    ],
+    "key_work": [
+      "VibeCheck: Automated Qualitative Analysis of LLMs (ICLR 2025)",
+      "VisDiff: Describing Differences in Image Sets with Natural Language (CVPR 2024 Oral)",
+      "StringSight: Automatically Analyze Your Model Traces",
+      "21+ publications at NeurIPS, CVPR, ICLR, ICML"
+    ],
+    "companies_founded": [],
+    "current_work": "Building tools and methodologies to rigorously evaluate LLMs and VLMs — making evaluation itself more scientific and automated",
+    "alpha_insight": "Lisa is solving the meta-problem of AI: how do you know if your model is actually good? As models get more capable, evaluation becomes the bottleneck. Her work on VibeCheck and automated qualitative analysis is critical infrastructure for the entire field.",
+    "linkedin_url": "https://www.linkedin.com/in/lisabdunlap/",
+    "twitter_url": null,
+    "website_url": "https://lisabdunlap.com/",
+    "scholar_url": "https://scholar.google.com/citations?user=Vy16O5UAAAAJ"
+  },
+  {
+    "name": "Kshitij Sodani",
+    "affiliation": "MIT CS & Math Undergraduate",
+    "problems_worked_on": [
+      "Competitive programming at world-class level",
+      "Blockchain / zero-knowledge proofs (Keyless Blockchain)",
+      "Theoretical computer science",
+      "Algorithmic training and education"
+    ],
+    "what_makes_them_spiky": [
+      "2x IOI Gold Medalist — India's youngest-ever IOI gold medalist at age 17 (2023)",
+      "4 consecutive IOI medals (Bronze 2020, Silver 2021, Silver 2022, Gold 2023) — only Indian to achieve this",
+      "International Grandmaster on Codeforces (rating 2736)",
+      "Gold at Asia Pacific Informatics Olympiad 2023 — India's second-ever APIO gold",
+      "Youngest Indian IOI medalist at age 14 (2020)"
+    ],
+    "key_work": [
+      "Keyless Blockchain (MIT CSAIL, 2025) — ZK-proof-based wallet recovery via Google authentication",
+      "IOITC-2025 Faculty — training India's next IOI team",
+      "Founder of Algoplanet — competitive programming education platform"
+    ],
+    "companies_founded": [
+      "Algoplanet — competitive programming training community and educational platform"
+    ],
+    "current_work": "Undergraduate at MIT studying CS & Math, doing research in cryptography/blockchain at CSAIL, and mentoring the next generation of competitive programmers",
+    "alpha_insight": "Kshitij is a once-in-a-generation competitive programming talent who single-handedly reshaped India's IOI standing. His pivot toward cryptography and zero-knowledge proofs at MIT suggests he's building toward problems that require both algorithmic depth and theoretical rigor.",
+    "linkedin_url": null,
+    "twitter_url": "https://x.com/SinglaJayesh",
+    "website_url": "https://extraordinary.com/kshitij-sodani",
+    "scholar_url": null
+  },
+  {
+    "name": "Emily Han",
+    "affiliation": "Modal (Member of Technical Staff), Stanford CS (on leave)",
+    "problems_worked_on": [
+      "AI infrastructure and systems",
+      "GPU compute platforms",
+      "Cloud-native AI deployment",
+      "Developer tools for ML"
+    ],
+    "what_makes_them_spiky": [
+      "Took leave from Stanford to join Modal full-time — rare conviction for a student",
+      "Stanford ACM DevLab Co-Director",
+      "Working at one of the highest talent-density infrastructure companies in AI",
+      "Directly involved in scaling Modal to handle 1M+ sandboxes (Lovable), SDK 1.0, GPU Memory Snapshots, multi-node training"
+    ],
+    "key_work": [
+      "Modal SDK 1.0 launch contributions",
+      "GPU Performance Glossary",
+      "GPU Memory Snapshots feature",
+      "Multi-node training cluster infrastructure"
+    ],
+    "companies_founded": [],
+    "current_work": "Building AI compute infrastructure at Modal — the serverless platform powering some of the highest-scale AI workloads including Lovable's 1M+ sandboxes",
+    "alpha_insight": "Emily chose Modal over finishing Stanford, which signals the company's exceptional engineering culture. Modal is quietly becoming critical infrastructure for the AI wave — a 'picks and shovels' play. Her systems/AI focus at Stanford maps perfectly to building the next generation of compute platforms.",
+    "linkedin_url": null,
+    "twitter_url": "https://x.com/emilyhanyf",
+    "website_url": "https://github.com/emilyhanyf",
+    "scholar_url": null
+  },
+  {
+    "name": "Alex Zhang",
+    "affiliation": "MIT CSAIL PhD (advisors: Omar Khattab, Tim Kraska)",
+    "problems_worked_on": [
+      "Recursive Language Models (RLMs) — processing arbitrarily long prompts",
+      "Long-context reasoning and inference-time scaling",
+      "GPU kernel optimization",
+      "Software engineering AI benchmarks",
+      "AI for drug discovery"
+    ],
+    "what_makes_them_spiky": [
+      "Top graduating student of Princeton CS department",
+      "Created RLMs — enabling LLMs to process inputs 100x beyond their context window",
+      "RLM-Qwen3-8B outperforms base model by 28.3% and approaches vanilla GPT-5 quality",
+      "KernelBench (ICML 2025), SWE-bench Multimodal (ICLR 2025)",
+      "Core team of GPU MODE leaderboard — competitions with NVIDIA, AMD, Jane Street",
+      "Founded largest AI student org at Princeton"
+    ],
+    "key_work": [
+      "Recursive Language Models (arXiv 2512.24601) — general inference paradigm for arbitrarily long prompts",
+      "RLM-Qwen3-8B — first natively recursive language model",
+      "KernelBench (ICML 2025) — GPU kernel benchmarking",
+      "SWE-bench Multimodal (ICLR 2025)",
+      "VideoGameBench (2025)",
+      "KernelLLM-8B, Neo-1"
+    ],
+    "companies_founded": [],
+    "current_work": "PhD at MIT CSAIL building Recursive Language Models — a paradigm that treats long prompts as an external environment, allowing LLMs to recursively decompose and process inputs far beyond their context window",
+    "alpha_insight": "RLMs solve the context window problem from a fundamentally different angle than long-context training: instead of making the window bigger, make the model recursively call itself. This is inference-time compute scaling applied to context, not just reasoning — potentially more scalable than brute-force context extension.",
+    "linkedin_url": null,
+    "twitter_url": "https://x.com/a1zhang",
+    "website_url": "https://alexzhang13.github.io/",
+    "scholar_url": "https://scholar.google.com/citations?user=rtCr0q4AAAAJ"
+  },
+  {
+    "name": "Laker Newhouse",
+    "affiliation": "MIT Mathematics '25 (advisors: Jeremy Bernstein, Phillip Isola)",
+    "problems_worked_on": [
+      "Optimizer design (Muon) — steepest descent under matrix operator norm",
+      "Learning rate transfer across model widths",
+      "Weight regularization and Lipschitz constraints for transformers",
+      "Duality in deep learning",
+      "Education technology (Khan Academy for Ukraine)"
+    ],
+    "what_makes_them_spiky": [
+      "Co-author of Muon optimizer — now one of the most important alternatives to Adam",
+      "MIT M.Eng. thesis unifies SGD, Adam, Shampoo, and Muon under one framework",
+      "Leads Khan Academy for Ukraine — education impact at scale",
+      "Interdisciplinary: math, physics, negotiation, languages, philosophy, education",
+      "Taught Ukrainian high school students in Barcelona via MIT MISTI"
+    ],
+    "key_work": [
+      "Muon optimizer (with Keller Jordan et al.) — optimizer for hidden layers in neural networks that outperforms Adam",
+      "Old Optimizer, New Norm: An Anthology (with Jeremy Bernstein) — unifying optimizers as steepest descent under different norms",
+      "Modular Duality in Deep Learning (with Jeremy Bernstein) — learning rate transfer and faster training",
+      "Training Transformers with Enforced Lipschitz Constants (ICML 2025)",
+      "M.Eng. thesis: Duality, Weight Decay, and Metrized Deep Learning"
+    ],
+    "companies_founded": [],
+    "current_work": "Just graduated from MIT; research focuses on deep learning optimization theory — specifically the mathematical foundations that unify all major optimizers and enable principled design of new ones like Muon",
+    "alpha_insight": "Muon is not just another optimizer — it's derived from first principles (steepest descent under operator norm), which means it has theoretical backing that Adam lacks. Laker's framework for understanding all optimizers as 'steepest descent under a norm' could generate a whole family of better optimizers for different architectures.",
+    "linkedin_url": "https://www.linkedin.com/in/lakernewhouse/",
+    "twitter_url": null,
+    "website_url": "https://www.lakernewhouse.com/",
+    "scholar_url": "https://scholar.google.com/citations?user=PkVMiakAAAAJ"
+  },
+  {
+    "name": "Stuart Sul",
+    "affiliation": "Cursor (Anysphere) ML Engineer, Stanford MS CS (Hazy Research)",
+    "problems_worked_on": [
+      "ML systems / GPU kernel optimization",
+      "ThunderKittens project (speedy GPU kernels)",
+      "AI training and inference acceleration",
+      "Real-time recommendation systems",
+      "AI-driven e-commerce personalization"
+    ],
+    "what_makes_them_spiky": [
+      "Co-founded Blux (formerly Z.Ai) — raised $3M+, personalizes 10M+ Korean users' shopping experiences monthly",
+      "Research at Stanford Hazy Research under Chris Re on ThunderKittens",
+      "Professional electric guitarist — released two albums, lead guitarist and producer since 2008",
+      "BS from Seoul National University, MS at Stanford — cross-cultural technical depth"
+    ],
+    "key_work": [
+      "ThunderKittens GPU kernel project at Stanford SAIL / Hazy Research",
+      "Blux — AI personalization engine serving 10M+ users",
+      "ML kernel optimization for Cursor's AI training and inference"
+    ],
+    "companies_founded": [
+      "Blux (formerly Z.Ai) — AI-driven e-commerce personalization for Korean market, raised $3M+"
+    ],
+    "current_work": "ML Engineer at Cursor (Anysphere) accelerating AI training and inference through optimized kernel development, while doing graduate research on GPU kernels at Stanford Hazy Research",
+    "alpha_insight": "Stuart sits at the critical intersection of ML systems research (Hazy Research / ThunderKittens) and product (Cursor). Kernel-level optimization is the bottleneck for AI product performance, and his dual role means cutting-edge research flows directly into the most-used AI coding tool.",
+    "linkedin_url": "https://www.linkedin.com/in/stuartsul/",
+    "twitter_url": null,
+    "website_url": "https://stuartsul.com/",
+    "scholar_url": null
+  },
+  {
+    "name": "Haneul Shin",
+    "affiliation": "Jane Street (Quantitative Trader), Harvard CS + Math '23",
+    "problems_worked_on": [
+      "Quantitative trading and market making",
+      "Algorithmic trading systems",
+      "Data structures and algorithms (Teaching Fellow for Harvard CS 124)",
+      "Arbitrage in betting markets, portfolio optimization, algorithmic trade execution"
+    ],
+    "what_makes_them_spiky": [
+      "Quantitative Trader at Jane Street — one of the most selective hiring bars in the world",
+      "Co-founded Harvard Undergraduate Quantitative Traders (HUQT)",
+      "Phi Beta Kappa Marshal at Harvard",
+      "5 consecutive AIME qualifications, top 0.8% on AMC 10 (score 138)",
+      "MIT PRIMES-USA Research Intern",
+      "Canada and USA Mathcamp Scholar"
+    ],
+    "key_work": [
+      "Quantitative trading at Jane Street",
+      "MIT PRIMES-USA research",
+      "Teaching Fellow for Harvard CS 124 (Data Structures & Algorithms)",
+      "Co-founded HUQT — research projects on arbitrage, portfolio optimization, algorithmic execution"
+    ],
+    "companies_founded": [
+      "Harvard Undergraduate Quantitative Traders (HUQT) — co-founder"
+    ],
+    "current_work": "Quantitative Trader at Jane Street, applying math and CS to financial markets",
+    "alpha_insight": "Haneul represents the quant-to-AI pipeline that Jane Street is increasingly investing in. Jane Street is building significant ML infrastructure, and traders with deep CS + math foundations are uniquely positioned to apply AI to market-making at unprecedented scale.",
+    "linkedin_url": "https://www.linkedin.com/in/haneul-shin/",
+    "twitter_url": null,
+    "website_url": null,
+    "scholar_url": null
+  },
+  {
+    "name": "Cynthia Chen",
+    "affiliation": "Decagon (Engineer), Harvard CS BS/MS",
+    "problems_worked_on": [
+      "AI agents for customer support",
+      "Agent Operating Procedures (AOPs) for enterprise AI",
+      "Production AI agent deployment",
+      "Agentic system architecture"
+    ],
+    "what_makes_them_spiky": [
+      "Harvard Technology Innovation Fellow",
+      "Launched Startups @ Harvard — building entrepreneurial community",
+      "Engineer at Decagon — one of the fastest-growing enterprise AI companies (valued at $4.5B)",
+      "Built AOP Copilot — generates production-ready agent workflows from natural language",
+      "Research at Harvard Insight and Interaction Lab"
+    ],
+    "key_work": [
+      "AOP Copilot at Decagon — AI assistant generating production-ready agent workflows in seconds",
+      "Agent Operating Procedures (AOPs) — core architecture for Decagon's AI agents",
+      "Cross-functional engineering driving enterprise customer deployments"
+    ],
+    "companies_founded": [
+      "Startups @ Harvard — entrepreneurial community at Harvard"
+    ],
+    "current_work": "Engineer at Decagon building AI agents for enterprise customer experience — focusing on the Agent Operating Procedure architecture that powers production AI agent deployments",
+    "alpha_insight": "Decagon's $4.5B valuation and triple in 6 months shows enterprise AI agents are the hottest category. Cynthia's work on AOP Copilot (natural language to production agent workflows) is the key unlock — making agent deployment accessible to non-technical enterprise teams.",
+    "linkedin_url": "https://www.linkedin.com/in/chen-cynthia/",
+    "twitter_url": "https://x.com/chenxcynthia",
+    "website_url": "https://chenxcynthia.github.io/",
+    "scholar_url": null
+  },
+  {
+    "name": "John Yang",
+    "affiliation": "Stanford CS PhD (advisors: Ludwig Schmidt, Diyi Yang)",
+    "problems_worked_on": [
+      "AI for software engineering",
+      "Language agents",
+      "Language model evaluation",
+      "Autonomous code repair and issue resolution"
+    ],
+    "what_makes_them_spiky": [
+      "Creator of SWE-bench — THE benchmark for AI coding agents (4,981+ citations)",
+      "Created SWE-agent — open-source autonomous coding system competitive with Devin",
+      "Created SWE-smith (NeurIPS 2025 D&B Spotlight) — toolkit for scaling SWE-agent data",
+      "Nearly 5,000 Google Scholar citations as a 2nd-year PhD student",
+      "Defined the evaluation standard the entire AI coding industry uses"
+    ],
+    "key_work": [
+      "SWE-bench: evaluating AI on real-world GitHub issues (2,294 task instances from 12 Python repos)",
+      "SWE-agent: autonomous system matching Devin accuracy, 93s average, open source",
+      "SWE-smith: toolkit for scaling SWE-agent training data (NeurIPS 2025 D&B Spotlight)",
+      "SWE-bench Verified, Multimodal, and Multilingual variants",
+      "CodeClash: benchmarking goal-oriented software engineering"
+    ],
+    "companies_founded": [],
+    "current_work": "2nd-year Stanford CS PhD building the definitive benchmarks and agents for AI software engineering — SWE-bench is the industry standard evaluation",
+    "alpha_insight": "John effectively defined the entire competitive landscape for AI coding by creating the benchmark everyone uses. SWE-bench is to AI coding what ImageNet was to computer vision — whoever controls the benchmark shapes the field. His follow-up work (SWE-smith, SWE-agent) shows he's building the full stack, not just the eval.",
+    "linkedin_url": "https://www.linkedin.com/in/jyang20/",
+    "twitter_url": "https://x.com/jyangballin",
+    "website_url": "https://john-b-yang.github.io/",
+    "scholar_url": "https://scholar.google.com/citations?user=71G11ksAAAAJ"
+  },
+  {
+    "name": "Dan Biderman",
+    "affiliation": "Stanford CS/Stats Postdoc (advisors: Christopher Re, Scott Linderman), Academic Partner at Databricks Mosaic AI",
+    "problems_worked_on": [
+      "Efficient LLM post-training (LoRA vs full finetuning tradeoffs)",
+      "On-device / cloud LLM collaboration (Minions)",
+      "Pose estimation for neuroscience (Lightning Pose)",
+      "Long-context reasoning architectures",
+      "Numerical linear algebra for fast AI"
+    ],
+    "what_makes_them_spiky": [
+      "LoRA Learns Less and Forgets Less — one of the most influential papers on parameter-efficient finetuning",
+      "Minions (ICML 2025) — pioneering local-cloud LLM collaboration protocols",
+      "Lightning Pose (Nature Methods 2024) — semi-supervised pose estimation for biology",
+      "Titus M. Cowan Dissertation Prize for Excellence in Biomedical Research at Columbia",
+      "PhD Hooding Ceremony Speaker at Columbia 2025",
+      "Dual expertise: neuroscience PhD + ML systems postdoc — rare bridge"
+    ],
+    "key_work": [
+      "LoRA Learns Less and Forgets Less (TMLR 2024, ICLR 2025) — definitive study on LoRA tradeoffs",
+      "Minions (ICML 2025) — 5.7x cost reduction while recovering 97.9% of frontier model performance via local-cloud LLM collaboration",
+      "Lightning Pose (Nature Methods 2024) — semi-supervised pose estimation with physics-informed inductive biases"
+    ],
+    "companies_founded": [],
+    "current_work": "Stanford postdoc building efficient LLM post-training methods and on-device/cloud collaboration frameworks, while partnering with Databricks on production LLM research",
+    "alpha_insight": "Dan's Minions work may define how LLMs are actually deployed: not as monolithic cloud models, but as swarms of cheap local models guided by expensive cloud models. The 5.7x cost reduction at 97.9% performance recovery is exactly the economics that makes AI deployment viable at scale.",
+    "linkedin_url": "https://www.linkedin.com/in/dan-biderman-066039202/",
+    "twitter_url": null,
+    "website_url": "https://dan-biderman.netlify.app/",
+    "scholar_url": "https://scholar.google.com/citations?user=6WFbVJUAAAAJ"
+  },
+  {
+    "name": "Kevin Lu",
+    "affiliation": "Thinking Machines Lab, prev OpenAI, UC Berkeley (advised by Pieter Abbeel, Igor Mordatch)",
+    "problems_worked_on": [
+      "Reinforcement learning as sequence modeling (Decision Transformer)",
+      "Small model training and efficiency (4o-mini, o3-mini, 4.1-nano, 4.1-mini)",
+      "Synthetic data generation",
+      "Transfer learning across modalities"
+    ],
+    "what_makes_them_spiky": [
+      "Co-author of Decision Transformer — one of the most cited RL papers of the decade",
+      "Led development of GPT-4o-mini at OpenAI",
+      "Contributed to GPT-5 series, o3, o4-mini, 4.1-nano, 4.1-mini, o1-mini, o3-mini",
+      "Recruited to Thinking Machines Lab (Mira Murati's $120B startup) as key researcher",
+      "Prior experience at Hudson River Trading AI Labs"
+    ],
+    "key_work": [
+      "Decision Transformer: RL via Sequence Modeling (2021) — reframed RL as conditional sequence modeling, massively influential",
+      "GPT-4o-mini team lead at OpenAI",
+      "Contributions to GPT-5 series and o-series reasoning models",
+      "Pretrained Transformers as Universal Computation Engines (2021)"
+    ],
+    "companies_founded": [],
+    "current_work": "Research at Thinking Machines Lab (Mira Murati's startup, valued at $120B) — working with what he calls 'the highest density of research talent in the world'",
+    "alpha_insight": "Kevin's trajectory from Decision Transformer (reframing RL as sequence modeling) to leading small model training at OpenAI to Thinking Machines reveals a consistent thesis: the magic is in the data and training recipe, not the architecture. His view that RL cannot yet achieve GPT-1-to-GPT-4 level jumps suggests Thinking Machines is betting on pre-training innovation.",
+    "linkedin_url": "https://www.linkedin.com/in/kzl/",
+    "twitter_url": "https://x.com/_kevinlu",
+    "website_url": "https://kevinlu.ai/",
+    "scholar_url": "https://scholar.google.com/citations?user=E8s73dYAAAAJ"
+  },
+  {
+    "name": "Ronak Malde",
+    "affiliation": "Google DeepMind (RL for Agentic Coding), prev Windsurf, Stanford MS CS",
+    "problems_worked_on": [
+      "Post-training for agentic coding models",
+      "Reinforcement learning for code generation",
+      "Agentic IDE development",
+      "Software engineering AI models (SWE-1)"
+    ],
+    "what_makes_them_spiky": [
+      "Built SWE-1 at Windsurf — frontier software engineering model",
+      "Windsurf was his first job out of college and was acquired by DeepMind",
+      "Now at DeepMind working on RL for agentic coding — one of the hottest areas in AI",
+      "Stanford MS CS, high school valedictorian, National Merit",
+      "Got shoutout from Jensen Huang at start of 2025"
+    ],
+    "key_work": [
+      "SWE-1 model at Windsurf — competitive post-trained coding model from a startup",
+      "Windsurf agentic IDE — explosive growth product",
+      "Post-training research for agentic coding at Google DeepMind"
+    ],
+    "companies_founded": [],
+    "current_work": "At Google DeepMind working on RL post-training for agentic coding — pushing the frontier of AI models that can autonomously write and debug code",
+    "alpha_insight": "Ronak's path (Stanford -> Windsurf -> DeepMind acquisition) illustrates how the agentic coding space is consolidating. His insight that 'simply writing the right agentic harness gets you a lot of early wins as a product' suggests the moat in AI coding is in the agent scaffolding, not just the base model.",
+    "linkedin_url": "https://www.linkedin.com/in/ronak-malde/",
+    "twitter_url": "https://x.com/rronak_",
+    "website_url": null,
+    "scholar_url": null
+  },
+  {
+    "name": "Avanika Narayan",
+    "affiliation": "Rox (Co-Founder/AI), Stanford CS PhD, Knight-Hennessy Scholar",
+    "problems_worked_on": [
+      "AI agents for enterprise sales",
+      "Data management and ML systems",
+      "On-device / cloud LLM collaboration (Minions co-author)",
+      "CS education equity"
+    ],
+    "what_makes_them_spiky": [
+      "Knight-Hennessy Scholar — one of the most prestigious graduate fellowships globally",
+      "Co-founded Rox — AI agent swarm that grew sales reps' books by 30% in private beta",
+      "Stanford varsity women's tennis player",
+      "Sequoia Capital growth investment intern",
+      "Co-founded Everyone Deserves A Byte (EDAB) — CS education nonprofit reaching 10,000+ students",
+      "Co-author on Minions paper with Dan Biderman"
+    ],
+    "key_work": [
+      "Minions: Cost-efficient Collaboration Between On-device and Cloud LLMs (ICML 2025)",
+      "Publications in VLDB Endowment and NeurIPS 2023",
+      "Research with Christopher Re at Stanford on data management and ML systems"
+    ],
+    "companies_founded": [
+      "Rox — first enterprise-ready fleet of AI agents for sales (helped reps grow books by 30% in private beta)",
+      "Everyone Deserves A Byte (EDAB) — CS education nonprofit for low-income, first-generation students"
+    ],
+    "current_work": "Building Rox — an AI Agent Swarm designed to supercharge enterprise sales teams, the first enterprise-ready fleet of AI agents for sellers",
+    "alpha_insight": "Avanika combines rare traits: Stanford PhD research depth (Hazy Research, Minions), venture capital pattern matching (Sequoia intern), and founder execution (Rox already showing 30% book growth). The Minions research directly informs Rox's architecture — cost-efficient AI agents that collaborate.",
+    "linkedin_url": "https://www.linkedin.com/in/avanika-narayan-a35a02a3/",
+    "twitter_url": "https://x.com/avanika15",
+    "website_url": null,
+    "scholar_url": "https://scholar.google.com/citations?user=TCjBjSoAAAAJ"
+  },
+  {
+    "name": "Grace Li",
+    "affiliation": "Design Arena / Arcada Labs (CEO & Co-Founder), Harvard CS & Neuroscience",
+    "problems_worked_on": [
+      "AI-generated design evaluation and benchmarking",
+      "Crowdsourced AI benchmarks (design, prediction, social)",
+      "Human-AI interaction and design quality",
+      "Neurocognitive research (Harvard Medical School)"
+    ],
+    "what_makes_them_spiky": [
+      "Built Design Arena to 35K+ users across 135 countries in 3 weeks",
+      "World's largest crowdsourced benchmark for AI-generated design",
+      "Demo'd to Craig Federighi (Apple CTO) during Apple Intelligence internship",
+      "Harvard varsity sailing athlete",
+      "Co-directed Harvard Tech for Social Good",
+      "Y Combinator backed (Arcada Labs)"
+    ],
+    "key_work": [
+      "Design Arena — crowdsourced AI design benchmark with Elo rankings and leaderboards",
+      "Prediction Arena — evaluating AI reasoning about probable outcomes over time",
+      "Socials Arena — benchmarking AI on social content",
+      "Apple Intelligence / Photos / Memory Creation features"
+    ],
+    "companies_founded": [
+      "Arcada Labs / Design Arena (YC-backed) — platform for crowdsourced AI benchmarking across design, prediction, and social domains"
+    ],
+    "current_work": "CEO of Design Arena / Arcada Labs — building the definitive crowdsourced benchmarks for AI-generated design, with live Elo rankings across frontend, audio, image, and video generation",
+    "alpha_insight": "Grace identified that AI-generated design has no equivalent of LMSYS Chatbot Arena — no crowdsourced, real-user evaluation standard. Design Arena fills this gap for the multi-billion dollar design tool market. The 35K users in 3 weeks proves there's massive latent demand for understanding which AI design tools actually work.",
+    "linkedin_url": "https://www.linkedin.com/in/grace-li-721a4017b/",
+    "twitter_url": "https://x.com/grx_xce",
+    "website_url": "https://notes.designarena.ai/author/grace/",
+    "scholar_url": null
+  },
+  {
+    "name": "Gashon Hussein",
+    "affiliation": "Physical Intelligence (Researcher), Stanford CS",
+    "problems_worked_on": [
+      "Robot learning and foundation models",
+      "Vision-Language-Action (VLA) models",
+      "Generalist robot policies",
+      "Dexterous manipulation",
+      "Video generation with test-time training"
+    ],
+    "what_makes_them_spiky": [
+      "Co-author on Physical Intelligence's flagship papers: pi-0, pi-0.5, pi*0.6",
+      "Working at one of the most well-funded robotics companies (backed by Bezos, OpenAI, Sequoia, Khosla)",
+      "Contributed to pi-0 — the most capable generalist robot policy to date",
+      "Stanford CS background with hackathon wins",
+      "Co-authored video generation work with NVIDIA (TTT)"
+    ],
+    "key_work": [
+      "pi-0 (Pi-Zero) — first generalist policy combining multi-task, multi-robot data with new architecture",
+      "pi-0.5 — VLA with open-world generalization",
+      "pi*0.6 — VLA that learns from experience, addressing compounding error in imitation learning",
+      "One-Minute Video Generation with Test-Time Training (with NVIDIA)"
+    ],
+    "companies_founded": [],
+    "current_work": "Researcher at Physical Intelligence building foundation models for robotics — contributing to the pi series of generalist robot policies that aim to be the 'GPT moment' for physical AI",
+    "alpha_insight": "Physical Intelligence is the consensus pick for 'most likely to achieve general-purpose robotics,' and Gashon is a core contributor to their pi-0 series. The progression from pi-0 to pi*0.6 (learning from experience) mirrors the LLM trajectory from pre-training to RLHF — robots are entering their post-training era.",
+    "linkedin_url": "https://www.linkedin.com/in/gashon-hussein/",
+    "twitter_url": "https://x.com/GashonHussein",
+    "website_url": "https://www.ghussein.org/",
+    "scholar_url": "https://scholar.google.com/citations?user=pPO7zX8AAAAJ"
+  },
+  {
+    "name": "Jayesh Singla",
+    "affiliation": "Skild AI, MS CS CMU, IIT Bombay CSE",
+    "problems_worked_on": [
+      "General-purpose robotic intelligence",
+      "Reinforcement learning for robotics",
+      "Scalable policy gradients",
+      "Graph retrieval techniques"
+    ],
+    "what_makes_them_spiky": [
+      "JEE Advanced All India Rank 17 (out of 8.74 lakh students) — topped North Zone",
+      "100 percentile in JEE Mains (top 15 out of 874,000)",
+      "Published SAPG: Split and Aggregate Policy Gradients (ICML 2024)",
+      "At Skild AI — building the general-purpose robotic brain ($14B+ valuation)",
+      "CMU MS CS with robotics focus"
+    ],
+    "key_work": [
+      "SAPG: Split and Aggregate Policy Gradients (ICML 2024)",
+      "Bachelor's thesis on efficient graph retrieval (IIT Bombay, advised by Soumen Chakrabarti)",
+      "Adversarial model learning research with Peter Stone at UT Austin"
+    ],
+    "companies_founded": [],
+    "current_work": "At Skild AI building the omni-bodied robotic brain — a single general-purpose AI that works across any robot type or task, unconstrained by embodiment",
+    "alpha_insight": "Skild AI's thesis (one brain for all robots) is the polar opposite of task-specific robotics. Jayesh's RL expertise (ICML 2024 policy gradient work) directly applies to Skild's core challenge: training a single policy that generalizes across robot morphologies. The $14B valuation signals massive conviction in this approach.",
+    "linkedin_url": "https://www.linkedin.com/in/jayeshsingla/",
+    "twitter_url": "https://x.com/SinglaJayesh",
+    "website_url": "https://jayeshs999.github.io/",
+    "scholar_url": null
+  },
+  {
+    "name": "Welton Wang",
+    "affiliation": "OpenAI (Member of Technical Staff), Stanford CS",
+    "problems_worked_on": [
+      "Sora research and video generation",
+      "Web infrastructure for AI agents",
+      "Enterprise deep research APIs",
+      "Scalable content moderation",
+      "News media and content platforms"
+    ],
+    "what_makes_them_spiky": [
+      "At OpenAI working on Sora — one of the most ambitious generative AI projects",
+      "Previously built Parallel — enterprise deep research API achieving 48% accuracy vs GPT-4's 1% on BrowseComp",
+      "Founded CynderHost (acquired by h4y technologies)",
+      "Built ModerateHatespeech — abuse moderation for 300M+ users, processing 3B comments/year",
+      "Grew The Bipartisan Press from 0 to 2M readers in 2 years",
+      "Engineering at Thrive Capital"
+    ],
+    "key_work": [
+      "Sora research and product at OpenAI",
+      "Parallel Web Systems — enterprise deep research API outperforming major players on BrowseComp",
+      "ModerateHatespeech — scaled to 300M+ users and 3B comments/year"
+    ],
+    "companies_founded": [
+      "Parallel Web Systems — AI infrastructure for web search and deep research (outperformed OpenAI, Anthropic, Exa, Perplexity)",
+      "CynderHost — scalable WordPress infrastructure (acquired)",
+      "The Bipartisan Press — news publication grown to 2M readers",
+      "ModerateHatespeech — content moderation platform for 300M+ users"
+    ],
+    "current_work": "Member of Technical Staff at OpenAI focused on Sora research and product — building the next generation of video generation AI",
+    "alpha_insight": "Welton is a serial builder (4 companies before joining OpenAI, one acquired) now working on Sora. His Parallel Web Systems work (48% vs 1% on BrowseComp) shows he understands web-scale information retrieval at a deep level, which likely informs Sora's training data and real-world grounding challenges.",
+    "linkedin_url": null,
+    "twitter_url": "https://x.com/wltnwang",
+    "website_url": "https://weltonwang.com/",
+    "scholar_url": null
+  },
+  {
+    "name": "Rohan Kalahasty",
+    "affiliation": "a37 (Co-Founder & CEO), Caltech Physics",
+    "problems_worked_on": [
+      "AI agents for enterprise DevOps automation",
+      "Brain disease detection via gaze tracking (Vytal)",
+      "Machine learning for medicine and neuroscience",
+      "Infrastructure management at scale"
+    ],
+    "what_makes_them_spiky": [
+      "3x USA Biology Olympiad qualifier (2021-2023)",
+      "USACO Gold Division (top ~15%)",
+      "Thomas Jefferson High School for Science and Technology",
+      "Previously co-founded Vytal — brain health evaluation using gaze-tracking AI",
+      "Experience at Harvard Medical School, Mayo Clinic, and Roivant Sciences",
+      "Dropped out of Caltech to pursue a37"
+    ],
+    "key_work": [
+      "a37 — AI-native DevOps workspace with agents that reason across entire enterprise stacks",
+      "Vytal — novel gaze-tracking algorithm for brain disease early detection",
+      "Research at Harvard Medical School on ML for medicine"
+    ],
+    "companies_founded": [
+      "a37 (applied37) — AI agents for enterprise DevOps stack management, automating the most painful aspect of software engineering",
+      "Vytal — brain disease detection via ocular biometrics / gaze tracking"
+    ],
+    "current_work": "CEO of a37 — building the first platform for unifying and automating DevOps using AI coding agents, addressing the mismatch between accelerated development and manual infrastructure management",
+    "alpha_insight": "DevOps is the unsexy but massive pain point that AI coding tools haven't solved yet — Cursor/Copilot help write code but not manage infrastructure. a37's bet is that AI agents can reason across the full DevOps stack (Kubernetes, Terraform, CI/CD), which is where most engineering time is wasted.",
+    "linkedin_url": "https://www.linkedin.com/in/kalahasty/",
+    "twitter_url": null,
+    "website_url": "https://rohankalahasty.com/",
+    "scholar_url": "https://scholar.google.com/citations?user=ZCvompAAAAAJ"
+  },
+  {
+    "name": "Amy Jin",
+    "affiliation": "Decagon (Engineer), Harvard CS",
+    "problems_worked_on": [
+      "AI agents for enterprise customer experience",
+      "Computer vision for surgical skill assessment",
+      "Machine learning for healthcare",
+      "Agent engineer role definition and methodology"
+    ],
+    "what_makes_them_spiky": [
+      "Intel ISEF 2nd Place — international science competition",
+      "Davidson Fellow Laureate — one of the most prestigious STEM awards for young Americans",
+      "Best Paper Award at NeurIPS ML for Health Workshop",
+      "Regeneron Science Talent Search Scholar",
+      "ACM Cutler-Bell Prize in High School Computing (one of 5 nationwide)",
+      "First-author paper and oral at IEEE WACV",
+      "Stanford HAI affiliate"
+    ],
+    "key_work": [
+      "Tool Detection and Operative Skill Assessment in Surgical Videos Using Region-Based CNNs (IEEE WACV, oral)",
+      "Best Paper at NeurIPS ML for Health Workshop",
+      "Introducing the Agent Engineer role concept at Decagon",
+      "Computer vision for surgical technique analysis and feedback"
+    ],
+    "companies_founded": [],
+    "current_work": "Engineer at Decagon building and deploying AI agents for enterprise customer experience, defining the 'Agent Engineer' role that bridges LLM capabilities and business outcomes",
+    "alpha_insight": "Amy's concept of the 'Agent Engineer' as a new role (intersection of engineering, product, and GTM) may define a new job category as AI agents proliferate. Her early research applying CV to surgical assessment shows the same pattern — using AI to create feedback loops in complex human workflows.",
+    "linkedin_url": "https://www.linkedin.com/in/ayjin/",
+    "twitter_url": null,
+    "website_url": null,
+    "scholar_url": null
+  },
+  {
+    "name": "Zeyneb Kaya",
+    "affiliation": "Topological (YC S25, Co-Founder & CTO), Stanford CS",
+    "problems_worked_on": [
+      "Physics-based foundation models for CAD optimization",
+      "NLP for low-resource languages",
+      "Statistical physics of in-context learning (spin glasses, random matrix theory)",
+      "Robustness, adaptation, and efficient learning",
+      "Brain-computer interfaces"
+    ],
+    "what_makes_them_spiky": [
+      "Regeneron Science Talent Search 5th Place / $90K Winner (2024)",
+      "1st Place / $40K at Etched x Mercor x Cognition Hackathon (2025)",
+      "1st Place / Most Technical Winner at PearVC x Anthropic Hackathon (2025)",
+      "1st Place TreeHacks Capy Prize (2025) — brain-powered computer control via BCI + agentic AI",
+      "Coca-Cola Scholar (150 out of 103,000+ applicants)",
+      "Founded Romeyka Everlasting — computational preservation of endangered language",
+      "Co-founded Topological at YC S25 while still at Stanford"
+    ],
+    "key_work": [
+      "Topological (YC S25) — physics-based foundation models for CAD optimization",
+      "Algorithm for NLP of low-resource languages (Regeneron STS project)",
+      "MADLIBS — synthetic data generation algorithm surpassing benchmark SOTA with less data",
+      "Brain-computer-interface + agentic AI system for brain-powered natural language computer control",
+      "Research on statistical physics models explaining in-context learning"
+    ],
+    "companies_founded": [
+      "Topological (YC S25) — physics-based foundation models for CAD optimization",
+      "Romeyka Everlasting — nonprofit for computational documentation of endangered Romeyka dialect"
+    ],
+    "current_work": "CTO of Topological (YC S25) — building physics-based foundation models to optimize CAD workflows, applying physics-informed AI to transform engineering design",
+    "alpha_insight": "Zeyneb's unique edge: she combines physics intuition (statistical mechanics of transformers, physics simulations) with ML engineering (hackathon dominance) and linguistics (low-resource NLP). Topological's physics-based CAD optimization sits at this exact intersection — using physics priors to make AI models that actually understand physical constraints in engineering design.",
+    "linkedin_url": "https://www.linkedin.com/in/zeyneb-kaya/",
+    "twitter_url": "https://x.com/zeynebnkaya",
+    "website_url": "https://www.zeynebnk.com/",
+    "scholar_url": "https://scholar.google.com/citations?user=xHFzGFcAAAAJ"
+  }
+]

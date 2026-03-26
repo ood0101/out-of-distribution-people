@@ -1,0 +1,495 @@
+[
+  {
+    "name": "Hamza Mostafa",
+    "affiliation": "University of Waterloo CS, prev OpenAI",
+    "problems_worked_on": [
+      "Multi-agent systems",
+      "Long-horizon agents",
+      "Reinforcement learning",
+      "Backend development",
+      "Machine learning",
+      "Full-stack development"
+    ],
+    "what_makes_them_spiky": "Joined OpenAI's Agent team while still an undergrad at Waterloo. Kleiner Perkins (KP) Fellow. Exploring cutting-edge multi-agent systems and long-horizon planning agents.",
+    "key_work": "Work on OpenAI's Agent team focusing on multi-agent systems and long-horizon agents. Built spritesheet AI tools and various ML projects.",
+    "companies_founded": [],
+    "current_work": "On leave from Waterloo CS, exploring multi-agent systems, long-horizon agents, and reinforcement learning. Based in SF.",
+    "alpha_insight": "One of the youngest engineers to work on OpenAI's agent team; sits at the intersection of RL and agentic AI which is the hottest frontier in AI right now.",
+    "linkedin_url": "https://www.linkedin.com/in/hamza-mostafa/",
+    "twitter_url": "https://x.com/hamostaf04",
+    "website_url": "https://hamzamostafa.com/",
+    "scholar_url": null
+  },
+  {
+    "name": "Arin Weling",
+    "affiliation": "IIT Bombay, Sentry AI",
+    "problems_worked_on": [
+      "NAND flash memory devices",
+      "Mars rover electronics and controls",
+      "Construction project management apps",
+      "AI for security/surveillance"
+    ],
+    "what_makes_them_spiky": "Subsystem Lead (Electronics & Controls) for IIT Bombay Mars Rover Team, progressing from trainee to lead. At one of India's most elite engineering schools (IIT Bombay).",
+    "key_work": "Led electronics and controls for IIT Bombay's Mars Rover Team. Developed mobile app for construction project management (Flutter + Django). Research on NAND flash memory devices.",
+    "companies_founded": [],
+    "current_work": "B.Tech Electrical Engineering at IIT Bombay (2022-2026). Experience at Sentry AI.",
+    "alpha_insight": "Deep hardware-software crossover skill set from rover team experience; working at the intersection of AI and physical systems from an elite Indian engineering institution.",
+    "linkedin_url": "https://www.linkedin.com/in/arin-weling-584a39252/",
+    "twitter_url": null,
+    "website_url": null,
+    "scholar_url": null
+  },
+  {
+    "name": "Allie Gu (Anrui Gu)",
+    "affiliation": "xAI, prev UC Berkeley",
+    "problems_worked_on": [
+      "Large language models (Grok at xAI)",
+      "Chip inspection AI",
+      "Robotics (NYU GRAIL)",
+      "Recommendation algorithms",
+      "Deep learning",
+      "CS education for underserved communities"
+    ],
+    "what_makes_them_spiky": "Unique path from aspiring sci-fi writer to AI engineer at xAI. Led industry-leading chip inspection AI at Smith. Built recommendation algorithm at Frontrow Health as an intern with seasoned-level code quality. Tutored CS 182/282A Deep Learning at Berkeley.",
+    "key_work": "Working on Grok at xAI. Previously led chip inspection AI at Smith, robotics research at NYU GRAIL, and built the first recommendation algorithm at Frontrow Health. Researched in Berkeley AUTOLab.",
+    "companies_founded": [],
+    "current_work": "Engineer at xAI working on Grok. 'Grokking vibes @ xAI.'",
+    "alpha_insight": "Rare combination of creative writing background and deep ML engineering skill; her cross-cultural perspective (Beijing + California) and unconventional path gives her a unique lens on human-AI interaction.",
+    "linkedin_url": "https://www.linkedin.com/in/anruigu/",
+    "twitter_url": null,
+    "website_url": "https://anruigu.github.io/",
+    "scholar_url": null
+  },
+  {
+    "name": "Serena Ge",
+    "affiliation": "Datacurve (Co-Founder & CEO), prev University of Waterloo",
+    "problems_worked_on": [
+      "High-quality code training data for LLMs",
+      "Supervised fine-tuning data for coding workloads",
+      "Reinforcement learning environments for code",
+      "LLM reasoning capabilities",
+      "Synthetic data generation"
+    ],
+    "what_makes_them_spiky": "Dropped out of Waterloo to co-found Datacurve, which raised $17.7M total ($15M Series A led by Chemistry). Y Combinator W24. Forbes 30 Under 30. Distributed $1M+ in bounties to engineers. Taking on Scale AI in the data quality space.",
+    "key_work": "Co-founded Datacurve, which provides frontier coding data for training and evaluating LLMs using a 'bounty hunter' system for skilled engineers. Previously improved LLM reasoning capabilities at Cohere.",
+    "companies_founded": ["Datacurve"],
+    "current_work": "CEO of Datacurve, building the data infrastructure layer for frontier AI model training, starting with code.",
+    "alpha_insight": "Identified that the biggest bottleneck for vertical LLM capability is curated high-quality training data, not model architecture. The bounty-hunter model for sourcing expert data could expand far beyond code into finance, medicine, etc.",
+    "linkedin_url": "https://www.linkedin.com/in/serena-ge-4583731b4/",
+    "twitter_url": "https://x.com/serenaa_ge",
+    "website_url": "https://datacurve.ai/",
+    "scholar_url": null
+  },
+  {
+    "name": "Francesco Crivelli",
+    "affiliation": "UC Berkeley EECS, BAIR Lab",
+    "problems_worked_on": [
+      "Robot learning and embodied AI",
+      "Drone-based wildfire detection",
+      "Aptamer-based electrochemical sensing for stroke diagnosis",
+      "Low-cost robotics arms",
+      "AI for assistive robotics",
+      "Hardware CAD version control"
+    ],
+    "what_makes_them_spiky": "Founded a 501(c)(3) nonprofit for AI for Assistive Robotics AND a GitHub-like platform for hardware CAD design (built at Entrepreneur First, 0.3% acceptance rate). Voyager contributor for open-ended embodied agents. Projects span rocketry, satellites, EVs, analog/digital chip design.",
+    "key_work": "Research at BAIR on robot learning algorithms. Founded nonprofit connecting students to high-impact tech projects in developing countries (Chile, Guatemala, Philippines, Kenya, Uganda). Built CAD version control platform at Entrepreneur First.",
+    "companies_founded": ["501(c)(3) AI for Assistive Robotics nonprofit", "Hardware CAD platform (Entrepreneur First)"],
+    "current_work": "Senior EECS at Berkeley focused on creating algorithms that enable robots to learn by experiencing the world. Researcher at BAIR.",
+    "alpha_insight": "Bridging the gap between software AI and physical hardware with both a nonprofit (assistive robotics) and a startup (CAD version control) angle. The hardware CAD version control idea addresses a massive unmet need in hardware engineering workflows.",
+    "linkedin_url": "https://www.linkedin.com/in/francesco-crivelli/",
+    "twitter_url": null,
+    "website_url": "https://www.francescocrivelli.com/",
+    "scholar_url": null
+  },
+  {
+    "name": "Rohan Jain",
+    "affiliation": "Carnegie Mellon University CS, incoming DRW",
+    "problems_worked_on": [
+      "Quantitative trading",
+      "Software engineering",
+      "Mathematics competitions"
+    ],
+    "what_makes_them_spiky": "Attending IMSA (Illinois Mathematics and Science Academy), one of the top STEM high schools in the US. Organizer of CMIMC (Carnegie Mellon Informatics and Mathematics Competition). Interned at Meta as SWE. Incoming Quantitative Trading Analyst at DRW.",
+    "key_work": "Software engineering at Meta. Quantitative trading at DRW. Organizes CMIMC at Carnegie Mellon.",
+    "companies_founded": [],
+    "current_work": "Rising junior in CS at CMU, incoming Quantitative Trading Analyst Intern at DRW.",
+    "alpha_insight": "Strong quant + CS crossover from an elite STEM pipeline (IMSA -> CMU -> DRW). The math competition organizer background suggests deep algorithmic thinking.",
+    "linkedin_url": "https://www.linkedin.com/in/rjain37/",
+    "twitter_url": null,
+    "website_url": "https://www.rohanja.in/",
+    "scholar_url": null
+  },
+  {
+    "name": "Damian Ho",
+    "affiliation": "Stanford CS (MS), prev CMU, HRT, Jump Trading",
+    "problems_worked_on": [
+      "Competitive programming (ICPC)",
+      "Quantitative trading / market making",
+      "Low-latency C++ systems",
+      "Stigmergic approaches to network routing",
+      "Computer systems and algorithms"
+    ],
+    "what_makes_them_spiky": "ICPC North America Championship 2025 honorable mention (1st among Stanford teams, 4th at California site). Applied Avellaneda-Stoikov market making in low-latency C++ in global trading competition. Singapore Science & Engineering Fair Merit Award. Experience at both Jump Trading and HRT (two of the most elite quant firms).",
+    "key_work": "ICPC competitive programming at both CMU and Stanford. Global trading competition applying quantitative strategies in low-latency C++. Research on stigmergic network routing (improved AntNet algorithm).",
+    "companies_founded": [],
+    "current_work": "MS CS at Stanford with focus on computer systems and algorithms. Previously at HRT and Jump Trading.",
+    "alpha_insight": "Rare combination of elite competitive programming (ICPC) and elite quant trading (HRT + Jump). The low-latency C++ skills bridge algorithmic thinking and systems engineering.",
+    "linkedin_url": "https://www.linkedin.com/in/damianhxy/",
+    "twitter_url": null,
+    "website_url": null,
+    "scholar_url": null
+  },
+  {
+    "name": "Mingyang Deng",
+    "affiliation": "MIT CSAIL, PhD Candidate",
+    "problems_worked_on": [
+      "Generative models / diffusion models",
+      "Autoregressive image generation",
+      "Inference scaling for math olympiad problem solving",
+      "Theoretical computer science (subset sum, knapsack, graph algorithms)",
+      "Sampling methods for generative processes"
+    ],
+    "what_makes_them_spiky": "NeurIPS 2025 Oral paper. NeurIPS 2024 Spotlight on autoregressive image generation without vector quantization. Co-authored with Kaiming He. Key contributor to AI model achieving silver medal-level performance on International Mathematical Olympiad. Published at SODA 2023 (x2), ICALP 2022, MFCS 2022 in theoretical CS. Double major Math + CS at MIT.",
+    "key_work": "Autoregressive Image Generation without Vector Quantization (NeurIPS 2024 Spotlight, with Kaiming He). Restart Sampling for Improving Generative Processes (NeurIPS 2023). Multiple SODA/ICALP papers on approximation algorithms. Contributed to IMO silver-medal AI system.",
+    "companies_founded": [],
+    "current_work": "PhD Candidate at MIT CSAIL advised by Kaiming He and formerly Tommi Jaakkola. Working on generative models and inference scaling.",
+    "alpha_insight": "Extremely rare dual expertise in both theoretical computer science (SODA, ICALP) and cutting-edge ML (NeurIPS orals/spotlights with Kaiming He). The IMO silver-medal AI work suggests deep understanding of inference-time compute scaling for reasoning.",
+    "linkedin_url": null,
+    "twitter_url": null,
+    "website_url": "https://lambertae.github.io/",
+    "scholar_url": "https://scholar.google.com/citations?user=FoZvIbIAAAAJ&hl=en"
+  },
+  {
+    "name": "Preston Fu",
+    "affiliation": "UC Berkeley EECS, BAIR/RAIL Lab",
+    "problems_worked_on": [
+      "Scaling laws for reinforcement learning",
+      "Compute-optimal scaling for value-based RL",
+      "Building systems that efficiently learn general skills"
+    ],
+    "what_makes_them_spiky": "Undergrad publishing at ICML and NeurIPS on scaling laws for RL (advised by Sergey Levine and Aviral Kumar). Accel Scholar (2025). Research tackles one of the most important open questions in RL: how to scale compute optimally.",
+    "key_work": "Scaling laws for value-based RL (ICML 2025). Compute-optimal scaling for value-based RL (NeurIPS 2025). Collaborators include Sergey Levine, Aviral Kumar, Pieter Abbeel.",
+    "companies_founded": [],
+    "current_work": "Undergrad at UC Berkeley doing RL scaling laws research at RAIL/BAIR, advised by Sergey Levine and Aviral Kumar.",
+    "alpha_insight": "Working on the equivalent of Chinchilla scaling laws but for RL -- understanding compute-optimal training for RL agents. This is foundational work that will shape how the industry trains agentic AI systems.",
+    "linkedin_url": "https://www.linkedin.com/in/preston-fu/",
+    "twitter_url": null,
+    "website_url": "https://www.prestonfu.com/",
+    "scholar_url": "https://scholar.google.com/citations?user=VjtRFvEAAAAJ&hl=en"
+  },
+  {
+    "name": "Karthik Balaji Ganesh",
+    "affiliation": "Databricks, prev Google, CMU, IIT Hyderabad",
+    "problems_worked_on": [
+      "Applied AI research",
+      "Data infrastructure and systems",
+      "Machine learning engineering"
+    ],
+    "what_makes_them_spiky": "All India Rank 1 in CBSE Class 12 Science Stream Board Examinations (2019). Highest GPA in CS department at IIT Hyderabad for 3 consecutive years (2019-2021). Academic Excellence Award (2019, 2021). Winner of Indian National round and Runner Up in Asian Regional round of NASA/Boeing Space Settlement Design Competition. Now joined Google DeepMind.",
+    "key_work": "Software engineering at Databricks, Google, and TikTok. Academic excellence at IIT Hyderabad. Recently joined Google DeepMind working on applied AI research for Gemini adoption.",
+    "companies_founded": [],
+    "current_work": "Recently joined Google DeepMind, working on Applied AI research focusing on real-world adoption of Gemini. Previously SWE at Databricks.",
+    "alpha_insight": "All India Rank 1 in national board exams is an extraordinary achievement (competing against millions). His trajectory from IIT Hyderabad gold medalist -> CMU -> Databricks -> Google DeepMind shows exceptional trajectory compression.",
+    "linkedin_url": "https://www.linkedin.com/in/karthik-balaji-ganesh/",
+    "twitter_url": null,
+    "website_url": null,
+    "scholar_url": null
+  },
+  {
+    "name": "Devvrit Khatri",
+    "affiliation": "UT Austin CS (PhD), prev BITS Pilani, joining Reflection AI",
+    "problems_worked_on": [
+      "Large-scale machine learning efficiency and scalability",
+      "RL scaling for LLMs",
+      "Nested transformers for elastic inference (MatFormer)",
+      "Billion-point nearest neighbor search (DiskANN)",
+      "Extreme multi-label classification",
+      "Graph clustering",
+      "Adversarial robustness"
+    ],
+    "what_makes_them_spiky": "MatFormer won Best Paper at ENLSP NeurIPS 2023. DiskANN (NeurIPS 2019) enables billion-point nearest neighbor search on a single node. 602+ citations. BITS Pilani Institute Bronze Medal. Massive 400,000+ GPU-hour study on RL scaling for LLMs. Student researcher at both Google (with Prateek Jain) and Meta (with Rishabh Agarwal). Previously at Microsoft Research India.",
+    "key_work": "MatFormer: Nested Transformers for Elastic Inference (NeurIPS 2024). DiskANN: billion-point nearest neighbor search (NeurIPS 2019). The Art of Scaling RL Compute for LLMs (2025). Multiple NeurIPS papers on sparsification, graph clustering, and semi-supervised learning.",
+    "companies_founded": [],
+    "current_work": "Joining Reflection AI as Member of Technical Staff to build the 'open intelligence ecosystem.' Previously PhD student at UT Austin.",
+    "alpha_insight": "His work spans the full stack of ML efficiency -- from hardware-level search (DiskANN) to model architecture (MatFormer) to training methodology (RL scaling). The move to Reflection AI suggests he's betting on open-source frontier models.",
+    "linkedin_url": "https://www.linkedin.com/in/devvrit/",
+    "twitter_url": null,
+    "website_url": "https://www.devvrit.com/",
+    "scholar_url": "https://scholar.google.com/citations?user=c86HtPoAAAAJ&hl=en"
+  },
+  {
+    "name": "Hersh Godse",
+    "affiliation": "Amazon AGI Autonomy, prev Adept AI",
+    "problems_worked_on": [
+      "ML for autonomous systems (AGI Autonomy at Amazon)",
+      "Computer vision for medical diagnosis (blood smear disease detection, 96% accuracy)",
+      "FPGA-based lane departure warning systems",
+      "AI agent systems (Adept AI)"
+    ],
+    "what_makes_them_spiky": "Worked at Adept AI (pioneering AI agent company founded by Transformer paper co-authors). Built CV system detecting blood-borne diseases at 96% accuracy. FPGA-based OpenCV prototype for lane departure warning. Now at Amazon AGI in SF. Connected to persimmon-ai-labs on GitHub.",
+    "key_work": "ML research at Amazon AGI Autonomy. AI agent work at Adept. CV for blood disease detection. FPGA lane departure warning systems. Previously at Cruise AI Behaviors and UC Berkeley EECS.",
+    "companies_founded": [],
+    "current_work": "ML Research Engineer at Amazon AGI Autonomy in SF. Listed as 'Stealth, prev Adept' in Delta Fellows context, suggesting possible stealth project.",
+    "alpha_insight": "Deep experience across the agentic AI stack (Adept -> Amazon AGI). The Adept pedigree means he worked alongside Transformer co-authors on some of the earliest computer-use agents.",
+    "linkedin_url": "https://www.linkedin.com/in/hershgodse",
+    "twitter_url": null,
+    "website_url": null,
+    "scholar_url": null
+  },
+  {
+    "name": "Shobhit Agarwal",
+    "affiliation": "Stanford CS + Math",
+    "problems_worked_on": [
+      "Healthcare AI (clinical decision support, disease prediction)",
+      "Self-supervised learning for pathology (whole slide image classification)",
+      "Interpretability of joint-embedding models",
+      "Few-shot learning",
+      "NLP",
+      "AI infrastructure"
+    ],
+    "what_makes_them_spiky": "ACM/CSTA Cutler-Bell Prize winner ($10,000). Built OmniDoc, a disease prediction system deployed in a hospital in Jhansi, India with door-to-door patient screening. Published at SPIE Digital & Computational Pathology and ML4H 2023 (PMLR). Jane Street AMP Fellow. Organizes TreeHacks (largest collegiate hackathon). TAs CS106A and CS106B at Stanford.",
+    "key_work": "OmniDoc: disease diagnosis, prognosis, and treatment prediction deployed in Indian hospital. Self-supervised pathology pipeline for IDH Mutation & MGMT Methylation classification (SPIE 2023). Novel task-level explanation of joint-embedding models (ML4H 2023). ML intern at Ambience. Research at Harvard and SAIL.",
+    "companies_founded": [],
+    "current_work": "Stanford CS + Math student. Healthcare-AI research at Harvard and SAIL. Building AI infra at BeHeard Labs. TAs for CS106A/B.",
+    "alpha_insight": "Actually deployed an AI health system in underserved India, not just published a paper. This real-world deployment experience at a young age is extremely rare and shows builder mentality applied to genuine social impact.",
+    "linkedin_url": null,
+    "twitter_url": null,
+    "website_url": "https://sagarwal.me/",
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=G3sPjxgAAAAJ"
+  },
+  {
+    "name": "Andrew Ma",
+    "affiliation": "Harvard CSE (SM), prev Jane Street, UVA Alum",
+    "problems_worked_on": [
+      "Quantitative trading",
+      "Computational science and engineering",
+      "Search-and-rescue AI systems",
+      "Algorithmic trading and market making"
+    ],
+    "what_makes_them_spiky": "Jane Street experience (one of the most selective quant firms). Everhaven Securities (algorithmic trading). UVA to Harvard pipeline. Built ADAM (Autonomous Disaster Assistance Manager) search-and-rescue project at TreeHacks 2026.",
+    "key_work": "Quantitative trading at Jane Street. Algorithmic trading at Everhaven Securities. ADAM search-and-rescue project at TreeHacks 2026.",
+    "companies_founded": [],
+    "current_work": "Pursuing SM in Computational Science and Engineering at Harvard. Experience at Everhaven Securities.",
+    "alpha_insight": "Quant trading background (Jane Street + Everhaven) combined with CSE masters suggests interest in applying quantitative methods to broader computational problems beyond finance.",
+    "linkedin_url": "https://www.linkedin.com/in/andrewma5/",
+    "twitter_url": null,
+    "website_url": null,
+    "scholar_url": null
+  },
+  {
+    "name": "Rajan Agarwal",
+    "affiliation": "University of Waterloo Software Engineering",
+    "problems_worked_on": [
+      "Coding agents and autonomous software development",
+      "Browser-use agents",
+      "RL for LLM context compression",
+      "Self-driving delivery vehicles",
+      "Transit infrastructure optimization",
+      "Wearable AI (second brain)"
+    ],
+    "what_makes_them_spiky": "Built Shadow, an open-source background coding agent (1.4k GitHub stars) running in MicroVMs. Won Hack the North 2023 with Portal (wearable AI second brain). Finalist at Berkeley AI Hackathon with Skyline (transit optimization, 18% carbon emission reduction). Built self-driving delivery tank from scratch for Waterloo campus. Pioneered interoperable coding subagents in 2024. Worked at Amazon AGI (Nova Act) and Cohere Labs.",
+    "key_work": "Shadow: open-source background coding agent (1.4k stars). Portal: wearable AI winner of Hack the North 2023. Skyline: ML-powered city transit simulator. Self-driving delivery tank. RL-based 10x context compression for LLMs. Research at Amazon AGI on Nova Act browser agents and Cohere Labs on multilingual post-training.",
+    "companies_founded": ["Proximal (coding agents research)"],
+    "current_work": "Researching coding agents at Proximal. Waterloo SWE student.",
+    "alpha_insight": "Prolific builder who ships fast -- Shadow (coding agent), Portal (wearable AI), self-driving tank, Skyline, all while an undergrad. The Shadow project and Amazon AGI Nova Act work position him at the center of the agentic AI wave.",
+    "linkedin_url": "https://www.linkedin.com/in/rajansagarwal/",
+    "twitter_url": "https://x.com/_rajanagarwal",
+    "website_url": "https://www.rajan.sh/",
+    "scholar_url": null
+  },
+  {
+    "name": "Ian Moore",
+    "affiliation": "Harvard University CS",
+    "problems_worked_on": [
+      "Deep learning and computer vision",
+      "NLP and language models",
+      "Reinforcement learning for interventions (hyperbolic discounting)",
+      "Curriculum learning / midtraining for language models",
+      "Astrophysics and physics"
+    ],
+    "what_makes_them_spiky": "Forbes 30 Under 30. Won Grand Prize at Anthropic x Harvard hackathon (Linguapedia). Published on hyperbolic discounting in RL at Reinforcement Learning Conference 2025. Raised $17.7M in funding. Harvard BA in Astrophysics and Physics. Writer for The Harvard Crimson. Jane Street quant trading intern.",
+    "key_work": "Research on hyperbolic discounting for RL interventions (RL Conference 2025). Foundation model midtraining curriculum research (Harvard CS 2281R). Grand Prize Anthropic x Harvard hackathon. Forbes 30 Under 30.",
+    "companies_founded": [],
+    "current_work": "Harvard CS student (2022-2026). ML/AI researcher working on RL, computer vision, and NLP. Appears to be connected to a startup that raised $17.7M.",
+    "alpha_insight": "Physics/astrophysics background combined with ML research creates unique perspective on modeling complex systems. Forbes 30 Under 30 and $17.7M raise while still a student is exceptional.",
+    "linkedin_url": "https://www.linkedin.com/in/ianmmoore/",
+    "twitter_url": "https://twitter.com/imoore17",
+    "website_url": "https://www.ianmmoore.com/",
+    "scholar_url": null
+  },
+  {
+    "name": "Fan Pu Zeng",
+    "affiliation": "Jane Street, prev CMU CS (BS + MS)",
+    "problems_worked_on": [
+      "LLM research for trading (training models to write OCaml and perform trading tasks)",
+      "Theoretical foundations of deep learning (optimization and generalization)",
+      "Systems engineering (VM provisioning)",
+      "Cybersecurity (CTF binary exploitation and reverse engineering)",
+      "Competitive programming / informatics olympiad coaching"
+    ],
+    "what_makes_them_spiky": "ML Research Engineer at Jane Street working on LLMs for OCaml and trading. As instructor for Singapore's HCI Informatics Olympiad team, achieved best-ever performance (6 Golds, 3 Silvers from 10 students) at National Olympiad in Informatics 2018. CTF competitor with PPP (CMU's elite cybersecurity team). Built VM manager that became standard at Jane Street. TA for 10-708 Probabilistic Graphical Models. Contributed to Autolab for 5 years.",
+    "key_work": "ML Research at Jane Street on LLMs for OCaml/trading. Coached Singapore NOI team to record performance. 5 years contributing to CMU Autolab. CTF with PPP. VM provisioning system adopted firm-wide at Jane Street.",
+    "companies_founded": [],
+    "current_work": "ML Research Engineer at Jane Street in NYC, working on training LLMs for OCaml and trading tasks.",
+    "alpha_insight": "Jane Street's internal LLM work is largely invisible to the outside world. Fan Pu sits at the intersection of frontier ML research and quantitative finance, training models specifically for financial applications -- a space with enormous alpha.",
+    "linkedin_url": "https://www.linkedin.com/in/zengfanpu/",
+    "twitter_url": "https://x.com/FanPu_Zeng",
+    "website_url": "https://fanpu.io/",
+    "scholar_url": null
+  },
+  {
+    "name": "Abhay Venkatesh",
+    "affiliation": "Anduril Industries, CMU CS PhD",
+    "problems_worked_on": [
+      "Defense technology (Lattice OS)",
+      "Drone engineering and perception",
+      "Machine learning for autonomous systems",
+      "Containerization on drones",
+      "Game engine simulations for drone testing"
+    ],
+    "what_makes_them_spiky": "Employee #47 at Anduril (very early). CMU CS PhD. Wrote viral 'Startup Principles' document. Featured on podcasts discussing drone engineering, Rust, ML, and game engines for drone simulation. Research interests in ML and AI applied to defense. Anduril is one of the most important defense tech companies.",
+    "key_work": "Core engineering at Anduril on Lattice OS (defense operating system). PhD from CMU CS. 'Startup Principles' viral doc. Published research on ML/AI with 100+ citations. Podcast appearances on drone engineering.",
+    "companies_founded": [],
+    "current_work": "Software Engineer at Anduril Industries focused on Lattice OS infrastructure and platform engineering.",
+    "alpha_insight": "As employee #47, he helped build the technical foundation of what is now a $14B+ defense tech company. His experience bridging academic ML research (CMU PhD) with real-world defense deployment is extremely rare.",
+    "linkedin_url": "https://www.linkedin.com/in/abhayvenkatesh/",
+    "twitter_url": null,
+    "website_url": "https://abhayvenkatesh.com/",
+    "scholar_url": "https://scholar.google.com/citations?user=Inp7zBgAAAAJ&hl=en"
+  },
+  {
+    "name": "Bolaji Makinde",
+    "affiliation": "Tesla",
+    "problems_worked_on": [
+      "Information limited -- likely working on Tesla AI/Autopilot/Optimus related projects"
+    ],
+    "what_makes_them_spiky": "Selected as Delta Institute Fellow while at Tesla, one of the most technically demanding AI/robotics companies. Limited public footprint suggests deep technical focus over personal branding.",
+    "key_work": "Work at Tesla (specific details not publicly available).",
+    "companies_founded": [],
+    "current_work": "Engineer at Tesla. Specific role details not publicly indexed.",
+    "alpha_insight": "Very low public profile despite being at Tesla and selected as a Delta Fellow -- suggests someone who is heads-down building rather than optimizing for visibility. Tesla roles that qualify for this cohort likely involve Autopilot, Optimus, or Dojo.",
+    "linkedin_url": "https://www.linkedin.com/in/bolajimakinde",
+    "twitter_url": null,
+    "website_url": null,
+    "scholar_url": null
+  },
+  {
+    "name": "Michael Wornow",
+    "affiliation": "Kinetic Systems (founder), Stanford CS PhD",
+    "problems_worked_on": [
+      "Healthcare workflow automation with AI",
+      "Foundation models for clinical decision making",
+      "Enterprise workflow automation (ECLAIR)",
+      "Clinical trial patient matching with LLMs",
+      "Electronic health record (EHR) foundation models"
+    ],
+    "what_makes_them_spiky": "Founded Kinetic Systems (kineticsystems.ai) for healthcare workflow automation -- directly commercializing his PhD research. Published in NEJM AI on zero-shot clinical trial patient matching. ECLAIR paper proposes $4T/year productivity gains from enterprise automation. NSF Graduate Research Fellowship. Stanford HAI Graduate Fellowship. Harvard summa cum laude (CS + Statistics). PhD advised by Nigam Shah and Chris Re (two of the most influential names in clinical ML and data systems).",
+    "key_work": "Kinetic Systems: AI agents for healthcare back-office automation. 'Automating the Enterprise with Foundation Models' (ECLAIR). Zero-shot clinical trial patient matching with LLMs (NEJM AI). PhD thesis on automating healthcare workflows. Summa cum laude from Harvard.",
+    "companies_founded": ["Kinetic Systems"],
+    "current_work": "Founder of Kinetic Systems (healthcare workflow automation). Recently completed Stanford CS PhD.",
+    "alpha_insight": "Directly productizing Stanford research with two of the most connected advisors in the field (Nigam Shah + Chris Re). Healthcare back-office automation is a $4T opportunity per his own research. The NEJM AI publication gives clinical credibility that most AI startups lack.",
+    "linkedin_url": "https://www.linkedin.com/in/michael-wornow/",
+    "twitter_url": "https://x.com/michaelwornow",
+    "website_url": "https://michaelwornow.net/",
+    "scholar_url": "https://scholar.google.com/citations?user=rXYzcbcAAAAJ&hl=en"
+  },
+  {
+    "name": "Yusuf Ozuysal",
+    "affiliation": "Stealth, prev Snowflake (Cortex AI lead)",
+    "problems_worked_on": [
+      "AI infrastructure and platform engineering",
+      "LLM-powered data assistants (Snowflake Copilot)",
+      "Text-to-SQL models",
+      "Bringing AI models to enterprise data",
+      "Generative AI for data platforms"
+    ],
+    "what_makes_them_spiky": "Led engineering for Snowflake Cortex AI (powering Snowflake Copilot with Mistral). Stanford PhD in EE. 10+ years at Google before Neeva (acquired by Snowflake). Led Neeva's engineering. Drove Snowflake's $200M partnership with OpenAI. Now presumably building a stealth AI startup leveraging deep enterprise AI infrastructure experience.",
+    "key_work": "Built Snowflake Copilot (text-to-SQL + Mistral Large). Led Snowflake Cortex AI engineering. Previously led engineering at Neeva (acquired by Snowflake). 10+ years as SWE/Staff SWE at Google. Stanford PhD in EE.",
+    "companies_founded": ["Stealth startup (current)"],
+    "current_work": "Building something in stealth. Previously Principal AI Software Engineer leading Snowflake Cortex AI.",
+    "alpha_insight": "Extremely seasoned (Stanford PhD, 10yr Google, Neeva acquisition, Snowflake Cortex lead) -- far more senior than most fellows. His stealth venture likely targets enterprise AI infrastructure given his deep expertise in bringing AI to data platforms.",
+    "linkedin_url": "https://www.linkedin.com/in/yusufo/",
+    "twitter_url": null,
+    "website_url": null,
+    "scholar_url": null
+  },
+  {
+    "name": "Raj Palleti",
+    "affiliation": "alphaXiv (Co-Founder), Stanford CS (MS)",
+    "problems_worked_on": [
+      "Academic research collaboration and discussion platforms",
+      "Bridging AI research-to-practice gap",
+      "Robotics research",
+      "Reinforcement learning",
+      "NLP"
+    ],
+    "what_makes_them_spiky": "Co-founded alphaXiv, which raised $7M seed (co-led by Menlo Ventures and Haystack, angels include Eric Schmidt, Sebastian Thrun, Sara Hooker). Reached millions of users. Compared to 'GitHub for AI research.' Previous research at Stanford AI Lab (SAIL) and NVIDIA. Started as an undergrad project at Stanford.",
+    "key_work": "Co-founded alphaXiv: the de facto global workspace for AI researchers to discuss and collaborate on preprint papers. Raised $7M from Menlo Ventures, Haystack, Eric Schmidt, Sebastian Thrun, et al. Robotics and RL research at SAIL and NVIDIA.",
+    "companies_founded": ["alphaXiv"],
+    "current_work": "Co-Founder of alphaXiv, building the global workspace for AI researchers.",
+    "alpha_insight": "AlphaXiv is becoming the default discussion layer for AI research papers, creating a unique data asset: structured expert commentary on the entire AI research corpus. The angel investor list (Schmidt, Thrun, Hooker) validates this as infrastructure for the AI research ecosystem.",
+    "linkedin_url": "https://www.linkedin.com/in/raj-palleti/",
+    "twitter_url": null,
+    "website_url": "https://www.alphaxiv.org/@raj",
+    "scholar_url": null
+  },
+  {
+    "name": "Aadi Nashikkar",
+    "affiliation": "Stealth (Founder), Stanford CS",
+    "problems_worked_on": [
+      "AI education and accessibility",
+      "Travel recommendation engines",
+      "Startup building",
+      "AI curriculum development for underrepresented students"
+    ],
+    "what_makes_them_spiky": "Colorado Knowledge Bowl state champion. 4.499 GPA at Colorado Springs School. Founded All in AI to teach underrepresented high school students AI/coding. Co-founded Plava (travel recommendation engine). CTO at Kopia. Thoughtful critic of startup culture -- quotes on founders being too focused on resume-building over real impact.",
+    "key_work": "Current stealth startup. Founded All in AI (teaching underrepresented students). Co-founded Plava (vacation recommendation engine). CTO at Kopia. Stanford CS (2021-2025).",
+    "companies_founded": ["Stealth startup (current)", "All in AI", "Plava", "Kopia (CTO)"],
+    "current_work": "Founder at stealth startup. Stanford CS graduate.",
+    "alpha_insight": "Serial builder with a social impact lens (All in AI for underrepresented students). His critique of startup culture ('more people call themselves founders than should') suggests he builds for substance over hype.",
+    "linkedin_url": "https://www.linkedin.com/in/aadinash/",
+    "twitter_url": null,
+    "website_url": null,
+    "scholar_url": null
+  },
+  {
+    "name": "Nate Marquez",
+    "affiliation": "Netflix, CPO at Phia",
+    "problems_worked_on": [
+      "Generative AI-based search for streaming",
+      "Fashion tech / AI-powered fashion",
+      "AI data infrastructure",
+      "Brain-computer interfaces (Cortex: browser control with your mind)"
+    ],
+    "what_makes_them_spiky": "Worked on Netflix's Gen-AI based search (now live for members). Building Phia as CPO alongside Phoebe Gates (Bill Gates' daughter), Sophia Kianni, and Vikranth Keerthipati. Previously at Amazon (SDE intern) and Meta (AI Data Infrastructure). Built Cortex at CMU hackathon -- control your browser with your mind.",
+    "key_work": "Netflix Research: Gen-AI based search now available to all members. CPO at Phia (fashion tech). Amazon SDE intern. Meta AI Data Infrastructure. Cortex brain-computer interface hackathon project.",
+    "companies_founded": ["Phia (CPO/co-builder)"],
+    "current_work": "Building Phia as CPO (future of fashion). Netflix Research on generative AI search.",
+    "alpha_insight": "Building Phia with Phoebe Gates gives unique access to distribution and capital. The Netflix Gen-AI search work means he's shipped AI products to hundreds of millions of users -- rare operational experience.",
+    "linkedin_url": "https://www.linkedin.com/in/nathaniel-marquez/",
+    "twitter_url": null,
+    "website_url": null,
+    "scholar_url": null
+  },
+  {
+    "name": "Allen Nie",
+    "affiliation": "Google DeepMind, Stanford CS PhD",
+    "problems_worked_on": [
+      "Reinforcement learning (offline RL, in-context RL, causality)",
+      "NLP and language models",
+      "Clinical decision making with AI",
+      "AI for education",
+      "EHR foundation models (EHRSHOT, CLMBR-T-base)",
+      "LLM agents and optimization"
+    ],
+    "what_makes_them_spiky": "12,456+ citations. Published in Nature Digital Medicine (2x), NeurIPS, ICML. Best Paper at ICML 2025 EXAIT workshop. Created EHRSHOT benchmark and released CLMBR-T-base (141M parameter clinical foundation model). Co-creator of Trace. PhD co-advised by Emma Brunskill and Chris Piech at Stanford. Previous work at Microsoft Research and AWS. Research spans RL, NLP, clinical AI, and education -- unusually broad yet deep.",
+    "key_work": "EHRSHOT: EHR benchmark for few-shot evaluation of foundation models (released clinical foundation model). EVOLvE: Evaluating and Optimizing LLMs for Exploration (ICML 2025). DeepTag & VetTag (Nature Digital Medicine). DisSent (ACL 2019). OPERA (NeurIPS 2024). Best Paper ICML 2025 EXAIT.",
+    "companies_founded": [],
+    "current_work": "Research Scientist at Google DeepMind working on reinforcement learning.",
+    "alpha_insight": "One of the most prolific researchers in the cohort (12K+ citations). The EHRSHOT work is becoming a standard clinical AI benchmark. His unique span across RL, NLP, clinical AI, and education means he can identify cross-domain opportunities others miss. The move to DeepMind RL team suggests focus on agentic systems.",
+    "linkedin_url": "https://www.linkedin.com/in/allennie/",
+    "twitter_url": null,
+    "website_url": "https://anie.me/",
+    "scholar_url": "https://scholar.google.com/citations?hl=en&user=r90OelAAAAAJ"
+  }
+]
