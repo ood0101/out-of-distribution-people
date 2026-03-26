@@ -104,6 +104,16 @@ def generate_page(name, base_aff, photo, r):
     spiky = r.get('what_makes_them_spiky', [])
     key_work = r.get('key_work', [])
     companies_founded = r.get('companies_founded', [])
+
+    # Normalize strings to lists (some batches have strings instead of arrays)
+    if isinstance(spiky, str):
+        spiky = [s.strip() for s in spiky.split('. ') if s.strip()] if '. ' in spiky else [spiky]
+    if isinstance(problems, str):
+        problems = [s.strip() for s in problems.split('. ') if s.strip()] if '. ' in problems else [problems]
+    if isinstance(key_work, str):
+        key_work = [s.strip() for s in key_work.split('. ') if s.strip()] if '. ' in key_work else [key_work]
+    if isinstance(companies_founded, str):
+        companies_founded = [companies_founded]
     current = r.get('current_work', '')
     alpha = r.get('alpha_insight', '')
     links = make_links_html(r)
