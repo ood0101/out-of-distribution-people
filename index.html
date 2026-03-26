@@ -23,318 +23,1453 @@
     and the singular spike that makes them irreplaceable.
   </p>
 
+  <div class="search-bar"><input type="text" id="search-input" placeholder="Search by name, company, or tag..." /></div>
+
+  <div class="tag-filters">
+    <button class="tag-filter active" data-tag="all">all</button>
+    <button class="tag-filter" data-tag="founders">founders</button>
+    <button class="tag-filter" data-tag="frontier-labs">frontier-labs</button>
+    <button class="tag-filter" data-tag="researchers">researchers</button>
+    <button class="tag-filter" data-tag="quant">quant</button>
+    <button class="tag-filter" data-tag="ai-safety">ai-safety</button>
+    <button class="tag-filter" data-tag="vc-talent">vc-talent</button>
+    <button class="tag-filter" data-tag="aligned-agi">aligned-agi</button>
+    <button class="tag-filter" data-tag="stealth">stealth</button>
+    <button class="tag-filter" data-tag="delta">delta</button>
+  </div>
+
+  <div class="tier-legend"><span class="legend-t1">high conviction</span><span class="legend-t2">tracking</span><span class="legend-t3">indexed</span></div>
+
+  <p class="small faint mono" id="count">24 dossiers &middot; 144 Delta fellows</p>
+
   <h2>Directory</h2>
 
-  <p class="small faint mono" id="count">24 people indexed · 144 Delta fellows mapped</p>
+  <div class="card-grid">
 
-  <ul class="person-list" id="people-list">
-    <li>
-      <span><a href="people/pushmeet-kohli.html" class="name">Pushmeet Kohli</a> &mdash; <span class="muted">VP Research &amp; AI for Science, Google DeepMind. AlphaFold, AlphaEvolve, SynthID. TIME 100 AI.</span></span>
-      <span class="meta">ai-for-science</span>
-    </li>
-    <li>
-      <span><a href="people/neel-nanda.html" class="name">Neel Nanda</a> &mdash; <span class="muted">Mech Interp Lead, Google DeepMind. Double IMO Gold. Built TransformerLens. Reverse-engineering neural networks.</span></span>
-      <span class="meta">interpretability</span>
-    </li>
-    <li>
-      <span><a href="people/galen-mead.html" class="name">Galen Mead</a> &mdash; <span class="muted">Founder &amp; CEO, Standard Intelligence. Atlas Fellow. FDM-1, hertz-dev, 30 PB data cluster. Metalearning obsessive who incorporated.</span></span>
-      <span class="meta">metalearning · aligned-agi</span>
-    </li>
-    <li>
-      <span><a href="people/devansh-pandey.html" class="name">Devansh Pandey</a> &mdash; <span class="muted">Co-founder, Standard Intelligence. Atlas Fellowship&rsquo;s first employee. Oxford. HackUBA in rural Japan. Operational backbone of every ambitious project he touches.</span></span>
-      <span class="meta">institution-builder · aligned-agi</span>
-    </li>
-    <li>
-      <span><a href="people/neel-redkar.html" class="name">Neel Redkar</a> &mdash; <span class="muted">Standard Intelligence. Davidson Fellow. NeurIPS at 18 (independent, EV-funded). SineRider lead dev (3Blue1Brown). ISEF Grand Award. Throughput machine.</span></span>
-      <span class="meta">throughput · independent-research</span>
-    </li>
-    <li>
-      <span><a href="people/anne-ouyang.html" class="name">Anne Ouyang</a> &mdash; <span class="muted">Co-founder, Standard Kernel. Stanford PhD (on leave). Ex-NVIDIA cuDNN. KernelBench creator. USACO Finalist. Building the missing compiler for AI hardware.</span></span>
-      <span class="meta">kernel-engineering · gpu-systems</span>
-    </li>
-    <li>
-      <span><a href="people/chris-rinard.html" class="name">Chris Rinard</a> &mdash; <span class="muted">Co-founder, Standard Kernel. Stanford Computer Systems PhD (on leave). MIT 6.172 TA. ALIA-250 flight controls. Failed Web3 startup. CUDA kernels beating PyTorch.</span></span>
-      <span class="meta">kernel-engineering · systems</span>
-    </li>
-    <li>
-      <span><a href="people/benjamin-spector.html" class="name">Benjamin Spector</a> &mdash; <span class="muted">Co-founder, Flapping Airplanes ($180M). Hertz Fellow. Stanford CS PhD. IMO Silver. IOI Gold. Built compilers and kernels before betting on data-efficient learning.</span></span>
-      <span class="meta">data-efficient-learning · compilers</span>
-    </li>
-    <li>
-      <span><a href="people/asher-spector.html" class="name">Asher Spector</a> &mdash; <span class="muted">Co-founder, Flapping Airplanes. Stanford Stats PhD (Cand&egrave;s). Harvard Hoopes Prize. Annals of Statistics, JASA, JRSSB. Theory that ships as software.</span></span>
-      <span class="meta">statistical-inference · theory-to-software</span>
-    </li>
-    <li>
-      <span><a href="people/aidan-smith.html" class="name">Aidan Smith</a> &mdash; <span class="muted">Co-founder, Flapping Airplanes. Thiel Fellow. 3 years at Neuralink (BCI + speech). Chess.com at 16. Mycologist. Agency density incarnate.</span></span>
-      <span class="meta">bci · activation-energy</span>
-    </li>
-    <li>
-      <span><a href="people/cameron-fink.html" class="name">Cameron Fink</a> &mdash; <span class="muted">Co-founder &amp; CEO, Aaru (~$1B valuation). Dartmouth. 19 at founding. Synthetic audiences replacing focus groups. Predicted NY primary within 371 votes.</span></span>
-      <span class="meta">synthetic-audiences · market-simulation</span>
-    </li>
-    <li>
-      <span><a href="people/john-cole-kessler.html" class="name">John Cole Kessler</a> &mdash; <span class="muted">Co-founder &amp; CTO, Aaru (~$1B valuation). 15 at founding. Z Fellows. Led Potato&rsquo;s $4.5M seed. Building the simulation layer for human decision-making.</span></span>
-      <span class="meta">synthetic-audiences · teenage-founder</span>
-    </li>
-    <li>
-      <span><a href="people/karun-ram.html" class="name">Karun Ram</a> &mdash; <span class="muted">Quant Researcher, Optiver. Dartmouth &rsquo;25 Salutatorian (3.99+ GPA). Machine-certified TLA+ verification of concurrent Union-Find. Phi Beta Kappa. Neukom Prize. From Chennai to formal proofs to the trading floor.</span></span>
-      <span class="meta">formal-verification · quant-finance</span>
-    </li>
-    <li>
-      <span><a href="people/devendra-chaplot.html" class="name">Devendra Singh Chaplot</a> &mdash; <span class="muted">Embodied AI pioneer. Mistral AI co-founder (Mixtral, Pixtral). Founding team, Thinking Machines Lab. Now xAI &amp; SpaceX. IIT-JEE AIR 25. 3 Habitat challenge wins. 22K+ citations.</span></span>
-      <span class="meta">embodied-ai &middot; llm-training</span>
-    </li>
-    <li>
-      <span><a href="people/baris-akis.html" class="name">Baris Akis</a> &mdash; <span class="muted">Co-Founder &amp; President, Human Capital ($1.4B AUM). Head of Talent Engineering, xAI. First check into Brex. Built the &ldquo;CAA for engineers.&rdquo; Turkish immigrant who invented talent-as-venture-infrastructure.</span></span>
-      <span class="meta">venture-capital · talent-engineering</span>
-    </li>
-    <li>
-      <span><a href="people/cory-levy.html" class="name">Cory Levy</a> &mdash; <span class="muted">Founder, Z Fellows. Co-founder, After School (20M users, acquired). Forbes 30U30 2x. 54+ angel investments (Hebbia, Vise, Whop). Interned at Founders Fund in high school. Built Silicon Valley's most efficient young-founder on-ramp.</span></span>
-      <span class="meta">founder-pipeline &middot; angel-investor</span>
-    </li>
-    <li>
-      <span><a href="people/cristobal-valenzuela.html" class="name">Crist&oacute;bal Valenzuela</a> &mdash; <span class="muted">Co-founder &amp; CEO, Runway (~$3B). Chilean economics grad &rarr; NYU art school &rarr; co-invented Stable Diffusion &rarr; first commercial AI video generator. ml5.js creator. TIME100 AI. Oscar-winning VFX. The artist-CEO who defined generative video.</span></span>
-      <span class="meta">generative-ai &middot; art-x-technology</span>
-    </li>
-    <li>
-      <span><a href="people/dylan-reid.html" class="name">Dylan Reid</a> &mdash; <span class="muted">Managing Director, Zetta Venture Partners. Kairos Society CEO. Startup Chile. Co-founded Matter.io (3D printing, acquired). Forbes 30U30 Manufacturing (2015, inaugural). Cornell AAP Computational Design. Investing in &ldquo;latent sciences&rdquo; &mdash; AI-native biotech before it was consensus.</span></span>
-      <span class="meta">venture-capital &middot; ai-biotech</span>
-    </li>
-    <li>
-      <span><a href="people/kunvar-thaman.html" class="name">Kunvar Thaman</a> &mdash; <span class="muted">ML Engineer, Standard Intelligence. Incoming MIT CS PhD. BITS Pilani. &ldquo;Benchmark Inflation&rdquo; (ICML 2024). Built mechinterp.com from scratch. Self-directed alignment researcher who built his own on-ramp &mdash; neutrino physics to mech interp to aligned AGI lab.</span></span>
-      <span class="meta">mechanistic-interpretability &middot; ai-safety</span>
-    </li>
-    <li>
-      <span><a href="people/liam-mcnamara.html" class="name">Liam McNamara</a> &mdash; <span class="muted">Founder &amp; CEO, Cybe (YC W26, 7-fig ARR in 2 months). Co-founder, Matrix Biotech (dorm-room assay lab). Z Fellow. Queen&rsquo;s dropout at 18. First DL model for stroke recovery (UCSF). Only undergrad in a Nobel Prize-winning lab. Teaching at MIT in high school. From a 32K-person Canadian town.</span></span>
-      <span class="meta">cybersecurity &middot; teenage-founder</span>
-    </li>
-    <li>
-      <span><a href="people/zeeshan-patel.html" class="name">Zeeshan Patel</a> &mdash; <span class="muted">Stealth founder, prev xAI (first hire, built Grok Imagine &mdash; millions of videos/day in 3 months), prev NVIDIA Research (Cosmos, NeMo Tech Lead). Berkeley EECS MS (Efros + Malik). CVPR 2025. 461 citations. Founded STEM nonprofit at 15. Delta Fellow. ~22.</span></span>
-      <span class="meta">video-generation &middot; world-models</span>
-    </li>
-    <li>
-      <span><a href="people/josh-sirota.html" class="name">Josh Sirota</a> &mdash; <span class="muted">Founder &amp; CEO, Eragon AI ($12M at $100M valuation, a16z Speedrun SR005). Prompt-driven AI OS replacing enterprise software. Oracle + Salesforce GTM &rarr; quarter-life crisis &rarr; $100M in 7 months. Arielle Zuckerberg led. Penn State hockey goalie. Armonk, NY. 29.</span></span>
-      <span class="meta">enterprise-ai &middot; gtm-founder</span>
-    </li>
-    <li>
-      <span><a href="people/divy-thakkar.html" class="name">Divy Thakkar</a> &mdash; <span class="muted">Staff PM &amp; Researcher, Google DeepMind. Founding member of Google Research India + DeepMind India. Leads Gemini strategic research. CHI &rsquo;25 Best Paper. SAHELI: 130K+ maternal health beneficiaries (IAAI Best App). PhD + MBA. Angel investor. DA-IICT &rsquo;15, IIFT &rsquo;17. ~32.</span></span>
-      <span class="meta">human-centered-ai &middot; ai-for-social-good</span>
-    </li>
-    <li>
-      <span><a href="people/yuandong-tian.html" class="name">Yuandong Tian</a> &mdash; <span class="muted">Co-founder, Recursive (stealth). Ex-Meta FAIR Director (11 yrs). 22K+ citations. Built DarkForest Go (concurrent with AlphaGo) &amp; ELF OpenGo (first open-source to beat pros 20-0). StreamingLLM, GaLore, Coconut. ICML Outstanding Paper HM. CMU Robotics PhD. Sci-fi novelist. Rejected OpenAI/Nvidia/DeepMind to start company.</span></span>
-      <span class="meta">llm-reasoning &middot; game-ai</span>
-    </li>
-  </ul>
+    <a href="people/pushmeet-kohli.html" class="person-card" data-name="pushmeet kohli" data-tags="frontier-labs researchers" data-company="google deepmind" data-tier="2">
+      <div class="avatar" data-initials="PK"></div>
+      <div class="card-body">
+        <div class="card-name">Pushmeet Kohli</div>
+        <div class="card-role">VP Research, Google DeepMind</div>
+        <div class="card-spike">AlphaFold, AlphaEvolve, TIME 100 AI</div>
+      </div>
+    </a>
+
+    <a href="people/neel-nanda.html" class="person-card" data-name="neel nanda" data-tags="frontier-labs ai-safety researchers" data-company="google deepmind" data-tier="2">
+      <div class="avatar" data-initials="NN"></div>
+      <div class="card-body">
+        <div class="card-name">Neel Nanda</div>
+        <div class="card-role">Mech Interp Lead, Google DeepMind</div>
+        <div class="card-spike">Double IMO Gold. Reverse-engineering neural networks</div>
+      </div>
+    </a>
+
+    <a href="people/galen-mead.html" class="person-card" data-name="galen mead" data-tags="founders aligned-agi" data-company="standard intelligence" data-tier="1">
+      <div class="avatar" data-initials="GM"></div>
+      <div class="card-body">
+        <div class="card-name">Galen Mead</div>
+        <div class="card-role">Founder &amp; CEO, Standard Intelligence</div>
+        <div class="card-spike">Metalearning obsessive who incorporated an AGI lab</div>
+      </div>
+    </a>
+
+    <a href="people/devansh-pandey.html" class="person-card" data-name="devansh pandey" data-tags="founders aligned-agi" data-company="standard intelligence" data-tier="2">
+      <div class="avatar" data-initials="DP"></div>
+      <div class="card-body">
+        <div class="card-name">Devansh Pandey</div>
+        <div class="card-role">Co-founder, Standard Intelligence</div>
+        <div class="card-spike">Operational backbone &mdash; Atlas Fellowship's first employee</div>
+      </div>
+    </a>
+
+    <a href="people/neel-redkar.html" class="person-card" data-name="neel redkar" data-tags="aligned-agi researchers" data-company="standard intelligence" data-tier="2">
+      <div class="avatar" data-initials="NR"></div>
+      <div class="card-body">
+        <div class="card-name">Neel Redkar</div>
+        <div class="card-role">Standard Intelligence</div>
+        <div class="card-spike">Davidson Fellow. NeurIPS at 18. Throughput machine</div>
+      </div>
+    </a>
+
+    <a href="people/anne-ouyang.html" class="person-card" data-name="anne ouyang" data-tags="founders researchers" data-company="standard kernel" data-tier="2">
+      <div class="avatar" data-initials="AO"></div>
+      <div class="card-body">
+        <div class="card-name">Anne Ouyang</div>
+        <div class="card-role">Co-founder, Standard Kernel</div>
+        <div class="card-spike">Ex-NVIDIA cuDNN. KernelBench. Building the missing AI compiler</div>
+      </div>
+    </a>
+
+    <a href="people/chris-rinard.html" class="person-card" data-name="chris rinard" data-tags="founders researchers" data-company="standard kernel" data-tier="2">
+      <div class="avatar" data-initials="CR"></div>
+      <div class="card-body">
+        <div class="card-name">Chris Rinard</div>
+        <div class="card-role">Co-founder, Standard Kernel</div>
+        <div class="card-spike">CUDA kernels beating PyTorch. MIT 6.172 TA</div>
+      </div>
+    </a>
+
+    <a href="people/benjamin-spector.html" class="person-card" data-name="benjamin spector" data-tags="founders researchers" data-company="flapping airplanes" data-tier="1">
+      <div class="avatar" data-initials="BS"></div>
+      <div class="card-body">
+        <div class="card-name">Benjamin Spector</div>
+        <div class="card-role">Co-founder, Flapping Airplanes ($1.5B)</div>
+        <div class="card-spike">IMO Silver, IOI Gold, Hertz Fellow. ThunderKittens</div>
+      </div>
+    </a>
+
+    <a href="people/asher-spector.html" class="person-card" data-name="asher spector" data-tags="founders researchers" data-company="flapping airplanes" data-tier="1">
+      <div class="avatar" data-initials="AS"></div>
+      <div class="card-body">
+        <div class="card-name">Asher Spector</div>
+        <div class="card-role">Co-founder, Flapping Airplanes</div>
+        <div class="card-spike">Stanford Stats PhD (Cand&egrave;s). Theory that ships as software</div>
+      </div>
+    </a>
+
+    <a href="people/aidan-smith.html" class="person-card" data-name="aidan smith" data-tags="founders" data-company="flapping airplanes" data-tier="1">
+      <div class="avatar" data-initials="AS"></div>
+      <div class="card-body">
+        <div class="card-name">Aidan Smith</div>
+        <div class="card-role">Co-founder, Flapping Airplanes</div>
+        <div class="card-spike">Thiel Fellow. 3 yrs Neuralink. Agency density incarnate</div>
+      </div>
+    </a>
+
+    <a href="people/cameron-fink.html" class="person-card" data-name="cameron fink" data-tags="founders" data-company="aaru" data-tier="1">
+      <div class="avatar" data-initials="CF"></div>
+      <div class="card-body">
+        <div class="card-name">Cameron Fink</div>
+        <div class="card-role">Co-founder &amp; CEO, Aaru (~$1B)</div>
+        <div class="card-spike">19 at founding. Predicted NY primary within 371 votes</div>
+      </div>
+    </a>
+
+    <a href="people/john-cole-kessler.html" class="person-card" data-name="john cole kessler" data-tags="founders" data-company="aaru" data-tier="1">
+      <div class="avatar" data-initials="JK"></div>
+      <div class="card-body">
+        <div class="card-name">John Cole Kessler</div>
+        <div class="card-role">Co-founder &amp; CTO, Aaru (~$1B)</div>
+        <div class="card-spike">15 at founding. Z Fellows. Teenage founder prodigy</div>
+      </div>
+    </a>
+
+    <a href="people/karun-ram.html" class="person-card" data-name="karun ram" data-tags="quant researchers" data-company="optiver" data-tier="2">
+      <div class="avatar" data-initials="KR"></div>
+      <div class="card-body">
+        <div class="card-name">Karun Ram</div>
+        <div class="card-role">Quant Researcher, Optiver</div>
+        <div class="card-spike">Dartmouth Salutatorian. TLA+ formal verification of concurrent algorithms</div>
+      </div>
+    </a>
+
+    <a href="people/devendra-chaplot.html" class="person-card" data-name="devendra chaplot" data-tags="founders frontier-labs researchers" data-company="recursive" data-tier="1">
+      <div class="avatar" data-initials="DC"></div>
+      <div class="card-body">
+        <div class="card-name">Devendra Chaplot</div>
+        <div class="card-role">Co-founder, Recursive (stealth). Ex-Mistral</div>
+        <div class="card-spike">22K+ citations. Embodied AI + LLM training. 4 AI waves</div>
+      </div>
+    </a>
+
+    <a href="people/baris-akis.html" class="person-card" data-name="baris akis" data-tags="vc-talent founders" data-company="human capital" data-tier="2">
+      <div class="avatar" data-initials="BA"></div>
+      <div class="card-body">
+        <div class="card-name">Baris Akis</div>
+        <div class="card-role">Co-founder, Human Capital ($1.4B AUM)</div>
+        <div class="card-spike">Invented talent-as-venture-infrastructure. xAI Talent Engineering</div>
+      </div>
+    </a>
+
+    <a href="people/cory-levy.html" class="person-card" data-name="cory levy" data-tags="vc-talent founders" data-company="z fellows" data-tier="2">
+      <div class="avatar" data-initials="CL"></div>
+      <div class="card-body">
+        <div class="card-name">Cory Levy</div>
+        <div class="card-role">Founder, Z Fellows</div>
+        <div class="card-spike">Built Silicon Valley's most efficient young-founder pipeline</div>
+      </div>
+    </a>
+
+    <a href="people/cristobal-valenzuela.html" class="person-card" data-name="cristobal valenzuela" data-tags="founders" data-company="runway" data-tier="1">
+      <div class="avatar" data-initials="CV"></div>
+      <div class="card-body">
+        <div class="card-name">Crist&oacute;bal Valenzuela</div>
+        <div class="card-role">Co-founder &amp; CEO, Runway (~$3B)</div>
+        <div class="card-spike">Co-invented Stable Diffusion. Defined generative video</div>
+      </div>
+    </a>
+
+    <a href="people/dylan-reid.html" class="person-card" data-name="dylan reid" data-tags="vc-talent" data-company="zetta venture partners" data-tier="2">
+      <div class="avatar" data-initials="DR"></div>
+      <div class="card-body">
+        <div class="card-name">Dylan Reid</div>
+        <div class="card-role">MD, Zetta Venture Partners</div>
+        <div class="card-spike">AI-native biotech investing before consensus. Forbes 30U30</div>
+      </div>
+    </a>
+
+    <a href="people/kunvar-thaman.html" class="person-card" data-name="kunvar thaman" data-tags="aligned-agi ai-safety researchers" data-company="standard intelligence" data-tier="2">
+      <div class="avatar" data-initials="KT"></div>
+      <div class="card-body">
+        <div class="card-name">Kunvar Thaman</div>
+        <div class="card-role">ML Engineer, Standard Intelligence</div>
+        <div class="card-spike">Self-directed alignment researcher. ICML 2024. Incoming MIT PhD</div>
+      </div>
+    </a>
+
+    <a href="people/liam-mcnamara.html" class="person-card" data-name="liam mcnamara" data-tags="founders" data-company="cybe" data-tier="2">
+      <div class="avatar" data-initials="LM"></div>
+      <div class="card-body">
+        <div class="card-name">Liam McNamara</div>
+        <div class="card-role">Founder &amp; CEO, Cybe (YC W26)</div>
+        <div class="card-spike">7-fig ARR in 2 months. Queen's dropout. Nobel Prize lab</div>
+      </div>
+    </a>
+
+    <a href="people/zeeshan-patel.html" class="person-card" data-name="zeeshan patel" data-tags="founders stealth researchers" data-company="stealth" data-tier="1">
+      <div class="avatar" data-initials="ZP"></div>
+      <div class="card-body">
+        <div class="card-name">Zeeshan Patel</div>
+        <div class="card-role">Stealth founder, prev xAI + NVIDIA</div>
+        <div class="card-spike">Built Grok Imagine. 461 citations. CVPR 2025. Delta Fellow</div>
+      </div>
+    </a>
+
+    <a href="people/josh-sirota.html" class="person-card" data-name="josh sirota" data-tags="founders" data-company="eragon ai" data-tier="2">
+      <div class="avatar" data-initials="JS"></div>
+      <div class="card-body">
+        <div class="card-name">Josh Sirota</div>
+        <div class="card-role">Founder &amp; CEO, Eragon AI ($100M val)</div>
+        <div class="card-spike">Non-technical GTM founder. $100M in 7 months. a16z Speedrun</div>
+      </div>
+    </a>
+
+    <a href="people/divy-thakkar.html" class="person-card" data-name="divy thakkar" data-tags="frontier-labs researchers" data-company="google deepmind" data-tier="2">
+      <div class="avatar" data-initials="DT"></div>
+      <div class="card-body">
+        <div class="card-name">Divy Thakkar</div>
+        <div class="card-role">Staff PM &amp; Researcher, Google DeepMind</div>
+        <div class="card-spike">Founding member Google Research India + DeepMind India. SAHELI</div>
+      </div>
+    </a>
+
+    <a href="people/yuandong-tian.html" class="person-card" data-name="yuandong tian" data-tags="founders researchers stealth" data-company="recursive" data-tier="1">
+      <div class="avatar" data-initials="YT"></div>
+      <div class="card-body">
+        <div class="card-name">Yuandong Tian</div>
+        <div class="card-role">Co-founder, Recursive (stealth)</div>
+        <div class="card-spike">22K+ citations. DarkForest Go. StreamingLLM. Sci-fi novelist</div>
+      </div>
+    </a>
+
+  </div>
 
   <!-- ══════════════════════════════════════════════════════ -->
   <!-- Delta Institute · Cohort 1                            -->
   <!-- ══════════════════════════════════════════════════════ -->
 
   <h2>Delta Institute &middot; Cohort 1</h2>
-  <p class="small muted">
-    144 fellows selected February 2025. Researchers and engineers from frontier labs, top PhD programs,
-    and breakout startups. Organized by affiliation cluster. Standout profiles expanded below.
-  </p>
+  <p class="small muted">144 fellows selected February 2025. Researchers and engineers from frontier labs, top PhD programs, and breakout startups.</p>
 
   <h3 class="small mono faint">Standout Profiles</h3>
-  <ul class="person-list">
-    <li>
-      <span><strong>Niklas Muennighoff</strong> &mdash; <span class="muted">Stanford CS PhD (Knight-Hennessy Scholar). 23K+ citations. Created MTEB (standard embedding benchmark, 6M+ installs) and OLMoE (first open-source MoE LLM). Best paper awards at ACL and NeurIPS. Peking University BA.</span></span>
-      <span class="meta">embeddings &middot; open-source-llm</span>
-    </li>
-    <li>
-      <span><strong>John Yang</strong> &mdash; <span class="muted">Stanford CS PhD (Ludwig Schmidt, Diyi Yang). Creator of SWE-bench (2M+ downloads, the standard AI coding agent benchmark) and SWE-agent. ~5K citations. Previously Princeton MS.</span></span>
-      <span class="meta">ai-coding-agents &middot; benchmarks</span>
-    </li>
-    <li>
-      <span><strong>Laker Newhouse</strong> &mdash; <span class="muted">Co-author of Muon optimizer (holds NanoGPT speed records, used to train 1T-param LLMs). MIT MEng thesis unified Adam/Shampoo/Muon under a single mathematical framework. MIT Math.</span></span>
-      <span class="meta">optimizers &middot; deep-learning-theory</span>
-    </li>
-    <li>
-      <span><strong>Kshitij Sodani</strong> &mdash; <span class="muted">MIT CS. 2x IOI Gold, 5 consecutive IOI medals (2020&ndash;2024). Youngest-ever IOI gold medalist at 17. Codeforces International Grandmaster (2736). Founded Algoplanet. Gurugram, India.</span></span>
-      <span class="meta">competitive-programming &middot; ioi-legend</span>
-    </li>
-    <li>
-      <span><strong>Leonard Tang</strong> &mdash; <span class="muted">CEO, Haize Labs (AI red-teaming, $100M valuation, General Catalyst). Clients: Anthropic, Scale AI. Harvard grad. Dropped out of Stanford PhD to build. PNAS publication (neural nets solving university math).</span></span>
-      <span class="meta">ai-safety &middot; red-teaming</span>
-    </li>
-    <li>
-      <span><strong>Bo Peng</strong> &mdash; <span class="muted">Peking University Turing Class. 2nd place ICPC World Finals. Researches AI safety: grounding alignment in empirical regularities stable at scale. Also works on cryptography.</span></span>
-      <span class="meta">icpc &middot; ai-safety</span>
-    </li>
-    <li>
-      <span><strong>Chenglei Si</strong> &mdash; <span class="muted">Stanford CS PhD (Diyi Yang, Tatsunori Hashimoto). 3,600+ citations. Led landmark study: LLM-generated ideas judged more novel than human experts&rsquo; (ICLR 2025). Created Design2Code. UMD BA.</span></span>
-      <span class="meta">llm-evaluation &middot; creativity-research</span>
-    </li>
-    <li>
-      <span><strong>Luke Melas-Kyriazi</strong> &mdash; <span class="muted">Anysphere (Cursor), training coding LLMs. Rhodes Scholar. Oxford PhD (Visual Geometry Group, Andrea Vedaldi). Harvard BA (Math) + MS (CS). Hunter College High School.</span></span>
-      <span class="meta">coding-llms &middot; computer-vision</span>
-    </li>
-  </ul>
+  <div class="card-grid">
+
+    <div class="person-card no-link" data-name="niklas muennighoff" data-tags="delta standout researchers" data-company="stanford" data-tier="3">
+      <div class="avatar" data-initials="NM"></div>
+      <div class="card-body">
+        <div class="card-name">Niklas Muennighoff</div>
+        <div class="card-role">Stanford CS PhD</div>
+        <div class="card-spike">MTEB creator, 23K+ citations</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="john yang" data-tags="delta standout researchers" data-company="stanford" data-tier="3">
+      <div class="avatar" data-initials="JY"></div>
+      <div class="card-body">
+        <div class="card-name">John Yang</div>
+        <div class="card-role">Stanford CS PhD</div>
+        <div class="card-spike">SWE-bench creator, ~5K citations</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="laker newhouse" data-tags="delta standout researchers" data-company="mit" data-tier="3">
+      <div class="avatar" data-initials="LN"></div>
+      <div class="card-body">
+        <div class="card-name">Laker Newhouse</div>
+        <div class="card-role">MIT Math</div>
+        <div class="card-spike">Muon optimizer co-author</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="kshitij sodani" data-tags="delta standout researchers" data-company="mit" data-tier="3">
+      <div class="avatar" data-initials="KS"></div>
+      <div class="card-body">
+        <div class="card-name">Kshitij Sodani</div>
+        <div class="card-role">MIT CS</div>
+        <div class="card-spike">2x IOI Gold, youngest-ever gold at 17</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="leonard tang" data-tags="delta standout founders" data-company="haize labs" data-tier="3">
+      <div class="avatar" data-initials="LT"></div>
+      <div class="card-body">
+        <div class="card-name">Leonard Tang</div>
+        <div class="card-role">CEO, Haize Labs ($100M)</div>
+        <div class="card-spike">AI red-teaming. Harvard. Dropped out of Stanford PhD</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="bo peng" data-tags="delta standout researchers" data-company="peking university" data-tier="3">
+      <div class="avatar" data-initials="BP"></div>
+      <div class="card-body">
+        <div class="card-name">Bo Peng</div>
+        <div class="card-role">Peking University</div>
+        <div class="card-spike">ICPC World 2nd place. AI safety research</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="chenglei si" data-tags="delta standout researchers" data-company="stanford" data-tier="3">
+      <div class="avatar" data-initials="CS"></div>
+      <div class="card-body">
+        <div class="card-name">Chenglei Si</div>
+        <div class="card-role">Stanford CS PhD</div>
+        <div class="card-spike">3,600+ citations. LLM-generated ideas > human experts</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="luke melas-kyriazi" data-tags="delta standout frontier-labs" data-company="cursor anysphere" data-tier="3">
+      <div class="avatar" data-initials="LM"></div>
+      <div class="card-body">
+        <div class="card-name">Luke Melas-Kyriazi</div>
+        <div class="card-role">Cursor (Anysphere)</div>
+        <div class="card-spike">Rhodes Scholar. Oxford PhD. Training coding LLMs</div>
+      </div>
+    </div>
+
+  </div>
 
   <h3 class="small mono faint">Frontier Labs</h3>
-  <ul class="person-list">
-    <li><span><strong>Kevin Wang</strong> &mdash; <span class="muted">OpenAI, NeurIPS Best Paper</span></span></li>
-    <li><span><strong>Welton Wang</strong> &mdash; <span class="muted">OpenAI, prev Parallel</span></span></li>
-    <li><span><strong>Eric Han</strong> &mdash; <span class="muted">OpenAI, Stanford EE</span></span></li>
-    <li><span><strong>Brooke Joseph</strong> &mdash; <span class="muted">OpenAI</span></span></li>
-    <li><span><strong>Suvansh Sanjeev</strong> &mdash; <span class="muted">OpenAI</span></span></li>
-    <li><span><strong>Kavya Anbarasu</strong> &mdash; <span class="muted">OpenAI</span></span></li>
-    <li><span><strong>Ayush Alag</strong> &mdash; <span class="muted">OpenAI</span></span></li>
-    <li><span><strong>Hannah Gao</strong> &mdash; <span class="muted">Stanford Math + CS, OpenAI</span></span></li>
-    <li><span><strong>Stephen McAleer</strong> &mdash; <span class="muted">Anthropic</span></span></li>
-    <li><span><strong>Isaac Fung</strong> &mdash; <span class="muted">Anthropic</span></span></li>
-    <li><span><strong>Isaac Ong</strong> &mdash; <span class="muted">Anthropic</span></span></li>
-    <li><span><strong>Helen Wang</strong> &mdash; <span class="muted">Anthropic</span></span></li>
-    <li><span><strong>Brian Huang</strong> &mdash; <span class="muted">DeepMind</span></span></li>
-    <li><span><strong>Bonnie Li</strong> &mdash; <span class="muted">DeepMind</span></span></li>
-    <li><span><strong>Allen Nie</strong> &mdash; <span class="muted">DeepMind, Stanford CS PhD</span></span></li>
-    <li><span><strong>Kevin Lu</strong> &mdash; <span class="muted">Thinking Machines (Mira Murati), prev OpenAI</span></span></li>
-    <li><span><strong>Joseph Melkonian</strong> &mdash; <span class="muted">Meta Superintelligence Labs</span></span></li>
-    <li><span><strong>Gashon Hussein</strong> &mdash; <span class="muted">Physical Intelligence</span></span></li>
-    <li><span><strong>Jayesh Singla</strong> &mdash; <span class="muted">Skild AI</span></span></li>
-    <li><span><strong>Vincent Tombari</strong> &mdash; <span class="muted">NVIDIA</span></span></li>
-    <li><span><strong>Harsh Shah</strong> &mdash; <span class="muted">Tesla AI</span></span></li>
-    <li><span><strong>Bolaji Makinde</strong> &mdash; <span class="muted">Tesla</span></span></li>
-  </ul>
+  <div class="card-grid dense">
+
+    <div class="person-card no-link" data-name="kevin wang" data-tags="delta frontier-labs" data-company="openai" data-tier="3">
+      <div class="avatar" data-initials="KW"></div>
+      <div class="card-body">
+        <div class="card-name">Kevin Wang</div>
+        <div class="card-role">OpenAI, NeurIPS Best Paper</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="welton wang" data-tags="delta frontier-labs" data-company="openai" data-tier="3">
+      <div class="avatar" data-initials="WW"></div>
+      <div class="card-body">
+        <div class="card-name">Welton Wang</div>
+        <div class="card-role">OpenAI, prev Parallel</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="eric han" data-tags="delta frontier-labs" data-company="openai" data-tier="3">
+      <div class="avatar" data-initials="EH"></div>
+      <div class="card-body">
+        <div class="card-name">Eric Han</div>
+        <div class="card-role">OpenAI, Stanford EE</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="brooke joseph" data-tags="delta frontier-labs" data-company="openai" data-tier="3">
+      <div class="avatar" data-initials="BJ"></div>
+      <div class="card-body">
+        <div class="card-name">Brooke Joseph</div>
+        <div class="card-role">OpenAI</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="suvansh sanjeev" data-tags="delta frontier-labs" data-company="openai" data-tier="3">
+      <div class="avatar" data-initials="SS"></div>
+      <div class="card-body">
+        <div class="card-name">Suvansh Sanjeev</div>
+        <div class="card-role">OpenAI</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="kavya anbarasu" data-tags="delta frontier-labs" data-company="openai" data-tier="3">
+      <div class="avatar" data-initials="KA"></div>
+      <div class="card-body">
+        <div class="card-name">Kavya Anbarasu</div>
+        <div class="card-role">OpenAI</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="ayush alag" data-tags="delta frontier-labs" data-company="openai" data-tier="3">
+      <div class="avatar" data-initials="AA"></div>
+      <div class="card-body">
+        <div class="card-name">Ayush Alag</div>
+        <div class="card-role">OpenAI</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="hannah gao" data-tags="delta frontier-labs" data-company="openai" data-tier="3">
+      <div class="avatar" data-initials="HG"></div>
+      <div class="card-body">
+        <div class="card-name">Hannah Gao</div>
+        <div class="card-role">Stanford Math + CS, OpenAI</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="stephen mcaleer" data-tags="delta frontier-labs" data-company="anthropic" data-tier="3">
+      <div class="avatar" data-initials="SM"></div>
+      <div class="card-body">
+        <div class="card-name">Stephen McAleer</div>
+        <div class="card-role">Anthropic</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="isaac fung" data-tags="delta frontier-labs" data-company="anthropic" data-tier="3">
+      <div class="avatar" data-initials="IF"></div>
+      <div class="card-body">
+        <div class="card-name">Isaac Fung</div>
+        <div class="card-role">Anthropic</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="isaac ong" data-tags="delta frontier-labs" data-company="anthropic" data-tier="3">
+      <div class="avatar" data-initials="IO"></div>
+      <div class="card-body">
+        <div class="card-name">Isaac Ong</div>
+        <div class="card-role">Anthropic</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="helen wang" data-tags="delta frontier-labs" data-company="anthropic" data-tier="3">
+      <div class="avatar" data-initials="HW"></div>
+      <div class="card-body">
+        <div class="card-name">Helen Wang</div>
+        <div class="card-role">Anthropic</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="brian huang" data-tags="delta frontier-labs" data-company="deepmind" data-tier="3">
+      <div class="avatar" data-initials="BH"></div>
+      <div class="card-body">
+        <div class="card-name">Brian Huang</div>
+        <div class="card-role">DeepMind</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="bonnie li" data-tags="delta frontier-labs" data-company="deepmind" data-tier="3">
+      <div class="avatar" data-initials="BL"></div>
+      <div class="card-body">
+        <div class="card-name">Bonnie Li</div>
+        <div class="card-role">DeepMind</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="allen nie" data-tags="delta frontier-labs" data-company="deepmind" data-tier="3">
+      <div class="avatar" data-initials="AN"></div>
+      <div class="card-body">
+        <div class="card-name">Allen Nie</div>
+        <div class="card-role">DeepMind, Stanford CS PhD</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="kevin lu" data-tags="delta frontier-labs" data-company="thinking machines" data-tier="3">
+      <div class="avatar" data-initials="KL"></div>
+      <div class="card-body">
+        <div class="card-name">Kevin Lu</div>
+        <div class="card-role">Thinking Machines (Mira Murati), prev OpenAI</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="joseph melkonian" data-tags="delta frontier-labs" data-company="meta" data-tier="3">
+      <div class="avatar" data-initials="JM"></div>
+      <div class="card-body">
+        <div class="card-name">Joseph Melkonian</div>
+        <div class="card-role">Meta Superintelligence Labs</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="gashon hussein" data-tags="delta frontier-labs" data-company="physical intelligence" data-tier="3">
+      <div class="avatar" data-initials="GH"></div>
+      <div class="card-body">
+        <div class="card-name">Gashon Hussein</div>
+        <div class="card-role">Physical Intelligence</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="jayesh singla" data-tags="delta frontier-labs" data-company="skild ai" data-tier="3">
+      <div class="avatar" data-initials="JS"></div>
+      <div class="card-body">
+        <div class="card-name">Jayesh Singla</div>
+        <div class="card-role">Skild AI</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="vincent tombari" data-tags="delta frontier-labs" data-company="nvidia" data-tier="3">
+      <div class="avatar" data-initials="VT"></div>
+      <div class="card-body">
+        <div class="card-name">Vincent Tombari</div>
+        <div class="card-role">NVIDIA</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="harsh shah" data-tags="delta frontier-labs" data-company="tesla" data-tier="3">
+      <div class="avatar" data-initials="HS"></div>
+      <div class="card-body">
+        <div class="card-name">Harsh Shah</div>
+        <div class="card-role">Tesla AI</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="bolaji makinde" data-tags="delta frontier-labs" data-company="tesla" data-tier="3">
+      <div class="avatar" data-initials="BM"></div>
+      <div class="card-body">
+        <div class="card-name">Bolaji Makinde</div>
+        <div class="card-role">Tesla</div>
+      </div>
+    </div>
+
+  </div>
 
   <h3 class="small mono faint">Startups &amp; Founders</h3>
-  <ul class="person-list">
-    <li><span><strong>Alexi Gladstone</strong> &mdash; <span class="muted">Flapping Airplanes, UIUC CS PhD</span></span></li>
-    <li><span><strong>Sally Zhu</strong> &mdash; <span class="muted">Flapping Airplanes, Stanford CS</span></span></li>
-    <li><span><strong>Rohan Pandey</strong> &mdash; <span class="muted">Periodic Labs (autonomous science labs, $300M seed), prev OpenAI</span></span></li>
-    <li><span><strong>Avanika Narayan</strong> &mdash; <span class="muted">Rox (AI sales agents, $50M, Sequoia), Stanford CS PhD</span></span></li>
-    <li><span><strong>Austin Chen</strong> &mdash; <span class="muted">Rox</span></span></li>
-    <li><span><strong>Jerry Zhou</strong> &mdash; <span class="muted">Rox</span></span></li>
-    <li><span><strong>Cynthia Chen</strong> &mdash; <span class="muted">Decagon (AI customer support, $4.5B valuation)</span></span></li>
-    <li><span><strong>Amy Jin</strong> &mdash; <span class="muted">Decagon</span></span></li>
-    <li><span><strong>Rohan Kalahasty</strong> &mdash; <span class="muted">a37 (AI DevOps agents), Caltech Physics</span></span></li>
-    <li><span><strong>Oam Patel</strong> &mdash; <span class="muted">Applied Compute</span></span></li>
-    <li><span><strong>Grace Li</strong> &mdash; <span class="muted">Design Arena (crowdsourced AI design benchmark, YC S25), Harvard CS</span></span></li>
-    <li><span><strong>Nina Boord</strong> &mdash; <span class="muted">Cogent Security (AI vulnerability management, $53M), prev Stanford CS</span></span></li>
-    <li><span><strong>Gauri Gupta</strong> &mdash; <span class="muted">NeoSigma, prev Parallel, MIT CS PhD</span></span></li>
-    <li><span><strong>Rohan Tibrewal</strong> &mdash; <span class="muted">Cartesia</span></span></li>
-    <li><span><strong>Fan-Yun Sun</strong> &mdash; <span class="muted">Moonlake, Stanford CS PhD</span></span></li>
-    <li><span><strong>Serena Ge</strong> &mdash; <span class="muted">Datacurve</span></span></li>
-    <li><span><strong>John Rho</strong> &mdash; <span class="muted">Datacurve</span></span></li>
-    <li><span><strong>Patrick Wang</strong> &mdash; <span class="muted">Voyage AI</span></span></li>
-    <li><span><strong>Alex Shan</strong> &mdash; <span class="muted">Judgment Labs</span></span></li>
-    <li><span><strong>Michael Wornow</strong> &mdash; <span class="muted">Kinetic Systems, Stanford CS PhD</span></span></li>
-    <li><span><strong>Raj Palleti</strong> &mdash; <span class="muted">AlphaXiv</span></span></li>
-    <li><span><strong>David Krajewski</strong> &mdash; <span class="muted">Reve, CMU CS</span></span></li>
-    <li><span><strong>Ari Webb</strong> &mdash; <span class="muted">Letta</span></span></li>
-    <li><span><strong>Ameen Patel</strong> &mdash; <span class="muted">Prime Intellect</span></span></li>
-    <li><span><strong>Sudarshan Nambiar</strong> &mdash; <span class="muted">Conway</span></span></li>
-    <li><span><strong>Rong Ye</strong> &mdash; <span class="muted">Avoca</span></span></li>
-    <li><span><strong>Daniel Zeng</strong> &mdash; <span class="muted">Genesis Molecular AI</span></span></li>
-    <li><span><strong>Raj Mehta</strong> &mdash; <span class="muted">Percepta</span></span></li>
-    <li><span><strong>Shreyas Sreenivas</strong> &mdash; <span class="muted">Exa</span></span></li>
-    <li><span><strong>Niloofar Mireshghallah</strong> &mdash; <span class="muted">Humans&amp;</span></span></li>
-    <li><span><strong>Joe Li</strong> &mdash; <span class="muted">Stanford CS, Cognition</span></span></li>
-    <li><span><strong>Samarth Goel</strong> &mdash; <span class="muted">Harvey, prev HRT</span></span></li>
-    <li><span><strong>Grace Lam</strong> &mdash; <span class="muted">Character AI, Palantir</span></span></li>
-    <li><span><strong>Nate Marquez</strong> &mdash; <span class="muted">Netflix</span></span></li>
-    <li><span><strong>Seaver Dahlgren</strong> &mdash; <span class="muted">Amazon</span></span></li>
-    <li><span><strong>Jacob Zietek</strong> &mdash; <span class="muted">a16z Engineering</span></span></li>
-    <li><span><strong>Karthik Balaji Ganesh</strong> &mdash; <span class="muted">Databricks</span></span></li>
-    <li><span><strong>Kartik Srinivas</strong> &mdash; <span class="muted">Waymo</span></span></li>
-  </ul>
+  <div class="card-grid dense">
+
+    <div class="person-card no-link" data-name="alexi gladstone" data-tags="delta founders" data-company="flapping airplanes" data-tier="3">
+      <div class="avatar" data-initials="AG"></div>
+      <div class="card-body">
+        <div class="card-name">Alexi Gladstone</div>
+        <div class="card-role">Flapping Airplanes, UIUC CS PhD</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="sally zhu" data-tags="delta founders" data-company="flapping airplanes" data-tier="3">
+      <div class="avatar" data-initials="SZ"></div>
+      <div class="card-body">
+        <div class="card-name">Sally Zhu</div>
+        <div class="card-role">Flapping Airplanes, Stanford CS</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="rohan pandey" data-tags="delta founders" data-company="periodic labs" data-tier="3">
+      <div class="avatar" data-initials="RP"></div>
+      <div class="card-body">
+        <div class="card-name">Rohan Pandey</div>
+        <div class="card-role">Periodic Labs ($300M seed), prev OpenAI</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="avanika narayan" data-tags="delta founders" data-company="rox" data-tier="3">
+      <div class="avatar" data-initials="AN"></div>
+      <div class="card-body">
+        <div class="card-name">Avanika Narayan</div>
+        <div class="card-role">Rox ($50M, Sequoia), Stanford CS PhD</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="austin chen" data-tags="delta founders" data-company="rox" data-tier="3">
+      <div class="avatar" data-initials="AC"></div>
+      <div class="card-body">
+        <div class="card-name">Austin Chen</div>
+        <div class="card-role">Rox</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="jerry zhou" data-tags="delta founders" data-company="rox" data-tier="3">
+      <div class="avatar" data-initials="JZ"></div>
+      <div class="card-body">
+        <div class="card-name">Jerry Zhou</div>
+        <div class="card-role">Rox</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="cynthia chen" data-tags="delta founders" data-company="decagon" data-tier="3">
+      <div class="avatar" data-initials="CC"></div>
+      <div class="card-body">
+        <div class="card-name">Cynthia Chen</div>
+        <div class="card-role">Decagon ($4.5B valuation)</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="amy jin" data-tags="delta founders" data-company="decagon" data-tier="3">
+      <div class="avatar" data-initials="AJ"></div>
+      <div class="card-body">
+        <div class="card-name">Amy Jin</div>
+        <div class="card-role">Decagon</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="rohan kalahasty" data-tags="delta founders" data-company="a37" data-tier="3">
+      <div class="avatar" data-initials="RK"></div>
+      <div class="card-body">
+        <div class="card-name">Rohan Kalahasty</div>
+        <div class="card-role">a37 (AI DevOps agents), Caltech Physics</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="oam patel" data-tags="delta founders" data-company="applied compute" data-tier="3">
+      <div class="avatar" data-initials="OP"></div>
+      <div class="card-body">
+        <div class="card-name">Oam Patel</div>
+        <div class="card-role">Applied Compute</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="grace li" data-tags="delta founders" data-company="design arena" data-tier="3">
+      <div class="avatar" data-initials="GL"></div>
+      <div class="card-body">
+        <div class="card-name">Grace Li</div>
+        <div class="card-role">Design Arena (YC S25), Harvard CS</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="nina boord" data-tags="delta founders" data-company="cogent security" data-tier="3">
+      <div class="avatar" data-initials="NB"></div>
+      <div class="card-body">
+        <div class="card-name">Nina Boord</div>
+        <div class="card-role">Cogent Security ($53M), prev Stanford CS</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="gauri gupta" data-tags="delta founders" data-company="neosigma" data-tier="3">
+      <div class="avatar" data-initials="GG"></div>
+      <div class="card-body">
+        <div class="card-name">Gauri Gupta</div>
+        <div class="card-role">NeoSigma, prev Parallel, MIT CS PhD</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="rohan tibrewal" data-tags="delta founders" data-company="cartesia" data-tier="3">
+      <div class="avatar" data-initials="RT"></div>
+      <div class="card-body">
+        <div class="card-name">Rohan Tibrewal</div>
+        <div class="card-role">Cartesia</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="fan-yun sun" data-tags="delta founders" data-company="moonlake" data-tier="3">
+      <div class="avatar" data-initials="FS"></div>
+      <div class="card-body">
+        <div class="card-name">Fan-Yun Sun</div>
+        <div class="card-role">Moonlake, Stanford CS PhD</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="serena ge" data-tags="delta founders" data-company="datacurve" data-tier="3">
+      <div class="avatar" data-initials="SG"></div>
+      <div class="card-body">
+        <div class="card-name">Serena Ge</div>
+        <div class="card-role">Datacurve</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="john rho" data-tags="delta founders" data-company="datacurve" data-tier="3">
+      <div class="avatar" data-initials="JR"></div>
+      <div class="card-body">
+        <div class="card-name">John Rho</div>
+        <div class="card-role">Datacurve</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="patrick wang" data-tags="delta founders" data-company="voyage ai" data-tier="3">
+      <div class="avatar" data-initials="PW"></div>
+      <div class="card-body">
+        <div class="card-name">Patrick Wang</div>
+        <div class="card-role">Voyage AI</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="alex shan" data-tags="delta founders" data-company="judgment labs" data-tier="3">
+      <div class="avatar" data-initials="AS"></div>
+      <div class="card-body">
+        <div class="card-name">Alex Shan</div>
+        <div class="card-role">Judgment Labs</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="michael wornow" data-tags="delta founders" data-company="kinetic systems" data-tier="3">
+      <div class="avatar" data-initials="MW"></div>
+      <div class="card-body">
+        <div class="card-name">Michael Wornow</div>
+        <div class="card-role">Kinetic Systems, Stanford CS PhD</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="raj palleti" data-tags="delta founders" data-company="alphaxiv" data-tier="3">
+      <div class="avatar" data-initials="RP"></div>
+      <div class="card-body">
+        <div class="card-name">Raj Palleti</div>
+        <div class="card-role">AlphaXiv</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="david krajewski" data-tags="delta founders" data-company="reve" data-tier="3">
+      <div class="avatar" data-initials="DK"></div>
+      <div class="card-body">
+        <div class="card-name">David Krajewski</div>
+        <div class="card-role">Reve, CMU CS</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="ari webb" data-tags="delta founders" data-company="letta" data-tier="3">
+      <div class="avatar" data-initials="AW"></div>
+      <div class="card-body">
+        <div class="card-name">Ari Webb</div>
+        <div class="card-role">Letta</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="ameen patel" data-tags="delta founders" data-company="prime intellect" data-tier="3">
+      <div class="avatar" data-initials="AP"></div>
+      <div class="card-body">
+        <div class="card-name">Ameen Patel</div>
+        <div class="card-role">Prime Intellect</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="sudarshan nambiar" data-tags="delta founders" data-company="conway" data-tier="3">
+      <div class="avatar" data-initials="SN"></div>
+      <div class="card-body">
+        <div class="card-name">Sudarshan Nambiar</div>
+        <div class="card-role">Conway</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="rong ye" data-tags="delta founders" data-company="avoca" data-tier="3">
+      <div class="avatar" data-initials="RY"></div>
+      <div class="card-body">
+        <div class="card-name">Rong Ye</div>
+        <div class="card-role">Avoca</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="daniel zeng" data-tags="delta founders" data-company="genesis molecular ai" data-tier="3">
+      <div class="avatar" data-initials="DZ"></div>
+      <div class="card-body">
+        <div class="card-name">Daniel Zeng</div>
+        <div class="card-role">Genesis Molecular AI</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="raj mehta" data-tags="delta founders" data-company="percepta" data-tier="3">
+      <div class="avatar" data-initials="RM"></div>
+      <div class="card-body">
+        <div class="card-name">Raj Mehta</div>
+        <div class="card-role">Percepta</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="shreyas sreenivas" data-tags="delta founders" data-company="exa" data-tier="3">
+      <div class="avatar" data-initials="SS"></div>
+      <div class="card-body">
+        <div class="card-name">Shreyas Sreenivas</div>
+        <div class="card-role">Exa</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="niloofar mireshghallah" data-tags="delta founders" data-company="humans&" data-tier="3">
+      <div class="avatar" data-initials="NM"></div>
+      <div class="card-body">
+        <div class="card-name">Niloofar Mireshghallah</div>
+        <div class="card-role">Humans&amp;</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="joe li" data-tags="delta founders" data-company="cognition" data-tier="3">
+      <div class="avatar" data-initials="JL"></div>
+      <div class="card-body">
+        <div class="card-name">Joe Li</div>
+        <div class="card-role">Stanford CS, Cognition</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="samarth goel" data-tags="delta founders" data-company="harvey" data-tier="3">
+      <div class="avatar" data-initials="SG"></div>
+      <div class="card-body">
+        <div class="card-name">Samarth Goel</div>
+        <div class="card-role">Harvey, prev HRT</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="grace lam" data-tags="delta founders" data-company="character ai" data-tier="3">
+      <div class="avatar" data-initials="GL"></div>
+      <div class="card-body">
+        <div class="card-name">Grace Lam</div>
+        <div class="card-role">Character AI, Palantir</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="nate marquez" data-tags="delta founders" data-company="netflix" data-tier="3">
+      <div class="avatar" data-initials="NM"></div>
+      <div class="card-body">
+        <div class="card-name">Nate Marquez</div>
+        <div class="card-role">Netflix</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="seaver dahlgren" data-tags="delta founders" data-company="amazon" data-tier="3">
+      <div class="avatar" data-initials="SD"></div>
+      <div class="card-body">
+        <div class="card-name">Seaver Dahlgren</div>
+        <div class="card-role">Amazon</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="jacob zietek" data-tags="delta founders" data-company="a16z" data-tier="3">
+      <div class="avatar" data-initials="JZ"></div>
+      <div class="card-body">
+        <div class="card-name">Jacob Zietek</div>
+        <div class="card-role">a16z Engineering</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="karthik balaji ganesh" data-tags="delta founders" data-company="databricks" data-tier="3">
+      <div class="avatar" data-initials="KG"></div>
+      <div class="card-body">
+        <div class="card-name">Karthik Balaji Ganesh</div>
+        <div class="card-role">Databricks</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="kartik srinivas" data-tags="delta founders" data-company="waymo" data-tier="3">
+      <div class="avatar" data-initials="KS"></div>
+      <div class="card-body">
+        <div class="card-name">Kartik Srinivas</div>
+        <div class="card-role">Waymo</div>
+      </div>
+    </div>
+
+  </div>
 
   <h3 class="small mono faint">Stealth Mode</h3>
-  <ul class="person-list">
-    <li><span><strong>Ronak Malde</strong> &mdash; <span class="muted">Stealth, prev DeepMind</span></span></li>
-    <li><span><a href="people/zeeshan-patel.html"><strong>Zeeshan Patel</strong></a> &mdash; <span class="muted">Stealth, prev xAI (Grok Imagine), NVIDIA Research (Cosmos). CVPR 2025. 461 citations. <strong>[full dossier]</strong></span></span></li>
-    <li><span><strong>Ally Nakamura</strong> &mdash; <span class="muted">Stealth, prev Stanford CS</span></span></li>
-    <li><span><strong>Hersh Godse</strong> &mdash; <span class="muted">Stealth, prev Adept</span></span></li>
-    <li><span><strong>Yusuf Ozuysal</strong> &mdash; <span class="muted">Stealth, prev Snowflake</span></span></li>
-    <li><span><strong>Aadi Nashikkar</strong> &mdash; <span class="muted">Stealth, Stanford CS</span></span></li>
-    <li><span><strong>Sonya Jin</strong> &mdash; <span class="muted">Stealth, Stanford CS</span></span></li>
-    <li><span><strong>Arjun Karanam</strong> &mdash; <span class="muted">Stealth, Stanford CS</span></span></li>
-    <li><span><strong>Michael Elabd</strong> &mdash; <span class="muted">Stealth, prev DeepMind</span></span></li>
-    <li><span><strong>Neil Kale</strong> &mdash; <span class="muted">Stealth, prev CMU ML</span></span></li>
-    <li><span><strong>Allie Gu</strong> &mdash; <span class="muted">prev xAI</span></span></li>
-  </ul>
+  <div class="card-grid dense">
+
+    <div class="person-card no-link" data-name="ronak malde" data-tags="delta stealth" data-company="stealth" data-tier="3">
+      <div class="avatar" data-initials="RM"></div>
+      <div class="card-body">
+        <div class="card-name">Ronak Malde</div>
+        <div class="card-role">Stealth, prev DeepMind</div>
+      </div>
+    </div>
+
+    <a href="people/zeeshan-patel.html" class="person-card" data-name="zeeshan patel" data-tags="delta stealth" data-company="stealth" data-tier="3">
+      <div class="avatar" data-initials="ZP"></div>
+      <div class="card-body">
+        <div class="card-name">Zeeshan Patel</div>
+        <div class="card-role">Stealth, prev xAI + NVIDIA. CVPR 2025. 461 citations</div>
+      </div>
+    </a>
+
+    <div class="person-card no-link" data-name="ally nakamura" data-tags="delta stealth" data-company="stealth" data-tier="3">
+      <div class="avatar" data-initials="AN"></div>
+      <div class="card-body">
+        <div class="card-name">Ally Nakamura</div>
+        <div class="card-role">Stealth, prev Stanford CS</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="hersh godse" data-tags="delta stealth" data-company="stealth" data-tier="3">
+      <div class="avatar" data-initials="HG"></div>
+      <div class="card-body">
+        <div class="card-name">Hersh Godse</div>
+        <div class="card-role">Stealth, prev Adept</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="yusuf ozuysal" data-tags="delta stealth" data-company="stealth" data-tier="3">
+      <div class="avatar" data-initials="YO"></div>
+      <div class="card-body">
+        <div class="card-name">Yusuf Ozuysal</div>
+        <div class="card-role">Stealth, prev Snowflake</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="aadi nashikkar" data-tags="delta stealth" data-company="stealth" data-tier="3">
+      <div class="avatar" data-initials="AN"></div>
+      <div class="card-body">
+        <div class="card-name">Aadi Nashikkar</div>
+        <div class="card-role">Stealth, Stanford CS</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="sonya jin" data-tags="delta stealth" data-company="stealth" data-tier="3">
+      <div class="avatar" data-initials="SJ"></div>
+      <div class="card-body">
+        <div class="card-name">Sonya Jin</div>
+        <div class="card-role">Stealth, Stanford CS</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="arjun karanam" data-tags="delta stealth" data-company="stealth" data-tier="3">
+      <div class="avatar" data-initials="AK"></div>
+      <div class="card-body">
+        <div class="card-name">Arjun Karanam</div>
+        <div class="card-role">Stealth, Stanford CS</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="michael elabd" data-tags="delta stealth" data-company="stealth" data-tier="3">
+      <div class="avatar" data-initials="ME"></div>
+      <div class="card-body">
+        <div class="card-name">Michael Elabd</div>
+        <div class="card-role">Stealth, prev DeepMind</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="neil kale" data-tags="delta stealth" data-company="stealth" data-tier="3">
+      <div class="avatar" data-initials="NK"></div>
+      <div class="card-body">
+        <div class="card-name">Neil Kale</div>
+        <div class="card-role">Stealth, prev CMU ML</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="allie gu" data-tags="delta stealth" data-company="xai" data-tier="3">
+      <div class="avatar" data-initials="AG"></div>
+      <div class="card-body">
+        <div class="card-name">Allie Gu</div>
+        <div class="card-role">prev xAI</div>
+      </div>
+    </div>
+
+  </div>
 
   <h3 class="small mono faint">Cursor &amp; Coding Tools</h3>
-  <ul class="person-list">
-    <li><span><strong>Stuart Sul</strong> &mdash; <span class="muted">Cursor, Stanford CS PhD</span></span></li>
-    <li><span><strong>Elijah Kurien</strong> &mdash; <span class="muted">Cursor</span></span></li>
-  </ul>
+  <div class="card-grid dense">
+
+    <div class="person-card no-link" data-name="stuart sul" data-tags="delta frontier-labs" data-company="cursor" data-tier="3">
+      <div class="avatar" data-initials="SS"></div>
+      <div class="card-body">
+        <div class="card-name">Stuart Sul</div>
+        <div class="card-role">Cursor, Stanford CS PhD</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="elijah kurien" data-tags="delta frontier-labs" data-company="cursor" data-tier="3">
+      <div class="avatar" data-initials="EK"></div>
+      <div class="card-body">
+        <div class="card-name">Elijah Kurien</div>
+        <div class="card-role">Cursor</div>
+      </div>
+    </div>
+
+  </div>
 
   <h3 class="small mono faint">Quant &amp; Trading</h3>
-  <ul class="person-list">
-    <li><span><strong>Haneul Shin</strong> &mdash; <span class="muted">Jane Street, prev Harvard CS + Math</span></span></li>
-    <li><span><strong>James Chen</strong> &mdash; <span class="muted">Stanford CS, Jane Street</span></span></li>
-    <li><span><strong>Sai Konkimalla</strong> &mdash; <span class="muted">Stanford CS, Jane Street</span></span></li>
-    <li><span><strong>Fan Pu Zeng</strong> &mdash; <span class="muted">Jane Street</span></span></li>
-    <li><span><strong>Yassine Kachrad</strong> &mdash; <span class="muted">Jane Street</span></span></li>
-    <li><span><strong>Jonathan Mengedoht</strong> &mdash; <span class="muted">Jane Street</span></span></li>
-    <li><span><strong>Sid Bharthulwar</strong> &mdash; <span class="muted">Jump Trading</span></span></li>
-    <li><span><strong>Rohan Jain</strong> &mdash; <span class="muted">CMU CS, DRW</span></span></li>
-    <li><span><strong>Lillian Sun</strong> &mdash; <span class="muted">Harvard CS, prev HRT</span></span></li>
-    <li><span><strong>Damian Ho</strong> &mdash; <span class="muted">Stanford CS, prev HRT</span></span></li>
-    <li><span><strong>Andrew Ma</strong> &mdash; <span class="muted">Harvard CSE, prev Jane Street</span></span></li>
-  </ul>
+  <div class="card-grid dense">
+
+    <div class="person-card no-link" data-name="haneul shin" data-tags="delta quant" data-company="jane street" data-tier="3">
+      <div class="avatar" data-initials="HS"></div>
+      <div class="card-body">
+        <div class="card-name">Haneul Shin</div>
+        <div class="card-role">Jane Street, prev Harvard CS + Math</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="james chen" data-tags="delta quant" data-company="jane street" data-tier="3">
+      <div class="avatar" data-initials="JC"></div>
+      <div class="card-body">
+        <div class="card-name">James Chen</div>
+        <div class="card-role">Stanford CS, Jane Street</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="sai konkimalla" data-tags="delta quant" data-company="jane street" data-tier="3">
+      <div class="avatar" data-initials="SK"></div>
+      <div class="card-body">
+        <div class="card-name">Sai Konkimalla</div>
+        <div class="card-role">Stanford CS, Jane Street</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="fan pu zeng" data-tags="delta quant" data-company="jane street" data-tier="3">
+      <div class="avatar" data-initials="FZ"></div>
+      <div class="card-body">
+        <div class="card-name">Fan Pu Zeng</div>
+        <div class="card-role">Jane Street</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="yassine kachrad" data-tags="delta quant" data-company="jane street" data-tier="3">
+      <div class="avatar" data-initials="YK"></div>
+      <div class="card-body">
+        <div class="card-name">Yassine Kachrad</div>
+        <div class="card-role">Jane Street</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="jonathan mengedoht" data-tags="delta quant" data-company="jane street" data-tier="3">
+      <div class="avatar" data-initials="JM"></div>
+      <div class="card-body">
+        <div class="card-name">Jonathan Mengedoht</div>
+        <div class="card-role">Jane Street</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="sid bharthulwar" data-tags="delta quant" data-company="jump trading" data-tier="3">
+      <div class="avatar" data-initials="SB"></div>
+      <div class="card-body">
+        <div class="card-name">Sid Bharthulwar</div>
+        <div class="card-role">Jump Trading</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="rohan jain" data-tags="delta quant" data-company="drw" data-tier="3">
+      <div class="avatar" data-initials="RJ"></div>
+      <div class="card-body">
+        <div class="card-name">Rohan Jain</div>
+        <div class="card-role">CMU CS, DRW</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="lillian sun" data-tags="delta quant" data-company="hrt" data-tier="3">
+      <div class="avatar" data-initials="LS"></div>
+      <div class="card-body">
+        <div class="card-name">Lillian Sun</div>
+        <div class="card-role">Harvard CS, prev HRT</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="damian ho" data-tags="delta quant" data-company="hrt" data-tier="3">
+      <div class="avatar" data-initials="DH"></div>
+      <div class="card-body">
+        <div class="card-name">Damian Ho</div>
+        <div class="card-role">Stanford CS, prev HRT</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="andrew ma" data-tags="delta quant" data-company="jane street" data-tier="3">
+      <div class="avatar" data-initials="AM"></div>
+      <div class="card-body">
+        <div class="card-name">Andrew Ma</div>
+        <div class="card-role">Harvard CSE, prev Jane Street</div>
+      </div>
+    </div>
+
+  </div>
 
   <h3 class="small mono faint">PhD Researchers</h3>
-  <ul class="person-list">
-    <li><span><strong>Lisa Dunlap</strong> &mdash; <span class="muted">Berkeley EECS PhD</span></span></li>
-    <li><span><strong>Alex Zhang</strong> &mdash; <span class="muted">MIT CS PhD, RLM Author</span></span></li>
-    <li><span><strong>Dan Biderman</strong> &mdash; <span class="muted">Stanford CS Postdoc</span></span></li>
-    <li><span><strong>Simon Guo</strong> &mdash; <span class="muted">Stanford CS PhD</span></span></li>
-    <li><span><strong>Archer Wang</strong> &mdash; <span class="muted">MIT CS PhD</span></span></li>
-    <li><span><strong>Grace Luo</strong> &mdash; <span class="muted">Berkeley EECS PhD</span></span></li>
-    <li><span><strong>Alex Gu</strong> &mdash; <span class="muted">MIT CS PhD</span></span></li>
-    <li><span><strong>Sachit Menon</strong> &mdash; <span class="muted">Columbia CS PhD</span></span></li>
-    <li><span><strong>Xingjian Bai</strong> &mdash; <span class="muted">MIT CS PhD</span></span></li>
-    <li><span><strong>Etash Guha</strong> &mdash; <span class="muted">Stanford CS PhD</span></span></li>
-    <li><span><strong>Zirui (Colin) Wang</strong> &mdash; <span class="muted">Berkeley EECS PhD</span></span></li>
-    <li><span><strong>Sijun Tan</strong> &mdash; <span class="muted">Berkeley EECS PhD, rLLM Author</span></span></li>
-    <li><span><strong>Mingyang Deng</strong> &mdash; <span class="muted">MIT CS PhD</span></span></li>
-    <li><span><strong>Zhening Li</strong> &mdash; <span class="muted">MIT CS PhD</span></span></li>
-    <li><span><strong>Jon Saad-Falcon</strong> &mdash; <span class="muted">Stanford CS PhD</span></span></li>
-    <li><span><strong>Rohin Manvi</strong> &mdash; <span class="muted">Berkeley EECS PhD</span></span></li>
-    <li><span><strong>Kirill Acharya</strong> &mdash; <span class="muted">Stanford CS PhD</span></span></li>
-    <li><span><strong>Maxwell Jones</strong> &mdash; <span class="muted">CMU ML PhD</span></span></li>
-    <li><span><strong>Utkarsh Priyam</strong> &mdash; <span class="muted">CMU ML PhD</span></span></li>
-    <li><span><strong>Lawrence Jang</strong> &mdash; <span class="muted">CMU ML PhD</span></span></li>
-    <li><span><strong>Jeffrey Ma</strong> &mdash; <span class="muted">Harvard CS PhD</span></span></li>
-    <li><span><strong>Jaeyeon Kim</strong> &mdash; <span class="muted">Harvard CS PhD</span></span></li>
-    <li><span><strong>Devvrit Khatri</strong> &mdash; <span class="muted">UT Austin CS, prev MSL</span></span></li>
-  </ul>
+  <div class="card-grid dense">
+
+    <div class="person-card no-link" data-name="lisa dunlap" data-tags="delta researchers" data-company="berkeley" data-tier="3">
+      <div class="avatar" data-initials="LD"></div>
+      <div class="card-body">
+        <div class="card-name">Lisa Dunlap</div>
+        <div class="card-role">Berkeley EECS PhD</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="alex zhang" data-tags="delta researchers" data-company="mit" data-tier="3">
+      <div class="avatar" data-initials="AZ"></div>
+      <div class="card-body">
+        <div class="card-name">Alex Zhang</div>
+        <div class="card-role">MIT CS PhD, RLM Author</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="dan biderman" data-tags="delta researchers" data-company="stanford" data-tier="3">
+      <div class="avatar" data-initials="DB"></div>
+      <div class="card-body">
+        <div class="card-name">Dan Biderman</div>
+        <div class="card-role">Stanford CS Postdoc</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="simon guo" data-tags="delta researchers" data-company="stanford" data-tier="3">
+      <div class="avatar" data-initials="SG"></div>
+      <div class="card-body">
+        <div class="card-name">Simon Guo</div>
+        <div class="card-role">Stanford CS PhD</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="archer wang" data-tags="delta researchers" data-company="mit" data-tier="3">
+      <div class="avatar" data-initials="AW"></div>
+      <div class="card-body">
+        <div class="card-name">Archer Wang</div>
+        <div class="card-role">MIT CS PhD</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="grace luo" data-tags="delta researchers" data-company="berkeley" data-tier="3">
+      <div class="avatar" data-initials="GL"></div>
+      <div class="card-body">
+        <div class="card-name">Grace Luo</div>
+        <div class="card-role">Berkeley EECS PhD</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="alex gu" data-tags="delta researchers" data-company="mit" data-tier="3">
+      <div class="avatar" data-initials="AG"></div>
+      <div class="card-body">
+        <div class="card-name">Alex Gu</div>
+        <div class="card-role">MIT CS PhD</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="sachit menon" data-tags="delta researchers" data-company="columbia" data-tier="3">
+      <div class="avatar" data-initials="SM"></div>
+      <div class="card-body">
+        <div class="card-name">Sachit Menon</div>
+        <div class="card-role">Columbia CS PhD</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="xingjian bai" data-tags="delta researchers" data-company="mit" data-tier="3">
+      <div class="avatar" data-initials="XB"></div>
+      <div class="card-body">
+        <div class="card-name">Xingjian Bai</div>
+        <div class="card-role">MIT CS PhD</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="etash guha" data-tags="delta researchers" data-company="stanford" data-tier="3">
+      <div class="avatar" data-initials="EG"></div>
+      <div class="card-body">
+        <div class="card-name">Etash Guha</div>
+        <div class="card-role">Stanford CS PhD</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="zirui colin wang" data-tags="delta researchers" data-company="berkeley" data-tier="3">
+      <div class="avatar" data-initials="ZW"></div>
+      <div class="card-body">
+        <div class="card-name">Zirui (Colin) Wang</div>
+        <div class="card-role">Berkeley EECS PhD</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="sijun tan" data-tags="delta researchers" data-company="berkeley" data-tier="3">
+      <div class="avatar" data-initials="ST"></div>
+      <div class="card-body">
+        <div class="card-name">Sijun Tan</div>
+        <div class="card-role">Berkeley EECS PhD, rLLM Author</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="mingyang deng" data-tags="delta researchers" data-company="mit" data-tier="3">
+      <div class="avatar" data-initials="MD"></div>
+      <div class="card-body">
+        <div class="card-name">Mingyang Deng</div>
+        <div class="card-role">MIT CS PhD</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="zhening li" data-tags="delta researchers" data-company="mit" data-tier="3">
+      <div class="avatar" data-initials="ZL"></div>
+      <div class="card-body">
+        <div class="card-name">Zhening Li</div>
+        <div class="card-role">MIT CS PhD</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="jon saad-falcon" data-tags="delta researchers" data-company="stanford" data-tier="3">
+      <div class="avatar" data-initials="JS"></div>
+      <div class="card-body">
+        <div class="card-name">Jon Saad-Falcon</div>
+        <div class="card-role">Stanford CS PhD</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="rohin manvi" data-tags="delta researchers" data-company="berkeley" data-tier="3">
+      <div class="avatar" data-initials="RM"></div>
+      <div class="card-body">
+        <div class="card-name">Rohin Manvi</div>
+        <div class="card-role">Berkeley EECS PhD</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="kirill acharya" data-tags="delta researchers" data-company="stanford" data-tier="3">
+      <div class="avatar" data-initials="KA"></div>
+      <div class="card-body">
+        <div class="card-name">Kirill Acharya</div>
+        <div class="card-role">Stanford CS PhD</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="maxwell jones" data-tags="delta researchers" data-company="cmu" data-tier="3">
+      <div class="avatar" data-initials="MJ"></div>
+      <div class="card-body">
+        <div class="card-name">Maxwell Jones</div>
+        <div class="card-role">CMU ML PhD</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="utkarsh priyam" data-tags="delta researchers" data-company="cmu" data-tier="3">
+      <div class="avatar" data-initials="UP"></div>
+      <div class="card-body">
+        <div class="card-name">Utkarsh Priyam</div>
+        <div class="card-role">CMU ML PhD</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="lawrence jang" data-tags="delta researchers" data-company="cmu" data-tier="3">
+      <div class="avatar" data-initials="LJ"></div>
+      <div class="card-body">
+        <div class="card-name">Lawrence Jang</div>
+        <div class="card-role">CMU ML PhD</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="jeffrey ma" data-tags="delta researchers" data-company="harvard" data-tier="3">
+      <div class="avatar" data-initials="JM"></div>
+      <div class="card-body">
+        <div class="card-name">Jeffrey Ma</div>
+        <div class="card-role">Harvard CS PhD</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="jaeyeon kim" data-tags="delta researchers" data-company="harvard" data-tier="3">
+      <div class="avatar" data-initials="JK"></div>
+      <div class="card-body">
+        <div class="card-name">Jaeyeon Kim</div>
+        <div class="card-role">Harvard CS PhD</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="devvrit khatri" data-tags="delta researchers" data-company="ut austin" data-tier="3">
+      <div class="avatar" data-initials="DK"></div>
+      <div class="card-body">
+        <div class="card-name">Devvrit Khatri</div>
+        <div class="card-role">UT Austin CS, prev MSL</div>
+      </div>
+    </div>
+
+  </div>
 
   <h3 class="small mono faint">Undergrad &amp; Industry</h3>
-  <ul class="person-list">
-    <li><span><strong>Emily Han</strong> &mdash; <span class="muted">Modal, Stanford CS</span></span></li>
-    <li><span><strong>Zeyneb Kaya</strong> &mdash; <span class="muted">Stanford CS</span></span></li>
-    <li><span><strong>Nikita Mounier</strong> &mdash; <span class="muted">Penn CS, prev Ramp, Rox</span></span></li>
-    <li><span><strong>Aarav Wattal</strong> &mdash; <span class="muted">Stanford EE + CS</span></span></li>
-    <li><span><strong>Thijs Simonian</strong> &mdash; <span class="muted">Stanford CS, prev LMArena</span></span></li>
-    <li><span><strong>Spruce Campbell</strong> &mdash; <span class="muted">MIT Physics, prev OpenAI</span></span></li>
-    <li><span><strong>Khush Gupta</strong> &mdash; <span class="muted">Penn CS, Together AI</span></span></li>
-    <li><span><strong>Mihika Dusad</strong> &mdash; <span class="muted">MIT CS</span></span></li>
-    <li><span><strong>Sandra Yang</strong> &mdash; <span class="muted">Stanford CS + Math</span></span></li>
-    <li><span><strong>Hamza Mostafa</strong> &mdash; <span class="muted">Waterloo CS, prev OpenAI</span></span></li>
-    <li><span><strong>Eric Zhang</strong> &mdash; <span class="muted">Waterloo, prev Suno</span></span></li>
-    <li><span><strong>Arin Weling</strong> &mdash; <span class="muted">IIT Bombay</span></span></li>
-    <li><span><strong>Francesco Crivelli</strong> &mdash; <span class="muted">Berkeley EECS</span></span></li>
-    <li><span><strong>Preston Fu</strong> &mdash; <span class="muted">Berkeley EECS</span></span></li>
-    <li><span><strong>Stephen Xie</strong> &mdash; <span class="muted">Berkeley EECS</span></span></li>
-    <li><span><strong>Shobhit Agarwal</strong> &mdash; <span class="muted">Stanford CS</span></span></li>
-    <li><span><strong>Rajan Agarwal</strong> &mdash; <span class="muted">Waterloo SWE</span></span></li>
-    <li><span><strong>Ian Moore</strong> &mdash; <span class="muted">Harvard CS</span></span></li>
-    <li><span><strong>Abhay Venkatesh</strong> &mdash; <span class="muted">Anduril</span></span></li>
-    <li><span><strong>Aditya Gupta</strong> &mdash; <span class="muted">Stanford CS</span></span></li>
-    <li><span><strong>Ishaan Javali</strong> &mdash; <span class="muted">Princeton CS</span></span></li>
-    <li><span><strong>Charles Ding</strong> &mdash; <span class="muted">Stanford CS</span></span></li>
-    <li><span><strong>Aakash Mishra</strong> &mdash; <span class="muted">Meta AI, Stanford CS</span></span></li>
-    <li><span><strong>Hima Tammineedi</strong> &mdash; <span class="muted">Forge, CMU ML</span></span></li>
-    <li><span><strong>Taarush Grover</strong> &mdash; <span class="muted">Stanford CS</span></span></li>
-    <li><span><strong>James Liu</strong> &mdash; <span class="muted">Stanford CS</span></span></li>
-    <li><span><strong>Parsa Idehpour</strong> &mdash; <span class="muted">Penn CS</span></span></li>
-    <li><span><strong>Adam Lee</strong> &mdash; <span class="muted">Berkeley CS</span></span></li>
-    <li><span><strong>Matthew Yang</strong> &mdash; <span class="muted">CMU ML</span></span></li>
-  </ul>
+  <div class="card-grid dense">
+
+    <div class="person-card no-link" data-name="emily han" data-tags="delta researchers" data-company="modal" data-tier="3">
+      <div class="avatar" data-initials="EH"></div>
+      <div class="card-body">
+        <div class="card-name">Emily Han</div>
+        <div class="card-role">Modal, Stanford CS</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="zeyneb kaya" data-tags="delta researchers" data-company="stanford" data-tier="3">
+      <div class="avatar" data-initials="ZK"></div>
+      <div class="card-body">
+        <div class="card-name">Zeyneb Kaya</div>
+        <div class="card-role">Stanford CS</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="nikita mounier" data-tags="delta researchers" data-company="penn" data-tier="3">
+      <div class="avatar" data-initials="NM"></div>
+      <div class="card-body">
+        <div class="card-name">Nikita Mounier</div>
+        <div class="card-role">Penn CS, prev Ramp, Rox</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="aarav wattal" data-tags="delta researchers" data-company="stanford" data-tier="3">
+      <div class="avatar" data-initials="AW"></div>
+      <div class="card-body">
+        <div class="card-name">Aarav Wattal</div>
+        <div class="card-role">Stanford EE + CS</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="thijs simonian" data-tags="delta researchers" data-company="stanford" data-tier="3">
+      <div class="avatar" data-initials="TS"></div>
+      <div class="card-body">
+        <div class="card-name">Thijs Simonian</div>
+        <div class="card-role">Stanford CS, prev LMArena</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="spruce campbell" data-tags="delta researchers" data-company="mit" data-tier="3">
+      <div class="avatar" data-initials="SC"></div>
+      <div class="card-body">
+        <div class="card-name">Spruce Campbell</div>
+        <div class="card-role">MIT Physics, prev OpenAI</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="khush gupta" data-tags="delta researchers" data-company="together ai" data-tier="3">
+      <div class="avatar" data-initials="KG"></div>
+      <div class="card-body">
+        <div class="card-name">Khush Gupta</div>
+        <div class="card-role">Penn CS, Together AI</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="mihika dusad" data-tags="delta researchers" data-company="mit" data-tier="3">
+      <div class="avatar" data-initials="MD"></div>
+      <div class="card-body">
+        <div class="card-name">Mihika Dusad</div>
+        <div class="card-role">MIT CS</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="sandra yang" data-tags="delta researchers" data-company="stanford" data-tier="3">
+      <div class="avatar" data-initials="SY"></div>
+      <div class="card-body">
+        <div class="card-name">Sandra Yang</div>
+        <div class="card-role">Stanford CS + Math</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="hamza mostafa" data-tags="delta researchers" data-company="waterloo" data-tier="3">
+      <div class="avatar" data-initials="HM"></div>
+      <div class="card-body">
+        <div class="card-name">Hamza Mostafa</div>
+        <div class="card-role">Waterloo CS, prev OpenAI</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="eric zhang" data-tags="delta researchers" data-company="waterloo" data-tier="3">
+      <div class="avatar" data-initials="EZ"></div>
+      <div class="card-body">
+        <div class="card-name">Eric Zhang</div>
+        <div class="card-role">Waterloo, prev Suno</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="arin weling" data-tags="delta researchers" data-company="iit bombay" data-tier="3">
+      <div class="avatar" data-initials="AW"></div>
+      <div class="card-body">
+        <div class="card-name">Arin Weling</div>
+        <div class="card-role">IIT Bombay</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="francesco crivelli" data-tags="delta researchers" data-company="berkeley" data-tier="3">
+      <div class="avatar" data-initials="FC"></div>
+      <div class="card-body">
+        <div class="card-name">Francesco Crivelli</div>
+        <div class="card-role">Berkeley EECS</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="preston fu" data-tags="delta researchers" data-company="berkeley" data-tier="3">
+      <div class="avatar" data-initials="PF"></div>
+      <div class="card-body">
+        <div class="card-name">Preston Fu</div>
+        <div class="card-role">Berkeley EECS</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="stephen xie" data-tags="delta researchers" data-company="berkeley" data-tier="3">
+      <div class="avatar" data-initials="SX"></div>
+      <div class="card-body">
+        <div class="card-name">Stephen Xie</div>
+        <div class="card-role">Berkeley EECS</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="shobhit agarwal" data-tags="delta researchers" data-company="stanford" data-tier="3">
+      <div class="avatar" data-initials="SA"></div>
+      <div class="card-body">
+        <div class="card-name">Shobhit Agarwal</div>
+        <div class="card-role">Stanford CS</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="rajan agarwal" data-tags="delta researchers" data-company="waterloo" data-tier="3">
+      <div class="avatar" data-initials="RA"></div>
+      <div class="card-body">
+        <div class="card-name">Rajan Agarwal</div>
+        <div class="card-role">Waterloo SWE</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="ian moore" data-tags="delta researchers" data-company="harvard" data-tier="3">
+      <div class="avatar" data-initials="IM"></div>
+      <div class="card-body">
+        <div class="card-name">Ian Moore</div>
+        <div class="card-role">Harvard CS</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="abhay venkatesh" data-tags="delta researchers" data-company="anduril" data-tier="3">
+      <div class="avatar" data-initials="AV"></div>
+      <div class="card-body">
+        <div class="card-name">Abhay Venkatesh</div>
+        <div class="card-role">Anduril</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="aditya gupta" data-tags="delta researchers" data-company="stanford" data-tier="3">
+      <div class="avatar" data-initials="AG"></div>
+      <div class="card-body">
+        <div class="card-name">Aditya Gupta</div>
+        <div class="card-role">Stanford CS</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="ishaan javali" data-tags="delta researchers" data-company="princeton" data-tier="3">
+      <div class="avatar" data-initials="IJ"></div>
+      <div class="card-body">
+        <div class="card-name">Ishaan Javali</div>
+        <div class="card-role">Princeton CS</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="charles ding" data-tags="delta researchers" data-company="stanford" data-tier="3">
+      <div class="avatar" data-initials="CD"></div>
+      <div class="card-body">
+        <div class="card-name">Charles Ding</div>
+        <div class="card-role">Stanford CS</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="aakash mishra" data-tags="delta researchers" data-company="meta ai" data-tier="3">
+      <div class="avatar" data-initials="AM"></div>
+      <div class="card-body">
+        <div class="card-name">Aakash Mishra</div>
+        <div class="card-role">Meta AI, Stanford CS</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="hima tammineedi" data-tags="delta researchers" data-company="forge" data-tier="3">
+      <div class="avatar" data-initials="HT"></div>
+      <div class="card-body">
+        <div class="card-name">Hima Tammineedi</div>
+        <div class="card-role">Forge, CMU ML</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="taarush grover" data-tags="delta researchers" data-company="stanford" data-tier="3">
+      <div class="avatar" data-initials="TG"></div>
+      <div class="card-body">
+        <div class="card-name">Taarush Grover</div>
+        <div class="card-role">Stanford CS</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="james liu" data-tags="delta researchers" data-company="stanford" data-tier="3">
+      <div class="avatar" data-initials="JL"></div>
+      <div class="card-body">
+        <div class="card-name">James Liu</div>
+        <div class="card-role">Stanford CS</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="parsa idehpour" data-tags="delta researchers" data-company="penn" data-tier="3">
+      <div class="avatar" data-initials="PI"></div>
+      <div class="card-body">
+        <div class="card-name">Parsa Idehpour</div>
+        <div class="card-role">Penn CS</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="adam lee" data-tags="delta researchers" data-company="berkeley" data-tier="3">
+      <div class="avatar" data-initials="AL"></div>
+      <div class="card-body">
+        <div class="card-name">Adam Lee</div>
+        <div class="card-role">Berkeley CS</div>
+      </div>
+    </div>
+
+    <div class="person-card no-link" data-name="matthew yang" data-tags="delta researchers" data-company="cmu" data-tier="3">
+      <div class="avatar" data-initials="MY"></div>
+      <div class="card-body">
+        <div class="card-name">Matthew Yang</div>
+        <div class="card-role">CMU ML</div>
+      </div>
+    </div>
+
+  </div>
 
   <h2>How to Use</h2>
   <p class="small muted">
@@ -345,8 +1480,46 @@
   </p>
 
   <footer>
-    last updated: 2026-03-23 &middot; maintained via deep research agent
+    last updated: 2026-03-26 &middot; maintained via deep research agent
   </footer>
+
+  <script>
+(function() {
+  var input = document.getElementById('search-input');
+  var cards = document.querySelectorAll('.person-card');
+  var tagBtns = document.querySelectorAll('.tag-filter');
+  var countEl = document.getElementById('count');
+  var activeTag = 'all';
+
+  function filter() {
+    var q = input.value.toLowerCase().trim();
+    var shown = 0;
+    cards.forEach(function(c) {
+      var s = (c.dataset.name||'') + ' ' + (c.dataset.tags||'') + ' ' + (c.dataset.company||'');
+      var mSearch = !q || s.indexOf(q) !== -1;
+      var mTag = activeTag === 'all' || (c.dataset.tags||'').indexOf(activeTag) !== -1;
+      if (mSearch && mTag) { c.classList.remove('hidden'); shown++; }
+      else { c.classList.add('hidden'); }
+    });
+    countEl.textContent = shown + ' of ' + cards.length + ' people shown';
+    document.querySelectorAll('.card-grid').forEach(function(g) {
+      var allHidden = Array.prototype.every.call(g.querySelectorAll('.person-card'), function(c) { return c.classList.contains('hidden'); });
+      var h = g.previousElementSibling;
+      if (h && (h.tagName==='H3'||h.tagName==='H2')) h.classList.toggle('section-hidden', allHidden);
+    });
+  }
+
+  input.addEventListener('input', filter);
+  tagBtns.forEach(function(b) {
+    b.addEventListener('click', function() {
+      tagBtns.forEach(function(x){x.classList.remove('active')});
+      b.classList.add('active');
+      activeTag = b.dataset.tag;
+      filter();
+    });
+  });
+})();
+  </script>
 
 </body>
 </html>
