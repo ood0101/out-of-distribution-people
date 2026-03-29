@@ -14,48 +14,250 @@
   </nav>
 
   <div class="profile-header">
-    <h1>Laker Newhouse</h1>
     <img src="https://framerusercontent.com/images/biEsr5HgouB9oRKkiEdgQqW0ADQ.jpeg?width=400&amp;height=400" alt="Laker Newhouse" style="width:80px;height:80px;border-radius:50%;object-fit:cover;float:right;margin:0 0 1rem 1rem;" loading="lazy" onerror="this.style.display='none'" />
-    <p class="one-liner">MIT Mathematics &#x27;25 (advisors: Jeremy Bernstein, Phillip Isola)</p>
+    <h1>Laker Newhouse</h1>
+    <p class="one-liner"><strong>Co-creator of Muon, the optimizer now used to train trillion-parameter LLMs (Kimi K2, GLM-4.5, INTELLECT-3). MIT Math &rsquo;25, MEng EECS &rsquo;25. Thesis unified Adam/Shampoo/Muon via modular duality. NeurIPS 2023 paper (quantum + tensor networks). ThunderKittens kernel work (1510 vs 774 TFLOPS on H100). ICML 2025 paper on Lipschitz transformers. Phillip Isola &amp; Jeremy Bernstein advisors. Founded Khan Academy for Ukraine. Based in SF Bay Area. ~23.</strong></p>
     <div class="tags">
+      <span class="tag spike">tier-1: high conviction</span>
+      <span class="tag">optimizers</span>
+      <span class="tag">training-infrastructure</span>
+      <span class="tag">muon</span>
+      <span class="tag">spectral-methods</span>
+      <span class="tag">lipschitz-transformers</span>
       <span class="tag">delta</span>
     </div>
     <div class="links">
+      <a href="https://x.com/LakerNewhouse">twitter/x (~776)</a>
       <a href="https://www.linkedin.com/in/lakernewhouse/">linkedin</a>
-      <a href="https://www.lakernewhouse.com/">website</a>
-      <a href="https://scholar.google.com/citations?user=PkVMiakAAAAJ">scholar</a>
+      <a href="https://github.com/Arongil">github</a>
+      <a href="https://www.lakernewhouse.com">website</a>
+      <a href="https://scholar.google.com/citations?hl=en&user=PkVMiakAAAAJ">google scholar</a>
     </div>
   </div>
 
-  <!-- THE SPIKE -->
+  <!-- INVESTMENT THESIS -->
   <div class="spike-box">
-    <div class="label">&#9670; What Makes Them Spiky</div>
+    <div class="label">&#9670; Investment Thesis</div>
+    <p>
+      Laker Newhouse co-created Muon, an optimizer that has crossed the chasm from academic novelty to production infrastructure:
+      Moonshot AI&rsquo;s Kimi K2 (1T parameters, 15.5T tokens), Zhipu&rsquo;s GLM-4.5, and INTELLECT-3 were all trained with Muon,
+      which delivers <strong>~2x computational efficiency</strong> vs. AdamW and converges in <strong>~2/3 the steps</strong>.
+      His MEng thesis provided the theoretical unification (modular duality) that explains why Muon works and points toward
+      next-generation optimizers with enforced Lipschitz constraints. He is ~23, just graduated from MIT (Math + EECS MEng),
+      advised by Jeremy Bernstein and Phillip Isola, with a NeurIPS 2023 paper and an ICML 2025 paper already on his record.
+      No departure signals yet &mdash; he appears to be in a post-graduation exploration phase in the SF Bay Area. If he decides
+      to build an optimizer/training-infrastructure company, the technical moat is already deep. <strong>Build the relationship now</strong>,
+      before the thesis crystallizes into a company.
+    </p>
+  </div>
+
+  <!-- THE SPIKE -->
+  <section>
+    <h2>The Spike &mdash; With Evidence</h2>
+    <p>
+      In Fall 2024, Newhouse and Jeremy Bernstein published <strong>&ldquo;Old Optimizer, New Norm: An Anthology&rdquo;</strong>
+      (arXiv 2409.20325), which recast Adam, Shampoo, and Prodigy as steepest descent under different norms &mdash; and in
+      Appendix A, recommended Newton-Schulz iteration as the computational strategy that became Muon&rsquo;s core.
+      Simultaneously, they published <strong>&ldquo;Modular Duality in Deep Learning&rdquo;</strong> (arXiv 2410.21265,
+      accepted at <strong>ICML 2025</strong>), providing the full theoretical framework: assign operator norms to each layer,
+      recursively induce a duality map on the weight space, and derive GPU-friendly algorithms for Embed, Linear, and Conv2D layers.
+    </p>
+    <p>
+      Keller Jordan then implemented the Newton-Schulz orthogonalization idea as the Muon optimizer, which Newhouse describes
+      himself as having &ldquo;co-created.&rdquo; The empirical results are extraordinary:
+    </p>
     <ul>
-      <li>Co-author of Muon optimizer — now one of the most important alternatives to Adam</li>
-      <li>MIT M.Eng. thesis unifies SGD, Adam, Shampoo, and Muon under one framework</li>
-      <li>Leads Khan Academy for Ukraine — education impact at scale</li>
-      <li>Interdisciplinary: math, physics, negotiation, languages, philosophy, education</li>
-      <li>Taught Ukrainian high school students in Barcelona via MIT MISTI</li>
+      <li><strong>NanoGPT:</strong> 1.35x faster training to 3.28 validation loss on FineWeb. Muon persisted across 12 consecutive speedrunning records by 7 different researchers</li>
+      <li><strong>CIFAR-10:</strong> Improved speedrun record from 3.3 to 2.6 A100-seconds</li>
+      <li><strong>1.5B transformer:</strong> GPT-2 XL level on HellaSwag in 10 8xH100-hours vs. 13.3 hours with AdamW</li>
+      <li><strong>Kimi K2 (1T params):</strong> Moonshot AI scaled Muon (via MuonClip) to 15.5T tokens with zero loss spikes</li>
+      <li><strong>Moonlight (3B/16B MoE):</strong> Better Pareto frontier than prior models with far fewer training FLOPs</li>
+      <li><strong>FLOP overhead:</strong> &lt;1% for typical LLM training (0.5% for Llama 405B scale)</li>
     </ul>
-  </div>
+    <p>
+      Beyond Muon, Newhouse built a <strong>ThunderKittens kernel</strong> for symmetric matrix multiplication that achieves
+      <strong>1510 TFLOPS</strong> vs. PyTorch&rsquo;s 774 TFLOPS on 8192&times;8192 symmetric matrices on H100 &mdash;
+      a <strong>~2x throughput gain</strong> in the Newton-Schulz iteration that powers Muon, translating to an overall
+      30% speedup in Newton-Schulz.
+    </p>
+    <p>
+      His most recent work, <strong>&ldquo;Training Transformers with Enforced Lipschitz Constants&rdquo;</strong>
+      (arXiv 2507.13338, Jul 2025), with Bernstein and Isola, pushes the frontier further: using Muon + spectral soft cap,
+      they trained a <strong>2-Lipschitz transformer</strong> on Shakespeare reaching 60% validation accuracy, and a
+      <strong>10-Lipschitz transformer at 145M params</strong> reaching 21% on internet text &mdash;
+      <em>without</em> layer norm, QK norm, or logit softcapping. This is the first demonstration that stability techniques
+      can be replaced entirely by direct weight spectral norm constraints.
+    </p>
+  </section>
 
-  <h2>Research &amp; Key Work</h2>
-  <h3>Problems &amp; Research Areas</h3>
-  <ul><li>Optimizer design (Muon) — steepest descent under matrix operator norm</li><li>Learning rate transfer across model widths</li><li>Weight regularization and Lipschitz constraints for transformers</li><li>Duality in deep learning</li><li>Education technology (Khan Academy for Ukraine)</li></ul>
-  <h3>Key Work</h3>
-  <ul><li>Muon optimizer (with Keller Jordan et al.) — optimizer for hidden layers in neural networks that outperforms Adam</li><li>Old Optimizer, New Norm: An Anthology (with Jeremy Bernstein) — unifying optimizers as steepest descent under different norms</li><li>Modular Duality in Deep Learning (with Jeremy Bernstein) — learning rate transfer and faster training</li><li>Training Transformers with Enforced Lipschitz Constants (ICML 2025)</li><li>M.Eng. thesis: Duality, Weight Decay, and Metrized Deep Learning</li></ul>
+  <!-- GROWTH TRAJECTORY -->
+  <section>
+    <h2>Growth Trajectory</h2>
+    <table style="width:100%; font-size:0.85rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted); width:120px;">2020</td><td>Khan Academy content intern &mdash; built 600+ multivariable calculus problems, 10K+ monthly users</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2021</td><td>First publication: &ldquo;Who Are the Gatekeepers?&rdquo; (INFORMS journal editorial diversity analysis)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Summer 2023</td><td>Founded Khan Academy for Ukraine &mdash; taught 20 Ukrainian HS students in Barcelona via MIT MISTI/ULTA</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Dec 2023</strong></td><td><strong>NeurIPS 2023:</strong> ANTN paper &mdash; bridging autoregressive neural networks and tensor networks for quantum many-body simulation. Co-authors: Zhuo Chen, Eddie Chen, Di Luo, Marin Solja&#269;i&#263;</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Feb 2024</td><td>Podcast: &ldquo;The Promise of AI&rdquo; (Straight To It, Ep. 63)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2024</td><td>&ldquo;An Assessment of Model-on-Model Deception&rdquo; &mdash; AI safety paper (OpenReview)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Sep 2024</strong></td><td><strong>&ldquo;Old Optimizer, New Norm: An Anthology&rdquo;</strong> with Jeremy Bernstein &mdash; theoretical seed for Muon</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Oct 2024</strong></td><td><strong>&ldquo;Modular Duality in Deep Learning&rdquo;</strong> (Bernstein &amp; Newhouse) &rarr; accepted ICML 2025</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted); color:var(--accent);"><strong>Fall 2024</strong></td><td><strong>Muon co-created</strong> &mdash; Keller Jordan implements Newton-Schulz orthogonalization from Bernstein/Newhouse theoretical work. Immediately sets NanoGPT training speed records</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Spring 2025</strong></td><td><strong>MEng thesis:</strong> &ldquo;Duality, Weight Decay, and Metrized Deep Learning&rdquo; &mdash; unified guide to understanding Muon, advocating spectral weight regulation</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Jun 2025</td><td>MIT graduation (BS Math + MEng EECS). Commencement speech at Khan Lab School</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Jul 2025</strong></td><td><strong>&ldquo;Training Transformers with Enforced Lipschitz Constants&rdquo;</strong> (6 co-authors incl. Bernstein &amp; Isola) &mdash; 145M Lipschitz transformer without layer norm</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Jul 2025</td><td>&ldquo;Understanding Muon&rdquo; 3-part blog series published &mdash; became a canonical reference for the Muon community</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Late 2025</td><td>ThunderKittens kernel: 1510 TFLOPS symmetric matmul on H100 (2x PyTorch baseline)</td></tr>
+    </table>
+    <p style="margin-top:1rem; font-family:var(--mono); font-size:0.75rem; color:var(--accent);">
+      PACE: 7 publications in ~2 years (NeurIPS, ICML, arXiv). Co-created an optimizer adopted by 3 production LLMs within 12 months of release.<br>
+      ACCELERATION: Clear. Jumped from quantum physics to optimization theory to production-grade systems infrastructure in 18 months.<br>
+      PEER COMPARISON: Extremely rare for an MEng student to co-create an optimizer adopted at trillion-parameter scale before graduating. Comparable to Tri Dao&rsquo;s FlashAttention trajectory but at the optimizer layer.
+    </p>
+  </section>
 
+  <!-- WHAT HE'D BUILD -->
+  <section>
+    <h2>What He&rsquo;d Build</h2>
+    <h3>The Training Infrastructure Thesis</h3>
+    <p>Newhouse&rsquo;s work points toward a company that makes neural network training fundamentally more efficient and stable. Three convergent threads:</p>
+    <ul>
+      <li><strong>Next-gen optimizers beyond AdamW:</strong> Muon already delivers 2x computational efficiency. His modular duality framework is a design space for building custom optimizers per architecture. The thesis: every major model lab is leaving 30&ndash;50% of their compute budget on the table by using AdamW</li>
+      <li><strong>Lipschitz-enforced training:</strong> Training without layer norm, QK norm, or logit softcapping by directly constraining weight spectral norms. This could eliminate entire categories of training instability (loss spikes, gradient explosions) that cost labs millions in wasted GPU-hours</li>
+      <li><strong>Custom kernels for training primitives:</strong> His ThunderKittens work (2x speedup on Newton-Schulz) shows he can go all the way to the metal. Optimizer + kernel co-design is an extremely narrow wedge</li>
+    </ul>
 
-  <h2>Current Work</h2>
-  <p>Just graduated from MIT; research focuses on deep learning optimization theory — specifically the mathematical foundations that unify all major optimizers and enable principled design of new ones like Muon</p>
+    <h3>Market</h3>
+    <ul>
+      <li>AI model training compute: $30B+ annually and growing rapidly. A 2x efficiency gain on training runs costing $100M+ is worth tens of millions per customer</li>
+      <li>If Muon or its successors become the default optimizer for LLM training, the creator has unmatched credibility to build the picks-and-shovels layer</li>
+    </ul>
 
-  <div class="spike-box" style="margin-top: 1.5rem;">
-    <div class="label">&#9670; Alpha Insight</div>
-    <p>Muon is not just another optimizer — it&#x27;s derived from first principles (steepest descent under operator norm), which means it has theoretical backing that Adam lacks. Laker&#x27;s framework for understanding all optimizers as &#x27;steepest descent under a norm&#x27; could generate a whole family of better optimizers for different architectures.</p>
-  </div>
+    <h3>Competitive Landscape</h3>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Company/Effort</td><td>What They Do</td><td>How Laker Differs</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Moonshot AI (MuonClip)</td><td>Extended Muon for Kimi K2 at 1T scale</td><td>Laker co-created the theoretical foundation. Moonshot is a consumer of his ideas</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Modula (Jeremy Bernstein)</td><td>Software library for metrized deep learning</td><td>Bernstein is the closest collaborator &mdash; potential co-founder, not competitor</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Together AI</td><td>Training infrastructure as a service</td><td>Together optimizes infra; Laker would optimize the algorithms running on that infra</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Mosaic ML / Databricks</td><td>Composer training library</td><td>Absorbed into Databricks. Laker&rsquo;s approach is more fundamental (optimizer + kernel co-design)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Internal lab teams (OpenAI, DeepMind)</td><td>Custom optimizer R&amp;D</td><td>Labs build for themselves. A startup could serve the long tail of companies training models</td></tr>
+    </table>
+  </section>
+
+  <!-- PRIMARY SOURCES -->
+  <section>
+    <h2>In His Own Words</h2>
+    <ul>
+      <li>&ldquo;Fast optimizers. Principled optimizers.&rdquo; &mdash; research page tagline. Two words each. This is someone who values both speed and rigor</li>
+      <li>&ldquo;Fall 2024: co-created Muon, which was born out of the modular duality framework with Jeremy Bernstein.&rdquo; &mdash; self-description on lakernewhouse.com/research</li>
+      <li>&ldquo;Curious about Muon, but not sure where to start? I wrote a 3-part blog series called &lsquo;Understanding Muon&rsquo; designed to get you up to speed &mdash; with The Matrix references, annotated source code, and thoughts on where Muon might be going.&rdquo; &mdash; Twitter thread, Jul 2025. <em>Educator instinct: explains complex ideas accessibly</em></li>
+      <li>&ldquo;I think there&rsquo;s so much potential here&hellip; Muon is strong because of the community that has pushed it forward.&rdquo; &mdash; Understanding Muon, Chapter 3. <em>Community builder, not just researcher</em></li>
+      <li>&ldquo;My textbook didn&rsquo;t always include solutions to problems, so I couldn&rsquo;t be sure I had done a given question correctly.&rdquo; &mdash; Khan Academy blog, on why he built 600+ practice problems. <em>Product empathy from personal pain points</em></li>
+      <li>&ldquo;ULTA is visionary. I&rsquo;ve never met more eager learners, deep thinkers, and driven implementers than the 20 ULTA finalists.&rdquo; &mdash; MIT MISTI, on teaching Ukrainian students in Barcelona</li>
+    </ul>
+  </section>
+
+  <!-- NETWORK MAP -->
+  <section>
+    <h2>Network Map</h2>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Name</td><td>Role</td><td>Relationship</td><td>Signal</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Jeremy Bernstein</strong></td><td>ML researcher, SF (ex-MIT CSAIL postdoc, Caltech PhD)</td><td>Co-advisor, co-author on 3+ papers, modular duality co-creator</td><td>HIGH. Most likely co-founder if Laker starts something. Building Modula library for metrized deep learning</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Keller Jordan</strong></td><td>Independent researcher, Berkeley</td><td>Muon co-creator. Implemented Newton-Schulz from Bernstein/Newhouse theory</td><td>HIGH. NanoGPT speedrunning pioneer. Endorsed by Andrej Karpathy. Strong founder archetype</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Phillip Isola</strong></td><td>Assoc. Prof., MIT EECS/CSAIL</td><td>MEng thesis advisor, co-author on Lipschitz paper</td><td>MEDIUM. Advisor lineage &mdash; Isola lab alumni are worth tracking broadly</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Franz Cesista</strong></td><td>Researcher</td><td>Co-author on Lipschitz transformers, contributed FLOP efficiency improvements to Muon</td><td>MEDIUM. Active Muon community contributor</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>R. Preston Hess</strong></td><td>Researcher</td><td>Co-author on Lipschitz paper, invented spectral hammer method</td><td>MEDIUM</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Dakota Goldberg</strong></td><td>MIT EECS</td><td>Co-author on ThunderKittens symmetric matmul paper</td><td>LOW. Kernel engineering collaborator</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Marin Solja&#269;i&#263;</strong></td><td>Prof., MIT Physics</td><td>Co-author on NeurIPS 2023 quantum paper</td><td>LOW. Physics connection from earlier research phase</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Nazar Drugov</strong></td><td>Tufts &rsquo;28</td><td>Khan Academy for Ukraine co-founder</td><td>LOW. Education mission, different domain</td></tr>
+    </table>
+    <p style="margin-top:0.5rem; font-size:0.8rem; color:var(--fg-muted);">
+      <strong>The Bernstein-Newhouse-Jordan triangle</strong> is the key unit. Bernstein provides the theory (modular duality, metrized deep learning),
+      Newhouse bridges theory and implementation (thesis, ThunderKittens kernels, educational content),
+      and Jordan provides the empirical engine (NanoGPT speedrunning, Muon GitHub repo with broad adoption).
+      A company formed by any two of these three would have exceptional technical credibility in training infrastructure.
+    </p>
+  </section>
+
+  <!-- TIMELINE & SIGNALS -->
+  <section>
+    <h2>Timeline &amp; Signals</h2>
+    <ul>
+      <li><strong>Status:</strong> Recently graduated MIT (Jun 2025). Based in SF Bay Area. LinkedIn lists Kyiv School of Economics affiliation (likely related to Khan Academy for Ukraine, not a full-time role). No current employer visible</li>
+      <li><strong>No startup signals yet.</strong> No &ldquo;building&rdquo; or &ldquo;stealth&rdquo; tweets. No VC engagement visible. Twitter following is small (~776) &mdash; still in researcher/educator mode, not founder mode</li>
+      <li><strong>Post-graduation window:</strong> He is in the 6&ndash;18 month window post-MIT where the best technical founders decide their path. Muon&rsquo;s rapid production adoption creates a natural pull toward commercialization</li>
+      <li><strong>Jeremy Bernstein is in SF</strong> and building the Modula software library for metrized deep learning. If Bernstein starts a company or joins one, Newhouse is the most likely collaborator to follow</li>
+      <li><strong>Watch for:</strong> Twitter bio change, &ldquo;building&rdquo; signals, Bernstein announcing a company, blog posts shifting from research to product/market thinking, joining a frontier lab (would delay founder timeline)</li>
+      <li><strong>Likely investors if he raises:</strong> a16z, Sequoia, Founders Fund, Thrive Capital (all active in training infrastructure)</li>
+      <li><strong>Valuation range:</strong> Optimizer/training-infra company with Muon provenance: $20&ndash;60M pre-money seed</li>
+    </ul>
+  </section>
+
+  <!-- RISKS -->
+  <section>
+    <h2>Risks</h2>
+    <ul>
+      <li><strong>Academic profile, not a builder profile (yet).</strong> All work is papers and blog posts. No production system, no startup experience, no shipped product beyond educational content. The ThunderKittens kernel had a bug in the transpose-and-store step (acknowledged in the paper) &mdash; honest, but shows work is still research-grade</li>
+      <li><strong>Muon credit is shared.</strong> Keller Jordan implemented Muon and runs the GitHub repo (the primary distribution channel). Jeremy Bernstein co-developed the theory. Newhouse&rsquo;s specific contribution &mdash; the Newton-Schulz recommendation in Appendix A and modular duality framework &mdash; is foundational but not sole-inventor status</li>
+      <li><strong>Optimizers may not be a company.</strong> AdamW is free. Muon is open-source. Labs can adopt Muon without paying anyone. The moat would need to be in next-generation optimizers, custom kernels, or training-as-a-service &mdash; not Muon itself</li>
+      <li><strong>May stay in academia.</strong> Strong educator identity (Khan Academy, Khan Academy for Ukraine, ULTA teaching, blog series, commencement speeches). Could pursue a PhD or professorship rather than founding</li>
+      <li><strong>Young and early-career.</strong> ~23 years old, fresh MEng. Professional network is academic. May lack enterprise relationships for B2B sales</li>
+      <li><strong>No departure signal.</strong> Unlike a Tier 0 person leaving a frontier lab, Newhouse is a recent graduate without a clear &ldquo;walking away from X&rdquo; moment. The urgency is lower than someone forgoing millions in unvested equity</li>
+    </ul>
+  </section>
+
+  <!-- OUTREACH -->
+  <section>
+    <h2>Outreach</h2>
+    <p class="small muted"><strong>Best channel:</strong> Twitter DM (<a href="https://x.com/LakerNewhouse">@LakerNewhouse</a>) or email via his personal website (lakernewhouse.com). LinkedIn: <a href="https://www.linkedin.com/in/lakernewhouse/">lakernewhouse</a>.</p>
+
+    <div class="spike-box" style="margin-top:0.75rem; border-left-color: var(--tier2);">
+      <div class="label">&#9670; Draft Outreach (Twitter DM or Email)</div>
+      <p style="font-size:0.88rem; white-space:pre-line;">Hey Laker &mdash; your &ldquo;Understanding Muon&rdquo; series is the best technical explainer I&rsquo;ve read on optimizer design. The fact that Kimi K2 and GLM-4.5 are now training with Muon at trillion-parameter scale &mdash; within a year of you and Jeremy writing down the theory &mdash; is remarkable.
+
+I invest at inception, before decks. The optimizer/training-infrastructure layer is where I&rsquo;m most convicted, and I think the modular duality framework points toward something much bigger than any single optimizer. Would love to grab coffee in the Bay Area and hear where you&rsquo;re thinking of taking this.
+
+&mdash; Vansh</p>
+    </div>
+
+    <p class="small muted" style="margin-top:0.5rem;"><strong>Why this works:</strong> References his specific blog series (not generic). Shows awareness of Muon&rsquo;s production adoption (Kimi K2, GLM-4.5). Names Jeremy, signaling you understand the collaboration. Frames the opportunity as &ldquo;bigger than Muon&rdquo; which matches his modular duality thesis. Positions as inception-stage, no pressure.</p>
+  </section>
+
+  <!-- BACKGROUND -->
+  <section>
+    <h2>Background</h2>
+    <p>
+      MIT BS Mathematics + MEng EECS (2025). Advisors: Jeremy Bernstein (ex-MIT CSAIL postdoc, now SF-based ML researcher)
+      and Phillip Isola (MIT EECS associate professor, CSAIL). Previously interned at Khan Academy (math content), AWS, CFS,
+      and CHAI (Center for Human-Compatible AI, Berkeley). Founded Khan Academy for Ukraine with Nazar Drugov,
+      aiming to provide free STEM education to 4 million Ukrainian students. Based in SF Bay Area.
+    </p>
+  </section>
+
+  <!-- NOTES -->
+  <section>
+    <h2>Notes</h2>
+    <ul>
+      <li class="small">Full name: Laker J. Newhouse. GitHub: Arongil (29 followers). Personal site: lakernewhouse.com</li>
+      <li class="small">7 publications listed on personal site. Google Scholar: PkVMiakAAAAJ</li>
+      <li class="small">Muon GitHub repo (KellerJordan/Muon): &gt;30% extra sample efficiency, &lt;3% wallclock overhead. Open-source</li>
+      <li class="small">Muon adopted in production: Kimi K2 (Moonshot AI, 1T params, 15.5T tokens), GLM-4.5 (Zhipu), INTELLECT-3</li>
+      <li class="small">MuonClip (Moonshot AI extension): adds QK-clip for attention stability, resulted in zero loss spikes at 1T scale</li>
+      <li class="small">ThunderKittens kernel code: github.com/Arongil/thunder &mdash; symmetric matmul for Newton-Schulz iteration</li>
+      <li class="small">MEng thesis PDF: dspace.mit.edu (handle/1721.1/162956). Also available at lakernewhouse.com/thesis.pdf</li>
+      <li class="small">&ldquo;Understanding Muon&rdquo; 3-part blog: Ch1 (Into the Matrix), Ch2 (Source Code), Ch3 (Weight Regulation) at lakernewhouse.com/muon</li>
+      <li class="small">NeurIPS 2023 paper: ANTN (autoregressive neural tensor networks for quantum many-body simulation). Co-authors: Zhuo Chen, Eddie Chen, Di Luo, Marin Solja&#269;i&#263;</li>
+      <li class="small">ICML 2025 poster: Modular Duality in Deep Learning (icml.cc/virtual/2025/poster/44428)</li>
+      <li class="small">AI safety interest: CHAI (Berkeley) internship + &ldquo;Model-on-Model Deception&rdquo; paper (2024)</li>
+      <li class="small">Podcast: &ldquo;Straight To It&rdquo; Ep. 63, &ldquo;The Promise of AI&rdquo; (Feb 2024)</li>
+      <li class="small">Khan Academy: built 600+ multivariable calculus problems (2020), 10K+ monthly users</li>
+      <li class="small">FPGA-GPU project on GitHub: minimalist GPU on an FPGA (SystemVerilog) &mdash; hardware instinct</li>
+      <li class="small">Not Indian/Indian-origin</li>
+    </ul>
+  </section>
 
   <footer>
-    researched: 2026-03 &middot; delta institute cohort 1 &middot; <a href="../index.html">back to index</a>
+    researched: 2026-03-29 &middot; 6-agent architecture (technical, social, market, trajectory, recursive) &middot; <a href="../index.html">back to index</a>
   </footer>
 
 </body>
