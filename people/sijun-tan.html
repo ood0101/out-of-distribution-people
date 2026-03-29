@@ -16,50 +16,260 @@
   <div class="profile-header">
     <h1>Sijun Tan</h1>
     <img src="https://framerusercontent.com/images/Q8XY68vGpTuJbf2r6VJSxOOk.jpeg?width=400&amp;height=400" alt="Sijun Tan" style="width:80px;height:80px;border-radius:50%;object-fit:cover;float:right;margin:0 0 1rem 1rem;" loading="lazy" onerror="this.style.display='none'" />
-    <p class="one-liner">UC Berkeley EECS PhD (Sky Computing Lab), Agentica (rLLM Project Lead)</p>
+    <p class="one-liner"><strong>Berkeley EECS PhD (Raluca Ada Popa, Sky Lab). Project lead of rLLM &mdash; the open-source RL post-training framework with 5,300+ GitHub stars, 60 contributors, and 2M+ HuggingFace downloads. Built DeepScaleR-1.5B (beats o1-preview on AIME), DeepCoder-14B (matches o3-mini on LiveCodeBench), and DeepSWE (59% SWE-Bench Verified, SOTA for open-weight agents). ~1,140 citations. Co-leads Agentica Project with Michael Luo (who just left for stealth startup). Collaborating with Together AI. Effectively running a proto-startup from inside the lab. Chinese-origin (Guangzhou).</strong></p>
     <div class="tags">
-      <span class="tag">delta</span>
-      <span class="tag">researchers</span>
+      <span class="tag spike">tier-1: high conviction</span>
+      <span class="tag">rl-post-training</span>
+      <span class="tag">agent-training-infra</span>
+      <span class="tag">open-source</span>
+      <span class="tag">berkeley-sky-lab</span>
+      <span class="tag">chinese-origin</span>
     </div>
     <div class="links">
-      <a href="https://www.linkedin.com/in/sijun-tan-435952156/">linkedin</a>
-      <a href="https://x.com/sijun_tan">twitter/x</a>
       <a href="https://jeffreysijuntan.github.io/">website</a>
-      <a href="https://scholar.google.com/citations?user=rJjcA_YAAAAJ">scholar</a>
+      <a href="https://scholar.google.com/citations?user=rJjcA_YAAAAJ">google scholar (~1,140 citations)</a>
+      <a href="https://github.com/jeffreysijuntan">github</a>
+      <a href="https://www.linkedin.com/in/sijun-tan-435952156/">linkedin (2,626 followers)</a>
+      <a href="https://x.com/sijun_tan">twitter/x</a>
+      <a href="https://github.com/rllm-org/rllm">rLLM repo (5,300 stars)</a>
     </div>
+  </div>
+
+  <!-- INVESTMENT THESIS -->
+  <div class="spike-box">
+    <div class="label">&#9670; Investment Thesis</div>
+    <p>
+      Sijun Tan is building the de facto open-source infrastructure layer for RL post-training of LLM agents &mdash;
+      the picks-and-shovels play for every company that wants to make AI agents better through reinforcement learning.
+      rLLM has 5,300+ GitHub stars, 60 contributors, 2M+ HuggingFace model downloads, and is already being used by
+      Alibaba (Tongyi DeepResearch), Snorkel AI, and Together AI. His co-lead Michael Luo graduated in Dec 2025,
+      went to DeepMind, and is <strong>now building a stealth startup</strong> &mdash; a sign the Agentica team is
+      transitioning from lab project to company. Lightspeed has a <strong>formal VC partnership with Sky Lab</strong>
+      ($500K, Oct 2025) specifically to commercialize this kind of research. Sijun is still in his PhD (expected 2027),
+      but the project&rsquo;s momentum &mdash; shipping SOTA models every 2 months, a new Hive platform (Mar 2026), and SDK
+      integrations with every major agent framework &mdash; suggests the commercialization window is open. The angle:
+      build the relationship now through the rLLM open-source community before the inevitable spinout.
+    </p>
   </div>
 
   <!-- THE SPIKE -->
-  <div class="spike-box">
-    <div class="label">&#9670; What Makes Them Spiky</div>
+  <section>
+    <h2>The Spike &mdash; With Evidence</h2>
+    <p>
+      Sijun Tan is the <strong>#1 contributor</strong> to rLLM (by commit count on GitHub) and first author on the
+      rLLM framework paper. The framework has produced three SOTA-class models in rapid succession:
+    </p>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Model</td><td>Size</td><td>Benchmark</td><td>Result</td><td>Comparison</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>DeepScaleR-1.5B</td><td>1.5B</td><td>AIME 2024</td><td>43.1% Pass@1</td><td>Surpasses o1-preview (+14.3% over base)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>DeepCoder-14B</td><td>14B</td><td>LiveCodeBench v5</td><td>60.6% Pass@1</td><td>Matches o3-mini (low) and o1; Codeforces 1936 rating</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>DeepSWE-Preview</td><td>32B</td><td>SWE-Bench Verified</td><td>59% (TTS), 42.2% Pass@1</td><td>SOTA for open-weight coding agents; tops SWE-Bench leaderboard</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>rLLM-FinQA-4B</td><td>4B</td><td>Snorkel FinQA</td><td>59.7%</td><td>Outperforms Qwen3-235B (51.4%), rivals Gemini 2.5 Pro (60.6%)</td></tr>
+    </table>
+    <p>
+      The key innovations are technical, not just scale: <strong>GRPO+</strong> (an improved GRPO algorithm with offline
+      difficulty filtering, overlong filtering from DAPO, no KL/entropy loss), <strong>iterative context lengthening</strong>
+      (8K&rarr;16K&rarr;24K, training models to &ldquo;think shorter, then longer&rdquo;), and <strong>one-off pipelining</strong>
+      (2x speedup over baseline RL training via verl-pipeline). DeepScaleR required only 3,800 GPU hours &mdash;
+      an 18x cost reduction over prior approaches. DeepCoder was trained in 2.5 weeks on 32 H100s.
+    </p>
+    <p>
+      The rLLM SDK (Dec 2025) enables <strong>any agent framework</strong> (LangGraph, SmolAgent, Strands, OpenAI Agents SDK,
+      Google ADK) to be trained with RL via a single decorator &mdash; zero code changes to production agent code.
+      This is the abstraction that makes rLLM a platform, not just a research project.
+    </p>
+    <p>
+      Earlier work shows systems depth: <strong>CryptGPU</strong> (IEEE S&amp;P 2021, 278 citations) achieved 6&ndash;36x
+      speedup for privacy-preserving ML on GPUs. <strong>MPCAuth</strong> (IEEE S&amp;P 2023) and <strong>Flock</strong>
+      (OSDI 2024) demonstrate a rare breadth spanning security, distributed systems, and ML.
+    </p>
+  </section>
+
+  <!-- GROWTH TRAJECTORY -->
+  <section>
+    <h2>Growth Trajectory</h2>
+    <table style="width:100%; font-size:0.85rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted); width:120px;">2014&ndash;17</td><td>The Affiliated High School of South China Normal University, Guangzhou</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2017&ndash;20</td><td>UVA BS in CS + BA in Math (3.95/4). Research: computer vision, algorithmic game theory, cryptography</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Summer 2019</td><td>Facebook SWE intern (Search NLP team)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Summer 2020</td><td>Facebook AI Research intern (CrypTen team) &mdash; leads to CryptGPU paper</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2021</td><td><strong>CryptGPU published at IEEE S&amp;P</strong> (278 citations) &mdash; first author, top security venue as undergrad</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Aug 2021&ndash;22</td><td>Senior Algorithm Engineer at Ant Group (Hangzhou). Built MPC systems for AntChain</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Fall 2022</td><td>Starts PhD at UC Berkeley under Raluca Ada Popa (Sky Computing Lab)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2023</td><td>MPCAuth at IEEE S&amp;P (27 citations). Pivots research from security to LLMs</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2024</td><td>LLoCO (EMNLP), Flock (OSDI), JudgeBench (ICLR 2025, 177 citations). Agentica Project created (Jun 2024)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>Feb 2025</strong></td><td><strong>DeepScaleR-1.5B released &mdash; first to replicate DeepSeek R1 success. 393 citations</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>Apr 2025</strong></td><td><strong>DeepCoder-14B released &mdash; matches o3-mini with 14B params. 122 citations. VentureBeat coverage</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>Jul 2025</strong></td><td><strong>rLLM framework + DeepSWE released. SOTA open-weight SWE agent. Joint work with Together AI</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Oct 2025</td><td>rLLM v0.2: general agentic program training. Lightspeed partners with Sky Lab ($500K)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Dec 2025</td><td>rLLM SDK preview: train any agent framework without code changes. Michael Luo graduates PhD, goes to DeepMind</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>Feb 2026</strong></td><td><strong>rLLM-FinQA: 4B model outperforms 235B. Deep research agents with 5x faster training. Michael Luo leaves DeepMind for stealth startup</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>Mar 2026</strong></td><td><strong>Hive platform launched (collaborative agent evolution). rLLM repo at 5,300 stars, 60 contributors. Sijun is #1 contributor</strong></td></tr>
+    </table>
+    <p style="margin-top:1rem; font-family:var(--mono); font-size:0.75rem; color:var(--accent);">
+      PACE: 7 major releases in 13 months (Feb 2025 &ndash; Mar 2026). New SOTA model or platform every ~8 weeks.<br>
+      ACCELERATION: Clear. Pivoted from security to LLMs in 2023; by 2025 was shipping frontier-matching models. Citations went from ~300 lifetime (pre-2025) to ~1,140 in one year.<br>
+      PEER COMPARISON: Among the fastest PhD-to-production trajectories in Berkeley AI. Comparable to the vLLM team&rsquo;s velocity but in the RL post-training vertical.
+    </p>
+  </section>
+
+  <!-- WHAT HE'D BUILD -->
+  <section>
+    <h2>What He&rsquo;d Build</h2>
+    <h3>The RL Post-Training Infrastructure Thesis</h3>
+    <p>
+      rLLM is already a platform: it supports any agent framework (LangGraph, SmolAgent, OpenAI Agents SDK, Google ADK),
+      multiple RL algorithms (GRPO, REINFORCE, RLOO, rejection sampling), two training backends (verl for multi-GPU,
+      tinker for single-machine), 50+ built-in benchmarks, and a CLI-first workflow. The SDK requires near-zero code
+      changes to make production agents trainable. This is the &ldquo;Weights &amp; Biases for agent RL&rdquo; or
+      &ldquo;Hugging Face TRL on steroids&rdquo; play.
+    </p>
+    <p>
+      The newest product, <strong>Hive</strong> (Mar 2026), is a collaborative platform where AI agents evolve shared
+      artifacts &mdash; agents register, clone tasks, submit improvements to leaderboards, and share skills. This adds
+      a marketplace/platform dynamic on top of the training infrastructure.
+    </p>
+
+    <h3>Market</h3>
     <ul>
-      <li>Project Lead of rLLM — 4.6k GitHub stars, &#x27;Democratizing Reinforcement Learning for LLMs&#x27;</li>
-      <li>Led DeepCoder-14B — fully open-source reasoning model matching o1 and o3-mini on math and coding</li>
-      <li>787+ citations on Google Scholar</li>
-      <li>14+ papers published between 2021-2025</li>
-      <li>CryptGPU — pioneering privacy-preserving ML on GPUs</li>
-      <li>Advised by Raluca Ada Popa at Berkeley Sky Lab</li>
-      <li>Previously at Facebook AI Research (FAIR) and Ant Group</li>
+      <li>AI agent infrastructure: estimated $15B+ by 2028</li>
+      <li>RL/RLHF post-training services: every frontier lab and AI company needs this capability</li>
+      <li>The &ldquo;training tax&rdquo; on agent builders is enormous &mdash; rLLM showed a 4B model can outperform 235B with the right RL recipe, representing 50x+ compute savings</li>
     </ul>
-  </div>
 
-  <h2>Research &amp; Key Work</h2>
-  <h3>Problems &amp; Research Areas</h3>
-  <ul><li>Reinforcement learning for LLM post-training (rLLM)</li><li>LLM reasoning and coding (DeepCoder — matches o1 and o3-mini)</li><li>LLM evaluation and judging (JudgeBench)</li><li>Privacy-preserving ML (CryptGPU)</li><li>Long-context learning (LLoCO — EMNLP 2024)</li><li>Distributed trust systems (Flock)</li></ul>
-  <h3>Key Work</h3>
-  <ul><li>rLLM — open-source RL training framework for LLMs (4.6k GitHub stars)</li><li>DeepCoder-14B-Preview — open-source reasoning model matching o1/o3-mini</li><li>JudgeBench — benchmark for LLM-based judges</li><li>LLoCO: Learning Long Contexts Offline (EMNLP 2024)</li><li>CryptGPU: privacy-preserving ML leveraging GPUs</li><li>Flock: on-demand distributed trust framework</li></ul>
+    <h3>Competitive Landscape</h3>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Company/Project</td><td>What</td><td>How rLLM/Agentica differs</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Hugging Face TRL</td><td>RLHF/DPO training lib</td><td>TRL is model-centric; rLLM is agent-centric. Supports multi-step agentic trajectories, not just single-turn RLHF</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>OpenRL / veRL</td><td>RL training libs</td><td>rLLM builds on verl but adds the agent abstraction layer + SDK for framework-agnostic training</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Together AI</td><td>Fine-tuning + inference</td><td>Already collaborating. Together provides compute; rLLM provides the RL training recipes. Could be acquirer or partner</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Anyscale / Ray</td><td>Distributed compute</td><td>Ray is the substrate; rLLM is the RL-specific layer on top</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Scale AI / RLHF platforms</td><td>Human-feedback data</td><td>rLLM focuses on automated reward functions (code execution, math verification), not human labeling</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Symbolica (Agentica SDK)</td><td>Agent framework</td><td>Different product despite name overlap. Symbolica&rsquo;s Agentica is an execution/sandboxing framework; rLLM Agentica is the training framework</td></tr>
+    </table>
+  </section>
 
+  <!-- PRIMARY SOURCES -->
+  <section>
+    <h2>In His Own Words</h2>
+    <ul>
+      <li>&ldquo;We are on a mission to democratize reinforcement learning for training language models and agents.&rdquo; &mdash; personal website, describes Agentica Project</li>
+      <li>&ldquo;RL magic is in the air! We&rsquo;re thrilled to introduce DeepScaleR-1.5B-Preview... We are the first work that replicate Deepseek&rsquo;s success on general reasoning tasks. The best part is that we&rsquo;ve open-sourced everything: Dataset, Code, Training Logs &mdash; to democratizing RL for LLMs and accelerate progress in this field.&rdquo; &mdash; LinkedIn, Feb 2025</li>
+      <li>&ldquo;Let&rsquo;s expand the frontiers of RL for LLM reasoning together!&rdquo; &mdash; LinkedIn, Feb 2025</li>
+      <li>&ldquo;What&rsquo;s trainable = what&rsquo;s practical to build.&rdquo; &mdash; rLLM SDK blog post, Dec 2025 (the core product thesis distilled to one sentence)</li>
+    </ul>
+    <p class="small muted">
+      <strong>Signal in the language:</strong> &ldquo;Democratize&rdquo; appears repeatedly &mdash; this is infrastructure/platform framing,
+      not research framing. He&rsquo;s thinking about users and adoption, not just papers. The SDK tagline is pure product thinking.
+    </p>
+  </section>
 
-  <h2>Current Work</h2>
-  <p>Third-year CS PhD at Berkeley Sky Lab; Project Lead at Agentica (rLLM); democratizing RL training for language models and agents</p>
+  <!-- NETWORK MAP -->
+  <section>
+    <h2>Network Map</h2>
+    <h3>Agentica Core Team</h3>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Name</td><td>Role</td><td>Now</td><td>Signal</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Michael Luo</strong></td><td>Co-lead, Agentica co-creator</td><td><strong>Stealth startup</strong> (prev DeepMind, Berkeley PhD Dec 2025)</td><td>HIGH. Closest collaborator. Already building. Most likely co-founder if they commercialize rLLM together</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Colin Cai</strong></td><td>Core contributor</td><td>Berkeley</td><td>MEDIUM. 3rd ranked rLLM contributor by commits. Co-designed rLLM system for DeepSWE</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Tianhao Wu</strong></td><td>Core contributor</td><td>Berkeley</td><td>MEDIUM. Co-authored rLLM SDK, Pepper (proactive agents). Also top Hive contributor</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Kyle Montgomery</strong></td><td>Contributor</td><td>Berkeley</td><td>MEDIUM. Co-authored rLLM v0.2 and on-policy distillation</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Manan Roongta</strong></td><td>Contributor</td><td>Berkeley EECS MS (Sky Lab)</td><td>LOW. Co-authored FinQA, rLLM core</td></tr>
+    </table>
 
-  <div class="spike-box" style="margin-top: 1.5rem;">
-    <div class="label">&#9670; Alpha Insight</div>
-    <p>Sijun&#x27;s rLLM project is one of the most important open-source initiatives in AI right now — it&#x27;s the open-source answer to OpenAI&#x27;s proprietary RL post-training pipeline. DeepCoder matching o1/o3-mini as a fully open-source model proves the approach works. His combination of RL for LLMs + privacy-preserving ML (CryptGPU) + distributed systems (Flock) suggests he thinks about the full stack of trustworthy AI deployment.</p>
-  </div>
+    <h3>Advisors</h3>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Name</td><td>Role</td><td>Why it matters</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Ion Stoica</strong></td><td>Professor, Sky Lab co-director</td><td>Co-founded Databricks and Anyscale. The Berkeley professor most connected to startup commercialization. Advisor on Agentica papers</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Raluca Ada Popa</strong></td><td>PhD advisor, Sky Lab co-director</td><td>ACM Grace Murray Hopper Award 2021. Co-founded Opaque Systems. MIT PhD. Advisor on all Sijun&rsquo;s papers</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Joseph E. Gonzalez</strong></td><td>Berkeley professor</td><td>Sky Lab. Also advises rLLM-adjacent students (Roy Huang). Connected to serving/inference stack</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Li Erran Li</strong></td><td>Industry advisor</td><td>Co-authored DeepScaleR, DeepCoder. Industry RL expert</td></tr>
+    </table>
+
+    <h3>Together AI Collaboration</h3>
+    <p class="small muted">
+      DeepSWE was a &ldquo;joint collaboration between the Agentica team and Together AI.&rdquo; Together AI contributors
+      (Ameen Patel, Qingyang Wu, Alpay Ariyak) co-led experiments and managed GPU infrastructure. Together AI is the
+      most likely compute sponsor or acqui-hire path. Together AI CEO Vipul Ved Prakash has been investing heavily in
+      open-source RL training.
+    </p>
+
+    <h3>Lightspeed Connection</h3>
+    <p class="small muted">
+      Lightspeed made a $500K founding contribution to Sky Lab (Oct 2025) &mdash; the first formal VC partnership in
+      Sky Lab&rsquo;s history. The stated goal: &ldquo;sustain pivotal research and translate it into market-ready products.&rdquo;
+      Ion Stoica (Agentica advisor) is directly named in the partnership. Lightspeed partners: Faraz Fatemi, James Alcorn.
+    </p>
+  </section>
+
+  <!-- TIMELINE & SIGNALS -->
+  <section>
+    <h2>Timeline &amp; Signals</h2>
+    <ul>
+      <li><strong>Status:</strong> Still in PhD (started Fall 2022, expected 2027). But Michael Luo&rsquo;s departure for a stealth startup (Feb 2026) signals the commercialization clock has started</li>
+      <li><strong>Inflection triggers to watch:</strong>
+        <ul>
+          <li>Michael Luo announces his startup &mdash; is rLLM the core IP?</li>
+          <li>Sijun changes his website/LinkedIn from &ldquo;PhD student&rdquo; to founder language</li>
+          <li>rLLM gets its own domain/org separate from Berkeley (already partially happened: rllm-org on GitHub, rllm-project.com)</li>
+          <li>Hiring signals: &ldquo;We are looking for highly motivated students to work with!&rdquo; is already on his website</li>
+        </ul>
+      </li>
+      <li><strong>Likely investors if he raises:</strong> Lightspeed (formal Sky Lab partnership), Together AI (collaborator, could lead compute-for-equity), a16z (BAIR connections), Khosla (active in RL infra)</li>
+      <li><strong>Valuation range:</strong> If spinout with Michael Luo: $30&ndash;80M pre-money seed (comparable to early vLLM/SGLang trajectory). Solo academic spinout: $15&ndash;30M</li>
+    </ul>
+  </section>
+
+  <!-- RISKS -->
+  <section>
+    <h2>Risks</h2>
+    <ul>
+      <li><strong>Still in PhD.</strong> Expected graduation 2027. May choose to finish rather than drop out. Academic incentives (papers, tenure-track) could compete with startup incentives</li>
+      <li><strong>Michael Luo may commercialize without him.</strong> Luo graduated, went to DeepMind, and is now stealth. His website says &ldquo;I created the Agentica Project&rdquo; (not &ldquo;co-created&rdquo;). IP and credit dynamics between co-leads need watching</li>
+      <li><strong>Open-source moat question.</strong> rLLM is Apache-2.0. Any company can fork it. The moat would need to be in the team, hosted services, or proprietary extensions &mdash; not the code itself</li>
+      <li><strong>RL post-training may commoditize.</strong> HuggingFace TRL, veRL, and frontier labs all investing in this space. The window for a standalone RL training company may narrow as it becomes a feature</li>
+      <li><strong>Name confusion risk.</strong> Symbolica AI also has a product called &ldquo;Agentica&rdquo; (different: an agent execution SDK backed by Khosla/General Catalyst). Could create brand/IP friction if Sijun&rsquo;s Agentica Project spins out as a company</li>
+      <li><strong>No prior founder experience.</strong> Industry experience is 1 year at Ant Group (algorithm engineer). Has not shipped a commercial product, hired a team, or raised money</li>
+      <li><strong>Together AI dependency.</strong> DeepSWE used Together AI compute. If Together builds their own RL training platform (likely), the collaboration could become competition</li>
+    </ul>
+  </section>
+
+  <!-- BACKGROUND -->
+  <section>
+    <h2>Background</h2>
+    <p>
+      From Guangzhou, China. Attended The Affiliated High School of South China Normal University (2014&ndash;17).
+      UVA BS in Computer Science + BA in Mathematics (3.95/4, 2017&ndash;20). Two Facebook internships (Search NLP, FAIR/CrypTen).
+      Spent a year as Senior Algorithm Engineer at Ant Group building MPC systems in Hangzhou.
+      Started Berkeley CS PhD in Fall 2022 under Raluca Ada Popa. Published at IEEE S&amp;P (2x), OSDI, EMNLP, ICLR.
+      Native Chinese speaker, fluent English.
+    </p>
+  </section>
+
+  <!-- NOTES -->
+  <section>
+    <h2>Notes</h2>
+    <ul>
+      <li class="small">Full name: Sijun Tan (&#35885;&#21987;&#20426;). GitHub username: jeffreysijuntan. Goes by &ldquo;Jeffrey&rdquo; informally</li>
+      <li class="small">Google Scholar: ~1,140 citations. Top cited: DeepScaleR (393), CryptGPU (278), JudgeBench (177), DeepCoder (122)</li>
+      <li class="small">rLLM GitHub (rllm-org/rllm): 5,300 stars, 529 forks, 60 contributors, 3 releases. Sijun is #1 contributor</li>
+      <li class="small">HuggingFace: Agentica models have 2M+ downloads (DeepScaleR, DeepCoder, DeepSWE combined)</li>
+      <li class="small">Repo last pushed: Mar 29, 2026 (active daily development)</li>
+      <li class="small">rLLM migrated from agentica-project/rllm (350 stars, archived) to rllm-org/rllm (5,300 stars) &mdash; signals growing independence from Berkeley lab branding</li>
+      <li class="small">Hive (rllm-org/hive, 84 stars, Mar 2026): collaborative agent evolution platform. Sijun is a contributor</li>
+      <li class="small">Michael Luo&rsquo;s website (Mar 2026): &ldquo;I am currently building a stealth startup.&rdquo; Previously at Google DeepMind. His PhD thesis (Dec 2025) is titled &ldquo;From Serving to Training: Efficient Systems for LLM Agents at Scale&rdquo;</li>
+      <li class="small">Lightspeed Venture Partners: $500K founding contribution to Sky Lab (Oct 2025). Ion Stoica quoted in announcement. Partners: Faraz Fatemi, James Alcorn</li>
+      <li class="small">Together AI blog published the DeepSWE paper with &ldquo;We&rsquo;re hiring!&rdquo; link &mdash; suggests Agentica members may have offers</li>
+      <li class="small">DeepScaleR training cost: only 3,800 GPU hours (18x cheaper than prior approaches). DeepCoder: 2.5 weeks on 32 H100s</li>
+      <li class="small">Community adoption: Alibaba NLP (Tongyi DeepResearch), Terminal-Bench-RL, PettingLLMs, SETA all built on rLLM</li>
+      <li class="small">NOT Indian-origin. Chinese-origin (Guangzhou). Does not fit the Indian sourcing thesis</li>
+      <li class="small">Twitter/X: @sijun_tan (from existing page). Primary public voice is LinkedIn (2,626 followers) and GitHub</li>
+      <li class="small">Symbolica AI&rsquo;s &ldquo;Agentica&rdquo; is a separate, unrelated product (agent execution SDK backed by Khosla, General Catalyst, $33M funding). Potential trademark conflict</li>
+    </ul>
+  </section>
 
   <footer>
-    researched: 2026-03 &middot; delta institute cohort 1 &middot; <a href="../index.html">back to index</a>
+    researched: 2026-03-29 &middot; 6-agent architecture (technical, social, market, background, trajectory, recursive) &middot; <a href="../index.html">back to index</a>
   </footer>
 
 </body>
