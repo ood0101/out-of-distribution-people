@@ -16,47 +16,240 @@
   <div class="profile-header">
     <h1>Alexi Gladstone</h1>
     <img src="https://framerusercontent.com/images/qYNLkwcNeWIQl2HqE9ItAevKwOs.jpeg?width=400&amp;height=400" alt="Alexi Gladstone" style="width:80px;height:80px;border-radius:50%;object-fit:cover;float:right;margin:0 0 1rem 1rem;" loading="lazy" onerror="this.style.display='none'" />
-    <p class="one-liner">UIUC CS PhD (BLENDER Lab), NSF Graduate Research Fellow</p>
+    <p class="one-liner"><strong>UIUC CS PhD (Heng Ji&rsquo;s BLENDER Lab, 2024&ndash;2028). NSF Graduate Research Fellow. Invented Energy-Based Transformers (EBTs) &mdash; the first architecture to outscale feed-forward transformers, achieving 35% higher scaling rate across data, parameters, and FLOPs. Yann LeCun and Yilun Du on thesis committee. Louis T. Rader Research Award at UVA (1 of 5 from 1,400+ CS undergrads). CDC Accelerated AI Award from Palantir internship. ICML 2025 Top Reviewer. NeurIPS 2022, ICLR 2024, AAAI 2023 publications. Meta Research Scientist Intern. Thesis: cognitively-inspired world models + System 2 thinking.</strong></p>
     <div class="tags">
+      <span class="tag spike">tier-1: high conviction</span>
+      <span class="tag">energy-based-models</span>
+      <span class="tag">system-2-thinking</span>
+      <span class="tag">world-models</span>
+      <span class="tag">architecture-innovation</span>
       <span class="tag">delta</span>
-      <span class="tag">researchers</span>
     </div>
     <div class="links">
-      <a href="https://www.linkedin.com/in/alexiglad/">linkedin</a>
       <a href="https://x.com/AlexiGlad">twitter/x</a>
+      <a href="https://www.linkedin.com/in/alexiglad/">linkedin</a>
+      <a href="https://scholar.google.co.il/citations?user=C3G9RJkAAAAJ">google scholar</a>
       <a href="https://alexiglad.github.io/">website</a>
-      <a href="https://www.researchgate.net/profile/Alexi-Gladstone">scholar</a>
+      <a href="https://github.com/alexiglad">github</a>
     </div>
+  </div>
+
+  <!-- INVESTMENT THESIS -->
+  <div class="spike-box">
+    <div class="label">&#9670; Investment Thesis</div>
+    <p>
+      Alexi Gladstone has invented a genuinely new architecture &mdash; Energy-Based Transformers (EBTs) &mdash; that is the
+      <strong>first approach to outscale feed-forward transformers</strong> across modalities. EBTs achieve a 35% higher scaling
+      rate on data, parameters, FLOPs, and depth, while enabling System 2 thinking on any problem without requiring verifiable
+      rewards. This is not an incremental improvement; it&rsquo;s a potential paradigm shift in how neural networks make predictions
+      &mdash; from single-shot feed-forward to iterative energy minimization via gradient descent. Yann LeCun (who has publicly
+      championed energy-based models for years) and Yilun Du (diffusion/energy model pioneer from MIT) sit on his thesis
+      committee &mdash; this is intellectual validation at the highest level. At only the start of his PhD (2024&ndash;2028),
+      Gladstone already has publications at NeurIPS, ICLR, AAAI, and ICASSP, an NSF Fellowship, and industry experience at
+      both Meta and Palantir. His EBT-Policy follow-up paper shows EBTs outperforming Diffusion Policy in robotics with
+      50x less inference computation. If EBTs scale as the early results suggest, Gladstone will be at the center of the
+      next architecture generation. The relationship should be built now while he is still in the PhD pipeline.
+    </p>
   </div>
 
   <!-- THE SPIKE -->
-  <div class="spike-box">
-    <div class="label">&#9670; What Makes Them Spiky</div>
+  <section>
+    <h2>The Spike &mdash; With Evidence</h2>
+    <h3>Energy-Based Transformers (EBTs)</h3>
+    <p>
+      Gladstone&rsquo;s core invention. Published July 2025 (arXiv 2507.02092). EBTs learn an <strong>energy function</strong>
+      that scores the compatibility of any input-prediction pair. Instead of predicting the next token in one forward pass,
+      EBTs start with a random candidate and <strong>iteratively refine it via gradient descent</strong> to find the lowest
+      energy (most compatible) state. This gives the model a built-in verifier &mdash; it can both generate and check its work.
+    </p>
+    <h3>Scaling Results (the numbers)</h3>
     <ul>
-      <li>Invented Energy-Based Transformers (EBTs) — first model to outscale feed-forward transformers, unlocking generalized reasoning on any modality without rewards</li>
-      <li>NSF Graduate Research Fellow with Yann LeCun and Yilun Du on thesis committee</li>
-      <li>Louis T. Rader Research Award at UVA (1 of 5 out of 1,400+ CS undergrads)</li>
-      <li>Won CDC Accelerated AI Award for AI-backed news analysis app built during Palantir internship</li>
+      <li><strong>35% higher scaling rate</strong> than Transformer++ across data, batch size, parameters, FLOPs, and depth &mdash; tested in both text and vision</li>
+      <li><strong>+29% improvement</strong> over Transformer++ on language tasks via System 2 thinking (iterative refinement at inference)</li>
+      <li>Outperforms <strong>Diffusion Transformers on image denoising</strong> while using <strong>99% fewer forward passes</strong></li>
+      <li>Larger performance gains on data that is <em>farther</em> out-of-distribution &mdash; generalization improves with OOD distance</li>
+      <li>33&ndash;34% higher scaling rate for video modeling (width and parameters)</li>
     </ul>
-  </div>
+    <h3>EBT-Policy (follow-up, Oct 2025)</h3>
+    <ul>
+      <li>EBT-Policy outperforms Diffusion Policy across simulated and real-world robotic tasks</li>
+      <li>Converges in as few as <strong>2 inference steps</strong> vs. Diffusion Policy&rsquo;s 100 &mdash; a <strong>50x reduction</strong> in inference compute</li>
+      <li>Exhibits <strong>zero-shot recovery</strong> from failed action sequences using only behavior cloning, without explicit retry training &mdash; an emergent capability</li>
+    </ul>
+    <h3>Earlier Work</h3>
+    <ul>
+      <li><strong>CAESAR</strong> (NeurIPS 2022): Embodied simulator for multimodal referring expression datasets (28 citations)</li>
+      <li><strong>PATRON</strong> (AAAI 2023): Perspective-aware multitask model for referring expression grounding (7 citations)</li>
+      <li><strong>EQA-MX</strong> (ICLR 2024): Embodied question answering using multimodal expression (22 citations)</li>
+    </ul>
+    <p>
+      <strong>Publication pattern:</strong> NeurIPS 2022 &rarr; AAAI 2023 &rarr; ICLR 2024 &rarr; EBTs (Jul 2025) &rarr;
+      EBT-Policy (Oct 2025). Venue quality is escalating and research scope is expanding from embodied perception to
+      fundamental architecture innovation.
+    </p>
+  </section>
 
-  <h2>Research &amp; Key Work</h2>
-  <h3>Problems &amp; Research Areas</h3>
-  <ul><li>Energy-Based Models / Energy-Based Transformers (EBTs)</li><li>World models</li><li>System 2 reasoning / thinking</li><li>Self-supervised learning</li><li>Multimodal learning</li><li>Speech LLMs (Speech-N-LlaMA)</li></ul>
-  <h3>Key Work</h3>
-  <ul><li>Energy-Based Transformers are Scalable Learners and Thinkers (arXiv 2507.02092) — EBTs achieve 35% higher scaling rate than Transformer++ across data, params, FLOPs</li><li>Speech-N-LlaMA (ICASSP 2025) — addressing exposure bias in Speech LLMs with Meta&#x27;s LlaMA Speech team</li></ul>
+  <!-- GROWTH TRAJECTORY -->
+  <section>
+    <h2>Growth Trajectory</h2>
+    <table style="width:100%; font-size:0.85rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted); width:120px;">~2020</td><td>Enters University of Virginia &mdash; BS in Computer Science (School of Engineering)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">~2021</td><td>Begins research with Tariq Iqbal (UVA) on embodied AI and multimodal learning</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2022</td><td>Summer Undergraduate Research Fellowship at UVA</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>Dec 2022</strong></td><td><strong>CAESAR accepted at NeurIPS 2022</strong> (embodied multimodal simulator, 28 citations)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">~2022&ndash;23</td><td>Palantir ML Research Intern (NYC) &mdash; built AI-backed news analysis app</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>2023</strong></td><td><strong>CDC Accelerated AI Award</strong> for Palantir internship project</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Feb 2023</td><td>PATRON accepted at AAAI 2023 (perspective-aware multimodal grounding)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2023</td><td>EQA-MX accepted at ICLR 2024 (embodied question answering)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>2024</strong></td><td><strong>Louis T. Rader Research Award</strong> at UVA &mdash; 1 of 5 from 1,400+ CS undergrads</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">~May 2024</td><td>Graduates UVA. Undergraduate thesis: &ldquo;Cognitively Inspired Foundation Model Pre-training&rdquo;</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Jun 2024</td><td>&ldquo;Cognitively Inspired Energy-Based World Models&rdquo; on arXiv (precursor to EBTs)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Fall 2024</td><td>Enters UIUC CS PhD &mdash; Heng Ji&rsquo;s BLENDER Lab. Focus: World Models, System 2 Thinking</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>Jun 2025</strong></td><td><strong>NSF Graduate Research Fellowship awarded</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">May 2025</td><td>Meta Research Scientist Intern (Seattle)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">May 2025</td><td>ICML 2025 Top Reviewer</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>Jul 2025</strong></td><td><strong>Energy-Based Transformers paper released</strong> &mdash; first architecture to outscale feed-forward transformers</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>Oct 2025</strong></td><td><strong>EBT-Policy paper</strong> &mdash; outperforms Diffusion Policy with 50x less inference compute</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Jan 2026</td><td>Blog: &ldquo;The Future of Multimodal Does Not Involve Text&rdquo; &mdash; thesis on non-text-centric AI</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Jan 2026</td><td>Blog: &ldquo;The Future of Benchmarking and the Meaning of Life&rdquo;</td></tr>
+    </table>
+    <p style="margin-top:1rem; font-family:var(--mono); font-size:0.75rem; color:var(--accent);">
+      PACE: NeurIPS, AAAI, ICLR, NSF Fellowship, and a paradigm-shifting architecture paper &mdash; all before finishing year 2 of PhD.<br>
+      ACCELERATION: Clear. Moved from embodied perception (applied) to fundamental architecture innovation (EBTs) in one leap. Each paper increases in scope and ambition.<br>
+      PEER COMPARISON: Most first-year PhD students are doing literature reviews. Gladstone invented a new architecture with Yann LeCun on his committee.
+    </p>
+  </section>
 
+  <!-- WHAT HE'D BUILD -->
+  <section>
+    <h2>What He&rsquo;d Build</h2>
+    <h3>The Energy-Based Architecture Thesis</h3>
+    <p>
+      Gladstone&rsquo;s research points to a fundamental bet: <strong>the feed-forward transformer is not the final architecture</strong>.
+      EBTs replace one-shot prediction with iterative energy minimization, giving models a built-in verifier that can
+      &ldquo;think&rdquo; over any prediction on any modality. His thesis is that EBMs are a <em>generalization</em> of both
+      diffusion models and standard transformers &mdash; they subsume both.
+    </p>
+    <p>Likely company directions (post-PhD, ~2028&ndash;2029):</p>
+    <ul>
+      <li><strong>Next-generation foundation model company</strong> &mdash; EBT-based models that scale more efficiently than transformers for training and inference. The &ldquo;what comes after the transformer&rdquo; play</li>
+      <li><strong>Robotics/embodied AI</strong> &mdash; EBT-Policy already outperforms Diffusion Policy. A robotics foundation model with built-in physical reasoning could be the product</li>
+      <li><strong>Multimodal world model</strong> &mdash; his thesis is explicitly on world models. A company building world models for video, robotics, and planning across modalities</li>
+    </ul>
 
-  <h2>Current Work</h2>
-  <p>PhD at UIUC building Energy-Based Transformers — a new architecture paradigm that reframes next-token prediction as energy optimization, enabling generalized reasoning/thinking on any modality</p>
+    <h3>Market</h3>
+    <ul>
+      <li>Foundation model market: $67B (2025) &rarr; $700B+ (2030). An architecture that scales 35% better has massive implications for training cost</li>
+      <li>Robotics foundation models: Skild ($14B), Physical Intelligence ($2.4B), Covariant ($625M). EBT-Policy&rsquo;s 50x inference advantage could undercut all of them on compute cost</li>
+    </ul>
 
-  <div class="spike-box" style="margin-top: 1.5rem;">
-    <div class="label">&#9670; Alpha Insight</div>
-    <p>EBTs represent a fundamental paradigm shift: instead of one-shot feed-forward prediction, they iteratively refine predictions via gradient descent on an energy landscape. This could be the architecture that makes System 2 thinking native rather than bolted on via chain-of-thought.</p>
-  </div>
+    <h3>Competitive Landscape</h3>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Company/Lab</td><td>Approach</td><td>How Gladstone differs</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>OpenAI / Anthropic / Google</td><td>Scaling standard transformers</td><td>EBTs outscale transformers by 35%. If this holds at large scale, it changes the economics of training</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Physical Intelligence (Pi)</td><td>Flow-matching for robot policies</td><td>EBT-Policy outperforms diffusion/flow policies with 50x less inference compute and emergent recovery</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Yann LeCun / Meta FAIR</td><td>JEPA (Joint Embedding Predictive Architecture)</td><td>LeCun is on Gladstone&rsquo;s committee. EBTs are aligned with LeCun&rsquo;s vision but go further into actionable architecture</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Yilun Du (MIT/Harvard)</td><td>Energy-based compositionality, diffusion</td><td>Du is on Gladstone&rsquo;s committee. EBTs build on Du&rsquo;s energy model work but scale to transformers</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Nous Research / DeepSeek</td><td>Open-source reasoning via RL</td><td>EBTs achieve System 2 thinking without needing verifiable rewards &mdash; generalizes to non-math domains</td></tr>
+    </table>
+  </section>
+
+  <!-- PRIMARY SOURCES -->
+  <section>
+    <h2>In His Own Words</h2>
+    <ul>
+      <li>&ldquo;We outscale (feed-forward) transformers while generalizing reasoning/system 2 thinking to any modality/problem without requiring verifiable rewards.&rdquo; &mdash; EBT blog post, Jun 2025</li>
+      <li>&ldquo;In the next 3 years EBTs (or some variant) will be pretty common.&rdquo; &mdash; EBT blog post. <em>Strong conviction signal. He&rsquo;s calling a timeline.</em></li>
+      <li>&ldquo;Strong generalization is by far the most important aspect of any given model.&rdquo; &mdash; EBT blog post</li>
+      <li>&ldquo;Approaches that increase the flexibility of models scale best in the long run.&rdquo; &mdash; EBT blog post, framing EBTs as the next step in CNNs &rarr; ViTs &rarr; EBTs progression</li>
+      <li>&ldquo;The future of multimodal does not involve text.&rdquo; &mdash; blog post, Jan 2026. <em>Contrarian take. Implies he&rsquo;d build multimodal models that bypass text as the central modality.</em></li>
+      <li>&ldquo;How can we unlock generalized reasoning? Introducing Energy-Based Transformers, an approach that out-scales transformers and unlocks generalized reasoning on any modality without rewards.&rdquo; &mdash; Twitter, Jul 2025</li>
+      <li>&ldquo;What if your policy could reason and think dynamically, especially about uncertainty, enabling better real-world behavior?&rdquo; &mdash; Twitter, announcing EBT-Policy, Oct 2025</li>
+    </ul>
+  </section>
+
+  <!-- NETWORK MAP -->
+  <section>
+    <h2>Network Map</h2>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Name</td><td>Role</td><td>Relationship</td><td>Signal</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Heng Ji</strong></td><td>Professor, UIUC. BLENDER Lab director</td><td>PhD advisor</td><td>NLP/IE powerhouse. 40K+ citations. Amazon AICE Center collaboration. Massive student pipeline</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Yann LeCun</strong></td><td>VP &amp; Chief AI Scientist, Meta</td><td>Thesis committee member</td><td>HIGHEST signal. LeCun has championed energy-based models for years (JEPA). Having him on committee = direct intellectual lineage to Meta FAIR + EBM credibility</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Yilun Du</strong></td><td>Asst. Prof, Harvard (ex-MIT)</td><td>Thesis committee member</td><td>HIGH. Pioneer of compositional energy models and diffusion. Du&rsquo;s work directly informs EBTs. Natural collaborator/advisor pipeline</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Tariq Iqbal</strong></td><td>Professor, UVA</td><td>Undergrad advisor (NeurIPS, AAAI, ICLR papers)</td><td>MEDIUM. Embodied AI + HRI background. Gladstone&rsquo;s earlier research lineage</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Ganesh Nanduru</strong></td><td>PhD student, UIUC</td><td>Co-author on EBTs, EBWM, embodied papers</td><td>MEDIUM. Closest collaborator. Multiple joint papers</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Md Mofijul Islam</strong></td><td>Researcher (ex-UVA)</td><td>Co-author on EBTs, CAESAR, PATRON, EQA-MX</td><td>MEDIUM. Long-running collaboration from UVA</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Aman Chadha</strong></td><td>Amazon GenAI</td><td>Co-author on EBTs and earlier papers</td><td>MEDIUM. Industry bridge to Amazon/AWS</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Xingyao Wang</strong></td><td>PhD student, UIUC (BLENDER Lab)</td><td>Labmate. Co-founder of AllHands AI (on leave)</td><td>HIGH. Demonstrates BLENDER Lab &rarr; founder pipeline. NAACL 2024 Outstanding Paper. If Wang succeeds, it normalizes the path for Gladstone</td></tr>
+    </table>
+    <p style="margin-top:0.5rem; font-size:0.8rem; color:var(--fg-muted);">
+      <strong>BLENDER Lab founder pipeline:</strong> Xingyao Wang (PhD student, same lab) co-founded AllHands AI and is on leave.
+      This establishes that Heng Ji&rsquo;s lab produces founders, not just academics.
+    </p>
+  </section>
+
+  <!-- TIMELINE & SIGNALS -->
+  <section>
+    <h2>Timeline &amp; Signals</h2>
+    <ul>
+      <li><strong>Status:</strong> PhD student at UIUC (2024&ndash;2028). Only 1.5 years into program as of March 2026</li>
+      <li><strong>NSF Fellowship:</strong> Provides funding independence. Could leave program early without financial penalty if startup opportunity arises</li>
+      <li><strong>Thesis committee:</strong> Yann LeCun + Yilun Du is a signal that Meta FAIR or Harvard/MIT EBM ecosystem would absorb him if he doesn&rsquo;t start something</li>
+      <li><strong>Earliest founder window:</strong> ~2027 if he leaves PhD early, ~2028&ndash;29 if he completes. EBTs need to be validated at larger scale first</li>
+      <li><strong>Key milestone to watch:</strong> Scaling EBTs beyond 44M parameters. If 1B+ EBT still outscales transformers, it changes everything. He has acknowledged this: &ldquo;there is a long way to go in scaling these models up&rdquo;</li>
+      <li><strong>Meta connection:</strong> Interned at Meta (2025). LeCun on committee. High probability of returning to Meta FAIR or Meta GenAI for extended collaboration</li>
+      <li><strong>Watch for:</strong> Large-scale EBT results, Twitter engagement spikes, leaving PhD signals, co-author departures from academia</li>
+      <li><strong>Likely investors if he raises:</strong> Lux Capital (deep tech architecture bets), Founders Fund (contrarian), Radical Ventures (LeCun connection, EBM thesis)</li>
+    </ul>
+  </section>
+
+  <!-- RISKS -->
+  <section>
+    <h2>Risks</h2>
+    <ul>
+      <li><strong>EBTs may not scale.</strong> Current results are at 44M parameters on RedPajama. The 35% scaling advantage is real but small-scale. If the advantage disappears at 1B+ parameters, the thesis collapses. Gladstone himself acknowledges: &ldquo;there is a long way to go in scaling these models up&rdquo;</li>
+      <li><strong>4+ years from founder-mode.</strong> He is 1.5 years into a 4-year PhD. Even with NSF freedom, earliest realistic founder window is 2027&ndash;2028. A lot changes in 2+ years</li>
+      <li><strong>Absorbed by Meta.</strong> LeCun on committee + Meta internship + EBM alignment with JEPA thesis = high probability he joins Meta FAIR long-term</li>
+      <li><strong>Inference cost of EBTs.</strong> Iterative gradient descent per token is fundamentally more expensive than one-shot feed-forward. Even if training scales better, inference may be prohibitive for latency-sensitive applications</li>
+      <li><strong>Architecture disruption is rare.</strong> The transformer has survived 8+ years of challengers (SSMs, Mamba, RWKV, etc.). History suggests incumbency advantage is enormous</li>
+      <li><strong>Academic vs. founder instinct.</strong> Publishing trajectory is strong, but no evidence of product building or commercial interest beyond research. Blog posts are academic, not market-oriented</li>
+      <li><strong>Small personal brand.</strong> Twitter presence exists but is primarily paper announcements. Not yet a thought leader with broad following</li>
+    </ul>
+  </section>
+
+  <!-- BACKGROUND -->
+  <section>
+    <h2>Background</h2>
+    <p>
+      University of Virginia BS in Computer Science (School of Engineering, ~2020&ndash;2024). Louis T. Rader Research Award
+      (1 of 5 from 1,400+ CS undergrads). Donald and Jean Heim Engineering Scholarship. Summer Undergraduate Research
+      Fellowship. Undergraduate thesis: &ldquo;Cognitively Inspired Foundation Model Pre-training.&rdquo; Palantir ML Research
+      Intern (NYC, won CDC Accelerated AI Award). UIUC CS PhD (2024&ndash;2028, Heng Ji&rsquo;s BLENDER Lab). NSF Graduate
+      Research Fellow (2025). Meta Research Scientist Intern (Seattle, 2025).
+    </p>
+  </section>
+
+  <!-- NOTES -->
+  <section>
+    <h2>Notes</h2>
+    <ul>
+      <li class="small">Thesis committee: Yann LeCun (Meta/NYU) + Yilun Du (Harvard, ex-MIT) &mdash; the two most prominent EBM researchers in the world</li>
+      <li class="small">BLENDER Lab people page lists him as: &ldquo;PhD student, World Models, System 2 Thinking, Self-Supervised Learning, Multimodal Learning (NSF Graduate Research Fellow) (Intern at Meta, Palantir) (Thesis Committee: Yann Lecun, Yilun Du)&rdquo;</li>
+      <li class="small">Labmate Xingyao Wang co-founded AllHands AI and is on leave &mdash; BLENDER Lab produces founders</li>
+      <li class="small">EBT code is open-source: github.com/alexiglad/EBT</li>
+      <li class="small">Featured in DeepLearning.AI &ldquo;The Batch&rdquo; newsletter (Andrew Ng&rsquo;s publication) for EBTs</li>
+      <li class="small">Active Inference Institute invited him for a talk on EBTs</li>
+      <li class="small">Personal interests: fitness (climbing, running, working out), cognitive science, computational neuroscience, physics, psychology</li>
+      <li class="small">Blog posts show strong opinionated thinking: &ldquo;The Future of Multimodal Does Not Involve Text&rdquo; (contrarian), &ldquo;The Future of Benchmarking and the Meaning of Life&rdquo;</li>
+      <li class="small">Earlier paper name was &ldquo;Cognitively-Inspired Energy-Based World Models (EBWM)&rdquo; &mdash; rebranded to EBTs after starting PhD</li>
+      <li class="small">UVA undergraduate thesis available at libraetd.lib.virginia.edu</li>
+      <li class="small">Not Indian-origin based on available information</li>
+      <li class="small">Contact: alexigladstone@gmail.com</li>
+    </ul>
+  </section>
 
   <footer>
-    researched: 2026-03 &middot; delta institute cohort 1 &middot; <a href="../index.html">back to index</a>
+    researched: 2026-03-29 &middot; 6-agent architecture (technical, social, market, trajectory, recursive) &middot; <a href="../index.html">back to index</a>
   </footer>
 
 </body>

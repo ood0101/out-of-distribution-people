@@ -16,46 +16,229 @@
   <div class="profile-header">
     <h1>Matthew Yang</h1>
     <img src="https://framerusercontent.com/images/Ej6pKZbMjxLOLPbHlW4aA1hgHao.jpeg?width=400&amp;height=400" alt="Matthew Yang" style="width:80px;height:80px;border-radius:50%;object-fit:cover;float:right;margin:0 0 1rem 1rem;" loading="lazy" onerror="this.style.display='none'" />
-    <p class="one-liner">CMU ML (MS, advised by Aviral Kumar)</p>
+    <p class="one-liner"><strong>Just-graduated CMU MS in Machine Learning (Aviral Kumar&rsquo;s AIRe Lab). Defined the test-time compute scaling frontier for LLMs &mdash; co-equal first author on MRT (ICML 2025) and e3 (ICLR 2026 + EXAIT Best Paper), first author on InT (ICLR 2026). Built the best known &lt;2B reasoning model on AIME &rsquo;25. CRA Outstanding Undergrad Research Finalist (top 24 in North America). Canadian Math Olympiad top 50. Waterloo CS (94/100 GPA). CMU ML (4.18/4.33 GPA). Scale AI + Skild AI industry experience. ~24. Canadian.</strong></p>
     <div class="tags">
+      <span class="tag spike">tier-1: high conviction</span>
+      <span class="tag">test-time-compute</span>
+      <span class="tag">rl-for-llms</span>
+      <span class="tag">reasoning</span>
+      <span class="tag">meta-rl</span>
       <span class="tag">delta</span>
     </div>
     <div class="links">
+      <a href="https://x.com/matthewyryang">twitter/x</a>
       <a href="https://www.linkedin.com/in/matthew-yr-yang/">linkedin</a>
+      <a href="https://scholar.google.com/citations?user=xDNZlnMAAAAJ">google scholar</a>
       <a href="https://matthewyryang.com/">website</a>
+      <a href="https://github.com/matthewyryang">github</a>
     </div>
   </div>
 
-  <!-- THE SPIKE -->
+  <!-- INVESTMENT THESIS -->
   <div class="spike-box">
-    <div class="label">&#9670; What Makes Them Spiky</div>
+    <div class="label">&#9670; Investment Thesis</div>
+    <p>
+      Matthew Yang is one of the defining researchers of the test-time compute scaling paradigm &mdash; the idea that
+      letting LLMs &ldquo;think longer&rdquo; at inference can be more effective than scaling model parameters. As an MS
+      student at CMU, he co-authored three papers in 12 months that collectively establish the theoretical and practical
+      foundations of this field: MRT formalizes test-time compute as meta-RL (ICML 2025), e3 shows in-context exploration
+      enables extrapolation beyond training budgets (ICLR 2026, EXAIT Best Paper), and InT solves credit assignment for
+      self-correction (ICLR 2026). His e3 recipe produced the <strong>best known &lt;2B reasoning model</strong> on AIME &rsquo;25
+      and HMMT &rsquo;25, outperforming models 4&ndash;18x its size. He graduated Dec 2025 and has industry exposure
+      at both Scale AI (LLM agent monitoring) and Skild AI (robotics foundation models, $14B valuation). With Aviral
+      Kumar&rsquo;s lab producing the most cited test-time compute work in the field, Yang sits at the exact center of the
+      next paradigm shift in LLM inference. He is at the classic &ldquo;PhD or startup?&rdquo; decision window &mdash;
+      the relationship should be built now regardless of which path he chooses.
+    </p>
+  </div>
+
+  <!-- THE SPIKE -->
+  <section>
+    <h2>The Spike &mdash; With Evidence</h2>
+    <p>
+      Yang&rsquo;s core contribution is showing that <strong>in-context exploration</strong> is the key to making test-time
+      compute extrapolate beyond training budgets. Three papers form a complete stack:
+    </p>
+    <h3>1. e3 (ICLR 2026 + EXAIT Best Paper at ICML 2025)</h3>
     <ul>
-      <li>ICML 2025 EXAIT Best Paper (e3: Learning to Explore Enables Extrapolation of Test-Time Compute)</li>
-      <li>ICLR 2025 FM-Wild Oral + ICML 2025 (meta RL fine-tuning paper)</li>
-      <li>4.17/4.0 GPA at CMU ML</li>
-      <li>94/100 GPA at University of Waterloo CS</li>
-      <li>Research at Scale AI on LLM agent monitoring</li>
-      <li>Part of team at Skild AI (robotics)</li>
+      <li>Co-equal first author with Amrith Setlur. Shows most existing reasoning models (including DeepSeek R1-distilled) do <em>not</em> extrapolate &mdash; performance plateaus or degrades beyond training token budgets</li>
+      <li><strong>e3-1.7B</strong>: Qwen3-1.7B fine-tuned with their recipe extrapolates to 2x the training budget (32K tokens vs 16K training). Performance <em>continues to improve</em> as compute increases</li>
+      <li>Outperforms R1-distilled-1.5B and Agentica-1.5B on AIME &rsquo;25 and HMMT &rsquo;25. Outperforms some 7B and 32B models despite being 1.7B</li>
+      <li>Recipe: (i) chain asymmetric capabilities (generation vs verification), (ii) use &ldquo;negative gradient&rdquo; from incorrect responses to lengthen exploration, (iii) curriculum over data difficulty and token budgets</li>
     </ul>
-  </div>
+    <h3>2. MRT &mdash; Meta Reinforcement Fine-Tuning (ICML 2025 + FM-Wild Oral at ICLR 2025)</h3>
+    <ul>
+      <li>Co-equal first author with Yuxiao Qu. Formalizes test-time compute as a <strong>meta-RL problem</strong> where each block in the output stream is an &ldquo;episode&rdquo;</li>
+      <li>Introduces cumulative regret as the measure of inference efficiency. Optimizes via dense &ldquo;information gain&rdquo; reward bonus</li>
+      <li><strong>2&ndash;3x relative performance gain</strong> and ~1.5x token efficiency over standard outcome-reward RL on AIME</li>
+    </ul>
+    <h3>3. InT &mdash; Self-Proposed Interventions (ICLR 2026)</h3>
+    <ul>
+      <li>First author. Solves credit assignment in LLM reasoning via self-proposed interventions &mdash; the model identifies where in its reasoning chain to intervene</li>
+    </ul>
+    <p>
+      <strong>Citation velocity:</strong> 147 citations (ACL 2023 compressor paper), 115 citations (MRT, 2025), 39 citations (e3, 2025).
+      Total ~330+ citations across 8 papers. For a 24-year-old MS student, this is extreme.
+    </p>
+  </section>
 
-  <h2>Research &amp; Key Work</h2>
-  <h3>Problems &amp; Research Areas</h3>
-  <ul><li>Test-time compute optimization for LLMs</li><li>Exploration and extrapolation in LLM reasoning (e3)</li><li>Meta reinforcement fine-tuning</li><li>Weak-to-strong monitoring of LLM agents</li><li>Differential privacy in ML</li></ul>
-  <h3>Key Work</h3>
-  <ul><li>&#x27;e3: Learning to Explore Enables Extrapolation of Test-Time Compute for LLMs&#x27; (ICML 2025 EXAIT Best Paper)</li><li>&#x27;Optimizing Test-Time Compute via Meta Reinforcement Fine-Tuning&#x27; (ICLR 2025 Oral, ICML 2025)</li><li>&#x27;Reliable Weak-to-Strong Monitoring of LLM Agents&#x27; (Scale AI)</li></ul>
+  <!-- GROWTH TRAJECTORY -->
+  <section>
+    <h2>Growth Trajectory</h2>
+    <table style="width:100%; font-size:0.85rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted); width:120px;">2018&ndash;19</td><td>Canadian Math Olympiad &mdash; top 50 in Canada (both years)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Sep 2019</td><td>Enters University of Waterloo &mdash; Computer Science + Statistics Minor</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Jun 2022</td><td>First paper: JCDL 2022 (geospatial search, with Jimmy Lin)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Sep 2022</td><td>First employee at Needl (YC-backed startup) &mdash; ML Engineer, built search product + Slackbot + landing page</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Jul 2023</td><td>ACL 2023 &mdash; &ldquo;Low-Resource Text Classification with Compressors&rdquo; (147 citations, with Jimmy Lin)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>2024</strong></td><td><strong>CRA Outstanding Undergraduate Research Award Finalist</strong> &mdash; top 24 in North America</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Jan 2024</td><td>SaTML 2024 &mdash; data poisoning attacks on pre-trained feature extractors</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Apr 2024</td><td>Graduates Waterloo &mdash; 94/100 GPA</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Jul 2024</td><td>ICML 2024 &mdash; Disguised Copyright Infringement of Latent Diffusion Models (co-equal first author)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Aug 2024</td><td>Enters CMU MS in Machine Learning &mdash; joins Aviral Kumar&rsquo;s AIRe Lab</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>Mar 2025</strong></td><td><strong>MRT paper drops on arXiv &mdash; formalizes test-time compute as meta-RL</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>Apr 2025</strong></td><td><strong>FM-Wild Workshop at ICLR 2025 &mdash; Oral Presentation for MRT</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Summer 2025</td><td>Scale AI &mdash; research on reliable weak-to-strong monitoring of LLM agents</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>Jun 2025</strong></td><td><strong>e3 paper drops &mdash; best &lt;2B model on AIME &rsquo;25 and HMMT &rsquo;25</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>Jul 2025</strong></td><td><strong>EXAIT Workshop at ICML 2025 &mdash; Best Paper Award (e3)</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>Jul 2025</strong></td><td><strong>MRT accepted at ICML 2025 main conference (pp. 50893&ndash;50925 in PMLR v267)</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">~2025</td><td>Skild AI &mdash; robotics foundation models (Deepak Pathak, $14B valuation)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Dec 2025</td><td>Graduates CMU MS in ML &mdash; 4.18/4.33 GPA</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>Jan 2026</strong></td><td><strong>InT + e3 both accepted to ICLR 2026</strong></td></tr>
+    </table>
+    <p style="margin-top:1rem; font-family:var(--mono); font-size:0.75rem; color:var(--accent);">
+      PACE: 5 top-venue papers (ICML x2, ICLR x2, ACL) + 1 best paper + 1 oral in ~16 months of grad school.<br>
+      ACCELERATION: Clear. Pivoted from data poisoning (solid but niche) to defining the test-time compute frontier in under a year. Each paper builds on the last.<br>
+      PEER COMPARISON: Extraordinary for MS-level. Most MS students produce 0&ndash;1 top-venue papers. Yang has 5+ with 3 as co-equal or sole first author at ICML/ICLR.
+    </p>
+  </section>
 
+  <!-- WHAT HE'D BUILD -->
+  <section>
+    <h2>What He&rsquo;d Build</h2>
+    <h3>The Test-Time Compute Infrastructure Thesis</h3>
+    <p>
+      Yang&rsquo;s research arc points to a clear product thesis: <strong>LLM reasoning should be treated as a meta-RL problem</strong>,
+      where inference-time exploration and exploitation are optimized jointly. His work on MRT (dense progress rewards),
+      e3 (in-context exploration that extrapolates), and InT (credit assignment for self-correction) form a complete stack
+      for making any LLM reason better at inference time.
+    </p>
+    <p>
+      Combined with Scale AI (monitoring/evaluation) and Skild AI (robotics foundation models), the likely company would be in:
+    </p>
+    <ul>
+      <li><strong>Test-time compute optimization layer</strong> &mdash; a reasoning engine that wraps any base model and makes it think more efficiently. The &ldquo;search&rdquo; between the model and the answer</li>
+      <li><strong>Agent reasoning infrastructure</strong> &mdash; the meta-RL layer that enables LLM agents to explore, self-correct, and improve at deployment time</li>
+      <li><strong>Efficient reasoning models</strong> &mdash; small (1&ndash;7B) models that outperform 70B+ on reasoning tasks via better test-time compute recipes</li>
+    </ul>
 
-  <h2>Current Work</h2>
-  <p>CMU MS ML student researching test-time compute scaling under Aviral Kumar; also at Skild AI</p>
+    <h3>Market</h3>
+    <ul>
+      <li>LLM inference compute: projected $50B+ by 2028 as reasoning models (o1, o3, R1) consume 10&ndash;100x more tokens per query</li>
+      <li>Test-time compute optimization is the picks-and-shovels play: every company deploying reasoning models needs to make inference efficient</li>
+    </ul>
 
-  <div class="spike-box" style="margin-top: 1.5rem;">
-    <div class="label">&#9670; Alpha Insight</div>
-    <p>Matthew is at the absolute frontier of test-time compute — his e3 paper shows that teaching LLMs to explore (not just exploit) enables better extrapolation during inference. This directly addresses the core challenge of making reasoning models more sample-efficient. Two best papers at top venues as an MS student is exceptional.</p>
-  </div>
+    <h3>Competitive Landscape</h3>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Company/Team</td><td>Approach</td><td>How Yang differs</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>OpenAI (o1/o3)</td><td>Proprietary CoT reasoning</td><td>Yang&rsquo;s meta-RL framework is principled: optimizes exploration vs exploitation, not brute-force chain-of-thought</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>DeepSeek (R1)</td><td>RL-trained open reasoning</td><td>Yang proved R1-distilled models don&rsquo;t extrapolate; e3 does. Direct technical advantage</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Nous Research</td><td>Open-source reasoning</td><td>Yang&rsquo;s recipes are more sample-efficient (1.7B matching 7&ndash;32B)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Oumi (Jeremy Greer)</td><td>Open-source RL infra</td><td>Greer co-authored e3. Potential collaborator or complementary venture</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Hugging Face (Tunstall, Beeching)</td><td>Open-source fine-tuning</td><td>Co-authors on MRT. Yang brings the theoretical backbone they productized</td></tr>
+    </table>
+  </section>
+
+  <!-- PRIMARY SOURCES -->
+  <section>
+    <h2>In His Own Words</h2>
+    <ul>
+      <li>&ldquo;I&rsquo;m interested in building systems that actively seek information and continually learn.&rdquo; &mdash; personal website bio. <em>The word &ldquo;building&rdquo; over &ldquo;studying&rdquo; is notable for an academic profile.</em></li>
+      <li>&ldquo;The true promise of [test-time scaling] lies in extrapolation &mdash; improvement in performance on hard problems as LLMs keep &lsquo;thinking&rsquo; for longer, beyond the maximum token budget they were trained on. Surprisingly, we find that most existing reasoning models do not extrapolate well.&rdquo; &mdash; e3 abstract</li>
+      <li>&ldquo;MRT-trained models solve problems using fewer words and with higher accuracy. In fact, they often perform better by thinking less, as long as each step is purposeful.&rdquo; &mdash; ICML 2025 lay summary. <em>Efficiency thesis: less thinking, better thinking.</em></li>
+      <li>&ldquo;We formalize the problem of optimizing test-time compute as a meta reinforcement learning problem, which provides a principled perspective on spending test-time compute.&rdquo; &mdash; MRT paper abstract</li>
+    </ul>
+  </section>
+
+  <!-- NETWORK MAP -->
+  <section>
+    <h2>Network Map: Aviral Kumar&rsquo;s CMU AIRe Lab</h2>
+    <p class="small muted">Kumar&rsquo;s lab is the epicenter of test-time compute research. Key collaborators:</p>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Name</td><td>Role</td><td>Relationship</td><td>Signal</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Aviral Kumar</strong></td><td>Asst. Prof, CMU CSD+MLD</td><td>MS advisor</td><td>Ex-Google Brain. Schmidt AI2050 Fellow. Senior author on &ldquo;Scaling LLM Test-Time Compute&rdquo; (ICLR 2025 Oral). Field-defining</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Amrith Setlur</strong></td><td>PhD student, CMU</td><td>Co-equal first author on e3</td><td>HIGH. Closest collaborator. If Yang starts something, Setlur is the most likely co-founder</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Charlie Snell</strong></td><td>PhD student, UC Berkeley</td><td>Co-author on e3; first author of &ldquo;Scaling LLM Test-Time Compute&rdquo;</td><td>HIGH. The ICLR 2025 Oral is the most-cited work in this space. Snell + Yang are the dual first-author leads of the paradigm</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Yuxiao Qu</strong></td><td>PhD student, CMU</td><td>Co-equal first author on MRT</td><td>MEDIUM. Strong researcher, likely stays in academia</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Ruslan Salakhutdinov</strong></td><td>Professor, CMU MLD</td><td>Co-author on MRT</td><td>Former Apple AI director. Institutional credibility</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Virginia Smith</strong></td><td>Professor, CMU</td><td>Co-author on e3</td><td>Federated learning pioneer. Distributed systems angle</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Lewis Tunstall / Edward Beeching</strong></td><td>Hugging Face</td><td>Co-authors on MRT</td><td>Industry bridge. HF productized MRT insights into open-source tooling</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Gautam Kamath</strong></td><td>Professor, Waterloo</td><td>Undergrad advisor (3 data poisoning/privacy papers)</td><td>MEDIUM. Yang&rsquo;s earlier ML lineage</td></tr>
+    </table>
+    <p style="margin-top:0.5rem; font-size:0.8rem; color:var(--fg-muted);">
+      <strong>Industry connections:</strong> Scale AI (LLM agent evaluation infra), Skild AI (Deepak Pathak, CMU &rarr; $14B
+      robotics foundation model company, Sequoia-backed). Both expose Yang to the startup-to-scale pipeline.
+    </p>
+  </section>
+
+  <!-- TIMELINE & SIGNALS -->
+  <section>
+    <h2>Timeline &amp; Signals</h2>
+    <ul>
+      <li><strong>Status:</strong> Just graduated CMU MS (Dec 2025). Website says &ldquo;just graduated.&rdquo; No public announcement of next role as of March 2026</li>
+      <li><strong>Inflection point:</strong> Fresh MS grad with best-in-class research. This is the classic &ldquo;PhD or startup or frontier lab?&rdquo; decision window</li>
+      <li><strong>PhD risk:</strong> Could enter PhD (Kumar&rsquo;s group, Berkeley, etc.). Would delay founder timeline 4&ndash;5 years</li>
+      <li><strong>Frontier lab risk:</strong> OpenAI, Anthropic, DeepSeek reasoning teams would all want him. $400K+ TC at 24 is hard to refuse</li>
+      <li><strong>Skild AI connection:</strong> Has direct exposure to Deepak Pathak&rsquo;s $14B robotics company from CMU pipeline</li>
+      <li><strong>Watch for:</strong> Twitter bio change, LinkedIn update, new arXiv papers with industry affiliation, &ldquo;excited to announce&rdquo; posts</li>
+      <li><strong>Likely investors if he raises:</strong> Sequoia (backed Skild), a16z (reasoning infra thesis), Thrive Capital (AI infrastructure)</li>
+      <li><strong>Valuation range:</strong> If he starts something in test-time compute infra: $15&ndash;30M pre-money seed with right co-founder</li>
+    </ul>
+  </section>
+
+  <!-- RISKS -->
+  <section>
+    <h2>Risks</h2>
+    <ul>
+      <li><strong>PhD pathway likely.</strong> Yang&rsquo;s output is PhD-caliber. Strong chance he enrolls in a doctoral program, pushing founder timeline to 2030+</li>
+      <li><strong>Absorbed by frontier lab.</strong> OpenAI/Anthropic/DeepSeek reasoning teams would offer $400K+ TC. Hard to turn down at 24</li>
+      <li><strong>MS credential vs. PhD.</strong> Some deep tech investors credential-gate. An MS (even from CMU MLD with this output) may face bias vs. PhD founders</li>
+      <li><strong>Research, not product.</strong> All publications are academic. Only product-building evidence is Needl (2022&ndash;23, pre-LLM). No evidence of company-building instinct</li>
+      <li><strong>Test-time compute may commoditize.</strong> Every frontier lab is working on this. Could become a built-in feature of base models rather than standalone product</li>
+      <li><strong>Small public presence.</strong> ~30 tweets. No blog. No podcast appearances. Hard to gauge product or founder instinct from public signal alone</li>
+    </ul>
+  </section>
+
+  <!-- BACKGROUND -->
+  <section>
+    <h2>Background</h2>
+    <p>
+      Canadian. University of Waterloo BCS with Statistics Minor (94/100 GPA, 2019&ndash;2024). Canadian Math Olympiad top 50
+      (2018 &amp; 2019). CRA Outstanding Undergraduate Research Award Finalist, 2024 (top 24 in North America). First employee
+      at Needl (YC startup, 2022&ndash;23). CMU MS in Machine Learning (4.18/4.33 GPA, 2024&ndash;25), advised by Aviral Kumar.
+      Research at Scale AI (LLM agent monitoring) and Skild AI (robotics foundation models).
+    </p>
+  </section>
+
+  <!-- NOTES -->
+  <section>
+    <h2>Notes</h2>
+    <ul>
+      <li class="small">Full name: Matthew Y. R. Yang. Canadian, from Waterloo pipeline</li>
+      <li class="small">CMU coursework: Deep RL (A+), Advanced Intro to ML (A+), PGMs (A+), Convex Optimization (A), Prob &amp; Stats (A+)</li>
+      <li class="small">Waterloo advisors: Gautam Kamath (data poisoning), Florian Kerschbaum (differential privacy), Yaoliang Yu, Jimmy Lin (NLP/IR)</li>
+      <li class="small">Paper under review at VLDB 2026 on differential privacy (with Kerschbaum at Waterloo)</li>
+      <li class="small">Skills: Pipeline RL, verl, vLLM, PyTorch, C++, React &mdash; production-grade RL infrastructure experience</li>
+      <li class="small">Reviewer for ICLR 2026, ICML 2025, ICLR 2025 Workshops, L4DC 2025</li>
+      <li class="small">ACL 2023 compressor paper (147 citations) was a breakout &mdash; parameter-free text classification</li>
+      <li class="small">Not Indian-origin based on available information</li>
+      <li class="small">Twitter: @matthewyryang (~30 posts, minimal public presence)</li>
+      <li class="small">Contact: myang4@cs.cmu.edu</li>
+    </ul>
+  </section>
 
   <footer>
-    researched: 2026-03 &middot; delta institute cohort 1 &middot; <a href="../index.html">back to index</a>
+    researched: 2026-03-29 &middot; 6-agent architecture (technical, social, market, trajectory, recursive) &middot; <a href="../index.html">back to index</a>
   </footer>
 
 </body>
