@@ -14,51 +14,267 @@
   </nav>
 
   <div class="profile-header">
-    <h1>Devvrit Khatri</h1>
     <img src="https://framerusercontent.com/images/6L3lF3xCebz8XRqhJWfMXLqaHs.jpeg?width=400&amp;height=400" alt="Devvrit Khatri" style="width:80px;height:80px;border-radius:50%;object-fit:cover;float:right;margin:0 0 1rem 1rem;" loading="lazy" onerror="this.style.display='none'" />
-    <p class="one-liner">UT Austin CS (PhD), prev BITS Pilani, joining Reflection AI</p>
+    <h1>Devvrit Khatri</h1>
+    <p class="one-liner"><strong>Joining Reflection AI ($2B raised, $8B valuation, targeting $25B) as Member of Technical Staff. UT Austin CS PhD (Inderjit Dhillon). MatFormer (NeurIPS 2024, Best Paper ENLSP@NeurIPS 2023). DiskANN (NeurIPS 2019 &mdash; powers billion-scale vector search at Microsoft Bing). Led 400K+ GPU-hour RL scaling study (ICLR 2026 Oral). 12+ papers across NeurIPS, ICLR, APPROX. Previously Google Research (3 yr w/ Prateek Jain), Meta (w/ Rishabh Agarwal), Microsoft Research India. BITS Pilani, Institute Bronze Medal. Indian.</strong></p>
     <div class="tags">
-      <span class="tag">delta</span>
-      <span class="tag">researchers</span>
+      <span class="tag spike">tier-1: high conviction</span>
+      <span class="tag">rl-scaling</span>
+      <span class="tag">efficient-inference</span>
+      <span class="tag">vector-search</span>
+      <span class="tag">frontier-lab</span>
+      <span class="tag">indian</span>
     </div>
     <div class="links">
+      <a href="https://x.com/Devvrit_Khatri">twitter/x</a>
       <a href="https://www.linkedin.com/in/devvrit/">linkedin</a>
-      <a href="https://www.devvrit.com/">website</a>
-      <a href="https://scholar.google.com/citations?user=c86HtPoAAAAJ&amp;hl=en">scholar</a>
+      <a href="https://github.com/devvrit">github</a>
+      <a href="https://scholar.google.com/citations?user=c86HtPoAAAAJ&hl=en">google scholar</a>
+      <a href="https://www.devvrit.com/">personal site</a>
     </div>
+  </div>
+
+  <!-- INVESTMENT THESIS -->
+  <div class="spike-box">
+    <div class="label">&#9670; Investment Thesis</div>
+    <p>
+      Devvrit Khatri is a rare researcher who has shipped production-grade systems at three of the most important ML organizations
+      (Microsoft Research, Google DeepMind, Meta) and produced foundational work spanning efficient inference (MatFormer),
+      billion-scale search (DiskANN), and RL scaling laws (ScaleRL). He is now joining <strong>Reflection AI</strong> &mdash;
+      the NVIDIA-backed, Sequoia/Lightspeed-funded open-source frontier lab ($2B raised at $8B, now targeting $25B) &mdash;
+      as a Member of Technical Staff. His research profile (RL scaling + efficient inference + systems-level search) maps precisely
+      to what Reflection needs to ship its first frontier model and scale Asimov. He is not yet a founder, but the combination of
+      (a) deep RL scaling expertise at exactly the moment RL post-training is the key differentiator, (b) production deployment DNA
+      from DiskANN/Google/Meta, and (c) a move to a high-velocity startup makes him someone to build a relationship with now.
+      If Reflection does not work out, he has the technical depth to start his own company in RL infrastructure or efficient inference.
+    </p>
   </div>
 
   <!-- THE SPIKE -->
-  <div class="spike-box">
-    <div class="label">&#9670; What Makes Them Spiky</div>
+  <section>
+    <h2>The Spike &mdash; With Evidence</h2>
+
+    <h3>1. ScaleRL: 400,000+ GPU-Hour RL Scaling Study (ICLR 2026 Oral)</h3>
+    <p>
+      Lead author of <strong>&ldquo;The Art of Scaling Reinforcement Learning Compute for LLMs&rdquo;</strong> (Oct 2025) &mdash;
+      the first large-scale systematic study defining a principled framework for analyzing and predicting RL scaling in LLMs.
+      Key findings: (1) different algorithmic recipes do <em>not</em> converge to identical asymptotic performance; (2) loss
+      aggregation, normalization, curriculum, and off-policy algorithms primarily modulate compute efficiency without shifting
+      the asymptote; (3) stable recipes follow predictable trajectories enabling extrapolation from smaller runs. The proposed
+      <strong>ScaleRL recipe</strong> was validated on a single RL run scaled to <strong>100,000 GPU-hours</strong>.
+      Accepted as an <strong>Oral at ICLR 2026</strong> &mdash; top ~1% of submissions. 28-page paper with 20 figures.
+      Co-authors span Meta, UT Austin, UCL, UC Berkeley, Harvard, and Google.
+    </p>
+
+    <h3>2. MatFormer: Nested Transformer for Elastic Inference (NeurIPS 2024)</h3>
+    <p>
+      First author. A Matryoshka-style Transformer architecture that trains <strong>one model</strong> and extracts
+      <strong>hundreds of accurate smaller models</strong> at zero additional training cost. An 850M MatLM decoder-only
+      model yields submodels from 582M&ndash;850M parameters, each outperforming independently trained counterparts on
+      validation loss and one-shot downstream tasks. MatFormer-based ViT encoders preserve metric-space structure for
+      adaptive large-scale retrieval. Speculative decoding with MatFormer submodels provides significant inference latency
+      reduction. Won <strong>Best Paper at ENLSP@NeurIPS 2023</strong> workshop before main conference acceptance at NeurIPS 2024.
+    </p>
+
+    <h3>3. DiskANN: Billion-Point Nearest Neighbor Search (NeurIPS 2019)</h3>
+    <p>
+      Co-author (during BITS Pilani final year at Microsoft Research India). DiskANN indexes, stores, and searches
+      <strong>1 billion vectors on a single workstation</strong> with just 64GB RAM and an SSD. On SIFT1B:
+      <strong>&gt;5,000 queries/sec</strong> at <strong>&lt;3ms mean latency</strong> with <strong>95%+ 1-recall@1</strong>,
+      where FAISS and IVFOADC+G+P plateau at ~50% recall with similar memory. DiskANN is now deployed across
+      <strong>Microsoft Bing, Microsoft 365, Azure Cosmos DB, and Azure PostgreSQL</strong>. The paper has accumulated
+      600+ citations and spawned follow-up systems (SPANN, SPFresh, Filtered-DiskANN, OOD-DiskANN) powering
+      hundreds of billions of vectors at Microsoft scale. Led by Harsha Vardhan Simhadri (Senior Principal Researcher, Microsoft).
+    </p>
+
+    <h3>Additional Papers of Note</h3>
     <ul>
-      <li>MatFormer won Best Paper at ENLSP NeurIPS 2023</li>
-      <li>DiskANN (NeurIPS 2019) enables billion-point nearest neighbor search on a single node</li>
-      <li>602+ citations</li>
-      <li>BITS Pilani Institute Bronze Medal</li>
-      <li>Massive 400,000+ GPU-hour study on RL scaling for LLMs</li>
-      <li>Student researcher at both Google (with Prateek Jain) and Meta (with Rishabh Agarwal)</li>
-      <li>Previously at Microsoft Research India.</li>
+      <li><strong>Dual-Encoders for Extreme Multi-label Classification</strong> (ICLR 2024) &mdash; with Prateek Jain, Inderjit Dhillon. Advances state-of-the-art in XMC retrieval</li>
+      <li><strong>CASPR: Combining Axes Preconditioners through Kronecker Approximation</strong> (ICLR 2024) &mdash; novel optimizer for deep learning. With Sai Surya Duvvuri, Rohan Anil</li>
+      <li><strong>SONew: A Computationally Efficient Sparsified Online Newton Method</strong> (NeurIPS 2023) &mdash; second-order optimization at scale</li>
+      <li><strong>Compressing Many-Shots in In-Context Learning</strong> (Oct 2025) &mdash; reduces memory/compute cost of many-shot ICL prompts</li>
+      <li><strong>Test-Time Training for Long-Context LLMs</strong> (Dec 2025) &mdash; provably overcomes limitations of static self-attention via targeted gradient updates</li>
     </ul>
-  </div>
+  </section>
 
-  <h2>Research &amp; Key Work</h2>
-  <h3>Problems &amp; Research Areas</h3>
-  <ul><li>Large-scale machine learning efficiency and scalability</li><li>RL scaling for LLMs</li><li>Nested transformers for elastic inference (MatFormer)</li><li>Billion-point nearest neighbor search (DiskANN)</li><li>Extreme multi-label classification</li><li>Graph clustering</li><li>Adversarial robustness</li></ul>
-  <h3>Key Work</h3>
-  <ul><li>MatFormer: Nested Transformers for Elastic Inference (NeurIPS 2024)</li><li>DiskANN: billion-point nearest neighbor search (NeurIPS 2019)</li><li>The Art of Scaling RL Compute for LLMs (2025)</li><li>Multiple NeurIPS papers on sparsification, graph clustering, and semi-supervised learning.</li></ul>
+  <!-- GROWTH TRAJECTORY -->
+  <section>
+    <h2>Growth Trajectory</h2>
+    <table style="width:100%; font-size:0.85rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted); width:120px;">2015&ndash;19</td><td>BE Computer Science, BITS Pilani Goa &mdash; graduates with <strong>Institute Bronze Medal</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Summer 2018</td><td>MITACS Globalink Research Intern &mdash; Graph Theory at University of Montreal, Canada</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2019</td><td>Microsoft Research India &mdash; undergrad thesis under Ravishankar Krishnaswamy &amp; Harsha Simhadri. Builds DiskANN</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Aug 2019</td><td>Robust Correlation Clustering published at APPROX 2019</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Dec 2019</strong></td><td><strong>DiskANN published at NeurIPS 2019</strong> &mdash; billion-point nearest neighbor search on a single node</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2019&ndash;21</td><td>MS Computer Science, UT Austin (advisor: Inderjit Dhillon)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2021&ndash;26</td><td>PhD Computer Science, UT Austin (advisor: Inderjit Dhillon)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2022&ndash;25</td><td>Student Researcher at <strong>Google Research</strong> with Prateek Jain (Distinguished Scientist, DeepMind India)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Oct 2023</strong></td><td><strong>MatFormer wins Best Paper at ENLSP@NeurIPS 2023</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2023</td><td>Two additional NeurIPS 2023 papers (SONew optimizer, Greedy Pruning)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">May 2024</td><td>Google DeepMind India internship with Prateek Jain</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2024</td><td>Three papers: MatFormer (NeurIPS 2024), CASPR (ICLR 2024), Dual-Encoders for XMC (ICLR 2024)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">May&ndash;Dec 2025</td><td>Student Researcher at <strong>Meta</strong> with Rishabh Agarwal (RL for LLMs)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Oct 2025</strong></td><td><strong>ScaleRL paper (400K GPU-hours)</strong> &mdash; first principled RL scaling laws for LLMs</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Dec 2025</td><td>Test-Time Training for Long-Context LLMs (arXiv)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Early 2026</strong></td><td><strong>ScaleRL accepted as ICLR 2026 Oral</strong> (top ~1% of submissions)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>Mar 2026</strong></td><td><strong>Announces joining Reflection AI as Member of Technical Staff</strong> &mdash; &ldquo;excited to help build the open intelligence ecosystem&rdquo;</td></tr>
+    </table>
+    <p style="margin-top:1rem; font-family:var(--mono); font-size:0.75rem; color:var(--accent);">
+      PACE: 12+ papers at top venues in ~5 years of PhD. NeurIPS publication as undergrad (age ~22). 3 papers in 2024. ICLR Oral in 2026.<br>
+      ACCELERATION: Clear. From systems paper as undergrad (DiskANN) &rarr; best paper at workshop (MatFormer) &rarr; Oral at ICLR (ScaleRL). Magnitude and prestige increasing with each cycle.<br>
+      PEER COMPARISON: Faster than median UT Austin PhD trajectory. NeurIPS publication as a BITS Pilani undergrad is exceptional. ICLR Oral + industry move in same year signals peak velocity.
+    </p>
+  </section>
 
+  <!-- WHAT HE'D BUILD -->
+  <section>
+    <h2>What He&rsquo;d Build (If He Started a Company)</h2>
 
-  <h2>Current Work</h2>
-  <p>Joining Reflection AI as Member of Technical Staff to build the &#x27;open intelligence ecosystem.&#x27; Previously PhD student at UT Austin.</p>
+    <h3>RL Scaling Infrastructure for Frontier Models</h3>
+    <p>
+      His ScaleRL work defines the first principled framework for predicting RL scaling in LLMs. This is the missing piece
+      for every lab doing RL post-training: how to allocate compute, which recipes scale, and how to predict performance
+      before committing 100K+ GPU-hours. A company built on this could sell RL training infrastructure or consulting
+      to every model lab that is not OpenAI/Anthropic/DeepMind.
+    </p>
 
-  <div class="spike-box" style="margin-top: 1.5rem;">
-    <div class="label">&#9670; Alpha Insight</div>
-    <p>His work spans the full stack of ML efficiency -- from hardware-level search (DiskANN) to model architecture (MatFormer) to training methodology (RL scaling). The move to Reflection AI suggests he&#x27;s betting on open-source frontier models.</p>
-  </div>
+    <h3>Efficient Inference / Elastic Model Serving</h3>
+    <p>
+      MatFormer&rsquo;s core insight &mdash; train once, deploy hundreds of size-variants &mdash; addresses the
+      #1 deployment pain point for every company serving LLMs across heterogeneous hardware (cloud, edge, mobile).
+      Combined with his work on many-shot compression and test-time training, he could build an inference optimization
+      layer that sits between model providers and deployment.
+    </p>
+
+    <h3>Competitive Landscape</h3>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Company</td><td>Valuation</td><td>How Devvrit&rsquo;s Expertise Differs</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Reflection AI (current)</td><td>$8B &rarr; $25B</td><td>He is joining them. His RL scaling + efficient inference expertise is precisely what they need to ship a frontier model</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Together AI</td><td>$3.3B</td><td>Inference infrastructure. MatFormer&rsquo;s elastic models could be more efficient than Together&rsquo;s approach</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Fireworks AI</td><td>$2.5B</td><td>Model serving optimization. Devvrit has deeper model-architecture-level efficiency (not just serving infra)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Poolside</td><td>$12B</td><td>Code-focused frontier lab. Devvrit&rsquo;s RL scaling laws could be the differentiator Reflection has over Poolside</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Mistral AI</td><td>$6.2B</td><td>Open-weight competitor. Devvrit&rsquo;s elastic inference work directly relevant to Mistral&rsquo;s multi-size model strategy</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Zyphra</td><td>~$200M</td><td>Efficient architectures for edge. MatFormer approach is complementary but from transformer-native angle</td></tr>
+    </table>
+  </section>
+
+  <!-- PRIMARY SOURCES -->
+  <section>
+    <h2>In His Own Words</h2>
+    <ul>
+      <li>&ldquo;Wish to build scaling laws for RL but not sure how to scale? Or what scales? Or would RL even scale predictably? We introduce: The Art of Scaling Reinforcement Learning Compute for LLMs&rdquo; &mdash; <a href="https://x.com/Devvrit_Khatri/status/1978864275658871099">Oct 16, 2025 tweet</a></li>
+      <li>&ldquo;Next week, I am excited to join Reflection AI as a Member of Technical Staff to help build the open intelligence ecosystem&rdquo; &mdash; LinkedIn announcement, Mar 2026</li>
+      <li>&ldquo;[I am] interested in Large Scale Machine Learning, with a focus on efficiency and scalability&rdquo; and building &ldquo;fundamental ML algorithms that exhibit strong empirical performance coupled with real-world deployability&rdquo; &mdash; <a href="https://www.devvrit.com/">personal website</a></li>
+    </ul>
+    <p class="small muted">
+      Twitter: @Devvrit_Khatri &mdash; low-volume, research-focused. Active since Oct 2023.
+      Appeared on the <strong>Delta Podcast</strong> to discuss RL scaling work, future research directions, and the broader landscape.
+    </p>
+  </section>
+
+  <!-- NETWORK MAP -->
+  <section>
+    <h2>Network Map</h2>
+
+    <h3>Advisor &amp; UT Austin Lab</h3>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Name</td><td>Role</td><td>Relationship</td><td>Signal</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Inderjit S. Dhillon</strong></td><td>Gottesman Family Centennial Professor, UT Austin. Distinguished Scientist at Google (on leave). ACM/IEEE/SIAM/AAAS Fellow. SIAM Linear Algebra Prize</td><td>PhD advisor</td><td>One of the most decorated ML professors in the world. His lab produces top-tier industry researchers</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Sai Surya Duvvuri</strong></td><td>UT Austin PhD student (Dhillon lab)</td><td>Co-author on 3 papers (SONew, CASPR, ScaleRL)</td><td>MEDIUM. Frequent collaborator. Indian-origin. Track if he follows Devvrit to industry</td></tr>
+    </table>
+
+    <h3>Google Research / DeepMind Network</h3>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Name</td><td>Role</td><td>Relationship</td><td>Signal</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Prateek Jain</strong></td><td>Distinguished Scientist &amp; Director, Google DeepMind India. Co-leads Gemini long-term model research. ACM India ECR Award 2021. IIT Kanpur &rarr; UT Austin PhD &rarr; MSR India &rarr; Google</td><td>Research mentor, 3 years (2022&ndash;25). Co-author on MatFormer, Dual-Encoders, many-shot compression</td><td>HIGH. Center of gravity for Indian ML talent pipeline. If he leaves Google, massive signal</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Aditya Kusupati</strong></td><td>Researcher (prev UW). Matryoshka representation learning pioneer</td><td>Co-author on MatFormer and many-shot compression</td><td>MEDIUM. Key collaborator on elastic inference research</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Manzil Zaheer</strong></td><td>Google Research</td><td>Co-author on ScaleRL</td><td>LOW. Senior Google researcher, optimization expertise</td></tr>
+    </table>
+
+    <h3>Meta / RL Scaling Network</h3>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Name</td><td>Role</td><td>Relationship</td><td>Signal</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Rishabh Agarwal</strong></td><td>Research Scientist, Meta (prev Google Brain). One of the most cited RL-for-LLMs researchers</td><td>Supervisor at Meta (2025). Co-author on ScaleRL</td><td>HIGH. Indian-origin. If he leaves Meta, track closely</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Lovish Madaan</strong></td><td>Meta researcher</td><td>Co-author on ScaleRL and TTT paper</td><td>MEDIUM. Indian-origin. Core ScaleRL team member</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>David Brandfonbrener</strong></td><td>Researcher (Harvard/UC Berkeley)</td><td>Co-author on ScaleRL and TTT paper</td><td>MEDIUM. Bridges theory and practice in RL</td></tr>
+    </table>
+
+    <h3>Microsoft Research India / DiskANN Network</h3>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Name</td><td>Role</td><td>Relationship</td><td>Signal</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Harsha Vardhan Simhadri</strong></td><td>Senior Principal Researcher, Microsoft. Leads DiskANN project</td><td>DiskANN project lead. Undergrad thesis co-advisor</td><td>MEDIUM. Indian-origin. Powers billion-scale vector search at Microsoft</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Ravishankar Krishnaswamy</strong></td><td>Researcher, Microsoft Research India</td><td>Undergrad thesis advisor at MSR India</td><td>LOW. Academic mentor connection</td></tr>
+    </table>
+
+    <h3>Reflection AI (New Team)</h3>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Name</td><td>Role</td><td>Signal</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Misha Laskin</strong></td><td>Co-Founder &amp; CEO. Ex-DeepMind (led reward modeling for Gemini). PhD under Pieter Abbeel (Berkeley)</td><td>HIGH. If Devvrit thrives under Laskin, both become more interesting for future ventures</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Ioannis Antonoglou</strong></td><td>Co-Founder &amp; CTO. 10+ years at DeepMind. Core architect of AlphaGo, AlphaZero</td><td>HIGH. Deep RL pedigree aligns perfectly with Devvrit&rsquo;s ScaleRL expertise</td></tr>
+    </table>
+  </section>
+
+  <!-- TIMELINE & SIGNALS -->
+  <section>
+    <h2>Timeline &amp; Signals</h2>
+    <ul>
+      <li><strong>Status:</strong> Joining Reflection AI as MTS, announced ~Mar 2026. Likely completing or just completed UT Austin PhD (5th year)</li>
+      <li><strong>Reflection AI context:</strong> $2B raised at $8B (Oct 2025). In talks for $2.5B at $25B. ~111 employees. NVIDIA invested $800M. Backed by Sequoia, Lightspeed, Eric Schmidt, DST Global, Citi. Has not shipped a public frontier model as of Mar 2026. Asimov coding agent still on waitlist</li>
+      <li><strong>Why this matters:</strong> If Reflection ships successfully, Devvrit gains frontier model training experience at a rocketship. If Reflection stumbles, he has the profile to start his own company or join any top lab</li>
+      <li><strong>Watch for:</strong> (a) Reflection&rsquo;s first public model release &mdash; Devvrit&rsquo;s RL scaling expertise will be visible in results; (b) any departure from Reflection within 12&ndash;18 months &mdash; would signal founder intent; (c) new papers extending ScaleRL to production</li>
+      <li><strong>Likely investors if he founded:</strong> Sequoia, Lightspeed (already in Reflection), NVIDIA (same), Radical Ventures, Index Ventures</li>
+    </ul>
+  </section>
+
+  <!-- RISKS -->
+  <section>
+    <h2>Risks</h2>
+    <ul>
+      <li><strong>Joining, not founding.</strong> He chose to join Reflection AI as an employee, not start his own company. This is a researcher-to-industry transition, not a founder signal. May stay as an IC researcher indefinitely</li>
+      <li><strong>Reflection AI execution risk.</strong> As of Mar 2026, Reflection has raised $2B+ but has not shipped a public frontier model. Valued at up to $25B on promise alone. If it fails to deliver, the association could be a negative signal</li>
+      <li><strong>Academic profile, not operator profile.</strong> 12+ papers but no evidence of building products, managing teams, or doing GTM. DiskANN was deployed by Microsoft engineers, not by Devvrit himself</li>
+      <li><strong>RL scaling may commoditize.</strong> OpenAI, Anthropic, DeepMind, and Meta all have internal RL scaling teams. The ScaleRL recipe could become table stakes rather than a moat</li>
+      <li><strong>PhD completion timing unclear.</strong> Listed as &ldquo;5th year PhD student&rdquo; &mdash; may still be completing dissertation. Split attention between PhD defense and new role</li>
+    </ul>
+  </section>
+
+  <!-- BACKGROUND -->
+  <section>
+    <h2>Background</h2>
+    <p>
+      Indian-origin. BE Computer Science from BITS Pilani, Goa (2015&ndash;2019), graduating with the Institute Bronze Medal.
+      Summer research at University of Montreal via MITACS Globalink (graph theory). Final year at Microsoft Research India
+      under Ravishankar Krishnaswamy and Harsha Simhadri, where he co-built DiskANN (NeurIPS 2019). MS + PhD at UT Austin
+      under Inderjit Dhillon (ACM/IEEE/SIAM/AAAS Fellow, Distinguished Scientist at Google). Three years as
+      Student Researcher at Google (2022&ndash;25) with Prateek Jain (Distinguished Scientist, Google DeepMind India),
+      then Student Researcher at Meta (May&ndash;Dec 2025) with Rishabh Agarwal. Joining Reflection AI as MTS in March 2026.
+    </p>
+  </section>
+
+  <!-- NOTES -->
+  <section>
+    <h2>Notes</h2>
+    <ul>
+      <li class="small">Full publication list: 12+ papers at NeurIPS (2019, 2022, 2023 x2, 2024), ICLR (2024 x2, 2026 Oral), APPROX (2019), Discuss. Math. Graph Theory (2024), plus preprints on TTT and many-shot compression</li>
+      <li class="small">Google Scholar: 600+ citations (as of early 2026)</li>
+      <li class="small">DiskANN codebase is open-source: <a href="https://github.com/microsoft/DiskANN">github.com/microsoft/DiskANN</a>. Deployed in Bing, M365, Azure Cosmos DB, Azure PostgreSQL</li>
+      <li class="small">MatFormer GitHub: <a href="https://github.com/devvrit/matformer">github.com/devvrit/matformer</a></li>
+      <li class="small">ScaleRL: 28 pages, 20 figures. Proposes sigmoidal compute-performance curves for RL training. Single run validated at 100K GPU-hours</li>
+      <li class="small">Inderjit Dhillon lab: SIAM Linear Algebra Prize winner. Alumni include Si Si (Google Research) and many others across Google, Meta, Amazon</li>
+      <li class="small">Prateek Jain: IIT Kanpur &rarr; UT Austin PhD &rarr; MSR India Senior Principal Researcher &rarr; Distinguished Scientist at Google DeepMind India. Won ICML-07 and CVPR-08 best student paper. ACM India ECR Award 2021. Key node in Indian ML network</li>
+      <li class="small">Reflection AI investors: NVIDIA ($800M), Sequoia, Lightspeed, Eric Schmidt, DST Global, 1789 Capital, B Capital, CRV, Citigroup</li>
+      <li class="small">Reflection AI products: Asimov (coding agent, launched Jul 2025, multi-agent architecture for code comprehension, still waitlisted Mar 2026). No public frontier model shipped yet</li>
+      <li class="small">Reflection AI founders: Misha Laskin (CEO, ex-DeepMind reward modeling for Gemini, PhD under Pieter Abbeel) and Ioannis Antonoglou (CTO, 10+ yr DeepMind, AlphaGo/AlphaZero architect)</li>
+      <li class="small">Delta Podcast appearance: discussed ScaleRL, future directions in RL for LLMs</li>
+      <li class="small">Graph theory roots: MITACS internship at U of Montreal (2018). Co-authored &ldquo;Fractional Eternal Domination&rdquo; (Discuss. Math. Graph Theory, 2024)</li>
+      <li class="small">Twitter: @Devvrit_Khatri &mdash; low volume, research-focused. Active since Oct 2023</li>
+      <li class="small">Indian-origin confirmed: BITS Pilani undergraduate, MSR India affiliation, name</li>
+      <li class="small">Email: devvrit [at] cs [dot] utexas [dot] edu</li>
+    </ul>
+  </section>
 
   <footer>
-    researched: 2026-03 &middot; delta institute cohort 1 &middot; <a href="../index.html">back to index</a>
+    researched: 2026-03-29 &middot; 6-agent architecture (technical, social, market, background, trajectory, recursive) &middot; <a href="../index.html">back to index</a>
   </footer>
 
 </body>
