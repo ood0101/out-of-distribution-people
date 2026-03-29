@@ -15,49 +15,298 @@
 
   <div class="profile-header">
     <h1>Dan Biderman</h1>
-    <img src="https://framerusercontent.com/images/Mj8qMXqwpC4ifBxQV0lnXCMRtY.jpeg?width=400&amp;height=400" alt="Dan Biderman" style="width:80px;height:80px;border-radius:50%;object-fit:cover;float:right;margin:0 0 1rem 1rem;" loading="lazy" onerror="this.style.display='none'" />
-    <p class="one-liner">Stanford CS/Stats Postdoc (advisors: Christopher Re, Scott Linderman), Academic Partner at Databricks Mosaic AI</p>
+    <p class="one-liner"><strong>Stanford postdoc co-advised by Chris R&eacute; (Hazy Research &mdash; the most prolific founder-factory lab in ML) and Scott Linderman. Lead author of &ldquo;LoRA Learns Less and Forgets Less&rdquo; (TMLR 2024, Featured Certification). Co-author of Minions (ICML 2025 &mdash; 5.7x cost reduction, 97.9% frontier performance via local-cloud LLM collaboration). PhD Columbia Neurobiology (Titus M. Cowan Prize). Academic partner, Databricks Mosaic AI Research. Adi Lautman Program alumnus (Tel Aviv University &mdash; 15 admits/year). Israeli-origin.</strong></p>
     <div class="tags">
+      <span class="tag spike">tier-1: high conviction</span>
+      <span class="tag">efficient-llm</span>
+      <span class="tag">parameter-efficient-finetuning</span>
+      <span class="tag">on-device-inference</span>
+      <span class="tag">multi-agent-systems</span>
+      <span class="tag">neuroscience-to-ai</span>
+      <span class="tag">chris-re-lab</span>
       <span class="tag">delta</span>
-      <span class="tag">researchers</span>
     </div>
     <div class="links">
+      <a href="https://x.com/dan_biderman">twitter/x (~2.1K)</a>
+      <a href="https://github.com/danbider">github</a>
       <a href="https://www.linkedin.com/in/dan-biderman-066039202/">linkedin</a>
       <a href="https://dan-biderman.netlify.app/">website</a>
-      <a href="https://scholar.google.com/citations?user=6WFbVJUAAAAJ">scholar</a>
+      <a href="https://scholar.google.com/citations?user=6WFbVJUAAAAJ&hl=en">google scholar</a>
     </div>
+  </div>
+
+  <!-- INVESTMENT THESIS -->
+  <div class="spike-box">
+    <div class="label">&#9670; Investment Thesis</div>
+    <p>
+      Dan Biderman sits at the intersection of two high-signal vectors: <strong>(1)</strong> he is a postdoc in
+      Chris R&eacute;&rsquo;s Hazy Research lab &mdash; the single most prolific founder-factory lab in ML
+      (Snorkel, SambaNova, Together AI, Cartesia, Lattice/Apple, Inductiv/Apple, Cognition, Numbers Station, Moonhub &mdash;
+      combined peak valuations exceeding $15B) &mdash; and <strong>(2)</strong> his research focus on
+      <strong>efficient LLM post-training and on-device inference</strong> maps directly to a massive emerging market.
+      His LoRA paper is one of the most-cited fine-tuning papers of 2024 (TMLR Featured Certification), and Minions
+      (ICML 2025) demonstrates a practical framework for local-cloud LLM collaboration that cuts costs by 5.7x while
+      recovering 97.9% of frontier model performance. His neuroscience PhD gives him a differentiated lens on how
+      biological systems learn efficiently &mdash; a rare credential intersection. The question is timing: he is currently
+      a postdoc (started ~2024), not showing obvious departure signals yet, but the R&eacute; lab pipeline from
+      postdoc/PhD to founder is well-established (typical timeline: 1&ndash;3 years). Build relationship now; he is exactly
+      the kind of person who will have a company in 12&ndash;24 months.
+    </p>
   </div>
 
   <!-- THE SPIKE -->
-  <div class="spike-box">
-    <div class="label">&#9670; What Makes Them Spiky</div>
+  <section>
+    <h2>The Spike &mdash; With Evidence</h2>
+
+    <h3>1. &ldquo;LoRA Learns Less and Forgets Less&rdquo; (TMLR 2024, Featured Certification)</h3>
+    <p>
+      Lead author. The most rigorous empirical comparison of LoRA vs. full fine-tuning to date. Tested on
+      Llama-2 7B and 13B across programming and mathematics domains in two regimes: instruction fine-tuning
+      (~100K prompt-response pairs) and continued pretraining (20B unfiltered tokens). Key finding: in standard
+      low-rank settings, <strong>LoRA substantially underperforms full fine-tuning</strong> on target-domain tasks,
+      but <strong>LoRA better maintains performance on out-of-distribution tasks</strong> &mdash; mitigating
+      catastrophic forgetting more effectively than weight decay or dropout. Full fine-tuning learns perturbations
+      with ranks <strong>10&ndash;100x greater</strong> than typical LoRA configurations, explaining the gap.
+      Published May 2024 on arXiv, accepted TMLR August 2024 with Featured Certification (top ~5% of TMLR papers).
+      Co-authored with researchers from MosaicML/Databricks (Jonathan Frankle, now Chief Scientist) and Columbia.
+    </p>
+    <p style="font-size:0.85rem; color:var(--fg-muted);">
+      GitHub repo (danbider/lora-tradeoffs): 20 stars. All trained checkpoints released publicly on HuggingFace.
+      Paper has become a standard reference in the LoRA/PEFT literature. An AAAI 2025 follow-up paper (&ldquo;LoRA Unlearns More and Retains More&rdquo;) directly extends his findings &mdash; evidence of downstream impact.
+    </p>
+
+    <h3>2. Minions: Local-Cloud LLM Collaboration (ICML 2025)</h3>
+    <p>
+      Co-author with Avanika Narayan and Sabri Eyuboglu (both R&eacute; lab PhDs), plus Avner May,
+      Scott Linderman, James Zou, and Christopher R&eacute;. Proposes a protocol where small on-device
+      LLMs (1&ndash;8B params, e.g., Llama 3.1-8B via Ollama) collaborate with frontier cloud models
+      (GPT-4, etc.) on token-intensive workloads. Two protocols:
+    </p>
     <ul>
-      <li>LoRA Learns Less and Forgets Less — one of the most influential papers on parameter-efficient finetuning</li>
-      <li>Minions (ICML 2025) — pioneering local-cloud LLM collaboration protocols</li>
-      <li>Lightning Pose (Nature Methods 2024) — semi-supervised pose estimation for biology</li>
-      <li>Titus M. Cowan Dissertation Prize for Excellence in Biomedical Research at Columbia</li>
-      <li>PhD Hooding Ceremony Speaker at Columbia 2025</li>
-      <li>Dual expertise: neuroscience PhD + ML systems postdoc — rare bridge</li>
+      <li><strong>Minion</strong> (naive chat): <strong>30.4x</strong> reduction in remote costs, recovers 87% of cloud-only performance</li>
+      <li><strong>MinionS</strong> (task decomposition): <strong>5.7x</strong> cost reduction, recovers <strong>97.9%</strong> of frontier model performance</li>
     </ul>
-  </div>
+    <p>
+      Benchmarked on FinanceBench (100-page 10-K reports), LongHealth (medical records), QAsper (scientific papers).
+      Critical finding: local models below 3B parameters are not effective &mdash; the protocol became viable only
+      after mid-2024 releases (Llama 3.1-8B). Ollama blog integration drove significant real-world adoption.
+      The paper reads like a product spec, not just research.
+    </p>
 
-  <h2>Research &amp; Key Work</h2>
-  <h3>Problems &amp; Research Areas</h3>
-  <ul><li>Efficient LLM post-training (LoRA vs full finetuning tradeoffs)</li><li>On-device / cloud LLM collaboration (Minions)</li><li>Pose estimation for neuroscience (Lightning Pose)</li><li>Long-context reasoning architectures</li><li>Numerical linear algebra for fast AI</li></ul>
-  <h3>Key Work</h3>
-  <ul><li>LoRA Learns Less and Forgets Less (TMLR 2024, ICLR 2025) — definitive study on LoRA tradeoffs</li><li>Minions (ICML 2025) — 5.7x cost reduction while recovering 97.9% of frontier model performance via local-cloud LLM collaboration</li><li>Lightning Pose (Nature Methods 2024) — semi-supervised pose estimation with physics-informed inductive biases</li></ul>
+    <h3>3. Lightning Pose (Nature Methods 2024)</h3>
+    <p>
+      Lead author of PhD work. Semi-supervised deep learning framework for animal pose estimation that reduces
+      labeling requirements through Bayesian ensembling and unlabeled video with motion continuity, multi-view
+      geometry, and posture plausibility penalties. Won Columbia&rsquo;s <strong>Titus M. Cowan Dissertation Prize</strong>
+      in biomedical research. GitHub: <strong>291 stars</strong>. Published in Nature Methods (IF ~48).
+    </p>
+  </section>
 
+  <!-- GROWTH TRAJECTORY -->
+  <section>
+    <h2>Growth Trajectory</h2>
+    <table style="width:100%; font-size:0.85rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted); width:120px;">2013&ndash;17</td><td>Tel Aviv University, Adi Lautman Interdisciplinary Program for Outstanding Students (15 admits/year). Cognitive science, math, neurobiology</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2018</td><td>MA Cognitive Science, Tel Aviv University. Thesis: &ldquo;Contextual effects on the perception of ambiguous objects&rdquo; (advisor: Liad Mudrik)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2018&ndash;24</td><td>PhD Neurobiology &amp; Behavior, Columbia University. Advisors: John Cunningham &amp; Liam Paninski (Center for Theoretical Neuroscience, Zuckerman Institute)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">~2023</td><td>Research Science Intern, MosaicML/Databricks &mdash; LLM robustness and efficiency research. Seeds the LoRA paper collaboration</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>May 2024</strong></td><td><strong>&ldquo;LoRA Learns Less and Forgets Less&rdquo; released on arXiv</strong> &mdash; rapidly becomes standard PEFT reference</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Aug 2024</td><td>LoRA paper accepted at TMLR with Featured Certification (top ~5%)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2024</td><td>Lightning Pose published in Nature Methods (IF ~48). Wins Titus M. Cowan Dissertation Prize at Columbia</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">~2024</td><td>Joins Stanford as Postdoc, co-advised by Chris R&eacute; (Hazy Research) and Scott Linderman. Academic partner at Databricks Mosaic AI Research</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Feb 2025</strong></td><td><strong>Minions paper released (arXiv 2502.15964)</strong> &mdash; on-device + cloud LLM collaboration. Accepted ICML 2025</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">May 2025</td><td>Selected as student speaker at Columbia Medical Center PhD hooding ceremony</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Jul 2025</td><td>Co-organizes ES-FoMo III (Efficient Systems for Foundation Models) workshop at ICML 2025</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Jul 2025</td><td>Tweets &ldquo;Do you believe in local LLMs?&rdquo; &mdash; conviction signal on on-device inference thesis</td></tr>
+    </table>
+    <p style="margin-top:1rem; font-family:var(--mono); font-size:0.75rem; color:var(--accent);">
+      PACE: Nature Methods pub + TMLR Featured Cert + ICML acceptance + ICML workshop organizer in ~14 months.<br>
+      ACCELERATION: Clear. Pivoted from pure neuroscience to frontier LLM research. Two top-venue papers in first year of postdoc.<br>
+      PEER COMPARISON: Faster than typical neuroscience-to-ML pivots. LoRA paper impact is top-decile for a postdoc-stage researcher. The MosaicML internship was the bridge &mdash; he built industry credibility before the postdoc even started.
+    </p>
+  </section>
 
-  <h2>Current Work</h2>
-  <p>Stanford postdoc building efficient LLM post-training methods and on-device/cloud collaboration frameworks, while partnering with Databricks on production LLM research</p>
+  <!-- WHAT HE'D BUILD -->
+  <section>
+    <h2>What He&rsquo;d Build</h2>
+    <h3>The Efficient Inference / On-Device LLM Thesis</h3>
+    <p>
+      Biderman&rsquo;s research trajectory points toward a company at the intersection of
+      <strong>efficient post-training</strong> and <strong>local-cloud LLM orchestration</strong>.
+      The Minions paper is essentially a product demo: small models on laptops/phones collaborating
+      with cloud frontier models, cutting costs by 5.7x while preserving 97.9% quality.
+      His LoRA work gives him deep expertise on when and how to efficiently adapt models.
+      His website describes his current focus as &ldquo;language models that dynamically learn from experience&rdquo;
+      &mdash; pointing toward continual learning / test-time adaptation.
+    </p>
+    <p>
+      A plausible company: <strong>infrastructure for hybrid on-device + cloud LLM deployment</strong>
+      that makes it cheap and private to run AI workloads locally while using the cloud only when necessary.
+      The Minions benchmarks (finance, medical, scientific) map to the exact verticals where data privacy
+      demands local processing.
+    </p>
 
-  <div class="spike-box" style="margin-top: 1.5rem;">
-    <div class="label">&#9670; Alpha Insight</div>
-    <p>Dan&#x27;s Minions work may define how LLMs are actually deployed: not as monolithic cloud models, but as swarms of cheap local models guided by expensive cloud models. The 5.7x cost reduction at 97.9% performance recovery is exactly the economics that makes AI deployment viable at scale.</p>
-  </div>
+    <h3>Market</h3>
+    <ul>
+      <li>On-device AI / edge inference: $15.6B (2024) &rarr; $85B+ (2030), ~33% CAGR</li>
+      <li>LLM fine-tuning tools &amp; infrastructure: $4.5B (2024) &rarr; $30B+ (2030)</li>
+      <li>Enterprise data privacy concerns driving demand for local processing &mdash; finance, healthcare, legal (exactly the domains Minions benchmarked)</li>
+    </ul>
+
+    <h3>Competitive Landscape</h3>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Company</td><td>Valuation</td><td>How Dan differs</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Together AI</td><td>$3.3B</td><td>Cloud-first inference platform. Dan&rsquo;s thesis is hybrid local+cloud, not pure cloud. But R&eacute; lab peer &mdash; knows the founders personally</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Cartesia</td><td>$191M raised</td><td>SSM architecture play (Mamba). Dan&rsquo;s work is model-agnostic orchestration, not architecture-specific. Both from R&eacute; lab</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Ollama</td><td>Undisclosed (massive adoption)</td><td>Local runtime only, no smart cloud fallback. Minions literally built on top of Ollama &mdash; Dan could build the orchestration layer above it</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Predibase</td><td>$66M raised</td><td>LoRA fine-tuning platform. Dan literally wrote the definitive LoRA analysis paper</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Fireworks AI</td><td>$552M</td><td>Inference optimization. Dan&rsquo;s approach is complementary &mdash; smart routing between local and cloud, not just fast cloud inference</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Jan.ai / LM Studio</td><td>Early-stage</td><td>Consumer-focused local LLM runners. Dan&rsquo;s work is more technically rigorous (ICML-published protocol), enterprise-grade</td></tr>
+    </table>
+  </section>
+
+  <!-- PRIMARY SOURCES -->
+  <section>
+    <h2>In His Own Words</h2>
+    <ul>
+      <li>&ldquo;The world we&rsquo;re graduating into now has machines that review literature, write code, analyze data, and even draft manuscripts that pass peer review. Our scientific profession is shifting beneath our feet.&rdquo; &mdash; Columbia PhD hooding ceremony speech, May 2025. <em>Shows awareness of AI&rsquo;s disruption of knowledge work &mdash; the worldview of someone who would build products, not just publish papers.</em></li>
+      <li>&ldquo;Do you believe in local LLMs?&rdquo; &mdash; Jul 8, 2025. <em>Direct conviction signal on his Minions research thesis. The question framing suggests he does &mdash; and is testing whether others share the belief.</em></li>
+      <li>&ldquo;Data research Legend&rdquo; &mdash; referring to Chris R&eacute;, Jan 2025. <em>Deep respect for advisor, but the casual phrasing suggests peer-level comfort, not grad-student deference.</em></li>
+      <li>&ldquo;From what I heard and read, much thought was put into building this. Amazing to have an accelerated GLM package in python.&rdquo; &mdash; on NeMoS neural data analysis package. <em>Appreciates engineering craft, not just theory. Notices when tools are well-built.</em></li>
+    </ul>
+  </section>
+
+  <!-- NETWORK MAP -->
+  <section>
+    <h2>Network Map: The Chris R&eacute; Founder Factory</h2>
+    <p class="small muted">Chris R&eacute;&rsquo;s Hazy Research lab has produced more startup founders than arguably any other ML lab in the world. Dan sits inside this pipeline as one of only two postdocs.</p>
+
+    <h3>Companies Founded by R&eacute; Lab Alumni</h3>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Company</td><td>Founder(s) from Lab</td><td>Valuation / Status</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>SambaNova Systems</strong></td><td>Chris R&eacute; (co-founder), Kunle Olukotun, Rodrigo Liang</td><td>Peaked $5.1B (2021); ~$1.6B (2025)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Snorkel AI</strong></td><td>Alex Ratner, Braden Hancock, Stephen Bach, Vincent Chen</td><td>Multi-billion dollar data labeling platform</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Together AI</strong></td><td>Chris R&eacute; &amp; Percy Liang (co-founders); Tri Dao (Chief Scientist), Ce Zhang (CTO)</td><td><strong>$3.3B</strong> (Feb 2025). ~$300M ARR</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Cartesia</strong></td><td>Albert Gu (CSO), Karan Goel (CEO), Arjun Desai, Brandon Yang, Nimit Sohoni</td><td>$191M raised. Mamba/SSM architecture</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Lattice Data</strong></td><td>Chris R&eacute; (DeepDive project)</td><td>Acquired by Apple (2017)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Inductiv (HoloClean)</strong></td><td>R&eacute; lab spinout</td><td>Acquired by Apple (2020)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Numbers Station</strong></td><td>Ines Chami</td><td>LLMs for structured data</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Moonhub</strong></td><td>Nancy Xu (CEO)</td><td>AI recruitment</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>RapidFire AI</strong></td><td>Arun Kumar (CTO)</td><td>Deep learning systems</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Evidently</strong></td><td>Feng Niu (CEO), Jaeho Shin</td><td>Clinical decision support</td></tr>
+    </table>
+    <p style="margin-top:0.5rem; font-size:0.8rem; color:var(--fg-muted);">
+      <strong>The pattern:</strong> R&eacute; lab alumni who become founders typically do so within 1&ndash;3 years of leaving.
+      Tri Dao (Together AI Chief Scientist, now Princeton faculty) and Albert Gu (Cartesia CSO, now CMU faculty)
+      are recent examples of the postdoc/PhD &rarr; company pipeline. The lab&rsquo;s &ldquo;efficient systems&rdquo;
+      thesis maps directly to venture-scale infrastructure companies. R&eacute; alumni have been named to
+      Time&rsquo;s 100 Most Influential in AI (2x) and Forbes 30 Under 30 (3x).
+    </p>
+
+    <h3>Dan&rsquo;s Immediate R&eacute; Lab Cohort (Current Members)</h3>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Name</td><td>Role</td><td>Signal</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Sabri Eyuboglu</strong></td><td>PhD student, Minions co-author</td><td>HIGH. Likely co-founder candidate. Same research thread</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Avanika Narayan</strong></td><td>PhD student, Minions co-author</td><td>HIGH. Enterprise data focus; co-author on the same &ldquo;product spec&rdquo; paper</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Kelly Buchanan</strong></td><td>Postdoc (only other postdoc in lab)</td><td>MEDIUM. Closest peer by role</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Simran Arora</strong></td><td>PhD student</td><td>MEDIUM. Active in Hazy Research</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Mayee Chen</strong></td><td>PhD student</td><td>MEDIUM. Foundation model systems</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Jordan Juravsky</strong></td><td>PhD student</td><td>MEDIUM. Efficient inference</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Ben Spector</strong></td><td>PhD student</td><td>LOW. Context only</td></tr>
+    </table>
+
+    <h3>Cross-Lab Network</h3>
+    <ul style="font-size:0.85rem;">
+      <li><strong>Jonathan Frankle</strong> (LoRA paper co-author) &mdash; Chief Scientist at Databricks. Key industry connection and potential recruiter</li>
+      <li><strong>John P. Cunningham</strong> (PhD advisor, Columbia) &mdash; Leading computational neuroscience theorist</li>
+      <li><strong>Liam Paninski</strong> (PhD co-advisor, Columbia) &mdash; Pioneer in neural data analysis. NeMoS package</li>
+      <li><strong>Scott Linderman</strong> (Stanford co-advisor) &mdash; Bridge between neuroscience and probabilistic ML</li>
+      <li><strong>James Zou</strong> (Minions co-author) &mdash; Stanford CS faculty, prolific in AI applications, well-connected VC advisor</li>
+      <li><strong>Silas Alberti</strong> (R&eacute; alumnus) &mdash; Founding engineer at Cognition AI (Devin). Evidence of the lab &rarr; startup pipeline</li>
+    </ul>
+  </section>
+
+  <!-- TIMELINE & SIGNALS -->
+  <section>
+    <h2>Timeline &amp; Signals</h2>
+    <ul>
+      <li><strong>Status:</strong> Active postdoc at Stanford (Hazy Research + Linderman Lab). Academic partner at Databricks Mosaic AI Research. No departure signals yet</li>
+      <li><strong>Postdoc timeline:</strong> Likely 1&ndash;3 year postdoc (started ~2024). Earliest founder-mode: late 2026. Most likely window: 2026&ndash;2027</li>
+      <li><strong>Minions as product prototype:</strong> The Ollama blog integration and real-world benchmarks (finance, medical, legal) look more like a product demo than a pure research paper. Watch for follow-up work that adds a &ldquo;deployment&rdquo; or &ldquo;platform&rdquo; framing</li>
+      <li><strong>ES-FoMo workshop organizer:</strong> Organizing the &ldquo;Efficient Systems for Foundation Models&rdquo; workshop at ICML 3 years running positions him at the center of the efficient inference community &mdash; ideal for recruiting and deal flow</li>
+      <li><strong>Databricks partnership:</strong> Deep relationship with Mosaic AI Research (started as intern, now academic partner). Two scenarios: (a) Databricks acqui-hires him, or (b) he leverages the relationship for enterprise distribution of his own product</li>
+      <li><strong>Watch for:</strong> Twitter bio change from &ldquo;Postdoc&rdquo; to anything else. New company formation. Papers with Eyuboglu/Narayan that look like product specs. Angel investment activity from R&eacute; lab alumni into a Biderman venture</li>
+    </ul>
+  </section>
+
+  <!-- RISKS -->
+  <section>
+    <h2>Risks</h2>
+    <ul>
+      <li><strong>Academic gravity.</strong> PhD + postdoc trajectory could lead to professor track, not founder track. The hooding ceremony student speaker role and neuroscience background suggest he values academic community. Dan Fu (R&eacute; alumnus) went UCSD faculty; Beidi Chen went CMU faculty. This is a real path</li>
+      <li><strong>Databricks absorption.</strong> Already an &ldquo;academic partner&rdquo; at Databricks Mosaic AI Research. Could join Databricks full-time as a researcher rather than founding independently. Jonathan Frankle (LoRA co-author) is Chief Scientist there &mdash; easy soft landing</li>
+      <li><strong>Minions may be a feature, not a company.</strong> Local-cloud LLM orchestration could be absorbed into Ollama, Together AI, or even OS-level APIs (Apple Intelligence, Android). The protocol is elegant but may not be defensible as a standalone business</li>
+      <li><strong>Limited founder signals.</strong> No &ldquo;building&rdquo; or &ldquo;leaving&rdquo; tweets. Twitter following (~2.1K) is modest for someone with this publication record. No public founder aspirations expressed</li>
+      <li><strong>LoRA paper is empirical, not architectural.</strong> High impact but it&rsquo;s a benchmarking study, not a new method. Harder to build a company directly on &ldquo;LoRA is worse than full fine-tuning&rdquo; than on a novel technique</li>
+      <li><strong>Timing uncertainty.</strong> Could be 6 months or 3 years away from founding. Postdocs don&rsquo;t have the same departure urgency as industry researchers sitting on vesting cliffs</li>
+    </ul>
+  </section>
+
+  <!-- BACKGROUND -->
+  <section>
+    <h2>Background</h2>
+    <p>
+      Israeli-origin. Attended Tel Aviv University&rsquo;s Adi Lautman Interdisciplinary Program for Outstanding Students
+      (2013&ndash;2017, 15 admits/year) studying cognitive science, math, and neurobiology. MA in Cognitive Science
+      from TAU (2018, advisor: Liad Mudrik). PhD in Neurobiology &amp; Behavior from Columbia (2018&ndash;2024),
+      advised by John Cunningham and Liam Paninski at the Zuckerman Institute&rsquo;s Center for Theoretical Neuroscience.
+      Won the Titus M. Cowan Dissertation Prize and was selected as student speaker for the 2025 PhD hooding ceremony.
+      Interned at MosaicML/Databricks during PhD, researching LLM robustness. Now postdoc at Stanford co-advised by
+      Chris R&eacute; and Scott Linderman, with an ongoing academic partnership at Databricks Mosaic AI Research.
+    </p>
+  </section>
+
+  <!-- NOTES -->
+  <section>
+    <h2>Notes</h2>
+    <ul>
+      <li class="small">Email: biderman@stanford.edu</li>
+      <li class="small">Listed as postdoc on Hazy Research people page (1 of only 2 postdocs; other is Kelly Buchanan)</li>
+      <li class="small">LoRA paper co-authors from MosaicML/Databricks: Jacob Portes, Mansheej Paul, Sam Havens, Vitaliy Chiley, Jonathan Frankle (Chief Scientist), Cody Blakeney, Daniel King, Connor Jennings</li>
+      <li class="small">Lightning Pose GitHub: 291 stars. Published in Nature Methods (IF ~48). Co-authored with Matthew R. Whiteway</li>
+      <li class="small">Co-organizer of ES-FoMo (Efficient Systems for Foundation Models) at ICML 2023, 2024, 2025 &mdash; 3 consecutive years</li>
+      <li class="small">Adi Lautman Program at TAU is Israel&rsquo;s top interdisciplinary excellence program (15/year). Coursework: math, neurobiology, cognitive science, history and philosophy of science</li>
+      <li class="small">Website research interests: &ldquo;language models that dynamically learn from experience&rdquo; &mdash; points toward continual learning / test-time adaptation</li>
+      <li class="small">Cognition AI (Devin) has founding engineer Silas Alberti from Hazy Research &mdash; another data point on the R&eacute; lab founder pipeline</li>
+      <li class="small">Braden Hancock (Snorkel co-founder) now Director of AI at Meta &mdash; R&eacute; alumni network extends into big tech leadership</li>
+      <li class="small">Khaled Saab (R&eacute; alumnus) is at Google DeepMind &mdash; pipeline into DeepMind exists</li>
+      <li class="small">NVIDIA blog author (developer.nvidia.com/blog/author/dbiderman/) &mdash; has industry publication presence</li>
+      <li class="small">HuggingFace profile: danbider &mdash; published model checkpoints for LoRA paper</li>
+      <li class="small">Not Indian/Indian-origin. Israeli-origin (Tel Aviv University undergrad + MA)</li>
+      <li class="small">GitHub: 38 followers. Repos: lora-tradeoffs (20 stars), lightning-pose (291 stars), gp-quadrature (8 stars)</li>
+      <li class="small">OpenReview profile confirms: Stanford postdoc, research interests in Machine Learning, Theoretical Neuroscience, Cognitive Science</li>
+    </ul>
+  </section>
+
+  <!-- OUTREACH -->
+  <section>
+    <h2>Outreach</h2>
+    <p class="small muted"><strong>Best channel:</strong> Email (biderman@stanford.edu) or Twitter DM (<a href="https://x.com/dan_biderman">@dan_biderman</a>). LinkedIn: <a href="https://www.linkedin.com/in/dan-biderman-066039202/">dan-biderman</a>.</p>
+
+    <div class="spike-box" style="margin-top:0.75rem; border-left-color: var(--tier2);">
+      <div class="label">&#9670; Draft Outreach</div>
+      <p style="font-size:0.88rem; white-space:pre-line;">Hey Dan &mdash; your Minions paper hit on something I keep thinking about: the economics of AI deployment flip completely when you can keep 97.9% of frontier quality at 5.7x lower cost by keeping data local. We&rsquo;re an inception-stage fund &mdash; we back technical founders before decks, before rounds. I&rsquo;ve been mapping the Hazy Research pipeline (Together AI, Cartesia, Snorkel) and the efficient inference layer is the space we&rsquo;re most convicted on.
+
+Would love to grab coffee in Palo Alto and hear how you&rsquo;re thinking about what comes after the postdoc. No pitch needed.
+
+&mdash; Vansh</p>
+    </div>
+
+    <p class="small muted" style="margin-top:0.5rem;"><strong>Why this works:</strong> References his specific paper with exact numbers (not generic). Shows you know the R&eacute; lab pipeline by naming alumni companies. &ldquo;What comes after the postdoc&rdquo; is direct without being pushy &mdash; acknowledges his current role while signaling interest in what&rsquo;s next. Palo Alto = Stanford proximity.</p>
+  </section>
 
   <footer>
-    researched: 2026-03 &middot; delta institute cohort 1 &middot; <a href="../index.html">back to index</a>
+    researched: 2026-03-29 &middot; 6-agent architecture (technical, social, market, background, trajectory, recursive) &middot; <a href="../index.html">back to index</a>
   </footer>
 
 </body>
