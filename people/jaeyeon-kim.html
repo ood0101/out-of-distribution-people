@@ -15,50 +15,250 @@
 
   <div class="profile-header">
     <h1>Jaeyeon Kim</h1>
-    <img src="https://framerusercontent.com/images/TdJHCTdC4q17FDo8S7cVPl1u2Q.jpeg?width=400&amp;height=400" alt="Jaeyeon Kim" style="width:80px;height:80px;border-radius:50%;object-fit:cover;float:right;margin:0 0 1rem 1rem;" loading="lazy" onerror="this.style.display='none'" />
-    <p class="one-liner">Harvard CS PhD (advised by Sitan Chen and Sham Kakade)</p>
+    <p class="one-liner"><strong>2nd-year Harvard CS PhD (advised by Sitan Chen + Sham Kakade). ICML 2025 Outstanding Paper Award (1 of 6 from 12,000 submissions) for masked diffusion theory. 2 ICML orals in first year of PhD. IMO finalist (South Korea). SNU BS Math (perfect GPA in all math courses). 11 papers, ~200 citations by year 2 of PhD. Building the theoretical foundations for masked diffusion models &mdash; the leading alternative to autoregressive generation. Korean.</strong></p>
     <div class="tags">
-      <span class="tag">delta</span>
-      <span class="tag">researchers</span>
+      <span class="tag spike">tier-1: high conviction</span>
+      <span class="tag">masked-diffusion</span>
+      <span class="tag">generative-models</span>
+      <span class="tag">theory-to-practice</span>
+      <span class="tag">korean</span>
     </div>
     <div class="links">
-      <a href="https://www.linkedin.com/in/jaeyeon-kim-75317b281/">linkedin</a>
-      <a href="https://x.com/jaeyeon_kim_0">twitter/x</a>
+      <a href="https://x.com/Jaeyeon_Kim_0">twitter/x</a>
       <a href="https://jaeyeonkim01.github.io/">website</a>
-      <a href="https://scholar.google.com/citations?user=1bXthLsAAAAJ">scholar</a>
+      <a href="https://scholar.google.com/citations?user=1bXthLsAAAAJ">google scholar</a>
+      <a href="https://www.linkedin.com/in/jaeyeon-kim-75317b281/">linkedin</a>
     </div>
+  </div>
+
+  <!-- INVESTMENT THESIS -->
+  <div class="spike-box">
+    <div class="label">&#9670; Investment Thesis</div>
+    <p>
+      Jaeyeon Kim is the leading young theorist on masked diffusion models (MDMs) &mdash; the paradigm shift
+      that could displace autoregressive generation for language, code, and biological sequences.
+      His ICML 2025 Outstanding Paper (1 of 6 from 12,000 submissions) proved MDMs can <strong>outperform
+      autoregressive models 7x their size</strong> when given adaptive decoding. He is only in year 2 of his PhD
+      at Harvard, co-advised by <strong>Sitan Chen</strong> (MIT PhD, PD Soros Fellow, one of the top young
+      theorists in ML) and <strong>Sham Kakade</strong> (co-director of Harvard&rsquo;s Kempner Institute,
+      one of the most cited ML theorists alive). He closely collaborates with <strong>Yilun Du</strong>
+      (Harvard AP, ex-OpenAI/DeepMind, IBO gold medalist). His publication velocity is extraordinary:
+      11 papers in 2 years, including NeurIPS 2023, ICML 2024 Spotlight, 2 ICML 2025 Orals,
+      ICLR 2026, and CVPR 2026. He is not yet a founder &mdash; but he is building the foundational science
+      for what Inception Labs ($50M seed), Google (Gemini Diffusion), and others are racing to commercialize.
+      When MDMs reach production scale, he will be one of the few people on earth who understands
+      both the theory and the practice. <strong>Build the relationship now, before ICML fame converts
+      to founder signals.</strong>
+    </p>
   </div>
 
   <!-- THE SPIKE -->
-  <div class="spike-box">
-    <div class="label">&#9670; What Makes Them Spiky</div>
+  <section>
+    <h2>The Spike &mdash; With Evidence</h2>
+    <p>
+      His ICML 2025 paper &ldquo;Train for the Worst, Plan for the Best&rdquo; (co-first author with Kulin Shah)
+      solved a fundamental question: why do masked diffusion models underperform autoregressive models despite
+      their flexibility? The answer: MDMs face an <strong>exponentially large</strong> set of fill-in-the-blank
+      subproblems during training, many of which are computationally intractable. But at inference time, by
+      adaptively choosing which token to unmask first based on model confidence, MDMs can sidestep these
+      hard subproblems entirely.
+    </p>
+    <p>
+      The numbers are striking: on Sudoku puzzles, adaptive decoding boosted MDM accuracy from
+      <strong>&lt;7% to ~90%</strong>, outperforming autoregressive models with <strong>7x as many parameters</strong>
+      that were explicitly trained with teacher forcing to learn the correct decoding order. Similar gains
+      appeared on Zebra puzzles and language modeling perplexity.
+    </p>
+    <p>
+      This is not an incremental result. It was recognized as <strong>1 of 6 Outstanding Papers from
+      12,000 submissions</strong> (top 0.05%). ICML reviewers cited &ldquo;clarity, insight, creativity,
+      and potential for lasting impact.&rdquo; The paper has <strong>109 citations</strong> as of March 2026
+      &mdash; extraordinary for a paper published in July 2025.
+    </p>
+    <p>
+      He also had a <strong>second ICML 2025 oral</strong> (LoRA theory) in the same conference &mdash;
+      2 orals at ICML in a single year is extremely rare for any researcher, let alone a first-year PhD student.
+    </p>
+  </section>
+
+  <!-- GROWTH TRAJECTORY -->
+  <section>
+    <h2>Growth Trajectory</h2>
+    <table style="width:100%; font-size:0.85rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted); width:120px;">~2018</td><td>IMO finalist in South Korea (top 12 in national selection for 6-member team)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2018&ndash;2024</td><td>Seoul National University, BS Mathematics. A+ in every math course. Worked with Ernest Ryu (optimization) and Asu Ozdaglar (MIT, visiting)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Sep 2022</td><td>Joins Ernest Ryu&rsquo;s Optimization Research Group at SNU</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2023</td><td>First top-venue paper: NeurIPS 2023 (H-duality in optimization, with Ozdaglar + Ryu)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2024</td><td>ICML 2024 Spotlight (minimax optimization). TMLR publication (in-context learning)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>Sep 2024</strong></td><td><strong>Starts PhD at Harvard CS &mdash; co-advised by Sitan Chen + Sham Kakade</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Feb 2025</td><td>Submits masked diffusion paper to ICML (arXiv: 2502.06768)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>May 2025</strong></td><td><strong>2 papers accepted at ICML 2025, both as oral presentations</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>Jul 2025</strong></td><td><strong>ICML 2025 Outstanding Paper Award (1 of 6 from 12,000). 109 citations within 8 months</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Aug 2025</td><td>Delta Institute Podcast (Ep. 13). FlexMDM paper (any-order, flexible-length MDMs)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Oct 2025</td><td>PRISM paper: fine-tuning MDMs for provable self-correction. Selective Underfitting paper</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2025&ndash;26</td><td>FlexMDM accepted at ICLR 2026. Delta Velocity Rectified Flow accepted at CVPR 2026</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Feb 2026</td><td>Progressive Unmasking paper (accelerating MDM training) &mdash; extending the ICML work</td></tr>
+    </table>
+    <p style="margin-top:1rem; font-family:var(--mono); font-size:0.75rem; color:var(--accent);">
+      PACE: 11 papers in ~2 years. 2 ICML orals + 1 Outstanding Paper in first year of PhD. 4 top venues (NeurIPS, ICML x3, ICLR, CVPR).<br>
+      ACCELERATION: Clear. Went from first NeurIPS paper (2023) to ICML Outstanding Paper (2025) in 18 months. Publication rate accelerating: 2 papers in 2023, 2 in 2024, 7+ in 2025&ndash;26.<br>
+      PEER COMPARISON: Among the fastest trajectories for a 2nd-year PhD student at any institution. Comparable to Tri Dao&rsquo;s early PhD velocity.
+    </p>
+  </section>
+
+  <!-- WHAT HE'D BUILD -->
+  <section>
+    <h2>What He&rsquo;d Build</h2>
+    <h3>The Masked Diffusion Thesis</h3>
+    <p>
+      Jaeyeon Kim is building the theoretical and practical foundations for masked diffusion models as an
+      alternative to autoregressive generation. His research arc tells a clear story:
+    </p>
     <ul>
-      <li>ICML 2025 Outstanding Paper Award (1 of 6 out of 12,000 submissions)</li>
-      <li>IMO finalist (South Korea)</li>
-      <li>Advised by Sham Kakade (legendary ML theorist) and Sitan Chen</li>
-      <li>104 citations on Google Scholar as early PhD student</li>
-      <li>Seoul National University BS Math</li>
-      <li>Two oral papers at ICML</li>
+      <li><strong>Understanding MDMs</strong> (ICML 2025): Why they struggle at training, how to fix inference</li>
+      <li><strong>Flexible-length MDMs</strong> (ICLR 2026): Removing the fixed-length constraint that limits practical deployment</li>
+      <li><strong>Self-correction</strong> (PRISM, 2025): MDMs that detect and revise low-quality tokens at inference time</li>
+      <li><strong>Faster training</strong> (Progressive Unmasking, 2026): Making MDM training practical at scale</li>
     </ul>
-  </div>
+    <p>
+      Each paper fills a gap in the MDM production stack. If he decided to commercialize, the natural company
+      would be a <strong>diffusion-based language model lab</strong> &mdash; building MDMs that can rival
+      GPT/Claude-class models with faster inference, parallel decoding, and bidirectional context.
+    </p>
 
-  <h2>Research &amp; Key Work</h2>
-  <h3>Problems &amp; Research Areas</h3>
-  <ul><li>Understanding and advancing generative models (especially masked diffusion models)</li><li>Optimization theory</li><li>Token ordering in masked diffusions</li><li>Flexible-length diffusion language models</li></ul>
-  <h3>Key Work</h3>
-  <ul><li>&#x27;Train for the Worst, Plan for the Best: Understanding Token Ordering in Masked Diffusions&#x27; — ICML 2025 Outstanding Paper</li><li>PRISM: plug-and-play self-correction for Masked Diffusion Models</li><li>FlexMDMs: Flexible Masked Diffusion Models for flexible-length sequences</li></ul>
+    <h3>Market</h3>
+    <ul>
+      <li>LLM infrastructure market: $100B+ by 2030. MDMs could capture significant share if they achieve parity with ARMs</li>
+      <li>MDM advantages: parallel decoding (faster inference), iterative refinement, bidirectional attention, flexible generation order</li>
+      <li>Key applications: code generation, protein/RNA sequence design, structured reasoning, controllable generation</li>
+    </ul>
 
+    <h3>Competitive Landscape</h3>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Company/Lab</td><td>Funding/Scale</td><td>How Jaeyeon differs</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Inception Labs (Stefano Ermon)</td><td>$50M seed</td><td>Most direct comp. Ermon is senior (Stanford prof); Jaeyeon has deeper MDM theory. Mercury model does 1,000 tok/s</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Google DeepMind (Gemini Diffusion)</td><td>Big lab</td><td>First production-ready DLM. But big-lab; Jaeyeon could build a more focused, theory-driven approach</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>LLaDA (Renmin University)</td><td>Academic</td><td>LLaDA 8B matches Llama-3 8B. But empirical-first; lacks Jaeyeon&rsquo;s theoretical depth on adaptive inference</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>MDLM (Cornell/Kuleshov)</td><td>Academic</td><td>NeurIPS 2024 paper. Simplified MDM training. Jaeyeon&rsquo;s work on adaptive decoding is complementary</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>OpenAI / Anthropic / Meta</td><td>$B+</td><td>All autoregressive-first. If MDMs reach parity, these labs face architectural debt</td></tr>
+    </table>
+  </section>
 
-  <h2>Current Work</h2>
-  <p>Harvard CS PhD student pioneering new paradigms for generative modeling, focusing on masked diffusion models</p>
+  <!-- PRIMARY SOURCES -->
+  <section>
+    <h2>In His Own Words</h2>
+    <ul>
+      <li>&ldquo;I&rsquo;m really thrilled to pursue my career path at Harvard University!&rdquo; &mdash; personal website, Sep 2024, on starting his PhD</li>
+      <li>&ldquo;My paper on Masked Diffusion received an outstanding paper award at ICML 2025! This award was given to just 6 papers.&rdquo; &mdash; personal website, Jul 2025</li>
+      <li>&ldquo;Once I grasp the underlying structure, I translate it into my own words and turn it into novel insights!&rdquo; &mdash; personal website bio. <em>This is how he self-describes: theory-to-insight, not just theory for theory&rsquo;s sake.</em></li>
+      <li>&ldquo;My current research interest is in optimization theory, hoping to bridge the theory-practice divide.&rdquo; &mdash; SNU website, 2024. <em>The bridge instinct is a founder signal.</em></li>
+      <li>&ldquo;I got A+ in all math courses that I&rsquo;ve taken!!&rdquo; &mdash; personal website. <em>Competitive, precise, and not shy about it.</em></li>
+      <li>&ldquo;Harvard CS is growing fast&rdquo; &mdash; Twitter, referencing Delta podcast appearance with Yilun Du</li>
+    </ul>
+  </section>
 
-  <div class="spike-box" style="margin-top: 1.5rem;">
-    <div class="label">&#9670; Alpha Insight</div>
-    <p>Jaeyeon is arguably the leading young researcher on masked diffusion models for language. If masked diffusion models can challenge autoregressive models (GPT-style) for text generation, this would be a paradigm shift. His ICML Outstanding Paper provides theoretical grounding for why certain token orderings work, which is foundational for this new generation of models.</p>
-  </div>
+  <!-- NETWORK MAP -->
+  <section>
+    <h2>Network Map</h2>
+    <p class="small muted">Harvard CS generative models cluster &mdash; an unusually dense concentration of talent:</p>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Name</td><td>Role</td><td>Connection</td><td>Signal</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Sitan Chen</strong></td><td>Harvard AP (CS)</td><td>PhD advisor</td><td>MIT PhD, PD Soros Fellow. Top young theorist in generative models + quantum. STOC 2025/2026</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Sham Kakade</strong></td><td>Harvard Prof, Kempner co-director</td><td>PhD co-advisor</td><td>One of the most cited ML theorists. Prev Harvard &rarr; Amazon &rarr; Harvard. Massive compute access via Kempner</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Yilun Du</strong></td><td>Harvard AP (CS + Kempner)</td><td>Close collaborator (3+ papers)</td><td>MIT PhD, ex-OpenAI/DeepMind. IBO gold medalist. Pioneer of energy-based models &rarr; diffusion</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Michael Albergo</strong></td><td>Harvard researcher</td><td>Close collaborator</td><td>Listed as close collaborator on personal website</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Kulin Shah</strong></td><td>UT Austin PhD (Klivans lab)</td><td>Co-first author, ICML paper</td><td>Also working on MDMs for recommendation systems. IFML funded</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Vasilis Kontonis</strong></td><td>UT Austin postdoc</td><td>ICML co-author</td><td>IFML postdoctoral fellow</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Ernest Ryu</strong></td><td>SNU Professor (Optimization)</td><td>Undergrad advisor (3 papers)</td><td>Top optimization theorist. Jaeyeon&rsquo;s mathematical foundations come from here</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Weiyuan Gong</strong></td><td>Harvard PhD (Chen lab, 2023&ndash;)</td><td>Labmate</td><td>Von Neumann Fellowship recipient</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Aayush Karan</strong></td><td>Harvard PhD (Chen + Du, 2023&ndash;)</td><td>Labmate</td><td>PD Soros Fellowship + NDSEG Kempner Fellowship</td></tr>
+    </table>
+    <p style="margin-top:0.5rem; font-size:0.8rem; color:var(--fg-muted);">
+      <strong>The Harvard generative models cluster:</strong> Sitan Chen, Sham Kakade, and Yilun Du form one of the densest
+      theory + practice groups in generative AI. Kempner Institute provides substantial compute. Jaeyeon sits at the
+      intersection of all three advisors&rsquo; research interests.
+    </p>
+  </section>
+
+  <!-- TIMELINE & SIGNALS -->
+  <section>
+    <h2>Timeline &amp; Signals</h2>
+    <ul>
+      <li><strong>Status:</strong> 2nd-year PhD at Harvard. No departure signals. Deep in research mode &mdash; publishing at exceptional velocity</li>
+      <li><strong>Founder timeline:</strong> 3&ndash;5 years if he follows the standard PhD-to-founder path. But: if MDMs hit an inflection point commercially, he could leave early (like Tri Dao leaving Princeton for Together AI/Cartesia)</li>
+      <li><strong>Key trigger to watch:</strong> If Inception Labs or Gemini Diffusion demonstrate MDM parity with autoregressive models at scale, Jaeyeon becomes one of the most sought-after people in AI</li>
+      <li><strong>Delta Institute connection:</strong> Podcast guest (Ep. 13, Aug 2025). Delta operates in SF, NYC, and Boston &mdash; he&rsquo;s in the ecosystem</li>
+      <li><strong>Academic vs. industry:</strong> His stated interest in &ldquo;bridging the theory-practice divide&rdquo; suggests industry orientation, not pure academia</li>
+      <li><strong>VC interest likely from:</strong> Menlo Ventures (led Inception seed), NVentures, Thrive Capital (AI infrastructure thesis), Sequoia (long-horizon bets on talent)</li>
+    </ul>
+  </section>
+
+  <!-- RISKS -->
+  <section>
+    <h2>Risks</h2>
+    <ul>
+      <li><strong>Still in PhD year 2.</strong> No immediate founder signal. Could stay in academia for 3&ndash;5 more years. This is a long-horizon relationship bet</li>
+      <li><strong>MDMs may not displace autoregressive models.</strong> Despite theoretical promise, ARMs have massive infrastructure moats (CUDA kernels, RLHF pipelines, deployment tooling). MDMs need to prove parity at 100B+ parameter scale</li>
+      <li><strong>No industry experience.</strong> Pure academic trajectory: SNU &rarr; Harvard. Has never worked at a company, shipped a product, or managed a team</li>
+      <li><strong>Theory-first researcher.</strong> Outstanding theory does not automatically translate to outstanding engineering or products. Many brilliant theorists stay in academia</li>
+      <li><strong>Korean, not US-based long-term?</strong> Born and raised in South Korea. May return after PhD. But Harvard PhD + US research network makes US-based career more likely</li>
+      <li><strong>Advisor gravity.</strong> Working with Sham Kakade (Amazon alum) and Sitan Chen (rising star) creates strong pull to stay in academia or join a big lab rather than found</li>
+    </ul>
+  </section>
+
+  <!-- OUTREACH -->
+  <section>
+    <h2>Outreach</h2>
+    <p class="small muted"><strong>Best channel:</strong> Email &mdash; jaeyeon_kim@g.harvard.edu. Alternatively Twitter DM (<a href="https://x.com/Jaeyeon_Kim_0">@Jaeyeon_Kim_0</a>). LinkedIn: <a href="https://www.linkedin.com/in/jaeyeon-kim-75317b281/">jaeyeon-kim</a>.</p>
+
+    <div class="spike-box" style="margin-top:0.75rem; border-left-color: var(--tier2);">
+      <div class="label">&#9670; Draft Outreach (Email)</div>
+      <p style="font-size:0.88rem; white-space:pre-line;">Hey Jay &mdash; your ICML paper on adaptive decoding for MDMs was one of the most compelling results I read this year. The Sudoku jump from 7% to 90% is the kind of number that makes you rethink architectural assumptions.
+
+I invest at inception &mdash; before decks, before rounds &mdash; and I&rsquo;m deeply convicted that masked diffusion is going to matter at production scale. I&rsquo;ve been tracking Inception Labs, Gemini Diffusion, and the broader MDM ecosystem, and your work on flexible-length MDMs and self-correction feels like it&rsquo;s filling the exact gaps that remain before MDMs can compete with autoregressive models at scale.
+
+No ask &mdash; just would love to grab coffee next time I&rsquo;m in Boston and hear how you think about where the MDM stack needs to go next.
+
+&mdash; Vansh</p>
+    </div>
+
+    <p class="small muted" style="margin-top:0.5rem;"><strong>Why this works:</strong> References specific numbers from his paper (not generic praise). Shows you understand the MDM competitive landscape. Positions conversation around his research roadmap, not a fundraise. Uses his preferred name (Jay). No pressure &mdash; he&rsquo;s a PhD student, not a founder yet.</p>
+  </section>
+
+  <!-- BACKGROUND -->
+  <section>
+    <h2>Background</h2>
+    <p>
+      Born and raised in South Korea. IMO finalist (top 12 in Korea&rsquo;s national team selection).
+      BS Mathematics at Seoul National University, where he achieved A+ in every math course and worked
+      with Ernest Ryu on optimization theory. Published at NeurIPS and ICML before starting his PhD.
+      Started Harvard CS PhD in Sep 2024, co-advised by Sitan Chen and Sham Kakade. Won ICML Outstanding
+      Paper Award in his first year. Enjoys traveling, running, and working out.
+    </p>
+  </section>
+
+  <!-- NOTES -->
+  <section>
+    <h2>Notes</h2>
+    <ul>
+      <li class="small">Full name: Jaeyeon Kim. Goes by &ldquo;Jay.&rdquo; Korean national</li>
+      <li class="small">Twitter: @Jaeyeon_Kim_0. Instagram: @jayon__ing. Email: jaeyeon_kim@g.harvard.edu</li>
+      <li class="small">Google Scholar: 11 papers, ~200 total citations. ICML Outstanding Paper alone has 109 citations in 8 months</li>
+      <li class="small">Second ICML 2025 oral: LoRA theory paper with Junsu Kim and Ernest Ryu</li>
+      <li class="small">ICLR 2026: FlexMDM (flexible-length masked diffusion, with Yilun Du et al.)</li>
+      <li class="small">CVPR 2026: Delta Velocity Rectified Flow for text-to-image editing</li>
+      <li class="small">Kempner Institute affiliation gives access to substantial compute resources</li>
+      <li class="small">Sitan Chen&rsquo;s lab is small (4 PhD students + 1 undergrad) &mdash; Jaeyeon gets concentrated advisor attention</li>
+      <li class="small">Yilun Du (close collaborator) is a new Harvard AP with IBO gold + MIT PhD + OpenAI/DeepMind experience &mdash; potential co-founder archetype if both leave academia</li>
+      <li class="small">Inception Labs ($50M, Stefano Ermon) is the primary commercial validator of the MDM thesis. Mercury model does 1,000 tok/s on H100s. Backed by Menlo, NVIDIA, Microsoft M12, with Andrew Ng and Andrej Karpathy as angels</li>
+      <li class="small">No blog, limited social media presence. Academic profile &mdash; personal website is sole public voice outside papers</li>
+      <li class="small">The progressive unmasking paper (Feb 2026) directly extends ICML work &mdash; making MDM training faster. This is the &ldquo;production readiness&rdquo; step</li>
+      <li class="small">Delta Institute Podcast guest (Ep. 13, Aug 18, 2025) &mdash; indicates engagement with the startup/VC ecosystem</li>
+    </ul>
+  </section>
 
   <footer>
-    researched: 2026-03 &middot; delta institute cohort 1 &middot; <a href="../index.html">back to index</a>
+    researched: 2026-03-29 &middot; 6-agent architecture (technical, social, market, background, trajectory, recursive) &middot; <a href="../index.html">back to index</a>
   </footer>
 
 </body>
