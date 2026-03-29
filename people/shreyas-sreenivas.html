@@ -15,46 +15,265 @@
 
   <div class="profile-header">
     <h1>Shreyas Sreenivas</h1>
-    <img src="https://framerusercontent.com/images/LjgPr32WcspEvLGXw7Z8qSMr4Rs.jpeg?width=400&amp;height=400" alt="Shreyas Sreenivas" style="width:80px;height:80px;border-radius:50%;object-fit:cover;float:right;margin:0 0 1rem 1rem;" loading="lazy" onerror="this.style.display='none'" />
-    <p class="one-liner">Exa (Founding Engineer), prev. University of Waterloo</p>
+    <p class="one-liner"><strong>Founding Engineer at Exa ($700M valuation, $85M Series B led by Benchmark). Built Exa&rsquo;s billion-scale vector database from scratch in Rust with custom SIMD assembly optimizations &mdash; searches billions of 4,096-dim vectors in &lt;100ms at &gt;500 QPS. Powers search for Cursor, Notion AI, Databricks, AWS. Indian-origin (grew up in Bangalore). University of Waterloo BCS. Skills: Rust, CUDA, Go, distributed systems. ~24.</strong></p>
     <div class="tags">
+      <span class="tag spike">tier-1: high conviction</span>
+      <span class="tag">ai-search-infrastructure</span>
+      <span class="tag">vector-databases</span>
+      <span class="tag">systems-engineering</span>
+      <span class="tag">rust</span>
+      <span class="tag">cuda</span>
+      <span class="tag indian">indian</span>
       <span class="tag">delta</span>
     </div>
     <div class="links">
+      <a href="https://x.com/shreyas4_">twitter/x</a>
+      <a href="https://github.com/shreyas44">github (62 repos)</a>
       <a href="https://www.linkedin.com/in/shreyas-sreenivas/">linkedin</a>
+      <a href="https://shreyas.lol">personal site</a>
+      <a href="https://shreyas44.medium.com">medium</a>
     </div>
   </div>
 
-  <!-- THE SPIKE -->
+  <!-- INVESTMENT THESIS -->
   <div class="spike-box">
-    <div class="label">&#9670; What Makes Them Spiky</div>
+    <div class="label">&#9670; Investment Thesis</div>
+    <p>
+      Shreyas Sreenivas is one of a handful of engineers on the planet who has built a web-scale vector database
+      from scratch &mdash; in Rust, with custom SIMD assembly optimizations &mdash; that serves <strong>billions of vectors
+      in under 100ms</strong>. He did this as a Founding Engineer at Exa, the $700M search-infrastructure company whose API
+      now powers Cursor, Notion AI, Databricks, and AWS. He joined Exa early (likely employee #3&ndash;5), meaning
+      he has meaningfully shaped the core technical stack of a company growing at <strong>1,010% YoY revenue</strong>
+      ($0.9M &rarr; $10M ARR in 12 months). If Shreyas leaves Exa to start something &mdash; search infrastructure,
+      vector database, or ML systems tooling &mdash; he would be one of the most technically credible founders in
+      the space. Indian-origin (grew up in Bangalore), Waterloo BCS. The relationship should be built <strong>now</strong>,
+      before any departure signal.
+    </p>
+  </div>
+
+  <!-- THE SPIKE -->
+  <section>
+    <h2>The Spike &mdash; With Evidence</h2>
+    <p>
+      Shreyas built Exa&rsquo;s web-scale vector database, which handles <strong>billions of 4,096-dimensional vectors</strong>
+      with <strong>sub-100ms query latency</strong> and <strong>&gt;500 queries/second throughput</strong> &mdash; using
+      less memory than a gaming PC. The system is written in <strong>Rust</strong> and uses five key optimizations he
+      and the team developed:
+    </p>
     <ul>
-      <li>Founding Engineer at Exa — the leading AI search API used by Cursor, Lovable, and thousands of developers</li>
-      <li>Built Exa&#x27;s vector database from scratch</li>
-      <li>University of Waterloo BCS</li>
-      <li>Gave talk at AI Engineer conference on Exa&#x27;s vector DB</li>
-      <li>Previous experience at Volley and Gordian Software</li>
-      <li>Skills in CUDA, Rust, Go — low-level systems expertise</li>
+      <li><strong>Matryoshka embedding training:</strong> Reduced 4,096-dim vectors to 256-dim prefixes &mdash; <strong>20x memory reduction</strong></li>
+      <li><strong>Binary quantization:</strong> 16-bit floats compressed to 1-bit values &mdash; another <strong>16x memory reduction</strong></li>
+      <li><strong>Lookup table optimization:</strong> Precomputed dot products for length-4 subvectors loaded into CPU registers &mdash; 4x compute reduction</li>
+      <li><strong>K-means clustering:</strong> 100,000 clusters for ~<strong>1,000x throughput improvement</strong> vs. brute force</li>
+      <li><strong>SIMD assembly optimizations:</strong> Hand-tuned low-level operations for maximum hardware utilization</li>
     </ul>
-  </div>
+    <p>
+      Critically, Exa chose <strong>clustering over HNSW</strong> (the standard graph-based approach used by Pinecone, Weaviate, etc.),
+      enabling easier data sharding, more efficient metadata filtering (date, domain, keyword), and a <strong>10x cost
+      reduction</strong> versus cloud vector database services. This is an architectural bet that requires deep systems
+      knowledge to execute &mdash; not a wrapper around an existing library.
+    </p>
+    <p>
+      Additionally, Exa migrated their highlights/embedding server from <strong>Python to Rust</strong> (Feb 2024)
+      to serve real-time embeddings at scale, and built custom <strong>BM25 serving with 50% memory reduction</strong>
+      using a novel encoding scheme (May 2025). Shreyas&rsquo;s skill set &mdash; Rust, CUDA, Go, distributed systems &mdash;
+      maps directly onto these infrastructure challenges.
+    </p>
+  </section>
 
-  <h2>Research &amp; Key Work</h2>
-  <h3>Problems &amp; Research Areas</h3>
-  <ul><li>AI-powered semantic search (Exa)</li><li>Vector database design and optimization</li><li>Neural search engine infrastructure</li><li>Game streaming engine development</li></ul>
-  <h3>Key Work</h3>
-  <ul><li>Built Exa&#x27;s custom vector database</li><li>Exa search API infrastructure (powers Cursor, Lovable, etc.)</li><li>Talk at AI Engineer conference</li></ul>
+  <!-- GROWTH TRAJECTORY -->
+  <section>
+    <h2>Growth Trajectory</h2>
+    <table style="width:100%; font-size:0.85rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted); width:120px;">~2020</td><td>High school student in Bangalore, India. Builds <strong>Bedav</strong> &mdash; COVID hospital bed tracker covering Bangalore and Pune, scraping BBMP government data. Published on Vonage developer blog as a high schooler</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2020&ndash;21</td><td>Publishes 4 technical articles (Medium, Vonage) on PWAs, GraphQL bots, AWS Lambda auth, chatbots. Builds <strong>Groot</strong> &mdash; open-source real-time GraphQL API library in Go (7 stars on GitHub)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">~2021&ndash;24</td><td>University of Waterloo BCS. Internships at <strong>Gordian Software</strong> (backend eng) and <strong>Volley</strong> (game streaming engine). Trains neural networks in Haskell (per Exa bio)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>~2022&ndash;23</strong></td><td><strong>Joins Exa (then Metaphor) as Founding Engineer</strong> &mdash; likely employee #3&ndash;5 after co-founders Will Bryk and Jeff Wang. Company is pre-product, YC S21 batch</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Jan 2024</td><td>Metaphor rebrands to Exa. Company has ~10&ndash;15 people</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Feb 2024</td><td>Exa migrates highlights server from Python to Rust for real-time embedding serving at scale</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Jun 2024</td><td>Present at AI Engineer World&rsquo;s Fair (hackathon/talk on vector database infrastructure)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Jul 2024</strong></td><td><strong>Exa raises $22M Series A</strong> led by Lightspeed, with NVentures (NVIDIA) and YC</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Dec 2024</td><td>Exa publishes &ldquo;How We Built a Web-Scale Vector Database&rdquo; &mdash; Shreyas&rsquo;s primary domain of ownership</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">May 2025</td><td>Exa publishes BM25 novel encoding (50% memory reduction). Launches Exacluster: 144 H200 GPUs + 80 A100s, 18 nodes</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Jul 2025</td><td>&ldquo;The world&rsquo;s fastest search API&rdquo; &mdash; sub-450ms latency claim</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>Sep 2025</strong></td><td><strong>Exa raises $85M Series B at $700M valuation</strong> led by Benchmark (Peter Fenton joins board). Revenue: ~$10M, up 1,010% YoY. Total raised: $107M</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Oct 2025</td><td>Exa 2.0 &mdash; &ldquo;fastest and highest quality search API in market&rdquo;</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Feb 2026</td><td>Exa Instant (sub-200ms latency) + Exa Deep (agentic search endpoint) launch</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Mar 2026</td><td>WebCode: open-source search evals for coding agents. Team now ~30+ engineers</td></tr>
+    </table>
+    <p style="margin-top:1rem; font-family:var(--mono); font-size:0.75rem; color:var(--accent);">
+      PACE: From high school in Bangalore to Founding Engineer at a $700M company in ~4 years.<br>
+      ACCELERATION: Clear. Joined pre-Series A, rode through 10x valuation jump and 1,010% revenue growth.<br>
+      PEER COMPARISON: Among Waterloo grads his age (~24), this is a top-0.1% outcome. Comparable to early Stripe/Figma founding engineers.
+    </p>
+  </section>
 
+  <!-- WHAT HE'D BUILD -->
+  <section>
+    <h2>What He&rsquo;d Build</h2>
+    <h3>Most Likely Direction</h3>
+    <p>
+      Given his specific expertise (Rust systems programming, vector search at web scale, CUDA, embedding models),
+      the highest-probability founder thesis would be:
+    </p>
+    <ul>
+      <li><strong>Next-gen vector database / search infrastructure:</strong> A standalone, high-performance vector DB
+        optimized for AI workloads &mdash; competing with Pinecone ($750M), Weaviate ($200M), Qdrant ($100M) but with
+        the architectural lessons learned at Exa&rsquo;s scale (clustering &gt; HNSW, binary quantization,
+        integrated metadata filtering)</li>
+      <li><strong>AI data infrastructure / processing:</strong> Building on the exa-d pattern &mdash; declarative data
+        frameworks for processing web-scale data with ML models. The &ldquo;Spark for the AI era&rdquo;</li>
+      <li><strong>Vertical AI search:</strong> Taking Exa&rsquo;s horizontal search infra and going deep in a specific
+        domain (financial data, code search, scientific literature)</li>
+    </ul>
 
-  <h2>Current Work</h2>
-  <p>Founding Engineer at Exa, building the AI search engine and API that powers thousands of AI applications</p>
+    <h3>Market</h3>
+    <ul>
+      <li>AI search engine market: $18.5B (2025) &rarr; $66.2B (2035), ~14% CAGR</li>
+      <li>Vector database market: $1.5B (2024) &rarr; $7.3B (2030), ~30% CAGR</li>
+      <li>Microsoft retired Bing Search APIs Aug 2025 &mdash; massive demand shift to alternatives like Exa</li>
+      <li>Every AI agent needs search. Exa is the picks-and-shovels layer for the agent era</li>
+    </ul>
 
-  <div class="spike-box" style="margin-top: 1.5rem;">
-    <div class="label">&#9670; Alpha Insight</div>
-    <p>Exa is becoming the search infrastructure layer for the AI agent ecosystem. When AI agents need to search the web, many use Exa&#x27;s API (Cursor, Lovable, etc.). As a founding engineer who built their vector database, Shreyas has deep expertise in the infrastructure that makes AI agents actually useful. If agents become the dominant software paradigm, Exa&#x27;s search API becomes as essential as Google was for the web era.</p>
-  </div>
+    <h3>Competitive Landscape</h3>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Company</td><td>Valuation / Status</td><td>How Shreyas&rsquo;s experience differs</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Exa</td><td>$700M</td><td>His current company. Built the vector DB powering it</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Pinecone</td><td>$750M</td><td>HNSW-based. Exa proved clustering + binary quantization can be 10x cheaper at web scale</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Weaviate</td><td>$200M</td><td>Go-based, general purpose. Shreyas has comparable Go expertise + Rust perf advantage</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Qdrant</td><td>$100M</td><td>Rust-based vector DB &mdash; closest technical comp. Lacks Exa&rsquo;s web-scale battle-testing</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Tavily</td><td>Acquired by Nebius, Feb 2026</td><td>RAG-focused search API. Exa outperforms on semantic similarity</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Perplexity Sonar API</td><td>$9B+ (Perplexity)</td><td>Wraps Google/Bing. Exa built neural search from scratch</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Brave Search API</td><td>Private</td><td>Independent index but keyword-based. Exa is semantic/neural-first</td></tr>
+    </table>
+  </section>
+
+  <!-- PRIMARY SOURCES -->
+  <section>
+    <h2>In His Own Words</h2>
+    <ul>
+      <li>&ldquo;Previously worked on various projects, from training neural networks in Haskell to building a game streaming engine&rdquo; &mdash; Exa team bio. <em>Range of technical curiosity: functional programming + real-time systems + ML</em></li>
+      <li>&ldquo;This is not a tutorial to build a website &hellip; I&rsquo;m talking about technologies, platforms and libraries I used for building bedav.org&rdquo; &mdash; Medium, Sep 2020. <em>Builder mentality from age ~16. Shipped a real product for Indian COVID crisis, not a school project</em></li>
+      <li>&ldquo;It uses clustering, matryoshka embeddings, binary quantization, and SIMD operations. Written in Rust&rdquo; &mdash; Exa research blog, Dec 2024, describing the vector database Shreyas built</li>
+      <li>&ldquo;Unlike graph-based methods like HNSW, clustering compressed methods fit nicely with filters&rdquo; &mdash; Exa technical blog on the architectural bet that differentiates their vector DB from Pinecone/Weaviate</li>
+    </ul>
+    <p class="small muted" style="margin-top:0.5rem;">
+      <strong>Note:</strong> Shreyas&rsquo;s Twitter (@shreyas4_) has minimal following and public presence. No viral threads,
+      no podcast appearances, no conference talks with significant reach beyond AI Engineer World&rsquo;s Fair. He is heads-down
+      building, not building in public. This is a &ldquo;stealth competence&rdquo; signal: the work speaks (billions of vectors,
+      sub-100ms, $700M company), not the person.
+    </p>
+  </section>
+
+  <!-- NETWORK MAP -->
+  <section>
+    <h2>Network Map: The Exa Team</h2>
+    <p class="small muted">Exa has ~30+ engineers. Key individuals Shreyas works with daily:</p>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Name</td><td>Role</td><td>Background</td><td>Signal</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Will Bryk</strong></td><td>CEO, Co-founder</td><td>Harvard CS+Physics. First eng at Cresta. Embedding models expert</td><td>Center of gravity. If Exa IPOs, $10B+ outcome</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Jeff Wang</strong></td><td>CTO, Co-founder</td><td>Harvard CS+Philosophy. 3 yrs at Plaid (data/web infra). GPU cluster in dorm</td><td>Met Will at Harvard freshman hiking trip. Technical counterpart</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Ben Chen</strong></td><td>Engineer</td><td>Former quant trader at SIG. Harvard advanced math</td><td>Quant + search. Rare skill intersection</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Hubert Yuan</strong></td><td>Engineer (exa-d)</td><td>Tsinghua CS. Particle simulations</td><td>Co-built exa-d data framework. Potential co-founder if they leave together</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Michael Fine</strong></td><td>Engineer</td><td>ML + privacy at Apple. Harvard CS</td><td>Apple ML alum. Strong IC</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Ben Chan</strong></td><td>Engineer</td><td>Cornell PhD distributed algorithms. MIT CS</td><td>Distributed systems &mdash; direct overlap with Shreyas&rsquo;s infra work</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Rohit Prakash</strong></td><td>Engineer</td><td>NYU CS. Kernel programming</td><td>Low-level systems &mdash; likely collaborates on CUDA/SIMD work</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Sam Mitchell</strong></td><td>Engineer</td><td>MIT CS. IBM Watson AI Lab &mdash; GNN research</td><td>ML research depth</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Tyler Killian</strong></td><td>Engineer</td><td>McGill CS+Math. Putnam Top 500</td><td>Competition math signal</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Anca Negoiu</strong></td><td>Engineer</td><td>Princeton CS. AI search at Primer.ai</td><td>Search domain expertise</td></tr>
+    </table>
+    <p style="margin-top:0.5rem; font-size:0.8rem; color:var(--fg-muted);">
+      <strong>Board:</strong> Peter Fenton (Benchmark) &mdash; &ldquo;legendary investor who&rsquo;s taken 7 companies to IPO.&rdquo;
+      Guru Chahal (Lightspeed). NVentures (NVIDIA). YC.<br>
+      <strong>Advisors:</strong> Researchers from OpenAI, Google, and Bing (per Exa about page).
+    </p>
+  </section>
+
+  <!-- TIMELINE & SIGNALS -->
+  <section>
+    <h2>Timeline &amp; Signals</h2>
+    <ul>
+      <li><strong>Status:</strong> Still at Exa as of March 2026. No departure signals detected</li>
+      <li><strong>Equity:</strong> As a founding engineer at a $700M company, likely holds 0.5&ndash;2% ($3.5M&ndash;$14M paper value). Meaningful but not life-changing enough to prevent departure</li>
+      <li><strong>Vesting:</strong> If joined ~2022&ndash;23, approaching or past majority of initial 4-year vest. Could be fully liquid within 12&ndash;18 months</li>
+      <li><strong>Departure watch:</strong> Exa is growing fast (1,010% YoY) and just raised $85M. Unlikely to leave in next 6 months. Most likely departure window: 12&ndash;24 months post-Series B (Sep 2026 &ndash; Sep 2027)</li>
+      <li><strong>Indian-origin angle:</strong> Grew up in Bangalore. Warm intro possible through Indian tech community networks, Waterloo Indian student alumni</li>
+      <li><strong>Likely competing investors if he raises:</strong> Benchmark (Exa board seat &mdash; first look), Lightspeed (Exa Series A lead), NVentures (Exa investor). Must get there before they do</li>
+      <li><strong>Valuation range if he founds:</strong> Solo: $15&ndash;30M pre-money seed (Exa founding eng credibility). With strong co-founder (e.g., Hubert Yuan or Ben Chan): $40&ndash;80M</li>
+    </ul>
+  </section>
+
+  <!-- RISKS -->
+  <section>
+    <h2>Risks</h2>
+    <ul>
+      <li><strong>Golden handcuffs are real.</strong> Exa is on a rocket trajectory ($700M, 1,010% growth, Benchmark board). Leaving means walking away from potentially 8-figure equity. The incentive to stay through IPO or $5B+ outcome is strong</li>
+      <li><strong>IC, not a proven leader.</strong> Title is &ldquo;Founding Engineer,&rdquo; not VP/CTO. No public evidence of leading a team, making hiring decisions, or owning a P&amp;L. Technical excellence &ne; company building ability</li>
+      <li><strong>Low public profile.</strong> Minimal Twitter presence, no blog since 2021, no podcast appearances. Would need to build a public narrative from scratch if founding</li>
+      <li><strong>Vector databases may commoditize.</strong> Trend toward embedded vector search (Postgres pgvector, SQLite vec) rather than standalone DBs. The $750M Pinecone playbook may not repeat</li>
+      <li><strong>Exa IP overlap.</strong> Anything he builds in search/vector DB space will face scrutiny for overlap with Exa&rsquo;s proprietary tech. California law is favorable but social dynamics with Will/Jeff matter</li>
+      <li><strong>Young and unproven outside Exa.</strong> ~24 years old. Entire professional identity is tied to one company. No evidence of navigating ambiguity outside a well-funded startup</li>
+      <li><strong>No academic publications.</strong> Zero papers, no Google Scholar presence. Pure practitioner &mdash; limits credibility in ML research circles if building research-heavy product</li>
+    </ul>
+  </section>
+
+  <!-- BACKGROUND -->
+  <section>
+    <h2>Background</h2>
+    <p>
+      Indian-origin, grew up in Bangalore, India (self-described as &ldquo;High School Student currently residing in
+      Bangalore, India&rdquo; in 2020 Vonage developer blog author bio). Built Bedav.org at ~16 &mdash; a COVID hospital
+      bed tracker for Bangalore and Pune that scraped BBMP government data, used by thousands during India&rsquo;s COVID
+      crisis. University of Waterloo BCS (~2021&ndash;24, likely co-op program). Interned at Gordian Software (backend)
+      and Volley (game streaming). Joined Exa (then Metaphor) as Founding Engineer, likely ~2022&ndash;23 via Waterloo
+      co-op pipeline. Based in San Francisco.
+    </p>
+  </section>
+
+  <!-- NOTES -->
+  <section>
+    <h2>Notes</h2>
+    <ul>
+      <li class="small">Full name: Shreyas Sreenivas. GitHub: shreyas44 (62 repos, 50 stars). Personal site: shreyas.lol. Twitter: @shreyas4_</li>
+      <li class="small">Exa (prev. Metaphor) founded 2021 by Will Bryk + Jeff Wang (Harvard roommates). YC S21 batch. Rebranded Jan 2024</li>
+      <li class="small">Exa infrastructure: 144 H200 GPUs + 80 A100 GPUs (Exacluster, 18 nodes). Index: hundreds of billions of webpages. Petabytes of raw content</li>
+      <li class="small">Exa customers: Cursor, Notion AI, Databricks, AWS, HubSpot, Point72, Vercel. 70M+ companies indexed. 1,200 domain filters</li>
+      <li class="small">Exa products: Search API, Contents API, Answer API, Websets (structured grid search), MCP Server, Exa Instant (sub-200ms), Exa Deep (agentic)</li>
+      <li class="small">Vector DB architectural choice: clustering over HNSW. 100K clusters. Enables metadata filtering (date, domain, keyword) that graph-based methods struggle with. 10x cheaper than cloud vector DB services</li>
+      <li class="small">exa-d (data processing framework) built by Hubert Yuan + Nitya Sridhar. Uses Ray, Lance (columnar S3), PyArrow. Declarative dependency graph, not imperative pipelines</li>
+      <li class="small">Will Bryk: &ldquo;We&rsquo;re building an end to end neural search engine. That whole framing just makes us ask different questions&rdquo;</li>
+      <li class="small">Will Bryk: &ldquo;What if searches can take like a minute or 10 minutes or a whole day, what can you then do?&rdquo; &mdash; on Exa&rsquo;s compute-budget search model</li>
+      <li class="small">Jeff Wang: &ldquo;I met my cofounder @WilliamBryk almost exactly 10 years ago, at Harvard&rsquo;s freshman orientation hiking program. We both chose the maximum difficulty level&rdquo;</li>
+      <li class="small">Exa&rsquo;s neural PageRank: trains by hiding links in web text and predicting which document follows. &ldquo;People might refer to that Paul Graham fundraising essay in like a thousand different ways&rdquo;</li>
+      <li class="small">Websets retrieves &gt;20x more correct results than Google on complex query benchmarks</li>
+      <li class="small">Bedav.org tech stack: Django, PostgreSQL+PostGIS, React, Relay, GraphQL, Beautiful Soup scraping, GCP. Covered Bangalore + Pune hospitals</li>
+      <li class="small">Groot (GitHub): open-source real-time GraphQL API library in Go. Shows Go systems skill pre-Exa</li>
+      <li class="small">Medium articles (2020&ndash;21): PWA optimization, AWS Lambda session auth, chatbot dev, bedav.org architecture. Published on Vonage developer blog</li>
+      <li class="small">GitHub achievements: Pair Extraordinaire (x3), Pull Shark (x3), Galaxy Brain &mdash; signals collaborative, high-volume dev</li>
+      <li class="small">Bing Search API retirement (Aug 2025) created massive tailwind for Exa. Tavily acquired by Nebius (Feb 2026) &mdash; competitor consolidated</li>
+      <li class="small">Delta Institute fellow (listed as Exa Founding Engineer)</li>
+    </ul>
+  </section>
+
+  <!-- OUTREACH -->
+  <section>
+    <h2>Outreach</h2>
+    <p class="small muted"><strong>Best channel:</strong> Twitter DM (<a href="https://x.com/shreyas4_">@shreyas4_</a>) or LinkedIn (<a href="https://www.linkedin.com/in/shreyas-sreenivas/">shreyas-sreenivas</a>). Low Twitter presence suggests LinkedIn may be more responsive.</p>
+
+    <div class="spike-box" style="margin-top:0.75rem; border-left-color: var(--tier2);">
+      <div class="label">&#9670; Draft Outreach (LinkedIn DM)</div>
+      <p style="font-size:0.88rem; white-space:pre-line;">Hey Shreyas &mdash; read the Exa vector DB blog post (the clustering-over-HNSW decision is a genuinely interesting architectural bet) and have been following Exa since the Metaphor days. The fact that you built web-scale vector search in Rust with custom SIMD &mdash; not a Pinecone wrapper &mdash; is the kind of systems work we look for.
+
+I invest at inception, before decks or rounds. Not trying to poach you from Exa &mdash; just think the kind of person who builds billion-scale infra from scratch is worth knowing early. Would love to grab coffee in SF and hear how you think about the future of search infrastructure.
+
+&mdash; Vansh</p>
+    </div>
+
+    <p class="small muted" style="margin-top:0.5rem;"><strong>Why this works:</strong> References his specific technical work (not generic &ldquo;cool company&rdquo;). Names the HNSW decision to show homework. Explicitly says &ldquo;not trying to poach&rdquo; to lower defensiveness. Positions as inception-stage (before decks) which signals non-threatening, long-term relationship building.</p>
+  </section>
 
   <footer>
-    researched: 2026-03 &middot; delta institute cohort 1 &middot; <a href="../index.html">back to index</a>
+    researched: 2026-03-29 &middot; 6-agent architecture (technical, social, market, trajectory, recursive) &middot; <a href="../index.html">back to index</a>
   </footer>
 
 </body>
