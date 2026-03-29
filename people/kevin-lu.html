@@ -16,48 +16,387 @@
   <div class="profile-header">
     <h1>Kevin Lu</h1>
     <img src="https://framerusercontent.com/images/Rd3pMt6u5gTudwuOu1o8z5lFyl4.jpeg?width=400&amp;height=400" alt="Kevin Lu" style="width:80px;height:80px;border-radius:50%;object-fit:cover;float:right;margin:0 0 1rem 1rem;" loading="lazy" onerror="this.style.display='none'" />
-    <p class="one-liner">Thinking Machines Lab, prev OpenAI, UC Berkeley (advised by Pieter Abbeel, Igor Mordatch)</p>
+    <p class="one-liner">Researcher at Thinking Machines Lab (Mira Murati, $2B seed, $12B valuation). Led the team that shipped GPT-4o-mini at OpenAI in 3 months; contributed to o1-mini and o3. Co-author of Decision Transformer (1,951 citations, 323 highly influential &mdash; reframed RL as sequence modeling). &ldquo;Pretrained Transformers as Universal Computation Engines&rdquo; (228 citations, AAAI 2022, first author &mdash; as an undergrad). Previously HRT AI Labs, Meta AI (FAIR). UC Berkeley under Pieter Abbeel &amp; Igor Mordatch. GitHub: 5,300+ stars across 2 repos. Delta Fellow. ~25.</p>
     <div class="tags">
+      <span class="tag">reinforcement-learning</span>
+      <span class="tag">sequence-modeling</span>
+      <span class="tag">llm-post-training</span>
+      <span class="tag">synthetic-data</span>
+      <span class="tag">inference-scaling</span>
+      <span class="tag">openai</span>
+      <span class="tag">thinking-machines-lab</span>
+      <span class="tag">abbeel-lineage</span>
       <span class="tag">delta</span>
-      <span class="tag">frontier-labs</span>
+      <span class="tag spike">spike: co-invented Decision Transformer (1,951 citations) &mdash; the paper that reframed RL as sequence modeling and seeded the reasoning-model paradigm</span>
     </div>
     <div class="links">
-      <a href="https://www.linkedin.com/in/kzl/">linkedin</a>
-      <a href="https://x.com/_kevinlu">twitter/x</a>
       <a href="https://kevinlu.ai/">website</a>
-      <a href="https://scholar.google.com/citations?user=E8s73dYAAAAJ">scholar</a>
+      <a href="https://scholar.google.com/citations?user=E8s73dYAAAAJ">google scholar</a>
+      <a href="https://x.com/_kevinlu">twitter/x</a>
+      <a href="https://github.com/kzl">github</a>
+      <a href="https://www.linkedin.com/in/kzl/">linkedin</a>
     </div>
   </div>
 
-  <!-- THE SPIKE -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- INVESTMENT THESIS                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
   <div class="spike-box">
-    <div class="label">&#9670; What Makes Them Spiky</div>
-    <ul>
-      <li>Co-author of Decision Transformer — one of the most cited RL papers of the decade</li>
-      <li>Led development of GPT-4o-mini at OpenAI</li>
-      <li>Contributed to GPT-5 series, o3, o4-mini, 4.1-nano, 4.1-mini, o1-mini, o3-mini</li>
-      <li>Recruited to Thinking Machines Lab (Mira Murati&#x27;s $120B startup) as key researcher</li>
-      <li>Prior experience at Hudson River Trading AI Labs</li>
-    </ul>
+    <div class="label">&#9670; Investment Thesis</div>
+    <p>
+      Kevin Lu is one of a handful of people who has both <strong>invented a foundational RL paradigm</strong>
+      (Decision Transformer, 1,951 citations &mdash; the conceptual ancestor of reasoning models like o1/o3) and
+      <strong>shipped a frontier production model at scale</strong> (led GPT-4o-mini from zero to launch in ~3 months at OpenAI,
+      the most widely-used model in the GPT-4 family). He is now at Thinking Machines Lab under Mira Murati, working on
+      post-training and fine-tuning infrastructure (Tinker). His intellectual thesis &mdash; that <strong>the internet is the
+      only important technology</strong> for pretraining but RL lacks its equivalent data source &mdash; points directly at what
+      he would build if he founded a company: the &ldquo;internet of RL data.&rdquo; His co-author network reads like an
+      AI founder directory (Aravind Srinivas/Perplexity, Michael Laskin/Reflection AI, Pieter Abbeel/Covariant). He is not yet
+      a founder, but his rate of acceleration, intellectual clarity, and network density make him a Tier 1 relationship to build now.
+    </p>
   </div>
 
-  <h2>Research &amp; Key Work</h2>
-  <h3>Problems &amp; Research Areas</h3>
-  <ul><li>Reinforcement learning as sequence modeling (Decision Transformer)</li><li>Small model training and efficiency (4o-mini, o3-mini, 4.1-nano, 4.1-mini)</li><li>Synthetic data generation</li><li>Transfer learning across modalities</li></ul>
-  <h3>Key Work</h3>
-  <ul><li>Decision Transformer: RL via Sequence Modeling (2021) — reframed RL as conditional sequence modeling, massively influential</li><li>GPT-4o-mini team lead at OpenAI</li><li>Contributions to GPT-5 series and o-series reasoning models</li><li>Pretrained Transformers as Universal Computation Engines (2021)</li></ul>
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- EVIDENCE                                               -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Evidence</h2>
 
+  <h3>Decision Transformer: The Paper That Reframed RL</h3>
+  <p>
+    <strong>&ldquo;Decision Transformer: Reinforcement Learning via Sequence Modeling&rdquo;</strong> (NeurIPS 2021).
+    Co-first-author with Lili Chen. Cast RL as conditional sequence modeling: condition an autoregressive transformer
+    on desired return, past states, and actions &rarr; generate optimal future actions. No value functions, no policy gradients,
+    no dynamic programming bootstrapping.
+  </p>
+  <table>
+    <tr><th>Metric</th><th>Decision Transformer</th><th>Context</th></tr>
+    <tr><td>Citations</td><td><strong>1,951</strong> (Semantic Scholar)</td><td>323 highly influential, 574 methods citations</td></tr>
+    <tr><td>GitHub stars</td><td><strong>2,700+</strong></td><td>501 forks (kzl/decision-transformer)</td></tr>
+    <tr><td>Downstream impact</td><td>Spawned entire subfield</td><td>awesome-decision-transformer curates 100+ derivative works</td></tr>
+    <tr><td>Conceptual lineage</td><td>RL-as-sequence-modeling &rarr; reward conditioning &rarr; RLHF &rarr; o1/o3</td><td>The through-line from DT to reasoning models is direct</td></tr>
+  </table>
+  <p class="small muted">
+    Co-authors: Lili Chen*, Kevin Lu*, Aravind Rajeswaran, Kimin Lee, Aditya Grover, Michael Laskin, Pieter Abbeel,
+    Aravind Srinivas*, Igor Mordatch*. Affiliations: UC Berkeley, Facebook AI Research, Google Brain.
+    Featured in The Batch, SyncedReview, The Gradient; video analyses by Yannic Kilcher.
+  </p>
 
-  <h2>Current Work</h2>
-  <p>Research at Thinking Machines Lab (Mira Murati&#x27;s startup, valued at $120B) — working with what he calls &#x27;the highest density of research talent in the world&#x27;</p>
+  <h3>Pretrained Transformers as Universal Computation Engines</h3>
+  <p>
+    <strong>First author.</strong> AAAI 2022. Demonstrated that a GPT-2 model pretrained on natural language, with <em>all
+    self-attention layers frozen</em>, can be fine-tuned to match or beat task-specific models on numerical computation,
+    vision (CIFAR-10), and protein fold prediction. <strong>228 citations, 24 highly influential.</strong>
+    GitHub: 2,600+ stars, 248 forks. Featured in VentureBeat, TWIML podcast.
+  </p>
+  <p class="small muted">
+    This result anticipated the &ldquo;foundation model&rdquo; thesis by ~1 year &mdash; that pretraining on language creates
+    universal representations transferable to arbitrary modalities. Lu was an undergrad when he published this.
+  </p>
 
-  <div class="spike-box" style="margin-top: 1.5rem;">
-    <div class="label">&#9670; Alpha Insight</div>
-    <p>Kevin&#x27;s trajectory from Decision Transformer (reframing RL as sequence modeling) to leading small model training at OpenAI to Thinking Machines reveals a consistent thesis: the magic is in the data and training recipe, not the architecture. His view that RL cannot yet achieve GPT-1-to-GPT-4 level jumps suggests Thinking Machines is betting on pre-training innovation.</p>
+  <h3>OpenAI: GPT-4o-mini, o1-mini, o3</h3>
+  <p>
+    Joined OpenAI in <strong>March 2024</strong>. Within ~3 months, <strong>led the team that shipped GPT-4o-mini</strong>
+    (July 2024) &mdash; a multimodal reasoning model supporting image+text input, long context, optimized for speed and cost.
+    GPT-4o-mini became the most widely deployed model in the GPT-4 family by volume.
+  </p>
+  <p>
+    Specialized in <strong>reinforcement learning, small models, and synthetic data</strong>. Contributed to the development
+    of <strong>o1-mini</strong> and <strong>o3</strong> reasoning models. Departed OpenAI in <strong>July 2025</strong>
+    to join Thinking Machines Lab.
+  </p>
+
+  <h3>Thinking Machines Lab: Tinker &amp; Post-Training</h3>
+  <p>
+    Joined <strong>August 2025</strong>. Working on Tinker &mdash; Thinking Machines&rsquo; fine-tuning API for open-weight
+    LLMs (Llama, Qwen families). Tinker launched October 2025, GA December 2025. Early adopters: Berkeley, Princeton, Stanford,
+    Redwood Research. Lu&rsquo;s specific focus: RL-based post-training, the exact intersection of his Decision Transformer
+    expertise and production model training experience from OpenAI.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- HIS OWN WORDS                                          -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>In His Own Words</h2>
+
+  <blockquote>
+    &ldquo;Why you should stop working on RL research and instead work on product. The technology that unlocked the big
+    scaling shift in AI is the internet, not transformers. I think it&rsquo;s well known that data is the most important
+    thing in AI, and also that researchers choose not to work [on data].&rdquo;
+    <cite>&mdash; @_kevinlu, late 2025</cite>
+  </blockquote>
+  <p class="small muted">
+    Provocative thesis from the co-inventor of Decision Transformer. He&rsquo;s arguing that the RL community is repeating
+    the mistakes of 2015-2020 &mdash; doing research that doesn&rsquo;t matter because the bottleneck is data, not algorithms.
+    This reveals his founder thesis: whoever solves the RL data problem wins.
+  </p>
+
+  <blockquote>
+    &ldquo;The internet and next-token prediction go hand-in-hand&hellip; Our poor models! They know so little and yet
+    still have so much hidden from them.&rdquo;
+    <cite>&mdash; &ldquo;The Only Important Technology Is The Internet,&rdquo; kevinlu.ai, July 2025</cite>
+  </blockquote>
+  <p class="small muted">
+    Invoking Alec Radford. His core argument: transformers are &ldquo;a distractor&rdquo; &mdash; the internet is the
+    substrate that made language model scaling work. RL has no equivalent. The &ldquo;dual of reinforcement learning&rdquo;
+    remains undiscovered. This is a thesis statement for a company.
+  </p>
+
+  <blockquote>
+    &ldquo;I recently joined @thinkymachines &mdash; super excited to work with the team, I think we have the highest
+    density of research talent in the world. We have a very ambitious roadmap ahead, the right team to work on it,
+    &amp; I think now is a great time to join.&rdquo;
+    <cite>&mdash; @_kevinlu, August 18, 2025</cite>
+  </blockquote>
+
+  <blockquote>
+    &ldquo;Anyone who&rsquo;s tried running RL on top of language models knows how painful it is &mdash; building on top
+    of new research, Tinker makes finetuning frontier LLMs easy and performant! It&rsquo;s the latest in a long-standing
+    dream to use finetuning to democratize training and personalization.&rdquo;
+    <cite>&mdash; @_kevinlu, March 2026</cite>
+  </blockquote>
+  <p class="small muted">
+    &ldquo;Long-standing dream&rdquo; + &ldquo;democratize training&rdquo; = founder language. He frames Tinker as
+    a step toward his personal mission, not just a job.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- INTELLECTUAL THESIS                                    -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Intellectual Thesis (From His Blog)</h2>
+  <p>
+    Lu writes a substantive technical blog at kevinlu.ai. Three posts from 2024-2025 form a coherent thesis:
+  </p>
+  <ul>
+    <li><strong>&ldquo;Spending Inference Time&rdquo;</strong> (Mar 2024) &mdash; Framework for allocating inference compute
+      across breadth (best-of-n sampling) vs. depth (tree search). Key insight: &ldquo;Best-of-16 13B outperforms best-of-1 175B&rdquo;
+      when using reward models. Predicted the inference-scaling paradigm that became o1/o3</li>
+    <li><strong>&ldquo;LoRAs as Composable Programs&rdquo;</strong> (Feb 2024) &mdash; Frames LLMs as operating systems with LoRAs
+      as programs. Argues for backward compatibility and composability in model ecosystems. Directly relevant to Tinker&rsquo;s
+      architecture</li>
+    <li><strong>&ldquo;The Only Important Technology Is The Internet&rdquo;</strong> (Jul 2025) &mdash; The internet is the
+      &ldquo;dual of next-token prediction.&rdquo; RL has no equivalent data substrate. The Microsoft Phi models prove curated
+      datasets cannot match internet-scale pretraining</li>
+  </ul>
+  <p class="small muted">
+    The through-line: inference scaling + composable fine-tuning + internet-scale data = the three pillars of whatever
+    he builds next. He has been publicly developing this thesis for 2+ years.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- MARKET & COMPETITIVE LANDSCAPE                         -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Market &amp; Competitive Landscape</h2>
+
+  <h3>Thinking Machines Lab: Context</h3>
+  <p>
+    Founded February 2025 by Mira Murati (ex-OpenAI CTO). <strong>$2B seed at $12B valuation</strong> (July 2025, led by a16z).
+    Investors: NVIDIA, AMD, Cisco, Jane Street. ~30 researchers at launch, two-thirds ex-OpenAI. Co-founders included
+    John Schulman (chief scientist), Barret Zoph (CTO, ex-OpenAI VP post-training), Lilian Weng, Luke Metz, Andrew Tulloch.
+  </p>
+  <p>
+    <strong>Turbulence:</strong> Barret Zoph and Luke Metz returned to OpenAI (Jan 14, 2026). Andrew Tulloch departed for
+    Meta Superintelligence Labs. Failed to close a follow-on round at $50B valuation (Bloomberg, Nov 2025). NVIDIA partnership
+    (1 GW Vera Rubin capacity, March 2026) stabilized the story. Soumith Chintala (PyTorch co-creator) joined Nov 2025.
+  </p>
+  <p class="small muted">
+    Lu joined <em>after</em> the $2B seed, <em>before</em> the co-founder departures. He stayed through the turbulence.
+    This is either deep conviction or golden handcuffs. His continued Tinker tweets (March 2026) suggest conviction.
+  </p>
+
+  <h3>Post-Training / Fine-Tuning Market</h3>
+  <table>
+    <tr><th>Company</th><th>Valuation</th><th>Approach</th></tr>
+    <tr><td>Thinking Machines (Tinker)</td><td>$12B</td><td>API for RL-based post-training on open-weight models</td></tr>
+    <tr><td>Together AI</td><td>$3.3B</td><td>Open-source model training and inference platform</td></tr>
+    <tr><td>Fireworks AI</td><td>$2.5B</td><td>Inference + fine-tuning API, speed-optimized</td></tr>
+    <tr><td>Anyscale (Ray)</td><td>$1B+</td><td>Distributed compute for ML training</td></tr>
+    <tr><td>Modal</td><td>$1B+</td><td>Serverless compute for ML, fine-tuning support</td></tr>
+    <tr><td>OpenAI (fine-tuning API)</td><td>$300B</td><td>Closed-model fine-tuning, limited control</td></tr>
+  </table>
+
+  <h3>What He Would Build (Thesis Reconstruction)</h3>
+  <p>
+    <strong>Most likely: The RL data substrate.</strong> His blog thesis points at the gap: language models have the internet,
+    but RL has no equivalent. Whoever builds the &ldquo;internet of RL data&rdquo; &mdash; massive-scale synthetic environments,
+    reward signal generation, or preference data infrastructure &mdash; unlocks the next scaling curve. His Decision Transformer
+    background (RL as sequence modeling) + OpenAI production experience (synthetic data, small models) + Thinking Machines
+    post-training work (Tinker/LoRA/RLHF) = the exact skill stack for this.
+  </p>
+  <p>
+    <strong>Timeline:</strong> Not imminent. He joined Thinking Machines August 2025 and is still actively building/promoting
+    Tinker (March 2026). Typical tenure at a well-funded startup before departure: 18-24 months. Earliest founder signal:
+    late 2026. More likely: 2027. But the thesis is forming publicly in real time.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- GROWTH TRAJECTORY                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Growth Trajectory</h2>
+  <ul class="timeline">
+    <li><span class="year">2018</span> Enters UC Berkeley (EECS). Begins research under Pieter Abbeel and Igor Mordatch</li>
+    <li><span class="year">Mar 2021</span> Publishes &ldquo;Pretrained Transformers as Universal Computation Engines&rdquo; (228 citations). As an undergrad</li>
+    <li><span class="year">Jun 2021</span> Publishes Decision Transformer (NeurIPS 2021, 1,951 citations). Co-first-author. Still an undergrad/just graduated</li>
+    <li><span class="year">2021</span> Graduates UC Berkeley. Joins Meta AI (Facebook AI Research)</li>
+    <li><span class="year">2021&ndash;22</span> Researcher at Meta AI / FAIR</li>
+    <li><span class="year">2022&ndash;23</span> Researcher at Hudson River Trading AI Labs. Quant + RL intersection</li>
+    <li><span class="year">Mar 2024</span> Joins OpenAI. Specializes in RL, synthetic data, small models</li>
+    <li><span class="year">Jul 2024</span> Leads team that ships GPT-4o-mini &mdash; 3 months after joining OpenAI</li>
+    <li><span class="year">2024&ndash;25</span> Contributes to o1-mini and o3 reasoning models at OpenAI</li>
+    <li><span class="year">Feb 2024</span> Publishes &ldquo;LoRAs as Composable Programs&rdquo; blog post</li>
+    <li><span class="year">Mar 2024</span> Publishes &ldquo;Spending Inference Time&rdquo; blog &mdash; predicted inference-scaling paradigm</li>
+    <li><span class="year">Jul 2025</span> Departs OpenAI. Publishes &ldquo;The Only Important Technology Is The Internet&rdquo;</li>
+    <li><span class="year">Aug 2025</span> Joins Thinking Machines Lab. &ldquo;Highest density of research talent in the world&rdquo;</li>
+    <li><span class="year">Oct 2025</span> Tinker launches (fine-tuning API). Lu contributing to RL post-training</li>
+    <li><span class="year">Dec 2025</span> Tinker reaches general availability</li>
+    <li><span class="year">Mar 2026</span> Continues at Thinking Machines. NVIDIA 1 GW partnership announced</li>
+  </ul>
+  <p>
+    <strong>Pace:</strong> Published two papers with 2,179 combined citations <em>as an undergrad</em>. Led a flagship OpenAI
+    model launch within 3 months of joining. Five distinct career stages (Berkeley, FAIR, HRT, OpenAI, Thinking Machines)
+    by ~25. Gap between milestones: compressed from years to months. The magnitude is escalating: research paper &rarr;
+    production model at the world&rsquo;s leading AI lab &rarr; post-training infrastructure at $12B startup.
+  </p>
+  <p>
+    <strong>Acceleration: Clear.</strong> Went from undergrad researcher to leading a GPT-4 family model launch in ~3 years.
+    Now at the center of the post-training infrastructure buildout. Each jump has been to a higher-leverage position.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- NETWORK MAP                                            -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Network Map</h2>
+
+  <h3>Pieter Abbeel Lineage (Founder Factory)</h3>
+  <p>
+    Abbeel&rsquo;s lab has produced an extraordinary density of AI founders. Lu is embedded in this network:
+  </p>
+  <ul>
+    <li><strong>Aravind Srinivas</strong> &mdash; Decision Transformer co-author. CEO/co-founder of Perplexity ($9B+). <a href="https://x.com/AravSrinivas">@AravSrinivas</a></li>
+    <li><strong>Michael Laskin</strong> &mdash; Decision Transformer co-author. Co-founder of Reflection AI ($525M raised). <a href="https://x.com/MichaelLasworst">@MichaelLasworst</a></li>
+    <li><strong>Pieter Abbeel</strong> &mdash; PhD advisor. Co-founder of Covariant (robotics), Gradescope (acquired by TurnItIn), Berkeley Open Arms. BAIR co-director</li>
+    <li><strong>Igor Mordatch</strong> &mdash; Co-advisor. Decision Transformer co-author. Former Google Brain/OpenAI</li>
+    <li><strong>John Schulman</strong> &mdash; Abbeel PhD student. OpenAI co-founder, PPO inventor. Now Chief Scientist at Thinking Machines Lab &mdash; Lu&rsquo;s direct colleague</li>
+    <li><strong>Deepak Pathak</strong> &mdash; Abbeel lineage. Co-founder of Skild AI ($300M+ raised)</li>
+  </ul>
+
+  <h3>Decision Transformer Co-Authors</h3>
+  <ul>
+    <li><strong>Lili Chen</strong> &mdash; Co-first-author. UC Berkeley</li>
+    <li><strong>Aravind Rajeswaran</strong> &mdash; Co-author. Facebook AI Research</li>
+    <li><strong>Kimin Lee</strong> &mdash; Co-author. Now KAIST professor</li>
+    <li><strong>Aditya Grover</strong> &mdash; Co-author on both DT and Universal Computation. UCLA professor</li>
+  </ul>
+
+  <h3>Thinking Machines Lab Colleagues</h3>
+  <ul>
+    <li><strong>Mira Murati</strong> &mdash; CEO. Former OpenAI CTO. Direct boss</li>
+    <li><strong>John Schulman</strong> &mdash; Chief Scientist. PPO inventor. OpenAI co-founder</li>
+    <li><strong>Soumith Chintala</strong> &mdash; PyTorch co-creator. Joined Nov 2025 from Meta</li>
+    <li><strong>Lilian Weng</strong> &mdash; Co-founder. Former OpenAI VP. Prolific technical blogger</li>
+    <li><strong>Bob McGrew</strong> &mdash; Advisor. Former OpenAI Chief Research Officer</li>
+    <li><strong>Alec Radford</strong> &mdash; Advisor. GPT-1/2 lead researcher. Lu cites him in his blog</li>
+  </ul>
+
+  <h3>OpenAI Network</h3>
+  <p>
+    Lu spent 16 months at OpenAI (Mar 2024 &ndash; Jul 2025), overlapping with the team that built GPT-4o, o1, o3.
+    He would have worked alongside or been proximate to researchers across the reasoning and post-training teams.
+    His departure to Thinking Machines followed the established pipeline: Murati &rarr; Schulman &rarr; Zoph &rarr; Lu.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- RISKS                                                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Risks</h2>
+  <ol>
+    <li><strong>Not a founder yet, and may not become one.</strong> Lu has never founded a company. He has moved through
+      FAIR, HRT, OpenAI, and now Thinking Machines as a researcher/IC. The Abbeel lineage produces founders, but not everyone
+      in the lineage founds. His blog reads like a founder, but he has not made the jump</li>
+    <li><strong>Thinking Machines instability.</strong> Co-founder departures (Zoph, Metz, Tulloch), failed $50B round,
+      and market skepticism are real headwinds. If Thinking Machines contracts or pivots, Lu could be disrupted mid-thesis.
+      Alternatively, instability could be the push that makes him found something</li>
+    <li><strong>No public founding signal.</strong> As of March 2026, Lu is actively promoting Tinker and recruiting for
+      Thinking Machines. No bio changes, no stealth signals, no &ldquo;embarked on a new adventure&rdquo; language. Founder
+      timeline is 12-24 months out at earliest</li>
+    <li><strong>Relatively thin publication record beyond two hits.</strong> Two extraordinary papers (DT + Universal
+      Computation) but both from 2021. His OpenAI work is under the corporate umbrella. His recent intellectual output
+      is blog posts, not peer-reviewed research. Fine for a founder but may limit academic credibility if he goes the
+      research-lab route</li>
+    <li><strong>HRT stint is a wildcard.</strong> He spent a year at Hudson River Trading AI Labs (2022-23). This could
+      mean he values compensation highly and may choose another quant stint over founding risk. Or it gave him financial
+      runway to take risk later. Ambiguous signal</li>
+    <li><strong>Crowded post-training market.</strong> Tinker competes with Together AI, Fireworks, Modal, Anyscale, and
+      OpenAI/Anthropic fine-tuning APIs. If Lu&rsquo;s founder thesis is &ldquo;better fine-tuning infrastructure,&rdquo;
+      that&rsquo;s a red ocean. The interesting thesis is &ldquo;RL data substrate&rdquo; &mdash; but that&rsquo;s more
+      speculative</li>
+  </ol>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- BACKGROUND (compressed)                                -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Background</h2>
+  <p>
+    UC Berkeley EECS (2018&ndash;2021) under Pieter Abbeel and Igor Mordatch. TA for EECS 126 (Probability and Random Processes).
+    Published two landmark papers as an undergrad (Decision Transformer, Universal Computation). Meta AI / FAIR (2021&ndash;22).
+    Hudson River Trading AI Labs (2022&ndash;23). OpenAI researcher (Mar 2024&ndash;Jul 2025): led GPT-4o-mini, contributed to o1-mini
+    and o3. Thinking Machines Lab researcher (Aug 2025&ndash;present). Delta Institute Cohort 1 fellow. ~25 years old.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- OUTREACH                                               -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Outreach Draft</h2>
+  <div style="background: var(--bg); border: 1px solid #ddd; padding: 1.5em; border-radius: 6px; font-family: var(--sans);">
+    <p><strong>Subject:</strong> Your &ldquo;dual of RL&rdquo; thesis</p>
+    <p>Hi Kevin,</p>
+    <p>I invest at inception &mdash; before rounds, before decks. Your blog essay on the internet as the only important technology stopped me cold, particularly the ending: that the &ldquo;dual of reinforcement learning&rdquo; remains undiscovered. I think you&rsquo;re right, and I think whoever finds it builds a $10B+ company.</p>
+    <p>You&rsquo;re one of a very small number of people who has both invented an RL paradigm (Decision Transformer) and shipped a frontier model to hundreds of millions of users (4o-mini). That combination is rare. If and when you decide to go build the thing your blog is pointing at &mdash; whether it&rsquo;s RL data infrastructure, synthetic environments, or something I haven&rsquo;t thought of &mdash; I&rsquo;d love to be the first conversation.</p>
+    <p>No rush. Happy to just riff on the thesis over coffee in SF whenever you have time.</p>
   </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- PUBLICATIONS                                           -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Publications</h2>
+  <p class="small muted">~2,200+ total citations across papers. Two papers with 1,900+ and 228 citations respectively.</p>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2106.01345">Decision Transformer: Reinforcement Learning via Sequence Modeling</a></div>
+    <div class="venue">NeurIPS 2021 &middot; Co-first-author with Lili Chen &middot; 1,951 citations &middot; 323 highly influential</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2103.05247">Pretrained Transformers as Universal Computation Engines</a></div>
+    <div class="venue">AAAI 2022 &middot; <strong>First author</strong> &middot; 228 citations &middot; 24 highly influential</div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- NOTES                                                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Notes</h2>
+  <ul>
+    <li class="small">Decision Transformer: 1,951 citations (Semantic Scholar), ~2,254 (Google Scholar). 323 highly influential. NeurIPS 2021. Co-first-author</li>
+    <li class="small">Universal Computation: 228 citations, 24 highly influential. AAAI 2022. First author. Published as undergrad</li>
+    <li class="small">GitHub: kzl. decision-transformer (2,700+ stars, 501 forks), universal-computation (2,600+ stars, 248 forks). 199 followers</li>
+    <li class="small">OpenAI tenure: Mar 2024 &ndash; Jul 2025 (~16 months). Led GPT-4o-mini launch within 3 months of joining</li>
+    <li class="small">Contributed to o1-mini and o3 at OpenAI (per Tiger Brokers / 36kr reporting)</li>
+    <li class="small">HRT AI Labs: 2022-2023. Quant finance + RL intersection. Financial runway signal</li>
+    <li class="small">Meta AI / FAIR: 2021-2022. Post-Berkeley, pre-HRT</li>
+    <li class="small">Thinking Machines Lab: Joined Aug 2025. Working on Tinker (post-training API). Tinker launched Oct 2025, GA Dec 2025</li>
+    <li class="small">Thinking Machines: $2B seed at $12B (Jul 2025). Failed $50B round (Nov 2025). NVIDIA 1GW deal (Mar 2026). Co-founder departures Jan 2026</li>
+    <li class="small">Blog: 3 substantive posts (Feb 2024, Mar 2024, Jul 2025). Coherent thesis: inference scaling + composable fine-tuning + internet-as-data-substrate</li>
+    <li class="small">&ldquo;Spending Inference Time&rdquo; (Mar 2024) predicted inference-scaling paradigm. Key result: best-of-16 13B > best-of-1 175B</li>
+    <li class="small">&ldquo;LoRAs as Composable Programs&rdquo; (Feb 2024): LLMs as operating systems, LoRAs as programs. Backward compatibility thesis</li>
+    <li class="small">&ldquo;The Only Important Technology Is The Internet&rdquo; (Jul 2025): Internet, not transformers, is the key. RL has no equivalent data source</li>
+    <li class="small">Twitter: @_kevinlu. Active. Tweets about RL, product vs research, Tinker. Recruiting signal for TML</li>
+    <li class="small">Abbeel lineage: Srinivas (Perplexity), Laskin (Reflection), Schulman (OpenAI/TML), Pathak (Skild). Highest founder density of any ML advisor</li>
+    <li class="small">Not Indian-origin. Chinese-American based on name and institutional affiliations</li>
+    <li class="small">Delta Institute Cohort 1 fellow</li>
+    <li class="small">Tier 1: Not a founder yet, but would back if he started. Build relationship, check monthly</li>
+    <li class="small">Watch signals: bio changes, departure from Thinking Machines, thesis escalation in blog, co-author departure signals</li>
+    <li class="small">Earliest plausible founder signal: late 2026. Most likely: 2027</li>
+  </ul>
 
   <footer>
-    researched: 2026-03 &middot; delta institute cohort 1 &middot; <a href="../index.html">back to index</a>
+    researched: 2026-03-29 &middot; 6-agent SOP (technical, social, market, background, trajectory, network) &middot; tier 1 &middot; <a href="../index.html">back to index</a>
   </footer>
 
 </body>
