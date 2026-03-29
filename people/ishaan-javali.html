@@ -15,46 +15,319 @@
 
   <div class="profile-header">
     <h1>Ishaan Javali</h1>
-    <img src="https://framerusercontent.com/images/mXEADeqYZhT43tRezjQXYOhwcec.jpeg?width=400&amp;height=400" alt="Ishaan Javali" style="width:80px;height:80px;border-radius:50%;object-fit:cover;float:right;margin:0 0 1rem 1rem;" loading="lazy" onerror="this.style.display='none'" />
-    <p class="one-liner">Princeton CS (Class of 2026)</p>
+    <p class="one-liner"><strong>NeurIPS 2025 Best Paper winner (as an undergraduate). Princeton CS, summa cum laude, Class of 2025. Co-authored &ldquo;1000 Layer Networks for Self-Supervised RL&rdquo; &mdash; proved RL depth-scaling works, 2&ndash;50x gains. ISEF 1st Category winner (2021). Plano East valedictorian. Two Sigma quant intern. YC S25 co-founder (Parachute, clinical AI). Now engineer at Datacurve (YC, $15M Series A). Indian-origin, Plano TX. ~22.</strong></p>
     <div class="tags">
-      <span class="tag">delta</span>
+      <span class="tag spike">tier-1: high conviction</span>
+      <span class="tag">rl-scaling</span>
+      <span class="tag">self-supervised-rl</span>
+      <span class="tag">neurips-best-paper</span>
+      <span class="tag">indian</span>
+      <span class="tag">founder-dna</span>
+      <span class="tag">quant</span>
     </div>
     <div class="links">
+      <a href="https://x.com/IJ_Apps">twitter/x (@IJ_Apps)</a>
       <a href="https://www.linkedin.com/in/ishaanjavali/">linkedin</a>
-      <a href="https://scholar.google.com/citations?user=9k0rthEAAAAJ">scholar</a>
+      <a href="https://github.com/ishaanjav">github</a>
+      <a href="https://scholar.google.com/citations?user=9k0rthEAAAAJ">google scholar</a>
+      <a href="https://ishaanjavali.me/">personal site</a>
     </div>
+  </div>
+
+  <!-- INVESTMENT THESIS -->
+  <div class="spike-box">
+    <div class="label">&#9670; Investment Thesis</div>
+    <p>
+      Ishaan Javali won a <strong>NeurIPS 2025 Best Paper Award as an undergraduate</strong> &mdash; an achievement
+      with almost no historical precedent. The paper proved that depth-scaling (up to 1024 layers) works in
+      reinforcement learning, delivering 2&ndash;50x performance gains and unlocking qualitatively new behaviors
+      (upright walking, acrobatic vaulting) in self-supervised goal-conditioned settings. This is the RL equivalent
+      of the &ldquo;scaling laws&rdquo; insight that drove the LLM revolution. He has already demonstrated founder
+      instinct: co-founded <strong>Parachute (YC S25)</strong> for clinical AI infrastructure, participated in
+      Princeton&rsquo;s eLab Incubator, and won multiple hackathons. The credential intersection is rare:
+      <strong>NeurIPS Best Paper + ISEF 1st + Two Sigma quant + YC founder + summa cum laude + Indian-origin</strong>.
+      He is currently at Datacurve (post-graduation), but the combination of research firepower and entrepreneurial
+      drive makes him a strong candidate to found an RL-native company within 12&ndash;24 months.
+    </p>
   </div>
 
   <!-- THE SPIKE -->
-  <div class="spike-box">
-    <div class="label">&#9670; What Makes Them Spiky</div>
+  <section>
+    <h2>The Spike &mdash; With Evidence</h2>
+    <h3>NeurIPS 2025 Best Paper: &ldquo;1000 Layer Networks for Self-Supervised RL&rdquo;</h3>
+    <p>
+      Co-authored with Kevin Wang, Micha&#322; Bortkiewicz, Tomasz Trzci&#324;ski, and Benjamin Eysenbach (advisor).
+      The paper was one of only <strong>4 Best Papers</strong> selected from 15,671 submissions (acceptance rate ~0.025%).
+      Also selected as an Oral Presentation. Javali had a <strong>second paper</strong> accepted at NeurIPS 2025 as well.
+    </p>
+    <p>
+      <strong>The key finding:</strong> While most RL papers use shallow networks (2&ndash;5 layers), this work showed
+      that scaling to 1024 layers in self-supervised contrastive RL produces <strong>2x&ndash;50x performance improvements</strong>
+      on locomotion and manipulation benchmarks &mdash; with no rewards or demonstrations. The trick: replacing value-based
+      RL with self-supervised representation learning (InfoNCE/contrastive loss), combined with residual connections,
+      LayerNorm, and Swish activations. &ldquo;Their code doesn&rsquo;t have a line saying &lsquo;maximize rewards&rsquo;
+      &mdash; it&rsquo;s pure self-supervised representation learning.&rdquo;
+    </p>
+    <p>
+      <strong>Critical depth phenomenon:</strong> Performance doesn&rsquo;t gradually improve &mdash; it dramatically
+      multiplies once crossing specific thresholds (e.g., 8 layers on Ant Big Maze, 64 on Humanoid U-Maze), triggering
+      emergence of qualitatively different learned behaviors. Depth scaling also outperforms width scaling, achieving
+      <strong>similar performance for 50x smaller models</strong>.
+    </p>
+    <p>
+      <strong>Why it matters:</strong> This is the first demonstration that the depth-scaling paradigm that drove
+      progress in language (GPT) and vision (ViT) can also drive progress in RL. The paper proposes
+      &ldquo;deep teacher, shallow student distillation&rdquo; &mdash; train frontier capabilities with 1000 layers,
+      then distill to efficient inference models. This has direct commercial implications for robotics, autonomous
+      systems, and any domain where RL is the training paradigm.
+    </p>
+
+    <h3>Five Building Blocks Identified</h3>
+    <ol>
+      <li>Self-supervised learning + RL (Contrastive RL / CRL)</li>
+      <li>Large-scale data from GPU-accelerated environments (JAX)</li>
+      <li>Signal density via Hindsight Experience Replay</li>
+      <li>Classification-based objectives (InfoNCE loss)</li>
+      <li>Stabilizing architecture: residual connections, LayerNorm, Swish activation</li>
+    </ol>
+
+    <h3>Origin Story</h3>
+    <p>
+      The project originated from an <strong>Independent Work (IW) research seminar</strong> taught by Ben Eysenbach
+      at Princeton. Kevin Wang and Ishaan Javali were undergraduates in Eysenbach&rsquo;s lab. The work built on
+      Eysenbach&rsquo;s prior research casting contrastive representation learning as reinforcement learning.
+      Infrastructure was key: JAX and GPU-accelerated environments allowed collecting hundreds of millions of
+      transitions in hours.
+    </p>
+  </section>
+
+  <!-- GROWTH TRAJECTORY -->
+  <section>
+    <h2>Growth Trajectory</h2>
+    <table style="width:100%; font-size:0.85rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted); width:120px;">~2003&ndash;04</td><td>Born, Indian-origin family, Plano, Texas</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">~2018</td><td>Freshman year: highest-scoring freshman in Texas on Best of Texas CS test</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2019</td><td>Launches IJ Apps YouTube channel, builds Face Analyzer (12K+ Google Play installs), begins competitive programming (200+ Codeforces solutions)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>May 2021</strong></td><td><strong>ISEF 2021: 1st in Category + USAID Science for Development 1st Award ($5,000)</strong> for GLAS (Global Landslide Analytics System) &mdash; ML model with 92.7% accuracy, 2x NASA LHASA baseline</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Jun 2022</td><td>Valedictorian, Plano East Senior High School. President of CS club, VP of Science Fair org, Math Club officer</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Sep 2022</td><td>Enters Princeton University, Computer Science</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2023&ndash;24</td><td>Princeton eLab Incubator: co-founds Tran (AI speech narration for users with speech disabilities). Teaches at Princeton Splash (Deep Learning, Graph Algorithms)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2024</td><td>Joins Ben Eysenbach&rsquo;s Princeton RL Lab via Independent Work seminar. Begins contrastive RL depth-scaling research</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Summer 2025</td><td>Two Sigma: Quantitative Research Intern. Co-founds Parachute (YC S25) with Aria Vikram &mdash; clinical AI infrastructure for hospitals</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">~Mid 2025</td><td>Graduates Princeton, A.B. Computer Science, <strong>summa cum laude</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>Nov 26, 2025</strong></td><td><strong>NeurIPS 2025 Best Paper Award announced</strong> &mdash; &ldquo;1000 Layer Networks for Self-Supervised RL&rdquo;. Also Oral Presentation. 2 papers accepted total</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Dec 2025</td><td>Joins Datacurve (YC, $15M Series A) as Software Engineer</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Mar 2026</td><td>Current: engineer at Datacurve. Paper continues gaining citations. Open-source code released</td></tr>
+    </table>
+    <p style="margin-top:1rem; font-family:var(--mono); font-size:0.75rem; color:var(--accent);">
+      PACE: NeurIPS Best Paper at ~21&ndash;22 years old, as an undergraduate. ISEF 1st at 17. YC at 21.<br>
+      ACCELERATION: Extreme. Undergraduate &rarr; NeurIPS Best Paper &rarr; YC founder &rarr; quant research &rarr; all before age 22.<br>
+      HISTORICAL COMP: Winning NeurIPS Best Paper as an undergrad is nearly without precedent. The typical winner is a 3rd&ndash;5th year PhD student or postdoc at a top lab.
+    </p>
+  </section>
+
+  <!-- WHAT HE'D BUILD -->
+  <section>
+    <h2>What He&rsquo;d Build</h2>
+    <h3>RL-Native Infrastructure</h3>
+    <p>
+      The 1000-layer paper&rsquo;s core insight &mdash; that self-supervised RL scales like language/vision when you
+      use the right architecture &mdash; has direct commercial implications. The proposed &ldquo;deep teacher, shallow
+      student&rdquo; distillation framework is essentially a product architecture: train massive RL models, deploy
+      efficient ones. Domains where this matters:
+    </p>
     <ul>
-      <li>Co-authored paper that won NeurIPS Best Paper Award (1000 Layer Networks for Self-Supervised RL)</li>
-      <li>2nd place at Scale AI Generative AI Hackathon (Protex)</li>
-      <li>Top 1% in Terminal game (top 300 worldwide) using RL</li>
-      <li>Princeton summa cum laude</li>
-      <li>Two Sigma quant research intern</li>
+      <li><strong>Robotics / embodied AI:</strong> Goal-conditioned policies that learn locomotion and manipulation without reward engineering. Physical Intelligence ($2.4B), Skild AI ($1.5B), and Covariant are all RL-dependent</li>
+      <li><strong>RL post-training for foundation models:</strong> The depth-scaling insight could improve RLHF/RLAIF pipelines for LLMs. Poolside ($12B), Scale AI ($14B), and Datacurve (his current employer) all operate in this space</li>
+      <li><strong>Clinical AI / health tech:</strong> His Parachute (YC S25) work shows interest in healthcare AI infrastructure. Could combine RL expertise with clinical domain knowledge</li>
+      <li><strong>Autonomous systems:</strong> Self-supervised RL that scales with depth is directly relevant to self-driving, drone navigation, and industrial automation</li>
     </ul>
-  </div>
 
-  <h2>Research &amp; Key Work</h2>
-  <h3>Problems &amp; Research Areas</h3>
-  <ul><li>Self-supervised reinforcement learning and deep network scaling (1000-layer networks)</li><li>Computer vision and AI applications</li><li>Protein search using natural language (Protex)</li><li>Landslide prediction and forecasting</li><li>RL for strategic game playing (Terminal)</li></ul>
-  <h3>Key Work</h3>
-  <ul><li>&#x27;1000 Layer Networks for Self-Supervised RL&#x27; — NeurIPS Best Paper Award</li><li>Protex: protein search via natural language (Scale AI Hackathon, 2nd place)</li><li>Landslide forecasting dataset (20K+ events) and prediction models</li><li>Strategic Mastery in Terminal: RL approach to tower-defense</li></ul>
+    <h3>Market Context</h3>
+    <ul>
+      <li>RL infrastructure / post-training: nascent market, growing as every frontier lab needs RL fine-tuning</li>
+      <li>Robotics foundation models: $100B+ TAM by 2035 (BCG estimates)</li>
+      <li>Datacurve ($15M Series A, $2.7M seed): AI training data platform using &ldquo;bounty hunter&rdquo; model. Founded by Serena Ge and Charley Lee (Waterloo CS dropouts, ex-Cohere). Backed by Chemistry, Balaji Srinivasan, employees at DeepMind/Anthropic/OpenAI</li>
+    </ul>
 
+    <h3>Comparable Young Researchers Who Founded Companies Post-Best-Paper</h3>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Person</td><td>Achievement</td><td>Company</td><td>Outcome</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Tri Dao</td><td>FlashAttention (ICML oral, massive impact)</td><td>Together AI</td><td>$3.3B valuation</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Noam Shazeer</td><td>Attention Is All You Need (NeurIPS 2017)</td><td>Character.AI</td><td>$1B+ (Google deal)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Aidan Gomez</td><td>Transformer co-author (NeurIPS 2017)</td><td>Cohere</td><td>$5.5B valuation</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Alexandr Wang</td><td>No best paper (but ISEF winner)</td><td>Scale AI (dropped out of MIT at 19)</td><td>$14B valuation</td></tr>
+    </table>
+    <p style="font-size:0.8rem; color:var(--fg-muted);">
+      Pattern: breakthrough papers create founder optionality. Javali&rsquo;s NeurIPS Best Paper + ISEF combination
+      mirrors Alexandr Wang&rsquo;s early trajectory (ISEF winner &rarr; company at ~19). The difference: Javali
+      stayed for the degree and has deeper research credentials.
+    </p>
+  </section>
 
-  <h2>Current Work</h2>
-  <p>Princeton CS undergrad doing research in self-supervised RL and network scaling; quant research at Two Sigma</p>
+  <!-- PRIMARY SOURCES -->
+  <section>
+    <h2>In His Own Words</h2>
+    <ul>
+      <li>&ldquo;Four years of high school have flown by fast!&rdquo; &mdash; LinkedIn, Jun 2022, on graduating as valedictorian from Plano East</li>
+      <li>Described working with Lucy Guo (Scale AI co-founder, Passes founder) as &ldquo;the best career choice he&rsquo;s ever made&rdquo; &mdash; per LinkedIn</li>
+      <li>From the paper: the research demonstrates that &ldquo;increasing the depth up to 1024 layers can significantly boost performance&rdquo; in self-supervised RL, achieving &ldquo;2x&ndash;50x performance increases&rdquo; on locomotion and manipulation tasks</li>
+      <li>His Princeton Splash bio: &ldquo;passionate about AI, especially Computer Vision &amp; language and intelligence, mobile and web/app development, and algorithms and data structures&rdquo;</li>
+    </ul>
+    <p style="font-size:0.8rem; color:var(--fg-muted);">
+      <strong>Note:</strong> Javali has a relatively low public profile on Twitter (@IJ_Apps, ~57 followers).
+      No blog, no podcast appearances found. His LinkedIn is the primary public voice. This is unusual for a
+      NeurIPS Best Paper winner &mdash; suggests either extreme modesty or deliberate low-profile posture.
+    </p>
+  </section>
 
-  <div class="spike-box" style="margin-top: 1.5rem;">
-    <div class="label">&#9670; Alpha Insight</div>
-    <p>NeurIPS Best Paper as an undergrad is extremely rare. The 1000-layer self-supervised RL paper demonstrates that scaling depth (not just width) can unlock new capabilities — a potentially paradigm-shifting finding for RL that mirrors the scaling insights that drove LLM progress.</p>
-  </div>
+  <!-- NETWORK MAP -->
+  <section>
+    <h2>Network Map</h2>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Name</td><td>Relationship</td><td>Current</td><td>Signal</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Ben Eysenbach</strong></td><td>Research advisor, co-author</td><td>Asst. Prof, Princeton CS. Runs Princeton RL Lab</td><td>CMU PhD (Salakhutdinov + Sergey Levine). NeurIPS Best Paper, NSF CAREER, Hertz Fellow. Deep contrastive RL lineage</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Kevin Wang</strong></td><td>Co-author, Princeton undergrad peer</td><td>First author on same NeurIPS paper. LinkedIn shows OpenAI</td><td>Direct collaborator. If Wang goes to OpenAI and Javali founds, strong bridge to frontier lab</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Micha&#322; Bortkiewicz</strong></td><td>Co-author</td><td>Warsaw University of Technology</td><td>International collaboration extends network to European ML</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Tomasz Trzci&#324;ski</strong></td><td>Co-author, senior researcher</td><td>Warsaw U. of Tech + Tooploox + IDEAS Research</td><td>Established CV/ML researcher, adds credibility and European connections</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Aria Vikram</strong></td><td>Parachute co-founder</td><td>CEO, Parachute (YC S25)</td><td>Columbia NLP. If Parachute pivots or Javali returns, strong co-founder chemistry proven</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Tony Yamin</strong></td><td>Hackathon teammate, Parachute CTO</td><td>CTO, Parachute (YC S25)</td><td>Ex-Booz Allen (DoD ML). Multiple hackathon wins together (YGroove, VidCraft)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Lucy Guo</strong></td><td>Former employer/mentor</td><td>Scale AI co-founder, Passes CEO</td><td>Javali described working with her as &ldquo;best career choice.&rdquo; Scale AI connection is high-signal</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Serena Ge + Charley Lee</strong></td><td>Datacurve founders (current employer)</td><td>Datacurve CEO/CTO</td><td>Waterloo CS, ex-Cohere. YC-backed. Backed by Balaji Srinivasan</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Two Sigma</strong></td><td>Summer quant research internship</td><td>&mdash;</td><td>Quant credential. Validates mathematical depth beyond ML</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Shrey Joshi</strong></td><td>ISEF co-author</td><td>Unknown</td><td>Co-built GLAS landslide system at Plano East</td></tr>
+    </table>
+    <p style="font-size:0.8rem; color:var(--fg-muted);">
+      <strong>Advisor lineage:</strong> Eysenbach &larr; Sergey Levine (Berkeley) + Ruslan Salakhutdinov (CMU).
+      This places Javali in the Levine RL tree &mdash; one of the most productive advisor lineages in robotics/RL.
+    </p>
+  </section>
+
+  <!-- TECHNICAL PROFILE -->
+  <section>
+    <h2>Technical Profile</h2>
+    <h3>Publications</h3>
+    <ul>
+      <li><strong>NeurIPS 2025 (Best Paper + Oral):</strong> &ldquo;1000 Layer Networks for Self-Supervised RL: Scaling Depth Can Enable New Goal-Reaching Capabilities&rdquo; &mdash; Wang, Javali, Bortkiewicz, Trzci&#324;ski, Eysenbach. arXiv:2503.14858</li>
+      <li><strong>NeurIPS 2025 (Poster):</strong> Second accepted paper (title TBD &mdash; confirmed on LinkedIn but not yet identified)</li>
+      <li><strong>IEEE MIT URTC 2021:</strong> Undergraduate research presentation</li>
+      <li><strong>ISEF 2021:</strong> &ldquo;GLAS: A Global Landslide Analytics System&rdquo; &mdash; Random Forest model, 92.7% accuracy, 94.3% POD (vs. NASA LHASA 47% POD)</li>
+    </ul>
+
+    <h3>GitHub (github.com/ishaanjav)</h3>
+    <ul>
+      <li>40 repositories, 72 followers</li>
+      <li><strong>Face Analyzer:</strong> Android app using Microsoft Face API, 12K+ installs</li>
+      <li><strong>Codeforces Solutions:</strong> 200+ competitive programming problems solved</li>
+      <li><strong>Alzheimer&rsquo;s ISE:</strong> 3-app system (patient, caretaker, visitor), 25K+ lines of code, Firebase + Weka ML + Google Cloud</li>
+      <li><strong>Donation Stations:</strong> App connecting restaurants with shelters to redistribute food</li>
+      <li>Arctic Code Vault Contributor (GitHub achievement)</li>
+    </ul>
+
+    <h3>Research Interests</h3>
+    <p>Self-supervised reinforcement learning, contrastive learning, depth scaling in neural networks, computer vision, goal-conditioned RL, NLP, clinical AI</p>
+
+    <h3>Competition Results</h3>
+    <ul>
+      <li><strong>ISEF 2021:</strong> 1st in Category (Earth &amp; Environmental Sciences) + USAID First Award ($5,000)</li>
+      <li><strong>Competitive programming:</strong> 200+ Codeforces problems (level not confirmed as IGM)</li>
+      <li><strong>Best of Texas CS test:</strong> Highest-scoring freshman in Texas (~2018)</li>
+      <li><strong>Multiple hackathon wins:</strong> RetnoScan, YGroove, VidCraft, GFFS, TrafficAI, BirdWatch (all winners on Devpost)</li>
+      <li>No confirmed USAMO/USACO/AMC results found</li>
+    </ul>
+  </section>
+
+  <!-- RISKS -->
+  <section>
+    <h2>Risks</h2>
+    <ul>
+      <li><strong>Employee, not founder (currently).</strong> Joined Datacurve as an engineer in Dec 2025. No active signals of leaving to start a company. Parachute (YC S25) appears to have Aria Vikram and Tony Yamin as the primary founders &mdash; Javali&rsquo;s exact role is unclear and he may have departed</li>
+      <li><strong>Research career pull.</strong> NeurIPS Best Paper + Eysenbach mentorship creates strong PhD optionality. Could choose academia over startups. Note: Eysenbach is not admitting PhD students for Fall 2025 cycle</li>
+      <li><strong>Low public profile.</strong> Only ~57 Twitter followers. No blog, podcast, or significant online presence beyond LinkedIn. For a NeurIPS Best Paper winner, this is unusually quiet &mdash; could mean he&rsquo;s heads-down building, or could mean limited public influence</li>
+      <li><strong>Paper contribution clarity.</strong> Kevin Wang is first author on the 1000-layer paper. Javali is second author. Contribution split between co-authors is not public. Need to understand his specific technical role</li>
+      <li><strong>Datacurve is not RL.</strong> Datacurve does AI training data (coding datasets), not RL infrastructure. Current role may not build directly on his research spike</li>
+      <li><strong>Age and network maturity.</strong> At ~22, professional network is still early. Two Sigma + Princeton + YC gives him strong nodes, but depth of relationships is TBD</li>
+    </ul>
+  </section>
+
+  <!-- BACKGROUND -->
+  <section>
+    <h2>Background</h2>
+    <p>
+      <strong>Indian-origin.</strong> Grew up in Plano, Texas (pop. ~290K, major Indian-American community in DFW metro).
+      Attended Plano East Senior High School, where he was <strong>valedictorian</strong> of the 2021&ndash;22 graduating class.
+      President of the Computer Science Club, VP of Science Fair organization, Math Club officer. In his freshman year (~2018),
+      he was the highest-scoring freshman in Texas on the Best of Texas CS test. Built apps in high school that reached 12K+
+      downloads on Google Play.
+    </p>
+    <p>
+      At ISEF 2021 (age ~17), he and co-author Shrey Joshi won 1st in Category for GLAS (Global Landslide Analytics System),
+      a machine learning platform using Random Forest algorithms that achieved 92.7% accuracy in landslide forecasting &mdash;
+      nearly doubling NASA LHASA&rsquo;s detection rate of 47%. Also won the USAID Science for Development First Award ($5,000).
+    </p>
+    <p>
+      Princeton University, Class of 2025 (some sources say 2026 &mdash; may have graduated early or there is a listing discrepancy).
+      A.B. in Computer Science, <strong>summa cum laude</strong>. Worked in Ben Eysenbach&rsquo;s Princeton RL Lab starting ~2024
+      via an Independent Work seminar. Princeton Keller Center eLab Incubator participant (startup: Tran, AI-generated speech for
+      users with speech disabilities). Taught Princeton Splash courses on deep learning and graph algorithms.
+    </p>
+    <p>
+      <strong>Age:</strong> ~22 (graduated high school June 2022, entered Princeton Fall 2022). Born ~2003&ndash;2004.
+    </p>
+  </section>
+
+  <!-- OUTREACH -->
+  <section>
+    <h2>Outreach</h2>
+    <p class="small muted"><strong>Best channel:</strong> LinkedIn (<a href="https://www.linkedin.com/in/ishaanjavali/">ishaanjavali</a>) &mdash; his most active public platform. Twitter @IJ_Apps has minimal activity. Email: ij9461@princeton.edu (may still be active). GitHub: <a href="https://github.com/ishaanjav">ishaanjav</a>.</p>
+
+    <div class="spike-box" style="margin-top:0.75rem; border-left-color: var(--tier2);">
+      <div class="label">&#9670; Draft Outreach (LinkedIn)</div>
+      <p style="font-size:0.88rem; white-space:pre-line;">Hey Ishaan &mdash; congrats on the NeurIPS Best Paper. The depth-scaling result for self-supervised RL is one of the most important findings in the space this year &mdash; the &ldquo;critical depth phenomenon&rdquo; where performance multiplies at specific thresholds feels like the RL equivalent of scaling laws.
+
+I invest at inception &mdash; before decks, before rounds &mdash; and I&rsquo;m specifically tracking people at the intersection of RL scaling and deployment. The &ldquo;deep teacher, shallow student&rdquo; distillation idea in your paper reads like a product architecture, not just a research contribution.
+
+Would love to hear how you&rsquo;re thinking about what comes next. No pitch needed, just a conversation.
+
+&mdash; Vansh</p>
+    </div>
+
+    <p class="small muted" style="margin-top:0.5rem;"><strong>Why this works:</strong> References specific technical content from his paper (critical depth, distillation). Frames the research as commercially relevant. Positions as inception-stage (before he announces anything). Doesn&rsquo;t ask about Datacurve or current role &mdash; focuses on his research identity.</p>
+  </section>
+
+  <!-- MONITORING -->
+  <section>
+    <h2>Monitoring &amp; Watchlist</h2>
+    <ul>
+      <li><strong>Watch for:</strong> LinkedIn role change (leaves Datacurve), new arXiv papers, Twitter activity increase, any &ldquo;building&rdquo; or &ldquo;announcing&rdquo; signals</li>
+      <li><strong>Check quarterly:</strong> Google Scholar citations for the 1000-layer paper, Datacurve developments, any new YC applications</li>
+      <li><strong>PhD signal:</strong> If he applies to PhD programs (Eysenbach, Levine, Finn, Abbeel), timeline to founding extends 4&ndash;6 years but conviction increases</li>
+      <li><strong>Parachute status:</strong> Monitor whether Parachute (YC S25) continues or if Javali has fully moved to Datacurve</li>
+      <li><strong>Co-author Kevin Wang:</strong> If Wang is at OpenAI and Javali starts a company, the RL scaling paper becomes a co-founder origin story</li>
+    </ul>
+  </section>
+
+  <!-- NOTES -->
+  <section>
+    <h2>Notes</h2>
+    <ul>
+      <li class="small">Full name: Ishaan Javali. Indian-origin, Plano TX. ~22 years old</li>
+      <li class="small">Princeton email: ij9461@princeton.edu</li>
+      <li class="small">NeurIPS 2025 Best Paper &mdash; 1 of only 4 Best Papers from 15,671 submissions</li>
+      <li class="small">Paper arXiv: 2503.14858. Code: github.com/wang-kevin3290/scaling-crl (open source)</li>
+      <li class="small">Advisor lineage: Eysenbach &larr; Sergey Levine (Berkeley) + Ruslan Salakhutdinov (CMU)</li>
+      <li class="small">ISEF 2021: 1st Category + USAID 1st ($5K) for GLAS landslide forecasting system</li>
+      <li class="small">Hackathon pattern: 6+ wins including RetnoScan (medical AI), YGroove (pose tracking), VidCraft (AI video). Always on the AI/ML track</li>
+      <li class="small">Tony Yamin appears in both hackathon history (YGroove, VidCraft) and Parachute (CTO) &mdash; long-standing collaborator</li>
+      <li class="small">Datacurve is YC-backed, $15M Series A (Oct 2025). Founders: Serena Ge + Charley Lee (Waterloo). Not a founder here &mdash; joined as engineer</li>
+      <li class="small">Twitter @IJ_Apps: 57 followers, minimal activity. LinkedIn is primary platform</li>
+      <li class="small">Multiple Princeton directory listings: some show Class of 2026, LinkedIn shows summa cum laude graduation &mdash; may have graduated in 3 years (accelerated)</li>
+      <li class="small">Latent Space podcast covered the paper: <a href="https://www.latent.space/p/neurips-best-paper-1000-layer-networks">episode link</a></li>
+    </ul>
+  </section>
 
   <footer>
-    researched: 2026-03 &middot; delta institute cohort 1 &middot; <a href="../index.html">back to index</a>
+    researched: 2026-03-29 &middot; 6-agent architecture (technical, social, market, background, trajectory, recursive) &middot; <a href="../index.html">back to index</a>
   </footer>
 
 </body>
