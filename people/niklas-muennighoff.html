@@ -16,52 +16,268 @@
   <div class="profile-header">
     <h1>Niklas Muennighoff</h1>
     <img src="https://framerusercontent.com/images/VcwNMXKUdlmVjZ4LxNuqPZHRVU.jpeg?width=400&amp;height=400" alt="Niklas Muennighoff" style="width:80px;height:80px;border-radius:50%;object-fit:cover;float:right;margin:0 0 1rem 1rem;" loading="lazy" onerror="this.style.display='none'" />
-    <p class="one-liner">Stanford CS PhD (Knight-Hennessy Scholar), Contextual AI, AI2</p>
+    <p class="one-liner"><strong>Stanford CS PhD (Knight-Hennessy Scholar, 1st year). ~23,500 citations at age ~25. Created MTEB (6M+ installs, used by OpenAI/Google/Meta). Built s1 &mdash; replicated o1-preview reasoning for &lt;$50 (6.6K GitHub stars). Led OLMoE (first fully open MoE LLM, ICLR 2025). Best Paper ACL 2023, Outstanding Runner-Up NeurIPS 2023, Best Paper ICLR AGI Workshop. Peking University BA (top of class). Research intern at Meta FAIR (Jun 2025&ndash;). German. Speaks 5 languages including Japanese (JLPT N1) and Mandarin.</strong></p>
     <div class="tags">
-      <span class="tag">delta</span>
-      <span class="tag">researchers</span>
+      <span class="tag spike">tier-1: high conviction</span>
+      <span class="tag">test-time-scaling</span>
+      <span class="tag">open-source-llms</span>
+      <span class="tag">embeddings</span>
+      <span class="tag">reasoning</span>
+      <span class="tag">moe-architectures</span>
     </div>
     <div class="links">
+      <a href="https://x.com/Muennighoff">twitter/x</a>
+      <a href="https://github.com/Muennighoff">github (9,118 contributions)</a>
       <a href="https://www.linkedin.com/in/muennighoff/">linkedin</a>
-      <a href="https://x.com/muennighoff">twitter/x</a>
-      <a href="https://muennighoff.github.io/">website</a>
-      <a href="https://scholar.google.com/citations?user=Me0IoRMAAAAJ">scholar</a>
+      <a href="https://scholar.google.com/citations?user=Me0IoRMAAAAJ">google scholar</a>
+      <a href="https://muennighoff.com/">website</a>
+      <a href="https://huggingface.co/Muennighoff">hugging face</a>
     </div>
+  </div>
+
+  <!-- INVESTMENT THESIS -->
+  <div class="spike-box">
+    <div class="label">&#9670; Investment Thesis</div>
+    <p>
+      Niklas Muennighoff is a rare breed: a first-year PhD student who already has ~23,500 citations,
+      has created infrastructure used by every major AI lab (MTEB), and demonstrated he can replicate
+      frontier-lab capabilities (o1-preview) for <strong>&lt;$50 in compute</strong>. His research
+      pattern &mdash; MTEB (evaluation infra), GRIT (unified generation + embedding), OLMoE (efficient
+      open MoE), s1 (test-time reasoning) &mdash; traces a clear trajectory toward
+      <strong>efficient, open, reasoning-capable AI systems</strong>. He is currently interning at
+      Meta AI Research while doing his PhD under Tatsunori Hashimoto at Stanford. At ~25, he has
+      a publication velocity and citation impact that most researchers do not reach in an entire career.
+      Not an imminent founder &mdash; he is early in a 5-year PhD (started Fall 2024) &mdash; but if he
+      leaves early or spins out research, he would be one of the most technically credentialed
+      first-time founders in the AI space. <strong>Build the relationship now; this is a 12&ndash;24
+      month watch for departure signals.</strong>
+    </p>
   </div>
 
   <!-- THE SPIKE -->
-  <div class="spike-box">
-    <div class="label">&#9670; What Makes Them Spiky</div>
+  <section>
+    <h2>The Spike &mdash; With Evidence</h2>
+
+    <h3>1. s1: Replicated o1 Reasoning for &lt;$50</h3>
+    <p>
+      First-authored <strong>s1: Simple test-time scaling</strong> (Jan 2025). Curated just 1,000
+      training examples (s1K), fine-tuned Qwen2.5-32B-Instruct, and introduced <strong>&ldquo;budget
+      forcing&rdquo;</strong> &mdash; appending &ldquo;Wait&rdquo; tokens to force the model to
+      double-check its reasoning. Result: <strong>s1-32B exceeded o1-preview on competition math by
+      up to 27%</strong> (MATH: 92.6% vs. o1-preview baseline; AIME24: 50% &rarr; 57% with
+      budget forcing). Total training cost: ~$20 in H100 rentals, &lt;30 minutes on 16 GPUs.
+      The s1 repo has <strong>6,650 GitHub stars</strong>. Published at EMNLP 2025; won ICLR 2025
+      Reasoning Workshop Best Paper. Co-authors include Li Fei-Fei, Percy Liang, Emmanuel Cand&egrave;s,
+      and Tatsunori Hashimoto.
+    </p>
+
+    <h3>2. MTEB: The Standard for Embedding Evaluation</h3>
+    <p>
+      Created <strong>MTEB (Massive Text Embedding Benchmark)</strong> at Hugging Face in Oct 2022.
+      8 embedding tasks, 58 datasets, 112 languages, 33 models benchmarked. Now expanded to 1,000+
+      tasks with MMTEB follow-up. <strong>6M+ total installs</strong>. Used by OpenAI, Google, and
+      Meta to evaluate their embedding models. 200K monthly active users on the leaderboard. Published
+      at EACL 2023. ~1,700 citations. Muennighoff is first author.
+    </p>
+
+    <h3>3. OLMoE: First Fully Open MoE LLM</h3>
+    <p>
+      Led a team of <strong>23 researchers at AI2</strong> to build <strong>OLMoE-1B-7B</strong> &mdash;
+      7B total parameters, 1.3B active per token, trained on 5 trillion tokens. Outperformed all open
+      models with similar active parameters, surpassing Llama2-13B-Chat and DeepSeekMoE-16B.
+      <strong>Fully open</strong>: weights, training data, code, logs, and 244 intermediate checkpoints.
+      Published at <strong>ICLR 2025</strong>. GitHub: 988 stars.
+    </p>
+
+    <h3>4. GRIT: Unified Generation + Embedding</h3>
+    <p>
+      First-authored <strong>GRIT (Generative Representational Instruction Tuning)</strong> at
+      Contextual AI (Feb 2024). Trained a single LLM to handle both generative and embedding tasks
+      via instructions. GritLM 7B set SOTA on MTEB while outperforming all models up to its size on
+      generative benchmarks. <strong>Sped up RAG by &gt;60%</strong> for long documents by eliminating
+      the need for separate retrieval and generation models. GitHub: 689 stars.
+    </p>
+
+    <h3>5. Additional First-Author Work</h3>
     <ul>
-      <li>23,500+ citations on Google Scholar — extraordinary for a PhD student</li>
-      <li>Knight-Hennessy Scholar at Stanford</li>
-      <li>MTEB: the standard embedding benchmark used by OpenAI, Google, Meta (6M+ installs)</li>
-      <li>s1: showed test-time scaling can beat o1-preview by 27% with just 1K training samples</li>
-      <li>NeurIPS 2023 Best Paper Runner Up (Scaling Data-Constrained Language Models)</li>
-      <li>EMNLP/ICLR 2025 Best Paper Award (s1)</li>
-      <li>Top of class at Peking University</li>
-      <li>First to train LLMs across 1000s of AMD GPUs</li>
-      <li>Previously at Hugging Face</li>
+      <li><strong>Crosslingual Generalization through Multitask Finetuning</strong> (ACL 2023) &mdash;
+        <strong>Best Paper Award</strong>. Released BLOOMZ and mT0 models. ~1,100 citations.</li>
+      <li><strong>Scaling Data-Constrained Language Models</strong> (NeurIPS 2023) &mdash;
+        <strong>Outstanding Main Track Runner-Up</strong>. First to train LLMs across 1000s of AMD GPUs.
+        ~600 citations.</li>
+      <li><strong>SGPT: GPT Sentence Embeddings for Semantic Search</strong> (2022) &mdash;
+        First work (concurrent with OpenAI) to use LLMs for embeddings. All top embedders now use this approach.</li>
+      <li><strong>OctoPack</strong> (2023) &mdash; Code LLMs (OctoCoder, CommitPack) trained on largest
+        dataset of git commits.</li>
     </ul>
-  </div>
+  </section>
 
-  <h2>Research &amp; Key Work</h2>
-  <h3>Problems &amp; Research Areas</h3>
-  <ul><li>Test-time compute scaling for LLM reasoning (s1)</li><li>Text embedding evaluation and benchmarking (MTEB)</li><li>Open-source mixture-of-experts language models (OLMoE)</li><li>Data-constrained scaling laws for pretraining</li><li>Code LLMs (OctoCoder, CommitPack)</li><li>Unified generative + embedding models (GritLM)</li></ul>
-  <h3>Key Work</h3>
-  <ul><li>s1: Simple Test-Time Scaling (EMNLP 2025 Best Paper) — beat o1-preview on math by 27%</li><li>MTEB: Massive Text Embedding Benchmark (EACL 2023) — 6M+ installs, industry standard</li><li>OLMoE: first fully open MoE LLM, 1B active/7B total params</li><li>Scaling Data-Constrained Language Models (NeurIPS 2023 Best Paper Runner Up)</li><li>GritLM: first LLM with SOTA on both generation and embedding (60%+ RAG speedup)</li><li>OctoCoder + CommitPack: code LLMs from largest git commit dataset</li></ul>
+  <!-- GROWTH TRAJECTORY -->
+  <section>
+    <h2>Growth Trajectory</h2>
+    <table style="width:100%; font-size:0.85rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted); width:120px;">~2000</td><td>Born in Munich, Germany. Works as voice actor (8 years) for Pokemon, Game of Thrones, Disney productions</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">~2015</td><td>Moves out at age 15, quits voice acting to pursue new interests</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2016</td><td>Summer at Harvard + finance internship in China (age 16)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2018</td><td>Enters Peking University &ldquo;Future Leaders&rdquo; program (via ESSEC Business School &mdash; highest GPA in program&rsquo;s 45-year history)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2019</td><td>Research intern at JAXA (Japan Aerospace Exploration Agency). Consulting intern at L.E.K. Tokyo</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>2020</strong></td><td><strong>Pivots from business to AI.</strong> Solo entry in Meta Hateful Memes competition &mdash; 2nd place out of 3,300 teams ($100K prize pool). First NeurIPS presentation</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Oct 2021</td><td>Joins Aleph Alpha (German AI startup) as student researcher. Builds LLM training code + SGPT embedding API</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2022</td><td>Graduates top of class from Peking University (BA Business Administration)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Jun 2022</strong></td><td><strong>Joins Hugging Face as Research Engineer.</strong> Works on BigScience/BLOOM (176B params), StarCoder, MTEB</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Oct 2022</strong></td><td><strong>MTEB released</strong> &mdash; becomes the standard embedding benchmark</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Jul 2023</strong></td><td><strong>ACL 2023 Best Paper</strong> (Crosslingual Generalization). BLOOMZ/mT0 models released</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Sep 2023</td><td>Joins AI2 + Contextual AI as researcher (concurrent with PhD prep)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Dec 2023</strong></td><td><strong>NeurIPS 2023 Outstanding Main Track Runner-Up</strong> (Scaling Data-Constrained LMs)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Feb 2024</strong></td><td><strong>GRIT released at Contextual AI.</strong> First LLM unifying generation + embedding. SOTA on MTEB + generative benchmarks</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Sep 2024</strong></td><td><strong>Starts Stanford PhD</strong> (Knight-Hennessy Scholar + Stanford Graduate Fellowship). <strong>OLMoE released</strong> (ICLR 2025)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Jan 2025</strong></td><td><strong>s1 released.</strong> Exceeds o1-preview by 27% on competition math. 6,650 GitHub stars. Massive media coverage (TechCrunch, TWIML podcast)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Feb 2025</td><td>s1.1 released (better reasoning traces via R1 distillation). BLISS seminar at Berkeley. ICLR AGI Workshop Best Paper</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Mar 2025</td><td>Talks at Microsoft GenAI (invited), TWIML podcast. Humanline paper (ICLR 2026)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Jun 2025</strong></td><td><strong>Joins Meta AI Research</strong> (internship, concurrent with PhD)</td></tr>
+    </table>
+    <p style="margin-top:1rem; font-family:var(--mono); font-size:0.75rem; color:var(--accent);">
+      PACE: 4 best paper awards in 2 years (ACL &rsquo;23, NeurIPS &rsquo;23, ICLR AGI &rsquo;25, EMNLP &rsquo;25).
+      ~23,500 citations by age ~25. 3 major open-source infra projects (MTEB, OLMoE, s1).<br>
+      ACCELERATION: Clear. From business student (2020) to top-tier ML researcher with field-defining
+      benchmarks in &lt;4 years. Each project bigger than the last.<br>
+      PEER COMPARISON: Citation count at age ~25 exceeds most tenured professors. Publication velocity
+      comparable to Tri Dao or Albert Gu at equivalent career stage.
+    </p>
+  </section>
 
+  <!-- WHAT HE'D BUILD -->
+  <section>
+    <h2>What He&rsquo;d Build</h2>
+    <h3>The Efficient Reasoning Thesis</h3>
+    <p>
+      Muennighoff&rsquo;s research arc points toward a specific thesis: <strong>reasoning-capable
+      AI systems that are radically more efficient than current approaches</strong>. His work threads
+      together: (1) efficient MoE architectures (OLMoE), (2) test-time compute scaling (s1/budget
+      forcing), (3) unified model architectures (GRIT), and (4) evaluation infrastructure (MTEB).
+      A company built on this would likely be an <strong>efficient inference / reasoning infrastructure</strong>
+      play &mdash; making frontier-level reasoning accessible at 100x lower cost.
+    </p>
 
-  <h2>Current Work</h2>
-  <p>Stanford CS PhD researching LLM reasoning and scaling; collaborating with Contextual AI and AI2</p>
+    <h3>Market</h3>
+    <ul>
+      <li>AI infrastructure: $130B (2025) &rarr; $500B+ (2030), ~30% CAGR</li>
+      <li>Reasoning/inference optimization is the bottleneck for every AI deployment</li>
+      <li>s1 demonstrated that reasoning can be achieved with minimal data and compute &mdash; the thesis for a lean infra company</li>
+    </ul>
 
-  <div class="spike-box" style="margin-top: 1.5rem;">
-    <div class="label">&#9670; Alpha Insight</div>
-    <p>Niklas is one of the most prolific and impactful PhD students in AI globally. His s1 paper demonstrated that simple test-time scaling with just 1K samples can beat OpenAI&#x27;s o1 — fundamentally challenging the idea that reasoning requires massive training investment. MTEB becoming the industry standard gives him outsized influence on how the entire embedding ecosystem is evaluated. He is a strong candidate to start a company or lead a major lab.</p>
-  </div>
+    <h3>Competitive Landscape</h3>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Company</td><td>Valuation</td><td>How Niklas differs</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Together AI</td><td>$3.3B</td><td>Open-source inference infra. Niklas has deeper model architecture research (MoE, GRIT)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Contextual AI</td><td>$1B+</td><td>RAG-focused. Niklas built GRIT there, knows the stack. Could build something leaner</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Fireworks AI</td><td>$2.5B</td><td>Inference optimization. Niklas&rsquo;s MoE + test-time scaling expertise is complementary</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Nous Research</td><td>Private</td><td>Open-source model training. Similar ethos but less infrastructure focus</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Cohere</td><td>$5.5B</td><td>Enterprise embedding/generation. Niklas created the benchmark they optimize against (MTEB)</td></tr>
+    </table>
+  </section>
+
+  <!-- PRIMARY SOURCES -->
+  <section>
+    <h2>In His Own Words</h2>
+    <ul>
+      <li>&ldquo;I originally did my bachelor&rsquo;s at Peking University and I was focused on business and finance but then midway through I realized that artificial intelligence was going to be probably the most important paradigm of our time so I decided to completely switch my focus and do AI research instead.&rdquo; &mdash; TWIML Podcast, Mar 2025</li>
+      <li>&ldquo;For S1 we focused on what is the minimal approach, the simplest way to get those two exciting things about o1 which is the strong reasoning performance and the test-time scaling &mdash; what is the minimal recipe to get that.&rdquo; &mdash; TWIML Podcast, Mar 2025</li>
+      <li>&ldquo;I wrote the paper poorly, but all top embedders now use LLMs.&rdquo; &mdash; on SGPT, his website. Unusual self-awareness for a researcher; he cares about impact over credit</li>
+      <li>&ldquo;RAG 2.0 is about making retrieval-augmented generation more end-to-end &amp; learned, e.g. Self-RAG, RA-DIT, GRIT &mdash; High-impact research direction imo!&rdquo; &mdash; Twitter/X</li>
+      <li>&ldquo;I enjoy talks most when they&rsquo;re not a monologue but rather a back-and-forth discussion. The latter often leads to new ideas that go beyond what is written in the paper.&rdquo; &mdash; LinkedIn, Mar 2025</li>
+      <li>&ldquo;Niklas aspires to contribute to developing artificial general intelligence that can one day help cure human diseases.&rdquo; &mdash; Knight-Hennessy bio</li>
+      <li>&ldquo;I was fascinated by the outsourcing of human cognitive work to machines!&rdquo; &mdash; PKU profile, on discovering AI during EY Tokyo internship</li>
+    </ul>
+  </section>
+
+  <!-- NETWORK MAP -->
+  <section>
+    <h2>Network Map</h2>
+    <p class="small muted">Muennighoff operates at the intersection of Stanford, AI2, Hugging Face, Contextual AI, and Meta &mdash; touching every major open-source AI hub.</p>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Name</td><td>Role</td><td>Relationship</td><td>Signal</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Tatsunori Hashimoto</strong></td><td>Stanford CS Professor</td><td>PhD advisor; co-author on s1</td><td>HIGH. One of the top alignment/evaluation researchers. Direct pipeline to Stanford AI talent</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Percy Liang</strong></td><td>Stanford CS Professor, CRFM Director</td><td>Co-author on s1</td><td>HIGH. Leads Stanford CRFM; co-founded Together AI</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Li Fei-Fei</strong></td><td>Stanford CS Professor</td><td>Co-author on s1</td><td>HIGH. Founded World Labs ($4B+). Advisor-level relationship</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Emmanuel Cand&egrave;s</strong></td><td>Stanford Stats Professor</td><td>Co-author on s1</td><td>Fields Medal-caliber statistician. Unusual for an LLM paper</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Hannaneh Hajishirzi</strong></td><td>UW Professor, AI2</td><td>Co-author on OLMoE and s1</td><td>HIGH. Leads AI2 LM efforts (OLMo family). Key collaborator</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Luke Zettlemoyer</strong></td><td>UW Professor, Meta FAIR</td><td>Co-author on s1</td><td>Bridges academia and Meta. Potential Meta connection</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Douwe Kiela</strong></td><td>CEO, Contextual AI</td><td>Co-author on OLMoE and GRIT; former collaborator</td><td>HIGH. If Niklas leaves academia, Douwe&rsquo;s network is a fundraising shortcut</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Nils Reimers</strong></td><td>Cohere (formerly HF)</td><td>Co-author on MTEB</td><td>Sentence-transformers creator. Embedding community hub</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Ross Girshick</strong></td><td>Meta FAIR</td><td>Listed as coauthor on OpenReview</td><td>One of the most cited CV researchers. Indicates Meta FAIR connection is deep</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Kawin Ethayarajh</strong></td><td>Stanford PhD (Hashimoto lab)</td><td>Co-author on KTO (ICML 2024 Spotlight) and Humanline (ICLR 2026)</td><td>MEDIUM. Labmate and close collaborator. Potential co-founder candidate</td></tr>
+    </table>
+    <p style="margin-top:0.5rem; font-size:0.8rem; color:var(--fg-muted);">
+      <strong>Recursive discovery:</strong> Zitong Yang (Stanford, co-first-author on s1), Weijia Shi (UW, co-author on s1 and OLMoE),
+      Xiang Lisa Li (Stanford, co-author on s1) are all worth tracking as potential collaborators on any Muennighoff spinout.
+    </p>
+  </section>
+
+  <!-- TIMELINE & SIGNALS -->
+  <section>
+    <h2>Timeline &amp; Signals</h2>
+    <ul>
+      <li><strong>Status:</strong> 1st-year PhD student at Stanford (started Fall 2024). Currently interning at Meta AI Research (Jun 2025&ndash;). <strong>No imminent departure signals</strong></li>
+      <li><strong>PhD timeline:</strong> Admitted for 2024&ndash;2029. Knight-Hennessy + Stanford Graduate Fellowship = fully funded. No financial pressure to leave</li>
+      <li><strong>&ldquo;simplescaling&rdquo; GitHub org:</strong> Created the &ldquo;simplescaling&rdquo; GitHub org for s1. Could be an embryonic brand for a company, or just a research project name. Worth monitoring</li>
+      <li><strong>Meta internship:</strong> Jun 2025+ at Meta AI Research. If he stays long-term at Meta, startup likelihood decreases. But: he has confirmed @meta.com and @nvidia.com emails (OpenReview) &mdash; he has interned broadly without staying anywhere</li>
+      <li><strong>When to watch:</strong> Year 2&ndash;3 of PhD (2026&ndash;2027). If he publishes another s1-level paper and starts tweeting about &ldquo;building&rdquo; or changes his bio. The Knight-Hennessy network explicitly cultivates entrepreneurs</li>
+      <li><strong>Likely investors if he raises:</strong> Sequoia (Stanford AI pipeline), a16z (open-source AI thesis), Thrive Capital, or Contextual AI&rsquo;s investor base (Douwe Kiela connection)</li>
+    </ul>
+  </section>
+
+  <!-- RISKS -->
+  <section>
+    <h2>Risks</h2>
+    <ul>
+      <li><strong>Deep in academia.</strong> Started a 5-year PhD in Fall 2024 with full funding (Knight-Hennessy + SGF). His stated aspiration is AGI for curing diseases, not building a company. May become a professor, not a founder</li>
+      <li><strong>No founder signals.</strong> Unlike stealth-mode archetypes, Muennighoff has zero departure signals. He is publishing, interning, and building academic credentials</li>
+      <li><strong>Research &ne; product.</strong> s1 is an extraordinary research contribution, but &ldquo;budget forcing&rdquo; is a technique, not a product. MTEB is infrastructure but not a business. Unclear if he has product instinct</li>
+      <li><strong>Meta may absorb him.</strong> If Meta offers him an L6/L7 research scientist role post-PhD, the compensation + compute access could outweigh startup ambitions</li>
+      <li><strong>Crowded reasoning space.</strong> OpenAI (o1/o3), DeepSeek (R1), Google (Gemini), and many others are investing billions in reasoning. A lean startup may struggle to stay ahead</li>
+      <li><strong>Age and management experience.</strong> ~25. Has led 23 researchers (OLMoE) which is impressive, but has not built a product, hired a team, or managed revenue</li>
+    </ul>
+  </section>
+
+  <!-- BACKGROUND -->
+  <section>
+    <h2>Background</h2>
+    <p>
+      Born in Munich, Germany (~2000). Worked as a voice actor for 8 years as a child (Pokemon, Game of Thrones, Disney).
+      Moved out at 15 to pursue education. ESSEC Business School (highest GPA in program&rsquo;s 45-year history) &rarr;
+      Peking University &ldquo;Future Leaders&rdquo; BA in Business Administration (graduated top of class, 2022).
+      Pivoted to AI in 2020 after an EY Tokyo internship sparked interest. Hugging Face Research Engineer (2022&ndash;2023),
+      AI2 + Contextual AI researcher (2023&ndash;2024). Stanford CS PhD (Fall 2024&ndash;), Knight-Hennessy Scholar +
+      Stanford Graduate Fellowship. Speaks English, German, Japanese (JLPT N1), Mandarin, and French.
+    </p>
+  </section>
+
+  <!-- NOTES -->
+  <section>
+    <h2>Notes</h2>
+    <ul>
+      <li class="small">Full name: Niklas Muennighoff. German national. Not Indian/Indian-origin</li>
+      <li class="small">~23,500 Google Scholar citations as of early 2026. Top papers: BLOOM (~2,500), BIG-bench (~2,500), StarCoder (~1,900), MTEB (~1,700)</li>
+      <li class="small">s1 GitHub repo: 6,650 stars, 765 forks. simplescaling/s1 org on GitHub</li>
+      <li class="small">MTEB: 6M+ total installs. 200K monthly active users on leaderboard. Expanded to MMTEB (multilingual), MIEB (image), MAEB (audio)</li>
+      <li class="small">OLMoE: 988 GitHub stars. Published at ICLR 2025. 244 intermediate checkpoints released</li>
+      <li class="small">GRIT/GritLM: 689 GitHub stars. Contextual AI. Speeds up RAG by &gt;60%</li>
+      <li class="small">KTO (Kahneman-Tversky Optimization) paper with Kawin Ethayarajh: ICML 2024 Spotlight. Prospect-theoretic model alignment</li>
+      <li class="small">OLMo (not OLMoE): contributor to AI2&rsquo;s OLMo project, which won ACL 2024 Best Theme Paper Award</li>
+      <li class="small">OpenHands contributor (open-source AI software developers platform, ICLR 2025)</li>
+      <li class="small">Humanline paper at ICLR 2026 (with Kawin Ethayarajh): online alignment as perceptual loss, prospect theory</li>
+      <li class="small">OpenReview shows confirmed emails: @stanford.edu, @meta.com, @nvidia.com, @allenai.org, @contextual.ai, @stu.pku.edu.cn</li>
+      <li class="small">9,118 GitHub contributions total (Muennighoff account). HuggingFace: 174 followers, 493 models/datasets/spaces</li>
+      <li class="small">Twitter: @Muennighoff. LinkedIn: ~2,600 followers</li>
+      <li class="small">Vilio (2020): solo entry, 2nd/3,300 teams in Meta Hateful Memes Challenge. First serious ML project</li>
+      <li class="small">Unusual background trajectory: voice actor &rarr; business school &rarr; AI. Non-standard path suggests intellectual curiosity and willingness to pivot hard</li>
+      <li class="small">Health-conscious (swimming, beach volleyball, tennis). Not the typical PhD grinder profile &mdash; suggests sustainability</li>
+    </ul>
+  </section>
 
   <footer>
-    researched: 2026-03 &middot; delta institute cohort 1 &middot; <a href="../index.html">back to index</a>
+    researched: 2026-03-29 &middot; 6-agent architecture (technical, social, market, background, trajectory, recursive) &middot; <a href="../index.html">back to index</a>
   </footer>
 
 </body>
