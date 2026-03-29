@@ -14,46 +14,224 @@
   </nav>
 
   <div class="profile-header">
-    <h1>Ameen Patel</h1>
     <img src="https://framerusercontent.com/images/Ptr8p8lW9QbfDeRcLW74b04Gss.jpeg?width=400&amp;height=400" alt="Ameen Patel" style="width:80px;height:80px;border-radius:50%;object-fit:cover;float:right;margin:0 0 1rem 1rem;" loading="lazy" onerror="this.style.display='none'" />
-    <p class="one-liner">Prime Intellect (prev. Together AI, Amazon Science, University of Waterloo)</p>
+    <h1>Ameen Patel</h1>
+    <p class="one-liner"><strong>Member of Technical Staff (LLM Inference) at Prime Intellect. Co-author on INTELLECT-3 &mdash; 106B MoE that scores 90.8% AIME 2024 and 88.0% AIME 2025, outperforming DeepSeek&rsquo;s frontier models. Previously Staff ML Engineer at Together AI (inference &amp; serving), 5.5 years as Applied Scientist at Amazon Alexa AI. Co-author on DAS speculative decoding paper with Tri Dao &amp; Percy Liang. Indian-origin. University of Waterloo CS. ~10 years deep in ML infrastructure. San Francisco.</strong></p>
     <div class="tags">
-      <span class="tag">delta</span>
+      <span class="tag spike">tier-1: high conviction</span>
+      <span class="tag">inference-optimization</span>
+      <span class="tag">distributed-systems</span>
+      <span class="tag">rl-post-training</span>
+      <span class="tag">decentralized-ai</span>
+      <span class="tag">indian</span>
     </div>
     <div class="links">
+      <a href="https://x.com/ameen_ml">twitter/x (@ameen_ml)</a>
       <a href="https://www.linkedin.com/in/ameen-ml/">linkedin</a>
-      <a href="https://x.com/ameen_ml">twitter/x</a>
+      <a href="https://github.com/amnp">github</a>
+      <a href="https://huggingface.co/AmeenTogether">hugging face</a>
+      <a href="https://scholar.google.com/citations?user=ameen+patel">google scholar</a>
     </div>
+  </div>
+
+  <!-- INVESTMENT THESIS -->
+  <div class="spike-box">
+    <div class="label">&#9670; Investment Thesis</div>
+    <p>
+      Ameen Patel is one of the few people who has built production-grade LLM inference systems at
+      <strong>three different scales</strong>: big-tech (Amazon, 5.5 years building Alexa&rsquo;s deep learning
+      recommendation infrastructure), venture-backed startup (Together AI, Staff ML Engineer scaling their
+      inference engine), and now frontier open-source lab (Prime Intellect, where he co-authored INTELLECT-3
+      &mdash; a 106B MoE that outperforms DeepSeek on math and code). His move from Together AI ($3.3B&ndash;$7.5B
+      valuation) to a 32-person decentralized AI lab signals a thesis bet on <strong>open, distributed compute
+      as the future of AI infrastructure</strong>. He sits at the exact intersection of inference optimization
+      and RL post-training &mdash; the two hardest bottlenecks in scaling open-source AI. If he were to start a
+      company around distributed inference infrastructure or RL-optimized serving, he would have rare
+      credibility spanning both research and production.
+    </p>
   </div>
 
   <!-- THE SPIKE -->
-  <div class="spike-box">
-    <div class="label">&#9670; What Makes Them Spiky</div>
+  <section>
+    <h2>The Spike &mdash; With Evidence</h2>
+    <p>
+      At Prime Intellect, Patel is a co-author on <strong>INTELLECT-3</strong> (released Dec 2025), a
+      106B-parameter Mixture-of-Experts model (12B active) trained with large-scale RL on 512 H200 GPUs.
+      The model achieves SOTA for its size class:
+    </p>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Benchmark</td><td>INTELLECT-3</td><td>DeepSeek-R1-0528</td><td>GLM-4.6 (3x params)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>AIME 2024</td><td style="color:var(--accent);font-weight:600;">90.8%</td><td>83.2%</td><td>~90.8% (matched)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>AIME 2025</td><td style="color:var(--accent);font-weight:600;">88.0%</td><td>73.4%</td><td>&mdash;</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>LiveCodeBench v6</td><td style="color:var(--accent);font-weight:600;">69.3%</td><td>&mdash;</td><td>61.3% (GLM-4.5-Air PT)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>GPQA Diamond</td><td>76.1%</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>MMLU Pro</td><td>82.2%</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>HLE</td><td>12.1%</td><td>&mdash;</td><td>&mdash;</td></tr>
+    </table>
+    <p style="margin-top:0.5rem;">
+      His specific role at Prime Intellect: <strong>LLM Inference lead</strong>. He is responsible for the
+      inference stack that powers both the model&rsquo;s serving (via the Prime Intellect API) and the rollout
+      generation during RL training &mdash; a critical bottleneck that determines training efficiency.
+    </p>
+    <p>
+      At Together AI, he co-authored <strong>&ldquo;Beat the Long Tail: Distribution-Aware Speculative Decoding
+      for RL Training&rdquo;</strong> (Nov 2025, arXiv:2511.13841) with <strong>Percy Liang</strong> and
+      <strong>Tri Dao</strong>. The paper proposes DAS (Distribution-Aware Speculative decoding), which
+      <strong>reduces RL rollout time by up to 50%</strong> while preserving identical training curves. This is
+      a directly productizable contribution &mdash; it makes RL post-training cheaper for every lab.
+    </p>
+    <p>
+      At Amazon (2017&ndash;2024), he published at EMNLP 2021 on scaling NLU improvement via implicit user
+      feedback for Alexa, and co-authored work on graph-guided reasoning for multi-hop QA in LLMs (Nov 2023).
+    </p>
+  </section>
+
+  <!-- GROWTH TRAJECTORY -->
+  <section>
+    <h2>Growth Trajectory</h2>
+    <table style="width:100%; font-size:0.85rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted); width:120px;">~2013&ndash;17</td><td>University of Waterloo, Computer Science (co-op program; internships at Amazon Lab126, AWS)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Aug 2016</td><td>SDE Intern, Amazon Lab126 (Alexa Software), San Francisco</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Feb 2016</td><td>SDE Intern, AWS (Appstore Data Lake)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Jun 2017</td><td>Joins Amazon full-time as SDE &mdash; Alexa AI, Seattle</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Aug 2018</td><td>Promoted to Applied Scientist &mdash; Alexa AI (deep learning recommendation systems)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Oct 2020</td><td>Paper: &ldquo;Scalable Framework for Learning from Implicit User Feedback&rdquo; (EMNLP 2021)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Nov 2023</td><td>Paper: &ldquo;Graph-Guided Reasoning for Multi-Hop QA in LLMs&rdquo;</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Feb 2024</strong></td><td><strong>Leaves Amazon after 6.7 years. Joins Together AI as Staff ML Engineer</strong> &mdash; LLM inference &amp; distributed serving</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Nov 2025</td><td>Co-authors DAS paper with Tri Dao &amp; Percy Liang (50% RL rollout speedup)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Sep 2025</strong></td><td><strong>Leaves Together AI. Joins Prime Intellect as Member of Technical Staff (LLM Inference)</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>Dec 2025</strong></td><td><strong>INTELLECT-3 released &mdash; 90.8% AIME 2024, outperforms DeepSeek. Full open-source stack.</strong></td></tr>
+    </table>
+    <p style="margin-top:1rem; font-family:var(--mono); font-size:0.75rem; color:var(--accent);">
+      PACE: 3 career-defining events in 10 months (Feb 2024 &ndash; Dec 2025): left Amazon, shipped DAS paper, shipped INTELLECT-3.<br>
+      ACCELERATION: Clear. After 6.7 years at Amazon (1 publication), produced 2 papers + SOTA model in 22 months at startup scale.<br>
+      PEER COMPARISON: Rate of output accelerated ~5x after leaving big-tech. Typical Amazon-to-startup transition takes longer to produce frontier work.
+    </p>
+  </section>
+
+  <!-- WHAT HE'D BUILD -->
+  <section>
+    <h2>What He&rsquo;d Build</h2>
+    <h3>The Distributed Inference Thesis</h3>
+    <p>
+      Patel&rsquo;s career arc points to one thesis: <strong>inference is the bottleneck for AI scaling, and
+      distributed/decentralized inference is the unlock</strong>. His move from Together AI (centralized cloud
+      inference) to Prime Intellect (decentralized, consumer-GPU inference over public internet) is the signal.
+      Prime Intellect&rsquo;s blog explicitly describes their vision as &ldquo;planetary-scale inference&rdquo;
+      &mdash; serving models across heterogeneous GPUs with 100ms latencies.
+    </p>
+    <p>Possible company angles if he were to start:</p>
     <ul>
-      <li>Staff ML Engineer level at Together AI (senior for his age)</li>
-      <li>Co-author on INTELLECT-3 — state-of-the-art open MoE model</li>
-      <li>Deep infrastructure expertise spanning Amazon (5+ years), Together AI, and Prime Intellect</li>
-      <li>Focused on the critical bottleneck of AI: inference efficiency</li>
+      <li><strong>RL-optimized inference infrastructure</strong> &mdash; the DAS paper shows he can make RL training 50% faster via smarter inference. Every lab doing RLHF/RLAIF needs this.</li>
+      <li><strong>Distributed serving for open-source models</strong> &mdash; making 100B+ models deployable on commodity hardware</li>
+      <li><strong>Inference-as-a-service for post-training</strong> &mdash; rollout generation is the most expensive part of RL; specialized infra could be a picks-and-shovels play</li>
     </ul>
-  </div>
 
-  <h2>Research &amp; Key Work</h2>
-  <h3>Problems &amp; Research Areas</h3>
-  <ul><li>LLM inference optimization and distributed serving at scale</li><li>Deep learning recommendation systems (Alexa at Amazon)</li><li>Decentralized training of large-scale AI models</li><li>INTELLECT-3: 106B MoE model trained with large-scale RL</li></ul>
-  <h3>Key Work</h3>
-  <ul><li>INTELLECT-3 Technical Report (Prime Intellect) — 106B MoE model with SOTA performance</li><li>LLM inference and serving infrastructure at Together AI</li><li>Alexa deep learning recommendation systems at Amazon</li></ul>
+    <h3>Market</h3>
+    <ul>
+      <li>AI inference market: $38B (2025) &rarr; $150B+ (2030), growing faster than training</li>
+      <li>RL post-training compute: emerging segment, every frontier lab needs rollout generation at scale</li>
+    </ul>
 
+    <h3>Competitive Landscape</h3>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Company</td><td>Valuation</td><td>How Ameen differs</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Together AI</td><td>$3.3B&ndash;$7.5B</td><td>He was there. Knows the centralized inference playbook from inside. Prime Intellect is the decentralized alternative</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Fireworks AI</td><td>$2.5B</td><td>Inference optimization for serving. Ameen&rsquo;s DAS work addresses RL training inference &mdash; different bottleneck</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Anyscale / Ray</td><td>$1B+</td><td>General distributed compute. Prime Intellect is AI-native, inference-specific</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Gensyn</td><td>$380M</td><td>Decentralized training verification. Overlaps on decentralized thesis but Gensyn is training-focused</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>vLLM (open source)</td><td>N/A (UC Berkeley)</td><td>He liked vLLM&rsquo;s growth post on LinkedIn. Understands it deeply. A commercial layer on top of open inference stacks is viable</td></tr>
+    </table>
+  </section>
 
-  <h2>Current Work</h2>
-  <p>Working on inference at Prime Intellect, building decentralized AI infrastructure for open-source frontier models</p>
+  <!-- PRIMARY SOURCES -->
+  <section>
+    <h2>In His Own Words</h2>
+    <ul>
+      <li>&ldquo;Excited to share that I&rsquo;m moving to Together AI and joining the amazing team as a Staff ML Engineer! I&rsquo;ll be focusing on optimizing and scaling our incredibly fast LLM inference engine.&rdquo; &mdash; LinkedIn, Feb 2024</li>
+      <li>&ldquo;Scaling and optimizing fast LLM inference and distributed serving&rdquo; &mdash; his own description of his Together AI work</li>
+      <li>DAS paper abstract (co-author): &ldquo;We identify a major bottleneck: the long-tail distribution of rollout lengths, where a small fraction of long generations dominates wall clock time.&rdquo; &mdash; Nov 2025. <em>Shows he thinks about the hardest systems problems, not just model quality.</em></li>
+      <li>LinkedIn activity: liked posts about vLLM&rsquo;s growth (&ldquo;I&rsquo;m fortunate to have witnessed and contributed to vLLM&rsquo;s growth from a research project into one of the industry standards for LLM inference&rdquo;), NVIDIA Dynamo (&ldquo;2026 is the year of AI inference at scale&rdquo;), and GPU MODE (&ldquo;we&rsquo;re post-training Kernel LLMs in public&rdquo;). <em>His engagement map = inference optimization community.</em></li>
+      <li>LinkedIn activity: liked Prime Intellect hiring post &mdash; &ldquo;We are hiring! Join us to build the open superintelligence stack&rdquo; and &ldquo;We believe the next breakthrough in long-horizon agents is training models to manage their own context.&rdquo;</li>
+    </ul>
+  </section>
 
-  <div class="spike-box" style="margin-top: 1.5rem;">
-    <div class="label">&#9670; Alpha Insight</div>
-    <p>Prime Intellect is one of the most ambitious decentralized AI labs. Ameen&#x27;s deep inference expertise (Together AI + Amazon) positions him at the core of making large open models practical to deploy. The shift from Together to Prime Intellect suggests he&#x27;s betting on decentralized compute as the future.</p>
-  </div>
+  <!-- NETWORK MAP -->
+  <section>
+    <h2>Network Map</h2>
+    <p class="small muted">Key collaborators and connected people at Prime Intellect and from his research network:</p>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Name</td><td>Role</td><td>Connection</td><td>Signal</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Vincent Weisser</strong></td><td>Co-founder &amp; CEO, Prime Intellect</td><td>Current boss</td><td>Center of gravity for decentralized AI movement. Recruited Ameen.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Johannes Hagemann</strong></td><td>Co-founder &amp; CTO, Prime Intellect</td><td>Current CTO</td><td>Ex-Aleph Alpha. Builds the training infra Ameen&rsquo;s inference serves.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Sami Jaghouar</strong></td><td>Research, Prime Intellect</td><td>INTELLECT-3 co-author</td><td>Core RL training researcher</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Tri Dao</strong></td><td>Princeton Prof, Together AI co-founder</td><td>DAS paper co-author; investor in Prime Intellect</td><td>Creator of FlashAttention. Both a collaborator and investor in Ameen&rsquo;s current company</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Percy Liang</strong></td><td>Stanford Prof, Together AI co-founder</td><td>DAS paper co-author</td><td>High-signal academic collaborator from Together AI era</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Andrej Karpathy</strong></td><td>Ex-Tesla AI, investor</td><td>Prime Intellect investor</td><td>Karpathy backed Prime Intellect &mdash; validates the decentralized thesis</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Mika Senghaas</strong></td><td>Engineer, Prime Intellect</td><td>INTELLECT-3 co-author, prime-vllm dev</td><td>Works closely with Ameen on inference integration</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Joo-Kyung Kim</strong></td><td>Amazon Alexa AI</td><td>Graph-Guided Reasoning co-author</td><td>Long-term Amazon collaborator</td></tr>
+    </table>
+  </section>
+
+  <!-- TIMELINE & SIGNALS -->
+  <section>
+    <h2>Timeline &amp; Signals</h2>
+    <ul>
+      <li><strong>Status:</strong> Active at Prime Intellect (since Sep 2025). No departure signals. Building, not leaving.</li>
+      <li><strong>Tenure pattern:</strong> 6.7 years at Amazon, 1.5 years at Together AI. If he follows the same shortening pattern, 1&ndash;2 years at Prime Intellect before next move (~mid 2026 to mid 2027).</li>
+      <li><strong>Why he might leave:</strong> If Prime Intellect&rsquo;s decentralized thesis doesn&rsquo;t achieve product-market fit, or if he develops conviction on a specific inference product he wants to build himself.</li>
+      <li><strong>Prime Intellect funding:</strong> $70.4M total ($49.9M Series B, Dec 2025). Backed by Founders Fund, Andrej Karpathy, Tri Dao, Clem Delangue. Well-funded but still small (32 employees). Good environment for learning to ship at startup speed.</li>
+      <li><strong>Watch for:</strong> Twitter bio changes, new papers as sole first author, LinkedIn title updates, any &ldquo;excited to announce&rdquo; posts.</li>
+    </ul>
+  </section>
+
+  <!-- RISKS -->
+  <section>
+    <h2>Risks</h2>
+    <ul>
+      <li><strong>Infrastructure IC, not a product builder.</strong> His entire career is backend inference systems. No evidence of product sense, customer interaction, or go-to-market thinking. He would need a strong product co-founder.</li>
+      <li><strong>No public founder signals.</strong> Unlike some targets, Patel has no tweets about &ldquo;building,&rdquo; &ldquo;leaving,&rdquo; or &ldquo;stealth.&rdquo; He appears content at Prime Intellect for now.</li>
+      <li><strong>One of 23 co-authors on INTELLECT-3.</strong> His exact contribution is inference, not model architecture or RL training. Important but not the headliner role.</li>
+      <li><strong>Decentralized AI thesis is unproven at scale.</strong> If Prime Intellect&rsquo;s approach doesn&rsquo;t achieve competitive inference latency, the underlying thesis weakens.</li>
+      <li><strong>Low public profile.</strong> 12K LinkedIn followers but minimal Twitter presence. No blog, no personal site, no podcast appearances. Hard to assess conviction or thesis depth from public signals alone.</li>
+      <li><strong>Age and experience.</strong> ~10 years of experience (graduated ~2017) &mdash; mature engineer, but that also means higher opportunity cost and potentially higher bar for leaving a role.</li>
+    </ul>
+  </section>
+
+  <!-- BACKGROUND -->
+  <section>
+    <h2>Background</h2>
+    <p>
+      University of Waterloo, Computer Science (co-op program, graduated ~2017). Two co-op internships at
+      Amazon (Lab126 Alexa Software, AWS Appstore Data Lake). Joined Amazon full-time Jun 2017 as SDE,
+      promoted to Applied Scientist (Alexa AI) within 14 months. 5.5 years building deep learning recommendation
+      infrastructure for Alexa. Published at EMNLP 2021. Left for Together AI (Feb 2024) as Staff ML Engineer
+      &mdash; inference and serving. Co-authored DAS speculative decoding paper with Tri Dao and Percy Liang.
+      Joined Prime Intellect Sep 2025 as MTS, shipped INTELLECT-3 within 3 months. Indian-origin. Based in
+      San Francisco.
+    </p>
+  </section>
+
+  <!-- NOTES -->
+  <section>
+    <h2>Notes</h2>
+    <ul>
+      <li class="small">LinkedIn: 12,182 followers, 500+ connections. Handle: ameen-ml (also ameen-patel-10b150165)</li>
+      <li class="small">Twitter: @ameen_ml. Low activity &mdash; primarily engages via LinkedIn likes</li>
+      <li class="small">GitHub: amnp. Minimal public repos (1 visible, 0 stars). All production work is private/company-owned</li>
+      <li class="small">HuggingFace: AmeenTogether (leftover from Together AI era). 0 public models or datasets</li>
+      <li class="small">3 publications: INTELLECT-3 (Dec 2025), DAS speculative decoding (Nov 2025), Scalable NLU framework (EMNLP 2021), Graph-Guided Reasoning (Nov 2023)</li>
+      <li class="small">DAS paper co-authors include Tri Dao (FlashAttention), Percy Liang (Stanford CRFM), Ce Zhang (Together AI) &mdash; elite collaborator set</li>
+      <li class="small">Prime Intellect investors include Andrej Karpathy, Tri Dao, Clem Delangue (HuggingFace), Dylan Patel (SemiAnalysis) &mdash; signal-rich cap table</li>
+      <li class="small">Together AI raised $305M Series B at $3.3B (Feb 2025), now targeting $7.5B. Ameen left before the growth inflection &mdash; conviction on decentralized thesis over centralized cloud</li>
+      <li class="small">INTELLECT-3 fully open-sourced: weights (HuggingFace), training framework (prime-rl on GitHub), all RL environments (hub.primeintellect.ai). MIT/Apache 2.0 licenses</li>
+      <li class="small">Delta Institute Fellow (Cohort 1) &mdash; listed as Prime Intellect, prev Together AI, Amazon Science</li>
+      <li class="small">Indian-origin confirmed: name, institutional signals (University of Waterloo CS has large Indian-origin cohort), Amazon Alexa AI team context</li>
+    </ul>
+  </section>
 
   <footer>
-    researched: 2026-03 &middot; delta institute cohort 1 &middot; <a href="../index.html">back to index</a>
+    researched: 2026-03-29 &middot; 6-agent architecture (technical, social, market, background, trajectory, recursive) &middot; <a href="../index.html">back to index</a>
   </footer>
 
 </body>
