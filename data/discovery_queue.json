@@ -1,6 +1,7 @@
 {
   "version": 1,
   "last_updated": "2026-03-30",
+  "last_triaged": "2026-03-30",
   "total": 25,
   "people": [
     {
@@ -71,7 +72,8 @@
       "indian_origin": true,
       "departure_signal": false,
       "current_company": "xAI",
-      "status": "pending"
+      "status": "researched",
+      "triaged_date": "2026-03-30"
     },
     {
       "name": "Himanshu Gaurav Singh",
@@ -81,7 +83,8 @@
       "indian_origin": true,
       "departure_signal": false,
       "current_company": "Berkeley PhD",
-      "status": "pending"
+      "status": "researched",
+      "triaged_date": "2026-03-30"
     },
     {
       "name": "Anastasios Angelopoulos",
@@ -121,7 +124,8 @@
       "indian_origin": true,
       "departure_signal": false,
       "current_company": "CMU PhD",
-      "status": "pending"
+      "status": "researched",
+      "triaged_date": "2026-03-30"
     },
     {
       "name": "Keller Jordan",
@@ -151,7 +155,8 @@
       "indian_origin": true,
       "departure_signal": false,
       "current_company": "Stanford/Berkeley",
-      "status": "pending"
+      "status": "researched",
+      "triaged_date": "2026-03-30"
     },
     {
       "name": "Xingyao Wang",
@@ -171,7 +176,8 @@
       "indian_origin": true,
       "departure_signal": false,
       "current_company": "NeoSigma",
-      "status": "pending"
+      "status": "researched",
+      "triaged_date": "2026-03-30"
     },
     {
       "name": "Varun Mohan",
@@ -231,7 +237,8 @@
       "indian_origin": true,
       "departure_signal": false,
       "current_company": "Stanford PhD",
-      "status": "pending"
+      "status": "approved",
+      "triaged_date": "2026-03-30"
     },
     {
       "name": "Wei-Lin Chiang",
@@ -251,7 +258,8 @@
       "indian_origin": true,
       "departure_signal": false,
       "current_company": "Unknown",
-      "status": "pending"
+      "status": "approved",
+      "triaged_date": "2026-03-30"
     }
   ]
 }

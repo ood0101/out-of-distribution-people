@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ritvik Kapila &mdash; Out of Distribution People</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="site-title">Out of Distribution People</div>
+    <div class="breadcrumb"><a href="../index.html">/ index</a> / ritvik-kapila</div>
+  </nav>
+
+  <div class="profile-header">
+    <h1>Ritvik Kapila</h1>
+    <p class="one-liner">Co-founder of NeoSigma (with <a href="gauri-gupta.html">Gauri Gupta</a>) &mdash; custom evaluation + post-training for real-world AI agents. Previously ML Research Scientist at Essential AI under Ashish Vaswani (Transformer inventor): co-authored Essential-Web v1.0 (24T token pre-training dataset), Rethinking Reflection in Pre-Training, and Practical Efficiency of Muon. IIT Delhi EE &rsquo;21 (top 7%, Outstanding Sportsperson Award). UCSD MS CS (4.0 GPA, Leadership Excellence Scholarship). AAAI 2025. DAC 2023. AAMAS 2024. ICLR 2023 Workshop. Prev: Amazon AWS Cryptography, Triton Quantitative Trading (co-founder). INSA Lyon exchange. South Park Commons. Indian-origin.</p>
+    <div class="tags">
+      <span class="tag spike">tier-1: high conviction</span>
+      <span class="tag">pre-training-data</span>
+      <span class="tag">llm-post-training</span>
+      <span class="tag">evaluation</span>
+      <span class="tag">data-curation</span>
+      <span class="tag">essential-ai</span>
+      <span class="tag">stealth-founder</span>
+      <span class="tag">indian</span>
+      <span class="tag spike">spike: built 24T token pre-training dataset at Essential AI under Transformer inventor Ashish Vaswani, now co-founding NeoSigma</span>
+    </div>
+    <div class="links">
+      <a href="https://x.com/RitvikKapila">twitter/x</a>
+      <a href="https://www.linkedin.com/in/ritvik-kapila/">linkedin</a>
+      <a href="https://github.com/RitvikKapila">github (19 repos)</a>
+      <a href="https://scholar.google.com/citations?user=vTYNQkwAAAAJ&hl=en">google scholar</a>
+      <a href="https://sites.google.com/view/ritvik-kapila/">personal site</a>
+      <a href="https://www.neosigma.ai/">neosigma.ai</a>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- INVESTMENT THESIS                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <div class="spike-box">
+    <div class="label">&#9670; Investment Thesis</div>
+    <p>
+      Ritvik Kapila is one of the few people who has <strong>built a 24-trillion-token pre-training dataset from scratch</strong>
+      at Essential AI under Ashish Vaswani (the inventor of the Transformer), <strong>co-authored research on reflection
+      in pre-training, Muon optimizer efficiency, and zero-knowledge proofs for neural networks</strong>, and now left to
+      co-found <strong>NeoSigma</strong> &mdash; a company building custom evaluation and post-training for real-world AI agents.
+      His co-founder <a href="gauri-gupta.html">Gauri Gupta</a> (MIT Media Lab, Apple MLR, Parallel Web Systems) brings
+      complementary post-training and evaluation expertise. Together they cover the full pipeline: Ritvik understands
+      pre-training data curation at massive scale (24T tokens, 23.6B documents, 32K sustained requests/sec), Gauri
+      understands post-training, RLHF, and evaluation. Both are IIT Delhi alumni, both have frontier lab pedigree, and
+      both are in their mid-20s. NeoSigma is pre-product but actively hiring post-training researchers. The post-training/eval
+      market is exploding &mdash; every company building AI agents needs this infrastructure, and nobody fully couples evaluation
+      with post-training. The window to build a relationship is NOW, before they raise.
+    </p>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- EVIDENCE                                               -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Evidence</h2>
+
+  <h3>Essential-Web v1.0: The 24T Token Dataset</h3>
+  <p>
+    Co-authored <strong>Essential-Web v1.0</strong> (arXiv 2506.14111, June 2025) &mdash; a 24-trillion-token web dataset
+    where every document is annotated with a <strong>12-category taxonomy</strong> covering topic, format, content complexity,
+    and quality. Taxonomy labels produced by <strong>EAI-Distill-0.5b</strong>, a fine-tuned 0.5B-parameter model achieving
+    annotator agreement within 3% of Qwen2.5-32B-Instruct. The inference infrastructure (powered by Daft) processed
+    <strong>23.6 billion LLM queries in 7 days</strong> at <strong>32,000 sustained requests/sec per VM</strong> with zero crashes.
+  </p>
+  <p>
+    With nothing more than SQL-style filters, practitioners obtain competitive datasets: math (-8.0% relative to SOTA),
+    web code (+14.3%), STEM (+24.5%), and medical (+8.6%). This is the picks-and-shovels work that makes frontier model
+    training possible &mdash; and Ritvik did it at a company founded by the person who invented the architecture those
+    models use.
+  </p>
+
+  <h3>Rethinking Reflection in Pre-Training</h3>
+  <p>
+    Co-authored (arXiv 2504.04022, April 2025) with Vaswani et al. at Essential AI. Key finding: a language model&rsquo;s
+    ability to <strong>catch and fix its own mistakes begins emerging during pre-training</strong>, not exclusively through
+    reinforcement learning. Proposed an exhaustive framework to measure reflection across six datasets spanning mathematics,
+    coding, logical reasoning, and knowledge acquisition. Evaluated OLMo-2 family checkpoints, showing reflection is
+    <strong>ubiquitous across domains and improves steadily through training</strong>.
+  </p>
+
+  <h3>Practical Efficiency of Muon for Pretraining</h3>
+  <p>
+    Co-authored (arXiv 2505.02222, May 2025) with 22 Essential AI researchers including Vaswani. Demonstrated that
+    <strong>Muon (second-order optimizer) expands the Pareto frontier over AdamW</strong> on the compute-time tradeoff,
+    retaining data efficiency at large batch sizes beyond the critical batch size. Validated through experiments with
+    models up to <strong>4B parameters and batch sizes up to 16M tokens</strong>. Practical recommendation: use Muon +
+    maximal update parameterization (muP) for compute-efficient hyperparameter search at scale.
+  </p>
+
+  <h3>UCSD Research: Zero-Knowledge Proofs + Wearable AI</h3>
+  <p>
+    <strong>ZKROWNN</strong> (DAC 2023): First automated end-to-end framework using zero-knowledge proofs for neural network
+    ownership verification. Enables model ownership validation in &lt;1 second with only a few KBs of communication.
+    Co-authored with Prof. Farinaz Koushanfar at UCSD&rsquo;s Adaptive Computing lab.
+  </p>
+  <p>
+    <strong>ZeroHAR</strong> (AAAI 2025): Zero-shot wearable action recognition augmented with sensor context features
+    (sensor type, Cartesian axis, body position). Published at AAAI 2025, the premier AI conference.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- HIS OWN WORDS                                          -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>In His Own Words</h2>
+  <blockquote>
+    &ldquo;Excited to share that I&rsquo;ve joined Essential AI as a Member of Technical Staff: Research, and will be
+    working on training Large Language Models! &hellip; Looking forward to this new adventure at Essential AI, learning
+    and building alongside some of the most talented people in the field.&rdquo;
+    <cite>&mdash; LinkedIn, joining Essential AI, ~March 2025</cite>
+  </blockquote>
+  <p class="small muted">Shows he sought out the frontier of pre-training research. Chose Essential AI (Vaswani&rsquo;s company) over staying at Amazon.</p>
+
+  <blockquote>
+    &ldquo;After an incredible journey at Essential AI, I am now building my own startup. Grateful to the entire Essential
+    team for being amazing colleagues and friends, and to Ash Vaswani for being a great mentor.&rdquo;
+    <cite>&mdash; X (@RitvikKapila), ~October 2025</cite>
+  </blockquote>
+  <p class="small muted">Explicitly names Ashish Vaswani as mentor. &ldquo;Incredible journey&rdquo; in ~7 months = shipped 3 papers + 24T token dataset. &ldquo;Building&rdquo; = already working, not exploring.</p>
+
+  <blockquote>
+    &ldquo;Advancing foundation model capabilities through data.&rdquo;
+    <cite>&mdash; GitHub bio</cite>
+  </blockquote>
+  <p class="small muted">His thesis in one line. Data is the moat, not architecture. Directly relevant to NeoSigma&rsquo;s evaluation + post-training thesis.</p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- MARKET & COMPETITIVE LANDSCAPE                         -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Market &amp; Competitive Landscape</h2>
+  <p>
+    NeoSigma is an <strong>&ldquo;intelligence layer that closes the loop between customers, products, and AI systems&rdquo;</strong>
+    via custom evaluation and post-training for real-world AI agents. The market gap: evaluation companies measure but don&rsquo;t
+    improve models; fine-tuning platforms improve but don&rsquo;t evaluate in-the-loop. NeoSigma&rsquo;s thesis is that
+    <strong>evaluation and post-training must be coupled</strong> &mdash; the eval signal directly drives the training.
+  </p>
+  <table>
+    <tr><th>Company</th><th>Valuation</th><th>How NeoSigma Differs</th></tr>
+    <tr><td>Scale AI</td><td>$13.8B</td><td>Data labeling + RLHF at scale. Broad platform. NeoSigma targets agentic post-training specifically</td></tr>
+    <tr><td>Together AI</td><td>$3.3B</td><td>Fine-tuning API + inference. Model-agnostic. NeoSigma adds evaluation/feedback loop</td></tr>
+    <tr><td>Hugging Face</td><td>$4.5B</td><td>Open-source ecosystem. Community-first. NeoSigma is enterprise agent-focused</td></tr>
+    <tr><td>Evidently AI</td><td>Series A</td><td>LLM evaluation/monitoring. Closest comp on eval side. NeoSigma couples eval with post-training</td></tr>
+    <tr><td>Braintrust</td><td>Series A</td><td>Eval + prompt engineering. NeoSigma goes deeper into model improvement</td></tr>
+    <tr><td>Unsloth</td><td>Early stage</td><td>Consumer GPU fine-tuning. Efficiency play. Different market segment</td></tr>
+  </table>
+
+  <h3>Co-Founder Complementarity</h3>
+  <p>
+    This is a rare founding team where the two co-founders cover the <strong>entire LLM pipeline</strong>:
+  </p>
+  <ul>
+    <li><strong>Ritvik Kapila (pre-training + data):</strong> Built 24T token dataset. 3 papers on pre-training optimization (reflection, Muon, data curation). Essential AI under Vaswani. Presented at MIT AI Conference on &ldquo;curating intelligence through data in the post-web era.&rdquo;</li>
+    <li><strong>Gauri Gupta (post-training + eval):</strong> Built Basis evidence-grounding system at Parallel (Parag Agrawal). MIT Media Lab (decentralized ML). Apple MLR (multi-modal foundation models under Samy Bengio). CoDream federated learning paper (AAAI 2025).</li>
+  </ul>
+  <p class="small muted">
+    <strong>Why this matters:</strong> Most post-training/eval startups are founded by people who only understand one side.
+    Ritvik knows what goes INTO models (pre-training data quality, curation, taxonomy). Gauri knows what comes OUT
+    (evaluation, grounding, alignment). Together they can build a system where evaluation signals feed back into
+    data curation and training &mdash; the actual &ldquo;closing the loop&rdquo; that NeoSigma promises.
+  </p>
+
+  <h3>Funding Status</h3>
+  <p>
+    <strong>Pre-seed / stealth.</strong> No Crunchbase or PitchBook data. Tracxn profile exists but no funding visible.
+    Website says &ldquo;Building, Stay tuned.&rdquo; Actively hiring post-training researchers for 6&ndash;8 week
+    internships. GitHub org (github.com/neosigma) exists but has zero public repos.
+  </p>
+  <p>
+    <strong>Estimated raise:</strong> Pre-seed: $3&ndash;8M at $15&ndash;30M post-money. Seed (with product): $10&ndash;20M
+    at $40&ndash;80M. Likely investors: South Park Commons (Ritvik affiliated), OpenAI Startup Fund (Gauri attended
+    Founders Table), Khosla Ventures (Indian founder thesis + AI infra), a16z (agent infrastructure).
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- GROWTH TRAJECTORY                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Growth Trajectory</h2>
+  <ul class="timeline">
+    <li><span class="year">2017</span> Enters IIT Delhi &mdash; B.Tech Electrical Engineering. Top 7% (9.76/10 semester GPA). IIT Delhi Outstanding Sportsperson Award (Basketball). Inter-IIT contingent from first year</li>
+    <li><span class="year">Fall 2019</span> INSA Lyon exchange (France) &mdash; Information Science &amp; Technology department. Projects in time-series analysis, air quality management</li>
+    <li><span class="year">2021</span> Completes B.Tech at IIT Delhi EE. Joins UCSD MS CS (AI specialization)</li>
+    <li><span class="year">2022&ndash;23</span> Graduate Research Assistant at UCSD under Prof. Farinaz Koushanfar (Adaptive Computing &amp; Embedded Systems lab). Focus: privacy-preserving ML, zero-knowledge proofs</li>
+    <li><span class="year">Jul 2023</span> ZKROWNN published at DAC 2023 &mdash; zero-knowledge proof for neural network ownership</li>
+    <li><span class="year">Jun 2023</span> UCSD Leadership Excellence Scholarship ($1K, 3 students selected/year by CSE Alumni Advisory Board)</li>
+    <li><span class="year">Apr 2023</span> Domain Generalization paper with Gauri Gupta + Ramesh Raskar (arXiv, ICLR 2023 Workshop PML4DC). First collaboration with future co-founder</li>
+    <li><span class="year">Jan 2024</span> Co-founds Triton Quantitative Trading at UCSD. Organization wins 1st place in Quant League Q1 2025 (14.88% return)</li>
+    <li><span class="year">Mar 2024</span> Completes MS CS at UCSD with 4.0/4.0 GPA. ZeroHAR paper (accepted AAAI 2025)</li>
+    <li><span class="year">May 2024</span> AAMAS 2024 (oral) &mdash; &ldquo;First 100 Days of Pandemic&rdquo; with Gauri Gupta, Ayush Chopra, Ramesh Raskar. Agent-based modeling</li>
+    <li><span class="year">~Apr 2024</span> Joins Amazon &mdash; AWS Cryptography team. Contributes to open-source encryption SDKs (DynamoDB Encryption SDK, AWS Encryption SDK in Rust)</li>
+    <li><span class="year">~Mar 2025</span> Leaves Amazon. Joins Essential AI as Member of Technical Staff: Research under Ashish Vaswani</li>
+    <li><span class="year">Apr 2025</span> &ldquo;Rethinking Reflection in Pre-Training&rdquo; paper (arXiv). Reflection emerges during pre-training, not just RL</li>
+    <li><span class="year">May 2025</span> &ldquo;Practical Efficiency of Muon for Pretraining&rdquo; paper (arXiv). Muon expands Pareto frontier over AdamW</li>
+    <li><span class="year">Jun 2025</span> Essential-Web v1.0 paper (arXiv) &mdash; 24T token dataset. 23.6B documents. 32K requests/sec. Zero crashes</li>
+    <li><span class="year">~Oct 2025</span> Departs Essential AI. Announces startup. &ldquo;Grateful to Ash Vaswani for being a great mentor&rdquo;</li>
+    <li><span class="year">Nov 2025</span> Presents at MIT AI Conference: &ldquo;Curating Intelligence Through Data in the Post-Web Era&rdquo;</li>
+    <li><span class="year">~Q1 2026</span> NeoSigma founded with Gauri Gupta. Website live (neosigma.ai). Actively hiring. South Park Commons affiliated</li>
+  </ul>
+  <p>
+    <strong>Pace:</strong> 3 Essential AI papers in 3 months (Apr&ndash;Jun 2025). Amazon &rarr; Essential AI &rarr; NeoSigma founder
+    in ~18 months. MS thesis research published at AAAI 2025. DAC 2023 + AAMAS 2024 + AAAI 2025 + 3 Essential AI papers =
+    6 publications in 2 years. <strong>Acceleration is clear:</strong> academic research &rarr; AWS engineering &rarr;
+    frontier pre-training research under Transformer inventor &rarr; founder, all by ~26.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- NETWORK MAP                                            -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Network Map</h2>
+
+  <h3>NeoSigma Team</h3>
+  <ul>
+    <li><strong><a href="gauri-gupta.html">Gauri Gupta</a></strong> &mdash; NeoSigma co-founder &amp; CEO. MIT Media Lab PhD dropout (Ramesh Raskar). IIT Delhi Maths+Computing. Prev Parallel Web Systems (Parag Agrawal), Apple MLR (Samy Bengio). ~300 citations. O-1 visa. Indian-origin. <a href="https://x.com/gauri__gupta">@gauri__gupta</a></li>
+  </ul>
+
+  <h3>Essential AI / Ashish Vaswani Network</h3>
+  <ul>
+    <li><strong>Ashish Vaswani</strong> &mdash; CEO &amp; Co-founder, Essential AI. Co-creator of the Transformer (&ldquo;Attention Is All You Need&rdquo;, 140K+ citations). Ritvik&rsquo;s direct mentor. Co-author on 3 papers. IIT Bombay alumnus. <a href="https://x.com/ashVaswani">@ashVaswani</a></li>
+    <li><strong>Karl Stratos</strong> &mdash; Essential AI researcher. Co-author on multiple papers with Ritvik</li>
+    <li><strong>Darsh J Shah</strong> &mdash; Essential AI researcher. First author on Reflection paper</li>
+    <li><strong>Divya Shivaprasad</strong> &mdash; Essential AI. Welcomed Ritvik on LinkedIn</li>
+  </ul>
+
+  <h3>Academic Connections</h3>
+  <ul>
+    <li><strong>Farinaz Koushanfar</strong> &mdash; UCSD professor. Ritvik&rsquo;s MS advisor. National Academy of Inventors inductee. Co-authored ZKROWNN (DAC 2023)</li>
+    <li><strong>Ramesh Raskar</strong> &mdash; MIT Media Lab professor (Camera Culture). Gauri&rsquo;s advisor. Co-authored Domain Generalization paper with Ritvik + Gauri</li>
+    <li><strong>Ayush Chopra</strong> &mdash; MIT Media Lab. Co-author AAMAS 2024 with both Ritvik and Gauri</li>
+    <li><strong>Ranak Roy Chowdhury</strong> &mdash; UCSD. First author on ZeroHAR (AAAI 2025)</li>
+  </ul>
+
+  <h3>Ecosystem</h3>
+  <ul>
+    <li><strong>South Park Commons</strong> &mdash; Ritvik affiliated with the founder community. SPC is a known pre-company residency for technical founders in SF</li>
+    <li><strong>Parag Agrawal</strong> &mdash; Ex-Twitter CEO. CEO of Parallel Web Systems ($100M). Gauri&rsquo;s former boss. Indirect connection through co-founder</li>
+  </ul>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- RISKS                                                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Risks</h2>
+  <ol>
+    <li><strong>Pre-product, pre-revenue.</strong> NeoSigma has no launched product, no customers, no revenue. Website says &ldquo;Building, Stay tuned.&rdquo; GitHub org has zero public repos. Could be months from any traction</li>
+    <li><strong>Crowded market.</strong> Scale AI ($13.8B), Together AI ($3.3B), Hugging Face ($4.5B) all compete in adjacent spaces. &ldquo;Custom evaluation + post-training&rdquo; could become a feature of these platforms rather than a standalone company</li>
+    <li><strong>Both co-founders are research-oriented.</strong> Ritvik: ML researcher, no prior founding experience (Triton Quant Trading was a student org, not a company). Gauri: academic-heavy career with ~6&ndash;12 months industry. May lack enterprise sales DNA</li>
+    <li><strong>Short tenure at Essential AI (~7 months).</strong> He shipped 3 papers and a 24T token dataset in that time, which is productive. But short stints raise questions about staying power under startup stress</li>
+    <li><strong>Amazon detour.</strong> ~1 year at AWS Cryptography was not directly relevant to LLM research. Shows he didn&rsquo;t go straight from grad school to frontier AI research &mdash; had to find his path</li>
+    <li><strong>No public technical differentiation.</strong> NeoSigma&rsquo;s website doesn&rsquo;t reveal a proprietary approach, architecture, or dataset. The thesis is right but the moat is unproven</li>
+    <li><strong>Visa considerations.</strong> Indian-origin founder. Gauri has O-1; Ritvik&rsquo;s visa status is unclear but he&rsquo;s listed as based in San Francisco. Immigration adds operational complexity for early-stage founders</li>
+  </ol>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- BACKGROUND                                             -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Background</h2>
+  <p>
+    Indian-origin. IIT Delhi Electrical Engineering B.Tech (2017&ndash;2021). Top 7% of class (9.76/10 semester GPA).
+    IIT Delhi Outstanding Sportsperson Award for basketball &mdash; represented IIT Delhi in Inter-IIT tournaments from
+    first year. INSA Lyon exchange (France, Fall 2019) in Information Science &amp; Technology. Loves surfing and basketball.
+  </p>
+  <p>
+    UCSD MS Computer Science (2022&ndash;2024, 4.0/4.0 GPA). AI specialization: privacy-preserving ML, time-series modeling.
+    Advised by Prof. Farinaz Koushanfar (Adaptive Computing lab). Leadership Excellence Scholarship (3 students/year).
+    Co-founded Triton Quantitative Trading (student org that won 1st place in Quant League Q1 2025 with 14.88% return).
+  </p>
+  <p>
+    Amazon AWS Cryptography team (~2024): software engineer on open-source client-side encryption libraries. Contributed to
+    DynamoDB Encryption SDK, AWS Encryption SDK, released Encryption SDK in Rust. Then left for Essential AI (~March 2025)
+    to work on LLM pre-training under Ashish Vaswani. Shipped 3 papers in 3 months. Left ~October 2025 to found NeoSigma.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- PUBLICATIONS                                           -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Publications</h2>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2506.14111">Essential-Web v1.0: 24T tokens of organized web data</a></div>
+    <div class="venue">arXiv Jun 2025 &middot; Essential AI &middot; With Ashish Vaswani et al. (23 authors) &middot; 24T token dataset, 12-category taxonomy</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2505.02222">Practical Efficiency of Muon for Pretraining</a></div>
+    <div class="venue">arXiv May 2025 &middot; Essential AI &middot; With Ashish Vaswani et al. (23 authors) &middot; Muon optimizer expands Pareto frontier over AdamW</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2504.04022">Rethinking Reflection in Pre-Training</a></div>
+    <div class="venue">arXiv Apr 2025 &middot; Essential AI &middot; With Ashish Vaswani et al. (27 authors) &middot; Reflection emerges during pre-training</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/33762">ZeroHAR: Sensor Context Augments Zero-Shot Wearable Action Recognition</a></div>
+    <div class="venue">AAAI 2025 &middot; With Chowdhury, Panse, Koushanfar et al. &middot; MS thesis research</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2401.04795">First 100 Days of Pandemic: An Interplay of Pharmaceutical, Behavioral and Digital Interventions</a></div>
+    <div class="venue">AAMAS 2024 (Oral) &middot; With Gauri Gupta, Ayush Chopra, Ramesh Raskar &middot; Agent-based modeling</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2304.03431">Domain Generalization in Robust Invariant Representation</a></div>
+    <div class="venue">ICLR 2023 Workshop (PML4DC) &middot; With Gauri Gupta, Keshav Gupta, Ramesh Raskar</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2309.06779">ZKROWNN: Zero Knowledge Right of Ownership for Neural Networks</a></div>
+    <div class="venue">DAC 2023 &middot; With Sheybani, Ghodsi, Koushanfar &middot; ZK proofs for model IP protection</div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- OUTREACH                                               -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Outreach Draft</h2>
+  <div style="background: var(--bg); border: 1px solid #ddd; padding: 1.5em; border-radius: 6px; font-family: var(--sans);">
+    <p>hi Ritvik</p>
+    <p>I&rsquo;m Vansh, Partner at Boldcap.</p>
+    <p>I&rsquo;ve been going deep on the post-training/eval infrastructure layer &mdash; everyone building AI agents needs it, nobody fully couples evaluation with training. Scale does labeling, Together does fine-tuning, Braintrust does eval &mdash; but the closed loop where eval signals drive post-training? That&rsquo;s wide open.</p>
+    <p>What caught my eye is that you and Gauri together actually cover the full pipeline. Building Essential-Web &mdash; 24T tokens, 12-category taxonomy, 23.6B documents annotated at 32K requests/sec &mdash; under Ash Vaswani gives you a data curation intuition that most post-training founders don&rsquo;t have. And your MIT AI Conference talk on &ldquo;curating intelligence in the post-web era&rdquo; suggests you&rsquo;re thinking about this at the right level of abstraction. Paired with Gauri&rsquo;s Basis work at Parallel and the CoDream research, the pre-training + post-training coverage is unusually complete.</p>
+    <p>Not sure where you are on fundraising &mdash; I invest at inception, pre-deck, and can write $500K&ndash;$1M. Would love to hear how you&rsquo;re thinking about the loop between evaluation data and model improvement at NeoSigma.</p>
+    <p>Vansh</p>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- NOTES                                                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Notes</h2>
+  <ul>
+    <li class="small">Indian-origin confirmed. IIT Delhi alumnus. Based in San Francisco, CA</li>
+    <li class="small">Twitter: @RitvikKapila (567 followers, joined Dec 2022). Bio: &ldquo;Founder @neosigmaai. Data Research.&rdquo;</li>
+    <li class="small">LinkedIn headline: &ldquo;Building something new&rdquo; / &ldquo;Stealth AI Startup&rdquo;</li>
+    <li class="small">GitHub: RitvikKapila (19 repos, 9 followers). Bio: &ldquo;Advancing foundation model capabilities through data&rdquo;</li>
+    <li class="small">GitHub org github.com/neosigma exists but has 0 public repos. Code is private</li>
+    <li class="small">NeoSigma X handle: @neosigmaai. LinkedIn company page active</li>
+    <li class="small">Essential AI tenure: ~Mar 2025 to ~Oct 2025 (~7 months). Shipped 3 papers + 24T token dataset</li>
+    <li class="small">Amazon AWS tenure: ~Apr 2024 to ~Mar 2025 (~11 months). Cryptography team, encryption SDKs</li>
+    <li class="small">Co-founded Triton Quantitative Trading at UCSD &mdash; student org, not a company. Won 1st place in Quant League Q1 2025 (14.88% return)</li>
+    <li class="small">Collaboration with Gauri predates NeoSigma: ICLR 2023 Workshop paper (Domain Generalization) + AAMAS 2024 paper (Pandemic modeling), both with Raskar</li>
+    <li class="small">Ashish Vaswani (Essential AI CEO) explicitly named as &ldquo;great mentor&rdquo; in departure post</li>
+    <li class="small">IIT Delhi Outstanding Sportsperson Award for basketball. Inter-IIT contingent from first year. Also surfs</li>
+    <li class="small">INSA Lyon exchange (Fall 2019) &mdash; international exposure during undergrad</li>
+    <li class="small">UCSD Leadership Excellence Scholarship &mdash; 3 grad students selected per year by CSE Alumni Advisory Board</li>
+    <li class="small">South Park Commons affiliated &mdash; founder community in SF. Strong signal for pre-company builders</li>
+    <li class="small">MIT AI Conference speaker (Nov 2025): &ldquo;Curating Intelligence Through Data in the Post-Web Era&rdquo;</li>
+    <li class="small">Tracxn has a Neo Sigma company profile (tracxn.com), suggesting data aggregation has begun</li>
+    <li class="small">NeoSigma hiring: 6&ndash;8 week internships for post-training researchers/engineers. Open to remote for exceptional candidates</li>
+    <li class="small">Credential intersection: IIT Delhi EE + UCSD AI + zero-knowledge proofs + quant trading + AWS cryptography + frontier pre-training. Unusually broad technical range</li>
+  </ul>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- WATCHLIST                                              -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Watchlist &amp; Monitoring</h2>
+  <ul>
+    <li><strong>Monitor monthly:</strong> NeoSigma website for product launch, @RitvikKapila and @neosigmaai on X, LinkedIn for announcements</li>
+    <li><strong>Key triggers:</strong> Product launch, first customer, funding round, hiring senior engineers (not just interns), co-founder additions, public GitHub repos</li>
+    <li><strong>Escalate to Tier 0 if:</strong> NeoSigma launches product with named customers, raises seed round, or announces enterprise partnerships</li>
+    <li><strong>De-risk if:</strong> No product after 6 months (by Sep 2026), co-founder departure, pivot away from post-training/eval</li>
+  </ul>
+
+  <footer>
+    researched: 2026-03-30 &middot; 6-agent architecture (technical, social, market, background, trajectory, network) &middot; <a href="../index.html">back to index</a>
+  </footer>
+
+</body>
+</html>
