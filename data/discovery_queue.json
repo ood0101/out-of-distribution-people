@@ -252,13 +252,13 @@
     },
     {
       "name": "Akshat Bubna",
-      "one_liner": "First Indian IOI gold medalist ever (2014). MIT.",
+      "one_liner": "First Indian IOI gold medalist ever (2014). Co-Founder & CTO Modal ($1.1B, talks at $2.5B). MIT.",
       "source_dossier": "kshitij-sodani",
-      "spike_signal": "First Indian IOI gold. MIT. Indian.",
+      "spike_signal": "First Indian IOI gold. MIT. Co-founded Modal ($1.1B). Indian.",
       "indian_origin": true,
       "departure_signal": false,
-      "current_company": "Unknown",
-      "status": "approved",
+      "current_company": "Modal Labs",
+      "status": "researched",
       "triaged_date": "2026-03-30"
     }
   ]
