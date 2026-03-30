@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ritvik Singh &mdash; Out of Distribution People</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="site-title">Out of Distribution People</div>
+    <div class="breadcrumb"><a href="../index.html">/ index</a> / ritvik-singh</div>
+  </nav>
+
+  <div class="profile-header">
+    <h1>Ritvik Singh</h1>
+    <p class="one-liner">PhD student at UC Berkeley (Pieter Abbeel + Jitendra Malik). First author on DextrAH-RGB &mdash; first sim-to-real RGB-only dexterous grasping system. Co-authored ORBIT/Isaac Lab (6.8k GitHub stars, NVIDIA&rsquo;s standard robotics sim framework). DeXtreme (ICRA 2023), Synthetica (IROS 2025), Fast-Grasp&rsquo;D (IROS 2023). 855 Google Scholar citations. Previously NVIDIA Robotics. Indian-origin.</p>
+    <div class="tags">
+      <span class="tag spike">tier-1: high conviction</span>
+      <span class="tag">dexterous-manipulation</span>
+      <span class="tag">sim-to-real</span>
+      <span class="tag">robotics</span>
+      <span class="tag">visuomotor-policy</span>
+      <span class="tag">end-to-end-rl</span>
+      <span class="tag">indian</span>
+      <span class="tag spike">spike: built NVIDIA&rsquo;s robot sim stack (ORBIT/Isaac Lab) + first RGB-only dexterous grasping with 93% real-world success</span>
+    </div>
+    <div class="links">
+      <a href="https://www.ritvik-singh.com/">website</a>
+      <a href="https://scholar.google.com/citations?user=fGRYfRQAAAAJ">google scholar</a>
+      <a href="https://x.com/ritvik_singh9">twitter/x</a>
+      <a href="https://github.com/ritviksingh9">github</a>
+      <a href="https://www.linkedin.com/in/ritvik-singh/">linkedin</a>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- INVESTMENT THESIS                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <div class="spike-box">
+    <div class="label">&#9670; Investment Thesis</div>
+    <p>
+      Ritvik Singh is one of the strongest dexterous manipulation researchers in the world &mdash; the person who
+      built NVIDIA&rsquo;s robot learning simulation infrastructure (ORBIT/Isaac Lab, 6.8k GitHub stars, 3.3k forks,
+      now the standard framework for GPU-accelerated robot learning) <strong>and</strong> pushed the frontier of
+      vision-based dexterous grasping from privileged state to end-to-end RGB. His latest work achieves
+      <strong>93% real-world success rate</strong> on dexterous grasping using end-to-end RL with a novel
+      disaggregated simulation architecture &mdash; the first demonstration of end-to-end RL for multifingered
+      hand manipulation. He is a PhD student at Berkeley co-advised by <strong>Pieter Abbeel</strong> (co-founder
+      of Covariant, $222M raised) and <strong>Jitendra Malik</strong> (one of the most cited computer vision
+      researchers alive), after spending formative years at <strong>NVIDIA Robotics</strong> shipping production
+      simulation tools. The robotics manipulation market is exploding: Physical Intelligence just raised at
+      $11B valuation, Dexterity at $1.65B, Figure AI at $2.6B. Singh sits at the exact intersection of
+      sim-to-real transfer, dexterous manipulation, and visuomotor policy learning that these companies need.
+      The window opens when he finishes his PhD (~2026&ndash;2027).
+    </p>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- EVIDENCE                                               -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Evidence</h2>
+
+  <h3>End-to-End RL for Dexterous Grasping (2025)</h3>
+  <p>
+    &ldquo;End-to-end RL Improves Dexterous Grasping Policies&rdquo; &mdash; <strong>first author</strong>.
+    With Karl Van Wyk, Jitendra Malik, Pieter Abbeel, Nathan Ratliff, and Ankur Handa (NVIDIA + UC Berkeley).
+    The first work to demonstrate end-to-end RL for dexterous grasping with multifingered hands in the real world.
+  </p>
+  <ul>
+    <li><strong>93% real-world success rate</strong> using depth-based teacher distillation with disaggregated simulation (vs. 87% baseline)</li>
+    <li>Novel <strong>disaggregated simulation architecture</strong>: separates simulator and learner across GPUs, doubling concurrent environments (8,400 vs. 4,096 at 160x120 resolution)</li>
+    <li>Key insight: end-to-end training enables <strong>emergent active vision behaviors</strong> &mdash; the arm learns to move to unblock visual obstructions rather than assuming perfect state information</li>
+    <li>Depth-to-RGB distillation preserves observability better than state-to-vision distillation</li>
+  </ul>
+
+  <h3>DextrAH-RGB: First RGB-Only Dexterous Grasping (Nov 2024)</h3>
+  <p>
+    &ldquo;DextrAH-RGB: Visuomotor Policies to Grasp Anything with Dexterous Hands&rdquo; &mdash;
+    <strong>first author</strong>. The first work to demonstrate robust sim-to-real transfer of an end-to-end
+    RGB-based policy for complex, dynamic, contact-rich dexterous grasping.
+  </p>
+  <ul>
+    <li>Trains fabric-guided policy (FGP) via RL in simulation, then distills into RGB-based policy using photorealistic tiled rendering</li>
+    <li>Competitive with depth-based dexterous grasping policies &mdash; <strong>no depth sensor required</strong></li>
+    <li>Generalizes to novel objects with unseen geometry, texture, and lighting conditions in real-world deployment</li>
+    <li>Authors: Ritvik Singh, Arthur Allshire, Ankur Handa, Nathan Ratliff, Karl Van Wyk</li>
+  </ul>
+
+  <h3>ORBIT / Isaac Lab: NVIDIA&rsquo;s Standard Robot Learning Framework (2023)</h3>
+  <p>
+    &ldquo;ORBIT: A Unified Simulation Framework for Interactive Robot Learning Environments&rdquo; &mdash;
+    published at IROS 2023 and IEEE RA-L. Co-authored with Mayank Mittal, Calvin Yu, and others. ORBIT evolved
+    into <strong>Isaac Lab</strong>, now NVIDIA&rsquo;s official GPU-accelerated robot learning framework.
+  </p>
+  <ul>
+    <li><strong>6.8k GitHub stars, 3.3k forks</strong> &mdash; the most widely used GPU-accelerated robot learning simulation</li>
+    <li>Supports RL, imitation learning, motion planning with photorealistic rendering and fast rigid/soft body simulation</li>
+    <li>Used by hundreds of robotics labs and companies worldwide for sim-to-real transfer</li>
+    <li>Singh contributed core simulation and environment design components</li>
+  </ul>
+
+  <h3>DeXtreme: Sim-to-Real In-Hand Manipulation (ICRA 2023)</h3>
+  <p>
+    &ldquo;DeXtreme: Transfer of Agile In-Hand Manipulation from Simulation to Reality&rdquo; &mdash;
+    NVIDIA Research team. Ritvik Singh contributed rendering pipeline development and pose estimation.
+  </p>
+  <ul>
+    <li>Vision-based policies <strong>significantly outperform</strong> prior vision policies in the literature on object reorientation</li>
+    <li>Competitive with policies given privileged state information via motion capture</li>
+    <li>Uses Allegro Hand + Isaac Gym GPU-based simulation</li>
+  </ul>
+
+  <h3>Synthetica: Synthetic Data for Robot Perception (IROS 2025)</h3>
+  <p>
+    &ldquo;Synthetica: Large Scale Synthetic Data for Robot Perception&rdquo; &mdash; <strong>first author</strong>.
+    Leverages photorealistic ray-tracing to generate 2.7M training images.
+  </p>
+  <ul>
+    <li>State-of-the-art object detection with detectors running at <strong>50&ndash;100Hz</strong> &mdash; 9x faster than prior SOTA</li>
+    <li>Demonstrates pipeline for real-world robotics with custom objects lacking existing datasets</li>
+  </ul>
+
+  <h3>Fast-Grasp&rsquo;D: Differentiable Grasp Synthesis (IROS 2023, RA-L)</h3>
+  <p>
+    Differentiable grasping simulator used to synthesize Grasp&rsquo;D-1M, a large-scale dataset for multi-finger grasping.
+  </p>
+  <ul>
+    <li><strong>10x faster</strong> than GraspIt! and <strong>20x faster</strong> than prior Grasp&rsquo;D simulator</li>
+    <li>Grasp&rsquo;D-1M: 1M training examples across three robotic hands with multimodal visual inputs</li>
+    <li>Retrained grasping pipeline shows 30% more contact, 33% higher epsilon metric, 35% lower displacement</li>
+  </ul>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- HIS OWN WORDS                                          -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>In His Own Words</h2>
+  <blockquote>
+    &ldquo;My interests lie at the intersection of perception and control in order to build intelligent robot
+    systems that can interact with the physical world.&rdquo;
+    <cite>&mdash; ritvik-singh.com</cite>
+  </blockquote>
+  <p class="small muted">Clean thesis statement. Not &ldquo;I study robotics&rdquo; &mdash; specifically the
+  <em>intersection</em> of perception and control. This is exactly the gap that existing robotics companies
+  struggle with: most have strong manipulation OR strong vision, rarely both end-to-end.</p>
+
+  <blockquote>
+    &ldquo;I am currently leveraging learning-based methods to achieve human-like dexterous manipulation
+    in unstructured environments.&rdquo;
+    <cite>&mdash; ritvik-singh.com</cite>
+  </blockquote>
+  <p class="small muted">&ldquo;Unstructured environments&rdquo; is the key phrase. Warehouse robots work in
+  structured settings. Human-like dexterity in unstructured settings is the $100B+ market &mdash; and the
+  hardest problem in robotics.</p>
+
+  <blockquote>
+    &ldquo;This is the first work that is able to demonstrate robust sim2real transfer of an end2end
+    RGB-based policy for complex, dynamic, contact-rich tasks such as dexterous grasping.&rdquo;
+    <cite>&mdash; DextrAH-RGB paper abstract, Nov 2024</cite>
+  </blockquote>
+  <p class="small muted">A &ldquo;first&rdquo; claim in a paper abstract is a strong signal. RGB-only
+  (no depth sensor) dexterous grasping with sim-to-real transfer is a genuine frontier result.</p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- MARKET & COMPETITIVE LANDSCAPE                         -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Market &amp; Competitive Landscape</h2>
+  <p>
+    Robotic manipulation is the defining infrastructure problem of 2024&ndash;2027. The industry is shifting from
+    structured pick-and-place to general-purpose dexterous manipulation in unstructured environments. Physical
+    Intelligence just raised at an <strong>$11B valuation</strong> (March 2026). Dexterity raised $95M at $1.65B.
+    Figure AI raised $675M. The total addressable market for intelligent manipulation spans logistics ($400B),
+    manufacturing ($2.3T), household robotics ($100B+), and surgical robotics ($15B). The bottleneck is not
+    hardware &mdash; it is the sim-to-real transfer stack and visuomotor policy learning that makes dexterous
+    hands actually work in the real world. Singh&rsquo;s entire body of work attacks exactly this bottleneck.
+  </p>
+  <table>
+    <tr><th>Player</th><th>Approach</th><th>Key Metric</th><th>Status</th></tr>
+    <tr><td>Physical Intelligence</td><td>Foundation model for physical manipulation</td><td>$11B valuation (Mar 2026)</td><td>~$1.5B raised, ex-DeepMind founders</td></tr>
+    <tr><td>Dexterity</td><td>&ldquo;Physical AI&rdquo; for logistics dexterity</td><td>$1.65B valuation</td><td>$95M latest round (Mar 2025)</td></tr>
+    <tr><td>Figure AI</td><td>Humanoid robots, full-body + hands</td><td>$675M raised</td><td>Scaling manufacturing</td></tr>
+    <tr><td>Covariant (Abbeel co-founded)</td><td>AI-powered robotic picking</td><td>$222M raised</td><td>Series C, 2023</td></tr>
+    <tr><td>Galbot</td><td>Humanoid + dexterous hands</td><td>$3B valuation</td><td>$800M total raised</td></tr>
+    <tr><td>Mimic Robotics</td><td>Physical AI, ETH spin-off</td><td>&euro;17M raised</td><td>Early stage, dexterous focus</td></tr>
+  </table>
+  <p class="small muted">
+    Singh&rsquo;s edge over these companies: he built the simulation infrastructure (ORBIT/Isaac Lab) that many
+    of them use, AND he pushed the perception frontier (RGB-only, no depth). Most robotic manipulation companies
+    rely on depth sensors or structured setups. Singh&rsquo;s work on end-to-end visuomotor policies that work
+    from raw RGB in unstructured environments is the next generation of the stack.
+  </p>
+
+  <h3>Academic Comparables</h3>
+  <table>
+    <tr><th>Researcher</th><th>Area</th><th>Current</th><th>Commercial Signal</th></tr>
+    <tr><td><strong>Haozhi Qi</strong></td><td>Multisensory dexterous manipulation (Berkeley/Malik)</td><td>Meta FAIR &rarr; UChicago faculty</td><td>Chose academia; peer in Malik lab</td></tr>
+    <tr><td><strong>Ilija Radosavovic</strong></td><td>Humanoid locomotion (Berkeley/Malik)</td><td>PhD 2025, job market</td><td>Deployed on real humanoids; same advisor</td></tr>
+    <tr><td><strong>Kenneth Shaw</strong></td><td>Dexterous manipulation (CMU/Pathak)</td><td>PhD student</td><td>Active on manipulation hardware</td></tr>
+    <tr><td><strong>Lerrel Pinto</strong></td><td>Robot learning (NYU)</td><td>NYU professor</td><td>Advisor path; strong lab alumni</td></tr>
+    <tr><td><strong>Ankur Handa</strong></td><td>Sim-to-real, NVIDIA Robotics</td><td>NVIDIA Research Scientist</td><td>Key collaborator; if he leaves, watch for co-founding</td></tr>
+  </table>
+
+  <h3>What He&rsquo;d Build (Thesis Reconstruction)</h3>
+  <p>
+    <strong>Most likely: A dexterous manipulation company built on sim-to-real visuomotor policies.</strong>
+    The thesis writes itself from his papers: (1) generate massive synthetic training data cheaply via
+    photorealistic simulation (Synthetica), (2) train end-to-end visuomotor policies that work from RGB
+    cameras alone (DextrAH-RGB), (3) transfer to real hardware with 93%+ success rate (End-to-end RL paper),
+    (4) build on the simulation infrastructure he already created (ORBIT/Isaac Lab). The product: a dexterous
+    manipulation stack that drops into any robot arm+hand platform and works out-of-the-box in unstructured
+    environments. Customers: logistics, manufacturing, food handling, household. The moat is the sim-to-real
+    pipeline &mdash; the hardest part to replicate &mdash; and Singh is arguably the person who knows it best
+    in the world, having built it from both the simulation side (ORBIT) and the policy side (DextrAH/E2E RL).
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- GROWTH TRAJECTORY                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Growth Trajectory</h2>
+  <ul class="timeline">
+    <li><span class="year">2019&ndash;2023</span> BASc in Engineering Science, University of Toronto. Collaborated with Prof. Florian Shkurti and Prof. Animesh Garg on robotics research</li>
+    <li><span class="year">2021&ndash;2023</span> Researcher at NVIDIA Seattle Robotics Lab (Ankur Handa, Nathan Ratliff, Karl Van Wyk). Shipped ORBIT, DeXtreme, Fast-Grasp&rsquo;D</li>
+    <li><span class="year">Jan 2023</span> <strong>ORBIT paper published</strong> (arXiv). Framework becomes NVIDIA&rsquo;s standard &rarr; Isaac Lab (6.8k stars)</li>
+    <li><span class="year">Jun 2023</span> <strong>DeXtreme at ICRA 2023</strong>. Agile in-hand manipulation sim-to-real transfer</li>
+    <li><span class="year">Jun 2023</span> <strong>Fast-Grasp&rsquo;D at IROS 2023 / RA-L</strong>. 10x faster differentiable grasp synthesis</li>
+    <li><span class="year">~2023</span> Begins PhD at UC Berkeley, co-advised by Pieter Abbeel and Jitendra Malik</li>
+    <li><span class="year">Oct 2024</span> <strong>Synthetica submitted</strong> (arXiv). 2.7M synthetic images, 9x faster SOTA detection</li>
+    <li><span class="year">Nov 2024</span> <strong>DextrAH-RGB</strong> (arXiv). First RGB-only sim-to-real dexterous grasping</li>
+    <li><span class="year">Sep 2025</span> <strong>End-to-end RL paper</strong> (arXiv). 93% real-world success, disaggregated sim architecture</li>
+    <li><span class="year">2025</span> <strong>Synthetica accepted at IROS 2025</strong>. CoRL 2025 presentation</li>
+  </ul>
+  <p>
+    <strong>Pace:</strong> From undergraduate research assistant to co-authoring NVIDIA&rsquo;s flagship robot learning
+    framework in ~2 years. Then pivoted from simulation infrastructure to pushing the frontier of visuomotor
+    policy learning at Berkeley. <strong>6 papers (3 first-author) in 24 months</strong> during the PhD, with each
+    paper progressively harder: simulation framework &rarr; sim-to-real state &rarr; differentiable grasping &rarr;
+    synthetic data &rarr; RGB-only grasping &rarr; end-to-end RL. The trajectory shows a clear escalation pattern:
+    building the tools first, then using them to solve the hardest problems. 855 citations as a PhD student is
+    strong &mdash; mostly driven by ORBIT/Isaac Lab adoption across the robotics community.
+  </p>
+  <p>
+    <strong>Acceleration:</strong> Clear. Gaps between milestones compressed from 6 months (NVIDIA era) to 2&ndash;3
+    months (Berkeley era). Each paper builds directly on the previous one. The progression from &ldquo;built the sim&rdquo;
+    to &ldquo;trained the first end-to-end RGB dexterous grasping policy&rdquo; is exactly what a founder trajectory
+    looks like &mdash; mastering the full stack before commercializing it.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- NETWORK MAP                                            -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Network Map</h2>
+
+  <h3>Core Collaborators</h3>
+  <ul>
+    <li><strong>Pieter Abbeel</strong> &mdash; UC Berkeley Professor, PhD co-advisor. Co-founder of Covariant ($222M raised)
+        and Gradescope (acquired by Turnitin). One of the most commercially-connected robotics professors in the world.
+        <a href="https://people.eecs.berkeley.edu/~pabbeel/">website</a></li>
+    <li><strong>Jitendra Malik</strong> &mdash; UC Berkeley Professor, PhD co-advisor. Arthur J. Chick Professor of EECS.
+        60+ PhD students mentored. One of the most cited computer vision researchers alive. Indian-origin.
+        <a href="https://people.eecs.berkeley.edu/~malik/">website</a></li>
+    <li><strong>Ankur Handa</strong> &mdash; NVIDIA Seattle Robotics Lab Research Scientist. Previously OpenAI. Co-author
+        on DeXtreme, DextrAH-RGB, Synthetica, End-to-end RL, and ORBIT. The closest industry collaborator &mdash;
+        if Handa leaves NVIDIA, high probability of co-founding with Singh.
+        <a href="https://ankurhanda.github.io/">website</a></li>
+    <li><strong>Karl Van Wyk</strong> &mdash; NVIDIA Robotics. Co-author on 4+ papers with Singh. Manipulation specialist.
+        Another potential co-founder or early hire</li>
+    <li><strong>Nathan Ratliff</strong> &mdash; NVIDIA Robotics. Senior researcher, motion planning expert. Co-author on
+        DextrAH-RGB, End-to-end RL. If a team forms from this group, Ratliff brings decades of manipulation experience</li>
+  </ul>
+
+  <h3>University of Toronto Network</h3>
+  <ul>
+    <li><strong>Florian Shkurti</strong> &mdash; UofT/Robotic Vision &amp; Learning Lab. Undergrad research mentor. Co-author on Synthetica</li>
+    <li><strong>Animesh Garg</strong> &mdash; Georgia Tech (formerly UofT). Undergrad collaborator. Co-author on ORBIT. Founded Embodied Intelligence (research group)</li>
+  </ul>
+
+  <h3>Berkeley Lab Peers (Malik Group)</h3>
+  <ul>
+    <li><strong>Haozhi Qi</strong> &mdash; Berkeley PhD 2025 (Malik). Multisensory dexterous manipulation. Now Meta FAIR &rarr; UChicago faculty. Direct peer in dexterous manipulation. Signal: HIGH</li>
+    <li><strong>Ilija Radosavovic</strong> &mdash; Berkeley PhD 2025 (Malik). Humanoid locomotion + sequence modeling. Deployed humanoid walking on real trails. Signal: HIGH</li>
+    <li><strong>Jathushan Rajasegaran</strong> &mdash; Berkeley PhD 2025 (Malik). Video models. Now Meta FAIR. Signal: MEDIUM</li>
+  </ul>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- TIMELINE & SIGNALS                                     -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Timeline &amp; Signals</h2>
+  <ul>
+    <li><strong>PhD completion:</strong> Likely 2026&ndash;2027. Started ~2023, Berkeley EECS PhDs typically take 4&ndash;5 years. The inflection point is 12&ndash;18 months away</li>
+    <li><strong>Advisor signal:</strong> Pieter Abbeel co-founded Covariant &mdash; he actively encourages and facilitates student startups. Malik&rsquo;s students frequently go to industry (Meta FAIR, startups)</li>
+    <li><strong>NVIDIA connection:</strong> Deep relationships with Handa, Van Wyk, Ratliff. NVIDIA could be a strategic investor or acquirer. Watch for any of these three leaving NVIDIA</li>
+    <li><strong>Market timing:</strong> Physical Intelligence at $11B, Dexterity at $1.65B. The market is HOT for dexterous manipulation. By the time Singh finishes his PhD, the seed/Series A window will be wide open</li>
+    <li><strong>Watch for:</strong> Twitter bio change, LinkedIn update to &ldquo;building something new&rdquo;, Ankur Handa leaving NVIDIA, any stealth company registration in robotics</li>
+  </ul>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- RISKS                                                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Risks</h2>
+  <ol>
+    <li><strong>May stay in research/big tech.</strong> Berkeley PhD + Abbeel/Malik pedigree = strong pull toward NVIDIA Research, Meta FAIR, Google DeepMind, or Physical Intelligence as a research hire rather than founder. Several Malik students (Qi, Rajasegaran) went to Meta FAIR</li>
+    <li><strong>Still early in PhD.</strong> Started ~2023, likely 2&ndash;3 years from completion. The founding window is not imminent &mdash; this is a relationship-building play, not an immediate deal</li>
+    <li><strong>Infrastructure builder, not product builder (yet).</strong> ORBIT/Isaac Lab is research infrastructure. The papers are research contributions. No evidence of product thinking, revenue generation, or customer discovery. The gap from &ldquo;93% success in lab&rdquo; to &ldquo;99.9% success in warehouse&rdquo; is enormous</li>
+    <li><strong>Co-founder uncertainty.</strong> The NVIDIA collaborators (Handa, Van Wyk, Ratliff) are the most likely co-founding team, but all are currently employed at NVIDIA with no departure signals. Without them, Singh would need to recruit a team from scratch</li>
+    <li><strong>Commoditization risk.</strong> NVIDIA itself could build the &ldquo;dexterous manipulation stack&rdquo; on top of Isaac Lab. They have the sim, the hardware partnerships, and the distribution. A startup competing with NVIDIA on robotics infrastructure is a hard pitch</li>
+    <li><strong>Depth-to-RGB gap.</strong> RGB-only results are competitive with depth-based but not yet superior. If depth sensors get cheap enough, the RGB-only advantage narrows</li>
+  </ol>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- BACKGROUND                                             -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Background</h2>
+  <p>
+    Indian-origin (Singh is a common Indian surname; confirmed by institutional context and collaborator network).
+    BASc in Engineering Science from the University of Toronto (2019&ndash;2023), where he collaborated with
+    Prof. Florian Shkurti and Prof. Animesh Garg on robotics. Researcher at NVIDIA Seattle Robotics Lab
+    (2021&ndash;2023) under Ankur Handa, Nathan Ratliff, and Karl Van Wyk &mdash; co-authored ORBIT, DeXtreme,
+    and Fast-Grasp&rsquo;D during this period. Currently PhD student at UC Berkeley in EECS, co-advised by
+    Pieter Abbeel and Jitendra Malik. 855 Google Scholar citations. Based in Berkeley, CA.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- OUTREACH                                               -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Outreach Draft</h2>
+  <div style="background: var(--bg); border: 1px solid #ddd; padding: 1.5em; border-radius: 6px; font-family: var(--sans);">
+    <p>hi Ritvik</p>
+    <p>I&rsquo;m Vansh, Partner at Boldcap.</p>
+    <p>I&rsquo;ve been going deep on dexterous manipulation &mdash; Physical Intelligence just hit $11B, Dexterity raised at $1.65B, Galbot at $3B. Everyone&rsquo;s betting on dexterous hands, but the bottleneck isn&rsquo;t the hardware &mdash; it&rsquo;s the sim-to-real visuomotor stack that makes them actually work in unstructured environments. That&rsquo;s the layer nobody has productized yet.</p>
+    <p>Your end-to-end RL work getting 93% real-world success on dexterous grasping with that disaggregated sim architecture &mdash; plus the fact that you built the simulation framework (ORBIT/Isaac Lab) that half the field trains on &mdash; means you&rsquo;ve touched every layer of the stack from sim infrastructure to real-world deployment. The DextrAH-RGB result removing the depth sensor entirely is the kind of insight that turns into a product moat.</p>
+    <p>I know you&rsquo;re mid-PhD &mdash; no rush. Would love to grab coffee in Berkeley and talk about where dexterous manipulation goes from here. If you ever think about building, I can write $500K&ndash;$1M and move fast.</p>
+    <p>Vansh</p>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- PUBLICATIONS                                           -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Publications</h2>
+  <p class="small muted">6+ papers at top robotics venues (ICRA, IROS, RA-L, CoRL). 855 Google Scholar citations. 3 first-author papers in 12 months.</p>
+
+  <h3>Dexterous Manipulation &amp; Visuomotor Policy (2024&ndash;2025)</h3>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2509.16434">End-to-end RL Improves Dexterous Grasping Policies</a></div>
+    <div class="venue"><strong>First author</strong> &middot; Sep 2025 &middot; With Karl Van Wyk, Jitendra Malik, Pieter Abbeel, Nathan Ratliff, Ankur Handa</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2412.01791">DextrAH-RGB: Visuomotor Policies to Grasp Anything with Dexterous Hands</a></div>
+    <div class="venue"><strong>First author</strong> &middot; Nov 2024 &middot; With Arthur Allshire, Ankur Handa, Nathan Ratliff, Karl Van Wyk</div>
+  </div>
+
+  <h3>Simulation &amp; Synthetic Data (2023&ndash;2025)</h3>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2410.21153">Synthetica: Large Scale Synthetic Data for Robot Perception</a></div>
+    <div class="venue"><strong>First author</strong> &middot; IROS 2025 &middot; With Jingzhou Liu, Karl Van Wyk, Yu-Wei Chao, Florian Shkurti, Nathan Ratliff, Ankur Handa</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2301.04195">ORBIT: A Unified Simulation Framework for Interactive Robot Learning Environments</a></div>
+    <div class="venue">IROS 2023 / IEEE RA-L &middot; With Mayank Mittal, Calvin Yu, Animesh Garg, et al. &middot; Evolved into Isaac Lab (6.8k stars)</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2210.13702">DeXtreme: Transfer of Agile In-Hand Manipulation from Simulation to Reality</a></div>
+    <div class="venue">ICRA 2023 &middot; With Ankur Handa, Arthur Allshire, Viktor Makoviychuk, et al.</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2306.08132">Fast-Grasp&rsquo;D: Dexterous Multi-finger Grasp Generation Through Differentiable Simulation</a></div>
+    <div class="venue">IROS 2023 / IEEE RA-L &middot; With Dylan Turpin, Eric Heiden, Miles Macklin, et al.</div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- RECURSIVE DISCOVERY                                    -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Recursive Discovery</h2>
+  <ul>
+    <li><strong>Ankur Handa</strong> &mdash; NVIDIA Seattle Robotics Lab Research Scientist. Previously OpenAI. Co-author on 5+ papers with Singh. If he leaves NVIDIA, highest probability of co-founding a dexterous manipulation company. Signal: <strong>HIGH</strong></li>
+    <li><strong>Karl Van Wyk</strong> &mdash; NVIDIA Robotics. Manipulation specialist. Co-author on 4+ papers. Second most likely co-founder after Handa. Signal: <strong>HIGH</strong></li>
+    <li><strong>Arthur Allshire</strong> &mdash; NVIDIA Robotics. Co-author on DeXtreme and DextrAH-RGB. Dexterous manipulation hardware expert. Signal: <strong>MEDIUM</strong></li>
+    <li><strong>Haozhi Qi</strong> &mdash; Berkeley PhD 2025 (Malik). Meta FAIR &rarr; UChicago faculty. Multisensory dexterous manipulation. Chose academia but signal if he leaves. Signal: <strong>MEDIUM</strong></li>
+    <li><strong>Ilija Radosavovic</strong> &mdash; Berkeley PhD 2025 (Malik). Humanoid locomotion pioneer. On job market. Complementary skills (locomotion + manipulation = full humanoid). Signal: <strong>HIGH</strong></li>
+    <li><strong>Mayank Mittal</strong> &mdash; Co-lead on ORBIT. ETH Zurich. If he enters the startup space, could build on the Isaac Lab ecosystem. Signal: <strong>MEDIUM</strong></li>
+    <li><strong>Animesh Garg</strong> &mdash; Georgia Tech professor (formerly UofT). Singh&rsquo;s undergrad mentor. Co-author on ORBIT. Active in robotics startup ecosystem. Signal: <strong>LOW</strong> (advisory only)</li>
+  </ul>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- NOTES                                                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Notes</h2>
+  <ul>
+    <li class="small">Indian-origin confirmed. Name + institutional context (UofT Engineering Science, collaborator network)</li>
+    <li class="small">BASc Engineering Science, University of Toronto (2019&ndash;2023). PhD EECS, UC Berkeley (~2023&ndash;present)</li>
+    <li class="small">Dual-advised by Pieter Abbeel (Covariant co-founder) and Jitendra Malik (60+ PhD students, legendary CV researcher)</li>
+    <li class="small">NVIDIA Robotics Lab researcher (2021&ndash;2023) under Ankur Handa, Nathan Ratliff, Karl Van Wyk</li>
+    <li class="small">ORBIT/Isaac Lab: 6.8k GitHub stars, 3.3k forks. NVIDIA&rsquo;s official robot learning simulation framework</li>
+    <li class="small">855 Google Scholar citations as a PhD student. 6+ papers at ICRA, IROS, RA-L, CoRL</li>
+    <li class="small">End-to-end RL: 93% real-world dexterous grasping success rate. First e2e RL for multifingered hands</li>
+    <li class="small">DextrAH-RGB: first RGB-only sim-to-real dexterous grasping (no depth sensor)</li>
+    <li class="small">Synthetica: 2.7M synthetic images, 9x faster SOTA object detection at 50&ndash;100Hz</li>
+    <li class="small">Fast-Grasp&rsquo;D: 10x faster than GraspIt!, Grasp&rsquo;D-1M dataset (1M grasps)</li>
+    <li class="small">Twitter: @ritvik_singh9. Active but low-frequency poster. Shares paper releases and robotics commentary</li>
+    <li class="small">GitHub: ritviksingh9. Repos include inverse kinematics with conditional VAE</li>
+    <li class="small">No departure signals. No startup signals. Mid-PhD. This is a relationship-building play</li>
+    <li class="small">Watch: Ankur Handa departure from NVIDIA, Singh Twitter bio change, any Bay Area robotics stealth company</li>
+    <li class="small">Contact: ritviksingh9@gmail.com</li>
+  </ul>
+
+  <footer>
+    researched: 2026-03-30 &middot; 6-agent SOP (technical, social, market, background, trajectory, network) &middot; <a href="../index.html">back to index</a>
+  </footer>
+
+</body>
+</html>
