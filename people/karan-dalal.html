@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karan Dalal &mdash; Out of Distribution People</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="site-title">Out of Distribution People</div>
+    <div class="breadcrumb"><a href="../index.html">/ index</a> / karan-dalal</div>
+  </nav>
+
+  <div class="profile-header">
+    <h1>Karan Dalal</h1>
+    <p class="one-liner">Lead author, One-Minute Video Generation with Test-Time Training (CVPR 2025, 2.4k GitHub stars). Core member of the TTT group &mdash; co-authored all 4 major TTT papers including TTT-Linear/MLP (ICML 2025, 454+ stars), TTT-E2E for long context (570 stars), and TTT-Discover. UC Berkeley EECS researcher + Stanford SAIL. Previously co-founded Otto (pet-tech, $1.6M raised at 17, shut down). Indian-origin. ~22. Cupertino, CA.</p>
+    <div class="tags">
+      <span class="tag">test-time-training</span>
+      <span class="tag">video-generation</span>
+      <span class="tag">sequence-modeling</span>
+      <span class="tag">long-context</span>
+      <span class="tag">continual-learning</span>
+      <span class="tag">indian</span>
+      <span class="tag spike">spike: core architect of TTT layers &mdash; a new sequence modeling primitive that replaces RNN hidden states with neural networks, published at ICML + CVPR 2025</span>
+    </div>
+    <div class="links">
+      <a href="https://www.karansdalal.com/">website</a>
+      <a href="https://scholar.google.com/citations?user=XPFPohcAAAAJ">google scholar</a>
+      <a href="https://x.com/karansdalal">twitter/x</a>
+      <a href="https://github.com/karan-dalal">github</a>
+      <a href="https://www.linkedin.com/in/karan--dalal/">linkedin</a>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- INVESTMENT THESIS                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <div class="spike-box">
+    <div class="label">&#9670; Investment Thesis</div>
+    <p>
+      Karan Dalal is a core architect of <strong>Test-Time Training (TTT) layers</strong> &mdash; a fundamentally new
+      sequence modeling primitive where the hidden state is itself a neural network that learns via gradient descent
+      during inference. This is not incremental: TTT layers achieve <strong>linear complexity like RNNs while matching
+      Transformer expressiveness</strong>, and unlike Mamba, they continue improving with longer context past 16K tokens.
+      The TTT group has published 4 papers in 18 months (ICML 2025, CVPR 2025, two arXiv), with Dalal as lead or
+      co-lead author on 3 of them. The video generation paper (CVPR 2025) demonstrated TTT layers enabling
+      <strong>one-minute coherent video generation</strong>, beating Mamba 2 by 34 Elo points &mdash; with only a 5B model.
+      TTT-E2E achieves <strong>2.7x faster inference than full attention at 128K context</strong> on H100s while scaling
+      identically. The TTT paradigm is being adopted by Thinking Machines Lab (Mira Murati, $2B raised, NVIDIA gigawatt
+      partnership) for their Tinker API. Dalal is 22, has prior startup experience ($1.6M raised at 17), and sits at
+      the intersection of architecture research and practical systems. If TTT layers become a standard primitive &mdash;
+      replacing or augmenting attention in long-context and video workloads &mdash; the people who invented them are
+      the ones to back.
+    </p>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- EVIDENCE                                               -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Evidence</h2>
+
+  <h3>TTT Layers: The Core Innovation</h3>
+  <p>
+    Test-Time Training layers replace the fixed hidden state of an RNN with <strong>a machine learning model</strong>
+    (linear model or 2-layer MLP) whose update rule is a step of self-supervised learning. This means the model
+    <em>continues training during inference</em>, compressing context into weights rather than caching tokens.
+  </p>
+  <table>
+    <tr><th>Method</th><th>Complexity</th><th>Scales past 16K?</th><th>Expressiveness</th><th>128K Inference Speed</th></tr>
+    <tr><td>Full Attention (Transformer)</td><td>O(n&sup2;)</td><td>Yes</td><td>High</td><td>1x (baseline)</td></tr>
+    <tr><td>Mamba / Mamba 2</td><td>O(n)</td><td><strong>No</strong> (plateaus)</td><td>Limited</td><td>~5x faster</td></tr>
+    <tr><td>Gated DeltaNet</td><td>O(n)</td><td>No</td><td>Limited</td><td>~5x faster</td></tr>
+    <tr><td><strong>TTT-Linear</strong></td><td>O(n)</td><td><strong>Yes</strong></td><td>Moderate</td><td>~5x faster</td></tr>
+    <tr><td><strong>TTT-MLP</strong></td><td>O(n)</td><td><strong>Yes</strong></td><td><strong>High</strong></td><td>~3x faster</td></tr>
+    <tr><td><strong>TTT-E2E</strong></td><td>O(n)</td><td><strong>Yes</strong></td><td><strong>High</strong></td><td><strong>2.7x faster</strong></td></tr>
+  </table>
+  <p class="small muted">
+    Key insight: TTT-Linear and TTT-MLP <strong>keep reducing perplexity as they condition on more tokens</strong>,
+    while Mamba cannot after 16K context. At 3B parameters / 164B training tokens, TTT-E2E scales with context length
+    identically to full attention Transformer. Mamba 2 and Gated DeltaNet do not.
+  </p>
+
+  <h3>CVPR 2025: One-Minute Video Generation</h3>
+  <p>
+    Lead author. Added TTT layers to a pre-trained 5B-parameter Transformer to generate <strong>one-minute videos
+    from text storyboards</strong> &mdash; a feat current Transformers cannot achieve due to quadratic attention costs.
+    Dataset: Tom and Jerry cartoons as proof-of-concept benchmark.
+  </p>
+  <ul>
+    <li><strong>+34 Elo points</strong> over Mamba 2, Gated DeltaNet, and sliding-window attention in human evaluation (100 videos per method)</li>
+    <li>Videos generated in a <strong>single shot</strong> &mdash; no editing, stitching, or post-processing</li>
+    <li>TTT-MLP preserved character appearance and smooth motion across scene transitions; baselines showed body distortion, character inconsistency, and duplicated narrative elements</li>
+    <li>GitHub repo: <strong>2,400 stars</strong> (as of March 2026)</li>
+  </ul>
+  <p class="small muted">
+    Acknowledged limitations: artifacts remain (morphing, unnatural physics, inconsistent lighting), attributed to 5B model scale.
+    The architecture contribution is the point &mdash; scaling to larger models would improve quality.
+  </p>
+
+  <h3>TTT-E2E: Long Context Without the Memory Tax</h3>
+  <p>
+    Co-authored (Dec 2025). Reframes long-context language modeling as <strong>continual learning</strong>: a standard
+    Transformer with sliding-window attention continues learning at test time via next-token prediction, compressing
+    context into weights. Meta-learning during training optimizes the initialization for test-time adaptation.
+  </p>
+  <ul>
+    <li><strong>2.7x faster</strong> than full attention at 128K context on H100 hardware</li>
+    <li><strong>35x faster</strong> at 2M token context</li>
+    <li>Constant inference latency regardless of context length</li>
+    <li>Training cost: ~3.4x slower than standard approaches at 8K context (meta-learning overhead)</li>
+    <li>GitHub: <strong>570 stars</strong></li>
+  </ul>
+
+  <h3>ICML 2025: Learning to (Learn at Test Time)</h3>
+  <p>
+    Core contributor (with Yu Sun and Xinhao Li). The foundational TTT paper that introduced TTT-Linear and TTT-MLP.
+    Evaluated at 125M to 1.3B parameters against Transformer and Mamba baselines.
+  </p>
+  <ul>
+    <li>Established that TTT layers match Transformer scaling behavior on long context</li>
+    <li>GitHub: ttt-lm-jax (<strong>454 stars</strong>) + ttt-lm-pytorch (<strong>1,300 stars</strong>)</li>
+    <li>Poster at ICML 2025. Workshop on test-time adaptation held at ICML 2025</li>
+  </ul>
+
+  <h3>TTT-Discover: Reinforcement Learning at Test Time</h3>
+  <p>
+    Co-authored (Jan 2026). Applies RL during test time so the LLM continues training with experience specific to
+    each test problem. New state-of-the-art on: Erd&#337;s&rsquo; minimum overlap problem, GPUMode kernel competition
+    (<strong>2x faster than prior art</strong>), AtCoder algorithm competitions, and single-cell denoising. All
+    achieved with open-source model at <strong>a cost of only a few hundred dollars per problem</strong>, using
+    Thinking Machines Lab&rsquo;s Tinker API.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- HIS OWN WORDS                                          -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>In His Own Words</h2>
+  <blockquote>
+    &ldquo;I&rsquo;m excited to share a project I&rsquo;ve been working on for over a year, which I believe will
+    fundamentally change our approach to language models. We&rsquo;ve designed a new architecture, which replaces the
+    hidden state of an RNN with a machine learning model.&rdquo;
+    <cite>&mdash; @karansdalal, Jul 8, 2024 (TTT-Linear/MLP launch)</cite>
+  </blockquote>
+  <p class="small muted">
+    &ldquo;Over a year&rdquo; means work began mid-2023 &mdash; during his Berkeley undergrad/early grad years.
+    &ldquo;Fundamentally change&rdquo; is a strong claim, but the paper delivered: ICML 2025 acceptance, 1,300+ GitHub
+    stars, and follow-on work by the broader community.
+  </p>
+
+  <blockquote>
+    &ldquo;Our new paper, &lsquo;End-to-End Test-Time Training for Long Context,&rsquo; is a step towards continual
+    learning in language models. We introduce a new method that blurs the boundary between training and inference.&rdquo;
+    <cite>&mdash; @karansdalal, Mar 2026 (TTT-E2E launch)</cite>
+  </blockquote>
+  <p class="small muted">
+    &ldquo;Blurs the boundary between training and inference&rdquo; is the thesis of the entire TTT research program.
+    If correct, every deployed model becomes a continual learner &mdash; architecturally different from the
+    train-once-deploy-frozen paradigm of current Transformers.
+  </p>
+
+  <blockquote>
+    &ldquo;Today, we&rsquo;re releasing a new paper &ndash; One-Minute Video Generation with Test-Time Training. We
+    add TTT layers to a pre-trained Transformer and fine-tune it to generate one-minute Tom and Jerry cartoons with
+    strong temporal consistency. Every video below is produced directly by the model &mdash; no editing, stitching,
+    or post-processing.&rdquo;
+    <cite>&mdash; @karansdalal, Apr 7, 2025 (TTT video paper launch)</cite>
+  </blockquote>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- MARKET & COMPETITIVE LANDSCAPE                         -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Market &amp; Competitive Landscape</h2>
+  <p>
+    TTT sits at the intersection of two massive markets: <strong>efficient long-context architectures</strong>
+    (replacing or augmenting attention) and <strong>long-form video generation</strong>. Both are bifurcating from
+    the Transformer status quo.
+  </p>
+
+  <h3>Architecture Race: Beyond Attention</h3>
+  <table>
+    <tr><th>Architecture</th><th>Key People</th><th>Affiliation</th><th>Status</th></tr>
+    <tr><td><strong>TTT Layers</strong></td><td>Yu Sun, Karan Dalal, Xinhao Li</td><td>Stanford/Berkeley/UCSD</td><td>ICML + CVPR 2025. Open-source. Tinker API (Thinking Machines)</td></tr>
+    <tr><td>Mamba / Mamba 2</td><td>Albert Gu, Tri Dao</td><td>CMU / Princeton &rarr; Cartesia AI ($63M)</td><td>Linear SSM. 5x throughput. Plateaus at 16K context</td></tr>
+    <tr><td>RWKV</td><td>Bo Peng</td><td>Community / EleutherAI</td><td>Linear RNN. Open-source. Limited commercial traction</td></tr>
+    <tr><td>Gated DeltaNet</td><td>Songlin Yang et al.</td><td>MIT / various</td><td>Linear attention variant. Competitive at short context</td></tr>
+    <tr><td>Hyena / StripedHyena</td><td>Michael Poli, Stefano Ermon</td><td>Together AI ($106M)</td><td>Implicit convolution. Sub-quadratic. Shipped in production</td></tr>
+  </table>
+  <p class="small muted">
+    <strong>Key differentiator:</strong> TTT is the only linear-complexity architecture that demonstrably scales with
+    context length identically to full attention. Mamba, DeltaNet, and SWA all plateau. This is the core claim and
+    the core bet.
+  </p>
+
+  <h3>Long-Form Video Generation</h3>
+  <table>
+    <tr><th>Company</th><th>Valuation / Funding</th><th>Approach</th><th>Max Duration</th></tr>
+    <tr><td>Runway (Gen 4.5)</td><td>$5.3B / $859M+</td><td>Diffusion + world models pivot</td><td>~40s</td></tr>
+    <tr><td>Luma AI (Dream Machine)</td><td>$4.0B / $1.07B</td><td>Diffusion, HUMAIN 2GW compute</td><td>~20s</td></tr>
+    <tr><td>CraftStory</td><td>Seed / $2M</td><td>Multi-diffusion bidirectional</td><td>Minutes</td></tr>
+    <tr><td><strong>TTT-Video (Dalal et al.)</strong></td><td>Research</td><td>TTT layers in Transformer</td><td><strong>60s (single-shot)</strong></td></tr>
+    <tr><td>Kling (Kuaishou)</td><td>Corporate</td><td>Proprietary</td><td>~10s</td></tr>
+    <tr><td>Sora (OpenAI)</td><td colspan="3"><strong>SHUT DOWN</strong> Mar 24, 2026. $2.1M lifetime revenue</td></tr>
+  </table>
+  <p class="small muted">
+    TTT-Video&rsquo;s 60-second single-shot generation is unique. But it was demonstrated on Tom &amp; Jerry cartoons
+    with a 5B model, not photorealistic content. The architectural insight (TTT layers enable coherent long sequences)
+    is generalizable; the demo is a proof of concept.
+  </p>
+
+  <h3>What He Could Build (Thesis Reconstruction)</h3>
+  <p>
+    <strong>Most likely: Infrastructure layer for continual learning / TTT-native models.</strong> The TTT group
+    already collaborates with Thinking Machines Lab (Mira Murati, $2B, NVIDIA gigawatt deal) whose Tinker API was
+    used for TTT-Discover experiments. The path from &ldquo;research primitive&rdquo; to &ldquo;company&rdquo; could be:
+    (a) a TTT-native model company (like how Cartesia AI commercializes Mamba/SSMs), (b) video infrastructure using
+    TTT for long-form coherent generation, or (c) joining / co-founding with the broader TTT group. No departure
+    signal yet &mdash; still actively publishing from Berkeley/Stanford.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- GROWTH TRAJECTORY                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Growth Trajectory</h2>
+  <ul class="timeline">
+    <li><span class="year">~2003</span> Born (estimated from high school junior in Dec 2020)</li>
+    <li><span class="year">2020</span> Co-founds PetCode (pet-tech QR tags) with Arnuv Tandon as Homestead High juniors, Cupertino, CA</li>
+    <li><span class="year">Jan 2021</span> Rebrands to Otto. Kickstarter raises $100K. Joins OnDeck accelerator</li>
+    <li><span class="year">2021</span> Graduates Homestead High School. Raises <strong>$1.6M</strong> for Otto (investors: Cyan Banister, Arielle Zuckerberg/Long Journey, Amjad Masad, Eric Ries). Enrolls at UC Berkeley EECS</li>
+    <li><span class="year">Apr 2023</span> Otto shuts down. Pivots fully to ML research</li>
+    <li><span class="year">Mid-2023</span> Begins TTT research (per his &ldquo;over a year&rdquo; tweet in Jul 2024)</li>
+    <li><span class="year">Jul 2024</span> TTT-Linear/MLP paper released (arXiv). 1,300+ GitHub stars. &ldquo;Will fundamentally change our approach to language models&rdquo;</li>
+    <li><span class="year">Apr 2025</span> Lead author, One-Minute Video Generation with TTT (CVPR 2025). 2,400 GitHub stars</li>
+    <li><span class="year">Jul 2025</span> ICML 2025 acceptance for TTT-Linear/MLP paper</li>
+    <li><span class="year">Dec 2025</span> TTT-E2E paper: long context as continual learning. 570 GitHub stars. 2.7x faster than full attention at 128K</li>
+    <li><span class="year">Jan 2026</span> TTT-Discover paper: RL at test time. SOTA on math, kernels, algorithms. Uses Thinking Machines Tinker API</li>
+    <li><span class="year">Mar 2026</span> Still actively publishing from Berkeley/Stanford SAIL. 4 major papers in 18 months. ~263 citations</li>
+  </ul>
+  <p>
+    <strong>Pace:</strong> From pet-tech founder (2020-2023) to core TTT architecture researcher (2023-2026) in under
+    3 years. 4 papers in 18 months, each extending TTT to a new domain (language &rarr; video &rarr; long context &rarr;
+    discovery/RL). GitHub traction: <strong>4,700+ total stars</strong> across TTT repos. The pivot from startup founder
+    to frontier ML researcher is rare and suggests both execution ability and intellectual depth.
+  </p>
+  <p>
+    <strong>Rate of change:</strong> Accelerating. Jul 2024 (first paper) &rarr; Apr 2025 (CVPR) &rarr; Dec 2025 (E2E)
+    &rarr; Jan 2026 (Discover). Gap between papers compressing from 9 months to 1 month. Each paper increases in
+    ambition and practical relevance.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- NETWORK MAP                                            -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Network Map</h2>
+
+  <h3>TTT Core Group</h3>
+  <ul>
+    <li><strong>Yu Sun</strong> &mdash; Stanford postdoc + NVIDIA researcher. TTT principal investigator. Invented TTT concept (ICML 2020). Co-author on all 4 TTT papers. Former Efros student (Berkeley). The intellectual leader of TTT. <a href="https://yueatsprograms.github.io/">website</a></li>
+    <li><strong>Xinhao Li</strong> &mdash; UCSD PhD student (Xiaolong Wang lab). Co-developed early TTT codebase and large-scale training. Co-author on TTT-Linear/MLP + TTT-E2E. <a href="https://leoxinhaolee.github.io/">website</a></li>
+    <li><strong>Daniel Koceja</strong> &mdash; Stanford. Led mid-project scaling experiments. Co-first-author on TTT-Video. Co-author on TTT-E2E + TTT-Discover</li>
+    <li><strong>Arnuv Tandon</strong> &mdash; Berkeley. Otto co-founder with Dalal. Co-author on TTT-E2E. Childhood collaborator turned research partner</li>
+    <li><strong>Gashon Hussein</strong> &mdash; Co-first-author on TTT-Video (CVPR 2025)</li>
+  </ul>
+
+  <h3>Senior Advisors / Faculty</h3>
+  <ul>
+    <li><strong>Carlos Guestrin</strong> &mdash; Stanford CS professor. Co-author on all 4 TTT papers. Former Amazon VP/Distinguished Scientist. XGBoost creator</li>
+    <li><strong>Tatsunori Hashimoto</strong> &mdash; Stanford CS professor. Co-author on 3 TTT papers. Foundation model alignment</li>
+    <li><strong>Xiaolong Wang</strong> &mdash; UCSD associate professor. Sloan Fellow 2025. Co-author on TTT-Video + TTT-E2E + TTT-Discover. Efros postdoc alum. Robotics + video understanding</li>
+    <li><strong>Yejin Choi</strong> &mdash; Stanford CS professor + AI2. Turing Award nominee-tier. Co-author on TTT-E2E + TTT-Discover</li>
+    <li><strong>Sanmi Koyejo</strong> &mdash; Stanford CS professor. Co-author on 3 TTT papers</li>
+    <li><strong>Jan Kautz</strong> &mdash; NVIDIA VP of Learning and Perception Research. Co-author on TTT-Video + TTT-Discover</li>
+  </ul>
+
+  <h3>Industry Connections</h3>
+  <ul>
+    <li><strong>Thinking Machines Lab</strong> (Mira Murati) &mdash; $2B raised, $12B valuation. NVIDIA gigawatt partnership. Tinker API used for TTT-Discover experiments. Direct collaboration channel</li>
+    <li><strong>NVIDIA Research</strong> &mdash; Jan Kautz (VP) is co-author. Jiarui Xu (NVIDIA) co-authored TTT-Video. Deep institutional relationship</li>
+    <li><strong>Jed McCaleb</strong> &mdash; Astera Institute founder (crypto billionaire, $500M in GPUs via Voltage Park). Co-author on TTT-E2E + TTT-Discover. Potential compute benefactor</li>
+  </ul>
+
+  <h3>Comparable Architecture Founders (Watch List)</h3>
+  <ul>
+    <li><strong>Albert Gu + Tri Dao</strong> &mdash; Mamba/SSM inventors &rarr; Cartesia AI ($63M Series A). Direct parallel: architecture researchers who commercialized</li>
+    <li><strong>Michael Poli</strong> &mdash; Hyena/StripedHyena &rarr; Together AI. Architecture-to-startup pipeline</li>
+  </ul>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- RISKS                                                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Risks</h2>
+  <ol>
+    <li><strong>No startup signal yet.</strong> Still actively publishing from Berkeley/Stanford. No departure announcement, no stealth signal. He may stay in academia (PhD track) rather than start a company. The Cartesia parallel (Gu/Dao left academia to commercialize Mamba) is aspirational, not confirmed</li>
+    <li><strong>TTT may not win the architecture race.</strong> Mamba has more ecosystem adoption, more citations, and a funded startup (Cartesia). TTT&rsquo;s training cost overhead (~3.4x at 8K context) is a practical barrier. If Mamba 3 or hybrid attention solves long context, TTT&rsquo;s window closes</li>
+    <li><strong>Not the PI.</strong> Yu Sun is the intellectual leader of TTT (invented the concept in 2020, postdoc at Stanford). Dalal is a core contributor but not the principal investigator. If TTT becomes a company, Sun would likely lead it</li>
+    <li><strong>Prior startup failed.</strong> Otto raised $1.6M and shut down after ~2 years. Different domain (pet-tech vs ML infra), and he was 17-19, but the failure is on record</li>
+    <li><strong>Research-stage technology.</strong> TTT-Video was demonstrated on Tom &amp; Jerry cartoons with a 5B model. TTT-E2E has training overhead. Neither is production-ready today. Gap between ICML poster and shipped product is large</li>
+    <li><strong>Advisor density may anchor him in academia.</strong> Collaborates with 5+ Stanford/UCSD professors (Guestrin, Hashimoto, Koyejo, Choi, Wang). This network could pull him toward a faculty position rather than a startup</li>
+  </ol>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- BACKGROUND                                             -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Background</h2>
+  <p>
+    Indian-origin. Grew up in Cupertino/Los Altos, CA. Homestead High School (class of 2021). Co-founded PetCode/Otto
+    with Arnuv Tandon at 16-17 from high school robotics club &mdash; raised $1.6M from Cyan Banister, Arielle
+    Zuckerberg/Long Journey Ventures, Amjad Masad (Replit CEO), Eric Ries, and others. Featured on ABC7, Daily Paws,
+    Wharton Global Youth. Otto shut down April 2023. UC Berkeley EECS (2021&ndash;present). Researcher at Stanford
+    SAIL. Core member of TTT group spanning Stanford, Berkeley, UCSD, and NVIDIA. Email: kdalal@berkeley.edu. ~22-23
+    years old.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- OUTREACH                                               -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Outreach Draft</h2>
+  <div style="background: var(--bg); border: 1px solid #ddd; padding: 1.5em; border-radius: 6px; font-family: var(--sans);">
+    <p>hi Karan</p>
+    <p>I&rsquo;m Vansh, Partner at Boldcap.</p>
+    <p>I&rsquo;ve been deep in the architecture race beyond attention &mdash; Cartesia commercializing Mamba ($63M raised), Together AI shipping Hyena/StripedHyena, RWKV staying open-source without a business model. The gap is clear: everyone has linear complexity, but only TTT layers actually scale with context length the way full attention does. Mamba plateaus at 16K. That&rsquo;s not a small detail &mdash; it&rsquo;s the whole game for long-form video, continual learning, and agentic workloads.</p>
+    <p>Your CVPR paper proved this concretely: one-minute coherent video from a 5B model, +34 Elo over Mamba 2, single-shot with no stitching. And TTT-E2E getting 2.7x over full attention at 128K while maintaining constant latency &mdash; that&rsquo;s the kind of result that creates companies. The Thinking Machines / Tinker integration for TTT-Discover already shows the production path.</p>
+    <p>Not sure what your plans look like post-Berkeley &mdash; but if you&rsquo;re ever thinking about commercializing TTT the way Gu and Dao did with Mamba, I&rsquo;d love to chat. I can write $500K&ndash;$1M and move fast.</p>
+    <p>Vansh</p>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- PUBLICATIONS                                           -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Publications</h2>
+  <p class="small muted">~263 citations (Google Scholar, Mar 2026). 4 major TTT papers in 18 months. 4,700+ total GitHub stars across repos.</p>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2504.05298">One-Minute Video Generation with Test-Time Training</a></div>
+    <div class="venue">CVPR 2025 &middot; <strong>Lead author</strong> with Daniel Koceja, Gashon Hussein, Jiarui Xu, + 11 others &middot; 2,400 GitHub stars</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2407.04620">Learning to (Learn at Test Time): RNNs with Expressive Hidden States</a></div>
+    <div class="venue">ICML 2025 &middot; With Yu Sun, Xinhao Li, + 9 others &middot; Core contributor &middot; 1,300 + 454 GitHub stars (PyTorch + JAX)</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2512.23675">End-to-End Test-Time Training for Long Context</a></div>
+    <div class="venue">arXiv Dec 2025 &middot; With Arnuv Tandon, Xinhao Li, Daniel Koceja, + 10 others &middot; 570 GitHub stars</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2601.16175">Learning to Discover at Test Time</a></div>
+    <div class="venue">arXiv Jan 2026 &middot; With Mert Yuksekgonul, Daniel Koceja, + 8 others &middot; TTT + RL for discovery</div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- NOTES                                                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Notes</h2>
+  <ul>
+    <li class="small">Indian-origin confirmed. Dalal surname. Cupertino/Los Altos, CA</li>
+    <li class="small">Homestead High School, class of 2021. Met co-founder Arnuv Tandon at robotics club</li>
+    <li class="small">Otto (PetCode): pet-tech startup, raised $1.6M at 17-18. Investors: Cyan Banister, Arielle Zuckerberg, Amjad Masad, Eric Ries. Shut down Apr 2023</li>
+    <li class="small">UC Berkeley EECS (2021&ndash;present). Researcher at Stanford SAIL. Email: kdalal@berkeley.edu</li>
+    <li class="small">Core TTT group member. Co-authored all 4 major TTT papers. Lead author on video generation (CVPR 2025)</li>
+    <li class="small">TTT key insight: hidden state = neural network, update rule = gradient descent. Linear complexity + Transformer-like scaling</li>
+    <li class="small">TTT-Linear/MLP: ICML 2025. Scales past 16K context (Mamba cannot). 125M-1.3B parameter evaluations</li>
+    <li class="small">TTT-Video: CVPR 2025. 60-second single-shot video generation. +34 Elo over baselines. 5B model, Tom &amp; Jerry</li>
+    <li class="small">TTT-E2E: 2.7x faster than full attention at 128K. 35x at 2M tokens. Constant latency. Meta-learning for initialization</li>
+    <li class="small">TTT-Discover: RL at test time. SOTA on Erdos problem, GPUMode kernels (2x faster), AtCoder. Uses Thinking Machines Tinker API</li>
+    <li class="small">GitHub: 4,700+ total stars. ttt-video-dit (2.4k), ttt-lm-pytorch (1.3k), e2e (570), ttt-lm-jax (454), mttt (92)</li>
+    <li class="small">Twitter: @karansdalal (~5.3K followers). Posts primarily about TTT papers</li>
+    <li class="small">TTT group PI: Yu Sun (Stanford postdoc, NVIDIA). Faculty: Guestrin, Hashimoto, Koyejo, Choi, Wang</li>
+    <li class="small">Thinking Machines Lab (Murati, $2B/12B) uses Tinker API for TTT experiments. Direct collaboration</li>
+    <li class="small">Jed McCaleb (Astera, Voltage Park, $500M GPUs) is co-author on 2 TTT papers. Compute access</li>
+    <li class="small">Cartesia AI ($63M) is the direct parallel: Gu/Dao commercialized Mamba SSMs. TTT could follow same path</li>
+    <li class="small">No departure/startup signal detected. Still publishing actively. Tier 1: would back if he started, but no urgency signal</li>
+    <li class="small">Xiaolong Wang (UCSD) tweet: &ldquo;Learning continuously during test time is how robot will work in the future&rdquo;</li>
+    <li class="small">Xinlei Chen (Meta) tweet: &ldquo;Very happy to see the TTT-series reaching yet another milestone! This time it serves as an inspiration for next-generation architecture post-Transformer&rdquo;</li>
+  </ul>
+
+  <footer>
+    researched: 2026-03-30 &middot; 6-agent SOP (technical, social, market, background, trajectory, network) &middot; tier 1 &middot; <a href="../index.html">back to index</a>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amrith Setlur &mdash; Out of Distribution People</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="site-title">Out of Distribution People</div>
+    <div class="breadcrumb"><a href="../index.html">/ index</a> / amrith-setlur</div>
+  </nav>
+
+  <div class="profile-header">
+    <h1>Amrith Setlur</h1>
+    <p class="one-liner">Final-year PhD, CMU Machine Learning (Virginia Smith + Sergey Levine + Aviral Kumar). Defined test-time compute scaling for LLMs &mdash; co-first author on e3 (EXAIT Best Paper), first author on process verifiers (ICLR 2025), RL on synthetic data (NeurIPS 2024), and 3 ICML 2025 papers. Built QED-Nano: 4B model matching 120B on Olympiad proofs. JP Morgan AI PhD Fellow (2024) + CMU Presidential Fellow (2025). 20+ papers. Indian-origin.</p>
+    <div class="tags">
+      <span class="tag spike">tier-1: high conviction</span>
+      <span class="tag">test-time-compute</span>
+      <span class="tag">rl-for-llms</span>
+      <span class="tag">reasoning</span>
+      <span class="tag">process-reward-models</span>
+      <span class="tag">meta-rl</span>
+      <span class="tag">indian</span>
+      <span class="tag spike">spike: defined test-time compute scaling paradigm across 7+ papers at top venues in 18 months</span>
+    </div>
+    <div class="links">
+      <a href="https://ars22.github.io/">website</a>
+      <a href="https://scholar.google.com/citations?user=i7V1kJgAAAAJ">google scholar</a>
+      <a href="https://x.com/setlur_amrith">twitter/x</a>
+      <a href="https://github.com/ars22">github</a>
+      <a href="https://www.linkedin.com/in/amrith-setlur">linkedin</a>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- INVESTMENT THESIS                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <div class="spike-box">
+    <div class="label">&#9670; Investment Thesis</div>
+    <p>
+      Amrith Setlur is arguably the single most prolific researcher in test-time compute scaling for LLMs &mdash;
+      the paradigm that letting models &ldquo;think longer&rdquo; at inference is more effective than scaling parameters.
+      In 18 months he has published <strong>7+ papers at ICLR, ICML, and NeurIPS</strong> that collectively define this
+      field: process reward models that are 8% more accurate and 5x more compute-efficient than outcome models (ICLR 2025),
+      RL on synthetic data that improves math reasoning 8-fold (NeurIPS 2024), meta-RL formalization of test-time compute
+      (ICML 2025), theoretical proof that verification-free approaches are suboptimal (ICML 2025), and e3 &mdash; the first
+      method to achieve genuine extrapolation beyond training token budgets (EXAIT Best Paper). He then built
+      <strong>QED-Nano</strong>: a 4B model that matches GPT-OSS-120B on Olympiad-level proofs, demonstrating 30x
+      compute efficiency. He is a final-year PhD student at CMU (graduating ~2026), dual-advised by Virginia Smith and
+      Sergey Levine, collaborating with Aviral Kumar at the exact lab (CMU AIRe) producing the most cited test-time
+      compute work in the field. He holds both the JP Morgan AI PhD Fellowship and CMU Presidential Fellowship.
+      The window is <strong>now</strong> &mdash; he is at the classic &ldquo;faculty or startup?&rdquo; inflection
+      point, and his research on making small models reason like large ones is the foundation for a compute-efficient
+      inference company.
+    </p>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- EVIDENCE                                               -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Evidence</h2>
+
+  <h3>e3: Test-Time Compute Extrapolation (EXAIT Best Paper)</h3>
+  <p>
+    &ldquo;e3: Learning to Explore Enables Extrapolation of Test-Time Compute for LLMs&rdquo; (co-first author with
+    <a href="matthew-yang.html">Matthew Yang</a>). The key insight: most existing reasoning models <strong>do not
+    extrapolate</strong> &mdash; performance plateaus beyond the training token budget. e3 solves this by training
+    LLMs to perform <strong>in-context exploration</strong>: chaining operations (generation, verification, refinement)
+    and testing multiple hypotheses before committing to an answer.
+  </p>
+  <ul>
+    <li>Three core elements: (1) chaining skills with asymmetric competence levels, (2) &ldquo;negative&rdquo; gradients
+        from incorrect traces to enhance exploration during RL, (3) curriculum design coupling task difficulty with training tokens</li>
+    <li><strong>e3-1.7B achieves top performance on AIME &rsquo;25 and HMMT &rsquo;25</strong> among sub-2B models</li>
+    <li>Demonstrates genuine extrapolation to <strong>2x the training token budget</strong></li>
+    <li>Improves both pass@1 and pass@k relative to baseline</li>
+  </ul>
+
+  <h3>Process Reward Models: 8% Better, 5x More Efficient (ICLR 2025)</h3>
+  <p>
+    &ldquo;Rewarding Progress: Scaling Automated Process Verifiers for LLM Reasoning&rdquo; &mdash; <strong>first author</strong>.
+    Defines process advantage verifiers (PAVs) that measure progress rather than step correctness. Collaborators include
+    researchers from Google DeepMind (Jacob Eisenstein, Rishabh Agarwal, Alekh Agarwal).
+  </p>
+  <ul>
+    <li>PAVs are <strong>&gt;8% more accurate</strong> than outcome reward models (ORMs)</li>
+    <li><strong>1.5&ndash;5x more compute-efficient</strong> than ORMs for test-time search</li>
+    <li>First result showing <strong>6x sample efficiency gain</strong> for online RL with PRMs vs. ORMs</li>
+    <li>Theoretical proof: even weaker provers improve base policy as long as they distinguish steps</li>
+  </ul>
+
+  <h3>RL on Synthetic Data: 8x Math Reasoning (NeurIPS 2024)</h3>
+  <p>
+    &ldquo;RL on Incorrect Synthetic Data Scales the Efficiency of LLM Math Reasoning by Eight-Fold&rdquo; &mdash;
+    <strong>first author</strong>. Key finding: training on model-generated <em>incorrect</em> solutions via per-step
+    DPO is far more valuable than training on correct synthetic data.
+  </p>
+  <ul>
+    <li><strong>8x improvement</strong> on GSM8K and MATH benchmarks via per-step credit assignment</li>
+    <li>Shows positive-only synthetic data amplifies spurious correlations &mdash; flat or inverse scaling</li>
+    <li>Self-generated data + subsequent finetuning doubles efficiency of same synthetic problems</li>
+  </ul>
+
+  <h3>QED-Nano: 4B Model Matching 120B on Proofs (2026)</h3>
+  <p>
+    Built QED-Nano, a <strong>4B parameter model</strong> post-trained for Olympiad-level mathematical proof generation.
+    Combines supervised fine-tuning (distilled from DeepSeek-Math-V2 685B), long-horizon RL with reasoning cache,
+    and structured test-time compute scaffolding.
+  </p>
+  <ul>
+    <li><strong>54% on IMO-ProofBench</strong> and 54% on ProofBench &mdash; competitive with Gemini 3 Pro</li>
+    <li>Matches <strong>GPT-OSS-120B</strong> (30x larger) on Olympiad proof problems</li>
+    <li>Test-time scaffold allows reasoning up to <strong>1.5M tokens per problem</strong></li>
+    <li>Fully open-sourced: model, data, code on GitHub and Hugging Face</li>
+  </ul>
+
+  <h3>Three ICML 2025 Papers</h3>
+  <ul>
+    <li><strong>&ldquo;Optimizing Test-Time Compute via Meta Reinforcement Finetuning&rdquo; (MRT)</strong> &mdash;
+        formalizes test-time compute as meta-RL. Co-authored with Matthew Yang, Yuxiao Qu, and Hugging Face researchers</li>
+    <li><strong>&ldquo;Scaling Test-Time Compute Without Verification or RL is Suboptimal&rdquo;</strong> &mdash;
+        theoretical proof that verifier-based RL methods dominate verifier-free approaches (distillation, cloning).
+        With Nived Rajaraman and Sergey Levine</li>
+    <li><strong>&ldquo;What Do Learning Dynamics Reveal About Generalization in LLM Mathematical Reasoning?&rdquo;</strong> &mdash;
+        with Katie Kang, Sergey Levine, and Aviral Kumar</li>
+  </ul>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- HIS OWN WORDS                                          -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>In His Own Words</h2>
+  <blockquote>
+    &ldquo;Through 2024, scaling test-time compute has become key. But, what does it mean to use test-time
+    compute effectively &amp; efficiently + how to do it? Answer: meta reinforcement learning.&rdquo;
+    <cite>&mdash; @setlur_amrith, Jan 9, 2025</cite>
+  </blockquote>
+  <p class="small muted">Frames the entire test-time compute paradigm through a meta-RL lens &mdash; not just a
+  method, but a <em>theory</em> of how inference compute should work. This is a founder-level framing of a
+  research agenda.</p>
+
+  <blockquote>
+    &ldquo;On-policy RL cannot learn from prompts for which the model&rsquo;s generated traces receive zero
+    reward. Exploration is the bottleneck for scaling RL on hard problems.&rdquo;
+    <cite>&mdash; CMU ML Blog, Nov 26, 2025 (co-authored with Yuxiao Qu)</cite>
+  </blockquote>
+  <p class="small muted">Identifies the core technical bottleneck in LLM reasoning &mdash; not scale, not data,
+  but exploration. This is the thesis behind POPE, e3, and QED-Nano. If he starts a company, exploration-efficient
+  reasoning is the product.</p>
+
+  <blockquote>
+    &ldquo;Can just a 4B model solve Olympiad-level proof problems at the level of giant proprietary LLMs?
+    We built QED-Nano, a 4B model that we carefully post-trained for Olympiad-level proof problems,
+    matching 30x larger models like gpt-oss-120B.&rdquo;
+    <cite>&mdash; @setlur_amrith, Feb 2026</cite>
+  </blockquote>
+  <p class="small muted">The 30x efficiency gap is the commercial thesis. If you can match frontier model
+  reasoning with a 4B model + smart test-time compute, you can build an inference company that undercuts
+  OpenAI/Anthropic by an order of magnitude on cost.</p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- MARKET & COMPETITIVE LANDSCAPE                         -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Market &amp; Competitive Landscape</h2>
+  <p>
+    Test-time compute / inference scaling is the defining paradigm shift of 2024&ndash;2026. Pre-training scaling laws
+    are plateauing &mdash; high-quality training data may be exhausted by 2028. The industry is pivoting: spend less
+    on training, more on inference-time reasoning. <strong>Inference demand will exceed training demand by 118x by
+    2026</strong>, reshaping GPU procurement toward inference-optimized hardware. A 7B model with 100x inference
+    compute can match a 70B model with standard inference.
+  </p>
+  <table>
+    <tr><th>Player</th><th>Approach</th><th>Key Metric</th><th>Status</th></tr>
+    <tr><td>OpenAI (o1/o3)</td><td>Internal CoT + test-time search</td><td>96.7% ARC-AGI, 96.7% AIME</td><td>Dominant but expensive</td></tr>
+    <tr><td>DeepSeek (R1)</td><td>Pure RL, MoE (671B/37B active)</td><td>79.8% AIME at 1/18th cost of o3</td><td>Open-weight, cost leader</td></tr>
+    <tr><td>Google (Gemini 3)</td><td>Multimodal reasoning, 2M context</td><td>Competitive on math/code</td><td>Closed, integrated</td></tr>
+    <tr><td>Cursor/Anysphere</td><td>Inference scaling for code agents</td><td>$500M+ ARR, $29.3B valuation</td><td>$2.3B raised (Nov 2025)</td></tr>
+    <tr><td>Cognition (Devin)</td><td>Agentic reasoning for coding</td><td>$73M ARR, $10.2B valuation</td><td>$696M raised total</td></tr>
+    <tr><td>D-Matrix</td><td>Inference-optimized silicon</td><td>$2B valuation</td><td>$275M Series C</td></tr>
+  </table>
+  <p class="small muted">
+    Setlur&rsquo;s work sits upstream of all of these: he is building the <em>algorithms</em> that make inference
+    compute effective. Process verifiers, exploration strategies, and meta-RL training recipes are the ingredients
+    that Cursor, Cognition, and OpenAI need but mostly build ad hoc. A company that packages these into a
+    reasoning middleware layer &mdash; &ldquo;make any model think better&rdquo; &mdash; would be highly defensible.
+  </p>
+
+  <h3>Academic Comparables</h3>
+  <table>
+    <tr><th>Researcher</th><th>Area</th><th>Current</th><th>Commercial Signal</th></tr>
+    <tr><td><strong>Charlie Snell</strong></td><td>Test-time compute scaling (Berkeley/DeepMind)</td><td>Dropped PhD &rarr; Cursor</td><td>Already converted research to startup</td></tr>
+    <tr><td><strong>Noam Brown</strong></td><td>Search + reasoning (CMU &rarr; FAIR &rarr; OpenAI)</td><td>Led o1/o3 reasoning at OpenAI</td><td>His CMU thesis is the backbone of OpenAI&rsquo;s reasoning</td></tr>
+    <tr><td><strong>Tri Dao</strong></td><td>FlashAttention (Stanford)</td><td>Founded Together AI ($4.5B)</td><td>Infrastructure insight &rarr; $300M+ company</td></tr>
+    <tr><td><strong>Aviral Kumar</strong></td><td>Offline RL, test-time compute (Berkeley &rarr; CMU)</td><td>CMU professor + Google DeepMind</td><td>Setlur&rsquo;s closest collaborator; academic path</td></tr>
+  </table>
+  <p class="small muted">
+    Charlie Snell is the closest comparable &mdash; same research area, dropped out of Berkeley PhD to join Cursor.
+    Setlur has a stronger publication record (more first-author papers at top venues) and a broader theoretical
+    foundation (meta-RL formalization, process verifiers, exploration theory). If Snell chose Cursor over founding,
+    Setlur could be the one who founds the &ldquo;reasoning infrastructure&rdquo; company.
+  </p>
+
+  <h3>What He&rsquo;d Build (Thesis Reconstruction)</h3>
+  <p>
+    <strong>Most likely: Reasoning-as-a-service / inference optimization infrastructure.</strong> Not another foundation model &mdash;
+    a layer that makes <em>any</em> model reason better. The QED-Nano result proves the thesis: a 4B model + his
+    exploration/verification stack matches 120B models. Package process verifiers + meta-RL training + test-time
+    scaffolding into an API. Customers: any company running LLM inference on hard problems (code, math, science,
+    legal reasoning). The 30x compute efficiency gap is the pricing moat.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- GROWTH TRAJECTORY                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Growth Trajectory</h2>
+  <ul class="timeline">
+    <li><span class="year">2020</span> CMU Master&rsquo;s in Language Technologies. Early work on politeness transfer, TTS, speech representations</li>
+    <li><span class="year">2021</span> <strong>ICLR 2021:</strong> &ldquo;Explaining the Efficacy of Counterfactually Augmented Data&rdquo; (with Divyansh Kaushik, Zachary Lipton)</li>
+    <li><span class="year">2021</span> Begins PhD in Machine Learning Department at CMU under Virginia Smith</li>
+    <li><span class="year">2022</span> <strong>NeurIPS 2022:</strong> &ldquo;Adversarial Unlearning: Reducing Confidence Along Adversarial Directions&rdquo; (RCAD)</li>
+    <li><span class="year">2023</span> Starts visiting UC Berkeley, working with Sergey Levine. Begins collaboration with Aviral Kumar</li>
+    <li><span class="year">2024</span> <strong>ICML 2024:</strong> &ldquo;Prompting is a Double-Edged Sword&rdquo; (worst-group robustness)</li>
+    <li><span class="year">Jun 2024</span> Submits RL on synthetic data paper &mdash; pivot to LLM reasoning + test-time compute</li>
+    <li><span class="year">Oct 2024</span> <strong>JP Morgan AI PhD Fellowship</strong> awarded</li>
+    <li><span class="year">Dec 2024</span> <strong>NeurIPS 2024:</strong> RL on incorrect synthetic data (8x math reasoning improvement)</li>
+    <li><span class="year">Jan 2025</span> CMU ML Blog: formalizes test-time compute as meta-RL problem</li>
+    <li><span class="year">Apr 2025</span> <strong>ICLR 2025:</strong> Process verifiers paper (8% better, 5x more efficient)</li>
+    <li><span class="year">Jul 2025</span> <strong>3 papers at ICML 2025:</strong> MRT, suboptimality proof, learning dynamics</li>
+    <li><span class="year">2025</span> <strong>CMU Presidential Fellowship</strong> awarded</li>
+    <li><span class="year">Nov 2025</span> CMU ML Blog: exploration as bottleneck for RL on hard problems (POPE)</li>
+    <li><span class="year">Feb 2026</span> Ships QED-Nano (4B matching 120B). Open-sources everything</li>
+    <li><span class="year">Jun 2025</span> e3 paper published (EXAIT Best Paper). Co-first author with Matthew Yang</li>
+    <li><span class="year">2026</span> 4 more arXiv papers: InT, POPE, Reuse your FLOPs, Reasoning Cache. Final year of PhD</li>
+  </ul>
+  <p>
+    <strong>Pace:</strong> From robustness/fairness researcher (2020&ndash;2023) to <strong>the</strong> defining voice
+    on test-time compute scaling (2024&ndash;2026). The pivot happened mid-2024. Since then: <strong>7+ papers at
+    NeurIPS/ICLR/ICML in 18 months</strong>, a best paper award, two prestigious fellowships, and a practical
+    demonstration (QED-Nano) that his theory works. The gap between milestones compressed from ~1 year (2021&ndash;2023)
+    to ~2 months (2024&ndash;2026). <strong>This is one of the fastest research acceleration curves in current ML.</strong>
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- NETWORK MAP                                            -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Network Map</h2>
+
+  <h3>Core Collaborators</h3>
+  <ul>
+    <li><strong>Aviral Kumar</strong> &mdash; CMU Assistant Professor + Google DeepMind Researcher. PhD from Berkeley (2023).
+        Co-author on nearly every paper since 2024. Runs the AIRe Lab at CMU. The intellectual engine behind test-time compute
+        scaling research. <a href="https://aviralkumar2907.github.io/">website</a> &middot; <a href="https://x.com/aviral_kumar2">@aviral_kumar2</a></li>
+    <li><strong>Virginia Smith</strong> &mdash; CMU ML Department. Primary PhD advisor. Co-author on e3, POPE, and earlier
+        robustness work. <a href="http://www.cs.cmu.edu/~smithv/">website</a></li>
+    <li><strong>Sergey Levine</strong> &mdash; UC Berkeley RAIL Lab. Co-advisor during long-term visit. Co-author on suboptimality
+        proof and learning dynamics papers. One of the most cited RL researchers alive. <a href="https://people.eecs.berkeley.edu/~svlevine/">website</a></li>
+    <li><strong><a href="matthew-yang.html">Matthew Yang</a></strong> &mdash; CMU MS (graduated Dec 2025). Co-first author
+        on e3, co-author on MRT and InT. The closest research collaborator. Delta Fellow. Scale AI + Skild AI experience.
+        <a href="https://x.com/matthewyryang">@matthewyryang</a></li>
+  </ul>
+
+  <h3>Extended Research Network</h3>
+  <ul>
+    <li><strong>Charlie Snell</strong> &mdash; UC Berkeley PhD (dropped out) &rarr; Cursor. Co-author on e3. Wrote the foundational
+        test-time compute scaling paper at DeepMind. Now training frontier coding agents at Cursor ($29.3B).
+        <a href="https://sea-snell.github.io/">website</a></li>
+    <li><strong>Yuxiao Qu</strong> &mdash; CMU. Co-first author on POPE and MRT. Equal contributor on exploration blog post</li>
+    <li><strong>Nived Rajaraman</strong> &mdash; Co-author on suboptimality proof (ICML 2025)</li>
+    <li><strong>Ian Wu</strong> &mdash; Co-author on e3 and Reasoning Cache</li>
+    <li><strong>Ruslan Salakhutdinov</strong> &mdash; CMU ML Department head. Co-author on MRT and POPE</li>
+    <li><strong>Max Simchowitz</strong> &mdash; Co-author on e3. Theoretical ML researcher</li>
+  </ul>
+
+  <h3>Google DeepMind Connection</h3>
+  <ul>
+    <li><strong>Jacob Eisenstein, Rishabh Agarwal, Alekh Agarwal, Jonathan Berant</strong> &mdash; Google DeepMind co-authors
+        on process verifiers paper (ICLR 2025). Indicates active DeepMind collaboration and likely recruitment interest</li>
+  </ul>
+
+  <h3>Earlier CMU Network</h3>
+  <ul>
+    <li><strong>Zachary Lipton</strong> &mdash; CMU. Co-author on counterfactual data paper (ICLR 2021)</li>
+    <li><strong>Divyansh Kaushik</strong> &mdash; CMU PhD. Co-author on counterfactual augmentation</li>
+    <li><strong>Eduard Hovy</strong> &mdash; CMU LTI. Early master&rsquo;s advisor</li>
+  </ul>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- RISKS                                                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Risks</h2>
+  <ol>
+    <li><strong>May choose faculty over founding.</strong> Presidential Fellowship + dual-advisor pedigree (Virginia Smith +
+        Sergey Levine) + Google DeepMind collaborations = strong academic pull. He could follow the Aviral Kumar path
+        (professor + part-time industry) rather than the Tri Dao path (founder). No public departure signals yet</li>
+    <li><strong>Google DeepMind pull.</strong> Four DeepMind researchers co-authored his ICLR 2025 paper. DeepMind is the
+        most likely acqui-hire destination. If they offer him a research scientist role with compute, founding becomes
+        less likely</li>
+    <li><strong>No demonstrated product/shipping instinct.</strong> Purely academic track record. QED-Nano is open-source
+        research, not a product. No internships at startups. No GitHub repos suggesting infrastructure or product thinking.
+        Compare to Zeeshan Patel (shipped 1.245B videos/month) or Charlie Snell (went to Cursor to build product)</li>
+    <li><strong>Test-time compute may commoditize.</strong> OpenAI (o1/o3), DeepSeek (R1), and Google (Gemini) are all
+        building reasoning into their base models. If test-time compute becomes a standard feature rather than a
+        differentiable layer, the &ldquo;reasoning middleware&rdquo; company thesis weakens</li>
+    <li><strong>Co-founder gap.</strong> Matthew Yang is the closest collaborator but just graduated MS. Yuxiao Qu is another
+        possibility. No signal of team formation</li>
+    <li><strong>Research may not transfer to production.</strong> Olympiad math proofs (QED-Nano) and AIME benchmarks are
+        academic. The gap between &ldquo;4B matches 120B on proofs&rdquo; and &ldquo;4B matches 120B on enterprise
+        reasoning tasks&rdquo; is non-trivial</li>
+  </ol>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- BACKGROUND                                             -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Background</h2>
+  <p>
+    Indian-origin (Setlur is a Kannada Brahmin surname from Karnataka, India). Full name: Amrith Rajagopal Setlur.
+    Master&rsquo;s in Language Technologies at CMU (~2020). PhD in Machine Learning Department at CMU (2021&ndash;present,
+    final year). Primary advisor Virginia Smith; long-term visiting researcher at UC Berkeley under Sergey Levine;
+    close collaborator with Aviral Kumar (CMU AIRe Lab + Google DeepMind). JP Morgan AI PhD Fellowship (2024).
+    CMU Presidential Fellowship in MLD (2025). Early work in NLP (politeness transfer, TTS, speech representations),
+    then robustness/fairness (ICLR 2021, NeurIPS 2022), then pivoted to LLM reasoning and test-time compute
+    (2024&ndash;present). Based in Pittsburgh, PA.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- OUTREACH                                               -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Outreach Draft</h2>
+  <div style="background: var(--bg); border: 1px solid #ddd; padding: 1.5em; border-radius: 6px; font-family: var(--sans);">
+    <p>hi Amrith</p>
+    <p>I&rsquo;m Vansh, Partner at Boldcap.</p>
+    <p>I&rsquo;ve been going deep on test-time compute scaling &mdash; the landscape is moving fast. OpenAI baked reasoning into o3 but it&rsquo;s expensive. DeepSeek R1 proved you can get 80% of the way at 1/18th the cost with pure RL. Charlie Snell dropped his PhD to go to Cursor. Cognition is at $73M ARR. But nobody has packaged the <em>algorithms</em> that make inference compute actually work &mdash; process verifiers, exploration strategies, meta-RL training &mdash; into a standalone product. That&rsquo;s the gap.</p>
+    <p>Your process verifier work (8% accuracy gain, 5x compute efficiency over ORMs) plus the QED-Nano result (4B matching 120B on Olympiad proofs) is the clearest demonstration that smart test-time compute beats brute-force scale. The fact that you formalized this as meta-RL rather than just hacking search &mdash; that&rsquo;s infrastructure-grade thinking, not a one-off paper.</p>
+    <p>Not sure if you&rsquo;re thinking about founding vs. faculty &mdash; would love to chat either way. I can write $500K&ndash;$1M and move fast.</p>
+    <p>Vansh</p>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- PUBLICATIONS                                           -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Publications</h2>
+  <p class="small muted">20+ papers. 7+ at NeurIPS/ICLR/ICML in 18 months. EXAIT Best Paper. Google DeepMind collaborations.</p>
+
+  <h3>Test-Time Compute &amp; LLM Reasoning (2024&ndash;2026)</h3>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2506.09026">e3: Learning to Explore Enables Extrapolation of Test-Time Compute for LLMs</a></div>
+    <div class="venue">EXAIT Best Paper &middot; Co-first author with Matthew Yang &middot; Jun 2025</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2503.07572">Optimizing Test-Time Compute via Meta Reinforcement Finetuning (MRT)</a></div>
+    <div class="venue">ICML 2025 &middot; With Yuxiao Qu, Matthew Yang, Lewis Tunstall (Hugging Face)</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2502.12118">Scaling Test-Time Compute Without Verification or RL is Suboptimal</a></div>
+    <div class="venue">ICML 2025 &middot; With Nived Rajaraman, Sergey Levine, Aviral Kumar</div>
+  </div>
+  <div class="paper">
+    <div class="title">What Do Learning Dynamics Reveal About Generalization in LLM Mathematical Reasoning?</div>
+    <div class="venue">ICML 2025 &middot; With Katie Kang, Sergey Levine, Aviral Kumar</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2410.08146">Rewarding Progress: Scaling Automated Process Verifiers for LLM Reasoning</a></div>
+    <div class="venue">ICLR 2025 &middot; <strong>First author</strong> &middot; With Google DeepMind researchers</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2406.14532">RL on Incorrect Synthetic Data Scales the Efficiency of LLM Math Reasoning by Eight-Fold</a></div>
+    <div class="venue">NeurIPS 2024 &middot; <strong>First author</strong></div>
+  </div>
+
+  <h3>2026 Preprints</h3>
+  <div class="paper">
+    <div class="title">InT: Self-Proposed Interventions Enable Credit Assignment in LLM Reasoning</div>
+    <div class="venue">arXiv 2026 &middot; With Matthew Yang, Hao Bai, Ian Wu, Aviral Kumar</div>
+  </div>
+  <div class="paper">
+    <div class="title">POPE: Learning to Reason on Hard Problems via Privileged On-Policy Exploration</div>
+    <div class="venue">arXiv 2026 &middot; With Yuxiao Qu, Virginia Smith, Ruslan Salakhutdinov, Aviral Kumar</div>
+  </div>
+  <div class="paper">
+    <div class="title">Reuse your FLOPs: Scaling RL on Hard Problems by Conditioning on Very Off-Policy Prefixes</div>
+    <div class="venue">arXiv 2026 &middot; With Zijian Wang, Andrew Cohen, Sang Michael Xie</div>
+  </div>
+  <div class="paper">
+    <div class="title">Reasoning Cache: Continual Improvement Over Long Horizons via Short-Horizon RL</div>
+    <div class="venue">arXiv 2026 &middot; With Ian Wu, Yuxiao Qu, Aviral Kumar</div>
+  </div>
+  <div class="paper">
+    <div class="title">RLAD: Training LLMs to Discover Abstractions for Solving Reasoning Problems</div>
+    <div class="venue">arXiv 2025</div>
+  </div>
+  <div class="paper">
+    <div class="title">Thinking vs. Doing: Agents that Reason by Scaling Test-Time Interaction</div>
+    <div class="venue">arXiv 2025 &middot; With Junhong Shen, Ameet Talwalkar, Aviral Kumar</div>
+  </div>
+
+  <h3>Earlier Work (2020&ndash;2024)</h3>
+  <div class="paper">
+    <div class="title">Prompting is a Double-Edged Sword: Improving Worst-Group Robustness of Foundation Models</div>
+    <div class="venue">ICML 2024</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2206.01367">Adversarial Unlearning: Reducing Confidence Along Adversarial Directions (RCAD)</a></div>
+    <div class="venue">NeurIPS 2022</div>
+  </div>
+  <div class="paper">
+    <div class="title">Explaining the Efficacy of Counterfactually Augmented Data</div>
+    <div class="venue">ICLR 2021 &middot; With Divyansh Kaushik, Eduard Hovy, Zachary Lipton</div>
+  </div>
+  <div class="paper">
+    <div class="title">Robust Handwriting Recognition with Limited and Noisy Data</div>
+    <div class="venue">2020</div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- NOTES                                                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Notes</h2>
+  <ul>
+    <li class="small">Indian-origin confirmed. Setlur is a Kannada Brahmin surname from Karnataka. Full name: Amrith Rajagopal Setlur</li>
+    <li class="small">Final-year PhD in ML at CMU (2021&ndash;2026). Master&rsquo;s in Language Technologies at CMU (~2020)</li>
+    <li class="small">Triple-advised: Virginia Smith (CMU), Sergey Levine (Berkeley), Aviral Kumar (CMU + DeepMind)</li>
+    <li class="small">JP Morgan AI PhD Fellowship (2024) + CMU Presidential Fellowship in MLD (2025)</li>
+    <li class="small">7+ papers at NeurIPS/ICLR/ICML in 18 months (mid-2024 to end-2025). EXAIT Best Paper for e3</li>
+    <li class="small">QED-Nano: 4B model, 54% IMO-ProofBench, matches GPT-OSS-120B. Fully open-sourced (GitHub + HuggingFace)</li>
+    <li class="small">Process verifiers (PAVs): 8% more accurate, 1.5-5x more compute-efficient than ORMs, 6x RL sample efficiency</li>
+    <li class="small">RL on incorrect synthetic data: 8x improvement on GSM8K/MATH via per-step DPO</li>
+    <li class="small">Closest research collaborator: Matthew Yang (CMU MS, graduated Dec 2025). Co-first author on e3</li>
+    <li class="small">Charlie Snell (co-author on e3) dropped Berkeley PhD to join Cursor &mdash; precedent for research-to-product conversion</li>
+    <li class="small">4 Google DeepMind co-authors on ICLR 2025 paper &mdash; DeepMind is likely recruitment competitor</li>
+    <li class="small">Aviral Kumar runs CMU AIRe Lab + Google DeepMind dual appointment &mdash; could facilitate either path</li>
+    <li class="small">NeurIPS R0-FoMo workshop organizer (2023) &mdash; community leadership signal</li>
+    <li class="small">GitHub: ars22 (30 repos, 17 followers). scaling-LLM-math-synthetic-data (32 stars). e3 repo (19 stars)</li>
+    <li class="small">Twitter: @setlur_amrith. Active poster on research. Threads on meta-RL, PRMs, exploration</li>
+    <li class="small">No departure signals yet. No startup signals. Pure academic trajectory so far</li>
+    <li class="small">Risk: may take faculty position or Google DeepMind research scientist role</li>
+    <li class="small">Contact: asetlur@andrew.cmu.edu</li>
+  </ul>
+
+  <footer>
+    researched: 2026-03-30 &middot; 6-agent SOP (technical, social, market, background, trajectory, network) &middot; <a href="../index.html">back to index</a>
+  </footer>
+
+</body>
+</html>
