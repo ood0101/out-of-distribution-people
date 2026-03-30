@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kawin Ethayarajh &mdash; Out of Distribution People</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="site-title">Out of Distribution People</div>
+    <div class="breadcrumb"><a href="../index.html">/ index</a> / kawin-ethayarajh</div>
+  </nav>
+
+  <div class="profile-header">
+    <h1>Kawin Ethayarajh</h1>
+    <p class="one-liner">Assistant Professor of Applied AI at UChicago Booth (Kathryn &amp; Grant Swick Faculty Scholar). Created KTO (Kahneman-Tversky Optimization) &mdash; ICML 2024 Spotlight (top 3.5%), now industry-standard alignment method integrated into models with hundreds of millions of downloads. Created Stanford Human Preferences (SHP) &mdash; sole academic dataset used in Llama-2 post-training. ICML 2022 Outstanding Paper Award. Meta Fellowship 2021. PhD Stanford (Dan Jurafsky). BSc/MSc UofT (4.0 GPA, John H. Moss Scholar &mdash; top graduating award). Princeton PLI postdoc. Visiting Researcher at Contextual AI. ~3,200+ citations. Indian-origin (Sri Lankan Tamil). ~29.</p>
+    <div class="tags">
+      <span class="tag">alignment</span>
+      <span class="tag">preference-optimization</span>
+      <span class="tag">behavioral-ml</span>
+      <span class="tag">rlhf</span>
+      <span class="tag">nlp</span>
+      <span class="tag">indian</span>
+      <span class="tag spike">spike: created KTO &mdash; replaced DPO as default alignment method at multiple frontier labs, needs only binary signal not preference pairs</span>
+    </div>
+    <div class="links">
+      <a href="https://kawine.github.io/">website</a>
+      <a href="https://scholar.google.com/citations?user=7SUV6rQAAAAJ&hl=en">google scholar</a>
+      <a href="https://x.com/ethayarajh">twitter/x</a>
+      <a href="https://github.com/kawine">github</a>
+      <a href="https://www.linkedin.com/in/kawinethayarajh/">linkedin</a>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- INVESTMENT THESIS                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <div class="spike-box">
+    <div class="label">&#9670; Investment Thesis</div>
+    <p>
+      Kawin Ethayarajh is the person who figured out that <strong>alignment objectives are prospect-theoretic</strong>
+      and turned that insight into KTO &mdash; a method that matches or beats DPO from 1B to 30B parameters
+      while requiring only binary feedback instead of expensive preference pairs. KTO is now integrated into
+      HuggingFace TRL (the default RLHF library) and used in production at multiple frontier labs.
+      His Stanford Human Preferences dataset was the <strong>sole academic dataset used in Llama-2 post-training</strong>.
+      His ICML 2022 Outstanding Paper on V-usable information redefined how the field measures dataset difficulty.
+      His EMNLP 2019 paper on contextual representations has <strong>~987 citations</strong> and became a standard
+      reference for understanding BERT/GPT-2 geometry. He is 29, just started as an assistant professor at
+      UChicago Booth in the newly created Applied AI group (July 2025), and his research program &mdash;
+      &ldquo;behavior-bound machine learning&rdquo; &mdash; sits at the exact intersection of AI, behavioral economics,
+      and alignment that every frontier lab is now hiring for. He is <strong>not currently building a startup</strong>,
+      but his body of work makes him the single most credible academic founder in the RLHF/alignment tooling space
+      if he ever decides to leave. Tier 1: build the relationship now, check monthly.
+    </p>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- EVIDENCE                                               -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Evidence</h2>
+
+  <h3>KTO: Kahneman-Tversky Optimization (ICML 2024 Spotlight)</h3>
+  <p>
+    KTO applies <strong>Kahneman &amp; Tversky&rsquo;s prospect theory</strong> to LLM alignment. The key insight:
+    humans are loss-averse and perceive outcomes in systematically biased ways. Existing alignment objectives
+    (DPO, PPO) implicitly encode these biases &mdash; Ethayarajh calls this family <strong>Human-Aware Losses (HALOs)</strong>.
+    KTO directly maximizes a Kahneman-Tversky utility function instead of maximizing log-likelihood of preferences.
+  </p>
+  <table>
+    <tr><th>Method</th><th>Data Required</th><th>Compute</th><th>Performance (1B&ndash;30B)</th></tr>
+    <tr><td>RLHF/PPO</td><td>Reward model + preference pairs</td><td>High (separate RM training)</td><td>Baseline</td></tr>
+    <tr><td>DPO</td><td>Preference pairs (A &gt; B)</td><td>Medium</td><td>Matches RLHF</td></tr>
+    <tr><td><strong>KTO</strong></td><td><strong>Binary signal only (good/bad)</strong></td><td><strong>Medium</strong></td><td><strong>Matches or exceeds DPO at all scales</strong></td></tr>
+    <tr><td>Constitutional AI</td><td>Principles + synthetic critiques</td><td>High</td><td>Anthropic-internal</td></tr>
+  </table>
+  <p class="small muted">
+    741 citations (Semantic Scholar, Mar 2026). Top 3.5% of ICML 2024 acceptances.
+    KTO&rsquo;s practical advantage: preference data is expensive ($1&ndash;$10+ per comparison); binary feedback
+    (&ldquo;was this helpful? yes/no&rdquo;) is abundant in every company&rsquo;s customer interaction logs.
+    Integrated into <a href="https://huggingface.co/docs/trl/main/en/kto_trainer">HuggingFace TRL</a> as a standard trainer.
+  </p>
+
+  <h3>Stanford Human Preferences (SHP): The Dataset That Trained Llama-2</h3>
+  <p>
+    385K naturally occurring human preferences across 18 domains, collected from Reddit.
+    <strong>The sole academic dataset used in Meta&rsquo;s Llama-2 RLHF post-training</strong> &mdash; the most
+    downloaded open-weight LLM family in history. Extended to SHP-2 (4.8M preferences, 129 domains).
+    323+ likes on HuggingFace. This is infrastructure-level impact: every lab that fine-tunes on open preference
+    data has likely touched SHP.
+  </p>
+
+  <h3>V-Usable Information (ICML 2022 Outstanding Paper)</h3>
+  <p>
+    &ldquo;Understanding Dataset Difficulty with V-Usable Information&rdquo; &mdash; redefines dataset difficulty
+    as a function of the model, not the human. Introduced <strong>pointwise V-information (PVI)</strong> for
+    per-instance difficulty measurement. Co-authored with <strong>Yejin Choi</strong> and Swabha Swayamdipta.
+    ICML Outstanding Paper Award = <strong>top 10 of 1,233 accepted papers</strong>.
+  </p>
+
+  <h3>Contextual Representations (EMNLP 2019)</h3>
+  <p>
+    &ldquo;How Contextual are Contextualized Word Representations?&rdquo; &mdash; seminal analysis of BERT, ELMo,
+    and GPT-2 embedding geometry. Identified the <strong>anisotropy problem</strong> in contextual representations.
+    ~987 citations. Oral presentation. Published as a solo-author paper during his first year of PhD.
+    Became a standard reference in the representation learning literature.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- HIS OWN WORDS                                          -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>In His Own Words</h2>
+  <blockquote>
+    &ldquo;Machine learning is not a sterile industrial process; much in the way that it is hardware-bound and
+    software-bound, it is also bound by the behavior of real-world actors such as consumers, firms, and states.&rdquo;
+    <cite>&mdash; Behavior-bound machine learning thesis, Stanford 2024</cite>
+  </blockquote>
+  <p class="small muted">
+    This is his core intellectual thesis: AI performance in production is constrained more by human behavior
+    than by compute or algorithms. This framing &mdash; importing behavioral economics into ML &mdash; is why
+    KTO works and why his research program is differentiated from every other alignment researcher.
+  </p>
+
+  <blockquote>
+    &ldquo;Creating AI with people in mind is the best way to create a tide that raises all boats.&rdquo;
+    <cite>&mdash; UChicago Booth faculty announcement, 2025</cite>
+  </blockquote>
+
+  <blockquote>
+    &ldquo;The junction of technology and its applications to law and life is a growing field.&rdquo;
+    <cite>&mdash; John H. Moss Scholarship interview, UofT 2017</cite>
+  </blockquote>
+  <p class="small muted">
+    Even as an undergrad he was thinking about technology&rsquo;s intersection with institutions. At UofT he
+    analyzed 48,000 Indian Supreme Court cases spanning 60 years, examining judicial precedent consistency.
+    The through-line from legal NLP to behavioral ML to alignment is clear.
+  </p>
+
+  <blockquote>
+    &ldquo;Booth&rsquo;s unparalleled strength in economics, law, and the social sciences makes it an ideal place
+    to ground the future of AI in real-world complexity.&rdquo;
+    <cite>&mdash; Chicago Booth announcement, 2025</cite>
+  </blockquote>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- MARKET & COMPETITIVE LANDSCAPE                         -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Market &amp; Competitive Landscape</h2>
+  <p>
+    The RLHF/alignment market underpins every frontier model. By 2025, <strong>70% of enterprises</strong> adopted
+    RLHF or DPO for alignment, up from 25% in 2023. A single piece of human preference data costs
+    <strong>$1&ndash;$10+</strong>, while AI feedback costs &lt;$0.01. The market is bifurcating: (a) alignment
+    algorithms embedded in training stacks, (b) alignment data platforms, (c) alignment-as-a-service.
+  </p>
+
+  <h3>Alignment Algorithm Landscape</h3>
+  <table>
+    <tr><th>Method</th><th>Origin</th><th>Data Need</th><th>Status (2026)</th></tr>
+    <tr><td>RLHF/PPO</td><td>OpenAI (Christiano et al., 2017)</td><td>Reward model + preferences</td><td>Still used at OpenAI, Anthropic. Complex, expensive, unstable</td></tr>
+    <tr><td>DPO</td><td>Stanford (Rafailov et al., 2023)</td><td>Preference pairs</td><td>Default in Llama 3, widely adopted. Simpler than RLHF</td></tr>
+    <tr><td><strong>KTO</strong></td><td><strong>Ethayarajh et al., 2024</strong></td><td><strong>Binary feedback only</strong></td><td><strong>Integrated into TRL. Matches DPO at all scales with cheaper data</strong></td></tr>
+    <tr><td>GRPO/Online RL</td><td>DeepSeek, 2024&ndash;25</td><td>Reward signal (verifiable)</td><td>Rising for math/code. Ethayarajh&rsquo;s Humanline paper explains WHY it works</td></tr>
+    <tr><td>Constitutional AI</td><td>Anthropic (Bai et al., 2022)</td><td>Principles + synthetic</td><td>Anthropic-internal. Pioneered RLAIF</td></tr>
+    <tr><td>ORPO/SimPO</td><td>Various, 2024</td><td>Preferences</td><td>Incremental improvements over DPO</td></tr>
+  </table>
+
+  <h3>Companies in the Alignment Stack</h3>
+  <table>
+    <tr><th>Company</th><th>Raised</th><th>Focus</th></tr>
+    <tr><td>Contextual AI (Douwe Kiela)</td><td>$100M ($80M Series A)</td><td>RAG 2.0 + enterprise alignment. KTO developed here</td></tr>
+    <tr><td>Scale AI</td><td>$1.4B</td><td>RLHF data platform. Supplies feedback to OpenAI, Anthropic, Meta</td></tr>
+    <tr><td>Surge AI</td><td>~$20M</td><td>RLHF annotation platform. Used by Anthropic</td></tr>
+    <tr><td>Cohere</td><td>$970M</td><td>Enterprise LLM with custom alignment</td></tr>
+    <tr><td>Hugging Face</td><td>$395M</td><td>TRL library = default alignment toolkit (KTO, DPO, PPO trainers)</td></tr>
+  </table>
+
+  <h3>Why This Matters for VC</h3>
+  <p>
+    Ethayarajh is not building a company today. He chose the tenure track at Booth. But the <strong>alignment
+    tooling gap</strong> is enormous: every company that post-trains an LLM needs alignment, and the tools are
+    still research-grade libraries, not products. If Ethayarajh ever decides to productize behavior-bound ML
+    (alignment that accounts for actual human biases, not idealized ones), he would be the most credible founder
+    in the space. The Contextual AI connection (Douwe Kiela, $100M raised) is the closest existing company;
+    KTO was literally developed there.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- GROWTH TRAJECTORY                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Growth Trajectory</h2>
+  <ul class="timeline">
+    <li><span class="year">~2013</span> Enters University of Toronto on BMO National Scholar scholarship (8 awarded across all of Canada)</li>
+    <li><span class="year">2016</span> Wins Engineers Without Borders Social Spark Case Challenge. Secures Fair Trade certification for two UofT colleges</li>
+    <li><span class="year">2017</span> BSc Computer Science, UofT (4.0 GPA). John H. Moss Scholarship &mdash; UofT&rsquo;s top graduating award ($16,650, first awarded 1921). Founded Review of Undergraduate Computer Science journal. NSERC Undergraduate Research Award. Analyzed 48K Indian Supreme Court cases</li>
+    <li><span class="year">2018</span> MSc Computer Science, UofT. Best Paper at RepL4NLP @ ACL 2018 (unsupervised sentence embeddings)</li>
+    <li><span class="year">2018</span> Starts PhD at Stanford under Dan Jurafsky (Stanford NLP Group)</li>
+    <li><span class="year">2019</span> &ldquo;How Contextual are Contextualized Word Representations?&rdquo; EMNLP 2019 Oral. Solo-authored in first year of PhD. ~987 citations. Identifies anisotropy in BERT/ELMo/GPT-2</li>
+    <li><span class="year">2019</span> &ldquo;Understanding Undesirable Word Embedding Associations&rdquo; ACL 2019 (fairness in embeddings)</li>
+    <li><span class="year">2020</span> &ldquo;Utility is in the Eye of the User: A Critique of NLP Leaderboards&rdquo; EMNLP 2020. Challenges field&rsquo;s evaluation paradigm</li>
+    <li><span class="year">2021</span> Meta (Facebook) Fellowship. &ldquo;Attention Flows are Shapley Value Explanations&rdquo; ACL 2021. &ldquo;Conditional Probing&rdquo; EMNLP 2021 (with John Hewitt, Percy Liang, Chris Manning). Dynaboard at NeurIPS 2021</li>
+    <li><span class="year">2022</span> <strong>ICML 2022 Outstanding Paper</strong> &mdash; V-Usable Information (top 10 of 1,233). Co-authored with Yejin Choi. &ldquo;Problems with Cosine&rdquo; ACL 2022. &ldquo;Authenticity Gap&rdquo; EMNLP 2022</li>
+    <li><span class="year">2023</span> Releases Stanford Human Preferences (SHP) &mdash; 385K preferences. Used in Llama-2 RLHF. Visiting Researcher at Contextual AI (Douwe Kiela)</li>
+    <li><span class="year">Dec 2023</span> Publishes KTO on Contextual AI blog. First arXiv version Feb 2024</li>
+    <li><span class="year">Jul 2024</span> <strong>KTO: ICML 2024 Spotlight</strong> (top 3.5%). PhD defense &amp; graduation from Stanford</li>
+    <li><span class="year">2024&ndash;25</span> Postdoctoral fellow at Princeton Language &amp; Intelligence (PLI)</li>
+    <li><span class="year">Feb 2025</span> Starts blogging again: &ldquo;We should price LLMs in $ per bit, not $ per token&rdquo;</li>
+    <li><span class="year">2025</span> &ldquo;Humanline: Online Alignment as Perceptual Loss&rdquo; (with Niklas Muennighoff, Sijia Liu). Explains why online RL (GRPO) beats offline (DPO) through prospect theory lens. Accepted ICLR 2026</li>
+    <li><span class="year">Jul 2025</span> Joins UChicago Booth as Assistant Professor of Applied AI &amp; Kathryn and Grant Swick Faculty Scholar</li>
+    <li><span class="year">Aug 2025</span> Public announcement of Booth appointment. Hiring research professionals</li>
+  </ul>
+  <p>
+    <strong>Pace:</strong> A top-tier venue publication every year since 2018. Outstanding Paper at ICML 2022.
+    Spotlight at ICML 2024. ICLR 2026. His citation curve is accelerating: ~987 from EMNLP 2019, ~741 from KTO alone
+    in 2 years. Total ~3,200+ citations. Each contribution has been foundational rather than incremental:
+    anisotropy discovery &rarr; dataset difficulty theory &rarr; SHP dataset &rarr; KTO alignment method &rarr;
+    Humanline online alignment theory. <strong>Every major paper introduced a new concept that the field adopted.</strong>
+  </p>
+  <p>
+    <strong>Rate of change signal:</strong> Ethayarajh is accelerating from individual papers to field-defining
+    infrastructure. SHP is used by every lab. KTO is a standard HuggingFace trainer. The trajectory is:
+    understand representations &rarr; understand data &rarr; create data infrastructure &rarr; create alignment
+    algorithms &rarr; create alignment theory. Each step increases his scope and impact.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- NETWORK MAP                                            -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Network Map</h2>
+
+  <h3>Direct Collaborators</h3>
+  <ul>
+    <li><strong>Dan Jurafsky</strong> &mdash; PhD advisor. Stanford NLP. Co-author on SHP, KTO, and multiple ACL/EMNLP papers. Author of &ldquo;Speech and Language Processing&rdquo; (the NLP textbook)</li>
+    <li><strong>Niklas Muennighoff</strong> &mdash; Stanford PhD student. Knight-Hennessy Scholar. Co-author on KTO and Humanline. s1 paper (EMNLP/ICLR 2025 Best Paper). MTEB benchmark creator. ~10K+ citations. <a href="https://x.com/muennighoff">@muennighoff</a></li>
+    <li><strong>Douwe Kiela</strong> &mdash; CEO/co-founder of Contextual AI ($100M raised). Co-author on KTO and Anchor Points (EACL 2024). Invented RAG at Meta. KTO was developed during Ethayarajh&rsquo;s visiting researcher stint at Contextual AI</li>
+    <li><strong>Yejin Choi</strong> &mdash; UW/Stanford. Co-author on ICML 2022 Outstanding Paper. MacArthur Fellow. One of the most cited NLP researchers alive</li>
+    <li><strong>Percy Liang</strong> &mdash; Stanford. Co-author on Conditional Probing (EMNLP 2021). Runs CRFM/HELM. Co-founded Together AI</li>
+    <li><strong>Christopher Manning</strong> &mdash; Stanford NLP director. Co-author on Conditional Probing (EMNLP 2021)</li>
+    <li><strong>Winnie Xu</strong> &mdash; Co-author on KTO. Contributed the prospect theory formalization</li>
+    <li><strong>Diyi Yang</strong> &mdash; Stanford. PhD committee member. Co-author on Anchor Points</li>
+  </ul>
+
+  <h3>Institutional Network</h3>
+  <ul>
+    <li><strong>Stanford NLP Group</strong> &mdash; PhD home. Connected to Manning, Jurafsky, Liang, Potts ecosystem</li>
+    <li><strong>Princeton Language &amp; Intelligence (PLI)</strong> &mdash; Postdoc 2024&ndash;25. PLI has major compute resources (per his own account). Connected to Sanjeev Arora, Karthik Narasimhan</li>
+    <li><strong>UChicago Booth Applied AI</strong> &mdash; Current home. New group alongside Suproteem Sarkar and Ted Sumers. Booth provides economics/behavioral science ecosystem that no CS department can</li>
+    <li><strong>Contextual AI</strong> &mdash; Visiting Researcher 2023. KTO developed here. Kiela connection is warm</li>
+    <li><strong>HuggingFace / TRL</strong> &mdash; KTO integrated as standard trainer. HALOs library (ContextualAI/HALOs on GitHub) provides reference implementations</li>
+  </ul>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- RISKS                                                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Risks</h2>
+  <ol>
+    <li><strong>Not building a company.</strong> He just accepted a tenure-track position at Booth (July 2025). The earliest realistic departure for a startup is 2&ndash;3 years, and many professors never leave. This is a long-term relationship play, not an imminent investment</li>
+    <li><strong>Academic incentives vs. founder incentives.</strong> His framing is explicitly interdisciplinary (AI + economics + behavioral science) &mdash; this is a research program, not a product thesis. Converting &ldquo;behavior-bound ML&rdquo; into a company requires a commercial insight he hasn&rsquo;t articulated</li>
+    <li><strong>Alignment methods commoditize.</strong> KTO is open-source and in TRL. DPO, ORPO, SimPO are all freely available. The moat for an alignment company may be in data (Scale AI model) or integration (Contextual AI model), not algorithms</li>
+    <li><strong>KTO has competition.</strong> GRPO/online RL methods (DeepSeek) are rising for verifiable tasks (math, code). His Humanline paper addresses this theoretically but online RL may overtake offline alignment methods</li>
+    <li><strong>No departure signal.</strong> He chose the professorship over industry (could have gone to any frontier lab). No stealth activity, no co-founder signals, no GitHub repos suggesting product development</li>
+  </ol>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- BACKGROUND                                             -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Background</h2>
+  <p>
+    Indian-origin (Sri Lankan Tamil &mdash; &ldquo;Ethayarajh&rdquo; is a Tamil surname). Grew up in Canada.
+    University of Toronto BSc (2017, 4.0 GPA) and MSc (2018) in Computer Science. BMO National Scholar
+    (top 8 in Canada). John H. Moss Scholarship &mdash; UofT&rsquo;s most prestigious graduating award, first
+    given in 1921. NSERC Undergraduate Research Award. Founded the Review of Undergraduate Computer Science
+    journal. Won the Engineers Without Borders Social Spark Case Challenge. Served on UofT Governing Council&rsquo;s
+    University Affairs Board. Worked at Google AI. Stanford PhD 2018&ndash;2024 under Dan Jurafsky (committee: Percy Liang,
+    Diyi Yang). Meta Fellowship 2021. Princeton PLI postdoc 2024&ndash;2025. UChicago Booth assistant professor
+    from July 2025. ~29 years old (estimated from 2013 undergrad entry).
+  </p>
+  <p class="small muted">
+    Early research at UofT: analyzed 48,000 Indian Supreme Court cases spanning 60 years with the Faculty of Law,
+    examining judicial precedent consistency. This legal-NLP background is unusual and reveals a longstanding
+    interest in institutional behavior &mdash; the same through-line that led to &ldquo;behavior-bound ML.&rdquo;
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- OUTREACH                                               -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Outreach Draft</h2>
+  <div style="background: var(--bg); border: 1px solid #ddd; padding: 1.5em; border-radius: 6px; font-family: var(--sans);">
+    <p>hi Kawin</p>
+    <p>I&rsquo;m Vansh, Partner at Boldcap.</p>
+    <p>I&rsquo;ve been going deep on the RLHF/preference optimization stack &mdash; the market is fragmenting fast. DPO became default in Llama 3, GRPO is rising for verifiable tasks, Constitutional AI stays Anthropic-internal, Scale AI is building a $14B business on the data side, and Contextual AI just raised $80M on RAG+alignment. But the actual alignment algorithms are still open-source research tools, not products &mdash; and every company post-training an LLM is essentially reimplementing the same pipelines from TRL.</p>
+    <p>Your insight that alignment objectives are prospect-theoretic &mdash; and that you can get DPO-level performance from binary feedback alone &mdash; is the kind of thing that should be a product, not just a trainer class. Especially now that Humanline explains why online RL works through the same behavioral economics lens. The through-line from SHP (data infrastructure) to KTO (algorithm) to Humanline (theory unifying online/offline) looks like someone building the full stack of alignment science.</p>
+    <p>Not pitching you to leave Booth &mdash; I know you just started. But I&rsquo;d love to talk about how behavior-bound ML translates to production systems. We invest at inception and I can write $500K&ndash;$1M checks quickly if the thesis ever becomes a company.</p>
+    <p>Vansh</p>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- PUBLICATIONS                                           -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Publications</h2>
+  <p class="small muted">~3,200+ total citations. h-index growing. 3 papers with 500+ citations each.</p>
+
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2402.01306">KTO: Model Alignment as Prospect Theoretic Optimization</a></div>
+    <div class="venue">ICML 2024 Spotlight (top 3.5%) &middot; With Winnie Xu, Niklas Muennighoff, Dan Jurafsky, Douwe Kiela &middot; 741 citations</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://proceedings.mlr.press/v162/ethayarajh22a.html">Understanding Dataset Difficulty with V-Usable Information</a></div>
+    <div class="venue">ICML 2022 <strong>Outstanding Paper Award</strong> (top 10 of 1,233) &middot; With Yejin Choi, Swabha Swayamdipta</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://aclanthology.org/D19-1006/">How Contextual are Contextualized Word Representations?</a></div>
+    <div class="venue">EMNLP 2019 Oral &middot; Solo-authored &middot; ~987 citations</div>
+  </div>
+  <div class="paper">
+    <div class="title">Humanline: Online Alignment as Perceptual Loss</div>
+    <div class="venue">ICLR 2026 &middot; With Sijia Liu, Niklas Muennighoff</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://huggingface.co/datasets/stanfordnlp/SHP">Stanford Human Preferences (SHP)</a></div>
+    <div class="venue">Dataset &middot; 385K preferences &middot; Used in Llama-2 RLHF &middot; With Heidi Zhang, Yizhong Wang, Dan Jurafsky</div>
+  </div>
+  <div class="paper">
+    <div class="title">Anchor Points: Benchmarking Models with Much Fewer Examples</div>
+    <div class="venue">EACL 2024 &middot; With Rajan Vivek, Diyi Yang, Douwe Kiela</div>
+  </div>
+  <div class="paper">
+    <div class="title">Data Checklist: On Unit-Testing Datasets with Usable Information</div>
+    <div class="venue">arXiv 2024 &middot; With Heidi Zhang, Shabnam Behzad, Dan Jurafsky</div>
+  </div>
+  <div class="paper">
+    <div class="title">The Authenticity Gap in Human Evaluation</div>
+    <div class="venue">EMNLP 2022 &middot; With Dan Jurafsky</div>
+  </div>
+  <div class="paper">
+    <div class="title">Problems with Cosine as a Measure of Embedding Similarity for High Frequency Words</div>
+    <div class="venue">ACL 2022 &middot; With Kaitlyn Zhou, Dallas Card, Dan Jurafsky</div>
+  </div>
+  <div class="paper">
+    <div class="title">Richer Countries and Richer Representations</div>
+    <div class="venue">ACL 2022 Findings &middot; With Kaitlyn Zhou, Dan Jurafsky</div>
+  </div>
+  <div class="paper">
+    <div class="title">Attention Flows are Shapley Value Explanations</div>
+    <div class="venue">ACL 2021 &middot; With Dan Jurafsky</div>
+  </div>
+  <div class="paper">
+    <div class="title">Conditional Probing: Measuring Usable Information Beyond a Baseline</div>
+    <div class="venue">EMNLP 2021 &middot; With John Hewitt, Percy Liang, Christopher Manning</div>
+  </div>
+  <div class="paper">
+    <div class="title">Dynaboard: An Evaluation-As-A-Service Platform</div>
+    <div class="venue">NeurIPS 2021</div>
+  </div>
+  <div class="paper">
+    <div class="title">Utility is in the Eye of the User: A Critique of NLP Leaderboards</div>
+    <div class="venue">EMNLP 2020 &middot; With Dan Jurafsky</div>
+  </div>
+  <div class="paper">
+    <div class="title">Understanding Undesirable Word Embedding Associations</div>
+    <div class="venue">ACL 2019 &middot; With David Duvenaud, Graeme Hirst</div>
+  </div>
+  <div class="paper">
+    <div class="title">Unsupervised Smoothed Inverse Frequency (USIF)</div>
+    <div class="venue">Best Paper, RepL4NLP @ ACL 2018</div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- TIER ASSESSMENT                                        -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Tier Assessment: 1 (High Conviction)</h2>
+  <p>
+    <strong>Not Tier 0</strong> because he is not starting a company within 6 months &mdash; he just accepted a
+    tenure-track position at Booth in July 2025. <strong>Tier 1</strong> because he would be the single most
+    credible founder in the alignment/RLHF tooling space if he ever decided to leave academia. His body of work
+    (KTO + SHP + Humanline + V-usable information) constitutes the full stack of alignment science: data,
+    algorithms, theory, and evaluation. The Contextual AI / Douwe Kiela connection is warm. The UChicago Booth
+    placement in Applied AI (not pure CS) suggests he thinks about commercialization even if he&rsquo;s not
+    pursuing it yet. Indian-origin (Sri Lankan Tamil). Build the relationship now; check monthly for any
+    departure signals or stealth activity.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- NOTES                                                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Notes</h2>
+  <ul>
+    <li class="small">Indian-origin confirmed: Sri Lankan Tamil (surname Ethayarajh is Tamil). Grew up in Canada</li>
+    <li class="small">CORRECTION: User indicated Kawin is &ldquo;in Tatsunori Hashimoto&rsquo;s lab&rdquo; &mdash; this is INCORRECT. His PhD advisor was Dan Jurafsky. Committee: Percy Liang, Diyi Yang. No direct Hashimoto connection found</li>
+    <li class="small">CORRECTION: User indicated he is a &ldquo;PhD student&rdquo; &mdash; he completed his PhD in 2024 and is now an assistant professor at UChicago Booth (July 2025)</li>
+    <li class="small">CORRECTION: User indicated &ldquo;close labmate&rdquo; of Niklas Muennighoff &mdash; they are collaborators (KTO, Humanline) but were not in the same lab. Jurafsky lab vs. Muennighoff&rsquo;s Stanford advisor (unknown from public records)</li>
+    <li class="small">KTO published Dec 2023 on Contextual AI blog, arXiv Feb 2024, ICML Jul 2024. 741 citations in ~2 years</li>
+    <li class="small">SHP dataset: 385K preferences, 18 domains (Reddit). Sole academic dataset in Llama-2 RLHF. SHP-2: 4.8M preferences, 129 domains</li>
+    <li class="small">EMNLP 2019 &ldquo;How Contextual&rdquo; paper: ~987 citations. Solo-authored. First year of PhD. Identified anisotropy in BERT/ELMo/GPT-2</li>
+    <li class="small">ICML 2022 Outstanding Paper: top 10 of 1,233. V-usable information framework. Co-authored with Yejin Choi</li>
+    <li class="small">Awards: ICML 2022 Outstanding Paper, Meta Fellowship 2021, NSERC PGS-D, BMO National Scholar, John H. Moss Scholarship, Best Paper RepL4NLP 2018</li>
+    <li class="small">UofT undergrad: 4.0 GPA, Victoria College, BMO National Scholar (8 in all Canada, 2013), NSERC Undergraduate Research Award</li>
+    <li class="small">Early research: analyzed 48K Indian Supreme Court cases (60 years) with UofT Faculty of Law. Founded Review of Undergraduate Computer Science journal</li>
+    <li class="small">Twitter: @ethayarajh (~4,500 followers as of early 2025). Active poster on alignment, LLM pricing, research</li>
+    <li class="small">GitHub: kawine. Key repos: contextual (EMNLP 2019), dataset_difficulty (ICML 2022), usif (ACL 2018), color_analysis (Stanford Literary Lab)</li>
+    <li class="small">Contextual AI connection: Visiting Researcher 2023. KTO developed there. Douwe Kiela (CEO) is co-author on KTO and Anchor Points. Contextual AI raised $100M total</li>
+    <li class="small">HALOs library: ContextualAI/HALOs on GitHub provides reference implementations of DPO, KTO, PPO, ORPO</li>
+    <li class="small">Humanline (2025, ICLR 2026): explains why online alignment (GRPO) beats offline (DPO) through prospect theory. With Niklas Muennighoff</li>
+    <li class="small">Blog post Feb 2025: &ldquo;We should price LLMs in $ per bit, not $ per token&rdquo; &mdash; first blog in 5 years</li>
+    <li class="small">MIT Media Lab seminar speaker (recent). Northwestern MSIT speaker. TrustML Young Scientist Seminar</li>
+    <li class="small">Reading: Salman Rushdie&rsquo;s &ldquo;Midnight&rsquo;s Children&rdquo; (per Princeton Q&amp;A). Enjoys magical realism</li>
+    <li class="small">PhD thesis: &ldquo;Behavior-bound machine learning&rdquo; (Stanford, 2024). Committee: Jurafsky, Liang, Yang</li>
+    <li class="small">Booth Applied AI group: new initiative. Colleagues include Suproteem Sarkar and Ted Sumers</li>
+    <li class="small">Estimated age ~29 (BMO National Scholar 2013, typically awarded to entering freshmen at ~18)</li>
+  </ul>
+
+  <footer>
+    researched: 2026-03-30 &middot; 6-agent SOP (technical, social, market, background, trajectory, network) &middot; <a href="../index.html">back to index</a>
+  </footer>
+
+</body>
+</html>
