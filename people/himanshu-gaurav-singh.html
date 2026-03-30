@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Himanshu Gaurav Singh &mdash; Out of Distribution People</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="site-title">Out of Distribution People</div>
+    <div class="breadcrumb"><a href="../index.html">/ index</a> / himanshu-gaurav-singh</div>
+  </nav>
+
+  <div class="profile-header">
+    <h1>Himanshu Gaurav Singh</h1>
+    <p class="one-liner">PhD student at Berkeley AI Research, dual-advised by Pieter Abbeel AND Jitendra Malik &mdash; the two most prolific robotics-to-startup advisor lineages in AI. Building robot learning from human videos: learns manipulation priors from in-the-wild video, then transfers zero-shot to robot embodiments. JEE Advanced AIR 2 (2019, 340/372, top 2 of 161,319). IJSO Gold 2016. APhO Silver 2018. KVPY Fellow. 4 Indian National Olympiads. IIT Delhi CS. ICRA 2025. EMNLP 2023. Quant intern at Tower Research Capital. Indian-origin (Gorakhpur, UP). ~24.</p>
+    <div class="tags">
+      <span class="tag">robot-learning</span>
+      <span class="tag">dexterous-manipulation</span>
+      <span class="tag">video-to-robot</span>
+      <span class="tag">embodied-ai</span>
+      <span class="tag">pieter-abbeel-lab</span>
+      <span class="tag">jitendra-malik-lab</span>
+      <span class="tag">iit-delhi</span>
+      <span class="tag">indian</span>
+      <span class="tag spike">spike: JEE Advanced AIR 2 + IJSO Gold + APhO Silver + 4 INOs &mdash; one of the most decorated Indian competition profiles feeding into frontier AI robotics</span>
+    </div>
+    <div class="links">
+      <a href="https://hgaurav2k.github.io/">website</a>
+      <a href="https://scholar.google.com/citations?user=qav_fQYAAAAJ&hl=en">google scholar</a>
+      <a href="https://x.com/Cinnabar233">twitter/x</a>
+      <a href="https://github.com/hgaurav2k">github</a>
+      <a href="https://www.linkedin.com/in/himanshu-gaurav-singh/">linkedin</a>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- INVESTMENT THESIS                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <div class="spike-box">
+    <div class="label">&#9670; Investment Thesis</div>
+    <p>
+      Himanshu Gaurav Singh sits at the exact intersection of the two advisor lineages that have produced the
+      most valuable robotics/AI companies in history. <strong>Pieter Abbeel&rsquo;s students</strong> founded
+      Covariant (acqui-hired by Amazon), co-founded OpenAI (John Schulman), Perplexity (Aravind Srinivas),
+      Skild AI ($14B, Deepak Pathak), Physical Intelligence ($5.6B), Reflection, Evolutionary Scale, Ideogram,
+      and Genmo. <strong>Jitendra Malik&rsquo;s students</strong> built foundational computer vision
+      (Belongie, Shi, Mori) and now lead robotics at Amazon (Haozhi Qi &rarr; Amazon FAR).
+      Singh is <em>dual-advised by both</em> &mdash; the only current PhD student with this specific combination.
+    </p>
+    <p>
+      His technical thesis &mdash; <strong>learning robot manipulation priors from in-the-wild human videos,
+      then transferring zero-shot across robot embodiments</strong> &mdash; is the core unsolved problem in
+      embodied AI. Physical Intelligence ($1.1B raised), Skild ($2B raised), and Covariant all attack variants
+      of this. Singh&rsquo;s HOP framework (ICRA 2025, 116 GitHub stars) and TrackR system demonstrate
+      the approach works: 3&times; more robust to perturbations, 2&times; better generalization to unseen objects,
+      and a single reward model that works across Allegro, Xhand, and SVH hands without retraining.
+    </p>
+    <p>
+      <strong>The credential stack is extraordinary:</strong> JEE Advanced AIR 2 (340/372, top 2 of 161,319),
+      IJSO Gold Medal (2016), APhO Silver Medal (2018), KVPY Fellow, 4 Indian National Olympiads, IIT Delhi CS.
+      This is not a researcher who got lucky with one result &mdash; this is a pattern of extreme selection
+      across physics, math, and computer science since age 14. He is ~24, in year 3 of his PhD, and the
+      departure window opens in 12-18 months. Build the relationship now.
+    </p>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- EVIDENCE                                               -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Evidence</h2>
+
+  <h3>HOP: Hand-Object Interaction Pretraining from Videos (ICRA 2025)</h3>
+  <p>
+    First-author paper presenting a framework to learn general robot manipulation priors from 3D hand-object
+    interaction trajectories extracted from in-the-wild videos. The key innovation: lifting both the human
+    hand and manipulated object into a <strong>shared 3D space</strong>, retargeting human motions to robot
+    actions, then training a <strong>causal transformer</strong> as a task-agnostic base policy.
+  </p>
+  <ul>
+    <li><strong>3&times; greater robustness</strong> to out-of-distribution perturbations (external forces on grasped objects)</li>
+    <li><strong>2&times; improved generalization</strong> to unseen YCB dataset objects</li>
+    <li>Sample-efficient finetuning with both RL and behavior cloning</li>
+    <li>Real-world robotic manipulation demos on diverse objects</li>
+    <li><strong>116 GitHub stars</strong> (github.com/hgaurav2k/hop) &mdash; strong adoption for a robotics paper</li>
+  </ul>
+  <p class="small muted">
+    Co-authors: Antonio Loquercio, Carmelo Sferrazza, Jane Wu, Haozhi Qi, Pieter Abbeel, Jitendra Malik.
+    Funded by DARPA (Machine Common Sense + TIAMAT) and ONR MURI.
+  </p>
+
+  <h3>TrackR: Deep Sensorimotor Control from Human Motion (Aug 2025)</h3>
+  <p>
+    First-author paper proposing a radical simplification: instead of reconstructing 3D scenes from human
+    videos (expensive real2sim), train a neural network to predict human hand keypoint trajectories and use
+    those predictions as <strong>reward signals for robot RL</strong>. Key insight: keypoints on
+    human-inspired robot end-effectors closely mirror corresponding human body keypoints, enabling
+    <strong>zero-shot transfer from human data to robot data</strong>.
+  </p>
+  <ul>
+    <li>Single reward model works across <strong>Allegro, Xhand, and SVH hands</strong> without retraining</li>
+    <li>Performance &ldquo;almost matches&rdquo; hand-engineered dense rewards</li>
+    <li>Eliminates gradient-based kinematic retargeting and adversarial losses entirely</li>
+    <li>Scales with internet-scale human video data &mdash; the more videos, the better the reward model</li>
+  </ul>
+  <p class="small muted">
+    This is the paper that matters most for founder potential. It demonstrates that internet-scale human
+    video is sufficient to train robot manipulation policies &mdash; no expensive teleoperation data needed.
+    This is the same thesis driving Physical Intelligence and Skild, but with a cleaner technical approach.
+  </p>
+
+  <h3>Flow Policy Gradients for Robot Control (Feb 2026)</h3>
+  <p>
+    Co-authored with Brent Yi, Rocky Duan (Covariant co-founder, now Amazon), Pieter Abbeel, Karen Liu
+    (Stanford), and Angjoo Kanazawa. Uses flow matching policy gradients &mdash; bypassing likelihood
+    computation entirely &mdash; to train expressive robot control policies. Demonstrated robust
+    <strong>sim-to-real transfer on two humanoid robots</strong> for locomotion, motion tracking,
+    and manipulation.
+  </p>
+  <p class="small muted">
+    Note: Rocky Duan is Pieter Abbeel&rsquo;s former student and Covariant co-founder (acqui-hired by Amazon
+    for ~$200M+). Singh is now co-authoring with the Covariant lineage directly.
+  </p>
+
+  <h3>Video-GMAE: Tracking by Predicting 3D Gaussians Over Time (Dec 2025)</h3>
+  <p>
+    Co-authored with Jathushan Rajasegaran and Jitendra Malik. Self-supervised approach encoding video
+    sequences into moving 3D Gaussian representations. <strong>34.6% improvement</strong> on Kinetics
+    dataset, <strong>13.1% improvement</strong> on Kubric, outperforming other self-supervised video methods.
+    Zero-shot tracking comparable to SOTA.
+  </p>
+
+  <h3>JEEBench: LLM Problem Solving Benchmark (EMNLP 2023)</h3>
+  <p>
+    Co-authored with Daman Arora and Mausam (IIT Delhi). Created a benchmark of 515 challenging problems
+    from JEE Advanced exams to evaluate LLM reasoning. Found GPT-4 achieves &lt;40% even with chain-of-thought.
+    <strong>39 GitHub stars</strong>. Published at EMNLP 2023 &mdash; a top NLP venue while still an undergrad.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- COMPETITION CREDENTIALS                                -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Competition Credentials</h2>
+  <table>
+    <tr><th>Competition</th><th>Year</th><th>Result</th><th>Significance</th></tr>
+    <tr><td>JEE Advanced</td><td>2019</td><td><strong>AIR 2</strong> (340/372)</td><td>Top 2 of 161,319 candidates. India&rsquo;s hardest engineering exam</td></tr>
+    <tr><td>JEE Mains</td><td>2019</td><td><strong>100 percentile</strong>, AIR 14</td><td>UP State Topper</td></tr>
+    <tr><td>IJSO</td><td>2016</td><td><strong>Gold Medal</strong></td><td>International Junior Science Olympiad (age ~14)</td></tr>
+    <tr><td>APhO</td><td>2018</td><td><strong>Silver Medal</strong></td><td>Asian Physics Olympiad (international)</td></tr>
+    <tr><td>KVPY</td><td>~2018</td><td><strong>Fellow</strong></td><td>Kishore Vaigyanik Protsahan Yojana (national science fellowship)</td></tr>
+    <tr><td>Indian National Olympiads</td><td>2017-2019</td><td><strong>4 INOs qualified</strong></td><td>Likely INPhO, INChO, and others &mdash; multi-subject olympiad qualifier</td></tr>
+    <tr><td>RMO</td><td>~2017</td><td><strong>Qualified</strong></td><td>Regional Mathematical Olympiad</td></tr>
+    <tr><td>CBSE Class XII</td><td>2019</td><td><strong>485/500</strong> (97%)</td><td>Near-perfect board scores alongside competition prep</td></tr>
+  </table>
+  <p class="small muted">
+    The credential intersection is the signal: physics olympiad (international silver) + science olympiad
+    (international gold) + math olympiad (regional) + CS at IIT Delhi + robotics PhD at Berkeley.
+    Multi-domain excellence since age 14. This profile appears maybe once per year across all of India.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- HIS OWN WORDS                                          -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>In His Own Words</h2>
+  <blockquote>
+    &ldquo;Glad to share that I would be starting my PhD the coming Fall at @berkeley_ai co-advised by
+    @pabbeel and @JitendraMalikCV! Looking forward to great experiences!&rdquo;
+    <cite>&mdash; @Cinnabar233, Apr 13, 2023</cite>
+  </blockquote>
+  <p class="small muted">Chose dual-advising with the two strongest robotics advisor lineages simultaneously. Signal of ambition and confidence.</p>
+
+  <blockquote>
+    &ldquo;Be consistent in hard work. Remain calm and stress-free throughout the process.&rdquo;
+    <cite>&mdash; JEE Advanced 2019 topper interview, NewsBytesApp</cite>
+  </blockquote>
+  <p class="small muted">Understated response for someone who ranked #2 in a 161K-candidate exam. No ego, process-oriented.</p>
+
+  <blockquote>
+    &ldquo;Earlier I was in Gorakhpur, a small town, which had a lack of resources. My peer group was not
+    as efficient as compared to Delhi. I felt I was lagging in the initial phase of my preparations.
+    During that time, I coped up with books, which helped me from lagging too far behind.&rdquo;
+    <cite>&mdash; JEE Advanced 2019 interview, NewsBytesApp</cite>
+  </blockquote>
+  <p class="small muted">
+    Small-town origin, resource-constrained start, self-directed learning. Moved from Gorakhpur (UP)
+    to FIITJEE South Delhi for JEE coaching. This is the classic Indian founder origin story &mdash;
+    resourcefulness under constraint.
+  </p>
+
+  <blockquote>
+    &ldquo;Finally submitted reviews to CoRL 2023! This was my first time as a reviewer and I must say
+    reviewing is hard. I had never read papers as carefully and thoughtfully as this before.&rdquo;
+    <cite>&mdash; @Cinnabar233, Jul 16, 2023</cite>
+  </blockquote>
+  <p class="small muted">Already reviewing for top robotics conferences (CoRL) in his first year of PhD. Shows intellectual maturity and community integration.</p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- MARKET & COMPETITIVE LANDSCAPE                         -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Market &amp; Competitive Landscape</h2>
+  <p>
+    Robotics startups raised <strong>$13.8 billion</strong> in 2025 (up from $7.8B in 2024).
+    The market is concentrating around two themes: (a) <strong>humanoid hardware</strong> (Figure AI,
+    Apptronik, 1X) and (b) <strong>foundation models / brains for robots</strong> (Physical Intelligence,
+    Skild, Covariant). Singh&rsquo;s work sits squarely in category (b) &mdash; the higher-margin,
+    more defensible layer.
+  </p>
+  <table>
+    <tr><th>Company</th><th>Valuation</th><th>Raised</th><th>Key Differentiator</th><th>Advisor Lineage</th></tr>
+    <tr><td>Skild AI</td><td>$14B</td><td>$2B+</td><td>Omni-bodied robot brain, in-context learning. $30M revenue (2025). Foxconn/Nvidia deployment</td><td>Deepak Pathak (Abbeel PhD)</td></tr>
+    <tr><td>Physical Intelligence</td><td>$5.6B</td><td>$1.1B</td><td>Robot foundation models. Generalist pi0 policy. Bezos, Lux, Thrive</td><td>Chelsea Finn + Sergey Levine (Abbeel lineage)</td></tr>
+    <tr><td>Covariant</td><td>~$625M (pre-acq)</td><td>$222M</td><td>Acqui-hired by Amazon Aug 2024. Robot LLM for warehouse picking</td><td><strong>Pieter Abbeel co-founded</strong></td></tr>
+    <tr><td>Figure AI</td><td>$39B</td><td>$2.6B+</td><td>Humanoid hardware + Helix AI platform. 100K units planned</td><td>Hardware-first (Brett Adcock)</td></tr>
+    <tr><td>Apptronik</td><td>$5.3B</td><td>$935M</td><td>General-purpose humanoid bodies. Google-backed</td><td>Hardware-first (UT Austin)</td></tr>
+    <tr><td>1X Technologies</td><td>~$3B</td><td>$400M+</td><td>Home assistant humanoids (NEO). OpenAI-backed</td><td>Norwegian robotics heritage</td></tr>
+  </table>
+  <p class="small muted">
+    <strong>Pattern:</strong> Every major robot brain company traces back to the Abbeel/Levine/Finn advisor tree
+    at Berkeley. Singh is the next generation in this lineage, AND has Malik&rsquo;s vision expertise.
+    The question is not <em>if</em> he starts a company, but <em>when</em> and <em>with whom</em>.
+  </p>
+
+  <h3>What He&rsquo;d Build (Thesis Reconstruction)</h3>
+  <p>
+    <strong>Most likely: Video-to-robot foundation model.</strong> His two core papers (HOP + TrackR)
+    establish a pipeline: (1) extract 3D hand-object interaction trajectories from internet-scale video,
+    (2) use those trajectories to train a task-agnostic manipulation prior, (3) finetune with minimal
+    robot-specific data. This eliminates the teleoperation bottleneck that constrains every existing
+    robot learning company. Physical Intelligence requires expensive human demonstrations; Skild uses
+    sim-to-real which has a domain gap. Singh&rsquo;s approach uses free, abundant human video as the
+    data source. If it scales, it&rsquo;s the most capital-efficient path to a general robot brain.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- GROWTH TRAJECTORY                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Growth Trajectory</h2>
+  <ul class="timeline">
+    <li><span class="year">2016</span> <strong>IJSO Gold Medal</strong> (International Junior Science Olympiad) at ~14 years old</li>
+    <li><span class="year">2017&ndash;18</span> Qualifies for 4 Indian National Olympiads (INPhO, INChO, others). RMO qualifier</li>
+    <li><span class="year">2018</span> <strong>APhO Silver Medal</strong> (Asian Physics Olympiad, international)</li>
+    <li><span class="year">2019</span> JEE Advanced <strong>AIR 2</strong> (340/372). JEE Mains 100 percentile, AIR 14. KVPY Fellow. 485/500 CBSE boards</li>
+    <li><span class="year">2019&ndash;23</span> IIT Delhi, B.Tech Computer Science and Engineering</li>
+    <li><span class="year">2021</span> Software Engineering Intern, NK Securities Research (Gurugram)</li>
+    <li><span class="year">2021&ndash;22</span> Quantitative Trading Intern, Tower Research Capital</li>
+    <li><span class="year">2022</span> Neuro-symbolic robot manipulation paper (submitted to ICRA 2023)</li>
+    <li><span class="year">2023</span> JEEBench published at <strong>EMNLP 2023</strong> (39 GitHub stars). Neuro-symbolic paper at <strong>ICRA 2023</strong></li>
+    <li><span class="year">Aug 2023</span> Starts PhD at Berkeley AI Research, dual-advised by Pieter Abbeel + Jitendra Malik</li>
+    <li><span class="year">Jul 2023</span> First-time reviewer for CoRL 2023</li>
+    <li><span class="year">Sep 2024</span> HOP paper submitted (Hand-Object Interaction Pretraining from Videos)</li>
+    <li><span class="year">Nov 2024</span> VLMnav paper: End-to-End Navigation with Vision-Language Models</li>
+    <li><span class="year">2024</span> Plan execution error recovery paper at <strong>IROS 2024</strong></li>
+    <li><span class="year">2025</span> HOP accepted at <strong>ICRA 2025</strong> (116 GitHub stars)</li>
+    <li><span class="year">Aug 2025</span> TrackR: Deep Sensorimotor Control by Imitating Predictive Models of Human Motion</li>
+    <li><span class="year">Dec 2025</span> Video-GMAE: 3D Gaussian tracking (with Jathushan Rajasegaran, Malik)</li>
+    <li><span class="year">Feb 2026</span> Flow Policy Gradients (with Brent Yi, Rocky Duan, Abbeel, Karen Liu)</li>
+  </ul>
+  <p>
+    <strong>Pace:</strong> International competition medals at 14 (IJSO) and 16 (APhO). Top-2 in India&rsquo;s
+    hardest exam at 17. Two top-venue publications (EMNLP + ICRA) while still an IIT Delhi undergrad.
+    4 papers in the first 2.5 years of PhD, including first-author work at ICRA 2025.
+    <strong>Publication rate accelerating:</strong> 1 paper/year (2022-2023) &rarr; 4 papers/year (2025-2026).
+    Now co-authoring with Covariant alumni (Rocky Duan) and Stanford faculty (Karen Liu).
+    <strong>Network expanding faster than research output</strong> &mdash; classic pre-departure pattern.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- NETWORK MAP                                            -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Network Map</h2>
+
+  <h3>Advisors</h3>
+  <ul>
+    <li><strong>Pieter Abbeel</strong> &mdash; Co-founded Covariant (acqui-hired by Amazon). His students founded: OpenAI (Schulman), Perplexity (Srinivas), Skild ($14B, Pathak), Physical Intelligence ($5.6B), Reflection (Laskin), Evolutionary Scale (Rao), Ideogram (Ho), Genmo (Jain). <strong>The single most prolific AI-startup advisor tree in history.</strong> Now at Amazon Frontier AI. <a href="https://people.eecs.berkeley.edu/~pabbeel/">homepage</a></li>
+    <li><strong>Jitendra Malik</strong> &mdash; Arthur J. Chick Professor, Berkeley EECS. ACM Fellow, IEEE Fellow. 60+ PhD students. Foundational contributions to computer vision (normalized cuts, shape contexts, texture synthesis). Indian-origin (IIT Kanpur). <a href="https://people.eecs.berkeley.edu/~malik/">homepage</a></li>
+  </ul>
+
+  <h3>Frequent Collaborators</h3>
+  <ul>
+    <li><strong>Antonio Loquercio</strong> &mdash; Assistant Professor, UPenn. Co-author on 3 papers (HOP, TrackR, VLMnav). Primary research collaborator at Berkeley. Drone/robotics expert</li>
+    <li><strong>Carmelo Sferrazza</strong> &mdash; Co-author on HOP + Flow Policy Gradients. Berkeley postdoc. Tactile sensing expert</li>
+    <li><strong>Haozhi Qi</strong> &mdash; Co-author on HOP. Malik PhD. Research Scientist at Amazon FAR. Incoming UChicago professor. Science Robotics cover article. <a href="https://haozhi.io/">website</a></li>
+    <li><strong>Jathushan Rajasegaran</strong> &mdash; Co-author on Video-GMAE. Malik PhD. 2,300+ citations. Sri Lankan. <a href="https://jathushan.com/">website</a></li>
+    <li><strong>Rocky Duan</strong> &mdash; Co-author on Flow Policy Gradients. Covariant co-founder (Abbeel student). Now Amazon. <strong>Direct lineage connection to Covariant.</strong></li>
+    <li><strong>Brent Yi</strong> &mdash; Co-author on Flow Policy Gradients. Berkeley PhD. Robotics + 3D vision</li>
+    <li><strong>Jane Wu</strong> &mdash; Co-author on HOP. Stanford. Physics-based simulation</li>
+  </ul>
+
+  <h3>IIT Delhi Research Network</h3>
+  <ul>
+    <li><strong>Mausam</strong> &mdash; Professor, IIT Delhi. JEEBench co-author. NLP and AI planning</li>
+    <li><strong>Rohan Paul</strong> &mdash; Professor, IIT Delhi. Co-author on ICRA 2023 + IROS 2024 neuro-symbolic manipulation papers</li>
+    <li><strong>Parag Singla</strong> &mdash; Professor, IIT Delhi. Co-author on robot manipulation papers</li>
+  </ul>
+
+  <h3>Abbeel Lab Alumni (Startup Factory)</h3>
+  <ul>
+    <li><strong>John Schulman</strong> &mdash; Co-founded OpenAI. Invented PPO (most-used RL algorithm). Now Anthropic</li>
+    <li><strong>Aravind Srinivas</strong> &mdash; Co-founded Perplexity ($9B+). Indian-origin</li>
+    <li><strong>Deepak Pathak</strong> &mdash; Co-founded Skild AI ($14B). CMU professor. Indian-origin</li>
+    <li><strong>Peter Chen + Rocky Duan</strong> &mdash; Co-founded Covariant (acqui-hired by Amazon)</li>
+    <li><strong>Misha Laskin</strong> &mdash; Founded Reflection AI</li>
+    <li><strong>Jonathan Ho</strong> &mdash; Co-founded Ideogram. Invented DDPM (backbone of diffusion models)</li>
+    <li><strong>Ajay Jain</strong> &mdash; Co-founded Genmo</li>
+  </ul>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- RISKS                                                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Risks</h2>
+  <ol>
+    <li><strong>Still in PhD (year 3 of ~5).</strong> No departure signal yet. Could stay 2+ more years. Typical Berkeley robotics PhD is 5-6 years. However, Abbeel lab students have historically left early to start companies (Srinivas left during PhD for Perplexity)</li>
+    <li><strong>No founding signal.</strong> No stealth company, no GitHub infrastructure repos, no departure hints. He may choose an academic path (Haozhi Qi &rarr; UChicago professor is a recent Malik student example). Or join industry (Amazon FAR, Physical Intelligence, Skild)</li>
+    <li><strong>Video-to-robot transfer gap.</strong> His core thesis &mdash; learning from human video &mdash; works in simulation but the real-world transfer results are still early-stage. Physical Intelligence and Skild have multi-year head starts on real-world deployment</li>
+    <li><strong>Compute requirements.</strong> Training foundation models for robot control requires massive compute. A PhD student&rsquo;s lab resources are orders of magnitude less than what Skild ($2B) or Physical Intelligence ($1.1B) deploy. Startup would need significant compute partnership (NVIDIA, cloud provider)</li>
+    <li><strong>Young (24) with no business experience.</strong> Quant internships at Tower Research show analytical rigor but not startup operations. Would need a strong co-founder with go-to-market experience</li>
+    <li><strong>Competitive landscape is well-funded.</strong> Skild ($14B), Physical Intelligence ($5.6B), and Figure AI ($39B) have massive lead in deployment. Window for a new entrant requires a genuinely novel technical approach &mdash; which Singh may have</li>
+  </ol>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- BACKGROUND                                             -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Background</h2>
+  <p>
+    Indian-origin. Born ~2001. From <strong>Gorakhpur, Uttar Pradesh</strong> &mdash; a small city with limited
+    academic resources. Moved to Delhi for FIITJEE coaching (South Delhi branch). Scored 340/372 on
+    JEE Advanced 2019 &mdash; <strong>All India Rank 2</strong> out of 161,319 candidates. Simultaneously
+    achieved 100 percentile on JEE Mains (AIR 14, UP State Topper), 485/500 on CBSE Class XII boards.
+    Won IJSO Gold at ~14, APhO Silver at ~16, qualified 4 Indian National Olympiads, KVPY Fellow.
+    Studied 6-8 hours/day, daytime only. Played badminton to de-stress.
+  </p>
+  <p>
+    B.Tech in Computer Science at IIT Delhi (2019-2023). Published at EMNLP 2023 and ICRA 2023 as an
+    undergrad. Interned at NK Securities Research (software engineering) and Tower Research Capital
+    (quantitative trading) &mdash; showing quant + engineering versatility. Started PhD at Berkeley
+    AI Research in August 2023, dual-advised by Pieter Abbeel and Jitendra Malik. Currently in year 3.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- OUTREACH                                               -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Outreach Draft</h2>
+  <div style="background: var(--bg); border: 1px solid #ddd; padding: 1.5em; border-radius: 6px; font-family: var(--sans);">
+    <p>hi Himanshu</p>
+    <p>I&rsquo;m Vansh, Partner at Boldcap.</p>
+    <p>I&rsquo;ve been mapping the robot foundation model space closely &mdash; Skild just hit $14B building an omni-bodied brain, Physical Intelligence raised $1.1B on generalist policies, and Amazon acqui-hired Covariant (your advisor&rsquo;s company) for the warehouse picking stack. Every one of these traces back to the Abbeel/Malik advisor tree. The gap none of them have solved cleanly is the data bottleneck: teleoperation doesn&rsquo;t scale, and sim-to-real has a persistent domain gap.</p>
+    <p>Which is exactly what your HOP and TrackR work attacks. Learning manipulation priors from in-the-wild human video, lifting hand-object interactions into shared 3D space, then transferring zero-shot across Allegro/Xhand/SVH without retraining &mdash; that&rsquo;s not incremental, that&rsquo;s a fundamentally different data flywheel. The 3&times; robustness and 2&times; generalization numbers on unseen objects suggest the prior is real, not overfit.</p>
+    <p>Not sure if you&rsquo;re thinking about starting something or how far out that is &mdash; would love to chat either way. I can write $500K&ndash;$1M and move fast.</p>
+    <p>Vansh</p>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- PUBLICATIONS                                           -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Publications</h2>
+  <p class="small muted">10+ papers. ICRA 2025, EMNLP 2023, ICRA 2023, IROS 2024. First-author on core robotics work.</p>
+
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2508.18691">Deep Sensorimotor Control by Imitating Predictive Models of Human Motion</a></div>
+    <div class="venue">arXiv Aug 2025 &middot; <strong>First author</strong> &middot; With Pieter Abbeel, Jitendra Malik, Antonio Loquercio</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2602.02481">Flow Policy Gradients for Robot Control</a></div>
+    <div class="venue">arXiv Feb 2026 &middot; With Brent Yi, Rocky Duan, Pieter Abbeel, Karen Liu, Angjoo Kanazawa + 6 others</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2512.22489">Tracking by Predicting 3-D Gaussians Over Time (Video-GMAE)</a></div>
+    <div class="venue">arXiv Dec 2025 &middot; With Tanish Baranwal, Jathushan Rajasegaran, Jitendra Malik</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2409.08273">Hand-Object Interaction Pretraining from Videos (HOP)</a></div>
+    <div class="venue">ICRA 2025 &middot; <strong>First author</strong> &middot; 116 GitHub stars &middot; With Loquercio, Sferrazza, Wu, Qi, Abbeel, Malik</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2411.05755">End-to-End Navigation with Vision Language Models (VLMnav)</a></div>
+    <div class="venue">NeuS 2025 &middot; With Dylan Goetting, Antonio Loquercio</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2404.07774">Sketch-Plan-Generalize: Continual Few-Shot Learning for Language-Guided Robot Manipulation</a></div>
+    <div class="venue">arXiv 2024 &middot; With Kalithasan, Sachdeva, Aggarwal, Panjeta, Bindal, Tuli, Paul, Singla</div>
+  </div>
+  <div class="paper">
+    <div class="title">Learning to Recover from Plan Execution Errors during Robot Manipulation</div>
+    <div class="venue">IROS 2024 &middot; With Kalithasan, Tuli, Bindal, Singh, Singla, Paul</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2305.15074">Have LLMs Advanced Enough? A Challenging Problem Solving Benchmark (JEEBench)</a></div>
+    <div class="venue">EMNLP 2023 &middot; With Daman Arora, Mausam &middot; 39 GitHub stars</div>
+  </div>
+  <div class="paper">
+    <div class="title">Learning Neuro-symbolic Programs for Language Guided Robot Manipulation</div>
+    <div class="venue">ICRA 2023 &middot; With Kalithasan, Bindal, Tuli, Agrawal, Jain, Singla, Paul</div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- NOTES                                                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Notes</h2>
+  <ul>
+    <li class="small">Indian-origin confirmed. From Gorakhpur, UP. Native of Allahabad per some sources. Singh surname</li>
+    <li class="small">JEE Advanced 2019 AIR 2 (340/372). JEE Mains 100 percentile, AIR 14. UP State Topper</li>
+    <li class="small">IJSO Gold 2016 (international, age ~14). APhO Silver 2018 (international, age ~16). KVPY Fellow. 4 INOs. RMO qualifier</li>
+    <li class="small">FIITJEE coaching, South Delhi branch. Studied 6-8 hrs/day. Badminton for de-stress</li>
+    <li class="small">IIT Delhi CS 2019-2023. Published EMNLP 2023 + ICRA 2023 as undergrad</li>
+    <li class="small">Quant internships: NK Securities Research (SWE), Tower Research Capital (quant trading) &mdash; analytical rigor signal</li>
+    <li class="small">Berkeley PhD since Aug 2023. Year 3. Dual-advised Abbeel + Malik (unique combination)</li>
+    <li class="small">Core thesis: learn robot manipulation from human video. HOP (ICRA 2025) + TrackR (Aug 2025) are the key papers</li>
+    <li class="small">HOP: 3x robustness, 2x generalization on unseen objects. 116 GitHub stars. Real-world demos</li>
+    <li class="small">TrackR: single reward model works across Allegro, Xhand, SVH hands zero-shot. Eliminates per-task reward engineering</li>
+    <li class="small">Flow Policy Gradients: co-authored with Rocky Duan (Covariant co-founder) + Karen Liu (Stanford)</li>
+    <li class="small">Codeforces handle: cinnabar233. GitHub: hgaurav2k (18 repos). Twitter: @Cinnabar233</li>
+    <li class="small">Abbeel lab alumni startups: OpenAI, Perplexity, Skild ($14B), Physical Intelligence ($5.6B), Covariant, Reflection, Ideogram, Genmo</li>
+    <li class="small">Departure timeline estimate: 12-24 months (year 3, accelerating publication rate, broadening co-author network)</li>
+    <li class="small">Most likely paths: (a) startup in video-to-robot foundation models, (b) join Physical Intelligence / Skild / Amazon FAR, (c) finish PhD + faculty</li>
+    <li class="small">DARPA + ONR MURI funded research &mdash; government funding signals strategic importance of the problem area</li>
+    <li class="small">Instagram: @_pretty_pixels_ (photography hobby)</li>
+  </ul>
+
+  <footer>
+    researched: 2026-03-30 &middot; 6-agent SOP (technical, social, market, background, trajectory, network) &middot; tier 1 &middot; <a href="../index.html">back to index</a>
+  </footer>
+
+</body>
+</html>
