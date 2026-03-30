@@ -247,6 +247,50 @@ Vansh
 
 ---
 
+## Discovery Queue & Triage Pipeline
+
+### How It Works
+Every deep dive dossier generates recursive discoveries (Agent 6). Those discoveries accumulate in `data/discovery_queue.json`. A daily briefing presents ALL pending people for the owner's yes/no decision.
+
+### Queue File: `data/discovery_queue.json`
+Each entry includes: name, one-liner, source dossier, spike signal, Indian-origin flag, departure signal, current company, status (`pending` / `approved` / `researched` / `rejected` / `deferred`).
+
+### Daily Triage Briefing
+Format the pending queue grouped by signal type:
+
+```
+🔴 DEPARTURE SIGNALS (left non-negotiable company):
+  → Guodong Zhang — xAI co-founder, led Grok Code/Imagine, departed Mar 2026
+    Spike: Led two flagship xAI products. Active founding signal.
+    [yes / no / later]
+
+🇮🇳 INDIAN PIPELINE:
+  → Shubham Goel — IIT Bombay + Malik PhD + xAI. 3D reconstruction.
+    Spike: Same team as Ravishankar/Patel. Watch for departure.
+    [yes / no / later]
+
+🔬 RESEARCH FRONTIER:
+  → Charlie Snell — THE paper on test-time compute scaling (ICLR 2025 Oral)
+    Spike: Most-cited work in the paradigm. Berkeley PhD.
+    [yes / no / later]
+```
+
+### Owner's Decision
+- **yes** → Full 6-agent SOP. Dossier page. Index card. Their recursive discoveries feed back into queue.
+- **no** → Marked `rejected`. Won't resurface unless new signal emerges.
+- **later** → Marked `deferred`. Resurfaces in 30 days or when new signal detected.
+
+### What the Owner Scans For (from their own words)
+1. **Early spike** — is there something that stands out?
+2. **Paper credibility** — has the research they've done shown real impact?
+3. **Entrepreneurial potential** — signals they could start something
+4. **Rate of change** — is their growth curve significantly steeper than peers?
+
+### The Flywheel
+Every "yes" generates ~5-10 new discoveries → queue grows → next triage → more "yes" → more discoveries. The pipeline self-compounds. The owner only spends 5 minutes/day on triage. The system does everything else.
+
+---
+
 ## Quality Checklist (Before Publishing)
 
 Before any dossier page goes live, verify:

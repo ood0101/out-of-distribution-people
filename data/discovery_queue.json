@@ -1,0 +1,257 @@
+{
+  "version": 1,
+  "last_updated": "2026-03-30",
+  "total": 25,
+  "people": [
+    {
+      "name": "Guodong Zhang",
+      "one_liner": "xAI co-founder. Led Grok Code & Grok Imagine. Departed xAI March 2026.",
+      "source_dossier": "rahul-ravishankar",
+      "spike_signal": "xAI CO-FOUNDER who just departed. Led two flagship products. Active founding signal.",
+      "indian_origin": false,
+      "departure_signal": true,
+      "current_company": "ex-xAI (departed Mar 2026)",
+      "status": "pending"
+    },
+    {
+      "name": "Vahid Kazemi",
+      "one_liner": "Former xAI ML PhD. Left Feb 2026. Explicitly starting something new.",
+      "source_dossier": "rahul-ravishankar",
+      "spike_signal": "DEPARTED xAI. Direct quote: all AI labs building same thing, boring. Active founder.",
+      "indian_origin": false,
+      "departure_signal": true,
+      "current_company": "ex-xAI (stealth)",
+      "status": "pending"
+    },
+    {
+      "name": "Roland Gavrilescu",
+      "one_liner": "Former xAI engineer. Left Nov 2025. Re-forming team with xAI alumni.",
+      "source_dossier": "rahul-ravishankar",
+      "spike_signal": "DEPARTED xAI. Building with other xAI alumni. Active founder.",
+      "indian_origin": false,
+      "departure_signal": true,
+      "current_company": "ex-xAI (stealth)",
+      "status": "pending"
+    },
+    {
+      "name": "Tianle Li",
+      "one_liner": "MTS at xAI. Co-creator of LMArena/Chatbot Arena. Co-created Grok 4 Fast. Berkeley EECS.",
+      "source_dossier": "rahul-ravishankar",
+      "spike_signal": "Built THE LLM eval platform + shipped frontier post-training. Rare eval+shipping combo.",
+      "indian_origin": false,
+      "departure_signal": false,
+      "current_company": "xAI",
+      "status": "pending"
+    },
+    {
+      "name": "Jathushan Rajasegaran",
+      "one_liner": "Malik PhD. 2300+ citations. xAI video team. Co-author CVPR+ICCV 2025. Sri Lankan.",
+      "source_dossier": "rahul-ravishankar",
+      "spike_signal": "2300+ cites. Malik PhD. At xAI during exodus. If departs = strong co-founding signal.",
+      "indian_origin": false,
+      "departure_signal": false,
+      "current_company": "xAI",
+      "status": "pending"
+    },
+    {
+      "name": "Sehoon Kim",
+      "one_liner": "MTS at xAI. PhD Berkeley (Keutzer). Created SqueezeLLM, KVQuant (10M context). MLCommons Rising Star.",
+      "source_dossier": "rahul-ravishankar",
+      "spike_signal": "Created SqueezeLLM + KVQuant. ML efficiency at xAI. MLCommons Rising Star.",
+      "indian_origin": false,
+      "departure_signal": false,
+      "current_company": "xAI",
+      "status": "pending"
+    },
+    {
+      "name": "Shubham Goel",
+      "one_liner": "Malik PhD. IIT Bombay. 3D reconstruction. At xAI. Indian-origin.",
+      "source_dossier": "rahul-ravishankar",
+      "spike_signal": "IIT Bombay + Malik PhD + xAI. 3D reconstruction. Indian.",
+      "indian_origin": true,
+      "departure_signal": false,
+      "current_company": "xAI",
+      "status": "pending"
+    },
+    {
+      "name": "Himanshu Gaurav Singh",
+      "one_liner": "PhD Berkeley (Abbeel + Malik). IIT Delhi. Robot learning from videos.",
+      "source_dossier": "rahul-ravishankar",
+      "spike_signal": "IIT Delhi + dual Abbeel+Malik PhD. Robot learning. Indian.",
+      "indian_origin": true,
+      "departure_signal": false,
+      "current_company": "Berkeley PhD",
+      "status": "pending"
+    },
+    {
+      "name": "Anastasios Angelopoulos",
+      "one_liner": "Postdoc Berkeley (Ion Stoica). Science paper. PhD under Jordan + Malik. Incoming Stanford faculty.",
+      "source_dossier": "rahul-ravishankar",
+      "spike_signal": "Published in Science. Jordan+Malik+Stoica lineage. Conformal prediction pioneer.",
+      "indian_origin": false,
+      "departure_signal": false,
+      "current_company": "Berkeley (incoming Stanford)",
+      "status": "pending"
+    },
+    {
+      "name": "Ethan He",
+      "one_liner": "Co-recruited from NVIDIA Cosmos to xAI. Led Cosmos development. CMU MS. Still at xAI.",
+      "source_dossier": "zeeshan-patel",
+      "spike_signal": "Led NVIDIA Cosmos. If departs xAI = strongest Zeeshan co-founding signal.",
+      "indian_origin": false,
+      "departure_signal": false,
+      "current_company": "xAI",
+      "status": "pending"
+    },
+    {
+      "name": "Charlie Snell",
+      "one_liner": "PhD Berkeley. First author of Scaling LLM Test-Time Compute (ICLR 2025 Oral, most-cited).",
+      "source_dossier": "matthew-yang",
+      "spike_signal": "THE paper on test-time compute scaling. ICLR 2025 Oral. Dual lead of the paradigm.",
+      "indian_origin": false,
+      "departure_signal": false,
+      "current_company": "Berkeley PhD",
+      "status": "pending"
+    },
+    {
+      "name": "Amrith Setlur",
+      "one_liner": "PhD CMU. Co-first author on e3 with Matthew Yang. Closest collaborator.",
+      "source_dossier": "matthew-yang",
+      "spike_signal": "Co-first author e3 (test-time compute). Most likely co-founder if Yang starts something. Indian.",
+      "indian_origin": true,
+      "departure_signal": false,
+      "current_company": "CMU PhD",
+      "status": "pending"
+    },
+    {
+      "name": "Keller Jordan",
+      "one_liner": "Independent researcher, Berkeley. Muon co-creator. NanoGPT speedrunning. Karpathy endorsed.",
+      "source_dossier": "laker-newhouse",
+      "spike_signal": "Created Muon optimizer. NanoGPT pioneer. Endorsed by Karpathy. Strong founder archetype.",
+      "indian_origin": false,
+      "departure_signal": false,
+      "current_company": "Independent",
+      "status": "pending"
+    },
+    {
+      "name": "Jeremy Bernstein",
+      "one_liner": "ML researcher SF. Caltech PhD. Co-created modular duality theory. Building Modula library.",
+      "source_dossier": "laker-newhouse",
+      "spike_signal": "Most likely co-founder if Laker starts something. Modular duality co-creator.",
+      "indian_origin": false,
+      "departure_signal": false,
+      "current_company": "Independent",
+      "status": "pending"
+    },
+    {
+      "name": "Karan Dalal",
+      "one_liner": "Stanford/Berkeley. Lead author TTT video paper. Core TTT group.",
+      "source_dossier": "gashon-hussein",
+      "spike_signal": "Lead author TTT video. Potential co-founder for TTT-based startup. Indian.",
+      "indian_origin": true,
+      "departure_signal": false,
+      "current_company": "Stanford/Berkeley",
+      "status": "pending"
+    },
+    {
+      "name": "Xingyao Wang",
+      "one_liner": "PhD UIUC (BLENDER Lab). Co-founded AllHands AI. NAACL 2024 Outstanding Paper.",
+      "source_dossier": "alexi-gladstone",
+      "spike_signal": "PhD who co-founded AllHands AI. On leave. NAACL Outstanding Paper. Active founder.",
+      "indian_origin": false,
+      "departure_signal": true,
+      "current_company": "AllHands AI",
+      "status": "pending"
+    },
+    {
+      "name": "Ritvik Kapila",
+      "one_liner": "NeoSigma co-founder. IIT Delhi. Built 24T token dataset at Essential AI (Vaswani).",
+      "source_dossier": "gauri-gupta",
+      "spike_signal": "IIT Delhi + 24T token dataset at Essential AI. Pre-training complement to Gauri. Indian.",
+      "indian_origin": true,
+      "departure_signal": false,
+      "current_company": "NeoSigma",
+      "status": "pending"
+    },
+    {
+      "name": "Varun Mohan",
+      "one_liner": "CEO Windsurf (Codeium). Now DeepMind leading Antigravity. Built $2.4B exit.",
+      "source_dossier": "ronak-malde",
+      "spike_signal": "Built Windsurf ($2.4B). If leaves Google = biggest event in AI coding. Indian.",
+      "indian_origin": true,
+      "departure_signal": false,
+      "current_company": "Google DeepMind",
+      "status": "pending"
+    },
+    {
+      "name": "Simran Arora",
+      "one_liner": "PhD Stanford (Chris Re, Hazy Research). Foundation model systems. Indian.",
+      "source_dossier": "dan-biderman",
+      "spike_signal": "Hazy Research PhD. Part of Re founder factory pipeline. Indian.",
+      "indian_origin": true,
+      "departure_signal": false,
+      "current_company": "Stanford PhD",
+      "status": "pending"
+    },
+    {
+      "name": "Deepak Pathak",
+      "one_liner": "CMU professor. Co-founded Skild AI ($300M+ raised, $14B). Abbeel lineage.",
+      "source_dossier": "kevin-lu",
+      "spike_signal": "Co-founded Skild AI ($300M+, robotics foundation models). Indian.",
+      "indian_origin": true,
+      "departure_signal": false,
+      "current_company": "CMU / Skild AI",
+      "status": "pending"
+    },
+    {
+      "name": "Soumith Chintala",
+      "one_liner": "PyTorch co-creator. Departed Meta for Thinking Machines Lab Nov 2025.",
+      "source_dossier": "kevin-lu",
+      "spike_signal": "PyTorch co-creator. Left Meta. Indian.",
+      "indian_origin": true,
+      "departure_signal": true,
+      "current_company": "Thinking Machines Lab",
+      "status": "pending"
+    },
+    {
+      "name": "Aditya Ramesh",
+      "one_liner": "VP Research OpenAI. Oversees robotics research. Indian-origin.",
+      "source_dossier": "suvansh-sanjeev",
+      "spike_signal": "VP Research OpenAI. Indian. Key departure watch.",
+      "indian_origin": true,
+      "departure_signal": false,
+      "current_company": "OpenAI",
+      "status": "pending"
+    },
+    {
+      "name": "Kawin Ethayarajh",
+      "one_liner": "Stanford PhD (Hashimoto). KTO (ICML 2024 Spotlight). Labmate of Muennighoff.",
+      "source_dossier": "niklas-muennighoff",
+      "spike_signal": "ICML Spotlight. Close Muennighoff collaborator. Potential co-founder. Indian.",
+      "indian_origin": true,
+      "departure_signal": false,
+      "current_company": "Stanford PhD",
+      "status": "pending"
+    },
+    {
+      "name": "Wei-Lin Chiang",
+      "one_liner": "CEO Arena (LMArena). Built Chatbot Arena at Berkeley. Ion Stoica group.",
+      "source_dossier": "thijs-simonian",
+      "spike_signal": "Built Chatbot Arena. CEO. Ion Stoica network. Central LLM eval figure.",
+      "indian_origin": false,
+      "departure_signal": false,
+      "current_company": "Arena (LMArena)",
+      "status": "pending"
+    },
+    {
+      "name": "Akshat Bubna",
+      "one_liner": "First Indian IOI gold medalist ever (2014). MIT.",
+      "source_dossier": "kshitij-sodani",
+      "spike_signal": "First Indian IOI gold. MIT. Indian.",
+      "indian_origin": true,
+      "departure_signal": false,
+      "current_company": "Unknown",
+      "status": "pending"
+    }
+  ]
+}
