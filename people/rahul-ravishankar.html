@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rahul Ravishankar &mdash; Out of Distribution People</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="site-title">Out of Distribution People</div>
+    <div class="breadcrumb"><a href="../index.html">/ index</a> / rahul-ravishankar</div>
+  </nav>
+
+  <div class="profile-header">
+    <h1>Rahul Ravishankar</h1>
+    <p class="one-liner">Recently departed xAI (Feb 13, 2026). Worked on Grok 3.5 pretraining and v7 multimodal kickoff. Co-author CVPR 2025 (diffusion scaling laws) and ICCV 2025 (TOTO: autoregressive video pre-training on 1T+ visual tokens). Berkeley CS under Jitendra Malik. TA&rsquo;d CS 170 three semesters. UCSF Brain Lab research (MRI clustering). Left xAI two weeks after Zeeshan Patel &mdash; strong co-founding signal. Indian-origin. Katy, TX &rarr; Berkeley. ~22.</p>
+    <div class="tags">
+      <span class="tag">computer-vision</span>
+      <span class="tag">pretraining</span>
+      <span class="tag">multimodal</span>
+      <span class="tag">video-models</span>
+      <span class="tag">diffusion-models</span>
+      <span class="tag">autoregressive</span>
+      <span class="tag">xai-departure</span>
+      <span class="tag">indian</span>
+      <span class="tag spike">spike: 2 top-venue papers (CVPR + ICCV 2025) as Berkeley undergrad, shipped Grok 3.5 pretraining at xAI, left 2 weeks after co-author</span>
+    </div>
+    <div class="links">
+      <a href="https://rravishankar1.github.io/">website</a>
+      <a href="https://scholar.google.com/citations?user=Fo-kRxgAAAAJ&hl=en">google scholar</a>
+      <a href="https://x.com/r_ahulravi">twitter/x</a>
+      <a href="https://github.com/Rravishankar1">github</a>
+      <a href="https://www.linkedin.com/in/rahulravishankar1/">linkedin</a>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- INVESTMENT THESIS                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <div class="spike-box">
+    <div class="label">&#9670; Investment Thesis</div>
+    <p>
+      Rahul Ravishankar is a <strong>production-grade pretraining engineer</strong> who shipped Grok 3.5 and kicked off
+      v7 multimodal at xAI, while simultaneously publishing at <strong>CVPR 2025</strong> (diffusion scaling laws, 16
+      citations) and <strong>ICCV 2025</strong> (TOTO: autoregressive video pre-training on 1 trillion+ visual tokens
+      with LLaMA architecture, showing language-model-like scaling curves for vision). He is 22 and left xAI on
+      February 13, 2026 &mdash; <strong>exactly two weeks after his co-author and labmate Zeeshan Patel</strong>
+      (Jan 30, 2026), who is now in stealth building video/physical AI infrastructure. Both are Jitendra Malik students
+      at Berkeley. Both worked on the same xAI video/multimodal team. The synchronized departure is the strongest
+      co-founding signal in this cohort. His &ldquo;brief hiatus before beginning the next journey&rdquo; language
+      mirrors early-stage founder behavior. The TOTO paper&rsquo;s insight &mdash; that autoregressive pre-training
+      from video yields language-model-like scaling &mdash; is a thesis-level technical bet for a new company.
+      If Ravishankar and Patel are co-founding, the combination of Patel&rsquo;s production video generation
+      experience (1.245B videos/month at Grok Imagine) with Ravishankar&rsquo;s pretraining infrastructure
+      expertise (Grok 3.5, v7) is formidable.
+    </p>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- EVIDENCE                                               -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Evidence</h2>
+
+  <h3>xAI: Grok 3.5 Pretraining + v7 Multimodal</h3>
+  <p>
+    Joined xAI as Member of Technical Staff focused on <strong>pretraining and multimodal</strong>. Worked during the
+    &ldquo;chaos of Grok 3.5 sprint&rdquo; &mdash; the model that established xAI&rsquo;s competitive position against
+    GPT-4o and Claude 3.5. Also contributed to the <strong>kickoff for v7</strong>, xAI&rsquo;s next-generation
+    foundation model (natively multimodal, processing raw video/audio bitstreams). This is production-grade
+    pretraining at frontier scale &mdash; not research prototypes.
+  </p>
+  <p class="small muted">
+    v7 context: Grok 4.20 (built on v7 foundation) completed pretraining by early 2026 and is natively multimodal.
+    Ravishankar was involved in the kickoff phase before departing.
+  </p>
+
+  <h3>ICCV 2025: TOTO (Autoregressive Pre-training from Videos)</h3>
+  <p>
+    Co-authored with Jathushan Rajasegaran, Ilija Radosavovic, Yossi Gandelsman, Christoph Feichtenhofer (Meta AI),
+    and Jitendra Malik. Key results:
+  </p>
+  <ul>
+    <li>Trained <strong>LLaMA architecture on 1 trillion+ visual tokens</strong> via next-token prediction on video</li>
+    <li>Model sizes: 120M, 280M, 1.1B parameters with 4,096-token context (16 frames)</li>
+    <li>Scaling law: <strong>L(C) = 7.32 &times; C<sup>-0.0378</sup></strong> (cf. GPT-3: L(C) = 2.57 &times; C<sup>-0.0480</sup>)</li>
+    <li>First to show <strong>competitive Kinetics-400 action recognition</strong> with autoregressive pre-training</li>
+    <li><strong>63% real-world robot manipulation success</strong> (cube picking) with TOTO-base features</li>
+    <li>Competitive ImageNet classification among autoregressive models; viable Ego4D object detection</li>
+  </ul>
+  <p class="small muted">
+    The insight that vision models follow power-law compute scaling similar to language models (at a different rate)
+    is thesis-level: it implies the same scaling playbook that worked for LLMs can work for video/embodied AI.
+    This is the intellectual foundation for a company.
+  </p>
+
+  <h3>CVPR 2025: Diffusion Scaling Laws</h3>
+  <p>
+    &ldquo;Scaling Properties of Diffusion Models for Perceptual Tasks&rdquo; &mdash; with Zeeshan Patel,
+    Jathushan Rajasegaran, and Jitendra Malik. Unifies depth estimation, optical flow, and amodal segmentation
+    under diffusion. Key results:
+  </p>
+  <ul>
+    <li>ETH3D depth: <strong>AbsRel 4.8</strong> (vs Marigold 6.5, DPT 7.8) &mdash; 58% improvement over DPT</li>
+    <li><strong>3-4 orders of magnitude less compute</strong> than Marigold for competitive results</li>
+    <li>Concrete scaling law: L(C) = 0.23 &times; C<sup>-0.0098</sup></li>
+    <li>MoE upcycling improves AbsRel by 5.3%, delta1 by 8.6%</li>
+    <li>16 citations as of March 2026</li>
+  </ul>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- HIS OWN WORDS                                          -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>In His Own Words</h2>
+  <blockquote>
+    &ldquo;Today was my last day at xAI. This was one of the hardest decisions I have ever made and I could not
+    be more thankful to @Guodzh and @archanfel_anoth for bringing me in during the chaos of Grok 3.5 sprint
+    and the kickoff for v7.&rdquo;
+    <cite>&mdash; @r_ahulravi, Feb 13, 2026</cite>
+  </blockquote>
+  <p class="small muted">
+    &ldquo;Hardest decisions&rdquo; = leaving was voluntary (pull, not push). Named specific colleagues and
+    projects = genuine attachment to the work, not a disgruntled departure. Departure during the broader
+    xAI co-founder exodus but framed as personal choice.
+  </p>
+
+  <blockquote>
+    &ldquo;Looking forward to a brief hiatus before beginning the next journey, ad astra!&rdquo;
+    <cite>&mdash; @r_ahulravi, Feb 13, 2026</cite>
+  </blockquote>
+  <p class="small muted">
+    &ldquo;Next journey&rdquo; = something concrete already in mind. &ldquo;Brief hiatus&rdquo; = not looking
+    for a job, taking a planned break before starting something. &ldquo;Ad astra&rdquo; = aspirational,
+    possibly SpaceX/space-adjacent reference given xAI&rsquo;s SpaceX connection, more likely just ambition signal.
+    Classic pre-founder language.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- CO-FOUNDING SIGNAL                                     -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Co-Founding Signal: Ravishankar + Patel</h2>
+  <p>
+    The strongest signal in this dossier is the <strong>synchronized departure</strong> with Zeeshan Patel:
+  </p>
+  <table>
+    <tr><th>Signal</th><th>Zeeshan Patel</th><th>Rahul Ravishankar</th></tr>
+    <tr><td>xAI departure date</td><td>Jan 30, 2026</td><td>Feb 13, 2026</td></tr>
+    <tr><td>Gap</td><td colspan="2"><strong>14 days</strong></td></tr>
+    <tr><td>Berkeley advisor</td><td>Efros + Malik</td><td>Malik</td></tr>
+    <tr><td>CVPR 2025 paper</td><td>Co-author</td><td>Co-author</td></tr>
+    <tr><td>xAI team</td><td>Video/multimodal</td><td>Pretraining/multimodal</td></tr>
+    <tr><td>Post-departure language</td><td>&ldquo;Familiar yet very different&rdquo;</td><td>&ldquo;Brief hiatus before next journey&rdquo;</td></tr>
+    <tr><td>Current status</td><td>Stealth (confirmed)</td><td>On hiatus (announced)</td></tr>
+    <tr><td>Complementary skills</td><td>Video generation, world models, product</td><td>Pretraining infrastructure, scaling</td></tr>
+  </table>
+  <p class="small muted">
+    If they are co-founding: Patel brings product/generation (Grok Imagine from scratch, 1.245B videos/month) and
+    Ravishankar brings pretraining infrastructure (Grok 3.5 sprint, v7 kickoff). Combined, they cover the full
+    stack from pre-training to production deployment. Both are Malik orbit at Berkeley, same age (~22), same team
+    at xAI. This would be one of the strongest technical co-founding pairs in the 2026 cohort.
+  </p>
+  <p class="small muted">
+    <strong>Counter-signal:</strong> Patel left Jan 30 and appears to have &ldquo;embarked&rdquo; already;
+    Ravishankar is on &ldquo;hiatus.&rdquo; If they were co-founding, you might expect them to leave together
+    or Ravishankar to also describe active work. The hiatus language could mean he&rsquo;s genuinely taking time off
+    before joining, or he&rsquo;s joining a different venture entirely.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- MARKET & COMPETITIVE LANDSCAPE                         -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Market &amp; Competitive Landscape</h2>
+  <p>
+    Ravishankar sits at the intersection of <strong>large-scale pretraining infrastructure</strong> and
+    <strong>multimodal/video AI</strong>. If he co-founds with Patel, the competitive landscape is the
+    video/world model space (see <a href="zeeshan-patel.html">Zeeshan Patel dossier</a> for full market map).
+    If he goes solo or joins another venture, his pretraining expertise positions him in:
+  </p>
+  <table>
+    <tr><th>Company</th><th>Focus</th><th>Ravishankar&rsquo;s Edge</th></tr>
+    <tr><td>Together AI</td><td>Open-source training infra</td><td>Has shipped closed-source frontier pretraining (Grok)</td></tr>
+    <tr><td>Databricks / Mosaic</td><td>Enterprise training platform</td><td>Multimodal native (not just text)</td></tr>
+    <tr><td>Anyscale / Ray</td><td>Distributed compute</td><td>Actual pretraining experience, not just orchestration</td></tr>
+    <tr><td>Modal</td><td>Serverless GPU infra</td><td>Production frontier model experience</td></tr>
+  </table>
+
+  <h3>Comparable People</h3>
+  <ul>
+    <li><strong>Zeeshan Patel</strong> &mdash; Direct co-author, same lab, same team, departed 2 weeks earlier. T0 in our system. <a href="zeeshan-patel.html">dossier</a></li>
+    <li><strong>Ethan He</strong> &mdash; Co-recruited from NVIDIA Cosmos to xAI. Led Cosmos development. CMU MS. Still at xAI. If he leaves &rarr; third co-founder signal</li>
+    <li><strong>Jathushan Rajasegaran</strong> &mdash; Malik PhD, co-author on both papers (CVPR + ICCV 2025), 2,300+ citations. Sri Lankan. Same xAI team</li>
+    <li><strong>Ilija Radosavovic</strong> &mdash; Malik lab, co-author TOTO. RL humanoid locomotion (Science Robotics). PhD completed 2025</li>
+    <li><strong>Laker Newhouse</strong> &mdash; Muon optimizer (trillion-param production). Different scaling angle. <a href="laker-newhouse.html">dossier</a></li>
+  </ul>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- GROWTH TRAJECTORY                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Growth Trajectory</h2>
+  <ul class="timeline">
+    <li><span class="year">~2016&ndash;20</span> Seven Lakes High School, Katy, TX. Played varsity football (WR). Class of 2020</li>
+    <li><span class="year">2020</span> Enters UC Berkeley, Computer Science</li>
+    <li><span class="year">2022&ndash;23</span> UCSF Brain Lab research assistant (MRI clustering with deep learning)</li>
+    <li><span class="year">Fall 2023</span> Begins TA&rsquo;ing CS 170 (Efficient Algorithms) &mdash; continues 3 semesters</li>
+    <li><span class="year">2024</span> Research with Jitendra Malik at BAIR. Begins work on diffusion scaling + TOTO</li>
+    <li><span class="year">Spring 2025</span> TAs CS 280 (Computer Vision). Graduates Berkeley CS</li>
+    <li><span class="year">Mid 2025</span> Joins xAI as MTS &mdash; pretraining and multimodal</li>
+    <li><span class="year">~Aug&ndash;Nov 2025</span> Grok 3.5 pretraining sprint. Ships production frontier model</li>
+    <li><span class="year">~Dec 2025</span> v7 multimodal kickoff. Natively multimodal foundation model</li>
+    <li><span class="year">Jan 2025</span> TOTO paper published (arXiv). ICCV 2025 acceptance</li>
+    <li><span class="year">Feb 13, 2026</span> Last day at xAI. &ldquo;Brief hiatus before the next journey&rdquo;</li>
+    <li><span class="year">Mar 2026</span> CVPR 2025 paper presented. Status: on hiatus</li>
+  </ul>
+  <p>
+    <strong>Pace:</strong> Compressed trajectory. Zero-to-frontier in ~18 months: from Berkeley TA &rarr;
+    BAIR research &rarr; 2 top-venue papers &rarr; xAI production pretraining (Grok 3.5) &rarr; departure.
+    The transition from academic research to shipping frontier production models happened within a single year.
+    No internship detour &mdash; went straight from Berkeley research to xAI MTS.
+  </p>
+  <p>
+    <strong>Acceleration signal:</strong> The TOTO paper was submitted while he was already at xAI shipping Grok.
+    He was simultaneously publishing ICCV-caliber research AND running production pretraining sprints. Dual-track
+    output (research + production) at 22 is rare.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- NETWORK MAP                                            -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Network Map</h2>
+
+  <h3>Direct Collaborators (Watch List)</h3>
+  <ul>
+    <li><strong>Zeeshan Patel</strong> &mdash; Co-author CVPR 2025, same xAI team, departed Jan 30 (2 weeks before Rahul). Now stealth. T0. <a href="zeeshan-patel.html">dossier</a></li>
+    <li><strong>Jathushan Rajasegaran</strong> &mdash; Co-author both papers. Malik PhD. 2,300+ citations. Sri Lankan. Still at xAI? <a href="https://x.com/jathushan">@jathushan</a></li>
+    <li><strong>Ilija Radosavovic</strong> &mdash; Co-author TOTO. Malik lab. Humanoid locomotion. PhD 2025. Meta connection via Feichtenhofer</li>
+    <li><strong>Yossi Gandelsman</strong> &mdash; Co-author TOTO. Efros PhD. Now at Reve AI ($390M) + incoming TTIC professor</li>
+    <li><strong>Christoph Feichtenhofer</strong> &mdash; Co-author TOTO. Meta AI research scientist. SlowFast Networks. Senior collaborator</li>
+  </ul>
+
+  <h3>Advisor</h3>
+  <ul>
+    <li><strong>Jitendra Malik</strong> &mdash; Berkeley EECS. Co-advisor for both Ravishankar and Patel. Arthur Samuel Professor. One of the most cited CV researchers alive. Malik lab alumni include Bill Peebles (DiT/Sora), Taesung Park (Reve AI), Tim Brooks (Sora/Meta). <strong>Founder factory.</strong></li>
+  </ul>
+
+  <h3>xAI Colleagues (mentioned in departure)</h3>
+  <ul>
+    <li><strong>@Guodzh</strong> &mdash; Recruited Ravishankar to xAI. Likely manager/lead</li>
+    <li><strong>@archanfel_anoth</strong> &mdash; Also credited for bringing him in. Co-lead on pretraining?</li>
+    <li><strong>Shubham Goel</strong> &mdash; Malik PhD, IIT Bombay, 3D reconstruction. Same xAI team. Indian-origin</li>
+  </ul>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- RISKS                                                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Risks</h2>
+  <ol>
+    <li><strong>No disclosed thesis or venture.</strong> Still on &ldquo;hiatus&rdquo; as of March 2026 &mdash; 6 weeks post-departure. Unlike Patel who immediately signaled stealth work (&ldquo;embarked on a new adventure&rdquo;), Ravishankar&rsquo;s language is more passive</li>
+    <li><strong>Shorter tenure at xAI (~7-8 months).</strong> Joined mid-2025, left Feb 2026. Contributed to Grok 3.5 and v7 kickoff, but didn&rsquo;t see v7 through to completion. Question: did he leave because he was done, or because the xAI environment was deteriorating?</li>
+    <li><strong>Pretraining is infrastructure, not product.</strong> His core skill is training models at scale. Building a company requires product vision, go-to-market, and customer development &mdash; unless he&rsquo;s building an infra company (Together AI, Modal, etc.) or joining Patel as the technical co-founder</li>
+    <li><strong>No prior founding or business experience.</strong> Went straight from Berkeley to xAI. No internships at startups, no side projects with traction, no hackathon wins found</li>
+    <li><strong>Publication record is strong but early.</strong> 2 papers, 16 citations total. The TOTO paper has heavy-hitter co-authors (Feichtenhofer, Radosavovic) &mdash; unclear how much was Ravishankar&rsquo;s contribution vs. senior researchers</li>
+    <li><strong>GitHub profile is thin.</strong> 11 repos, 21 followers. No high-star open source projects. Contrasts with Patel&rsquo;s dist-workrs infra signal</li>
+    <li><strong>Part of broader xAI exodus.</strong> All 11 non-Musk co-founders left by March 2026. His departure could be individual conviction or herd behavior. The framing (&ldquo;hardest decision&rdquo;) suggests the former, but timing aligns with mass exodus</li>
+  </ol>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- BACKGROUND                                             -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Background</h2>
+  <p>
+    Indian-origin. Grew up in Katy, TX (Seven Lakes High School, Class of 2020). Played varsity football (wide receiver).
+    UC Berkeley Computer Science (2020&ndash;2025). Research assistant at UCSF Brain Lab (MRI clustering methods with DL).
+    TA&rsquo;d CS 170 (Efficient Algorithms) for 3 semesters (Fall 2023, Spring 2024, Fall 2024) and CS 280 (Computer Vision,
+    Spring 2025). Research under Jitendra Malik at BAIR. Joined xAI directly from Berkeley as MTS. ~22 years old.
+  </p>
+  <p class="small muted">
+    No competition results found (USACO, IOI, IMO, etc.). The football background is unusual for this cohort &mdash;
+    suggests well-roundedness but doesn&rsquo;t provide the competitive programming signal we typically look for.
+    The CS 170 TA role (algorithms) for 3 semesters shows strong fundamentals.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- OUTREACH                                               -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Outreach Draft</h2>
+  <div style="background: var(--bg); border: 1px solid #ddd; padding: 1.5em; border-radius: 6px; font-family: var(--sans);">
+    <p>hi Rahul</p>
+    <p>I&rsquo;m Vansh, Partner at Boldcap.</p>
+    <p>I&rsquo;ve been going deep on autoregressive approaches to video/world models &mdash; interesting moment in the space. Runway pivoting from creative tools to world simulation, Luma locking up 2GW of HUMAIN compute, AMI Labs raising $1B on LeCun&rsquo;s JEPA thesis, and Sora shutting down ($2.1M lifetime revenue) proving standalone consumer video gen doesn&rsquo;t work. Meanwhile the real unlock is on the pretraining side: whether video models can scale like LLMs.</p>
+    <p>Which is exactly what your TOTO work showed &mdash; autoregressive pre-training from video follows power-law compute scaling (L(C) = 7.32 &times; C<sup>-0.0378</sup> vs GPT-3&rsquo;s 0.0480 exponent), and the 63% real-world robot manipulation result from just a 120M model suggests the representations are genuinely learning physics, not just pixels. That insight + shipping Grok 3.5 pretraining at frontier scale is a rare combination.</p>
+    <p>Not sure if you&rsquo;re raising or what the next journey looks like &mdash; would love to chat either way. I can write $500K&ndash;$1M and move fast.</p>
+    <p>Vansh</p>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- PUBLICATIONS                                           -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Publications</h2>
+  <p class="small muted">2 top-venue papers. 16+ citations. Co-author network includes Feichtenhofer (Meta AI), Radosavovic, Gandelsman, Malik.</p>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2501.05453">An Empirical Study of Autoregressive Pre-training from Videos (TOTO)</a></div>
+    <div class="venue">ICCV 2025 &middot; With Jathushan Rajasegaran, Ilija Radosavovic, Yossi Gandelsman, Christoph Feichtenhofer, Jitendra Malik</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2411.08034">Scaling Properties of Diffusion Models for Perceptual Tasks</a></div>
+    <div class="venue">CVPR 2025 &middot; With Zeeshan Patel, Jathushan Rajasegaran, Jitendra Malik &middot; 16 citations</div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- NOTES                                                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Notes</h2>
+  <ul>
+    <li class="small">Indian-origin confirmed. Ravishankar surname. Katy, TX (Seven Lakes HS). Played varsity football (WR)</li>
+    <li class="small">Berkeley CS under Jitendra Malik (BAIR). TA&rsquo;d CS 170 x3 + CS 280</li>
+    <li class="small">UCSF Brain Lab: MRI clustering research (DL for medical imaging)</li>
+    <li class="small">xAI MTS: pretraining + multimodal. Shipped Grok 3.5 sprint, kicked off v7</li>
+    <li class="small">Departed xAI Feb 13, 2026. &ldquo;Brief hiatus before beginning the next journey, ad astra!&rdquo;</li>
+    <li class="small">Zeeshan Patel departed xAI Jan 30, 2026 &mdash; 14 days before Ravishankar. STRONG co-founding signal</li>
+    <li class="small">TOTO: autoregressive video pre-training, 1T+ visual tokens, LLaMA architecture. Scaling law: L(C) = 7.32 &times; C^(-0.0378)</li>
+    <li class="small">CVPR 2025: diffusion scaling for perception. 58% improvement over DPT. 3-4 OOM less compute than Marigold</li>
+    <li class="small">Co-author network: Feichtenhofer (Meta), Radosavovic, Gandelsman (Reve AI), Rajasegaran (2,300+ cites)</li>
+    <li class="small">GitHub: 11 repos, 21 followers. &ldquo;peek&rdquo; (TypeScript) is most notable non-academic repo</li>
+    <li class="small">Twitter: @r_ahulravi. Low follower count. Departure thread is primary signal</li>
+    <li class="small">No competition results found (USACO, IOI, etc.). No hackathon wins. No prior startup experience</li>
+    <li class="small">xAI exodus context: all 11 non-Musk co-founders left by Mar 2026. SpaceX acquisition/IPO context</li>
+    <li class="small">Key question: Is he joining Patel&rsquo;s stealth venture, starting his own, or joining another company?</li>
+    <li class="small">Monitor: LinkedIn status change, Twitter activity, any new GitHub repos, Patel&rsquo;s team page</li>
+  </ul>
+
+  <footer>
+    researched: 2026-03-29 &middot; 6-agent SOP (technical, social, market, background, trajectory, recursive) &middot; tier 1 &middot; <a href="../index.html">back to index</a>
+  </footer>
+
+</body>
+</html>

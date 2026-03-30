@@ -200,6 +200,53 @@ After synthesis, assign a tier:
 
 ---
 
+## Outreach Email Guidelines
+
+Every dossier includes an outreach email draft. The email must be **ultra-high substance** — it should make the person feel that the sender has genuinely put in the work and deeply understands the specific problem or belief they are working on. This is the VC's primary differentiator.
+
+### Structure (strict order)
+
+1. **Who am I?** — One sentence. "I'm Vansh, Partner at Boldcap."
+2. **Why am I reaching out?** — Demonstrate deep domain knowledge of their specific area. Name companies, approaches, and technical tradeoffs in their space. Show you've done the research.
+3. **What do I know about YOU specifically?** — The intrinsic insight. Reference their specific technical thesis, a specific paper finding, a specific metric, or a specific decision they made. This must be something only someone who genuinely studied their work would know. NOT generic ("your impressive background") — SPECIFIC ("your TOTO finding that video models scale at L(C) = 7.32 × C^{-0.0378} vs GPT-3's 0.0480 exponent").
+4. **Next steps** — Casual, low-pressure. "Not sure if you're raising — would love to chat." Offer to write a check with a specific range if appropriate.
+
+### Tone
+- **Short.** 4-6 sentences max after the greeting. The bio founder example email is the gold standard length.
+- **Conversational, not corporate.** Write like a person, not a fund.
+- **Personal connection if authentic.** If there's a genuine personal angle (diagnosed with a disease, used their product, etc.), lead with it.
+- **Show the landscape.** Name 3-5 companies/approaches in their space to prove you understand the market. Say what's missing or what you believe.
+- **End with specificity.** "I can write $500K-$1M and move fast" is better than "we'd love to explore."
+
+### Anti-patterns (DO NOT)
+- Generic compliments ("your impressive work", "your exceptional talent")
+- Name-dropping the VC's portfolio unless directly relevant
+- Long paragraphs about the fund's thesis
+- "I'd love to pick your brain" — offer value, don't extract it
+- Formal sign-offs ("Best regards", "Sincerely")
+
+### Template
+
+```
+hi {{name}}
+
+I'm Vansh, Partner at Boldcap. [Personal connection if authentic, 1 sentence.]
+
+I've been going deep on [their specific area] — [show landscape: name 3-5 companies/approaches, what's working, what's missing]. [Your specific insight or belief about the space.]
+
+[The intrinsic thing you know about THEM — specific paper finding, specific metric, specific technical decision that shows you've done the work.] [Why this matters / what it unlocks.]
+
+Not sure if you're raising — would love to chat either way. [Specific offer: "I can write $X-$Y and move fast" OR "happy to meet in the Bay Area."]
+
+Vansh
+```
+
+### Signing
+- Always sign as "Vansh" (not "Best, Vansh" or "Sincerely, Vansh")
+- No email signature block
+
+---
+
 ## Quality Checklist (Before Publishing)
 
 Before any dossier page goes live, verify:

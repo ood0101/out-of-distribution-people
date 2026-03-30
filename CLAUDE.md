@@ -24,6 +24,16 @@ Repository: github.com/ood0101/out-of-distribution-people (public, GitHub Pages)
 - LinkedIn-style role descriptions
 - Vague superlatives ("one of the best", "exceptional talent") — replace with evidence
 
+### Outreach Email Style (Non-Negotiable)
+- Ultra-high substance. Must make the person feel the sender genuinely understands their specific problem/belief
+- Structure: Who am I → Why reaching out (show landscape: 3-5 companies/approaches) → Intrinsic insight about THEM (specific paper finding, metric, technical decision) → Next steps
+- Short: 4-6 sentences after greeting. Conversational, not corporate
+- Sign as "Vansh" (no formal sign-off)
+- Always name specific companies and approaches in their space to prove market understanding
+- End with specific offer: "I can write $500K-$1M and move fast" or similar
+- NO generic compliments, NO fund thesis paragraphs, NO "pick your brain" language
+- See AGENT_SOP.md for full template and anti-patterns
+
 ### Signal sources the owner DOES value
 - Competition results: IOI, IMO, ICPC, Putnam, IPhO, USAMO, USABO, ISEF, Regeneron STS
 - Lab alumni pages: Chris Ré, Percy Liang, Pieter Abbeel, Kaiming He, Song Han, Tri Dao, etc.
