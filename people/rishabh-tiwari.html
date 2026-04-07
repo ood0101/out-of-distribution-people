@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rishabh Tiwari &mdash; Out of Distribution People</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="site-title">Out of Distribution People</div>
+    <div class="breadcrumb"><a href="../index.html">/ index</a> / rishabh-tiwari</div>
+  </nav>
+
+  <div class="profile-header">
+    <h1>Rishabh Tiwari</h1>
+    <p class="one-liner"><strong>2nd-year EECS PhD, UC Berkeley / BAIR, advised by Kurt Keutzer (SqueezeAILab). First-author ICLR paper (ChipNet) as a 2nd-year undergrad at IIT (ISM) Dhanbad. 2 years Pre-Doctoral Researcher at Google DeepMind with Pradeep Shenoy (ICML 2023, WACV 2024, AAAI 2023). QuantSpec (first author, 2025) &mdash; self-speculative decoding with 4-bit hierarchical KV cache, ~2.5x speedup, >90% acceptance, featured on Apple ML Research. Currently Research Scientist Intern at Meta (2026). Youngest Indian Kaggle Competitions Master (age 18, 2020). Indian, IIT (ISM) Dhanbad Dept. Rank 2.</strong></p>
+    <div class="tags">
+      <span class="tag spike">tier-1: high conviction</span>
+      <span class="tag">founders (potential)</span>
+      <span class="tag">indian</span>
+      <span class="tag">researchers</span>
+      <span class="tag">ai-efficiency</span>
+      <span class="tag">inference-optimization</span>
+      <span class="tag">quantization</span>
+      <span class="tag">speculative-decoding</span>
+      <span class="tag spike">spike: ICLR first-author as undergrad + DeepMind 2yr + Keutzer/SqueezeAI + Apple-amplified SOTA</span>
+    </div>
+    <div class="links">
+      <a href="https://www.rishabhtiwari.org">website</a>
+      <a href="https://scholar.google.com/citations?user=iJuoc4sAAAAJ">google scholar (~846)</a>
+      <a href="https://github.com/rishabh-16">github</a>
+      <a href="https://www.linkedin.com/in/rishabh-tiwari16/">linkedin</a>
+      <a href="https://x.com/rish2k1">twitter/x</a>
+      <a href="https://dblp.org/pid/261/3179.html">dblp</a>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- INVESTMENT THESIS                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <div class="spike-box">
+    <div class="label">&#9670; Investment Thesis</div>
+    <p>
+      Rishabh Tiwari sits at the precise intersection of the two most economically valuable subfields in AI infrastructure right now:
+      <strong>KV cache compression</strong> and <strong>speculative decoding</strong>. His latest paper, <strong>QuantSpec</strong>
+      (first author, under review 2025), merges both into a single self-speculative framework: draft model shares the target&rsquo;s architecture
+      but uses 4-bit hierarchical quantized KV cache, delivering <strong>~2.5x end-to-end speedup</strong> at <strong>&gt;90% acceptance rate</strong>
+      and ~1.3x memory reduction over prior sparse-KV self-speculative methods. Apple Machine Learning Research featured it on their site &mdash;
+      rare external amplification for a Berkeley student paper. Co-authors include Apple on-device LLM researchers Maxwell Horton and Mahyar Najibi,
+      alongside the core SqueezeAILab team (Coleman Hooper, Sehoon Kim of KVQuant fame, Amir Gholami).
+    </p>
+    <p>
+      The spike pattern is unusually clean for an inception-stage bet. <strong>First-author ICLR paper at 19</strong>
+      (ChipNet, 2021, structured pruning, +16.1% over SOTA), written as a sophomore at IIT (ISM) Dhanbad.
+      <strong>Two years as a Pre-Doctoral Researcher at Google DeepMind Bangalore</strong> under Pradeep Shenoy &mdash;
+      not a 12-week intern, a full-time research path that produced ICML 2023 (2-author paper with his DeepMind advisor), WACV 2024, AAAI 2023, CVPR 2022.
+      <strong>Chose a Berkeley PhD with Keutzer over staying at DeepMind</strong> in Aug 2024.
+      Currently <strong>Research Scientist Intern at Meta</strong> (visible in his GitHub bio as of early 2026).
+      Nine peer-reviewed publications at ICLR / ICML / CVPR (x2) / WACV / AAAI / ICIP / ICASSP by age ~24, with ~846 citations.
+    </p>
+    <p>
+      He is <em>not</em> a founder today. He is a 2nd-year PhD who just started. But the trajectory is the textbook Keutzer-lab-to-company pattern
+      (see Amir Gholami &rarr; co-founder MyShell-style efficient-inference plays; Sehoon Kim &rarr; TinyAgent / QServe). The right move is not to
+      wait for a departure signal &mdash; it&rsquo;s to build a direct relationship now, fund his compute or a side project, and be the first call
+      when (a) he walks out of Berkeley to commercialize QuantSpec-style inference infrastructure, or (b) his current Meta internship converts into a
+      stealth-mode return offer he turns down.
+    </p>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- THE SPIKE                                              -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>The Spike &mdash; With Evidence</h2>
+
+    <h3>(1) ICLR first-author as a 2nd-year undergrad</h3>
+    <p>
+      <strong>ChipNet: Budget-aware pruning with Heaviside continuous approximations</strong> (ICLR 2021) &mdash;
+      Tiwari, Bamba, Chavan, Gupta. Tiwari is listed first. He was an undergrad at IIT (ISM) Dhanbad (Engineering Physics with AI minor,
+      Department Rank 2, GPA 9.02/10). ChipNet outperformed SOTA structured pruning by <strong>16.1% accuracy</strong> in extreme-pruning regimes.
+      The work was done under Deepak K. Gupta&rsquo;s Transmute AI Lab &mdash; a non-profit research collective co-founded by Tiwari himself while
+      still in undergrad &mdash; in collaboration with UiT The Arctic University of Norway (Dilip K. Prasad). First-author at ICLR before most
+      IIT undergrads have finished their core CS coursework is extraordinarily rare.
+    </p>
+
+    <h3>(2) Two years at Google DeepMind Bangalore (not an internship)</h3>
+    <p>
+      From <strong>Jul 2022 to Aug 2024</strong>, Tiwari was a <strong>Pre-Doctoral Researcher at Google Research / DeepMind Bangalore</strong>
+      working with Pradeep Shenoy (and previously May 2021&ndash;Apr 2022 as a Student Researcher with Shenoy and Rishabh Iyer).
+      Full-time research, not a summer rotation. Output across this period:
+    </p>
+    <ul>
+      <li><strong>ICML 2023 &mdash; Overcoming Simplicity Bias in Deep Networks Using a Feature Sieve</strong>. Two-author paper: Tiwari &amp; Shenoy. 11.4% relative gain on ImageNet-A over SOTA. Two-author papers with your senior DeepMind advisor at ICML are the clearest possible signal that you are driving the work.</li>
+      <li><strong>WACV 2024 &mdash; Using Early Readouts to Mediate Featural Bias in Distillation</strong>. First author. Improved ResNet-18 worst-group accuracy on CelebA by 5.2%.</li>
+      <li><strong>AAAI 2023 &mdash; Interactive Concept Bottleneck Models</strong> (with Chauhan, Freyberg, Shenoy, Dvijotham). 5-10% gains with only 5 interactions on CUB / CheXpert / OAI.</li>
+      <li><strong>CVPR 2022 &mdash; GCR: Gradient Coreset based Replay Buffer Selection for Continual Learning</strong> (first author, with Killamsetty, Iyer, Shenoy).</li>
+      <li><strong>CVPR 2022 &mdash; Dynamic Kernel Selection for Improved Generalization and Memory Efficiency in Meta-learning</strong> (co-first with Chavan).</li>
+    </ul>
+    <p>
+      He was advised at DeepMind by Shenoy and also collaborated with <strong>Praneeth Netrapalli</strong> &mdash; two of the strongest ML researchers
+      in India. He chose to leave DeepMind in Aug 2024 to start a Berkeley PhD instead of converting to a full-time research scientist role. This is a
+      deliberate bet on the frontier-lab-PhD path rather than the stable industry track.
+    </p>
+
+    <h3>(3) QuantSpec: Apple-amplified SOTA in the hottest inference subfield</h3>
+    <p>
+      <strong>QuantSpec: Self-Speculative Decoding with Hierarchical Quantized KV Cache</strong> (arXiv 2502.10424, Feb 2025, under review).
+      Rishabh Tiwari is listed <strong>first author</strong> (with equal-contribution asterisks alongside Haocheng Xi and Aditya Tomar).
+      Key result: a self-speculative decoding framework where the draft model shares the target&rsquo;s architecture but runs with a
+      <strong>hierarchical 4-bit quantized KV cache</strong> and 4-bit weights. Delivers up to <strong>~2.5x end-to-end speedup</strong> at
+      <strong>&gt;90% draft-acceptance rate</strong>, with ~1.3x memory reduction versus sparse-KV self-speculative baselines &mdash; specifically
+      targeted at long-context LLM inference on edge devices.
+    </p>
+    <p>
+      <strong>Apple Machine Learning Research featured this work on their public research page</strong> (machinelearning.apple.com/research/quantspec).
+      The reason is obvious from the author list: Apple on-device ML researchers <strong>Maxwell Horton</strong> and <strong>Mahyar Najibi</strong>
+      are co-authors. This means QuantSpec is not just an academic paper &mdash; it has direct line-of-sight into Apple&rsquo;s on-device LLM stack
+      (the same team shipping Apple Intelligence inference optimizations). Whether Tiwari interned at Apple in 2024 or the collaboration was structured
+      through Berkeley / SqueezeAILab, <strong>this is the strongest possible pre-founder credential in edge inference: your paper is on Apple&rsquo;s
+      research site before you finish your second year of PhD</strong>.
+    </p>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- GROWTH TRAJECTORY                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>Growth Trajectory</h2>
+    <table style="width:100%; font-size:0.85rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted); width:120px;">Jul 2018</td><td>Enters IIT (ISM) Dhanbad &mdash; B.Tech Engineering Physics with AI minor, full tuition scholarship</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2020</td><td><strong>Youngest Indian Kaggle Competitions Master at age 18</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">May 2021</td><td><strong>Co-founds Transmute AI Labs</strong> with Deepak K. Gupta (UvA / UiT Norway) as a sophomore. Begins Google Research collaboration with Pradeep Shenoy</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>May 2021</strong></td><td><strong>ChipNet accepted at ICLR 2021 as first author, age ~20, sophomore</strong>. +16.1% over SOTA structured pruning</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2021</td><td>Wins first national Amazon ML Challenge (3,000+ teams), INR 1 lakh + internship offer</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2022</td><td>CVPR 2022 x2 (GCR continual learning first-author; Dynamic Kernel Selection co-first)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Aug 2022</td><td>Graduates IIT (ISM) Dhanbad &mdash; GPA 9.02/10, Dept. Rank 2. Starts full-time <strong>Pre-Doctoral Researcher at Google Research / DeepMind Bangalore</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2023</td><td>ICML 2023 (Feature Sieve, two-author with Shenoy). AAAI 2023 (Interactive Concept Bottleneck). Co-organizes Resource Efficient Deep Learning workshop at ICCV 2023 (speakers include Song Han, Anima Anandkumar, Prateek Jain)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2024</td><td>WACV 2024 (Early Readouts). ICASSP 2023. Leaves DeepMind</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Aug 2024</strong></td><td><strong>Starts Berkeley EECS PhD with Kurt Keutzer (SqueezeAILab / BAIR)</strong>. GPA 4/4</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Feb 2025</strong></td><td><strong>QuantSpec (arXiv 2502.10424)</strong> &mdash; first author, 10 authors total, SqueezeAILab + Apple ML researchers</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2025</td><td>QuantSpec <strong>featured on Apple Machine Learning Research</strong> public site</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted); color:var(--accent);"><strong>~2026</strong></td><td><strong>Research Scientist Intern at Meta</strong> (per GitHub bio, early 2026) &mdash; efficient deep learning</td></tr>
+    </table>
+    <p style="margin-top:1rem; font-family:var(--mono); font-size:0.75rem; color:var(--accent);">
+      PACE: 9 peer-reviewed papers (ICLR, ICML, CVPR x2, WACV, AAAI, ICIP, ICASSP, QuantSpec-under-review) in 5 years, from age ~19 to ~24.<br>
+      CONSISTENCY: One first-author paper at a top venue every single year, 2021&rarr;2022&rarr;2023&rarr;2024&rarr;2025.<br>
+      ACCELERATION: Subject matter has pivoted from structured pruning (ChipNet) &rarr; group robustness (DeepMind years) &rarr; LLM inference infrastructure (QuantSpec). The 2025 pivot is into the largest commercial AI market on earth.
+    </p>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- TECHNICAL DEEP DIVE                                    -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>Technical Deep Dive: Why QuantSpec Matters</h2>
+    <p>
+      Long-context LLM inference has two bottlenecks. (1) <strong>KV cache memory</strong> &mdash; at 128K+ tokens the KV cache is often
+      larger than the model weights. (2) <strong>Autoregressive decoding latency</strong> &mdash; one token per forward pass, memory-bandwidth-bound.
+      Prior work attacked these separately: KVQuant / KIVI / SqueezeLLM compress the KV cache; EAGLE / Medusa / speculative decoding reduce
+      decode steps with a draft model.
+    </p>
+    <p>
+      <strong>QuantSpec&rsquo;s insight:</strong> use the <em>same</em> model as its own draft, but run the draft with a 4-bit hierarchical
+      quantized KV cache and 4-bit weights. Because the draft shares the target&rsquo;s architecture, you get very high acceptance rates
+      (&gt;90%) &mdash; much higher than Medusa-style separate-head drafts. Because the draft runs at 4-bit, it&rsquo;s cheap enough that the
+      speedup actually lands (~2.5x end-to-end). And because KV cache is hierarchical (not sparse), it beats sparse-KV baselines on memory
+      (~1.3x reduction) without the accuracy-degrading access-pattern irregularity.
+    </p>
+    <p>
+      <strong>Why this beats EAGLE/Medusa for edge deployment:</strong> EAGLE and Medusa require training a separate draft head (extra params,
+      extra training). QuantSpec reuses the target model, so deployment is a single artifact. On memory-constrained edge devices (iPhone, Pixel,
+      Mac) that&rsquo;s a decisive advantage &mdash; which is exactly why Apple is promoting it.
+    </p>
+    <p>
+      <strong>Position in the Keutzer lab arc:</strong> QuantSpec is the logical next step after KVQuant (Hooper, Kim et al., NeurIPS 2024, which
+      enabled 10M context LLaMA inference on 8xA100) and SqueezeLLM (Kim et al., ICML 2024). SqueezeAILab is arguably the single strongest academic
+      lab in the world on LLM inference efficiency. Tiwari being first-author on the group&rsquo;s newest flagship paper within ~6 months of
+      arrival is an extraordinary ramp.
+    </p>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- COMPETITIVE LANDSCAPE                                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>Competitive Landscape &mdash; Efficient Inference</h2>
+    <p class="small muted">Efficient inference / inference-time optimization is one of the most heavily funded AI infrastructure categories, with clear revenue traction across incumbents:</p>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Company</td><td>Stage / Valuation</td><td>Angle</td><td>Overlap with Tiwari</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Fireworks AI</strong></td><td>~$315M ARR (Feb 2026, +416% YoY)</td><td>Hosted inference, own quantization &amp; spec-decoding stack (FireAttention)</td><td>Direct. Would hire him or buy his tech</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Together AI</strong></td><td>$305M Series B, ~$150M ARR</td><td>Together Inference Engine, Medusa co-authors on team</td><td>Direct. Tri Dao (Princeton) is CSO &mdash; adjacent research community</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Baseten</strong></td><td>$300M Series E, $5B (Feb 2026)</td><td>Model-hosting with inference optimization, TensorRT-LLM wrappers</td><td>Adjacent &mdash; buys optimization rather than builds from scratch</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Groq</strong></td><td>$2.8B (Aug 2024)</td><td>Custom LPU silicon. Software stack matters too</td><td>Hardware-first. Tiwari is algorithmic / software-first</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Cerebras</strong></td><td>IPO&rsquo;d / $8B</td><td>Wafer-scale silicon</td><td>Hardware-first, less overlap</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Etched</strong></td><td>$120M (Sonic / transformer ASIC)</td><td>Transformer-only ASIC</td><td>Hardware ASIC bet, orthogonal</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>MatX</strong></td><td>Stealth, Reid Hoffman-backed</td><td>LLM-training ASIC (Google TPU alumni)</td><td>Orthogonal &mdash; training, not inference</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Tenstorrent</strong></td><td>~$2B valuation</td><td>RISC-V AI silicon. Jim Keller</td><td>Adjacent. Keutzer lab has alumni connections</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Anyscale (Ray)</strong></td><td>$1B+</td><td>Distributed serving via Ion Stoica&rsquo;s Berkeley group</td><td>Berkeley-native; not a model-compression play</td></tr>
+    </table>
+    <p style="margin-top:0.75rem;">
+      <strong>The gap in this landscape:</strong> nobody has shipped a purpose-built <em>on-device / edge LLM inference engine</em> comparable to what
+      Fireworks has for cloud. Apple Intelligence is internal. Qualcomm AI Engine is hardware-bound. llama.cpp is OSS but not commercial.
+      A Berkeley-spun-out company focused on <strong>&ldquo;bring any open LLM to any device at 4x speedup via spec-decoding + KV quantization&rdquo;</strong>
+      has a clear $B-scale opportunity &mdash; and Tiwari literally wrote the paper that makes this work.
+    </p>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- NETWORK MAP                                            -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>Network Map</h2>
+
+    <h3>QuantSpec Co-authors (10 total)</h3>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Name</td><td>Affiliation</td><td>Role / Signal</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Rishabh Tiwari</strong>*</td><td>Berkeley / Keutzer</td><td>First author, equal contribution</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Haocheng Xi</strong>*</td><td>Berkeley / Keutzer</td><td>Equal contribution. Known for FP8 training work</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Aditya Tomar</strong>*</td><td>Berkeley / Keutzer</td><td>Equal contribution</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Coleman Hooper</td><td>Berkeley / Keutzer</td><td>First author of KVQuant (NeurIPS 2024). 10M context LLaMA inference</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Sehoon Kim</td><td>Berkeley / Keutzer</td><td>First author of SqueezeLLM (ICML 2024), TinyAgent. Graduating &mdash; likely founder candidate</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Maxwell Horton</strong></td><td><strong>Apple ML Research</strong></td><td>On-device LLM inference team</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Mahyar Najibi</strong></td><td><strong>Apple ML Research</strong></td><td>On-device LLM inference team</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Michael W. Mahoney</td><td>Berkeley / ICSI / LBNL</td><td>Randomized numerical linear algebra, senior advisor</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Kurt Keutzer</td><td>Berkeley EECS</td><td>Advisor. Co-founded Synopsys years ago; networked into every AI silicon startup (Tenstorrent etc.)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Amir Gholami</td><td>Berkeley / ICSI</td><td>Research Scientist. Co-founder of SqueezeAILab brand. Prolific efficient-inference researcher</td></tr>
+    </table>
+
+    <h3 style="margin-top:1.5rem;">DeepMind Period (2021&ndash;2024)</h3>
+    <ul>
+      <li><strong>Pradeep Shenoy</strong> &mdash; DeepMind Bangalore. Direct advisor across 2 years and 5 papers. Focus: group robustness, distillation, simplicity bias</li>
+      <li><strong>Praneeth Netrapalli</strong> &mdash; DeepMind. Co-advisor on Feature Sieve / simplicity bias work</li>
+      <li><strong>Krishnamurthy (Dj) Dvijotham</strong> &mdash; DeepMind. Interactive Concept Bottleneck Models (AAAI 2023)</li>
+      <li><strong>Rishabh Iyer</strong> &mdash; UT Dallas. Co-advised the GCR continual learning project</li>
+      <li><strong>Krishnateja Killamsetty</strong> &mdash; co-author on GCR, now at IBM Research</li>
+    </ul>
+
+    <h3 style="margin-top:1.5rem;">Transmute AI Labs Cohort (IIT Dhanbad founding team, 2021)</h3>
+    <ul>
+      <li><strong>Deepak K. Gupta</strong> &mdash; IIT (ISM) Dhanbad alum, PhD TU Delft, formerly University of Amsterdam. Research lead at Transmute. Focus: efficient DL + physics-informed ML. Effectively Tiwari&rsquo;s undergrad research mentor</li>
+      <li><strong>Dilip K. Prasad</strong> &mdash; UiT The Arctic University of Norway. International collaborator</li>
+      <li><strong>Arnav Chavan</strong> &mdash; co-first on CVPR 2022 meta-learning, co-author on ChipNet. Went on to NyunAI (model compression startup)</li>
+      <li><strong>Udbhav Bamba</strong> &mdash; co-author on ChipNet. Amazon</li>
+      <li><strong>Saksham Aggarwal</strong> &mdash; Transmute intern 2021&ndash;23, now at Sarvam AI</li>
+      <li><strong>Taneesh Gupta, Pawan Kumar Sahu</strong> &mdash; Transmute research interns, mentored by Tiwari</li>
+    </ul>
+
+    <h3 style="margin-top:1.5rem;">Keutzer / SqueezeAILab Current Cohort (Berkeley, 2025)</h3>
+    <ul>
+      <li><strong>Coleman Hooper, Sehoon Kim</strong> &mdash; senior PhDs, KVQuant / SqueezeLLM authors. Strong founder candidates themselves</li>
+      <li><strong>Haocheng Xi, Aditya Tomar</strong> &mdash; Tiwari&rsquo;s immediate peer group on QuantSpec</li>
+      <li><strong>Amir Gholami</strong> &mdash; research scientist, senior mentor</li>
+      <li><strong>Kurt Keutzer&rsquo;s alumni</strong> have produced founders across the efficient-AI stack: Keutzer himself co-founded Synopsys, and his students have spun out into Deepscale (acquired by Tesla), Forest Neurotech, OctoML (acquired by NVIDIA), and played early roles at Tenstorrent. This is arguably the most founder-productive efficient-ML lab in the US</li>
+    </ul>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- CITATION ANALYSIS                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>Publication &amp; Citation Footprint</h2>
+    <p>
+      <strong>Total citations (Google Scholar, mid-2025):</strong> ~846. h-index and i10 not precisely readable, but with 9 peer-reviewed papers
+      and an 846-citation base, h-index is likely 7&ndash;8, which is unusually high for a 2nd-year PhD.
+    </p>
+    <table style="width:100%; font-size:0.82rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Year</td><td>Venue</td><td>Paper</td><td>Position</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2025</td><td>arXiv (under review)</td><td>QuantSpec</td><td>First author*</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2024</td><td>WACV</td><td>Early Readouts for Distillation</td><td>First author</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2023</td><td>ICML</td><td>Feature Sieve (Simplicity Bias)</td><td>First author (2-author paper)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2023</td><td>AAAI</td><td>Interactive Concept Bottleneck Models</td><td>Second author</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2023</td><td>ICASSP</td><td>Light-weight object trackers</td><td>Middle author</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2022</td><td>CVPR</td><td>GCR (continual learning coreset)</td><td>First author</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2022</td><td>CVPR</td><td>Dynamic Kernel Selection (meta-learning)</td><td>Co-first*</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2021</td><td><strong>ICLR</strong></td><td><strong>ChipNet</strong></td><td>First author (as sophomore)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2021</td><td>ICIP</td><td>Rescaling CNN via Learnable Repetition</td><td>Third author</td></tr>
+    </table>
+    <p style="margin-top:0.75rem;">
+      <strong>Venue quality:</strong> ICLR, ICML, CVPR, AAAI, WACV, ICIP, ICASSP. Every paper is at a peer-reviewed top or mid-tier venue &mdash; no
+      arXiv-only padding (except the in-flight QuantSpec). This is a publication record built on discipline, not volume.
+    </p>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- IN HIS OWN WORDS                                       -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>In His Own Words</h2>
+    <p class="small muted">Tiwari is a low-posting researcher &mdash; Twitter (@rish2k1) is nearly inactive, no blog, no podcast appearances. Direct quotes drawn from paper abstracts and CV language:</p>
+    <ul>
+      <li>&ldquo;Large Language Models are increasingly being deployed on edge devices for long-context settings, creating a growing need for fast and efficient long-context inference.&rdquo; <em>&mdash; QuantSpec abstract (2025). The framing is product-aware: &ldquo;edge devices&rdquo;, &ldquo;deployment&rdquo;, &ldquo;efficient inference&rdquo; &mdash; not just benchmark chasing.</em></li>
+      <li>&ldquo;Developed a flexible budget-aware structured pruning approach, ChipNet, that is stable for extreme pruning &mdash; outperformed SOTA structured pruning methods by remarkable margins of 16.1% accuracy.&rdquo; <em>&mdash; CV (2025). He leads with the delta over SOTA, not the venue.</em></li>
+      <li>&ldquo;Research Topics: Interpretable AI, Simplicity Bias, Robust distillation.&rdquo; <em>&mdash; CV description of his 2 years at DeepMind. Three distinct research topics in 2 years, all with first-author or solo-with-advisor papers.</em></li>
+    </ul>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- BACKGROUND                                             -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>Background</h2>
+    <p>
+      From India. <strong>IIT (ISM) Dhanbad</strong> (not the IIT Dhanbad &mdash; ISM Dhanbad is the merged Indian School of Mines, one of the older
+      IITs). B.Tech Engineering Physics with AI minor, Jul 2018 &ndash; Aug 2022. <strong>GPA 9.02/10, Department Rank 2</strong>, full tuition
+      scholarship. Student coordinator at Cyber Labs (the CS society at IIT ISM) 2020&ndash;22. JEE rank not publicly listed, but Engineering Physics
+      with Rank 2 at IIT (ISM) is a competitive admit (the 2018 cutoff was in the low-to-mid thousands on JEE Advanced).
+    </p>
+    <p>
+      <strong>Competition results:</strong> Kaggle Competitions Master (youngest Indian ever, age 18, 2020). Winner of the first national
+      Amazon ML Challenge (2021, 3,000+ teams). Winner of Innerve 4.0 hackathon (Pune). Scholarship to NAAMII 2019 (Nepal Winter School of AI).
+      No olympiad results listed &mdash; competition spike is ML-specific, not math/physics olympiad lineage.
+    </p>
+    <p>
+      Started Berkeley EECS PhD in Aug 2024. Currently GPA 4/4. Advisor Kurt Keutzer. No TA load mentioned in his CV. Currently interning at Meta
+      (Research Scientist Intern, per his GitHub bio as of early 2026) working on efficient deep learning.
+    </p>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- OUTREACH                                               -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>Outreach</h2>
+    <p class="small muted"><strong>Best channel:</strong> email <a href="mailto:rishabhtiwari@berkeley.edu">rishabhtiwari@berkeley.edu</a> (public on his site). LinkedIn is second-best. Twitter is essentially dead. He is a low-social-footprint researcher &mdash; direct, substantive email is the correct move.</p>
+
+    <div class="spike-box" style="margin-top:0.75rem; border-left-color: var(--tier2);">
+      <div class="label">&#9670; Draft Outreach (email)</div>
+      <p style="font-size:0.88rem; white-space:pre-line;">Subject: QuantSpec + the gap on the edge-inference side
+
+Hi Rishabh,
+
+I&rsquo;m an inception-stage investor &mdash; I spend most of my time mapping the efficient-inference landscape. Fireworks just hit ~$315M ARR on cloud-side optimization, Baseten raised $300M at $5B, and Together is pushing Medusa/FlashInfer hard &mdash; but the edge / on-device LLM layer is almost empty (Apple Intelligence is internal, llama.cpp has no commercial motion, Qualcomm AI Engine is hardware-bound). QuantSpec is the cleanest paper I&rsquo;ve read on that gap &mdash; the ~2.5x end-to-end speedup at &gt;90% acceptance by running the draft on a 4-bit hierarchical KV cache is exactly the trick that makes on-device spec-decoding actually ship, and it&rsquo;s obvious why Apple put it on their research page.
+
+What I&rsquo;m specifically interested in is your view on commercial form-factor: do you think the right product is a runtime/library (llama.cpp successor), a hosted edge-inference API, or an SDK co-sold with device OEMs? I&rsquo;m not pitching anything &mdash; I just want to understand how you&rsquo;re thinking about it, and I&rsquo;m in a position to write $500K&ndash;$1M and move fast if/when you decide to build.
+
+&mdash; Vansh</p>
+    </div>
+
+    <p class="small muted" style="margin-top:0.5rem;"><strong>Why this works:</strong> Names five specific companies and their recent numbers (Fireworks $315M, Baseten $300M/$5B, Together, Apple Intelligence, Qualcomm AI Engine). Drops the exact QuantSpec numbers (~2.5x, &gt;90%, 4-bit hierarchical KV) to prove the paper was actually read, not skimmed. Frames the question as a genuine market-structure question, not &ldquo;tell me about your work.&rdquo; Ends with specific check size. No fund thesis paragraph. No &ldquo;pick your brain.&rdquo;</p>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- RISKS                                                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>Risks</h2>
+    <ul>
+      <li><strong>Very early in PhD.</strong> Started Aug 2024. Most Berkeley EECS PhDs take 5&ndash;6 years; he may not leave until 2028&ndash;2029 unless something changes. The investment play is relationship-building, not a 6-month inception</li>
+      <li><strong>Meta internship &rarr; return offer risk.</strong> RS Intern is the Meta conversion funnel. If he converts and joins Meta Superintelligence / FAIR post-PhD, the founder timeline pushes out further</li>
+      <li><strong>Apple connection could be a hire, not a spinout.</strong> Maxwell Horton and Mahyar Najibi being co-authors means Apple knows him. Apple tends to <em>acquire</em> talent rather than let it spin out. Anthropic or OpenAI acquihire is also plausible given the research area</li>
+      <li><strong>No direct founder signals.</strong> No &ldquo;building&rdquo;, no &ldquo;stealth&rdquo;, no Twitter presence. Tiwari is a pure researcher archetype &mdash; he may genuinely want to be a research scientist, not a founder</li>
+      <li><strong>Subject-area pivot risk.</strong> His first 5 years were structured pruning &rarr; simplicity bias &rarr; distillation. QuantSpec is his first LLM inference paper. One flagship paper does not yet make him the &ldquo;KV-cache + spec-decoding person.&rdquo; Needs a second QuantSpec-caliber paper to confirm the thesis area</li>
+      <li><strong>Competitive landscape is crowded.</strong> Fireworks, Together, Baseten, Groq, and hardware vendors all have optimization teams. A new entrant has to differentiate on edge / on-device &mdash; which is the right niche but has lower unit economics than cloud inference</li>
+      <li><strong>IIT Dhanbad alumni network is thinner than IIT Bombay/Delhi/Madras</strong> for Silicon Valley founder circles. He&rsquo;ll build the Berkeley network over time, but the cohort effect is weaker at the start</li>
+    </ul>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- NOTES                                                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>Notes</h2>
+    <ul>
+      <li class="small">Full name: Rishabh Tiwari. Based in Berkeley, CA</li>
+      <li class="small">Email: rishabhtiwari@berkeley.edu (public on site)</li>
+      <li class="small">GitHub bio (early 2026): &ldquo;RS Intern @ Meta | CS PhD @ UC Berkeley | Ex-Google Deepmind | Efficient Deeplearning&rdquo;</li>
+      <li class="small">QuantSpec paper URL: arxiv.org/abs/2502.10424 &middot; Apple ML Research feature: machinelearning.apple.com/research/quantspec</li>
+      <li class="small">Apple co-authors (Horton, Najibi) suggest either a 2024 summer Apple internship or a formal Apple-Berkeley collaboration. Meta internship is the currently visible one</li>
+      <li class="small">Advisor Kurt Keutzer runs SqueezeAILab &mdash; arguably the strongest efficient-inference academic lab in the US. KVQuant and SqueezeLLM came out of this lab in 2024</li>
+      <li class="small">Co-founder (as undergrad) of Transmute AI Labs with Deepak K. Gupta &mdash; non-profit research lab, still active. Signal that he has founder instincts from age 19</li>
+      <li class="small">ChipNet GitHub (transmuteAI/ChipNet): 21 stars. Low OSS footprint overall &mdash; this is a papers-first researcher, not an open-source evangelist</li>
+      <li class="small">Has mentored multiple IIT Dhanbad interns at Transmute and Google Research India &mdash; Aarush Jain (Google 2023), Saksham Aggarwal (Sarvam), Taneesh Gupta, Pawan Kumar Sahu. Demonstrates lightweight leadership / management capacity</li>
+      <li class="small">Co-organized ICCV 2023 Workshop on Resource Efficient Deep Learning with Arnav Chavan &amp; Deepak Gupta &mdash; speakers included Song Han, Anima Anandkumar, Prateek Jain. Workshop organization at ICCV as a pre-PhD student is unusual</li>
+      <li class="small">Not yet in any competition-cohort (no IOI/IMO/IPhO). Spike is publication-and-trajectory based, not olympiad-based</li>
+      <li class="small">Recommended cadence: email now with QuantSpec-specific outreach. Re-check every quarter for (a) 2nd flagship LLM inference paper, (b) Meta return-offer signals, (c) any Twitter activity. Escalate to Tier 0 the moment any &ldquo;stealth / building&rdquo; signal appears</li>
+    </ul>
+  </section>
+
+  <footer>
+    researched: 2026-04-07 &middot; 6-agent architecture (technical, social, market, background, trajectory, recursive) &middot; <a href="../index.html">back to index</a>
+  </footer>
+
+</body>
+</html>
