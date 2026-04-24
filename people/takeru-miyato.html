@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Takeru Miyato &mdash; Out of Distribution People</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="site-title">Out of Distribution People</div>
+    <div class="breadcrumb"><a href="../index.html">/ index</a> / takeru-miyato</div>
+  </nav>
+
+  <div class="profile-header">
+    <h1>Takeru Miyato</h1>
+    <p class="one-liner"><strong>Inventor of Spectral Normalization for GANs (ICLR 2018 Oral, ~4,700 citations) and Virtual Adversarial Training (IEEE TPAMI 2019). PhD student at University of T&uuml;bingen (Andreas Geiger) + co-advised by Max Welling (Amsterdam). Part-time researcher at Preferred Networks since 2016. Google Brain intern under Ian Goodfellow + Andrew M. Dai (2016). 2&times; ICLR Oral author (2018 Spectral Norm, 2025 Artificial Kuramoto Oscillatory Neurons). Kyoto University BE + MS. ~15K Google Scholar citations. Japanese.</strong></p>
+    <div class="tags">
+      <span class="tag">tier-2: tracking</span>
+      <span class="tag">researchers</span>
+      <span class="tag">foundational</span>
+      <span class="tag">generative-models</span>
+      <span class="tag">gans</span>
+      <span class="tag">japan</span>
+      <span class="tag">preferred-networks</span>
+    </div>
+    <div class="links">
+      <a href="https://takerum.github.io">homepage</a>
+      <a href="https://x.com/takeru_miyato">twitter/x</a>
+      <a href="https://github.com/takerum">github</a>
+      <a href="https://scholar.google.com/citations?user=s2lG0X0AAAAJ&hl=en">scholar</a>
+      <a href="https://openreview.net/profile?id=~Takeru_Miyato1">openreview</a>
+    </div>
+  </div>
+
+  <!-- INVESTMENT THESIS -->
+  <div class="spike-box" style="border-left-color: var(--tier2);">
+    <div class="label">&#9670; Investment Thesis &mdash; Tracking (T2), not Active Pursuit</div>
+    <p>
+      Miyato is a <strong>foundational deep learning researcher</strong> whose 2018 paper on Spectral Normalization for GANs
+      (~4,700 citations) is a standard technique taught in every generative models course and shipped in production GAN
+      codebases for seven years. He has now replicated the &quot;foundational paper&quot; trick in a completely different
+      direction: <strong>Artificial Kuramoto Oscillatory Neurons</strong> (ICLR 2025 Oral &mdash; top ~1%) proposes a
+      dynamical-oscillator alternative to threshold activations, with results spanning object discovery, adversarial
+      robustness, and reasoning. This is fundamental architectural research of the kind Hinton, LeCun, and Welling do.
+    </p>
+    <p>
+      <strong>Why T2 and not T1:</strong> No founding signal. He is a mid-career researcher on a German PhD track (2022&ndash;2026),
+      still employed part-time at Preferred Networks, still publishing in Geiger&rsquo;s lab. He is Japanese (not Indian-origin,
+      which is one of our sourcing theses), and he is not at any of the 20 non-negotiable departure-tracking companies.
+      His next move is more likely &quot;research scientist at DeepMind / FAIR / Anthropic&quot; or &quot;stays at Preferred
+      Networks forever&quot; than &quot;founds a company.&quot;
+    </p>
+    <p>
+      <strong>Why T2 and not T3:</strong> The pedigree is extraordinary &mdash; Goodfellow (GAN inventor), Welling (VAE,
+      equivariance pioneer, TIME 100 AI 2024), Geiger (3D vision). If he ever surfaces with a company, the deal will be
+      oversubscribed at seed. He&rsquo;s also working in a direction (Kuramoto / synchronization / biological plausibility)
+      that is the kind of fundamental rethink that produces a generational company if the research thesis scales.
+      <strong>Watch for PhD completion (~Sep 2026) &mdash; that is the decision point.</strong>
+    </p>
+  </div>
+
+  <!-- THE SPIKE -->
+  <section>
+    <h2>The Spike &mdash; With Evidence</h2>
+    <p>
+      Two foundational papers, nine years apart, in two different research areas, is the career pattern that separates
+      Miyato from 99% of deep learning researchers. Most people write one paper that defines a subfield. Miyato has
+      done it at least twice, and possibly three times.
+    </p>
+
+    <h3>1. Spectral Normalization for GANs (ICLR 2018 Oral, ~4,700 citations)</h3>
+    <p>
+      First-author, with Toshiki Kataoka, Masanori Koyama, and Yuichi Yoshida at Preferred Networks. The paper proposed
+      a weight normalization technique that controls the Lipschitz constant of the discriminator by constraining the
+      spectral norm of each layer. It made GAN training <strong>actually stable</strong> at scale &mdash; which, in the
+      pre-diffusion era, was the central open problem in generative modeling. Spectral Normalization remains a standard
+      Lipschitz control technique, now cited in the 2026 literature alongside randomized smoothing and adversarial training
+      as a foundational defense / regularization.
+    </p>
+    <p>
+      <strong>Why it&rsquo;s foundational:</strong> Standard tooling (PyTorch <code>nn.utils.spectral_norm</code> exists
+      precisely because of this paper). Taught in every generative models course. Cited in papers on normalizing flows,
+      implicit neural representations, robust classification, and certified defenses. The technique extended beyond GANs
+      into modern Lipschitz-regularized architectures.
+    </p>
+
+    <h3>2. Virtual Adversarial Training (IEEE TPAMI 2019)</h3>
+    <p>
+      First-author, with Shin-ichi Maeda, Masanori Koyama, and Shin Ishii. Defined a smoothness regularizer based on
+      virtual adversarial perturbations &mdash; adversarial directions computed <strong>without label information</strong>,
+      making it applicable to semi-supervised learning. VAT was a key building block in the consistency-regularization
+      line of semi-supervised methods (FixMatch, MixMatch, MeanTeacher trace lineage here).
+    </p>
+
+    <h3>3. Artificial Kuramoto Oscillatory Neurons &mdash; AKOrN (ICLR 2025 Oral)</h3>
+    <p>
+      First-author, with Sindy L&ouml;we (Welling&rsquo;s lab), Andreas Geiger, and Max Welling. The core idea:
+      <strong>replace threshold / ReLU-style activations with multi-dimensional Kuramoto oscillators</strong>, where
+      neurons &quot;bind&quot; through synchronization dynamics. Results span four distinct capability areas, which is
+      unusual for an architectural paper:
+    </p>
+    <ul>
+      <li><strong>Object Discovery (PascalVOC):</strong> 52.0 MBO_i / 60.3 MBO_c &mdash; best in class, unsupervised.</li>
+      <li><strong>Sudoku Reasoning (OOD):</strong> 18% &rarr; 89.5% accuracy with test-time Kuramoto extension + energy-based voting. A ~5&times; lift from a test-time compute trick that&rsquo;s native to the architecture.</li>
+      <li><strong>CIFAR-10 Adversarial Robustness:</strong> 51.56% adversarial accuracy with ECE 1.4% (well-calibrated).</li>
+      <li><strong>Uncertainty quantification:</strong> emergent energy-based behavior from task-only training &mdash; lower-energy oscillators correlate with correct predictions.</li>
+    </ul>
+    <p>
+      Selected as an <strong>Oral</strong> at ICLR 2025 (top ~1% of submissions). Follow-up: <strong>Kuramoto Orientation
+      Diffusion Models</strong> (NeurIPS 2025), extending the framework to diffusion generative modeling with Caltech&rsquo;s
+      Pietro Perona and Yisong Yue as co-authors &mdash; indicating a multi-lab research program, not a one-off paper.
+    </p>
+    <p class="small muted">
+      <strong>The thesis in one sentence (from the AKOrN paper):</strong>
+      &ldquo;Synchronization is ubiquitous in nature and is a key mechanism for information processing in the brain.&rdquo;
+      The implied research bet: intelligence emerges from synchronized oscillatory dynamics, not merely from fixed weight
+      matrices and threshold activations. This is squarely in the Hinton / LeCun / Welling / Bengio territory of
+      biologically-plausible learning mechanisms.
+    </p>
+  </section>
+
+  <!-- PEDIGREE -->
+  <section>
+    <h2>Pedigree &mdash; Four Distinct Advisor Lineages</h2>
+    <p>
+      Miyato has worked directly under four of the most influential figures in deep learning, spanning three continents:
+    </p>
+    <table style="width:100%; font-size:0.85rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Advisor</td><td>Where</td><td>Claim to Fame</td><td>Period</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Ian Goodfellow</strong></td><td>Google Brain (Mountain View)</td><td>Invented GANs (2014). Co-author of &ldquo;Deep Learning&rdquo; textbook (Goodfellow, Bengio, Courville)</td><td>Jan&ndash;May 2016 intern</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Andrew M. Dai</strong></td><td>Google Brain (Mountain View)</td><td>Gemini co-lead at DeepMind. Semi-supervised sequence learning</td><td>Jan&ndash;May 2016 intern</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Shin Ishii</strong></td><td>Kyoto University (Integrated Systems Biology Lab)</td><td>Computational neuroscience, reinforcement learning. MS advisor</td><td>2014&ndash;2016</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Andreas Geiger</strong></td><td>University of T&uuml;bingen (AVG)</td><td>KITTI benchmark (autonomous driving standard). Neural scene representations. Full professor + deputy head, T&uuml;bingen CS</td><td>2022&ndash;present (PhD primary)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Max Welling</strong></td><td>University of Amsterdam / Microsoft Research</td><td>Co-invented VAE (2013). Equivariant networks pioneer. TIME 100 AI 2024</td><td>2022&ndash;present (PhD co-advisor, via ELLIS)</td></tr>
+    </table>
+    <p style="margin-top:0.75rem;">
+      <strong>The Goodfellow &rarr; Welling &rarr; Geiger trajectory is unusual.</strong> It means Miyato has worked inside
+      the three dominant strands of deep generative modeling: adversarial (Goodfellow), variational / equivariant (Welling),
+      and 3D / autonomous-systems-applied (Geiger). The Kuramoto work in 2025 reads as a synthesis of all three lineages:
+      dynamical systems (Welling), architectural rethink (Goodfellow/Geiger), and equivariance (Welling again).
+    </p>
+
+    <h3>Preferred Networks Context</h3>
+    <p>
+      Preferred Networks (PFN) is <strong>Japan&rsquo;s Google DeepMind equivalent</strong> &mdash; founded 2014, backed by
+      Toyota and Fanuc, creators of the original Chainer deep learning framework. Their current focus spans robotics,
+      materials science (Matlantis), drug discovery, and manufacturing. PFN has produced several of Japan&rsquo;s top
+      ML researchers; Miyato was one of their earliest and most prolific authors, with most of his pre-PhD publications
+      carrying a PFN affiliation.
+    </p>
+    <p>
+      <strong>Miyato&rsquo;s PFN tenure:</strong> full-time researcher Jun 2016 &ndash; Mar 2019 (~3 years out of Kyoto MS),
+      then part-time researcher Nov 2021 &ndash; present (overlapping his PhD). This is a <strong>rare continuity</strong>:
+      PFN has retained him through the Tübingen PhD. Post-PhD, PFN is the most likely default employer &mdash; unless a
+      frontier Western lab (DeepMind, FAIR, Anthropic) makes an offer.
+    </p>
+  </section>
+
+  <!-- CITATION ANALYSIS -->
+  <section>
+    <h2>Citation &amp; Output Analysis</h2>
+    <p>
+      <strong>Google Scholar (as of Apr 2026): ~15,040 total citations.</strong> h-index not directly observable from
+      cached scrapes due to Scholar CAPTCHA, but citation distribution is dominated by a small number of foundational
+      papers:
+    </p>
+    <table style="width:100%; font-size:0.85rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Paper</td><td>Venue</td><td>Role</td><td>Cites</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Spectral Normalization for GANs</strong></td><td>ICLR 2018 (Oral)</td><td>1st author</td><td>~4,717</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Virtual Adversarial Training</strong></td><td>IEEE TPAMI 2019</td><td>1st author</td><td>~3,500+</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Distributional Smoothing with VAT</td><td>ICLR 2016 (preprint 2015)</td><td>1st author</td><td>~1,000+</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>cGANs with Projection Discriminator</td><td>ICLR 2018</td><td>1st author</td><td>~1,000+</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Adversarial Training for Semi-Supervised Text</td><td>ICLR 2017</td><td>1st author (w/ Dai, Goodfellow)</td><td>~1,000+</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Unsupervised Equivariant Structure</td><td>NeurIPS 2022</td><td>1st author</td><td>50+</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>GTA: Geometric Transform Attention</td><td>ICLR 2024</td><td>1st author</td><td>50+</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Artificial Kuramoto Oscillatory Neurons</td><td>ICLR 2025 (Oral)</td><td>1st author</td><td>100+ (rapidly accumulating)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Kuramoto Orientation Diffusion Models</td><td>NeurIPS 2025</td><td>1st author</td><td>fresh</td></tr>
+    </table>
+    <p style="margin-top:0.75rem;">
+      <strong>Pattern:</strong> Almost every paper is first-author. He is <strong>not</strong> the middle-author-on-100-papers
+      researcher &mdash; he is a writer of his own ideas. The 2018 citation spike shows he can write a paper that compounds
+      for a decade. The 2025 Oral is the first signal that the Kuramoto direction is being taken seriously by the community.
+    </p>
+  </section>
+
+  <!-- GROWTH TRAJECTORY -->
+  <section>
+    <h2>Growth Trajectory</h2>
+    <table style="width:100%; font-size:0.85rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted); width:120px;">2010&ndash;2014</td><td>BE in Electronic Engineering, Kyoto University</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2014&ndash;2016</td><td>MS in Informatics, Kyoto University. Advisor: Shin Ishii (Integrated Systems Biology)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2015</td><td>First arXiv: &ldquo;Distributional Smoothing with Virtual Adversarial Training&rdquo; (age ~24)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Jan&ndash;May 2016</strong></td><td><strong>Google Brain intern under Ian Goodfellow + Andrew M. Dai</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Jun&ndash;Aug 2016</td><td>Research engineer, ATR (Kyoto)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Jun 2016</td><td>Joins Preferred Networks full-time (first post-MS role)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2017</td><td>ICLR 2017: Adversarial Training for Semi-Supervised Text Classification (w/ Dai, Goodfellow)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>Feb 2018</strong></td><td><strong>ICLR 2018 Oral: Spectral Normalization for GANs &mdash; becomes a standard technique</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2018</td><td>ICLR 2018: cGANs with Projection Discriminator (second foundational GAN paper in same year)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2019</td><td>IEEE TPAMI: Virtual Adversarial Training &mdash; full journal version</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Mar 2019</td><td>Leaves PFN full-time (gap period, likely career recalibration)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2019&ndash;2021</td><td>Quiet period. Coauthors appear but no first-author venue outputs</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Nov 2021</td><td>Rejoins PFN part-time (setup for PhD)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>Sep 2022</strong></td><td><strong>Starts PhD at Tübingen (Geiger + Welling via ELLIS) &mdash; age ~31, unusually late</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2022</td><td>NeurIPS 2022: Unsupervised Learning of Equivariant Structure from Sequences (first Welling-adjacent paper)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2024</td><td>ICLR 2024: GTA (Geometry-Aware Attention) + Neural Fourier Transform (two ICLR papers same year)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>Apr 2025</strong></td><td><strong>ICLR 2025 Oral: Artificial Kuramoto Oscillatory Neurons &mdash; 2nd ICLR Oral of career</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2025</td><td>NeurIPS 2025: Kuramoto Orientation Diffusion Models (extends Kuramoto program into diffusion)</td></tr>
+      <tr><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>~Sep 2026</strong></td><td><strong>Expected PhD completion &mdash; decision point for post-academic trajectory</strong></td></tr>
+    </table>
+    <p style="margin-top:1rem; font-family:var(--mono); font-size:0.75rem; color:var(--accent);">
+      PACE: Two distinct foundational-paper arcs (2015&ndash;2019 and 2022&ndash;2025), separated by a 2.5-year quiet period.<br>
+      ACCELERATION: Has picked up again &mdash; 4 top-venue first-author papers in 2024&ndash;2025.<br>
+      AGE: ~35 (born ~1991 based on BE 2010&ndash;2014). Late PhD, but output is accelerating, not slowing.
+    </p>
+  </section>
+
+  <!-- THE KURAMOTO THESIS -->
+  <section>
+    <h2>The Research Direction: Universal Mechanisms &amp; the Kuramoto Program</h2>
+    <p>
+      Miyato&rsquo;s stated interest is &ldquo;the nature of intelligence&rdquo; and mechanisms that work &ldquo;universally.&rdquo;
+      The Kuramoto line of work is the most concrete expression of this so far. Understanding why this matters requires
+      context:
+    </p>
+    <p>
+      <strong>The Kuramoto model</strong> (Yoshiki Kuramoto, 1975) describes synchronization in coupled oscillators &mdash;
+      how a collection of oscillating units with slightly different natural frequencies can lock into coherent global
+      rhythms. It is one of the canonical models of emergent collective behavior in physics and biology. Applications
+      span firefly synchronization, cardiac pacemaker cells, power grid stability, and &mdash; critically &mdash; <strong>cortical
+      gamma-band synchronization</strong>, which neuroscience has long suspected is a substrate for the &ldquo;binding
+      problem&rdquo; (how the brain assembles coherent percepts from distributed feature detectors).
+    </p>
+    <p>
+      Applying Kuramoto to neural networks has been tried before but never became a standard technique. What changed:
+      (1) modern training recipes (Miyato&rsquo;s co-author Sindy L&ouml;we did prior work on ComplexNeurons/
+      object-centric learning with Welling), and (2) the architectural flexibility to integrate oscillatory dynamics
+      with convolutional, fully-connected, and attention blocks.
+    </p>
+    <p>
+      <strong>Who else is working here:</strong> Sindy L&ouml;we (co-author, Welling lab), T. Anderson Keller (co-author
+      on Kuramoto Orientation Diffusion), Pietro Perona + Yisong Yue (Caltech, co-authors on KODM). Sepp Hochreiter&rsquo;s
+      group has independent work on oscillatory dynamics in xLSTM. Most of this is still small &mdash; if it scales, the
+      space will explode.
+    </p>
+    <p>
+      <strong>Why this matters for investment:</strong> Fundamental architecture rethinks are low-probability, high-payoff
+      bets. Transformers were one. State-space models (Mamba) are a smaller one. If Kuramoto-style dynamical activations
+      turn out to be the next one, the people who wrote the foundational papers are positioned to found or join
+      category-defining companies. Miyato is <strong>directly in that lineage</strong> &mdash; but the research bet has
+      not yet been validated by scaling laws or any production system.
+    </p>
+  </section>
+
+  <!-- COMPETITIVE LANDSCAPE -->
+  <section>
+    <h2>Competitive Landscape &mdash; Researchers in Adjacent Directions</h2>
+    <p class="small muted">Miyato isn&rsquo;t in a company-vs-company landscape; he&rsquo;s in a researcher-vs-researcher landscape on fundamental architecture research. Closest analogs:</p>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Researcher</td><td>Where</td><td>Direction</td><td>Status</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Geoffrey Hinton</strong></td><td>U Toronto / Google (ret.)</td><td>Forward-Forward, GLOM, biological plausibility</td><td>Senior statesman. Not investable, but defines the space</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Yann LeCun</strong></td><td>NYU / Meta FAIR</td><td>JEPA, world models, energy-based</td><td>Meta employee; very unlikely founder</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Max Welling</strong> (his own co-advisor)</td><td>UAmsterdam / CuspAI (founded 2024)</td><td>Materials foundation models</td><td>Already founded a company &mdash; proof that Welling-lineage researchers do eventually build</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Sindy L&ouml;we</strong> (AKOrN co-author)</td><td>UAmsterdam (Welling)</td><td>Object-centric representation learning</td><td>Researcher, no company signal. Direct collaborator &mdash; if either moves, the other may follow</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>T. Anderson Keller</strong></td><td>UvA / Kempner (Harvard)</td><td>Equivariant neural networks, oscillatory dynamics</td><td>Co-author on KODM. Another researcher profile to track</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Sepp Hochreiter</strong></td><td>JKU Linz / NXAI (founded 2023)</td><td>xLSTM &mdash; direct competitor architecture</td><td>Founded NXAI to commercialize the alternative-architecture bet. Directly comparable path if Miyato ever takes it</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Tri Dao</strong></td><td>Princeton / Together AI</td><td>Mamba, state-space models</td><td>Founding-adjacent (Together). Archetype of &ldquo;fundamental-architecture researcher becomes company-builder&rdquo;</td></tr>
+    </table>
+    <p class="small muted" style="margin-top:0.5rem;">
+      <strong>Reference class:</strong> Fundamental-architecture researchers rarely start companies directly out of PhD.
+      They typically do a stint at a frontier lab first (Tri Dao at Stanford &rarr; Together; Hochreiter back to academia
+      &rarr; NXAI at 20+ years post-PhD). Miyato&rsquo;s most likely 3-year path: DeepMind / FAIR / Anthropic research
+      scientist, or return to PFN, or stay in Geiger/Welling orbit as a postdoc. Founder path is &lt;20% probability
+      without an explicit signal.
+    </p>
+  </section>
+
+  <!-- NETWORK -->
+  <section>
+    <h2>Network Map</h2>
+    <p class="small muted">Three distinct research cohorts that Miyato sits at the intersection of:</p>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Cohort</td><td>Members</td><td>Miyato&rsquo;s tie</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Goodfellow GAN lineage</strong></td><td>Ian Goodfellow (Anthropic), Andrew Dai (DeepMind), Sherjil Ozair, Augustus Odena, Alec Radford</td><td>Brain intern 2016. Co-author on ICLR 2017 text paper with Dai + Goodfellow</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Welling / Amsterdam equivariance circle</strong></td><td>Max Welling (CuspAI), Sindy L&ouml;we, T. Anderson Keller, Taco Cohen, Patrick Forr&eacute;</td><td>Co-advised by Welling via ELLIS. Direct collaborator with L&ouml;we and Keller</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Geiger / T&uuml;bingen Autonomous Vision</strong></td><td>Andreas Geiger, Kashyap Chitta, Katja Schwarz, Bernhard Jaeger</td><td>PhD primary advisor. Co-author on GTA (ICLR 2024) with Jaeger</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Preferred Networks core</strong></td><td>Masanori Koyama (frequent coauthor, 5+ papers), Kenji Fukumizu, Seiya Tokui (Chainer), Shin-ichi Maeda, Kohei Hayashi</td><td>Full-time 2016&ndash;19, part-time 2021&ndash;present</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Kyoto / Ishii lab</strong></td><td>Shin Ishii (Kyoto), Shigeyuki Oba</td><td>MS advisors. Computational neuroscience roots &mdash; may explain the Kuramoto direction</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Caltech outreach (new)</strong></td><td>Pietro Perona, Yisong Yue</td><td>Co-authors on Kuramoto Orientation Diffusion Models (NeurIPS 2025) &mdash; first US-academia collaboration since Google Brain</td></tr>
+    </table>
+  </section>
+
+  <!-- IN HIS OWN WORDS -->
+  <section>
+    <h2>In His Own Words</h2>
+    <ul>
+      <li><em>Research statement:</em> &ldquo;I am interested in exploring the nature of intelligence, and developing approaches that work universally.&rdquo; &mdash; <a href="https://takerum.github.io">takerum.github.io</a></li>
+      <li><em>From AKOrN paper (ICLR 2025 Oral):</em> &ldquo;Synchronization is ubiquitous in nature and is a key mechanism for information processing in the brain.&rdquo;</li>
+      <li><em>From AKOrN paper:</em> &ldquo;Dynamic (spatiotemporal) representations play an important role in both neuroscience and AI.&rdquo;</li>
+      <li><em>Twitter bio (~2026):</em> &ldquo;Ph.D student working with Andreas Geiger and Max Welling at ELLIS for Europe, part-time researcher at Preferred Networks.&rdquo;</li>
+      <li><em>Twitter, May 21, 2025:</em> &ldquo;First time in London&rdquo; &mdash; casual, personal, not company-building content. The Twitter account (active since Jun 2017) reads as a normal researcher&rsquo;s account &mdash; paper announcements, conference travel, no stealth / building / hiring signals.</li>
+    </ul>
+  </section>
+
+  <!-- WHY T2 NOT T1 -->
+  <section>
+    <h2>Honest Assessment: Why Tier 2 and Not Higher</h2>
+    <ul>
+      <li><strong>No founding signal.</strong> Twitter is quiet on building language. No stealth bio, no &ldquo;hiring&rdquo; posts, no &ldquo;between things&rdquo; language. He is a PhD student mid-program with a stable part-time PFN tie.</li>
+      <li><strong>Not in one of the 20 tracked companies.</strong> Geiger&rsquo;s lab doesn&rsquo;t count as a departure-tracking target. Preferred Networks is Japan-specific and not in our core list.</li>
+      <li><strong>Not Indian-origin.</strong> Japanese-origin, which doesn&rsquo;t match our specific sourcing thesis.</li>
+      <li><strong>Reference class post-PhD trajectory:</strong> Foundational-paper PhDs in the Welling/Geiger orbit most commonly go to DeepMind, FAIR, Google Research, or return to home-country industry labs (for him: PFN). Founding probability &lt;20% without an explicit signal.</li>
+      <li><strong>Age and risk appetite:</strong> ~35 at PhD completion. Either already has or is about to have family / life constraints that decrease founding probability further. Japanese researchers are underrepresented in US VC-backed founder cohorts (cultural + visa friction).</li>
+    </ul>
+    <h3>What would move him to T1:</h3>
+    <ul>
+      <li>PhD completion + move to a frontier lab (DeepMind, FAIR, Anthropic) vs return to PFN &mdash; the first signals ambition to be in the Western frontier-lab orbit.</li>
+      <li>Twitter bio change: anything removing the PFN affiliation, or adding &ldquo;building&rdquo; / &ldquo;stealth&rdquo; / vague language.</li>
+      <li>Kuramoto work scaling &mdash; if someone demonstrates AKOrN or similar on frontier-scale tasks (not Sudoku, but coding or math reasoning), the architectural direction becomes investable.</li>
+      <li>Co-founder emergence: if Sindy L&ouml;we, T. Anderson Keller, or Welling himself announce something, Miyato is the natural technical partner.</li>
+    </ul>
+  </section>
+
+  <!-- OUTREACH -->
+  <section>
+    <h2>Outreach &mdash; Intellectual Exchange, Not Pitch</h2>
+    <p class="small muted">
+      A venture pitch here would be poorly calibrated to his situation. He&rsquo;s 1.5 years from PhD completion, not
+      evaluating company formation. The right posture is intellectual curiosity &mdash; open a channel now so that if
+      / when he ever transitions, we&rsquo;re a known quantity. Best channels: Twitter DM (@takeru_miyato) or email via
+      Tübingen address.
+    </p>
+
+    <div class="spike-box" style="margin-top:0.75rem; border-left-color: var(--tier2);">
+      <div class="label">&#9670; Draft Outreach (Twitter DM or email)</div>
+      <p style="font-size:0.88rem; white-space:pre-line;">Hi Takeru &mdash; re-read the AKOrN paper last week after the ICLR Oral and it&rsquo;s stuck with me, particularly the Sudoku OOD result where test-time Kuramoto steps took you from 18% to ~90%. That&rsquo;s the kind of &ldquo;architecture has test-time compute built in for free&rdquo; property that I haven&rsquo;t seen articulated cleanly elsewhere (closest prior art in my reading is Hochreiter&rsquo;s xLSTM push at NXAI, and Anderson Keller&rsquo;s work on equivariant dynamics).
+
+I&rsquo;m an inception-stage investor, but I&rsquo;m not pitching anything &mdash; just genuinely curious where you see the Kuramoto program going after KODM. Specifically: do you see a clean path from the 4-task AKOrN result to something at GPT-4-class scale, or is the next step a different architecture that inherits the synchronization mechanism?
+
+Happy to chat any time, no agenda. Paying for the coffee if you&rsquo;re ever through Berlin or Tübingen.
+
+&mdash; Vansh</p>
+    </div>
+
+    <p class="small muted" style="margin-top:0.5rem;">
+      <strong>Why this works:</strong> Specific technical reference (the 18% &rarr; 90% Sudoku number, which is the most
+      striking single result in the AKOrN paper). Names correct reference class (xLSTM / Anderson Keller). Explicitly
+      disclaims investment intent &mdash; he&rsquo;s not a founder candidate and both of us know it. Offers a location
+      close to him (Tübingen / Berlin) rather than SF, which most outreach defaults to.
+    </p>
+  </section>
+
+  <!-- RISKS / UNKNOWNS -->
+  <section>
+    <h2>Open Questions</h2>
+    <ul>
+      <li>What is PFN&rsquo;s retention offer post-PhD? Is there a &ldquo;return to full-time&rdquo; contract, or is this an open-ended part-time engagement?</li>
+      <li>Is there a specific PhD thesis title? The AKOrN + KODM + GTA + Neural Fourier Transform arc suggests a unified thesis on &ldquo;dynamical/equivariant representations&rdquo; but this is not confirmed.</li>
+      <li>Why did he do a PhD at 31? Typical Japanese industrial researchers bypass Western PhDs. This is an unusual move &mdash; signals he wants academic credibility and Western-lab optionality.</li>
+      <li>The 2019&ndash;2021 gap period: What happened between leaving PFN full-time and rejoining part-time? Did he try to start something? Personal reasons? This is the most opaque part of the trajectory.</li>
+      <li>Does he have a working visa for the US? Post-PhD immigration friction matters for frontier-lab placement.</li>
+    </ul>
+  </section>
+
+  <!-- BACKGROUND -->
+  <section>
+    <h2>Background</h2>
+    <p>
+      Japanese. BE in Electronic Engineering (Kyoto University, 2010&ndash;2014), MS in Informatics (Kyoto, Integrated
+      Systems Biology Lab under Shin Ishii, 2014&ndash;2016). Google Brain intern under Ian Goodfellow and Andrew M. Dai
+      (Jan&ndash;May 2016) &mdash; this was the Brain era that produced GANs-era work and pre-Transformer sequence models.
+      Joined Preferred Networks full-time Jun 2016, stayed until Mar 2019. Wrote Spectral Normalization for GANs
+      (ICLR 2018 Oral) during this period &mdash; one of the most influential GAN papers ever published. Also wrote
+      Virtual Adversarial Training (IEEE TPAMI 2019) and cGANs with Projection Discriminator (ICLR 2018).
+    </p>
+    <p>
+      Took a ~2.5 year break from first-author output (2019&ndash;2021), then rejoined PFN part-time Nov 2021 and
+      started PhD at Tübingen (Geiger, with Welling as co-advisor via ELLIS) in Sep 2022. Since then: 4 top-venue
+      first-author papers (2 ICLR 2024, 1 ICLR 2025 Oral, 1 NeurIPS 2025). The Kuramoto program is his current
+      primary research line.
+    </p>
+  </section>
+
+  <!-- NOTES -->
+  <section>
+    <h2>Notes</h2>
+    <ul>
+      <li class="small">Full name: Takeru Miyato (&#23470;&#38480; &#23613;).</li>
+      <li class="small">PhD affiliation: Eberhard-Karls-Universit&auml;t T&uuml;bingen + T&uuml;bingen AI Center.</li>
+      <li class="small">ELLIS (European Laboratory for Learning and Intelligent Systems) member &mdash; the European equivalent of a joint-lab arrangement.</li>
+      <li class="small">Four registered email addresses on OpenReview: Gmail, ATR, Preferred Networks, University of T&uuml;bingen &mdash; reflects the multi-institutional identity.</li>
+      <li class="small">Spectral Normalization&rsquo;s ~4,717 citations (Semantic Scholar count) likely understates real usage &mdash; PyTorch ships it as <code>nn.utils.spectral_norm</code>.</li>
+      <li class="small">Total Scholar citation count (~15K) is dominated by 2018&ndash;2019 GAN-era papers; the 2022+ work is still accumulating.</li>
+      <li class="small">GitHub @takerum: code releases for AKOrN, KODM, and historical PFN projects (e.g. SN-GAN reference implementation).</li>
+      <li class="small">Cross-lab signal: co-authors now include Caltech (Perona, Yue) on the Kuramoto Diffusion paper, indicating network expansion beyond the T&uuml;bingen/UvA/PFN triangle.</li>
+      <li class="small">Twitter @takeru_miyato: active since Jun 2017; paper-announcement pattern; no founding / stealth signals as of Apr 2026.</li>
+      <li class="small">Not on Exceptional 100, not on Delta Fellows &mdash; the US-VC talent lists don&rsquo;t index European academic researchers well. This is a pure &ldquo;out-of-distribution&rdquo; find.</li>
+      <li class="small"><strong>Re-check triggers:</strong> PhD completion (expected ~Sep 2026); any Twitter bio change; any AKOrN scaling result from another lab; any departure announcement from Geiger or Welling labs.</li>
+    </ul>
+  </section>
+
+  <footer>
+    researched: 2026-04-13 &middot; tier 2 (tracking) &middot; foundational-researcher profile, not founder candidate &middot; <a href="../index.html">back to index</a>
+  </footer>
+
+</body>
+</html>
