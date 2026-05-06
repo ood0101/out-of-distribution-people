@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sukjun Hwang &mdash; Out of Distribution People</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="site-title">Out of Distribution People</div>
+    <div class="breadcrumb"><a href="../index.html">/ index</a> / sukjun-hwang</div>
+  </nav>
+
+  <div class="profile-header">
+    <h1>Sukjun (June) Hwang</h1>
+    <p class="one-liner"><strong>CMU ML PhD student under <a href="https://goombalab.github.io/">Albert Gu</a> (Mamba/S4 author, Cartesia CTO).</strong> <strong>1st author on <a href="https://arxiv.org/abs/2507.07955">H-Net</a></strong> (Hwang, Wang, Gu &mdash; ICLR 2026) &mdash; the byte-level tokenizer-killer architecture (846 GitHub stars). <strong>1st author on <a href="https://arxiv.org/abs/2407.09941">Hydra</a></strong> (NeurIPS 2024, w/ <strong>Tri Dao</strong> &mdash; Together AI, Princeton). Co-author on <strong>dnaHNet</strong> (arXiv 2602.10603, ICML 2026 Spotlight forthcoming &mdash; H-Net for genomics, w/ Hani Goodarzi UCSF). Albert Gu on him: &ldquo;<em>I haven&rsquo;t been able to run experiments personally in a while, and it was like watching an artist at work.</em>&rdquo; Karan Goel (Cartesia CEO): &ldquo;<em>amazing work by Sukjun Hwang, Brandon Wang and my cofounder Albert Gu to unlock a core advancement.</em>&rdquo; Yonsei BS summa cum laude (rank 1) + MS under Seon Joo Kim (NeurIPS 2021/2022, CVPR 2022/2023, ECCV 2024 in video instance segmentation; ~650 Scholar cites, h-index 9). Adobe Research + Qualcomm AI intern. <strong>Jane Street Graduate Research Fellowship finalist 2026.</strong> Korean. PhD started 2023 (~3rd year, ~2 years to go). T1.</p>
+    <div class="tags">
+      <span class="tag spike">tier-1: high conviction</span>
+      <span class="tag">researchers</span>
+      <span class="tag">cmu</span>
+      <span class="tag">albert-gu-lab</span>
+      <span class="tag">goomba-lab</span>
+      <span class="tag">frontier-architecture</span>
+      <span class="tag">ssm</span>
+      <span class="tag">state-space-models</span>
+      <span class="tag">cartesia</span>
+      <span class="tag">korean</span>
+      <span class="tag">founders (latent)</span>
+      <span class="tag spike">spike: H-Net 1st author + Hydra w/ Tri Dao + Albert Gu PhD &mdash; the architecture engine of the post-Transformer SSM lineage</span>
+    </div>
+    <div class="links">
+      <a href="https://sukjunhwang.github.io/">website</a>
+      <a href="https://sukjunhwang.github.io/publications/">publications</a>
+      <a href="https://x.com/sukjun_hwang">twitter (@sukjun_hwang)</a>
+      <a href="https://github.com/sukjunhwang">github</a>
+      <a href="https://scholar.google.com/citations?user=rW5dpvMAAAAJ&hl=en">google scholar</a>
+      <a href="https://openreview.net/profile?id=~Sukjun_Hwang1">openreview</a>
+      <a href="https://www.linkedin.com/in/sukjunhwang/">linkedin</a>
+      <a href="https://dblp.org/pid/280/0070.html">dblp</a>
+      <a href="mailto:sukjunh@cs.cmu.edu">sukjunh@cs.cmu.edu</a>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- INVESTMENT THESIS                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <div class="spike-box">
+    <div class="label">&#9670; Investment Thesis</div>
+    <p>
+      Sukjun Hwang is the <strong>architectural engine</strong> at the leading edge of the post-Transformer
+      state-space-model lineage. The lineage runs <strong>S4 (Albert Gu, 2021) &rarr; Mamba (Gu + Dao, 2023)
+      &rarr; Mamba-2 (Dao + Gu, 2024) &rarr; Hydra (Hwang + Lahoti + Dao + Gu, NeurIPS 2024) &rarr;
+      H-Net (Hwang + Wang + Gu, ICLR 2026) &rarr; dnaHNet (ICML 2026 Spotlight)</strong> &mdash; and on the
+      latest two foundational papers, Hwang is first author. He is the rare PhD student whose advisor
+      writes a public blog post (&ldquo;H-Nets &mdash; the Past&rdquo;) saying &ldquo;<em>Sukjun refused to listen to me
+      because he had a much better idea</em>&rdquo; and &ldquo;<em>it was like watching an artist at work</em>.&rdquo; That is
+      not a phrase Albert Gu writes about ordinary students.
+    </p>
+    <p>
+      <strong>What this is, mechanically.</strong> H-Net is the first credible architecture paper from
+      outside the frontier labs that plausibly retires BPE tokenization &mdash; a default that has held since
+      2018 and that Karpathy has spent five years calling a top-three bottleneck in modern LLMs. At
+      matched compute, H-Net 2-stage hits 0.743 BPB vs 0.756 for a 760M BPE Transformer, jumps to
+      <strong>58.2% downstream avg vs 55.5% at 1.3B</strong>, and most strikingly scores
+      <strong>42.8 on text-perturbation robustness vs 22.2 for the Transformer</strong> &mdash; a 2x gap
+      that demonstrates the architecture is doing the thing tokenization was supposed to do but never
+      really did. On DNA the team reports ~4x data efficiency over baselines; the dnaHNet follow-up
+      (Feb 2026, ICML Spotlight) extends this to a full genomic foundation model that beats StripedHyena2
+      and delivers 3x inference speedup over Transformers. Hydra (NeurIPS 2024) is the bidirectional
+      Mamba extension and the paper that beats BERT by 0.8 GLUE and ViT by 2% ImageNet Top-1 as a
+      drop-in attention replacement &mdash; co-authored with <strong>Tri Dao</strong>, who founded Together AI
+      and is the most important young researcher in the SSM commercial play.
+    </p>
+    <p>
+      <strong>Why T1, not T0.</strong> He is mid-PhD (started 2023, likely Y3). His advisor co-founded
+      Cartesia (now $91M raised, $64M Series A in March 2025). The architecture work he is doing flows
+      directly into Cartesia&rsquo;s Sonic voice models. He is not founding now &mdash; but the reference class
+      is <strong>Tri Dao</strong>, who finished his PhD at Stanford and went on to co-found Together AI
+      ($300M+ raised, multi-billion valuation) on the back of FlashAttention + Mamba. If the SSM /
+      hierarchical-architecture thesis pays out, Hwang is the highest-conviction next-Tri-Dao bet. If
+      he stays in research, he is the architectural successor to Albert Gu. Either path is investable.
+    </p>
+    <p>
+      <strong>What to do.</strong> Relationship-build now &mdash; he is in heads-down build mode (Hydra +
+      H-Net + dnaHNet shipped in 18 months; Jane Street Graduate Research Fellowship finalist 2026
+      indicates he is on the highest-prestige PhD-funding circuit). Reach via Twitter
+      (<a href="https://x.com/sukjun_hwang">@sukjun_hwang</a>) or CMU email; he is responsive on Twitter
+      and pinned the H-Net thread. Lead with a <em>specific</em> H-Net technical insight (not the abstract).
+      <strong>Re-tier to T0 if</strong> (a) he changes his bio off &ldquo;PhD student&rdquo;, (b) he announces a
+      Cartesia full-time role rather than student/intern, (c) Brandon Wang or Albert Gu signal a
+      co-located commercial spin-out, or (d) he co-publishes with someone outside the Goomba Lab on a
+      product-flavored paper (e.g. an inference-stack or model-serving paper).
+    </p>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- THE SPIKE                                              -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>The Spike &mdash; With Evidence</h2>
+
+    <h3>(1) H-Net is a foundation-paper-shaped object, and Hwang is 1st author</h3>
+    <p>
+      <strong><a href="https://arxiv.org/abs/2507.07955">Dynamic Chunking for End-to-End Hierarchical
+      Sequence Modeling</a></strong> &mdash; <strong>Hwang</strong>, Wang (Cartesia), Gu (CMU + Cartesia).
+      Submitted arXiv 2025-07-10 (v1), 2025-07-15 (v2). Accepted as <strong>ICLR 2026 Poster</strong>.
+      <strong>846 GitHub stars on <a href="https://github.com/goombalab/hnet">goombalab/hnet</a></strong>.
+      HuggingFace checkpoints released for English / Chinese / code, Large and XL sizes.
+    </p>
+    <p>
+      The paper introduces <strong>dynamic chunking</strong> &mdash; a differentiable mechanism that
+      automatically segments raw byte sequences into content-dependent chunks, replacing the
+      <em>tokenize &rarr; transformer &rarr; detokenize</em> pipeline with a single end-to-end model.
+      The two key submodules: a <strong>routing module</strong> (similarity-score boundary predictor) and a
+      <strong>smoothing module</strong> (EMA-style interpolation that attenuates uncertain boundaries and
+      makes discrete chunking learnable). Encoder/decoder use Mamba-2 layers; the main network is a
+      Transformer operating on compressed chunks. Two-stage H-Net composes the chunking recursively.
+    </p>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse; margin:0.5rem 0;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;">
+        <td>Model (760M params, matched compute)</td><td>BPB &darr;</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Transformer (BPE tokens)</td><td>0.756</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>MambaByte (byte-level)</td><td>0.845</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>SpaceByte++</td><td>0.760</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>H-Net 1-stage</td><td>0.755</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>H-Net 2-stage (recursive hierarchy)</strong></td><td><strong>0.743</strong></td></tr>
+    </table>
+    <p>
+      At XL scale (1.3B), H-Net 2-stage hits <strong>58.2% downstream avg vs 55.5% Transformer</strong>.
+      Robustness story: <strong>42.8 vs 22.2 (2x) on text perturbation</strong>. DNA: ~4x data efficiency.
+      Chinese and code &mdash; the languages where BPE is genuinely worst &mdash; show the largest gains in
+      <a href="https://cartesia.ai/blog/hierarchical-modeling">Cartesia&rsquo;s blog post</a> on the work.
+    </p>
+    <p>
+      <strong>Author ordering.</strong> Hwang is sole 1st author (no equal-contribution asterisk on H-Net
+      &mdash; this is his paper). Brandon Wang (then-Cartesia, now onepot) is 2nd. Albert Gu (PI, Cartesia
+      CTO) is senior. The Goomba Lab blog post by Albert Gu credits Hwang explicitly for &ldquo;the technical
+      breakthroughs&rdquo; behind the model and writes that Hwang &ldquo;<em>refused to listen to me because he had
+      a much better idea</em>&rdquo; &mdash; an unusual public statement of advisor deference.
+    </p>
+
+    <h3>(2) Hydra (NeurIPS 2024) &mdash; bidirectional Mamba, co-author with Tri Dao</h3>
+    <p>
+      <strong><a href="https://arxiv.org/abs/2407.09941">Hydra: Bidirectional State Space Models Through
+      Generalized Matrix Mixers</a></strong> &mdash; <strong>Hwang*</strong>, Lahoti*, Dao, Gu.
+      Submitted 2024-07-13. <strong>NeurIPS 2024 Poster</strong>. 171 GitHub stars; 58 citations.
+    </p>
+    <p>
+      Technical contribution: a unifying &ldquo;matrix mixer&rdquo; framework for sequence models (Transformers,
+      Mamba, structured SSMs all special cases). Key axis is sequence-alignment of the matrix
+      parameterization. Hydra is the natural <strong>bidirectional</strong> extension of Mamba via
+      quasiseparable matrix structure &mdash; meaning it works on non-causal tasks where vanilla Mamba can&rsquo;t.
+      Plug-in result: Hydra <strong>beats BERT by 0.8 points on GLUE</strong> and <strong>ViT by 2%
+      Top-1 on ImageNet</strong> as a drop-in attention replacement.
+    </p>
+    <p>
+      <strong>Why this co-authorship matters.</strong> Tri Dao is the most important young researcher in
+      the SSM &amp; efficient-attention space (FlashAttention, Mamba-2, founded Together AI which has
+      raised $300M+). Hwang is the only Albert Gu PhD student to have first-authored a paper jointly
+      with Dao. The Hwang-Dao bridge is the single most valuable network edge in the entire
+      post-Transformer architecture community: it puts him one degree from Together AI in addition to
+      Cartesia. Aakash Lahoti (Hwang&rsquo;s co-equal-1st-author) is the other Goomba Lab PhD student in this
+      cluster.
+    </p>
+
+    <h3>(3) dnaHNet (ICML 2026 Spotlight) &mdash; H-Net for genomics</h3>
+    <p>
+      <strong><a href="https://arxiv.org/abs/2602.10603">dnaHNet: A Scalable and Hierarchical Foundation
+      Model for Genomic Sequence Learning</a></strong> &mdash; Shah, Li, Idehpour, Fallahpour, B. Wang,
+      <strong>S. Hwang</strong>, B. Wang, Hsu, Goodarzi, Gu. arXiv 2602.10603 (Feb 2026).
+      <strong>ICML 2026 Spotlight</strong> forthcoming.
+    </p>
+    <p>
+      Tokenizer-free genomic LM that segments raw nucleotide sequences end-to-end via the H-Net dynamic
+      chunking primitive. Outperforms StripedHyena2 (the current state-of-the-art DNA SSM, from Hazy
+      Research / Arc Institute) on scaling and efficiency. Recursive chunking yields <strong>quadratic
+      FLOP reductions</strong> and enables <strong>&gt;3x inference speedup over Transformers</strong>.
+      Zero-shot superiority on protein-variant fitness and gene-essentiality prediction. Automatically
+      discovers hierarchical biological structures (codons, genes) without supervision.
+    </p>
+    <p>
+      <strong>Cluster significance.</strong> The senior author list is Hsu (Arc Institute alum) +
+      <strong>Goodarzi (UCSF, RNA biology + cancer)</strong> + Gu (CMU/Cartesia) &mdash; this is one of
+      the rare biology-PI &times; SSM-architecture collaborations and positions H-Net as the architecture
+      of choice for the next-generation genomic foundation models. Direct competitors are HyenaDNA
+      (Hazy Research), Evo (Hazy Research / Arc), Caduceus (Princeton), and Nucleotide Transformer
+      (InstaDeep). The dnaHNet paper is therefore Hwang&rsquo;s extension into a totally different modality
+      &mdash; demonstrating the architecture is general, which is the founding-narrative-shape of an SSM-platform
+      pitch.
+    </p>
+
+    <h3>(4) Yonsei vision-research foundation &mdash; ~650 cites and a Top-3 finish</h3>
+    <p>
+      Before joining Albert Gu&rsquo;s lab, Hwang did his BS (summa cum laude, rank 1) and MS at Yonsei
+      University under <strong>Seon Joo Kim</strong> in computer vision &mdash; specifically video instance
+      segmentation. He has six top-venue vision papers: NeurIPS 2021 (IFC), CVPR 2022 oral (VISOLO),
+      CVPR 2022 (&ldquo;Cannot See the Forest for the Trees&rdquo;), <strong>NeurIPS 2022 (VITA, equal-1st
+      author)</strong>, CVPR 2023 (GenVIS), ECCV 2024 (VISAGE). VITA placed <strong>#3 on the YouTube-VIS
+      2022 Challenge</strong>. He held internships at <strong>Adobe Research (2022)</strong> and
+      <strong>Qualcomm AI Research (2019&ndash;2020)</strong>. CVPR 2022 Outstanding Reviewer Award.
+      Total Google Scholar: <strong>~650 citations, h-index 9</strong>.
+    </p>
+    <p>
+      <strong>Why this matters.</strong> The pivot from video segmentation to byte-level architecture
+      research is unusual. It shows Hwang has range &mdash; he was already publishing at NeurIPS as an MS
+      student <em>before</em> the Gu apprenticeship, and he&rsquo;s not a one-modality researcher. Vision
+      backgrounds typically produce people who think about hierarchical representations naturally
+      (which H-Net is fundamentally about). Aviv Bick (also Goomba Lab) and Aakash Lahoti made similar
+      transitions; Hwang is by far the most productive of the three.
+    </p>
+
+    <h3>(5) Jane Street Graduate Research Fellowship finalist 2026</h3>
+    <p>
+      The <strong>Jane Street Graduate Research Fellowship</strong> is a $250K-class PhD-funding award
+      (named on his personal site, May 2026) covering tuition + stipend + travel. The finalist list is
+      tiny &mdash; usually 6&ndash;10 names per year across all of math/CS/stats. Inclusion is a third-party
+      endorsement of the H-Net trajectory. Adjacent recognition: CVPR 2022 Outstanding Reviewer.
+    </p>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- ARCHITECTURE LINEAGE                                   -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>The Architecture Lineage &mdash; Why Hwang Is at the Frontier</h2>
+    <p class="small muted">
+      The post-Transformer SSM line is a 4-year, 5-paper trajectory. Hwang is the lead author on the two
+      most recent foundational entries.
+    </p>
+    <table style="width:100%; font-size:0.85rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;">
+        <td>Year</td><td>Paper</td><td>Authors</td><td>Hwang&rsquo;s role</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2021</td><td><strong>S4</strong> (Structured State Spaces)</td><td>Gu, Goel, R&eacute;</td><td>&mdash;</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Dec 2023</td><td><strong>Mamba</strong> (Linear-Time SSM)</td><td>Gu, Dao</td><td>&mdash;</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>May 2024</td><td><strong>Mamba-2</strong> (Transformers are SSMs)</td><td>Dao, Gu</td><td>(thanked in acks of related papers)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Jul 2024</strong></td><td><strong>Hydra</strong> (Bidirectional Mamba via matrix mixers)</td><td><strong>Hwang*, Lahoti*, Dao, Gu</strong> (NeurIPS 2024)</td><td><strong>Co-equal 1st author</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Jul 2025</strong></td><td><strong>H-Net</strong> (Dynamic Chunking, byte-level hierarchy)</td><td><strong>Hwang, Wang, Gu</strong> (ICLR 2026)</td><td><strong>Sole 1st author</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Feb 2026</strong></td><td><strong>dnaHNet</strong> (genomic FM via H-Net)</td><td>Shah, Li, &hellip;, S. Hwang, &hellip;, Goodarzi, Gu (ICML 2026 Spotlight)</td><td><strong>Architecture co-author</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Mar 2026</td><td><strong>Mamba-3</strong> (improved sequence modeling)</td><td>Goomba Lab; Hwang in acknowledgments</td><td>Acknowledged contributor</td></tr>
+    </table>
+    <p style="margin-top:1rem; font-family:var(--mono); font-size:0.75rem; color:var(--accent);">
+      In 18 months, Hwang has moved from co-1st-authoring with Tri Dao (the SSM-commercialization name)
+      to sole-1st-authoring the architecture that the lab now extends across modalities. This is the
+      pace of someone who graduates as a tenure-track or principal-research-scientist hire by default
+      &mdash; or who can defensibly start a company on the back of the work.
+    </p>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- GROWTH TRAJECTORY                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>Growth Trajectory</h2>
+    <table style="width:100%; font-size:0.85rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted); width:120px;">2019&ndash;2020</td><td>Intern, <strong>Qualcomm AI Research</strong> (Korea / SD).</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">~2020</td><td>BS, <strong>Yonsei University</strong>, summa cum laude (rank 1).</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2020&ndash;2022</td><td>MS, <strong>Yonsei University</strong>, advised by <strong>Seon Joo Kim</strong>. Computer vision &mdash; video instance segmentation.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Dec 2021</td><td><strong>NeurIPS 2021:</strong> IFC (Inter-Frame Communication Transformers for VIS). 188 cites.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2022</td><td>Intern, <strong>Adobe Research</strong>. <strong>CVPR 2022 Outstanding Reviewer Award.</strong> Three CVPR/WACV papers (VISOLO oral, panoptic, multi-viewpoint).</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Dec 2022</td><td><strong>NeurIPS 2022:</strong> VITA (equal-1st w/ Miran Heo). 158 cites. <strong>#3 on YouTube-VIS 2022 Challenge.</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Aug 2023</td><td><strong>Starts CMU PhD</strong> in Machine Learning Department, advised by <strong>Albert Gu</strong> (newly arrived from Princeton, fresh off Mamba submission).</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Mar 2023</td><td><strong>CVPR 2023:</strong> GenVIS (generalized framework for VIS). 95 cites. (Yonsei collab tail.)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Jul 13, 2024</strong></td><td><strong>arXiv 2407.09941: Hydra</strong> (Hwang*, Lahoti*, Dao, Gu). Bidirectional Mamba via matrix-mixer framework. <em>First Goomba Lab paper.</em></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Sep 2024</td><td><strong>ECCV 2024:</strong> VISAGE (legacy Yonsei collab tail).</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Dec 2024</td><td><strong>NeurIPS 2024:</strong> Hydra accepted as Poster.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted); color:var(--accent)"><strong>Jul 10, 2025</strong></td><td style="color:var(--accent)"><strong>arXiv 2507.07955: H-Net (Hwang, Wang, Gu).</strong> Albert Gu writes the Goomba Lab blog post; Cartesia publishes <a href="https://cartesia.ai/blog/hierarchical-modeling">hierarchical-modeling blog</a>; Karan Goel highlights the work; HuggingFace checkpoints released.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Late 2025</td><td>ICCV 2025 paper (likely vision-tail collab). H-Net repository hits 800+ stars.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Feb 11, 2026</strong></td><td><strong>arXiv 2602.10603: dnaHNet</strong> (Shah, Li, &hellip;, S. Hwang, &hellip;, Goodarzi, Gu). H-Net architecture extended to genomic sequences. <strong>ICML 2026 Spotlight</strong> forthcoming.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Mar 2026</td><td><strong>Mamba-3</strong> released (Goomba Lab). Hwang is in acknowledgments &mdash; helped advise the team on the next architecture iteration.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2026</td><td><strong>ICLR 2026 Poster:</strong> H-Net. <strong>ICML 2026 Spotlight:</strong> dnaHNet. <strong>CVPR Findings 2026.</strong> <strong>Jane Street Graduate Research Fellowship Finalist.</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">May 2026</td><td>Personal site current. Twitter bio still &ldquo;ML PhD student @mldcmu advised by @_albertgu.&rdquo; No founding signal yet.</td></tr>
+    </table>
+    <p style="margin-top:1rem; font-family:var(--mono); font-size:0.75rem; color:var(--accent);">
+      PACE: Two foundational SSM-architecture papers (Hydra, H-Net) + dnaHNet in 18 months as a Y2&ndash;Y3 PhD student. ~650 Scholar cites, h-index 9.<br>
+      ACCELERATION: From CVPR-tail vision papers in 2022&ndash;2023 to first-authoring with Tri Dao to sole-1st-authoring the lab&rsquo;s flagship paper. The Y2&rarr;Y3 inflection is sharp.<br>
+      PEER COMPARISON: Tri Dao (Stanford PhD &rarr; Princeton + Together AI) was at this exact career stage (Y3, FlashAttention shipped) before the founding move. Hwang&rsquo;s H-Net is the closest analog of FlashAttention in 2026.
+    </p>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- WHAT HE COULD BUILD                                    -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>What He&rsquo;s Building (and Could Build)</h2>
+
+    <h3>Right now: H-Net &amp; descendants for the Goomba/Cartesia stack</h3>
+    <p>
+      Hwang appears to be operating as the <strong>architecture-design lead</strong> for the entire
+      Albert Gu CMU + Cartesia research stack. The pattern: he ships an architecture paper (Hydra, then
+      H-Net), and the rest of the lab + Cartesia + biology collaborators rapidly extend it to new
+      modalities (Sonic voice, dnaHNet for genomics, Mamba-3 follow-ups). On the lab&rsquo;s own blog
+      Albert Gu credits Hwang with the &ldquo;technical breakthroughs&rdquo; behind H-Net and writes that he
+      &ldquo;adapted mixture-of-experts concepts&rdquo; to solve the discrete-chunking selection problem after
+      hundreds of architectural iterations. This is not the description of a coursework PhD &mdash; this is
+      the description of a <strong>founder-shaped researcher</strong>.
+    </p>
+
+    <h3>Plausible founding paths</h3>
+    <ol>
+      <li><strong>SSM-native foundation-model lab.</strong> The most direct extrapolation: Hwang co-founds with Albert Gu / Brandon Wang / Tri Dao on a successor to Cartesia or Together AI focused on hierarchical-byte-level multimodal foundation models. Cartesia has the voice mod claimed; the open spaces are <em>(a)</em> general-purpose tokenizer-free LLMs (vs. OpenAI/Anthropic/Mistral on transformer rails) and <em>(b)</em> long-context inference infrastructure for SSM models specifically.</li>
+      <li><strong>Architecture-IP-as-platform.</strong> H-Net&rsquo;s dynamic chunking is general &mdash; it&rsquo;s already been demonstrated on bytes (text), DNA, and (per the Cartesia blog) audio. The architectural primitive itself could be the foundation of a research/IP company (the way FlashAttention seeded Together).</li>
+      <li><strong>Bio/chemistry foundation models.</strong> The dnaHNet paper&rsquo;s author list (Goodarzi UCSF, Hsu Arc-Institute-adjacent) is the seed of a biology-foundation-models company. Brandon Wang (Hwang&rsquo;s H-Net co-author) already left Cartesia for onepot AI (chemistry). The Cartesia-CMU axis &mdash;&gt; biology pivot is real.</li>
+      <li><strong>Stay in research.</strong> Faculty placement at CMU/Stanford/MIT post-PhD; principal research scientist at a frontier lab. Tri Dao&rsquo;s parallel: Princeton faculty + Together AI co-founder. This path is also founder-compatible.</li>
+    </ol>
+
+    <h3>Competitive landscape &mdash; SSM &amp; post-Transformer architecture commercialization</h3>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Player</td><td>Stage / size</td><td>Architecture bet</td><td>Where Hwang fits</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong><a href="https://cartesia.ai">Cartesia AI</a></strong></td><td>$91M raised, $64M Series A (Mar 2025); Index Ventures lead</td><td>Mamba/H-Net for voice (Sonic, Sonic 2, Sonic Turbo)</td><td>His advisor is the CTO. He is the most likely &ldquo;research scientist offer&rdquo; or &ldquo;co-founding successor&rdquo; if Cartesia spins out a sub-effort</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong><a href="https://www.together.ai">Together AI</a></strong></td><td>$300M+ raised, multi-billion valuation; Tri Dao is Chief Scientist</td><td>Mamba-2 + FlashAttention + open-weights stack + inference</td><td>Hydra co-author with Tri Dao &mdash; one degree away. Direct hire / collaboration target</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Hazy Research (Stanford, Chris R&eacute;)</strong></td><td>Academic + industry pipeline (Cartesia, Snorkel, Together, Mosaic)</td><td>Original S4 / Mamba lineage (Albert + Karan trained here)</td><td>Spiritual cousin lab. 5+ R&eacute; alums in this repo. Hwang is the CMU-axis equivalent</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Mistral AI (early)</strong></td><td>$640M Series B (2024)</td><td>Open-weights transformer specialist (Mixtral, Codestral)</td><td>Showed an architecture-first lab can become a $billion company. Reference shape for an SSM-native equivalent</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>AI21 Labs</strong></td><td>$326M Series C (2023), $1.4B val.</td><td>Jamba (transformer-Mamba hybrid)</td><td>Already commercializing Mamba in production. Validates the SSM-commercial thesis</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Liquid AI (MIT)</strong></td><td>$250M Series A (Dec 2024)</td><td>Liquid neural networks (different non-attention architecture)</td><td>Non-transformer-architecture-as-company precedent</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong><a href="https://www.onepot.ai">onepot AI</a></strong></td><td>$13M seed (Nov 2025); Khosla, Fifty Years, Wojciech Zaremba, Jeff Dean angels</td><td>Chemistry/synthesis FMs; uses H-Net-shaped architecture for SMILES</td><td>Brandon Wang (his H-Net co-author) is already there. Adjacent thesis</td></tr>
+    </table>
+
+    <h3>Adjacent landscape &mdash; biology &amp; genomic foundation models (via dnaHNet)</h3>
+    <ul>
+      <li><strong>Hazy Research / Arc Institute:</strong> HyenaDNA, Evo. Direct competitor in DNA foundation models &mdash; dnaHNet outperforms StripedHyena2.</li>
+      <li><strong>EvolutionaryScale:</strong> $142M seed; ESM3 protein FM. Different modality (proteins not DNA) but same playbook.</li>
+      <li><strong>InstaDeep / Nucleotide Transformer.</strong> $682M acquisition by BioNTech (2023). Genomic FMs commercialized.</li>
+      <li><strong>Caduceus (Princeton):</strong> bidirectional Mamba for DNA. Adjacent to Hwang&rsquo;s Hydra (also bidirectional Mamba).</li>
+    </ul>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- IN HIS OWN WORDS                                       -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>In His Own Words</h2>
+    <ul>
+      <li>From his pinned tweet (<a href="https://x.com/sukjun_hwang/status/1943703608672805244">@sukjun_hwang</a>, Jul 12 2025): &ldquo;<strong>Tokenization has been the final barrier to truly end-to-end language models. We developed the H-Net: a hierarchical network that replaces tokenization with a dynamic chunking process directly inside the model, automatically discovering and operating over meaningful units of data.</strong>&rdquo;</li>
+      <li>From the same H-Net thread, Tweet 2/: &ldquo;<strong>H-Net operates over any language, discovering semantic units where heuristic tokenizers fail. By directly learning patterns from raw bytes, dynamic chunking enables models that are more flexible, powerful, and robust.</strong>&rdquo;</li>
+      <li>Twitter bio (May 2026): &ldquo;<strong>ML PhD student @mldcmu advised by @_albertgu. Pittsburgh, PA.</strong>&rdquo; Note &mdash; bio is unchanged 12+ months after H-Net dropped. No founding signal.</li>
+      <li>Personal-site research statement: open to collaborations on &ldquo;<strong>well-defined research questions with clear motivation and theoretical grounding</strong>.&rdquo; (The framing is research-first and disciplined &mdash; consistent with the &ldquo;refused to listen because he had a much better idea&rdquo; advisor anecdote.)</li>
+    </ul>
+
+    <h3>What others say about him</h3>
+    <ul>
+      <li><strong>Albert Gu</strong> (advisor; CMU + Cartesia CTO), <a href="https://goombalab.github.io/blog/2025/hnet-past/">H-Nets &mdash; the Past blog</a>: &ldquo;<strong>I&rsquo;ve been fortunate enough to be able to work with my student Sukjun Hwang who made the technical breakthroughs.</strong>&rdquo; And later in the same post: &ldquo;<strong>Sukjun refused to listen to me because he had a much better idea.</strong>&rdquo; And: &ldquo;<strong>I haven&rsquo;t been able to run experiments personally in a while, and it was like watching an artist at work.</strong>&rdquo;</li>
+      <li><strong>Karan Goel</strong> (Cartesia CEO, co-founder), on the H-Net release: &ldquo;<strong>amazing work by Sukjun Hwang, Brandon Wang and my cofounder Albert Gu to unlock a core advancement.</strong>&rdquo;</li>
+    </ul>
+    <p class="small muted">
+      The Albert Gu blog post is unusual. Advisors typically share credit; Gu writes a multi-paragraph
+      acknowledgment that the architectural breakthrough was Hwang&rsquo;s, that Hwang ran &ldquo;hundreds of
+      architectural variations&rdquo; through &ldquo;one of the most difficult empirical projects&rdquo;, and that
+      Hwang did this by overruling his advisor on the right approach. Read this as the strongest possible
+      public &ldquo;this person is going to be a major researcher&rdquo; signal.
+    </p>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- NETWORK MAP                                            -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>Network Map</h2>
+    <p class="small muted">Three concentric clusters: Goomba Lab (CMU, his immediate world), the Cartesia / Mamba bridge, and the Yonsei vision-research origin.</p>
+
+    <h3>Goomba Lab (CMU, Albert Gu)</h3>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Person</td><td>Role</td><td>Why they matter</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Albert Gu</strong></td><td>PI, CMU MLD professor &amp; Cartesia CTO co-founder</td><td>S4/Mamba author. Chris R&eacute; PhD. Senior on H-Net. The reason this entire research line exists. <strong>The single most important relationship to understand for Hwang.</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Aakash Lahoti</strong></td><td>Goomba Lab PhD student</td><td>Hydra co-equal-1st author with Hwang. Closest peer in the lab.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Aviv Bick</strong></td><td>Goomba Lab PhD student</td><td>SSM efficiency / inference work. Mamba-3 co-author.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Kevin Li</strong></td><td>Goomba Lab PhD student</td><td>Sequence-modeling research; Mamba follow-up papers.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Isaac Liao</strong></td><td>Goomba Lab PhD student</td><td>Newer addition.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Ricardo Buitrago</strong></td><td>Goomba Lab affiliated MS student</td><td>&mdash;</td></tr>
+    </table>
+
+    <h3>The Cartesia / Mamba bridge</h3>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Person</td><td>Where</td><td>Why they matter</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Tri Dao</strong></td><td>Princeton CS Asst. Prof + Together AI Chief Scientist</td><td>Hydra co-author. FlashAttention, Mamba, Mamba-2 author. Founded Together AI ($300M+ raised). <strong>The reference class for any Hwang founding move.</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong><a href="brandon-wang.html">Brandon Wang</a></strong> &nbsp;<span class="tag" style="font-size:0.65rem">T1 in repo</span></td><td>onepot AI ML engineer; prev Cartesia</td><td>H-Net 2nd author. IMO 2019 Gold + 3x USAMO Winner. MIT 6-7. Left Cartesia for onepot. The other half of the H-Net pair.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Karan Goel</strong></td><td>Cartesia CEO &amp; co-founder</td><td>Stanford PhD (Chris R&eacute;). Public advocate of H-Net. Spread the work on Twitter. Possible future hiring/founding bridge.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Chris R&eacute;</strong></td><td>Stanford CS &amp; Cartesia co-founder</td><td>Albert + Karan&rsquo;s shared advisor. Hazy Research mafia hub. Macarthur Genius. Repo has 5+ R&eacute; alums (<a href="ishan-khare.html">Khare</a>, <a href="michael-wornow.html">Wornow</a>, <a href="avanika-narayan.html">Narayan</a>, <a href="dan-biderman.html">Biderman</a>, <a href="neel-guha.html">Guha</a>).</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Arjun Desai, Brandon Yang</strong></td><td>Cartesia co-founders</td><td>Stanford / Hazy lineage. Adjacent network.</td></tr>
+    </table>
+
+    <h3>dnaHNet biology cluster</h3>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Person</td><td>Where</td><td>Why they matter</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Hani Goodarzi</strong></td><td>UCSF / Arc Institute associate</td><td>RNA biology + cancer. Senior author on dnaHNet. The biology side of the architecture-x-biology axis.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Patrick Hsu</strong></td><td>Berkeley + Arc Institute</td><td>Co-founded Arc Institute&rsquo;s genome-engineering programs. dnaHNet co-author.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Bo Wang</strong></td><td>U Toronto / Vector Institute</td><td>Computational biology &amp; genomics. dnaHNet co-author.</td></tr>
+    </table>
+
+    <h3>Yonsei vision lineage (Korea)</h3>
+    <ul>
+      <li><strong>Seon Joo Kim</strong> &mdash; Yonsei CS professor; MS advisor. ICCV / CVPR / NeurIPS regular in computer vision.</li>
+      <li><strong>Miran Heo</strong> &mdash; co-equal-1st-author on VITA (NeurIPS 2022); Yonsei.</li>
+      <li><strong>Seoung Wug Oh</strong> &mdash; Adobe Research; recurring co-author on VIS papers; likely his Adobe internship sponsor.</li>
+      <li><strong>Joon-Young Lee</strong> &mdash; Adobe Research; recurring co-author.</li>
+    </ul>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- SIGNALS                                                -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>Timeline &amp; Signals</h2>
+    <ul>
+      <li><strong>Status (May 2026):</strong> ~Y3 PhD student, CMU MLD, advised by Albert Gu. Pittsburgh. No public announcements of company / stealth / leave-of-absence as of this writing.</li>
+      <li><strong>Departure signal:</strong> None yet. Twitter bio unchanged. Personal site lists current PhD position. <em>This is a tracking-build relationship now, not an outreach-now situation.</em></li>
+      <li><strong>Founding-cluster signal:</strong> The H-Net trio (Hwang + B. Wang + Gu) is the most coherent post-Transformer architecture team in academia. Brandon Wang has already left Cartesia for onepot. The probability that some recombination of this trio &mdash; or Hwang + Tri Dao &mdash; eventually starts a company in 2026&ndash;2028 is materially nonzero. <strong>If Albert Gu suddenly takes leave from CMU, that&rsquo;s the trigger.</strong></li>
+      <li><strong>Productivity signal:</strong> 9 top-venue papers in 5 years (2021&ndash;2026), 2 of them sole-1st-author at NeurIPS / ICLR caliber, ~650 citations, h-index 9. ICML 2026 Spotlight forthcoming. CVPR Findings 2026. Jane Street GRF Finalist. Pace is well above the median CMU PhD.</li>
+      <li><strong>GitHub activity:</strong> Pinned: H-Net (846), Hydra (171), VITA (107), GenVIS (136), VISOLO (49), IFC (96), Triton FlashAttn (7). The Triton FlashAttn repo is a tell &mdash; he writes Triton kernels, which means he is comfortable in the inference-stack engineering layer that any SSM company needs.</li>
+      <li><strong>Twitter activity:</strong> @sukjun_hwang &mdash; modest follower count, mostly research-thread style, pinned tweet is the H-Net launch thread. He retweets Cartesia, Albert Gu, Tri Dao. Not a thought-leadership account &mdash; tweets only when he ships.</li>
+      <li><strong>Internship history:</strong> Qualcomm AI (2019&ndash;2020), Adobe Research (2022). No frontier-lab internship public yet. <em>An OpenAI / Anthropic / xAI / Cartesia full-time-equivalent internship in summer 2026 would be a major signal.</em></li>
+      <li><strong>Likely 2026&ndash;2028 outcomes:</strong> (a) Cartesia full-time research scientist offer (most likely default); (b) Faculty placement (Stanford / MIT / CMU / Princeton tier); (c) Co-founds with Albert Gu / Tri Dao / Brandon Wang on an SSM-native foundation-model lab; (d) Joins a frontier lab at PRS level (DeepMind / OpenAI / Anthropic). Probabilities (a)&gt;(b)&gt;(c)&gt;(d) but (c) is the upside scenario for a VC.</li>
+    </ul>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- RISKS                                                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>Risks</h2>
+    <ul>
+      <li><strong>Mid-PhD timeline.</strong> 2&ndash;3 years out from any plausible founding move. PhDs delay founding by definition. T1, not T0, for exactly this reason.</li>
+      <li><strong>Pure-research path is plausible &amp; default.</strong> His personal site reads research-first. He is on the Jane Street GRF finalist track. Faculty placement is the modal outcome &mdash; not founding.</li>
+      <li><strong>Architectural research is hard to commercialize independently.</strong> S4 &rarr; Mamba &rarr; H-Net is a great research line, but the commercial value is captured by Together AI (Tri Dao) or Cartesia (Albert Gu) &mdash; <em>both already exist</em>. The window for an &ldquo;SSM-native company by Hwang&rdquo; may already be partly closed unless he goes to a different vertical.</li>
+      <li><strong>Brandon Wang already left Cartesia for chemistry.</strong> The most natural co-founder pivoted to onepot AI in 2025. If the H-Net pair was going to recombine into a new company, the moment was probably last year.</li>
+      <li><strong>Less network breadth than peers in repo.</strong> Twitter is small; no podcast appearances; no popular blog. He&rsquo;s in heads-down build mode &mdash; a strength for the work, a friction for outreach.</li>
+      <li><strong>Visa.</strong> Korean national; F-1 / OPT / H-1B path adds non-trivial friction to a US founding move. Likely fine but not zero risk.</li>
+      <li><strong>The &ldquo;research scientist at Cartesia&rdquo; outcome is the modal outcome and the worst outcome for a VC.</strong> If Cartesia just absorbs him at PhD completion, the option to invest never opens.</li>
+    </ul>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- OUTREACH                                               -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>Outreach</h2>
+    <p class="small muted"><strong>Best channels:</strong> Twitter DM (<a href="https://x.com/sukjun_hwang">@sukjun_hwang</a>) or email <a href="mailto:sukjunh@cs.cmu.edu">sukjunh@cs.cmu.edu</a>. He is in Pittsburgh; an offer to grab coffee in Pittsburgh or SF on a Cartesia-trip is the lowest-friction next step.</p>
+
+    <p class="small muted"><strong>Framing:</strong> Relationship-build, not a pitch. He is mid-PhD and not raising. Lead with a <em>specific</em> H-Net or Hydra technical insight (avoid abstract praise &mdash; he&rsquo;ll skip you), connect to where SSM-native architecture is being commercialized (Cartesia, Together, AI21, Liquid), and offer a concrete low-friction next step.</p>
+
+    <div class="spike-box" style="margin-top:0.75rem; border-left-color: var(--tier2);">
+      <div class="label">&#9670; Draft Outreach (Email or Twitter DM)</div>
+      <p style="font-size:0.88rem; white-space:pre-line;">Hi Sukjun &mdash;
+
+The H-Net result that stuck with me was the +20.6 robustness gap on perturbed text (42.8 vs 22.2 for the BPE Transformer at 760M) &mdash; it&rsquo;s the cleanest evidence I&rsquo;ve seen that learned chunking does what tokenization was supposed to. The smoothing-module trick &mdash; using EMA-style interpolation to make the discrete boundary differentiable &mdash; reads like the kind of detail that becomes a textbook primitive a few years out. The 4x DNA-data-efficiency number is what made me read dnaHNet end-to-end.
+
+I spend most of my time on post-Transformer architecture commercialization &mdash; Cartesia for voice, Together for inference, AI21 with Jamba in production, Liquid on a different non-attention bet. The thesis I keep coming back to is that the SSM-native company that wins is the one that owns a hierarchical-byte-level primitive across modalities, not just one (voice, DNA, code). H-Net + dnaHNet is the only line that&rsquo;s actually demonstrated cross-modal generality.
+
+I invest at inception &mdash; not pitching anything, just want to be a real conversation partner over the next few years. Happy to grab coffee in Pittsburgh or SF whenever you&rsquo;re around.
+
+&mdash; Vansh</p>
+    </div>
+
+    <p class="small muted" style="margin-top:0.5rem;"><strong>Why this works:</strong> Cites a specific number (42.8 vs 22.2 robustness) and a specific technical mechanism (smoothing module + EMA interpolation) so he can tell I&rsquo;ve actually read the paper. Names four specific commercial bets in the SSM space (Cartesia, Together, AI21 Jamba, Liquid) without sounding like a fund deck. Asks a real cross-modal generality question that connects H-Net to dnaHNet &mdash; the question he is the right person to answer. Sign-off Vansh, no formal sign-off, ends on the &ldquo;coffee in Pittsburgh or SF&rdquo; close. <strong>3 paragraphs, ~165 words.</strong></p>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- BACKGROUND                                             -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>Background</h2>
+    <p>
+      Korean national, based in Pittsburgh. Goes by &ldquo;June&rdquo; on Twitter. Yonsei University BS (summa
+      cum laude, ranked 1st in his class) followed by Yonsei MS (2020&ndash;2022) under
+      <strong>Seon Joo Kim</strong> in computer vision &mdash; specifically video instance segmentation,
+      where he and Miran Heo built the IFC / VISOLO / VITA / GenVIS line of papers (NeurIPS 2021,
+      CVPR 2022 Oral, NeurIPS 2022 with VITA placing #3 on YouTube-VIS 2022 Challenge, CVPR 2023, ECCV
+      2024). Internships at <strong>Qualcomm AI Research</strong> (2019&ndash;2020) and <strong>Adobe
+      Research</strong> (2022). Started CMU ML PhD in August 2023 under Albert Gu &mdash; Gu&rsquo;s first cohort
+      of students after moving from Princeton to CMU. Within a year of starting, Hwang was first-authoring
+      Hydra with Tri Dao at NeurIPS 2024; within two years, sole-1st-authoring H-Net at ICLR 2026.
+      <strong>CVPR 2022 Outstanding Reviewer Award. Jane Street Graduate Research Fellowship Finalist
+      2026.</strong>
+    </p>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- NOTES                                                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>Notes</h2>
+    <ul>
+      <li class="small">Full publication record (per <a href="https://sukjunhwang.github.io/publications/">publications page</a>, May 2026):
+        <ol>
+          <li><strong>Hwang</strong>, Heo, Oh, Kim. <em>Video Instance Segmentation using Inter-Frame Communication Transformers (IFC)</em>. NeurIPS 2021. <strong>188 cites.</strong></li>
+          <li>Han, <strong>Hwang</strong>, Oh, Park, Kim, Kim, Kim. <em>VISOLO: Grid-Based Space-Time Aggregation for Efficient Online Video Instance Segmentation</em>. CVPR 2022 Oral. 49 cites.</li>
+          <li><strong>Hwang</strong>, Oh, Kim. <em>Single-shot Path Integrated Panoptic Segmentation</em>. WACV 2022.</li>
+          <li><strong>Hwang</strong>, Heo, Oh, Kim. <em>Cannot See the Forest for the Trees: Aggregating Multiple Viewpoints to Better Classify Objects in Videos</em>. CVPR 2022.</li>
+          <li>Heo, <strong>Hwang</strong>, Oh, Lee, Kim. <em>Integrating Pose and Mask Predictions for Multi-person in Videos</em>. CVPRW 2022.</li>
+          <li>Heo*, <strong>Hwang*</strong>, Oh, Lee, Kim. <em>VITA: Video Instance Segmentation via Object Token Association</em>. NeurIPS 2022. <strong>158 cites.</strong> #3 YouTube-VIS 2022 Challenge.</li>
+          <li>Heo, <strong>Hwang</strong>, Hyun, Kim, Oh, Lee, Kim. <em>A Generalized Framework for Video Instance Segmentation (GenVIS)</em>. CVPR 2023. <strong>95 cites.</strong></li>
+          <li>Kim, Kang, Heo, <strong>Hwang</strong>, Oh, Kim. <em>VISAGE: Video Instance Segmentation with Appearance-Guided Enhancement</em>. ECCV 2024.</li>
+          <li><strong>Hwang*</strong>, Lahoti*, Dao, Gu. <em>Hydra: Bidirectional State Space Models Through Generalized Matrix Mixers</em>. NeurIPS 2024 Poster. <a href="https://arxiv.org/abs/2407.09941">arXiv:2407.09941</a>. <strong>58 cites.</strong></li>
+          <li><strong>Hwang</strong>, Wang, Gu. <em>Dynamic Chunking for End-to-End Hierarchical Sequence Modeling (H-Net)</em>. ICLR 2026 Poster. <a href="https://arxiv.org/abs/2507.07955">arXiv:2507.07955</a>. <strong>846 GitHub stars.</strong></li>
+          <li>Shah, Li, Idehpour, Fallahpour, B. Wang, <strong>S. Hwang</strong>, B. Wang, Hsu, Goodarzi, Gu. <em>dnaHNet: A Scalable and Hierarchical Foundation Model for Genomic Sequence Learning</em>. ICML 2026 Spotlight (forthcoming). <a href="https://arxiv.org/abs/2602.10603">arXiv:2602.10603</a>.</li>
+          <li>(Plus ICCV 2025 paper, CVPR Findings 2026 &mdash; not in linked publications list yet but cited on personal site.)</li>
+        </ol>
+      </li>
+      <li class="small"><strong>Google Scholar (May 2026):</strong> 649 total citations, h-index 9, i10-index 9.</li>
+      <li class="small"><strong>The lineage signal:</strong> S4 (Gu 2021) &rarr; Mamba (Gu+Dao 2023) &rarr; Mamba-2 (Dao+Gu 2024) &rarr; <strong>Hydra (Hwang+Lahoti+Dao+Gu 2024)</strong> &rarr; <strong>H-Net (Hwang+Wang+Gu 2025)</strong> &rarr; dnaHNet (Feb 2026) &rarr; Mamba-3 (Mar 2026, Hwang acknowledged). Each step is a top-venue paper, each is a foundational architecture paper, and Hwang is on the latest 4 of 7. This is the canonical post-Transformer architecture line, period.</li>
+      <li class="small"><strong>Albert Gu&rsquo;s blog post on H-Net</strong> (<a href="https://goombalab.github.io/blog/2025/hnet-past/">goombalab/blog/2025/hnet-past</a>) is required reading. The phrase &ldquo;<em>Sukjun refused to listen to me because he had a much better idea</em>&rdquo; is one of the strongest possible third-party endorsements of a researcher.</li>
+      <li class="small"><strong>Brandon Wang follow-up (existing dossier):</strong> <a href="brandon-wang.html">brandon-wang.html</a>. The H-Net pair view: Brandon left Cartesia for chemistry/onepot; Sukjun is still at CMU + tied to Cartesia via Albert Gu. The split is informative.</li>
+      <li class="small"><strong>The Tri Dao reference class.</strong> Dao did his PhD at Stanford under Chris R&eacute;, shipped FlashAttention as a Y2&ndash;Y3 student, then Mamba (with Albert Gu) as Y4&ndash;Y5, then went on to co-found Together AI. Hwang at Y2&ndash;Y3 has shipped two papers of comparable foundational impact (Hydra + H-Net). The investable analog of FlashAttention &rarr; Together is H-Net &rarr; some-future-Hwang-cofounded-company. This is the upside-case story.</li>
+      <li class="small"><strong>&ldquo;Goomba Lab&rdquo;</strong> is the public nickname for Albert Gu&rsquo;s CMU lab (named after the Mario character &mdash; Mamba-themed). 5 PhD students currently: Kevin Li, Aakash Lahoti, <strong>Sukjun Hwang</strong>, Aviv Bick, Isaac Liao.</li>
+      <li class="small"><strong>Korean AI researcher cohort.</strong> Yonsei undergrad &rarr; US PhD is a well-traveled path (cf. <a href="jaeyeon-kim.html">Jaeyeon Kim</a> at Harvard in repo). Sukjun is a strong sourcing node for KAIST/Yonsei/Seoul-National-University students worth tracking.</li>
+      <li class="small"><strong>Re-tier rules:</strong> T0 if (1) bio change, (2) Cartesia full-time announcement, (3) Albert Gu takes leave from CMU, (4) co-publication outside Goomba Lab on a product-flavored paper, (5) any &ldquo;stealth&rdquo; / &ldquo;founding&rdquo; signal on Twitter. Currently T1.</li>
+    </ul>
+  </section>
+
+  <footer>
+    researched: 2026-05-06 &middot; sources: sukjunhwang.github.io, arXiv 2507.07955 + 2407.09941 + 2602.10603, openreview, Google Scholar, Goomba Lab blog, Cartesia blog, GitHub goombalab/hnet, Twitter @sukjun_hwang &middot; <a href="../index.html">back to index</a>
+  </footer>
+
+</body>
+</html>
