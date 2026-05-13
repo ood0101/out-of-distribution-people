@@ -16,49 +16,331 @@
   <div class="profile-header">
     <h1>Alex Shan</h1>
     <img src="https://framerusercontent.com/images/DpkWCmAKZpiII5dvNvQY85U.jpeg?width=400&amp;height=400" alt="Alex Shan" style="width:80px;height:80px;border-radius:50%;object-fit:cover;float:right;margin:0 0 1rem 1rem;" loading="lazy" onerror="this.style.display='none'" />
-    <p class="one-liner">Judgment Labs (Co-founder &amp; CEO), Stanford University (MS CS)</p>
+    <p class="one-liner"><strong>CEO &amp; Co-Founder, <a href="https://www.judgmentlabs.ai/">Judgment Labs</a> &mdash; just closed $32M combined Seed + Series A led by Lightspeed (May 12, 2026). 22 years old. Stanford CS BS+MS (Autumn 2022 admit to MS, undergrad ~2020). Research under Chris Manning at Stanford NLP / SAIL &mdash; 5 publications (2023&ndash;2025), incl. EMNLP Findings 2023 + arXiv Osiris 2025. Co-founded with two childhood best friends &mdash; Andrew Li (23, ex-Together AI, UC Berkeley) and Joseph Camyre (23, ex-Datadog infra, UCLA). Lightspeed&rsquo;s James Alcorn (ex-Zetta) doubled down inside 6 months. Open-source <code>judgeval</code>: 1,000 GitHub stars, 1,750 commits, v1.1.0 released May 11.</strong></p>
     <div class="tags">
-      <span class="tag">delta</span>
-      <span class="tag spike">founders</span>
+      <span class="tag spike">tier-0: active pursuit</span>
+      <span class="tag">founders</span>
+      <span class="tag">ai-agents</span>
+      <span class="tag">agent-observability</span>
+      <span class="tag">stanford</span>
+      <span class="tag">chris-manning</span>
+      <span class="tag">lightspeed-backed</span>
+      <span class="tag">just-raised</span>
     </div>
     <div class="links">
       <a href="https://www.linkedin.com/in/alex-shan-446321202/">linkedin</a>
       <a href="https://x.com/alexshander03">twitter/x</a>
       <a href="https://scholar.google.com/citations?user=Nf8vdzcAAAAJ">scholar</a>
+      <a href="https://github.com/SecroLoL">github</a>
+      <a href="https://www.judgmentlabs.ai/">judgmentlabs.ai</a>
+      <a href="https://github.com/JudgmentLabs/judgeval">judgeval</a>
     </div>
   </div>
 
-  <!-- THE SPIKE -->
+  <!-- INVESTMENT THESIS -->
   <div class="spike-box">
-    <div class="label">&#9670; What Makes Them Spiky</div>
+    <div class="label">&#9670; Investment Thesis</div>
+    <p>
+      Alex Shan is a 22-year-old CEO who just closed <strong>$32M combined Seed + Series A from Lightspeed</strong>
+      (lead, both rounds, doubled down inside 6 months) plus Nova Global, SV Angel, Valor Equity Partners, and Dynamic
+      &mdash; for a category (<strong>agent observability + continuous improvement</strong>) where every well-funded
+      competitor is older, more expensive, or framed around eval rather than improvement: LangSmith ($1.25B Series B
+      Oct 2025), Braintrust ($800M Series B), Arize AI ($300M+), Patronus AI (~$40M total from Lightspeed + Notable).
+      Judgment&rsquo;s wedge is that production-data-&rarr;-RL/SFT-improvement loop is the actual unlock, not the
+      tracing dashboard. <strong>This is a deliberate Lightspeed thesis bet</strong> &mdash; Patronus + Virtue AI +
+      Judgment all sit under James Alcorn&rsquo;s &ldquo;measure-and-improve&rdquo; thesis. Shan is not raising right
+      now (will not be for ~12&ndash;18 months), but the right move at this point is <strong>relationship build,
+      deal-flow swap, and watching their first 10 hires</strong> &mdash; early team here will be the next cohort of
+      Stanford NLP / agent-infra founders. Tier 0: active pursuit on a friendship/network basis, not a check.
+    </p>
+  </div>
+
+  <!-- THE SPIKE -->
+  <section>
+    <h2>The Spike &mdash; With Evidence</h2>
+    <p>
+      Shan is the rare profile where the credential stack and the company collapse into the same sentence.
+      He is a <strong>Stanford NLP group researcher under Chris Manning</strong> &mdash; not a coursework affiliate,
+      a co-author. His Google Scholar lists <strong>5 publications, 19 citations, h-index 3</strong>, of which three
+      are with <strong>Manning + John Bauer</strong> (Manning&rsquo;s long-running senior research engineer at the
+      Stanford NLP group, maintainer of Stanza):
+    </p>
     <ul>
-      <li>Co-founded Judgment Labs in 2025 — building infrastructure for monitoring AI agents in production</li>
-      <li>Stanford SAIL researcher in NLP</li>
-      <li>Created Judgeval — open-source framework for agent behavior evaluation</li>
-      <li>Targeting mission-critical verticals: legal AI, financial AI, enterprise support</li>
-      <li>MS CS from Stanford</li>
+      <li><strong>Semgrex and Ssurgeon, searching and manipulating dependency graphs</strong> &mdash; Bauer, Kiddon, Yeh, Shan, Manning. <em>TLT 2023</em>. 7 cites.</li>
+      <li><strong>Do &ldquo;English&rdquo; Named Entity Recognizers work well on Global Englishes?</strong> &mdash; Shan, Bauer, Carlson, Manning. <em>Findings of EMNLP 2023</em>. 6 cites.</li>
+      <li><strong>Osiris: A lightweight open-source hallucination detection system</strong> &mdash; Shan, Bauer, Manning. <em>arXiv 2505.04844, May 2025</em>. 2 cites.</li>
     </ul>
-  </div>
+    <p>
+      The Osiris paper &mdash; <em>hallucination detection</em>, May 2025 &mdash; is essentially the academic prelude
+      to Judgment Labs. He published the open-source hallucination-detection system with Manning, then four months
+      later he&rsquo;s an open-source agent-evaluation framework (<code>judgeval</code>) and a venture-scale company
+      doing exactly that for production agents. The thesis was developed inside SAIL and then commercialized.
+    </p>
+    <p>
+      The second axis is the team. <strong>The three founders have been &ldquo;best friends since childhood&rdquo;</strong>
+      (Business Wire, May 12). Andrew Li (Chief Scientist, 23) was an early research hire at <strong>Together AI</strong>
+      &mdash; Tri Dao&rsquo;s company &mdash; UC Berkeley. Joseph Camyre (CTO, 23) built infrastructure at
+      <strong>Datadog</strong> &mdash; the canonical comparable for the category &mdash; UCLA. The technical surface area is
+      the entire agent stack: NLP research, distributed inference, observability infra. They are 22&ndash;23. The seed
+      round closed in late 2025 (Lightspeed) and the Series A closed inside 6 months. <strong>That is not a normal
+      Series A cadence</strong> &mdash; Lightspeed pre-empted the round.
+    </p>
+  </section>
 
-  <h2>Research &amp; Key Work</h2>
-  <h3>Problems &amp; Research Areas</h3>
-  <ul><li>Agent behavior monitoring (ABM) — tracking, evaluating, and improving AI agent reliability</li><li>Runtime observability for multi-step AI agent workflows</li><li>Evaluation and tracing for production AI agents</li><li>NLP and large language models research at Stanford SAIL</li></ul>
-  <h3>Key Work</h3>
-  <ul><li>Judgeval — open-source agent behavior monitoring framework</li><li>Judgment Labs platform for runtime observability, evaluation, and optimization of AI agents</li><li>NLP research at Stanford AI Lab (SAIL)</li></ul>
+  <!-- GROWTH TRAJECTORY -->
+  <section>
+    <h2>Growth Trajectory</h2>
+    <table style="width:100%; font-size:0.85rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted); width:120px;">~2003</td><td>Born. Full legal name <strong>Alexander Zhang Shan</strong> (Chinese-American)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">~2020</td><td>Enters Stanford undergrad &mdash; CS + Math. Joins Stanford AI Lab / NLP group early</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">~2021</td><td>Internship at <strong>Juniper Networks</strong> (per LinkedIn). Co-authors RCA Copilot work (IEEE ICC 2025, w/ Singh/Yavatkar/Sridhar)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2022</td><td>First Stanford NLP work begins under <strong>John Bauer + Chris Manning</strong> (Stanza maintainers). Contributes to <code>stanfordnlp/stanza</code> (7.8k&star;) and <code>en-worldwide-newswire</code></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Autumn 2022</td><td>Admitted to Stanford CS MS (per Stanford Profiles, profiles.stanford.edu/alexander-shan). Continues undergrad &rarr; coterminal</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Dec 2023</td><td><strong>2 papers as undergrad/MS student</strong>: TLT 2023 (Semgrex/Ssurgeon w/ Manning) + <strong>EMNLP 2023 Findings</strong> (Global Englishes NER w/ Manning)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2024</td><td><strong>Judgment Labs founded</strong> (per Tracxn: 2024; per Lightspeed: initial investment late 2025). Stealth-built with Andrew Li (Together AI) + Joseph Camyre (Datadog), childhood best friends</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">May 2025</td><td><strong>Osiris paper posted</strong> (arXiv 2505.04844) &mdash; lightweight open-source hallucination detection w/ Bauer + Manning. The academic prelude to <code>judgeval</code></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">May 12, 2025</td><td><strong>&ldquo;Introducing Judgment Labs&rdquo; LinkedIn post</strong> (judgmentlabs activity 7328154132190547968). Public launch. <code>judgeval</code> open-sourced</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">~Nov 2025</td><td><strong>Seed round closes</strong> &mdash; Lightspeed leads (James Alcorn). <em>~6 months before Series A</em></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">May 11, 2026</td><td><code>judgeval v1.1.0</code> shipped on GitHub (1,000&star;, 93 forks, 1,750 commits)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--accent);"><strong>May 12, 2026</strong></td><td><strong>$32M combined Seed + Series A announced.</strong> Lightspeed leads both. Nova Global, SV Angel, Valor Equity Partners, Dynamic also in</td></tr>
+    </table>
+    <p style="margin-top:1rem; font-family:var(--mono); font-size:0.75rem; color:var(--accent);">
+      PACE: stealth-built &rarr; launched &rarr; seed &rarr; Series A inside ~12 months.<br>
+      ACCELERATION: Lightspeed re-upping inside 6 months is the cleanest possible institutional signal.<br>
+      PEER COMPARISON: Patronus AI took $3M Seed (Mar 2024) &rarr; $17M Series A (Aug 2024). Judgment hit $32M total at the same Series A stage &mdash; ~50% bigger Series A at younger founder ages.
+    </p>
+  </section>
 
-  <h2>Companies Founded</h2>
-  <ul><li>Judgment Labs — AI agent behavior monitoring infrastructure (founded 2025, co-founded with Andrew Li and Joseph Sripramong Camyre)</li></ul>
+  <!-- THE COMPANY -->
+  <section>
+    <h2>What Judgment Labs Is</h2>
+    <p>
+      Tagline: <em>&ldquo;The continuous-improvement stack for agents.&rdquo;</em> Self-described as
+      <em>&ldquo;an applied-research lab solving last-mile agent reliability in production.&rdquo;</em>
+      The four product surfaces:
+    </p>
+    <ul>
+      <li><strong>Agent Search</strong> &mdash; behavioral-level query across agent trajectories (not just trace search)</li>
+      <li><strong>Agent Judge</strong> &mdash; create trajectory-level evaluators using <em>harnesses</em> (the design primitive)</li>
+      <li><strong>Behavior Discovery</strong> &mdash; identify failure modes from <em>unlabeled</em> production data</li>
+      <li><strong>AutoRubrics</strong> &mdash; auto-construct evaluation rubrics from verifiable signals</li>
+    </ul>
+    <p>
+      Workflow: Slack alert when agent misbehaves &rarr; agent-swarm triage finds similar failures and narrows root cause
+      &rarr; testing framework validates fix against production cases &rarr; deploy. The differentiator vs LangSmith /
+      Braintrust / Arize is that the product is framed around <strong>shipping fixes</strong>, not building dashboards.
+      The <code>judgeval</code> README explicitly positions itself as &ldquo;the open source post-building layer for
+      agents &mdash; our environment data and evals power agent post-training (RL, SFT) and monitoring.&rdquo; That is
+      the differentiated thesis: <strong>production data as fuel for RL/SFT improvement, not just observability</strong>.
+    </p>
+    <h3>Public Customers (from judgmentlabs.ai + press release)</h3>
+    <ul>
+      <li><strong>E3 Group</strong> (Aqil Naeem, CEO) &mdash; named case study in BW release</li>
+      <li><strong>Monaco</strong> &mdash; CEO testimonial: <em>&ldquo;Awesome, awesome, awesome product. Judgment is the best to work with, you are the most responsive company we&rsquo;ve seen.&rdquo;</em></li>
+      <li><strong>Human Behavior</strong> (Amogh Chaturvedi, CEO) &mdash; <em>&ldquo;SO much better than what we&rsquo;ve tried before. Feels like I finally understand when/where my agents are screwing up.&rdquo;</em></li>
+      <li><strong>Contrario</strong> (Aditya Sood, CTO) &mdash; <em>&ldquo;We love this product. It abstracts the busy work out of our monitoring + evals process.&rdquo;</em></li>
+      <li><strong>Vigil Labs</strong> (Kole Lee, CEO) &mdash; <em>&ldquo;LOVE Judgment. It&rsquo;s like failure detection on autopilot.&rdquo;</em></li>
+    </ul>
+    <h3>Open Source</h3>
+    <ul>
+      <li><a href="https://github.com/JudgmentLabs/judgeval"><code>JudgmentLabs/judgeval</code></a> &mdash; 1,000&star;, 93 forks, 1,750 commits, Apache-2.0, Python. v1.1.0 released <strong>May 11, 2026</strong> (one day before funding announcement)</li>
+      <li>Free tier: 50,000 trace spans + 1,000 evals / month, no credit card</li>
+      <li>Distributed via PyPI as <code>judgeval</code></li>
+    </ul>
+  </section>
 
-  <h2>Current Work</h2>
-  <p>CEO of Judgment Labs, building infrastructure to monitor and improve AI agent behavior in production deployments</p>
+  <!-- COMPETITIVE LANDSCAPE -->
+  <section>
+    <h2>Competitive Landscape</h2>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Company</td><td>Total Raised / Val</td><td>Position</td><td>How Judgment differs</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>LangSmith / LangChain</strong></td><td>$160M / $1.25B (Series B, Oct 2025)</td><td>LangChain-native observability + evals. Deepest framework integration. 12x trace volume YoY</td><td>Locked into LangChain/LangGraph users. Judgment is framework-agnostic and goes post-training, not just eval</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Braintrust</strong></td><td>~$80M Series B / $800M (Iconiq, a16z, Greylock, Elad Gil)</td><td>Eval + observability fused into one workflow. Strongest opinionated DX</td><td>Braintrust = evals-first. Judgment = improvement-first. Different end of the same pipe</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Arize AI + Phoenix</strong></td><td>~$70M Series B+ / $300M+</td><td>Enterprise / regulated industries. Drift detection + OpenTelemetry-native. Mix of classical ML + LLM</td><td>Arize sells to enterprise ML platform teams. Judgment sells to agent-native startups (E3, Monaco, Vigil)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Patronus AI</strong></td><td>~$40M total ($17M Series A, Lightspeed + Notable + Datadog)</td><td>LLM evaluation, hallucination detection, Lynx model. Anthropic eval partner</td><td><strong>Same Lightspeed partner space</strong> &mdash; Alcorn invested in both. Patronus is eval-as-a-service; Judgment is the improvement loop</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Langfuse</strong></td><td>Series A YC W23. Open source &rarr; self-hostable leader</td><td>Open-source incumbent for tracing. Most popular OSS option pre-2026</td><td>Judgment&rsquo;s OSS <code>judgeval</code> is the post-training layer (RL/SFT-aware), not just tracing</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Helicone</strong></td><td>YC, Series A</td><td>Drop-in proxy. Simplest install. One-line base-URL change</td><td>Helicone optimizes for ease-of-install. Judgment optimizes for behavioral depth + improvement loop</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Datadog LLM Observability</strong></td><td>Public ($DDOG)</td><td>Enterprise default for Datadog shops. Joseph Camyre&rsquo;s prior employer</td><td>Bundled inside a bigger product. Judgment is point-solution depth. <em>Camyre knows exactly what Datadog can&rsquo;t do</em></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>HumanLoop / Lakera / LangWatch</strong></td><td>Smaller / niche</td><td>Various: PromptOps, security, monitoring</td><td>Each is one wedge of the agent improvement stack; Judgment is the wedge that compounds (production &rarr; better agent)</td></tr>
+    </table>
+    <p style="margin-top:0.5rem; font-size:0.8rem; color:var(--fg-muted);">
+      <strong>Valuation context:</strong> Judgment&rsquo;s $32M total at Seed+A is <em>roughly 8x lower</em> than LangSmith&rsquo;s post-Series B and ~25x below Braintrust&rsquo;s $800M val. They are early. The Series B is the next inflection &mdash; <strong>watch for it Q4 2026 to Q2 2027</strong>. Patronus did Seed &rarr; A in ~5 months and is still at ~$40M total &mdash; Judgment&rsquo;s Series A is already nearly double Patronus&rsquo;s total raise.
+    </p>
+  </section>
 
-  <div class="spike-box" style="margin-top: 1.5rem;">
-    <div class="label">&#9670; Alpha Insight</div>
-    <p>As AI agents move from demos to production, the &#x27;observability layer&#x27; for agent behavior becomes critical infrastructure — analogous to Datadog for DevOps but for AI agents. Judgment Labs is positioning early in this space. The focus on &#x27;production data&#x27; as the flywheel for improving agents is the right insight.</p>
-  </div>
+  <!-- CO-FOUNDERS -->
+  <section>
+    <h2>The Co-Founders &mdash; Childhood Best Friends</h2>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Name</td><td>Role</td><td>Age</td><td>Background</td><td>Signal</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong><a href="https://www.linkedin.com/in/andrewli2403/">Andrew Li</a></strong></td><td>Chief Scientist &amp; Co-Founder</td><td>23</td><td><strong>UC Berkeley</strong>. Early research hire at <strong>Together AI</strong> (Tri Dao&rsquo;s lab). GitHub: <code>andrewli2403</code></td><td>Together AI is the most credentialed inference-systems company in open-source AI. &ldquo;Early research hire&rdquo; under Tri Dao = strong technical pedigree. <strong>Standalone dossier candidate.</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong><a href="https://www.linkedin.com/in/josephscamyre/">Joseph Sripramong Camyre</a></strong></td><td>CTO &amp; Co-Founder</td><td>23</td><td><strong>UCLA</strong>. Systems engineer at <strong>Datadog</strong>, built large-scale infrastructure. Bio: &ldquo;<em>I am interested in building backend infrastructure.</em>&rdquo;</td><td>Datadog is the canonical observability company &mdash; building Judgment as the agent-equivalent is on-thesis. Less aligned with the repo&rsquo;s research-track filter but is the right infra co-founder profile</td></tr>
+    </table>
+    <p class="small muted" style="margin-top:0.5rem;">
+      <strong>The childhood-friends frame matters.</strong> Per Business Wire: <em>&ldquo;Judgment&rsquo;s three founders &mdash;
+      CEO Alex Shan (22), Chief Scientist Andrew Li (23), and CTO Joseph Camyre (23) &mdash; have been best friends since
+      childhood.&rdquo;</em> This is a Rippling / Ramp / Brex pattern: the deepest founder cohesion comes from pre-college
+      relationships. Investor reads it as low co-founder breakup risk &rarr; faster decisions &rarr; tighter execution.
+    </p>
+  </section>
+
+  <!-- IN HIS OWN WORDS -->
+  <section>
+    <h2>In His Own Words</h2>
+    <ul>
+      <li>&ldquo;We set out to build Judgment because the teams building deep agents didn&rsquo;t have tools that understood what their agents were actually doing.&rdquo; &mdash; <em>BW funding release, May 12, 2026</em></li>
+      <li>&ldquo;At @JudgmentLabs we&rsquo;ve had the opportunity to work with countless AI agent teams building fantastic products. Measuring and understanding agent behavior has become a bottleneck to agent improvement...&rdquo; &mdash; <em>@alexshander03, RT&rsquo;d by Lightspeed&rsquo;s James Alcorn (status 1975615337388515470)</em></li>
+      <li>From the <code>judgeval</code> README: &ldquo;The open source post-building layer for agents. Our environment data and evals power agent post-training (RL, SFT) and monitoring.&rdquo;</li>
+      <li>James Alcorn (Lightspeed, lead investor): &ldquo;Judgment is solving the hardest problem in the agent stack &mdash; how do you measure and improve something that thinks, plans, uses tools, and remembers?&rdquo;</li>
+      <li>Aqil Naeem (E3 Group CEO, customer): &ldquo;Judgment is in a different league; we can see exactly where our agents make mistakes, fix them, and measure the lift.&rdquo;</li>
+    </ul>
+  </section>
+
+  <!-- NETWORK MAP -->
+  <section>
+    <h2>Network Map</h2>
+    <h3>Investors (relationship layer)</h3>
+    <ul>
+      <li><strong>Lightspeed Venture Partners</strong> &mdash; led Seed + Series A. Partner: <a href="https://lsvp.com/team-member/james-alcorn/">James Alcorn</a> (joined Lightspeed July 2024 from Zetta Venture Partners; backed Weaviate, Argilla, Cleric at Zetta). Also leads Patronus AI + Virtue AI. Alcorn&rsquo;s thesis: AI infra &ldquo;from inception through Series A.&rdquo; <em>This is his anchor thesis area</em></li>
+      <li><strong>Nova Global</strong> &mdash; emerging AI fund participant</li>
+      <li><strong>SV Angel</strong> &mdash; classic seed signal (Ron Conway / David Lee network)</li>
+      <li><strong>Valor Equity Partners</strong> &mdash; same investor as <a href="abhay-mitra.html">Effective AI (Abhay Mitra)</a> and Nirvana Insurance in the repo. Strong infrastructure thesis</li>
+      <li><strong>Dynamic</strong> &mdash; smaller cap, likely strategic</li>
+    </ul>
+    <h3>Stanford NLP / SAIL Layer</h3>
+    <ul>
+      <li><strong><a href="https://nlp.stanford.edu/~manning/">Chris Manning</a></strong> &mdash; Shan&rsquo;s research advisor. Co-author on 3 of his 5 papers. Listed by the repo as one of the <em>critical labs for alumni tracking</em></li>
+      <li><strong>John Bauer</strong> &mdash; Manning&rsquo;s senior research engineer / Stanza maintainer. Shan&rsquo;s actual day-to-day collaborator. Co-author on 3 papers including Osiris (the Judgment prelude)</li>
+      <li><strong>Other Manning lab alumni cluster</strong> &mdash; Eric Mitchell (Cartesia), Sidd Karamcheti, Niklas Muennighoff (repo), Kawin Ethayarajh (repo), Avanika Narayan (repo) etc. Shan is in the &ldquo;newest cohort&rdquo; layer</li>
+    </ul>
+    <h3>Together AI / Tri Dao Layer (via Andrew Li)</h3>
+    <ul>
+      <li><strong>Tri Dao</strong> &mdash; Chief Scientist Together AI, Princeton. Repo&rsquo;s critical lab list. Andrew Li was an early research hire</li>
+      <li><strong>Sukjun Hwang</strong> (repo) co-authored Hydra (NeurIPS 2024) with Tri Dao &mdash; potential 2nd-degree network node for the agent improvement / SSM research overlap</li>
+    </ul>
+  </section>
+
+  <!-- BACKGROUND -->
+  <section>
+    <h2>Background</h2>
+    <p>
+      Full legal name <strong>Alexander Zhang Shan</strong> &mdash; per Stanford Profiles. Chinese-American (surname
+      &ldquo;Zhang&rdquo; is one of the most common Han Chinese family names; the &ldquo;Shan&rdquo; surname is also
+      Chinese). Public bio describes him as &ldquo;Junior at Stanford studying CS and Math&rdquo; (from a 2022&ndash;23
+      Juniper Networks context), which places his Stanford undergrad start around 2020&ndash;2021. He was admitted to
+      the Stanford CS MS in <strong>Autumn 2022</strong> &mdash; consistent with a coterminal (BS+MS) path.
+    </p>
+    <p>
+      <strong>Internships:</strong> Juniper Networks (RCA Copilot work, eventually IEEE ICC 2025 publication w/ Singh,
+      Yavatkar, Sridhar &mdash; also a US patent application 18/400,481). Hinkal (per Google search context, likely a
+      crypto/ZK startup engineering stint). Stanford Artificial Intelligence Laboratory (SAIL) is the main research
+      home &mdash; not a course affiliation.
+    </p>
+    <p>
+      <strong>No public competition results</strong> (USACO Finalists 2020&ndash;25 lists don&rsquo;t surface him by
+      name; AMC/AIME records are not public for him). He is a <em>research-track</em> profile, not a competition-track
+      profile. The signal is the Manning co-authorship at age 19&ndash;20, not a medal.
+    </p>
+    <p>
+      <strong>GitHub <a href="https://github.com/SecroLoL">@SecroLoL</a></strong>: bio &ldquo;Stanford CS&rdquo;
+      affiliated with Stanford AI Lab. 11 public repos. Pinned: <code>stanfordnlp/stanza</code> (7.8k&star; &mdash;
+      he&rsquo;s a contributor, not owner), <code>stanfordnlp/en-worldwide-newswire</code> (NER dataset),
+      <code>pointer_gen_summarization</code>, <code>slp_tools</code>. The presence of a forked Stanza contribution
+      with PR-merge achievements (&ldquo;Pull Shark x3&rdquo;) confirms his role as an actual Manning-lab engineer,
+      not a name on a paper.
+    </p>
+    <p>
+      <strong>Twitter @alexshander03</strong>: low-volume, predominantly Judgment-Labs-related. Most public footprint
+      is via the company account <a href="https://x.com/JudgmentLabs">@JudgmentLabs</a> and via Lightspeed&rsquo;s
+      James Alcorn (@JamesAlcorn94) retweeting him. This is a build-mode founder, not a thought-leadership-mode founder.
+    </p>
+  </section>
+
+  <!-- TIMING & SIGNALS -->
+  <section>
+    <h2>Timing &amp; Signals</h2>
+    <ul>
+      <li><strong>Status:</strong> Just closed Series A (May 12, 2026). Not raising. Capitalized for ~18 months at typical 25-person Series A burn</li>
+      <li><strong>Hiring:</strong> Active &mdash; Judgment Labs has a public AI Engineer SF role posted on LinkedIn (job ID 4259937271). First 10 hires will set the cultural floor</li>
+      <li><strong>Series B watch:</strong> Q4 2026 &ndash; Q2 2027 most likely window. Lightspeed will defend; next round likely brings in growth-stage (a16z, Sequoia, IVP, GC) if metrics support</li>
+      <li><strong>Customer expansion:</strong> Watch for non-startup customers (Stripe, Notion, Cursor, Anthropic-tier) &mdash; current public customer list is all small agent-native startups</li>
+      <li><strong>OSS momentum:</strong> <code>judgeval</code> at 1,000&star; on launch month is solid but not viral. Compare to LangChain&rsquo;s 100k+. Open question whether OSS becomes growth engine or stays demo surface</li>
+      <li><strong>Co-founder departures:</strong> None expected; childhood-friends triad is the lowest-risk founder structure</li>
+    </ul>
+  </section>
+
+  <!-- RISKS -->
+  <section>
+    <h2>Risks</h2>
+    <ul>
+      <li><strong>Crowded category.</strong> Agent observability has 10+ funded competitors. Differentiation thesis (&ldquo;continuous improvement, not just monitoring&rdquo;) is real but easy for LangSmith / Braintrust to copy &mdash; both have RL post-training stories now</li>
+      <li><strong>Pricing power unclear.</strong> 50K free trace spans / 1K evals/month free tier is generous. Need ARR clarity that wasn&rsquo;t disclosed in the announcement</li>
+      <li><strong>Datadog could swallow this.</strong> The acquirer is sitting right there. Datadog already has LLM Observability and a public-market multiple. Camyre is ex-Datadog so the relationship exists &mdash; could be exit, could be problem</li>
+      <li><strong>Manning advisor relationship is informal.</strong> No equity in the company (per the brief). Could complicate IP positioning if Osiris-related work becomes core IP</li>
+      <li><strong>Age + first-time founder execution.</strong> CEO is 22. The team is technically deep but unproven at scale. The first 25 hires will determine whether they break through Series A &rarr; B</li>
+      <li><strong>OSS-vs-commercial tension.</strong> <code>judgeval</code> is Apache-2.0. Need to choose where the moat lives &mdash; hosted product, enterprise features, or fine-tuning loop &mdash; before a fork happens</li>
+    </ul>
+  </section>
+
+  <!-- OUTREACH -->
+  <section>
+    <h2>Outreach</h2>
+    <p class="small muted">
+      <strong>Best channel:</strong> Email <a href="mailto:azshan@stanford.edu">azshan@stanford.edu</a> (Stanford
+      account still active per profiles.stanford.edu). Backup: Twitter DM <a href="https://x.com/alexshander03">@alexshander03</a>.
+      Avoid LinkedIn &mdash; he&rsquo;s about to get spammed.
+    </p>
+    <p class="small muted">
+      <strong>Frame:</strong> Just-closed congratulations. Show landscape understanding (LangSmith/Patronus/Arize). Reference
+      specific Manning lineage / Osiris paper. Offer deal-flow swap, not pitch. He just closed &mdash; he doesn&rsquo;t need
+      capital, he needs deal flow and signal back.
+    </p>
+
+    <div class="spike-box" style="margin-top:0.75rem; border-left-color: var(--tier2);">
+      <div class="label">&#9670; Draft Outreach (Email)</div>
+      <p style="font-size:0.88rem; white-space:pre-line;">Subject: $32M + a question on the improvement loop
+
+Alex &mdash; congrats on the round. Doubling Lightspeed inside 6 months is the cleanest signal in the category right now.
+
+I&rsquo;m Vansh &mdash; I invest at inception out of BoldCap. I&rsquo;ve been mapping the agent-improvement space for ~9 months &mdash; LangSmith on the LangChain rails, Braintrust as evals-first, Arize at the enterprise end, Patronus on the eval/guardrail wedge (also Alcorn-backed, which I noticed). What&rsquo;s clear is that everyone except you treats this as a dashboard problem &mdash; your &ldquo;post-building layer&rdquo; framing in the judgeval README is the actually-load-bearing insight, and Osiris last May reads like the academic prelude to it. The bet I&rsquo;d make is that production-data-&rarr;-RL is where the value compounds, not eval-as-a-service.
+
+I&rsquo;m not pitching capital &mdash; you just closed. I&rsquo;m always trying to source the best research-track founders coming out of Stanford NLP, and I&rsquo;d love to swap notes / send anything in your space your way. Free for a 20-min call next week?
+
+&mdash; Vansh</p>
+    </div>
+
+    <p class="small muted" style="margin-top:0.5rem;">
+      <strong>Why this works:</strong> Opens with the specific signal he&rsquo;s most proud of (Lightspeed re-up).
+      Names 4 competitors with accurate positioning. References his actual README phrasing (&ldquo;post-building
+      layer&rdquo;). Calls out Osiris &mdash; nobody else will mention this. Closes with deal-flow swap framing,
+      not pitch (per CLAUDE.md outreach SOP). Sign-off as Vansh, no formal close.
+    </p>
+  </section>
+
+  <!-- NOTES -->
+  <section>
+    <h2>Notes</h2>
+    <ul>
+      <li class="small">Full name: Alexander Zhang Shan. Age 22 (per BW). Chinese-American</li>
+      <li class="small">Stanford undergrad ~2020 &rarr; coterminal MS Autumn 2022. Stanford email <code>azshan@stanford.edu</code> still active</li>
+      <li class="small">Google Scholar: 19 cites, h-index 3, 5 papers. Three w/ Manning, two w/ Juniper Networks team</li>
+      <li class="small">Co-author list: J. Bauer (3x), C.D. Manning (3x), R. Carlson, C. Kiddon, E. Yeh, R. Singh, T. Banka, R. Yavatkar, T. Sridhar, R. Gupta, J. Kaur</li>
+      <li class="small">US Patent App. 18/400,481 (Determining critical logs for network applications, Jan 2025) &mdash; from Juniper work</li>
+      <li class="small">Judgment Labs founding date: Tracxn says 2024, Lightspeed initial check &ldquo;less than 6 months&rdquo; before May 12, 2026 = ~Nov 2025</li>
+      <li class="small">Public launch: <code>judgmentlabs</code> LinkedIn post May 12, 2025 (one year before Series A, on the same calendar date)</li>
+      <li class="small"><code>judgeval</code> v1.1.0 shipped <strong>May 11, 2026</strong> &mdash; one day before the funding announcement (orchestrated launch)</li>
+      <li class="small">Customer voices (Monaco, Human Behavior, Contrario, Vigil Labs) confirm product is in production with multiple agent-native startups</li>
+      <li class="small">Lightspeed&rsquo;s James Alcorn is the partner of record. Also leads Patronus AI + Virtue AI &mdash; this is his agent-infra portfolio</li>
+      <li class="small">Andrew Li (UC Berkeley, Together AI) is a separate dossier candidate &mdash; Together AI cohort is high-signal</li>
+      <li class="small">Joseph Camyre (UCLA, Datadog) less aligned with repo&rsquo;s research filter but is the right infra-CTO profile for this company</li>
+      <li class="small">Manning advisor relationship is &ldquo;research, not formal&rdquo; per brief &mdash; not a board seat, not equity</li>
+      <li class="small">No public competition results (USACO, AMC, IOI). Research-track profile</li>
+      <li class="small">Repo cross-links: <a href="ronak-malde.html">Ronak Malde</a> (Stanford CS &rarr; stealth founder), <a href="ishan-khare.html">Ishan Khare</a> (Stanford CS MS / Hazy Research), <a href="avanika-narayan.html">Avanika Narayan</a> (Stanford CS / Hazy), <a href="ally-nakamura.html">Ally Nakamura</a> (Stanford AI Lab, stealth), <a href="abhay-mitra.html">Abhay Mitra</a> (Valor portfolio peer)</li>
+    </ul>
+  </section>
 
   <footer>
-    researched: 2026-03 &middot; delta institute cohort 1 &middot; <a href="../index.html">back to index</a>
+    researched: 2026-05-13 &middot; T0 active pursuit &middot; <a href="../index.html">back to index</a>
   </footer>
 
 </body>
