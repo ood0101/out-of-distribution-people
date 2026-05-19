@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "last_updated": "2026-03-30",
+  "last_updated": "2026-05-19",
   "last_triaged": "2026-03-30",
-  "total": 25,
+  "total": 53,
   "people": [
     {
       "name": "Guodong Zhang",
@@ -260,6 +260,286 @@
       "current_company": "Modal Labs",
       "status": "researched",
       "triaged_date": "2026-03-30"
+    },
+    {
+      "name": "Albert Gu",
+      "current_company": "First author of S4 (Structured State Spaces) and co-author of Mamba",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Assistant Professor of Machine Learning at CMU. PhD from Stanford under Chris Re. S4 pioneered structured state space models for long sequences. Mamba achieved 5x higher throughput than Transformers w",
+      "source_dossier": "",
+      "spike_signal": "arXiv top-cited + ICLR Best Paper + Chris Re lab",
+      "status": "pending"
+    },
+    {
+      "name": "Prafulla Dhariwal",
+      "current_company": "Technical Fellow; led GPT-4o (Omni team); co-created DALL-E 2, Jukebox, Glow",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Researcher at OpenAI. Paper demonstrated diffusion models surpassing GANs in image quality with classifier guidance, achieving FID 2.97 on ImageNet 128x128. Also co-authored Jukebox and DALL-E.",
+      "source_dossier": "",
+      "spike_signal": "arXiv top-cited + Openai + IMO Gold",
+      "status": "pending"
+    },
+    {
+      "name": "Andrew He",
+      "current_company": "ICPC World Finals 2019 (43rd) — 2nd Place, North America Champion",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Software Engineer | Elite competitive programmer. IOI gold medalist. Hired alongside Gennady Korotkevich as part of Cognition's strategy to staff with top algorithmic talent.",
+      "source_dossier": "",
+      "spike_signal": "Codeforces IGM + Code Jam Finals + Cognition",
+      "status": "pending"
+    },
+    {
+      "name": "Aditya Grover",
+      "current_company": "UCLA",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "PhD Student (Alumni) | Collaborated with Yang Song on score-based generative models. Now faculty at UCLA.",
+      "source_dossier": "",
+      "spike_signal": "Schmidt AI2050 Fellow + Jiaming Song lab + Pieter Abbeel lab",
+      "status": "pending"
+    },
+    {
+      "name": "Kevin Sun",
+      "current_company": "ICPC World Finals 2019 (43rd) — 2nd Place, North America Champion",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Facebook Hacker Cup 2019 finalist, rank 19 (ksun48); also 2020 rank 14, 2022 rank 16, 2023 rank 13, 2024 rank 5",
+      "source_dossier": "",
+      "spike_signal": "Codeforces IGM + Code Jam Finals + ICPC World Finals",
+      "status": "pending"
+    },
+    {
+      "name": "Karan Goel",
+      "current_company": "Co-author of S4 (Structured State Spaces) and related SSM work",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Stanford PhD under Chris Re. Co-authored S4 with Albert Gu. Also contributed to data-centric AI and efficient sequence modeling. S4 launched the structured state space model revolution.",
+      "source_dossier": "",
+      "spike_signal": "arXiv top-cited + ICLR Best Paper + Chris Re lab",
+      "status": "pending"
+    },
+    {
+      "name": "Scott Wu",
+      "current_company": "Legendary Grandmaster",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Co-founder & CEO | Harvard graduate. Three-time IOI gold medalist (2011 Mathcounts national champion, 3rd place Google Code Jam 2021, Forbes 30 Under 30 2020). Co-founded and was CTO of Lunchclub (201",
+      "source_dossier": "",
+      "spike_signal": "Codeforces IGM + Code Jam Finals + Cognition",
+      "status": "pending"
+    },
+    {
+      "name": "Allen Liu",
+      "current_company": "Hertz Fellow 2021 — Computer Science, MIT",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "University: MIT. Next highest in 2016, 2017, 2018, 2019. PhD EECS at MIT, advised by Ankur Moitra. Miller Postdoc at UC Berkeley (Fall 2025). NSF GRFP + Hertz Fellow. Research in learning theory, quan",
+      "source_dossier": "",
+      "spike_signal": "Hertz Fellow + IMO Gold + Putnam Fellow",
+      "status": "pending"
+    },
+    {
+      "name": "Walden Yan",
+      "current_company": "Neo Scholar 2022 — Co-founder of Cognition AI",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Co-founder & CPO | Harvard dropout (Thiel Fellow 2024). IOI 2020 gold medalist, placed 19th globally. Brief stint at Anysphere (Cursor IDE, June–August 2023). Previously co-founded DeepReason web3 sec",
+      "source_dossier": "",
+      "spike_signal": "Cognition + Neo Scholar + Thiel Fellow",
+      "status": "pending"
+    },
+    {
+      "name": "Dan Hendrycks",
+      "current_company": "First author of MMLU benchmark, GELU activation, and co-author of Representation",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Center for AI Safety. UC Berkeley PhD under Jacob Steinhardt and Dawn Song. MMLU is the standard LLM benchmark. GELU activation used in all modern transformers. Co-authored representation engineering",
+      "source_dossier": "",
+      "spike_signal": "arXiv top-cited + MATS Fellow + Open Phil AI Fellow",
+      "status": "pending"
+    },
+    {
+      "name": "Riku Kawasaki",
+      "current_company": "ICPC World Finals 2021 (45th) — 3rd Place; 2019 (43rd) — 3rd Place",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Team: University of Tokyo. Two-time top-3 finisher across different teams (Gifted Infants 2019, ___ KING ___ 2021).",
+      "source_dossier": "",
+      "spike_signal": "Codeforces IGM + Code Jam Finals + ICPC World Finals",
+      "status": "pending"
+    },
+    {
+      "name": "Gennady Korotkevich",
+      "current_company": "Legendary Grandmaster",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Software Engineer | Widely regarded as the greatest competitive programmer of all time. Six consecutive IOI gold medals. Won Google Code Jam 2014–2020. First person to break 4000 rating on Codeforces",
+      "source_dossier": "",
+      "spike_signal": "Codeforces IGM + Code Jam Finals + Cognition",
+      "status": "pending"
+    },
+    {
+      "name": "Vikram Sundar",
+      "current_company": "Hertz Fellow 2020 — Computational Biology, MIT",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "University: Harvard. Next 10 highest in 2015.",
+      "source_dossier": "",
+      "spike_signal": "Hertz Fellow + Putnam Fellow + USAMO Winner",
+      "status": "pending"
+    },
+    {
+      "name": "Yang Song",
+      "current_company": "First author of Score-Based Generative Modeling through SDEs",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "At Meta Superintelligence Labs. PhD from Stanford under Stefano Ermon. Invented foundational concepts in score-based diffusion models. Score-SDE paper unified score matching and diffusion models. Cons",
+      "source_dossier": "",
+      "spike_signal": "arXiv top-cited + Apple Scholar + ICLR Best Paper",
+      "status": "pending"
+    },
+    {
+      "name": "Jiaming Song",
+      "current_company": "First author of DDIM (Denoising Diffusion Implicit Models)",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Chief Scientist | Joined Jul 2023 from NVIDIA's Deep Imagination Research group (Picasso project). PhD Stanford 2016–2022 (advised by Stefano Ermon). Created DDIM (denoising diffusion implicit models)",
+      "source_dossier": "",
+      "spike_signal": "arXiv top-cited + Luma + ICLR Best Paper",
+      "status": "pending"
+    },
+    {
+      "name": "Chenlin Meng",
+      "current_company": "First author of SDEdit (image editing with stochastic differential equations)",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Co-founder / CTO | BA Math Stanford, CS PhD candidate Stanford (advisor: Stefano Ermon). Stanford Interdisciplinary Graduate Fellowship. Cadence Women in Technology Scholarship. Published 30+ papers i",
+      "source_dossier": "",
+      "spike_signal": "arXiv top-cited + Pika + ICML Best Paper",
+      "status": "pending"
+    },
+    {
+      "name": "Shengjia Zhao",
+      "current_company": "Stanford University / Meta Superintelligence Labs",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Research Scientist (formerly) | Co-created ChatGPT and GPT-4. Left July 2025 to become Chief Scientist at Meta Superintelligence Lab.",
+      "source_dossier": "",
+      "spike_signal": "Openai + ICLR Best Paper + Jiaming Song lab",
+      "status": "pending"
+    },
+    {
+      "name": "Krishna Pillutla",
+      "current_company": "University of Washington",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Paper: 'MAUVE: Measuring the Gap Between Neural Text and Human Text using Divergence Frontiers' — NeurIPS 2021 Outstanding Paper",
+      "source_dossier": "",
+      "spike_signal": "Schmidt AI2050 Fellow + Sham Kakade lab + NeurIPS Best Paper",
+      "status": "pending"
+    },
+    {
+      "name": "Jason Liu",
+      "current_company": "Creator of Instructor (9k+ stars), structured outputs for LLMs",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Created Instructor, the most popular library for structured outputs from LLMs. Indie consultant at 567 Studio. Previously AI/ML/DS at Stitch Fix, Facebook, NYU. Based in New York.",
+      "source_dossier": "",
+      "spike_signal": "Deepak Pathak lab + oss builders + sts finalists",
+      "status": "pending"
+    },
+    {
+      "name": "Dhruv Shah",
+      "current_company": "Deepmind",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "RAIL alumni. ViNT navigation. Co-founded Physical Intelligence.",
+      "source_dossier": "",
+      "spike_signal": "Deepmind + IPhO Gold + Sergey Levine lab",
+      "status": "pending"
+    },
+    {
+      "name": "Ajay Jain",
+      "current_company": "UC Berkeley",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Paper: 'DreamFusion: Text-to-3D using 2D Diffusion' — ICLR 2023 Outstanding Paper",
+      "source_dossier": "",
+      "spike_signal": "ICLR Best Paper + Pieter Abbeel lab",
+      "status": "pending"
+    },
+    {
+      "name": "Neal Wu",
+      "current_company": "Legendary Grandmaster",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Facebook Hacker Cup 2020 finalist, rank 11; also 2021-2024 finalist; consistent top-25 placer",
+      "source_dossier": "",
+      "spike_signal": "Codeforces IGM + Cognition + Hacker Cup Finals",
+      "status": "pending"
+    },
+    {
+      "name": "Daniel Zhu",
+      "current_company": "Siebel Scholar 2024 — UC Berkeley, Electrical Engineering & Computer Science",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "University: MIT. 3-time Fellow (2019, 2021, 2022). One of the most decorated recent competitors — Fellow every year he competed. Blair Magnet HS alum.",
+      "source_dossier": "",
+      "spike_signal": "Siebel Scholar + IMO Gold + IPhO Gold",
+      "status": "pending"
+    },
+    {
+      "name": "Tiancheng Lou",
+      "current_company": "Legendary Grandmaster",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Handle: ACRush. Max rating 3047. Org: Pony.ai. Co-founder of Pony.ai. 2x IOI gold, 2x ACM-ICPC champion.",
+      "source_dossier": "",
+      "spike_signal": "Codeforces IGM + Code Jam Finals + Hacker Cup Finals",
+      "status": "pending"
+    },
+    {
+      "name": "Sherry Yang",
+      "current_company": "Research Scientist; world models, video generation, foundation models for roboti",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Paper: 'Learning Interactive Real-World Simulators' — ICLR 2024 Outstanding Paper",
+      "source_dossier": "",
+      "spike_signal": "ICLR Best Paper + ex-Openai + Pieter Abbeel lab",
+      "status": "pending"
+    },
+    {
+      "name": "Nicholas Carlini",
+      "current_company": "First author of extracting training data from LLMs and adversarial ML",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Google DeepMind. Demonstrated that LLMs memorize and regurgitate training data including PII. Also pioneer of adversarial examples. Carlini & Wagner attack is a standard robustness benchmark. Top AI s",
+      "source_dossier": "",
+      "spike_signal": "arXiv top-cited + Anthropic + MATS Fellow",
+      "status": "pending"
+    },
+    {
+      "name": "Zifan Wang",
+      "current_company": "USAMO Winner (Top 12)",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "CAIS researcher. Published on representation engineering, HarmBench, certifiable robustness.",
+      "source_dossier": "",
+      "spike_signal": "Dan Hendrycks lab + USAMO/MOP + USAMO Winner",
+      "status": "pending"
+    },
+    {
+      "name": "Andreas Blattmann",
+      "current_company": "First author of Stable Video Diffusion and Video LDM (Align your Latents)",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Co-founder & CTO | PhD from LMU Munich. Co-creator of Stable Diffusion and latent diffusion models. Previously at Stability AI as research scientist. Research assistant at LMU Munich under Björn Ommer",
+      "source_dossier": "",
+      "spike_signal": "arXiv top-cited + Black Forest + ICML Best Paper",
+      "status": "pending"
     }
   ]
 }
