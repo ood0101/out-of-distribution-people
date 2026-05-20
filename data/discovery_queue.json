@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "last_updated": "2026-05-19",
+  "last_updated": "2026-05-20",
   "last_triaged": "2026-03-30",
-  "total": 53,
+  "total": 103,
   "people": [
     {
       "name": "Guodong Zhang",
@@ -539,6 +539,506 @@
       "one_liner": "Co-founder & CTO | PhD from LMU Munich. Co-creator of Stable Diffusion and latent diffusion models. Previously at Stability AI as research scientist. Research assistant at LMU Munich under Björn Ommer",
       "source_dossier": "",
       "spike_signal": "arXiv top-cited + Black Forest + ICML Best Paper",
+      "status": "pending"
+    },
+    {
+      "name": "Aviral Kumar",
+      "current_company": "PhD/postdoc at Sergey Levine lab",
+      "departure_signal": false,
+      "indian_origin": true,
+      "one_liner": "Top-cited cs.CL first/last author (last 5 years)",
+      "source_dossier": "",
+      "spike_signal": "top 10% of conference-orals · top 10% of fellow-schmidt-ai2050 · top arXiv nlp · NeurIPS/ICML/ICLR Oral · New tenure-track faculty",
+      "status": "pending"
+    },
+    {
+      "name": "Yi Tay",
+      "current_company": "ex-Deepmind",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "First author of 'Efficient Transformers: A Survey' and UL2 (Unifying Language Learning)",
+      "source_dossier": "",
+      "spike_signal": "top 10% of conference-orals · top 10% of arxiv-first-authors · arXiv top-cited · NeurIPS/ICML/ICLR Oral · ICLR Best Paper",
+      "status": "pending"
+    },
+    {
+      "name": "Yoshua Bengio",
+      "current_company": "PhD/postdoc at Mila lab",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Top-cited cs.LG first/last author (last 5 years)",
+      "source_dossier": "",
+      "spike_signal": "top 10% of conference-orals · top 10% of lab-mila · top arXiv ml-core · NeurIPS/ICML/ICLR Oral · MATS Fellow",
+      "status": "pending"
+    },
+    {
+      "name": "Percy Liang",
+      "current_company": "Together",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Top-cited cs.LG first/last author (last 5 years)",
+      "source_dossier": "",
+      "spike_signal": "top 10% of conference-orals · top 10% of fellow-schmidt-ai2050 · top arXiv ml-core · top arXiv nlp · Together",
+      "status": "pending"
+    },
+    {
+      "name": "Sean Welleck",
+      "current_company": "Carnegie Mellon University",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Carnegie Mellon University",
+      "source_dossier": "",
+      "spike_signal": "top 10% of arc-prize · top 10% of lab-sam-bowman · arc prize · NeurIPS/ICML/ICLR Oral · New tenure-track faculty",
+      "status": "pending"
+    },
+    {
+      "name": "Sergey Levine",
+      "current_company": "Physical Intelligence",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Top-cited cs.RO first/last author (last 5 years)",
+      "source_dossier": "",
+      "spike_signal": "top 10% of conference-orals · top 10% of arxiv-robotics · top arXiv robotics · Physical Intelligence · NeurIPS/ICML/ICLR Oral",
+      "status": "pending"
+    },
+    {
+      "name": "Luke Zettlemoyer",
+      "current_company": "Meta Fair",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Top-cited cs.DC first/last author (last 5 years)",
+      "source_dossier": "",
+      "spike_signal": "top 10% of conference-orals · top 10% of fellow-schmidt-ai2050 · top arXiv infra · top arXiv nlp · Meta Fair",
+      "status": "pending"
+    },
+    {
+      "name": "William Peebles",
+      "current_company": "Research Scientist; co-lead and head of Sora video model; DiT (Diffusion Transfo",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Research Scientist; co-lead and head of Sora video model; DiT (Diffusion Transformer) author",
+      "source_dossier": "",
+      "spike_signal": "top 10% of company-openai · top 10% of arxiv-first-authors · arXiv top-cited · Openai · ex-Openai",
+      "status": "pending"
+    },
+    {
+      "name": "Yuan Yao",
+      "current_company": "Gold medal IMO 2016 (42 pts)",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Gold medal IMO 2016 (42 pts)",
+      "source_dossier": "",
+      "spike_signal": "top 10% of usamo-winners · top 10% of imo-gold · IMO Gold · Putnam Fellow · USAMO/MOP",
+      "status": "pending"
+    },
+    {
+      "name": "Quoc V. Le",
+      "current_company": "Deepmind",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Top-cited cs.LG first/last author (last 5 years)",
+      "source_dossier": "",
+      "spike_signal": "top 10% of arxiv-nlp · top 10% of lab-jason-wei · top arXiv ml-core · top arXiv nlp · Deepmind",
+      "status": "pending"
+    },
+    {
+      "name": "Ashwin Sah",
+      "current_company": "Gold medal IMO 2016 (35 pts)",
+      "departure_signal": false,
+      "indian_origin": true,
+      "one_liner": "Gold medal IMO 2016 (35 pts)",
+      "source_dossier": "",
+      "spike_signal": "top 10% of usamo-winners · top 10% of imo-gold · IMO Gold · Putnam Fellow · USAMO/MOP",
+      "status": "pending"
+    },
+    {
+      "name": "Kaiming He",
+      "current_company": "Deepmind",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "First author of MAE (Masked Autoencoders Are Scalable Vision Learners)",
+      "source_dossier": "",
+      "spike_signal": "top 10% of conference-orals · top 10% of csrankings-new-faculty · top arXiv cv · arXiv top-cited · Deepmind",
+      "status": "pending"
+    },
+    {
+      "name": "Pieter Abbeel",
+      "current_company": "PhD/postdoc at Andrew Ng lab",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Top-cited cs.RO first/last author (last 5 years)",
+      "source_dossier": "",
+      "spike_signal": "top 10% of conference-orals · top 10% of arxiv-robotics · top arXiv robotics · NeurIPS/ICML/ICLR Oral · Andrew Ng lab",
+      "status": "pending"
+    },
+    {
+      "name": "Connor W. Coley",
+      "current_company": "Massachusetts Institute of Technology",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Massachusetts Institute of Technology",
+      "source_dossier": "",
+      "spike_signal": "top 10% of conference-orals · top 10% of csrankings-new-faculty · NeurIPS/ICML/ICLR Oral · New tenure-track faculty · Schmidt AI2050",
+      "status": "pending"
+    },
+    {
+      "name": "Yilun Du",
+      "current_company": "First author of Composable Diffusion Models and energy-based generative models",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "First author of Composable Diffusion Models and energy-based generative models",
+      "source_dossier": "",
+      "spike_signal": "top 10% of csrankings-new-faculty · top 10% of arxiv-first-authors · top arXiv ai-general · arXiv top-cited · top arXiv robotics",
+      "status": "pending"
+    },
+    {
+      "name": "Simon Mo",
+      "current_company": "Anyscale",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "PhD Student",
+      "source_dossier": "",
+      "spike_signal": "top 10% of lab-joseph-gonzalez · top 10% of oss-high-star · Anyscale · Joseph Gonzalez lab · oss high star",
+      "status": "pending"
+    },
+    {
+      "name": "Ilya Sutskever",
+      "current_company": "Co-Founder and Chief Scientist; led AlphaGo precursors, GPT series, ChatGPT",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Co-Founder and Chief Scientist; led AlphaGo precursors, GPT series, ChatGPT",
+      "source_dossier": "",
+      "spike_signal": "top 10% of conference-orals · top 10% of company-openai · Openai · Ssi · NeurIPS/ICML/ICLR Oral",
+      "status": "pending"
+    },
+    {
+      "name": "Yiding Jiang",
+      "current_company": "Google PhD Fellow 2022 — Machine Learning",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Google PhD Fellow 2022 — Machine Learning",
+      "source_dossier": "",
+      "spike_signal": "top 10% of conference-orals · top 10% of fellow-google-phd · NeurIPS/ICML/ICLR Oral · fellow google phd · Zico Kolter lab",
+      "status": "pending"
+    },
+    {
+      "name": "Jared Kaplan",
+      "current_company": "Co-Founder and Chief Science Officer; discovered neural scaling laws (Kaplan et ",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Co-Founder and Chief Science Officer; discovered neural scaling laws (Kaplan et al.)",
+      "source_dossier": "",
+      "spike_signal": "top 10% of company-anthropic · top 10% of industry-anthropic · Anthropic · ex-Anthropic · NeurIPS Best Paper",
+      "status": "pending"
+    },
+    {
+      "name": "John Schulman",
+      "current_company": "Research Scientist; invented PPO; co-created ChatGPT RLHF pipeline; now doing al",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Research Scientist; invented PPO; co-created ChatGPT RLHF pipeline; now doing alignment research",
+      "source_dossier": "",
+      "spike_signal": "top 10% of industry-anthropic · top 10% of lab-pieter-abbeel · Anthropic · Openai · NeurIPS/ICML/ICLR Oral",
+      "status": "pending"
+    },
+    {
+      "name": "Maarten Sap",
+      "current_company": "ex-Ai2",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "PhD Student (graduated, UW)",
+      "source_dossier": "",
+      "spike_signal": "top 10% of csrankings-new-faculty · top 10% of lab-yejin-choi · New tenure-track faculty · ex-Ai2 · Yejin Choi lab",
+      "status": "pending"
+    },
+    {
+      "name": "Jacob Steinhardt",
+      "current_company": "USAMO Winner (Top 12)",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "USAMO Winner (Top 12)",
+      "source_dossier": "",
+      "spike_signal": "top 10% of usamo-winners · strong academic output (h=48) · NeurIPS/ICML/ICLR Oral · Schmidt AI2050 · Christopher Manning lab",
+      "status": "pending"
+    },
+    {
+      "name": "Florian Tramer",
+      "current_company": "ETH Zürich",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "ETH Zürich",
+      "source_dossier": "",
+      "spike_signal": "top 10% of icml-best · top 10% of lab-percy-liang · ICML Best Paper · Percy Liang lab",
+      "status": "pending"
+    },
+    {
+      "name": "Hao Zhang",
+      "current_company": "PhD/postdoc at Ion Stoica lab",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "PhD Student (graduated 2007)",
+      "source_dossier": "",
+      "spike_signal": "top 10% of csrankings-new-faculty · top 10% of lab-ion-stoica · New tenure-track faculty · Ion Stoica lab · Jitendra Malik lab",
+      "status": "pending"
+    },
+    {
+      "name": "Mark Chen",
+      "current_company": "Chief Research Officer; previously SVP Research; co-lead on Codex, GPT-4",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Chief Research Officer; previously SVP Research; co-lead on Codex, GPT-4",
+      "source_dossier": "",
+      "spike_signal": "top 10% of neurips-best · top 10% of icml-best · top arXiv cv · Openai · ICML Best Paper",
+      "status": "pending"
+    },
+    {
+      "name": "Noam Shazeer",
+      "current_company": "Author of Multi-Query Attention, SwiGLU, co-author of Transformer ('Attention Is",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Author of Multi-Query Attention, SwiGLU, co-author of Transformer ('Attention Is All You Need')",
+      "source_dossier": "",
+      "spike_signal": "top 10% of arxiv-first-authors · top 10% of usamo-winners · arXiv top-cited · top arXiv ml-core · Deepmind",
+      "status": "pending"
+    },
+    {
+      "name": "Stuart Russell",
+      "current_company": "CHAI / UC Berkeley",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "CHAI / UC Berkeley",
+      "source_dossier": "",
+      "spike_signal": "top 10% of conference-orals · top 10% of lab-stuart-russell · NeurIPS/ICML/ICLR Oral · Schmidt AI2050 · Stuart Russell lab",
+      "status": "pending"
+    },
+    {
+      "name": "Carl Schildkraut",
+      "current_company": "Next Highest (top 16)",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Next Highest (top 16)",
+      "source_dossier": "",
+      "spike_signal": "top 10% of usamo-winners · top 10% of putnam-fellows · Putnam Fellow · USAMO Winner",
+      "status": "pending"
+    },
+    {
+      "name": "Stefano Ermon",
+      "current_company": "PhD/postdoc at Jiaming Song lab",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Oral at NeurIPS 2024",
+      "source_dossier": "",
+      "spike_signal": "top 10% of conference-orals · top 10% of lab-jiaming-song · NeurIPS/ICML/ICLR Oral · Jiaming Song lab · Yang Song lab",
+      "status": "pending"
+    },
+    {
+      "name": "Ranjay Krishna",
+      "current_company": "University of Washington",
+      "departure_signal": false,
+      "indian_origin": true,
+      "one_liner": "University of Washington",
+      "source_dossier": "",
+      "spike_signal": "top 10% of lab-percy-liang · strong academic output (h=36) · New tenure-track faculty · ex-Ai2 · Fei Fei Li lab",
+      "status": "pending"
+    },
+    {
+      "name": "Gopal Goel",
+      "current_company": "STS 2021 Top 40 Finalist",
+      "departure_signal": false,
+      "indian_origin": true,
+      "one_liner": "STS 2021 Top 40 Finalist",
+      "source_dossier": "",
+      "spike_signal": "top 10% of ipho-gold-cs · top 10% of usamo-mop · IPhO Gold · sts finalists · USAMO/MOP",
+      "status": "pending"
+    },
+    {
+      "name": "Natasha Jaques",
+      "current_company": "University of Washington",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "University of Washington",
+      "source_dossier": "",
+      "spike_signal": "top 10% of lab-sergey-levine · strong academic output (h=32) · NeurIPS/ICML/ICLR Oral · New tenure-track faculty · Schmidt AI2050",
+      "status": "pending"
+    },
+    {
+      "name": "Jascha Sohl-Dickstein",
+      "current_company": "Principal Scientist (departed to Anthropic)",
+      "departure_signal": true,
+      "indian_origin": false,
+      "one_liner": "Principal Scientist (departed to Anthropic)",
+      "source_dossier": "",
+      "spike_signal": "top 10% of conference-orals · top 10% of lab-yang-song · NeurIPS/ICML/ICLR Oral · ex-Deepmind · Yang Song lab",
+      "status": "pending"
+    },
+    {
+      "name": "Kristina Toutanova",
+      "current_company": "ex-Msr",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "PhD Student (Alumni)",
+      "source_dossier": "",
+      "spike_signal": "top 10% of industry-msr · top 10% of lab-christopher-manning · NeurIPS/ICML/ICLR Oral · ex-Msr · Christopher Manning lab",
+      "status": "pending"
+    },
+    {
+      "name": "Zico Kolter",
+      "current_company": "Siebel Scholar 2022 — CMU, Computer Science",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Siebel Scholar 2022 — CMU, Computer Science",
+      "source_dossier": "",
+      "spike_signal": "top 10% of conference-orals · top 10% of fellow-siebel · NeurIPS/ICML/ICLR Oral · Siebel Scholar · Andrew Ng lab",
+      "status": "pending"
+    },
+    {
+      "name": "Nick Ryder",
+      "current_company": "OpenAI",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "OpenAI",
+      "source_dossier": "",
+      "spike_signal": "top 10% of company-openai · top 10% of neurips-best · Openai · NeurIPS Best Paper",
+      "status": "pending"
+    },
+    {
+      "name": "Kristen Grauman",
+      "current_company": "Research Scientist, FAIR; Professor at UT Austin",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Research Scientist, FAIR; Professor at UT Austin",
+      "source_dossier": "",
+      "spike_signal": "top 10% of conference-orals · top 10% of industry-meta-fair · Meta Fair · NeurIPS/ICML/ICLR Oral · ex-Meta Fair",
+      "status": "pending"
+    },
+    {
+      "name": "Yann LeCun",
+      "current_company": "VP & Chief AI Scientist (departed to found own startup)",
+      "departure_signal": true,
+      "indian_origin": false,
+      "one_liner": "VP & Chief AI Scientist (departed to found own startup)",
+      "source_dossier": "",
+      "spike_signal": "top 10% of conference-orals · top 10% of industry-meta-fair · Meta Fair · NeurIPS/ICML/ICLR Oral · ex-Meta Fair",
+      "status": "pending"
+    },
+    {
+      "name": "Rafael Rafailov",
+      "current_company": "PhD/postdoc at Chelsea Finn lab",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Top-cited cs.AI safety subset first/last author (last 5 years)",
+      "source_dossier": "",
+      "spike_signal": "strong academic output (h=25) · 15,360 citations · top arXiv ai-general · top arXiv safety · NeurIPS/ICML/ICLR Oral",
+      "status": "pending"
+    },
+    {
+      "name": "Martin Wattenberg",
+      "current_company": "PhD/postdoc at Been Kim lab",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Oral at ICLR 2023",
+      "source_dossier": "",
+      "spike_signal": "top 10% of conference-orals · top 10% of lab-been-kim · NeurIPS/ICML/ICLR Oral · Been Kim lab",
+      "status": "pending"
+    },
+    {
+      "name": "Yonatan Oren",
+      "current_company": "Stanford University",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Stanford University",
+      "source_dossier": "",
+      "spike_signal": "top 10% of conference-orals · top 10% of iclr-best · NeurIPS/ICML/ICLR Oral · ICLR Best Paper",
+      "status": "pending"
+    },
+    {
+      "name": "Michael Zhang",
+      "current_company": "Together",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Oral at ICML 2022",
+      "source_dossier": "",
+      "spike_signal": "top 10% of lab-chris-re · strong academic output (h=30) · Together · NeurIPS/ICML/ICLR Oral · Andrew Ng lab",
+      "status": "pending"
+    },
+    {
+      "name": "Anima Anandkumar",
+      "current_company": "Top-cited cs.RO first/last author (last 5 years)",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Top-cited cs.RO first/last author (last 5 years)",
+      "source_dossier": "",
+      "spike_signal": "top 10% of conference-orals · top 10% of fellow-schmidt-ai2050 · top arXiv robotics · NeurIPS/ICML/ICLR Oral · Schmidt AI2050",
+      "status": "pending"
+    },
+    {
+      "name": "Shibani Santurkar",
+      "current_company": "Research Scientist; robustness, distribution shift, representation learning",
+      "departure_signal": false,
+      "indian_origin": true,
+      "one_liner": "Research Scientist; robustness, distribution shift, representation learning",
+      "source_dossier": "",
+      "spike_signal": "strong academic output (h=30) · 36,406 citations · NeurIPS/ICML/ICLR Oral · fellow google phd · ex-Openai",
+      "status": "pending"
+    },
+    {
+      "name": "Tri Dao",
+      "current_company": "Together",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "First author of FlashAttention, FlashAttention-2, FlashAttention-3; co-author of Mamba",
+      "source_dossier": "",
+      "spike_signal": "top 10% of lab-chris-re · strong academic output (h=27) · arXiv top-cited · top arXiv ml-core · top arXiv nlp",
+      "status": "pending"
+    },
+    {
+      "name": "Aaron Lou",
+      "current_company": "Stanford University",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Stanford University",
+      "source_dossier": "",
+      "spike_signal": "top 10% of icml-best · top 10% of lab-stefano-ermon · NeurIPS/ICML/ICLR Oral · ICML Best Paper · Stefano Ermon lab",
+      "status": "pending"
+    },
+    {
+      "name": "Ryan Park",
+      "current_company": "Knight-Hennessy Scholar 2024 — PhD Genetics + MD Medicine, Stanford",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Knight-Hennessy Scholar 2024 — PhD Genetics + MD Medicine, Stanford",
+      "source_dossier": "",
+      "spike_signal": "top 10% of fellow-thiel · top 10% of fellow-knight-hennessy · fellow knight hennessy · Thiel Fellow",
+      "status": "pending"
+    },
+    {
+      "name": "Grace Gee",
+      "current_company": "Thiel Fellow 2014",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Thiel Fellow 2014",
+      "source_dossier": "",
+      "spike_signal": "top 10% of fellow-thiel · undergrad/young with h=47 · Thiel Fellow",
+      "status": "pending"
+    },
+    {
+      "name": "Jason Weston",
+      "current_company": "Research Scientist, FAIR NYC",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Research Scientist, FAIR NYC",
+      "source_dossier": "",
+      "spike_signal": "top 10% of industry-meta-fair · top 10% of company-meta-fair · Meta Fair · ex-Meta Fair · Bernhard Scholkopf lab",
+      "status": "pending"
+    },
+    {
+      "name": "Karl Pertsch",
+      "current_company": "PhD/postdoc at Chelsea Finn lab",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "First author of OpenVLA and Octo robot foundation models",
+      "source_dossier": "",
+      "spike_signal": "top 10% of lab-chelsea-finn · PhD with h=31 (rising) · arXiv top-cited · Chelsea Finn lab · Sergey Levine lab",
       "status": "pending"
     }
   ]
