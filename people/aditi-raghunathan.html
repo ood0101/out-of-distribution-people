@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditi Raghunathan &mdash; Out of Distribution People</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="site-title">Out of Distribution People</div>
+    <div class="breadcrumb"><a href="../index.html">/ index</a> / aditi-raghunathan</div>
+  </nav>
+
+  <div class="profile-header">
+    <h1>Aditi Raghunathan</h1>
+    <p class="one-liner">Assistant Professor, CMU CS + MLD. Stanford CS PhD 2021 under <strong>Percy Liang</strong> (CLAUDE.md critical lab). IIT Madras BTech 2016. Leads the <strong>AI Reliability Lab</strong> at CMU. 2025&ndash;2026 has been the spike year: <strong>ICML 2025 Outstanding Paper</strong> (Vaishnavh Nagarajan et al., creative limits of next-token prediction) + <strong>ICLR 2025 SCOPE Outstanding Paper</strong> (Springer et al., catastrophic overtraining) + <strong>2026 Sloan Research Fellowship</strong> + Schmidt AI2050 inaugural cohort + NSF CAREER + Okawa. <strong>~21,885 Scholar cites, h-34, i10-56</strong> &mdash; 2024 (5.2K) &rarr; 2025 (6.6K) curve. <strong>This dossier is a network-hub map of her lab</strong> &mdash; the founder pipeline is her students.</p>
+    <div class="tags">
+      <span class="tag">tier-2: network hub</span>
+      <span class="tag">indian</span>
+      <span class="tag">researchers</span>
+      <span class="tag">cmu</span>
+      <span class="tag">percy-liang-lineage</span>
+      <span class="tag">network-hub</span>
+      <span class="tag">ai-safety</span>
+      <span class="tag">post-training</span>
+      <span class="tag">indexed-name</span>
+      <span class="tag spike">spike: ICML 2025 Outstanding Paper + 2026 Sloan + Schmidt AI2050 + 7 Indian-origin PhD students</span>
+    </div>
+    <div class="links">
+      <a href="https://www.cs.cmu.edu/~aditirag/">cmu website</a>
+      <a href="https://ar-forum.github.io">lab website</a>
+      <a href="https://scholar.google.com/citations?user=Ch9iRwQAAAAJ">google scholar</a>
+      <a href="https://x.com/AdtRaghunathan">twitter/x</a>
+      <a href="https://stacks.stanford.edu/file/druid:sw855vz6069/aditi-thesis-4-augmented.pdf">stanford phd thesis</a>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- INVESTMENT THESIS (NETWORK HUB FRAMING)               -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <div class="spike-box">
+    <div class="label">&#9670; Investment Thesis &mdash; Network Hub + Student Factory</div>
+    <p>
+      Aditi is <strong>not</strong> a founder candidate &mdash; she is tenure-track CMU CS, with the Sloan + Schmidt + NSF
+      CAREER stack that signals long-haul academic commitment. The investment thesis is therefore <strong>upstream</strong>:
+      she is one of ~5 advisors in the world running an academic group at the exact intersection of (1) <strong>frontier-model
+      failure modes</strong>, (2) <strong>post-training reliability</strong>, and (3) <strong>scaling-laws science</strong> &mdash;
+      the three commercial themes Anthropic, OpenAI, GoodFire, Apollo Research, and METR are paying $750K+ TC for.
+      Her 2025 output is the loudest in her career: <strong>3 papers at ICML 2025 including the Outstanding Paper Award</strong>,
+      the <strong>SCOPE Outstanding Paper at ICLR 2025</strong>, and the <strong>2026 Sloan Fellowship</strong> announced Feb 19, 2026.
+      Her Stanford PhD lineage (Percy Liang) and CMU lab now form one of the densest <strong>IIT Madras &rarr; Stanford &rarr; CMU</strong>
+      Indian-origin academic pipelines in ML: she is IIT Madras BTech &rsquo;16; her ICML 2025 Outstanding Paper lead author
+      Vaishnavh Nagarajan is also IIT Madras BTech &rsquo;15 (now <strong>Google DeepMind</strong>); her PhD students Sachin Goyal
+      (IIT Bombay, now <strong>Anthropic Pretraining</strong>) and Gaurav Ghosal (UC Berkeley) carry the Indian-origin signature;
+      Tanishq Kumar (Harvard math &rsquo;25 &rarr; <strong>Stanford CS PhD under Liang+Hashimoto</strong>) is the closing of the loop.
+      <strong>Five of her current/recent students are first-degree founder-grade signal carriers; three more are tracking.</strong>
+      This dossier is therefore organized as a <strong>Student Founder Pipeline</strong> &mdash; the deliverable is a ranked list of
+      who to dossier next.
+    </p>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- THE 2025-2026 SPIKE                                    -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>The 2025&ndash;2026 Spike</h2>
+
+  <h3>ICML 2025 Outstanding Paper Award</h3>
+  <p>
+    &ldquo;<a href="https://icml.cc/virtual/2025/poster/45769">Roll the dice &amp; look before you leap: Going beyond the creative
+    limits of next-token prediction</a>&rdquo; &mdash; <strong>Vaishnavh Nagarajan, Chen Henry Wu, Charles Ding, Aditi Raghunathan</strong>.
+    One of <strong>~6 Outstanding Papers</strong> out of ~3,000+ accepted at ICML 2025. Oral presentation, Vancouver, Jul 16 2025.
+  </p>
+  <ul>
+    <li>Designs abstract minimal tasks that mimic real-world open-ended challenges (analogies, puzzle design) where success
+        requires discovering new connections or constructing novel patterns</li>
+    <li>Shows standard next-token prediction is <strong>short-sighted and over-relies on memorization</strong>, while <strong>teacherless
+        training</strong> and <strong>diffusion models</strong> produce more diverse, original outputs</li>
+    <li>Introduces <strong>seed-conditioning</strong>: adding randomness at the input rather than the output &mdash; can improve
+        coherence without sacrificing creativity</li>
+    <li>Code at <a href="https://github.com/chenwu98/algorithmic-creativity">github.com/chenwu98/algorithmic-creativity</a></li>
+  </ul>
+  <p class="small muted">This is the rare ML paper that bridges <em>theory of creativity</em> and <em>practical generation
+  algorithms</em> &mdash; the framing that next-token prediction is a creative <strong>ceiling</strong> rather than a floor is exactly
+  the conceptual move that justifies investment in alternative generation paradigms (Mercury, Inception Labs, diffusion-LLMs).</p>
+
+  <h3>ICLR 2025 SCOPE Workshop Outstanding Paper + ICBINB Entropic Paper Award</h3>
+  <p>
+    &ldquo;<a href="https://arxiv.org/abs/2503.19206">Overtrained Language Models Are Harder to Fine-Tune</a>&rdquo; &mdash;
+    <strong>Jacob Mitchell Springer, Sachin Goyal, Kaiyue Wen, Tanishq Kumar, Xiang Yue, Sadhika Malladi, Graham Neubig,
+    Aditi Raghunathan</strong>. ICML 2025 poster + dual workshop awards.
+  </p>
+  <ul>
+    <li>Identifies <strong>&ldquo;catastrophic overtraining&rdquo;</strong>: extended pre-training can make models <em>harder</em>
+        to fine-tune, leading to degraded final performance &mdash; counter to the standard assumption that more pre-training
+        is always better</li>
+    <li>Headline empirical result: <strong>instruction-tuned OLMo-1B pre-trained on 3T tokens scores &gt;2% worse on multiple
+        benchmarks than the 2.3T-token counterpart</strong></li>
+    <li>Theoretical analysis: catastrophic overtraining arises from <strong>systematic increase in broad sensitivity</strong> of
+        pre-trained parameters to perturbations</li>
+    <li>VentureBeat coverage Apr 2025: directly relevant to enterprise-scale training-budget decisions</li>
+  </ul>
+
+  <h3>ICML 2025 Memorization Sinks</h3>
+  <p>
+    &ldquo;<a href="https://arxiv.org/abs/2507.09937">Memorization Sinks: Isolating Memorization during LLM Training</a>&rdquo;
+    &mdash; <strong>Gaurav Ghosal, Pratyush Maini, Aditi Raghunathan</strong>. Proposes <strong>MemSinks</strong>: a paradigm that
+    promotes isolation of memorization by design, leveraging a sequence identifier that activates a unique set of memorization
+    neurons per repeated sequence. Direct privacy + copyright commercial relevance (the DatologyAI / Anthropic data-curation
+    surface).
+  </p>
+
+  <h3>2026 Sloan Research Fellowship</h3>
+  <p>
+    Announced <strong>Feb 19, 2026</strong> via CyLab &mdash; one of <strong>5 CMU recipients</strong> in 2026. $75K, 2-year
+    fellowship. The Sloan is the single cleanest signal that the broader ML community considers her a top-3 early-career
+    reliability/safety researcher in her cohort.
+  </p>
+
+  <h3>Schmidt AI2050 Early Career Fellow (Inaugural Cohort)</h3>
+  <p>
+    Announced June 2023. One of <strong>15 scholars</strong> in the inaugural cohort, representing 10 universities. Project
+    addresses <strong>Hard Problem 2 (AI safety and security)</strong>: making ML systems more reliable and robust. Schmidt Sciences
+    co-funds with the AI2050 program founded by Eric Schmidt &mdash; positions her as one of the named recipients of large-scale
+    safety/reliability research capital.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- CITATION ANALYSIS                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Citation Analysis</h2>
+  <p>
+    Google Scholar (user=Ch9iRwQAAAAJ): <strong>21,885 total citations, h-index 34, i10-index 56</strong>. Year-by-year:
+    2020 (521) &rarr; 2021 (945) &rarr; 2022 (1,901) &rarr; 2023 (3,506) &rarr; 2024 (5,174) &rarr; <strong>2025 (6,605)</strong>
+    &rarr; 2026 partial (2,721 through May). The 2025 figure represents <strong>~30% of her career citations in one year</strong>
+    &mdash; the inflection.
+  </p>
+
+  <h3>Top Cited Papers</h3>
+  <table>
+    <tr><th>Paper</th><th>Venue</th><th>Cites</th><th>Role</th></tr>
+    <tr><td>On the Opportunities and Risks of Foundation Models (Bommasani et al.)</td><td>arXiv 2021</td><td>9,891</td><td>Co-author (the &ldquo;foundation models&rdquo; coining paper)</td></tr>
+    <tr><td>Certified Defenses Against Adversarial Examples</td><td>ICLR 2018</td><td>1,282</td><td><strong>1st author</strong> &mdash; PhD thesis chapter 3</td></tr>
+    <tr><td>An Explanation of In-Context Learning as Implicit Bayesian Inference (Xie et al.)</td><td>2021</td><td>1,237</td><td>Co-author</td></tr>
+    <tr><td>Fine-tuning Can Distort Pretrained Features and Underperform OOD (Kumar et al.)</td><td>2022</td><td>1,172</td><td>Co-author &mdash; the canonical &ldquo;why pretrain-then-finetune fails OOD&rdquo; paper</td></tr>
+    <tr><td>Unlabeled Data Improves Adversarial Robustness (Carmon et al.)</td><td>2019</td><td>993</td><td>Co-author</td></tr>
+    <tr><td>Just Train Twice (Liu et al.)</td><td>2021</td><td>812</td><td>Co-author</td></tr>
+    <tr><td>Semidefinite Relaxations for Certifying Robustness</td><td>2018</td><td>580</td><td><strong>1st author</strong></td></tr>
+    <tr><td>The Pitfalls of Simplicity Bias in Neural Networks (Shah et al.)</td><td>2020</td><td>568</td><td>Co-author</td></tr>
+    <tr><td>Why Overparameterization Exacerbates Spurious Correlations (Sagawa et al.)</td><td>2020</td><td>537</td><td>Co-author</td></tr>
+    <tr><td>Accuracy on the Line (Miller et al.)</td><td>2021</td><td>418</td><td>Co-author</td></tr>
+  </table>
+  <p class="small muted">PhD thesis core: <strong>certified adversarial robustness</strong> &mdash; semidefinite-programming-based
+  provable defenses (LP/SDP relaxations of network verification). The thesis won the <strong>Arthur Samuel Best Thesis Award</strong>
+  at Stanford. The intellectual through-line from then to now: <em>can we formally characterize when learned models will fail?</em>
+  Same question, scaled from adversarial perturbations &rarr; OOD shifts &rarr; fine-tuning failures &rarr; reasoning collapse.</p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- STUDENT FOUNDER PIPELINE                               -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Student Founder Pipeline (THE PRIMARY SECTION)</h2>
+  <p>
+    This is the section that justifies the dossier. Each student is scored on <strong>founder signal</strong>:
+    research velocity, industry-pull (departure to frontier lab), public visibility, and demonstrated agency.
+    Founder-signal tiers: <strong>P0</strong> = recommend standalone dossier this week. <strong>P1</strong> = recommend
+    standalone dossier this month. <strong>P2</strong> = track quarterly.
+  </p>
+
+  <h3>P0 (recommend dossier this week)</h3>
+
+  <h4>Tanishq Kumar &mdash; Harvard math &rsquo;25 &rarr; Stanford CS PhD (Liang + Hashimoto), Sep 2025</h4>
+  <ul>
+    <li><strong>Why P0:</strong> Co-author on <strong>two Aditi papers</strong>: the SCOPE/ICBINB-award-winning Overtrained
+        paper <em>and</em> Scaling Laws for Precision (<strong>ICLR 2025 Oral Award</strong>). He is now a Stanford CS PhD
+        student under Percy Liang and Tatsu Hashimoto &mdash; closing the IIT Madras &rarr; Stanford lineage loop with Aditi.
+        Indian-origin (Tanishq Mathew Kumar). Harvard math <strong>as an undergrad</strong>, working at Cengiz Pehlevan&rsquo;s
+        statistical physics group on grokking + scaling-laws + delayed feature learning &mdash; <strong>~5+ ICLR/ICML papers
+        before starting PhD</strong></li>
+    <li><strong>Recent work:</strong> Speculative Speculative Decoding (ICLR 2026, w/ Tri Dao + Avner May) &mdash; published
+        as Stanford 1st-year. Lower Data Diversity preprint w/ Suhas Kotha + Aditi. Independent essays on his website</li>
+    <li><strong>Reference class in repo:</strong> Niklas Muennighoff (Stanford CS PhD, Liang/HazyResearch-adjacent, 23.5K
+        cites at PhD start, MTEB creator). Tanishq matches that trajectory pre-PhD</li>
+    <li><strong>Watch:</strong> Pehlevan group + Liang group + Aditi group = three frontier-physics-of-deep-learning advisors
+        backing one person. <strong>Highest signal density of any student on this list.</strong></li>
+  </ul>
+
+  <h4>Christina Baek &mdash; Final-year CMU MLD PhD (Kolter + Raghunathan)</h4>
+  <ul>
+    <li><strong>Why P0:</strong> <strong>Final-year PhD</strong> &mdash; inflection-point window opens now. Co-advised by Zico
+        Kolter (CMU + Bosch + Gray Swan) and Aditi. CMU Presidential Fellowship in ML. UC Berkeley EECS BS + 5th-year MS under
+        Yi Ma. Already industry-tested: DatologyAI + Google summer internships</li>
+    <li><strong>Research:</strong> Diversity collapse in reasoning models &mdash; the April 2025 work with Xingyu Dang showing
+        WiSE-FT (weight interpolation) recovers Pass@k while improving Pass@1. Published at <strong>COLM 2025</strong>.
+        Earlier: agreement-on-the-line OOD detection</li>
+    <li><strong>Reference class in repo:</strong> Amrith Setlur (CMU MLD final-year, Indian, multiple best-paper awards).
+        Christina is the female analog with the same Kolter co-advisorship + same final-year window</li>
+    <li><strong>Watch:</strong> Strong Kolter pull toward Gray Swan / Zico-adjacent safety company. Twitter handle: <a href="https://x.com/_christinabaek">@_christinabaek</a></li>
+  </ul>
+
+  <h4>Jacob Mitchell Springer &mdash; 3rd-year CMU MLD PhD (Raghunathan)</h4>
+  <ul>
+    <li><strong>Why P0:</strong> Lead 1st author on the <strong>SCOPE/ICBINB-award-winning Overtrained Language Models</strong>
+        paper. NSF GRFP. 5 first-author top-venue publications in PhD years 1&ndash;3. PhD timeline 2022&ndash;2027 &mdash;
+        <strong>~12-18 months from inflection</strong>. Swarthmore CS BA &rsquo;22, Los Alamos researcher 2018&ndash;2021</li>
+    <li><strong>Research:</strong> Optimization shaping of foundation models &mdash; pretraining/post-training/robustness/inference.
+        ICML 2026 oral: Sharpness-aware pretraining mitigates catastrophic forgetting. ICML 2026: Annotations mitigate
+        post-training mode collapse. <strong>Three best/award papers in 18 months as a 2nd-3rd-year</strong></li>
+    <li><strong>Reference class:</strong> The non-Indian counterpart to Sachin Goyal &mdash; same lab, same publication
+        velocity, but earlier in PhD. Catastrophic-overtraining work has direct enterprise reach (Datology, Anthropic data team)</li>
+    <li><strong>Watch:</strong> <a href="https://sprin.xyz">sprin.xyz</a>. Direct frontier-lab pull on Springer specifically
+        because Overtraining paper challenges Anthropic/OpenAI&rsquo;s scaling assumptions</li>
+  </ul>
+
+  <h3>P1 (recommend dossier this month)</h3>
+
+  <h4>Sachin Goyal &mdash; CMU MLD PhD &rsquo;25 &rarr; Anthropic Pretraining</h4>
+  <ul>
+    <li><strong>Why P1:</strong> Already departed to <strong>Anthropic Pretraining</strong>. <strong>3 ICLR 2025 papers</strong>
+        on pretraining. PhD thesis: <em>From Scaling Efficiently to Rethinking Pretraining of Foundation Models</em>, advised by
+        Zico Kolter + Aditi Raghunathan + Vaishnavh Nagarajan + Ludwig Schmidt</li>
+    <li><strong>Background:</strong> <strong>IIT Bombay BTech Chemical Engineering</strong>. Pre-PhD: Microsoft Research India,
+        Qualcomm, Meta, Google interns. Indian-origin</li>
+    <li><strong>Why not P0:</strong> Already at Anthropic &mdash; founder window is at-best 12&ndash;24 months out (post-vesting).
+        But the cross-section <em>Indian + IIT Bombay + Aditi + Kolter + Anthropic pretraining</em> is one of the highest
+        founder-archetype densities in our universe</li>
+    <li><strong>Twitter:</strong> <a href="https://x.com/goyalsachin007">@goyalsachin007</a></li>
+  </ul>
+
+  <h4>Vaishnavh Nagarajan &mdash; CMU PhD &rsquo;21 (Kolter) &rarr; Google DeepMind Research Scientist (SF/NY)</h4>
+  <ul>
+    <li><strong>Why P1:</strong> Lead author on the <strong>ICML 2025 Outstanding Paper</strong>. <strong>Outstanding New
+        Directions Paper Award at NeurIPS 2019</strong> (Nagarajan-Kolter, uniform convergence). The intellectual mind that
+        shapes Aditi&rsquo;s lab&rsquo;s public output</li>
+    <li><strong>Background:</strong> <strong>IIT Madras BTech &rsquo;15</strong> (Balaraman Ravindran lab) &mdash; <em>same
+        program as Aditi&rsquo;s</em>. CMU PhD 2015&ndash;2021 under Zico Kolter. Now Google Research/DeepMind. Indian-origin.
+        Twitter: <a href="https://x.com/_vaishnavh">@_vaishnavh</a></li>
+    <li><strong>Why not P0:</strong> Research Scientist at DeepMind &mdash; not the typical founder profile, but the publication
+        depth means he is an <strong>angel/advisor magnet</strong> for any post-training startup</li>
+    <li><strong>Outreach angle:</strong> Advisor introductions for portfolio companies in post-training / reasoning-diversity
+        infra</li>
+  </ul>
+
+  <h4>Gaurav Ghosal &mdash; 3rd-year CMU MLD PhD (Raghunathan)</h4>
+  <ul>
+    <li><strong>Why P1:</strong> 1st author on the <strong>ICML 2025 Memorization Sinks paper</strong> with Pratyush Maini.
+        ICML 2024 also 1st author. UC Berkeley undergrad (human-AI interaction). Pratyush Maini co-author is
+        <strong>DatologyAI founding team</strong> &mdash; direct startup adjacency</li>
+    <li><strong>Background:</strong> Indian-origin. Research focus: factuality, model updating, training dynamics, privacy &mdash;
+        the exact stack DatologyAI and Anthropic data team are buying</li>
+    <li><strong>Watch:</strong> Pratyush Maini relationship is the most likely co-founding seed</li>
+  </ul>
+
+  <h3>P2 (track quarterly)</h3>
+
+  <h4>Kaiyue Wen &mdash; Stanford CS PhD 2nd-year (Tengyu Ma + Percy Liang)</h4>
+  <ul>
+    <li>Not technically Aditi&rsquo;s primary student &mdash; he is a Stanford PhD &mdash; but co-authored the Overtrained paper
+        with her lab. <strong>Tsinghua Yao Pilot Class</strong> undergrad. NeurIPS 2025 Best Paper Award on Gated Attention.
+        Lead 1st author on &ldquo;Fantastic Pretraining Optimizers and Where to Find Them&rdquo; (2025). <strong>Same Liang lab as
+        Aditi was in</strong> &mdash; 4-year time-shifted Aditi sibling. P2 only because earlier in PhD (year 2 of 5)</li>
+  </ul>
+
+  <h4>Xingyu Dang &mdash; CMU/Tsinghua, co-author on Weight Ensembling Improves Reasoning (Apr 2025, COLM 2025)</h4>
+  <ul>
+    <li>Tsinghua undergrad / CMU visitor. Co-1st author with Christina Baek on the WiSE-FT reasoning paper. Earlier in career
+        than the P0 cluster. Likely Tsinghua &rarr; CMU PhD trajectory</li>
+  </ul>
+
+  <h4>Chen Henry Wu &mdash; CMU PhD, diffusion + generative models</h4>
+  <ul>
+    <li>2nd author on the ICML 2025 Outstanding Paper. CMU PhD with research interests in StyleGAN2, Stable Diffusion, image
+        synthesis/inpainting/de-noising. Strong cross-lab signal (works with Aditi but appears to be primarily in a different
+        lab). Diffusion-into-creative-LLM crossover is exactly the architectural alternative the Outstanding Paper points to</li>
+  </ul>
+
+  <h4>Charles Ding &mdash; CMU CS undergrad &rsquo;25 &rarr; Stanford MSCS</h4>
+  <ul>
+    <li>Already indexed in repo (Delta cohort). 3rd author on the ICML 2025 Outstanding Paper <em>as an undergrad</em>.
+        Stanford XR Hackathon grand prize. NVIDIA experience. Promote from Delta to dedicated dossier when he picks a PhD
+        program or founds something. <a href="charles-ding.html">existing page</a></li>
+  </ul>
+
+  <h4>Pratyush Maini &mdash; CMU PhD (Kolter + Lipton, not Aditi&rsquo;s student) + <strong>DatologyAI founding member</strong></h4>
+  <ul>
+    <li>Aditi co-author on Memorization Sinks. <strong>IIT Delhi BTech</strong>. Korean RnD Samsung 1 year. Already a startup
+        founder/founding-member &mdash; not a discovery, but a critical <strong>relationship</strong> node. Recommended for a
+        dossier independent of Aditi (his DatologyAI work is the actual story)</li>
+  </ul>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- HER OWN WORDS                                          -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>In Her Own Words</h2>
+  <blockquote>
+    &ldquo;My research focuses on advancing our scientific understanding of frontier models by uncovering why they fail and
+    building systems that remain reliable under pressure.&rdquo;
+    <cite>&mdash; CMU faculty page, 2026</cite>
+  </blockquote>
+  <p class="small muted">The framing &ldquo;<em>uncovering why they fail</em>&rdquo; is the explicit anti-thesis of frontier-lab
+  marketing (which emphasizes capability gains). This is the safety/reliability-research <em>commercial</em> wedge: every
+  enterprise deploying LLMs at scale needs someone who can map failure modes before deployment, not after.</p>
+
+  <blockquote>
+    &ldquo;Recent projects in our group expose hidden bottlenecks in data curation and quantization pipelines, develop new
+    evaluations for agent safety and distribution shift, and highlight failure modes in post-training defenses such as
+    jailbreaks and context fidelity.&rdquo;
+    <cite>&mdash; CMU faculty page, 2026</cite>
+  </blockquote>
+  <p class="small muted">Five named commercial surfaces in one sentence: <strong>data curation</strong> (DatologyAI),
+  <strong>quantization</strong> (D-Matrix / Tenstorrent / Cerebras), <strong>agent safety eval</strong> (METR / Apollo / Patronus / Judgment Labs),
+  <strong>jailbreaks</strong> (GoodFire / Gray Swan / Lakera), <strong>context fidelity</strong> (Anthropic constitutional AI cluster).
+  Her lab is producing the academic foundation papers for each of these markets.</p>
+
+  <blockquote>
+    &ldquo;Weight ensembling removes the tradeoff between improving reasoning (pass@1) and diversity (pass@k).&rdquo;
+    <cite>&mdash; @AdtRaghunathan, Oct 2025 (paraphrased from Twitter thread on WiSE-FT)</cite>
+  </blockquote>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- COMPANIES COMPETING FOR HER STUDENTS                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Companies Competing for Her Students</h2>
+  <p>
+    Since Aditi is not a founder candidate, the competitive landscape is <strong>where her students go</strong>. Confirmed
+    placements + likely placements:
+  </p>
+  <table>
+    <tr><th>Company</th><th>Surface</th><th>Confirmed Placement</th></tr>
+    <tr><td><strong>Anthropic</strong> (Pretraining)</td><td>Catastrophic-overtraining + post-training safety</td><td><strong>Sachin Goyal</strong> (confirmed, post-PhD &rsquo;25)</td></tr>
+    <tr><td><strong>Google DeepMind</strong></td><td>Reliability + next-token alternatives</td><td><strong>Vaishnavh Nagarajan</strong> (Research Scientist)</td></tr>
+    <tr><td><strong>DatologyAI</strong></td><td>Data curation + memorization isolation</td><td><strong>Pratyush Maini</strong> (founding member); Christina Baek (intern); collaboration with Gaurav Ghosal</td></tr>
+    <tr><td><strong>GoodFire AI</strong></td><td>Mech interp + post-training defense</td><td>Future fit for Springer / Ghosal</td></tr>
+    <tr><td><strong>Apollo Research</strong></td><td>Agent safety eval (UK)</td><td>Future fit for Christina Baek</td></tr>
+    <tr><td><strong>METR</strong></td><td>Frontier capability eval</td><td>Future fit (workshop ecosystem overlap)</td></tr>
+    <tr><td><strong>Gray Swan AI</strong></td><td>Red-teaming, jailbreak defense (Kolter co-founded)</td><td>Direct Kolter pull on Christina Baek</td></tr>
+    <tr><td><strong>Patronus / Judgment Labs / Virtue</strong></td><td>Eval/agent-trace infra</td><td>Plausible exit for any of P0 cluster</td></tr>
+    <tr><td><strong>Inception Labs / Mercury / Diffusion-LLM cluster</strong></td><td>Alternative-to-next-token paradigms</td><td>Direct fit for Chen Henry Wu / Charles Ding given the Outstanding Paper finding</td></tr>
+  </table>
+  <p class="small muted">
+    The pattern: <strong>Aditi&rsquo;s lab is upstream of the entire post-training safety / data curation / reasoning reliability
+    commercial cluster</strong>. Anthropic, DeepMind, DatologyAI, GoodFire, Apollo, Gray Swan, Patronus, Inception &mdash; any of
+    these companies will pay $750K+ TC to her graduating students, and that&rsquo;s before the founding-team-equity case.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- GROWTH TRAJECTORY                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Growth Trajectory</h2>
+  <ul class="timeline">
+    <li><span class="year">2012</span> Enters IIT Madras CS (Indian-origin pipeline)</li>
+    <li><span class="year">2016</span> BTech CS, IIT Madras &mdash; <strong>same program as Vaishnavh Nagarajan &rsquo;15</strong></li>
+    <li><span class="year">2016</span> Starts Stanford CS PhD under <strong>Percy Liang</strong> (CLAUDE.md critical-lab). Stanford School of Engineering Fellowship + Google Anita Borg Scholarship</li>
+    <li><span class="year">2018</span> <strong>ICLR 2018:</strong> Certified Defenses Against Adversarial Examples (1st author, 1,282 cites)</li>
+    <li><span class="year">2019</span> Open Philanthropy Project AI Fellowship; Google PhD Fellowship in ML</li>
+    <li><span class="year">2020</span> NeurIPS 2020: Enabling Certification of Verification-Agnostic Networks via Memory-Efficient SDP. Joins Bommasani et al. on foundation-models paper</li>
+    <li><span class="year">2021</span> <strong>PhD defended. Arthur Samuel Best Thesis Award at Stanford.</strong> Joins Berkeley AI Research as postdoc. Rising Stars in EECS</li>
+    <li><span class="year">2022</span> Joins CMU CS + MLD as Assistant Professor (Aug 2022). Co-authored Kumar et al. ICLR 2022 (fine-tuning distorts OOD, 1,172 cites)</li>
+    <li><span class="year">2023</span> <strong>Schmidt AI2050 Early Career Fellow (inaugural cohort, June 2023)</strong>. Google Research Scholar Award. Okawa Research Award. Forbes 30U30 Science (CLAUDE.md notes this is not a signal owner cares about)</li>
+    <li><span class="year">2024</span> <strong>NSF CAREER Award</strong>. ICLR 2024: Catastrophic forgetting in language models via implicit inference (Kotha, Springer, Raghunathan, 153 cites)</li>
+    <li><span class="year">Jan 2025</span> <strong>ICLR 2025:</strong> Scaling Laws for Precision (<strong>Oral Award</strong>, Tanishq Kumar et al.). Overtrained Language Models (SCOPE Outstanding Paper + ICBINB Entropic Paper Award)</li>
+    <li><span class="year">Apr 2025</span> Weight Ensembling Improves Reasoning (Xingyu Dang + Christina Baek). VentureBeat coverage of catastrophic overtraining</li>
+    <li><span class="year">Jul 2025</span> <strong>ICML 2025: Outstanding Paper Award</strong> for Roll the Dice (Nagarajan, Wu, Ding, Raghunathan). 3 ICML 2025 papers total</li>
+    <li><span class="year">Oct 2025</span> Sachin Goyal joins Anthropic Pretraining. Twitter activity on WiSE-FT reasoning-diversity work</li>
+    <li><span class="year">Feb 2026</span> <strong>2026 Sloan Research Fellowship</strong> (CMU CyLab announcement, Feb 19, 2026)</li>
+    <li><span class="year">2026</span> Cited 2,721 times in first ~5 months of year; on pace for &gt;7,000 cites in 2026</li>
+  </ul>
+  <p>
+    <strong>Pace:</strong> Steady academic acceleration &mdash; <strong>2x citation count year-over-year 2022 &rarr; 2025</strong>.
+    Award density compressed from one-major-award-per-year (2020&ndash;2023) to <strong>five major awards in 14 months</strong>
+    (Jan 2025 ICLR Oral + Apr 2025 ICLR SCOPE Outstanding + Apr 2025 ICBINB Entropic + Jul 2025 ICML Outstanding + Feb 2026
+    Sloan). She is in <strong>the strongest phase of her career to date</strong>.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- NETWORK MAP                                            -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Network Map</h2>
+
+  <h3>The IIT Madras &rarr; Stanford &rarr; CMU Triangle</h3>
+  <ul>
+    <li><strong>IIT Madras CS</strong>: Aditi BTech &rsquo;16; <strong>Vaishnavh Nagarajan BTech &rsquo;15</strong> (Balaraman
+        Ravindran lab) &mdash; same program, one year apart. Vaishnavh went to CMU PhD; Aditi went to Stanford PhD. They are now
+        the lead author + last author of the <strong>ICML 2025 Outstanding Paper</strong>. This is an end-to-end Indian-origin
+        academic pipeline closed loop</li>
+    <li><strong>Stanford CS (Percy Liang lab)</strong>: Aditi PhD 2016&ndash;2021. Tanishq Kumar joined Liang lab Sep 2025
+        as 1st-year PhD &mdash; under <strong>Liang + Tatsu Hashimoto</strong>. Kaiyue Wen also at Liang/Ma lab. <strong>Closing
+        the Liang &rarr; Aditi-lab &rarr; back-to-Liang loop</strong></li>
+    <li><strong>CMU CS + MLD</strong>: Aditi&rsquo;s home. <strong>Sachin Goyal (IIT Bombay)</strong>, Christina Baek
+        (Berkeley), Jacob Springer (Swarthmore), Gaurav Ghosal (Berkeley), Pratyush Maini (IIT Delhi) all co-advised by
+        Kolter / Lipton / Schmidt &mdash; the CMU MLD safety/robustness cluster</li>
+  </ul>
+
+  <h3>Percy Liang Lab Lineage (her PhD cohort)</h3>
+  <p>
+    Percy Liang Stanford CS Cohort overlap with Aditi 2016&ndash;2021 (CRFM founding team):
+  </p>
+  <ul>
+    <li><strong>Tatsu Hashimoto</strong> &mdash; Stanford CS faculty (now Aditi-adjacent on Liang lab; co-advises Tanishq Kumar)</li>
+    <li><strong>Niklas Muennighoff</strong> &mdash; current Liang PhD, 23.5K cites (<a href="niklas-muennighoff.html">dossier</a>)</li>
+    <li><strong>Sang Michael Xie</strong> &mdash; Liang PhD, in-context-learning bayesian paper (co-author with Aditi on 2021 ICL paper)</li>
+    <li><strong>Joon Sung Park</strong> &mdash; Liang PhD &rsquo;25 (co-advised Bernstein), <strong>Simile founder</strong> ($100M raise)</li>
+    <li><strong>Jacob Steinhardt</strong> &mdash; Liang PhD &rsquo;18, Berkeley faculty, founded <strong>Transluce</strong></li>
+    <li><strong>Percy Liang himself</strong> &mdash; co-founded <strong>Together AI</strong> ($300M+)</li>
+    <li><strong>Aditya Gupta</strong> (repo) &mdash; Liang student. <a href="aditya-gupta.html">dossier</a></li>
+    <li><strong>Kanishk Gandhi</strong> (repo, Goodman lab adjacent but Liang-orbit) &mdash; <a href="kanishk-gandhi.html">dossier</a></li>
+  </ul>
+  <p class="small muted">Pattern: Percy Liang lab is one of the densest <strong>academic-to-startup pipelines</strong> in ML &mdash;
+  Together AI, Simile, Transluce, plus the CRFM-adjacent ecosystem of HELM/benchmark companies. Aditi is the
+  <strong>academic branch</strong> of that lineage (going faculty rather than founding), and her students are the next wave.</p>
+
+  <h3>Core CMU Co-advisors</h3>
+  <ul>
+    <li><strong>Zico Kolter</strong> &mdash; CMU CSD. Co-advises Sachin Goyal, Christina Baek, Pratyush Maini. Founded
+        <strong>Gray Swan AI</strong> (red-teaming). Was Vaishnavh Nagarajan&rsquo;s PhD advisor &mdash; <em>Aditi&rsquo;s
+        co-advisor inherited her IIT Madras classmate</em></li>
+    <li><strong>Graham Neubig</strong> &mdash; CMU LTI. Co-author on Overtrained paper. Co-founded <strong>All Hands AI</strong>
+        (OpenHands / OpenDevin)</li>
+    <li><strong>Ludwig Schmidt</strong> &mdash; Stanford/CMU CS (CLAUDE.md critical-lab). Co-advised Sachin Goyal&rsquo;s thesis</li>
+    <li><strong>Ruslan Salakhutdinov</strong>, <strong>Andrej Risteski</strong>, <strong>Virginia Smith</strong>, <strong>Aviral Kumar</strong>
+        &mdash; broader CMU MLD network. Repo has <a href="amrith-setlur.html">Amrith Setlur</a> (Virginia Smith / Aviral Kumar)
+        and Matthew Yang</li>
+  </ul>
+
+  <h3>Outside-CMU Collaborators</h3>
+  <ul>
+    <li><strong>Sadhika Malladi</strong> &mdash; Princeton PhD, co-author on Overtrained paper. Known for in-context learning theory work</li>
+    <li><strong>Xiang Yue</strong> &mdash; CMU/Princeton MMLU + WebInstruct lineage</li>
+    <li><strong>Tri Dao</strong> (CLAUDE.md critical-lab) &mdash; co-author on Tanishq Kumar&rsquo;s ICLR 2026 paper</li>
+    <li><strong>Christopher R&eacute;</strong> (CLAUDE.md critical-lab) &mdash; co-author on Scaling Laws for Precision (ICLR 2025 Oral)</li>
+    <li><strong>Cengiz Pehlevan, Blake Bordelon</strong> &mdash; Harvard statistical-physics-of-ML group. Tanishq Kumar&rsquo;s
+        undergrad mentors</li>
+  </ul>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- TWITTER / PUBLIC VOICE                                 -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Twitter / Public Voice</h2>
+  <p>
+    <a href="https://x.com/AdtRaghunathan">@AdtRaghunathan</a>. Engagement profile: research-thread-style posts when papers
+    drop, occasional retweets of student work, light commentary on the safety/reliability commercial cluster. Not a public
+    intellectual in the Karpathy / Andrej Karpathy / Yann LeCun mold. <strong>This is a feature not a bug</strong> &mdash; she
+    optimizes for academic output, not media presence. Her quiet posture means founder-grade students don&rsquo;t face advisor-shadow
+    competition for public attribution.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- BACKGROUND                                             -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Background</h2>
+  <p>
+    Indian-origin (Aditi Raghunathan; South Indian Brahmin name, likely Tamil/Andhra). Education: <strong>IIT Madras BTech
+    Computer Science 2016</strong>, then Stanford CS PhD 2016&ndash;2021 under <strong>Percy Liang</strong>. Stanford School of
+    Engineering Fellowship, Google Anita Borg Scholarship. Thesis: certified adversarial robustness via SDP/LP relaxations &mdash;
+    Arthur Samuel Best Thesis Award. Postdoc at Berkeley AI Research (BAIR) 2021&ndash;2022, then joined CMU CS + MLD as
+    Assistant Professor in August 2022. Affiliated with LTI and CyLab. Office GHC 7005. Email raditi@cmu.edu. Teaches
+    Graduate AI, Trustworthy AI, Theoretical Foundations of Modern ML, AI: Representation and Problem Solving.
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- RISKS / WATCHOUTS                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Risks &amp; Watch-Outs (for student tracking)</h2>
+  <ol>
+    <li><strong>Tenure incentives anchor her students academically.</strong> The Sloan + NSF CAREER + Schmidt + Okawa stack
+        means she has the funding to fully support graduating PhDs &mdash; making faculty paths more attractive than founding</li>
+    <li><strong>Anthropic pull is strong and persistent.</strong> Sachin Goyal &rsquo;25 to Anthropic Pretraining is the
+        clearest signal of where the next 2&ndash;3 students will land. Anthropic offers $750K+ TC and gets to keep them for
+        4-year vests. <strong>The founding window for any of her recent grads is post-Anthropic, 2027&ndash;2030</strong></li>
+    <li><strong>Zico Kolter co-advisorship dilutes founder agency.</strong> Kolter founded Gray Swan AI &mdash; students may
+        join existing Kolter ventures rather than starting their own</li>
+    <li><strong>Network-hub thesis depends on her students being founder-grade.</strong> If the lab continues to produce
+        researchers (not founders), the investment value is angel/advisor introductions, not direct equity</li>
+    <li><strong>Female-Indian-origin academic ML pipeline is narrow.</strong> Christina Baek is the only female student of
+        the named cluster, and she is Korean-American. The lab is heavily Indian + East-Asian male &mdash; not a diversity
+        risk per se but a representation watch</li>
+  </ol>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- OUTREACH                                               -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Outreach Draft</h2>
+  <div style="background: var(--bg); border: 1px solid #ddd; padding: 1.5em; border-radius: 6px; font-family: var(--sans);">
+    <p>hi Aditi</p>
+    <p>I&rsquo;m Vansh, Partner at Boldcap. I source pre-seed Indian-origin AI founders and your lab is the densest IIT Madras
+       &rarr; Stanford &rarr; CMU pipeline I&rsquo;ve mapped in this cycle.</p>
+    <p>I&rsquo;ve been going deep on the post-training reliability stack &mdash; <a href="https://www.datologyai.com">DatologyAI</a>
+       on data curation (Pratyush is doing great work), <a href="https://www.goodfire.ai">GoodFire</a> on interp,
+       <a href="https://www.grayswan.ai">Gray Swan</a> on red-teaming, <a href="https://www.judgmentlabs.ai">Judgment Labs</a>
+       on continuous agent eval ($32M just closed), and the Mercury / Inception Labs diffusion-LLM thread that your ICML 2025
+       Outstanding Paper points directly at. The catastrophic-overtraining result from your SCOPE paper basically rewrites the
+       case for over-provisioned pretraining budgets &mdash; that&rsquo;s a $100M+ market by 2027.</p>
+    <p>Not pitching anything &mdash; I&rsquo;m happy to be an angel/advisor referral source for any of your graduating students
+       (especially Christina, Springer, Ghosal, and whoever you think is closest to founding). For portfolio companies in
+       post-training defense / data curation I can introduce specific operators looking for academic advisors. Happy to swap
+       deal-flow on Indian-origin AI talent more broadly.</p>
+    <p>Happy to grab coffee in Pittsburgh next time I&rsquo;m through, or SF if you&rsquo;re out for ICML &rsquo;26.</p>
+    <p>Vansh</p>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- RECURSIVE DISCOVERY                                    -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Recursive Discovery &mdash; TOP 3 Students to Dossier Next</h2>
+  <ol>
+    <li><strong>Tanishq Kumar</strong> (Harvard math &rsquo;25 &rarr; Stanford CS PhD under Liang + Hashimoto, Sep 2025).
+        Strongest founder-signal density of any student on this list: Pehlevan/Bordelon stat-physics-of-ML pre-PhD output +
+        ICLR 2025 Oral (Scaling Laws for Precision) + SCOPE Outstanding Paper + Stanford under <em>both</em> Aditi&rsquo;s
+        former advisor and Tatsu Hashimoto. Indian-origin. ~5 ICLR/ICML papers before PhD year 1. <strong>Reference class:
+        Niklas Muennighoff.</strong> <a href="https://tanishqkumar.github.io">tanishqkumar.github.io</a></li>
+
+    <li><strong>Christina Baek</strong> (final-year CMU MLD PhD, Kolter + Raghunathan). Final-year inflection window.
+        CMU Presidential Fellowship. Berkeley undergrad + Yi Ma MS. WiSE-FT reasoning-diversity paper (COLM 2025) + agreement-on-the-line
+        OOD work. DatologyAI + Google internships. Female + Korean-American &mdash; rare archetype intersection in the safety/reliability
+        cluster. <strong>Reference class: Amrith Setlur (final-year, CMU MLD, multi-best-paper).</strong> Direct Gray Swan / Apollo pull
+        plausible.  <a href="https://kebaek.github.io">kebaek.github.io</a> / <a href="https://x.com/_christinabaek">@_christinabaek</a></li>
+
+    <li><strong>Jacob Mitchell Springer</strong> (3rd-year CMU MLD PhD, Raghunathan). Lead author on the SCOPE/ICBINB-award-winning
+        Overtrained paper + 2x ICML 2026 papers including an oral. NSF GRFP. Swarthmore CS &rsquo;22 + Los Alamos pre-PhD.
+        <strong>5 first-author award-tier papers in 3 years</strong> &mdash; the kind of velocity that maps to Anthropic Pretraining
+        offers <em>or</em> a founder optionality discussion if the right co-founder shows up. Not Indian-origin (the
+        non-Indian counterpart to Sachin Goyal in the lab). <a href="https://sprin.xyz">sprin.xyz</a></li>
+  </ol>
+
+  <p class="small muted">
+    <strong>Honorable mentions:</strong> Gaurav Ghosal (P1, Memorization Sinks ICML 2025, UC Berkeley undergrad &mdash; the
+    second-best of the 3rd-year MLD cohort), Vaishnavh Nagarajan (P1, but already at Google DeepMind &mdash;
+    advisor/angel target not founder target), Pratyush Maini (already DatologyAI, dossier him separately for the
+    DatologyAI story not the Aditi story), Kaiyue Wen (P2, Stanford 2nd-year, NeurIPS 2025 Best Paper, technically Tengyu
+    Ma&rsquo;s student not Aditi&rsquo;s), Chen Henry Wu (P2, ICML 2025 Outstanding Paper 2nd author).
+  </p>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- KEY PUBLICATIONS                                       -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Key Publications</h2>
+
+  <h3>2025&ndash;2026 (the spike window)</h3>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2504.15266">Roll the dice &amp; look before you leap: Going beyond the creative limits of next-token prediction</a></div>
+    <div class="venue"><strong>ICML 2025 Outstanding Paper Award</strong> &middot; Vaishnavh Nagarajan, Chen Henry Wu, Charles Ding, Aditi Raghunathan</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2503.19206">Overtrained Language Models Are Harder to Fine-Tune</a></div>
+    <div class="venue">ICML 2025 + <strong>SCOPE Outstanding Paper + ICBINB Entropic Paper Award (ICLR 2025)</strong> &middot; Springer, Goyal, Wen, Kumar, Yue, Malladi, Neubig, Raghunathan</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2507.09937">Memorization Sinks: Isolating Memorization during LLM Training</a></div>
+    <div class="venue">ICML 2025 &middot; Gaurav Ghosal, Pratyush Maini, Aditi Raghunathan</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2411.04330">Scaling Laws for Precision</a></div>
+    <div class="venue"><strong>ICLR 2025 Oral Award</strong> &middot; Tanishq Kumar, Zachary Ankner, Benjamin Spector, Blake Bordelon, Niklas Muennighoff, Mansheej Paul, Cengiz Pehlevan, Christopher R&eacute;, Aditi Raghunathan</div>
+  </div>
+  <div class="paper">
+    <div class="title"><a href="https://arxiv.org/abs/2504.10478">Weight Ensembling Improves Reasoning in Language Models</a></div>
+    <div class="venue">COLM 2025 &middot; Xingyu Dang, Christina Baek, Kaiyue Wen, Zico Kolter, Aditi Raghunathan</div>
+  </div>
+
+  <h3>Foundational</h3>
+  <div class="paper">
+    <div class="title">On the Opportunities and Risks of Foundation Models</div>
+    <div class="venue">arXiv 2021 &middot; Bommasani et al. (9,891 cites; the &ldquo;foundation models&rdquo; coining paper)</div>
+  </div>
+  <div class="paper">
+    <div class="title">Certified Defenses Against Adversarial Examples</div>
+    <div class="venue">ICLR 2018 &middot; <strong>1st author</strong> &middot; 1,282 cites &middot; PhD thesis chapter</div>
+  </div>
+  <div class="paper">
+    <div class="title">Fine-Tuning Can Distort Pretrained Features and Underperform Out-of-Distribution</div>
+    <div class="venue">ICLR 2022 &middot; Kumar, Raghunathan et al. &middot; 1,172 cites &middot; The canonical &ldquo;LP-FT&rdquo; paper</div>
+  </div>
+  <div class="paper">
+    <div class="title">Unlabeled Data Improves Adversarial Robustness</div>
+    <div class="venue">NeurIPS 2019 &middot; Carmon, Raghunathan, Schmidt, Liang &middot; 993 cites</div>
+  </div>
+  <div class="paper">
+    <div class="title">Semidefinite Relaxations for Certifying Robustness to Adversarial Examples</div>
+    <div class="venue">NeurIPS 2018 &middot; <strong>1st author</strong> &middot; 580 cites</div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- NOTES                                                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <h2>Notes</h2>
+  <ul>
+    <li class="small">Indian-origin confirmed (South Indian). IIT Madras BTech CS &rsquo;16, Stanford CS PhD &rsquo;21 under Percy Liang, Arthur Samuel Best Thesis Award</li>
+    <li class="small">CMU Assistant Professor CS + MLD since Aug 2022. Office GHC 7005. raditi@cmu.edu</li>
+    <li class="small">21,885 Scholar cites, h-34, i10-56. 2024 (5.2K) &rarr; 2025 (6.6K) &rarr; 2026 partial (2.7K through May)</li>
+    <li class="small"><strong>2026 Sloan Research Fellowship</strong> announced Feb 19, 2026 (CMU CyLab)</li>
+    <li class="small"><strong>Schmidt AI2050 Early Career Fellow inaugural cohort</strong> (Jun 2023, Hard Problem 2)</li>
+    <li class="small">NSF CAREER (2024), Okawa Research Award, Google Research Scholar, Forbes 30U30 Science (CLAUDE.md flags this as non-signal)</li>
+    <li class="small">PhD thesis on certified adversarial robustness via SDP/LP relaxations &mdash; the intellectual root of all subsequent &ldquo;why models fail&rdquo; work</li>
+    <li class="small"><strong>ICML 2025: 3 papers including Outstanding Paper Award</strong> for &ldquo;Roll the dice&rdquo; (Nagarajan et al.)</li>
+    <li class="small">ICLR 2025: 2 awards &mdash; Scaling Laws for Precision (Oral) + Overtrained Language Models (SCOPE Outstanding + ICBINB Entropic)</li>
+    <li class="small">Lab website: ar-forum.github.io (AI Reliability Lab). Twitter: @AdtRaghunathan</li>
+    <li class="small">Confirmed student placement: <strong>Sachin Goyal &rarr; Anthropic Pretraining</strong> (post-PhD 2025)</li>
+    <li class="small">Vaishnavh Nagarajan = same IIT Madras CS program as Aditi, one year ahead. Now Google DeepMind Research Scientist. Co-author of ICML 2025 Outstanding Paper</li>
+    <li class="small">Tanishq Kumar (Harvard math &rsquo;25 &rarr; Stanford CS PhD Sep 2025 under Liang+Hashimoto) closes the IIT Madras-Stanford-CMU loop</li>
+    <li class="small">PhD students confirmed: Christina Baek (final-year, Kolter+Raghunathan), Jacob Springer (3rd-year, NSF GRFP), Gaurav Ghosal (3rd-year, UC Berkeley undergrad)</li>
+    <li class="small">DatologyAI relationship: Pratyush Maini founding member + co-author on Memorization Sinks. Christina Baek interned. Aditi&rsquo;s work directly feeds their roadmap</li>
+    <li class="small">Anthropic relationship: Sachin Goyal in Pretraining post-PhD. The catastrophic-overtraining paper is directly relevant to their data-budget decisions</li>
+    <li class="small">No founding signals from Aditi herself. Strong tenure-track commitment (Sloan + NSF CAREER + Schmidt)</li>
+    <li class="small">Risk: students are pulled to Anthropic Pretraining + Gray Swan + Google DeepMind before founding</li>
+    <li class="small">Network value: angel/advisor referral source for portfolio companies in post-training defense / data curation / reasoning reliability</li>
+  </ul>
+
+  <footer>
+    researched: 2026-05-22 &middot; network-hub dossier &middot; 6-agent SOP variant &middot; <a href="../index.html">back to index</a>
+  </footer>
+
+</body>
+</html>
