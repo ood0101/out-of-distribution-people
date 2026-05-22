@@ -1,8 +1,8 @@
 {
   "version": 1,
-  "last_updated": "2026-05-20",
+  "last_updated": "2026-05-22",
   "last_triaged": "2026-03-30",
-  "total": 103,
+  "total": 133,
   "people": [
     {
       "name": "Guodong Zhang",
@@ -1039,6 +1039,306 @@
       "one_liner": "First author of OpenVLA and Octo robot foundation models",
       "source_dossier": "",
       "spike_signal": "top 10% of lab-chelsea-finn · PhD with h=31 (rising) · arXiv top-cited · Chelsea Finn lab · Sergey Levine lab",
+      "status": "pending"
+    },
+    {
+      "name": "Ed H. Chi",
+      "current_company": "ex-Deepmind",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Co-author of Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+      "source_dossier": "",
+      "spike_signal": "top 10% of landmark-papers · top 10% of arxiv-ai-general · top arXiv ai-general · ex-Deepmind · Jason Wei lab",
+      "status": "pending"
+    },
+    {
+      "name": "Karen Simonyan",
+      "current_company": "ex-Deepmind",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Co-author of 2 landmark papers (incl. Mastering Atari, Go, chess and shogi by planning with a learne",
+      "source_dossier": "",
+      "spike_signal": "top 10% of conference-orals · top 10% of landmark-papers · NeurIPS/ICML/ICLR Oral · ex-Deepmind · Andrew Zisserman lab",
+      "status": "pending"
+    },
+    {
+      "name": "Yuke Zhu",
+      "current_company": "Fei Fei Li lab",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Co-author of Voyager: An Open-Ended Embodied Agent with Large Language Models",
+      "source_dossier": "",
+      "spike_signal": "top 10% of lab-fei-fei-li · PhD with h=57 (rising) · top arXiv robotics · Fei Fei Li lab · Landmark paper",
+      "status": "pending"
+    },
+    {
+      "name": "Denny Zhou",
+      "current_company": "Last author of Chain-of-Thought Prompting Elicits Reasoning in Large Language Mo",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Last author of Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+      "source_dossier": "",
+      "spike_signal": "top 10% of arxiv-first-authors · strong academic output (h=42) · top arXiv ai-general · arXiv top-cited · NeurIPS/ICML/ICLR Oral",
+      "status": "pending"
+    },
+    {
+      "name": "Dale Schuurmans",
+      "current_company": "Jason Wei lab",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Co-author of Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+      "source_dossier": "",
+      "spike_signal": "top 10% of conference-orals · top 10% of landmark-papers · NeurIPS/ICML/ICLR Oral · Jason Wei lab · Landmark paper",
+      "status": "pending"
+    },
+    {
+      "name": "Saining Xie",
+      "current_company": "Bill Peebles lab",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Co-author of 2 landmark papers (incl. Scalable Diffusion Models with Transformers (DiT))",
+      "source_dossier": "",
+      "spike_signal": "strong academic output (h=31) · 69,877 citations · top arXiv cv · NeurIPS/ICML/ICLR Oral · New tenure-track faculty",
+      "status": "pending"
+    },
+    {
+      "name": "Uri Alon",
+      "current_company": "Core contributor of Self-Refine: Iterative Refinement with Self-Feedback",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Core contributor of Self-Refine: Iterative Refinement with Self-Feedback",
+      "source_dossier": "",
+      "spike_signal": "top 10% of landmark-papers · top 10% of lab-graham-neubig · Graham Neubig lab · Landmark paper",
+      "status": "pending"
+    },
+    {
+      "name": "Alexey Dosovitskiy",
+      "current_company": "Recursive Superintelligence",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "First author of An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale (ViT)",
+      "source_dossier": "",
+      "spike_signal": "top 10% of arxiv-first-authors · strong academic output (h=55) · top arXiv cv · arXiv top-cited · top arXiv ml-core",
+      "status": "pending"
+    },
+    {
+      "name": "Demis Hassabis",
+      "current_company": "Deepmind",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Co-author of 5 landmark papers (incl. Accurate structure prediction of biomolecular interactions wit",
+      "source_dossier": "",
+      "spike_signal": "top 10% of landmark-papers · strong academic output (h=91) · casp · Deepmind · Isomorphic",
+      "status": "pending"
+    },
+    {
+      "name": "Ben Poole",
+      "current_company": "Last author of Score-Based Generative Modeling through Stochastic Differential E",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Last author of Score-Based Generative Modeling through Stochastic Differential Equations",
+      "source_dossier": "",
+      "spike_signal": "strong academic output (h=38) · 36,865 citations · NeurIPS/ICML/ICLR Oral · ICLR Best · Yang Song lab",
+      "status": "pending"
+    },
+    {
+      "name": "Karthik Narasimhan",
+      "current_company": "Regina Barzilay lab",
+      "departure_signal": false,
+      "indian_origin": true,
+      "one_liner": "Co-author of 3 landmark papers (incl. Tree of Thoughts: Deliberate Problem Solving with Large Langua",
+      "source_dossier": "",
+      "spike_signal": "strong academic output (h=33) · 35,046 citations · top arXiv ai-general · Regina Barzilay lab · Landmark paper",
+      "status": "pending"
+    },
+    {
+      "name": "Tim Brooks",
+      "current_company": "Openai",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "First author of Video generation models as world simulators (Sora technical report)",
+      "source_dossier": "",
+      "spike_signal": "strong academic output (h=39) · 8,076 citations · top arXiv nlp · Openai · ex-Openai",
+      "status": "pending"
+    },
+    {
+      "name": "Tom Sercu",
+      "current_company": "Evo Scale",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Co-author of Evolutionary-scale prediction of atomic-level protein structure (ESM-2 / ESMFold)",
+      "source_dossier": "",
+      "spike_signal": "top 10% of company-evo-scale · top 10% of lab-alex-rives · Evo Scale · Alex Rives lab · Landmark paper",
+      "status": "pending"
+    },
+    {
+      "name": "Brian Ichter",
+      "current_company": "Physical Intelligence",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Co-author of Chain-of-Thought Prompting Elicits Reasoning in Large Language Models",
+      "source_dossier": "",
+      "spike_signal": "strong academic output (h=37) · 22,730 citations · top arXiv robotics · Physical Intelligence · NeurIPS/ICML/ICLR Oral",
+      "status": "pending"
+    },
+    {
+      "name": "Guillaume Lample",
+      "current_company": "Mistral",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Co-author of 2 landmark papers (incl. LLaMA: Open and Efficient Foundation Language Models)",
+      "source_dossier": "",
+      "spike_signal": "strong academic output (h=27) · 42,819 citations · arc prize · Mistral · ex-Meta Fair",
+      "status": "pending"
+    },
+    {
+      "name": "Jack Clark",
+      "current_company": "Co-Founder; Head of Policy; previously Import AI newsletter founder; OpenAI Poli",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Co-Founder; Head of Policy; previously Import AI newsletter founder; OpenAI Policy Director",
+      "source_dossier": "",
+      "spike_signal": "top 10% of company-anthropic · top 10% of industry-anthropic · Anthropic · ex-Anthropic · Landmark paper",
+      "status": "pending"
+    },
+    {
+      "name": "Archit Sharma",
+      "current_company": "Chelsea Finn lab",
+      "departure_signal": false,
+      "indian_origin": true,
+      "one_liner": "Co-author of Direct Preference Optimization (DPO)",
+      "source_dossier": "",
+      "spike_signal": "11,715 citations · Chelsea Finn lab · Landmark paper · NeurIPS Best · Indian",
+      "status": "pending"
+    },
+    {
+      "name": "Patrick Esser",
+      "current_company": "Black Forest",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Co-author of Latent Diffusion Models, first author of SDXL and Scaling Rectified Flow Transformers",
+      "source_dossier": "",
+      "spike_signal": "strong academic output (h=29) · top arXiv cv · arXiv top-cited · Black Forest",
+      "status": "pending"
+    },
+    {
+      "name": "Ben Mildenhall",
+      "current_company": "World Labs",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "First author of NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis",
+      "source_dossier": "",
+      "spike_signal": "strong academic output (h=37) · 27,385 citations · World Labs · NeurIPS/ICML/ICLR Oral · ICLR Best",
+      "status": "pending"
+    },
+    {
+      "name": "Jon Barron",
+      "current_company": "Jitendra Malik lab",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Co-author of NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis",
+      "source_dossier": "",
+      "spike_signal": "top 10% of lab-jitendra-malik · strong academic output (h=59) · Jitendra Malik lab · Landmark paper",
+      "status": "pending"
+    },
+    {
+      "name": "Eric Mitchell",
+      "current_company": "Chelsea Finn lab",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Co-author of Direct Preference Optimization (DPO)",
+      "source_dossier": "",
+      "spike_signal": "19,288 citations · NeurIPS/ICML/ICLR Oral · Chelsea Finn lab · Christopher Manning lab",
+      "status": "pending"
+    },
+    {
+      "name": "Alec Radford",
+      "current_company": "Openai",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Co-author of 5 landmark papers (incl. Learning Transferable Visual Models From Natural Language Supe",
+      "source_dossier": "",
+      "spike_signal": "strong academic output (h=33) · 275,386 citations · arXiv top-cited · Openai · NeurIPS/ICML/ICLR Oral",
+      "status": "pending"
+    },
+    {
+      "name": "Barret Zoph",
+      "current_company": "Openai",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Co-author of Switch Transformer: Scaling to Trillion Parameter Models with Simple and Efficient Spar",
+      "source_dossier": "",
+      "spike_signal": "strong academic output (h=44) · 96,970 citations · Openai · ex-Openai · Jason Wei lab",
+      "status": "pending"
+    },
+    {
+      "name": "William Fedus",
+      "current_company": "Jason Wei lab",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "First author of Switch Transformer: Scaling to Trillion Parameter Models with Simple and Efficient S",
+      "source_dossier": "",
+      "spike_signal": "strong academic output (h=31) · 21,802 citations · arXiv top-cited · Jason Wei lab · Landmark paper",
+      "status": "pending"
+    },
+    {
+      "name": "Hyung Won Chung",
+      "current_company": "Research Scientist; led instruction tuning (FLAN-T5 at Google, InstructGPT at Op",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Research Scientist; led instruction tuning (FLAN-T5 at Google, InstructGPT at OpenAI)",
+      "source_dossier": "",
+      "spike_signal": "strong academic output (h=36) · 26,084 citations · top arXiv nlp · Openai · ex-Openai",
+      "status": "pending"
+    },
+    {
+      "name": "Koray Kavukcuoglu",
+      "current_company": "Core contributor of Highly accurate protein structure prediction with AlphaFold ",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Core contributor of Highly accurate protein structure prediction with AlphaFold (AlphaFold 2)",
+      "source_dossier": "",
+      "spike_signal": "top 10% of landmark-papers · strong academic output (h=76) · Deepmind · ex-Deepmind · Landmark paper",
+      "status": "pending"
+    },
+    {
+      "name": "Timothy Lillicrap",
+      "current_company": "Deepmind",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Co-author of 4 landmark papers (incl. Mastering Diverse Domains through World Models (Dreamer V3))",
+      "source_dossier": "",
+      "spike_signal": "top 10% of landmark-papers · strong academic output (h=69) · Deepmind · ex-Deepmind · Landmark paper",
+      "status": "pending"
+    },
+    {
+      "name": "Sandipan Kundu",
+      "current_company": "Core contributor of Constitutional AI: Harmlessness from AI Feedback",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Core contributor of Constitutional AI: Harmlessness from AI Feedback",
+      "source_dossier": "",
+      "spike_signal": "top 10% of company-anthropic · top 10% of industry-anthropic · Anthropic · ex-Anthropic · Landmark paper",
+      "status": "pending"
+    },
+    {
+      "name": "Chris Maddison",
+      "current_company": "Core contributor of Mastering the game of Go with deep neural networks and tree ",
+      "departure_signal": false,
+      "indian_origin": false,
+      "one_liner": "Core contributor of Mastering the game of Go with deep neural networks and tree search (AlphaGo)",
+      "source_dossier": "",
+      "spike_signal": "PhD with h=31 (rising) · strong academic output (h=31) · NeurIPS/ICML/ICLR Oral · fellow open phil · Landmark paper",
+      "status": "pending"
+    },
+    {
+      "name": "Sandhini Agarwal",
+      "current_company": "Research Scientist, Policy; GPT-4 system card co-lead; safety and policy researc",
+      "departure_signal": false,
+      "indian_origin": true,
+      "one_liner": "Research Scientist, Policy; GPT-4 system card co-lead; safety and policy research",
+      "source_dossier": "",
+      "spike_signal": "155,807 citations · ex-Openai · Landmark paper · NeurIPS Best · Indian",
       "status": "pending"
     }
   ]
