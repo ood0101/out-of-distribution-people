@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mayank Mishra &mdash; Out of Distribution People</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="site-title">Out of Distribution People</div>
+    <div class="breadcrumb"><a href="../index.html">/ index</a> / mayank-mishra</div>
+  </nav>
+
+  <div class="profile-header">
+    <h1>Mayank Mishra</h1>
+    <p class="one-liner"><strong>1st-year EECS PhD, UC Berkeley (Aug 2025&ndash;), co-advised by <a href="https://tridao.me/">Tri Dao</a>, <a href="https://people.eecs.berkeley.edu/~jegonzal/">Joseph Gonzalez</a>, and <a href="https://people.eecs.berkeley.edu/~istoica/">Ion Stoica</a></strong> &mdash; the strongest possible Berkeley architecture-and-systems advising triple. <strong>Led pretraining + model architecture at MIT-IBM Watson AI Lab</strong> for the <strong>IBM Granite</strong> family (2020&ndash;2025; <strong>equal-contributor</strong> on Granite Code, 3 of 46 authors). <strong>Sole author / maintainer of <a href="https://github.com/IBM/dolomite-engine">lm-engine (formerly dolomite-engine)</a></strong> &mdash; IBM&rsquo;s hyper-optimized pretraining library (171&#11088;), <strong>multi-accelerator (NVIDIA + TPU + Trainium), Transformer + MoE + Mamba2 + RNN</strong>. <strong>~5,778 Google Scholar cites, h-index 15, i10-17</strong> at PhD-start. On <strong>BLOOM 176B (JMLR 23, 2,462 cites)</strong>, <strong>StarCoder (TMLR 23, 1,800 cites)</strong>, <strong>StarCoder 2 (2024, 664 cites)</strong>, <strong>Granite Code (2024, 115 cites)</strong>. 2025 spike: 2nd author on <strong>Ladder-Residual</strong> (ICML 2025, w/ Tri Dao &mdash; 29% TP speedup on 70B) + 2nd author on <strong>SonicMoE</strong> (ICLR 2026, w/ Tri Dao + Ion Stoica &mdash; 1.86x throughput on Hopper). <strong>IIT Delhi BTech EE 2016&ndash;2020, JEE Adv AIR 921, GPA 8.17/10.</strong> Indian-origin. <strong>LinkedIn currently lists "Stealth AI Startup"</strong> alongside the PhD. T1 with T0 watch.</p>
+    <div class="tags">
+      <span class="tag spike">tier-1: high conviction</span>
+      <span class="tag">indian</span>
+      <span class="tag">researchers</span>
+      <span class="tag">berkeley</span>
+      <span class="tag">frontier-architecture</span>
+      <span class="tag">pretraining</span>
+      <span class="tag">ibm-granite</span>
+      <span class="tag">iit-delhi</span>
+      <span class="tag">tri-dao-lab</span>
+      <span class="tag">moe</span>
+      <span class="tag">founders (potential)</span>
+      <span class="tag spike">spike: IBM Granite pretraining lead + Tri Dao/Gonzalez/Stoica advising + sole author of lm-engine</span>
+    </div>
+    <div class="links">
+      <a href="https://mayank31398.github.io">website</a>
+      <a href="https://scholar.google.com/citations?user=YsbtW6cAAAAJ&hl=en">google scholar (~5,778)</a>
+      <a href="https://github.com/mayank31398">github</a>
+      <a href="https://www.linkedin.com/in/mayank31398/">linkedin</a>
+      <a href="https://x.com/MayankMish98">twitter (@MayankMish98)</a>
+      <a href="https://openreview.net/profile?id=~Mayank_Mishra1">openreview</a>
+      <a href="mailto:mayank_mishra@berkeley.edu">mayank_mishra@berkeley.edu</a>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- INVESTMENT THESIS                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <div class="spike-box">
+    <div class="label">&#9670; Investment Thesis</div>
+    <p>
+      Mayank Mishra is the <strong>direct Tri Dao bet</strong> in the Berkeley architecture pipeline. Three load-bearing facts:
+      <strong>(1)</strong> he is co-advised by Tri Dao, Joseph Gonzalez, and Ion Stoica &mdash; an advising triple that combines the most
+      important young architecture researcher of the decade with the two most prolific Berkeley systems advisors (Genmo, Anyscale, Skyfall,
+      Together-adjacent founder factories). <strong>(2)</strong> Before Berkeley, he <em>led</em> pretraining and model architecture for the
+      <strong>IBM Granite</strong> family at MIT-IBM Watson AI Lab &mdash; equal-contributor on Granite Code (3 of 46), and the <em>sole</em>
+      creator and maintainer of <strong>lm-engine</strong>, IBM&rsquo;s production training library (multi-accelerator, MoE + Mamba2 + RNN, 171&#11088;).
+      <strong>(3)</strong> His pre-PhD citation footprint &mdash; <strong>5,778 Scholar cites, h-15, i10-17</strong> &mdash; is at or beyond what
+      most Berkeley EECS students finish their <em>PhD</em> with. He arrived at Berkeley already on BLOOM, StarCoder, StarCoder 2, and Granite Code.
+    </p>
+    <p>
+      <strong>What he is actually working on.</strong> The 2025 papers tell a clean story. <strong>Ladder-Residual</strong> (ICML 2025; 2nd author
+      with Tri Dao as last author) modifies the residual stream to <em>decouple communication from computation</em>, hiding TP communication latency
+      and delivering <strong>29% end-to-end wall-clock speedup on a 70B Transformer at 8-device TP</strong>. <strong>SonicMoE</strong> (ICLR 2026,
+      arXiv 2512.14080; 2nd author with both Tri Dao and Ion Stoica) is a memory-efficient MoE kernel-and-algorithm stack: <strong>45% activation
+      memory reduction</strong>, <strong>1.86x throughput on Hopper vs ScatterMoE</strong>, <strong>213B tokens/day on 64 H100s</strong> versus
+      ScatterMoE&rsquo;s 225B on <em>96</em> H100s. <strong>Cross-Layer Attention</strong> (2nd author, NeurIPS 2024) is another 2x KV cache compression
+      on top of MQA. <strong>M&sup2;RNN</strong> (2026) extends the linear-RNN / SSM lineage into matrix-valued states &mdash; territory adjacent to
+      Mamba (Dao + Gu) and Hydra (Hwang + Dao). This is not a portfolio; it is a single thesis: <strong>make production-scale architectures faster
+      to train and cheaper to serve, in collaboration with the person who wrote FlashAttention and Mamba</strong>.
+    </p>
+    <p>
+      <strong>Why T1, not T0, but a T0 watch.</strong> He just started the PhD in Aug 2025. The reference class for the trajectory is
+      <strong>Tri Dao himself</strong>, who finished a Stanford PhD and immediately co-founded Together AI (now ~$305M Series B at multi-billion
+      valuation). The Goomba/Cartesia path (Albert Gu, Sukjun Hwang) is the parallel. Mayank is the third name on this short list. <strong>But
+      his LinkedIn current affiliation reads &ldquo;Stealth AI Startup&rdquo;</strong> alongside the PhD &mdash; ambiguous (could be advisor role, side
+      project, or genuine co-founding) but cannot be ignored. Combine with the unusual industry-to-PhD direction (most senior IBM researchers go
+      to a frontier lab, not back to school) and the Twitter bio reading like a man done with IBM (&ldquo;<em>non-member of a non-technical staff
+      at a non-technical, non-frontier lab trying to do technical work</em>&rdquo;), and the founder thesis is strong on a 12&ndash;36 month horizon.
+    </p>
+    <p>
+      <strong>What to do.</strong> Direct outreach now &mdash; he is in Berkeley, accessible, and the IIT Delhi cohort already in this repo
+      (<a href="akshat-bubna.html">Akshat Bubna</a> at Modal, <a href="lovish-madaan.html">Lovish Madaan</a> at Meta MSL,
+      <a href="himanshu-gaurav-singh.html">Himanshu Gaurav Singh</a> in the Abbeel-Malik lab next door,
+      <a href="kshitij-sodani.html">Kshitij Sodani</a>, <a href="devvrit-khatri.html">Devvrit Khatri</a>) gives a warm-network angle.
+      <strong>Re-tier to T0 immediately if</strong> (a) the &ldquo;Stealth AI Startup&rdquo; line resolves into a named entity, (b) IBM affiliation
+      drops from his footer, (c) his GitHub commits to lm-engine taper, or (d) Tri Dao tweets him as a co-author on a Together-adjacent inference paper.
+    </p>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- THE SPIKE                                              -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>The Spike &mdash; With Evidence</h2>
+
+    <h3>(1) Berkeley advising: Tri Dao + Joseph Gonzalez + Ion Stoica</h3>
+    <p>
+      Per his OpenReview profile and confirmed on his website, Mishra&rsquo;s Berkeley EECS PhD (Aug 2025&ndash;) is co-advised by
+      <strong>Tri Dao</strong>, <strong>Joseph E. Gonzalez</strong>, and <strong>Ion Stoica</strong>. Each of these names is, in isolation, a
+      top-tier signal; together they are unprecedented for a 1st-year. <strong>Tri Dao</strong> is the FlashAttention / Mamba / Hydra author and
+      Chief Scientist of Together AI &mdash; the highest-leverage academic-industrial bridge in efficient ML. <strong>Joseph Gonzalez</strong>
+      co-advised Ajay Jain (Genmo CTO) and Paras Jain (Genmo CEO); his Sky Computing / RISE Lab is the Berkeley node for systems-for-AI.
+      <strong>Ion Stoica</strong> founded Databricks, Anyscale, and is the lab head Tri Dao reports through; Stoica being personally on a 1st-year&rsquo;s
+      advising committee is a signal that the work-product matters at the Sky-Lab leadership level. The closest parallel in this repo is
+      <a href="ajay-jain.html">Ajay Jain</a>, who was co-advised by Gonzalez + Abbeel and went on to co-found Genmo. The trajectory expectation
+      is direct.
+    </p>
+
+    <h3>(2) IBM Granite: pretraining and architecture lead</h3>
+    <p>
+      From <strong>2020 to 2025</strong> (his entire post-undergrad career), Mishra was at IBM Research &mdash; first at IBM Research India, then
+      moved to <strong>MIT-IBM Watson AI Lab in Cambridge in 2024</strong> where his title elevated to <em>leading pretraining and model architecture
+      research</em> for the IBM Granite family. The credit-bearing artifact is <strong>Granite Code Models</strong> (arXiv 2405.04324, May 2024;
+      <strong>115 citations</strong>): a 46-author paper on a family of open foundation code models (3B / 8B / 20B / 34B) released under Apache 2.0.
+      Mayank Mishra, Matt Stallone, and Gaoyuan Zhang are listed as <strong>equal contributors</strong> &mdash; the three names that drove the work.
+      Rameswar Panda and Ruchir Puri are corresponding authors. This is senior-most architecture credit at IBM Research and is the rough equivalent
+      of being a tech-lead on Llama-3 at Meta. He was on the bench of every major open-weights model since 2022:
+    </p>
+    <ul>
+      <li><strong>BLOOM (JMLR 2023, 176B params, 2,462 cites)</strong> &mdash; the first major open-multilingual LLM. BigScience initiative</li>
+      <li><strong>StarCoder (TMLR 2023, 1,800 cites)</strong> + <strong>StarCoder 2 / The Stack v2 (2024, 664 cites)</strong> &mdash; the BigCode code-LLM family</li>
+      <li><strong>SantaCoder (2023, 301 cites)</strong> &mdash; earlier BigCode generation</li>
+      <li><strong>Granite Code Models (2024, 115 cites, equal contributor)</strong> &mdash; IBM&rsquo;s open code family</li>
+      <li><strong>Granite 3.0 (GitHub 2024, 46 cites)</strong> + <strong>Granite Vision (arXiv 2025, 16 cites)</strong></li>
+      <li><strong>Granite 4.0</strong> (Oct 2025) &mdash; novel <strong>hybrid Mamba-2 / Transformer</strong> architecture, drastically reduces memory; <strong>Granite 4.1</strong> (Apr 2026) reportedly closes the gap between an 8B and a 32B MoE</li>
+    </ul>
+    <p>
+      The Granite 4.x hybrid Mamba-2 architecture is published <em>after</em> Mishra left IBM in mid-2025, but his earlier &ldquo;shared experts for
+      upcoming Granite 4.0&rdquo; HuggingFace transformers PR (#35894) confirms he was the architect of the MoE pieces. <strong>Granite is, today,
+      the only enterprise-shipping open-weights model family with a hybrid Mamba-2 architecture in production.</strong> That is his fingerprint.
+    </p>
+
+    <h3>(3) lm-engine: sole-author production training infrastructure</h3>
+    <p>
+      <strong><a href="https://github.com/IBM/dolomite-engine">lm-engine</a></strong> (formerly dolomite-engine) is IBM&rsquo;s open-source library for
+      pretraining, finetuning, and distillation of LLMs. Its README explicitly credits Mayank as the sole author and maintainer
+      (&ldquo;Built with &hearts; by Mayank Mishra&rdquo;) and its citation guidance attributes the software to him. The capability list is exactly the
+      surface area you would expect a Tri Dao&ndash;adjacent researcher to ship:
+    </p>
+    <ul>
+      <li>Multi-accelerator: NVIDIA GPUs, Google TPUs, AWS Trainium (rare in academic OSS &mdash; this is the same multi-target stack Together AI sells)</li>
+      <li>FSDP + tensor parallelism + advanced distributed training</li>
+      <li>Architectures: <strong>Transformer, MoE, Mamba2, RNN</strong> &mdash; the exact post-Transformer architecture menu his Berkeley papers explore</li>
+      <li>HuggingFace integration + custom high-performance kernels</li>
+      <li><strong>171 GitHub stars</strong>, with associated <strong>accelerated-model-architectures (90&#11088;)</strong> kernels repo</li>
+    </ul>
+    <p>
+      Owning an open-source pretraining stack of this surface area as a single author is the operational signal that he can ship infrastructure,
+      not just papers. The reference class for this is Tri Dao&rsquo;s own <code>flash-attention</code> repo &mdash; same shape, smaller scale.
+    </p>
+
+    <h3>(4) The 2025 architecture papers: a co-authored Tri Dao roadmap</h3>
+    <p>
+      The papers Mishra is currently producing are not portfolio items &mdash; they are a coherent thesis on commodity-hardware-aware architecture:
+    </p>
+    <table style="width:100%; font-size:0.82rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Paper</td><td>Venue</td><td>Co-authors (key)</td><td>Result</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Ladder-Residual</strong></td><td>ICML 2025</td><td>Muru Zhang (1), <strong>Mishra (2)</strong>, Yoon Kim, Ragan-Kelley, Ben Athiwaratkun, <strong>Tri Dao</strong> (last)</td><td>29% wall-clock speedup on 70B TP-8 inference; converted Llama-3.1 8B with 3B retraining tokens</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>SonicMoE</strong></td><td>ICLR 2026</td><td>Wentao Guo (1), <strong>Mishra (2)</strong>, Xinle Cheng, <strong>Ion Stoica</strong>, <strong>Tri Dao</strong> (last)</td><td>45% activation memory cut; 1.86x throughput vs ScatterMoE on Hopper; 213B tok/day on 64 H100s vs 225B on 96</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>M&sup2;RNN</strong></td><td>2026 preprint</td><td>(non-linear RNNs with matrix-valued states)</td><td>SSM/Mamba lineage extension into matrix-state RNNs</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Cross-Layer Attention</strong></td><td>NeurIPS 2024</td><td>Brandon (1), <strong>Mishra (2)</strong>, Nrusimha, Panda, Ragan-Kelley</td><td>Another 2x KV cache compression on top of MQA</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>PaTH Attention</strong></td><td>NeurIPS 2025</td><td>(position encoding via accumulating Householder transformations)</td><td>Architecture-level position encoding improvement (~21 cites already)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Distilling to Hybrid Attention Models via KL-Guided Layer Selection</strong></td><td>ICLR 2026</td><td>&mdash;</td><td>Hybrid (Mamba/Attn) distillation &mdash; continues the Granite-4 hybrid arc</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Dense Training, Sparse Inference</strong></td><td>2024</td><td>&mdash;</td><td>53 cites; MoE training/inference asymmetry</td></tr>
+    </table>
+    <p style="margin-top:0.5rem;">
+      <strong>Pattern:</strong> Mishra is consistently the &ldquo;senior-engineering / IBM-side&rdquo; 2nd author with Tri Dao or Ion Stoica as last
+      author. This is the textbook signal that the first author is a student executing on a problem that Mishra (the IBM-Granite-experienced senior)
+      framed and Tri Dao (the advisor) supervised. Across Ladder-Residual + SonicMoE + Cross-Layer Attention, this position is identical.
+    </p>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- GROWTH TRAJECTORY                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>Growth Trajectory</h2>
+    <table style="width:100%; font-size:0.85rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted); width:120px;">2016</td><td>Enters IIT Delhi &mdash; B.Tech Electrical Engineering. <strong>JEE Advanced AIR 921</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2016&ndash;2020</td><td>IIT Delhi BTech EE, <strong>GPA 8.17/10</strong>. Early publication on adversarial inference for speech-to-electroglottograph conversion</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>2020</strong></td><td><strong>Joins IBM Research India as Research Software Engineer</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2022</td><td>Joins the BigScience BLOOM 176B effort &mdash; one of the largest open multilingual LLM collaborations to date</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2023</td><td><strong>BLOOM</strong> (JMLR 2023, 2,462 cites). <strong>SantaCoder</strong> + <strong>StarCoder</strong> (TMLR 2023; 1,800 + 301 cites). BigCode contributor</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>2024</strong></td><td><strong>Relocates to MIT-IBM Watson AI Lab (Cambridge)</strong> as a Researcher &mdash; elevated to <em>leading pretraining and model architecture</em> for Granite. Granite Code Models published (equal contributor, 3 of 46). StarCoder 2 + The Stack v2. Cross-Layer Attention (NeurIPS 2024, 121 cites). Padding-Free Transformer blog. Aurora-M multilingual model. Dense Training Sparse Inference</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Jan 2025</td><td><strong>Ladder-Residual</strong> arXiv preprint (with Tri Dao). 29% TP speedup</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Aug 2025</strong></td><td><strong>Starts UC Berkeley EECS PhD</strong>. Co-advisors: <strong>Tri Dao</strong>, Joseph Gonzalez, Ion Stoica. Leaves IBM</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2025</td><td>Ladder-Residual accepted at ICML 2025. PaTH Attention at NeurIPS 2025. Granite 4.0 ships with hybrid Mamba-2 / Transformer architecture (his fingerprint)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Dec 2025</td><td><strong>SonicMoE</strong> (arXiv 2512.14080) &mdash; 1.86x Hopper throughput, accepted at ICLR 2026</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2026</td><td>M&sup2;RNN preprint. Distilling to Hybrid Attention Models (ICLR 2026). Granite 4.1 announcement (8B matching 32B MoE) referencing his hybrid architecture work</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted); color:var(--accent);"><strong>2026 (current)</strong></td><td><strong>LinkedIn current affiliation: &ldquo;Stealth AI Startup&rdquo;</strong> alongside the Berkeley PhD (unresolved)</td></tr>
+    </table>
+    <p style="margin-top:1rem; font-family:var(--mono); font-size:0.75rem; color:var(--accent);">
+      PACE: BLOOM &rarr; StarCoder &rarr; Granite Code as equal contributor &rarr; Ladder-Residual &rarr; SonicMoE &rarr; M&sup2;RNN in three years. ~5,778 cites at PhD start.<br>
+      DIRECTION: Industry &rarr; lead-architect &rarr; PhD-with-Tri-Dao is the <em>opposite</em> of the standard frontier-lab funnel. The bet is on what comes after.<br>
+      ACCELERATION: 2024&rarr;2025 went from co-author on group efforts to 2nd-author with Tri Dao on three architecture papers in one year, plus sole maintainer of a production training library used inside IBM.
+    </p>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- TECHNICAL DEEP DIVE                                    -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>Technical Deep Dive: Why Ladder-Residual + SonicMoE Matter</h2>
+    <p>
+      <strong>The architecture frontier in 2025&ndash;2026 has split into three sub-frontiers:</strong> (a) <em>communication-aware architecture</em>
+      (how do you change the residual stream so tensor parallelism is not bottlenecked by all-reduces?), (b) <em>MoE kernel/IO efficiency</em>
+      (how do you stop wasting Hopper&rsquo;s memory bandwidth on activation caching and ragged-tile padding?), and (c) <em>post-Transformer architectures</em>
+      (hybrid Mamba-2 / Transformer, matrix-state RNNs). Mishra has shipped a flagship paper on all three.
+    </p>
+
+    <h3>Ladder-Residual: communication hidden by architecture</h3>
+    <p>
+      Standard Transformers do an all-reduce at each layer for tensor-parallel inference; on 8-GPU TP, this dominates wall-clock latency for 70B models.
+      <strong>Ladder-Residual modifies the residual stream so that the communication of layer L overlaps with the compute of layer L+1</strong> &mdash;
+      effectively hiding communication latency. Result: <strong>29% end-to-end speedup on 70B TP-8 inference</strong>, validated by training 1B and 3B
+      Ladder Transformers from scratch with comparable quality, and by <em>converting Llama-3.1 8B to a Ladder variant with only 3B retraining tokens</em>.
+      The conversion-with-minimal-retraining is the commercial point: it means the same trick can be retrofitted to any open-weights model without a
+      full pretrain. This is the kind of paper that becomes a default in production inference stacks (vLLM, TensorRT-LLM, Together&rsquo;s FireAttention).
+    </p>
+
+    <h3>SonicMoE: 1.86x Hopper throughput, 45% activation cut</h3>
+    <p>
+      Fine-grained MoE (Mixtral, DeepSeekMoE, OLMoE, IBM Granite-4 MoE) is bottlenecked by three things on Hopper: (1) the activation memory needed
+      to cache for backward, (2) idle SMs when routing produces ragged token-per-expert tiles, (3) data-movement between HBM and SRAM. SonicMoE
+      ships a <strong>memory-efficient forward/backward algorithm</strong>, <strong>GPU kernels that overlap memory ops with compute</strong>, and a
+      <strong>tile-aware token rounding scheme</strong> that reduces padding waste under high sparsity. Result: 45% activation memory reduction,
+      <strong>1.86x compute throughput on Hopper vs ScatterMoE</strong>, <strong>213B tok/day on 64 H100s vs 225B on 96 H100s</strong> (i.e. similar
+      throughput with 33% fewer GPUs). On Blackwell, the kernel work gives 25% forward / 15% backward speedup over DeepGEMM. Under high sparsity,
+      tile-aware rounding adds another 1.16x. <strong>This is the exact gap that Cerebras / Etched / MatX want to attack with hardware</strong> &mdash;
+      Mishra is attacking it with software on commodity NVIDIA silicon, and the numbers compete.
+    </p>
+
+    <h3>Cross-Layer Attention + M&sup2;RNN: the long arc</h3>
+    <p>
+      CLA (NeurIPS 2024) extends MQA by sharing KV heads between <em>adjacent layers</em> for another 2x KV cache reduction; this stacks with
+      GQA / MQA / KV-quantization to push long-context inference further. M&sup2;RNN (2026) is the matrix-state generalization of linear RNNs &mdash;
+      same lineage as Mamba (vector state), Hydra (bidirectional), and Albert Gu&rsquo;s H-Net (hierarchical). Mishra is sitting at the precise
+      collision point of <strong>SSMs &harr; Transformers &harr; MoE</strong> &mdash; the three architectures any post-Transformer foundation
+      model will combine.
+    </p>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- COMPETITIVE LANDSCAPE                                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>Competitive Landscape &mdash; Architecture &amp; Training Infrastructure</h2>
+    <p class="small muted">If Mishra spins out, the company he builds plausibly sits at the intersection of post-Transformer architecture, MoE training systems, and inference-time TP optimization. The relevant landscape:</p>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Company</td><td>Stage / Valuation</td><td>Angle</td><td>Overlap with Mishra</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Together AI</strong></td><td>$305M Series B, ~$150M ARR</td><td>Tri Dao = Chief Scientist. Hosted inference, FlashAttention-derived stack, Together Inference Engine</td><td>Direct &mdash; this is the natural employer / spinoff parent. Tri Dao is his advisor</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Cartesia</strong></td><td>$91M raised ($64M Series A, Mar 2025)</td><td>Albert Gu (Mamba) + Karan Goel. Sonic voice models on SSM backbone</td><td>Adjacent &mdash; SSM lineage. Mishra&rsquo;s M&sup2;RNN extends the same theory tree</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Inception Labs</strong></td><td>Stealth, founded 2024</td><td>Stefano Ermon + Aditya Grover &mdash; diffusion-LLM hybrids on the post-Transformer frontier</td><td>Adjacent &mdash; post-Transformer architecture commercial play</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Sakana AI</strong></td><td>$214M, $1.5B valuation (Sep 2024)</td><td>David Ha + Llion Jones &mdash; evolutionary model merging, novel architecture search</td><td>Adjacent &mdash; novel architecture, less inference-focused</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Mistral AI</strong></td><td>$640M Series B, $6B+</td><td>MoE-first open models, fine-grained MoE</td><td>SonicMoE is exactly the kernel layer Mistral pays for in production</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Fireworks AI</strong></td><td>~$315M ARR (Feb 2026)</td><td>Hosted inference, FireAttention, MoE inference at scale</td><td>Direct &mdash; Ladder-Residual + SonicMoE are exactly what they integrate</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Baseten</strong></td><td>$300M Series E, $5B (Feb 2026)</td><td>Model hosting + inference optimization</td><td>Adjacent &mdash; consumes optimization, less novel architecture</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Cerebras</strong></td><td>IPO&rsquo;d, $8B</td><td>Wafer-scale silicon. CS-3 chip + MemoryX</td><td>Orthogonal &mdash; hardware-first; SonicMoE is the software counter-play</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Etched</strong></td><td>$120M (Sohu transformer ASIC)</td><td>Transformer-only ASIC</td><td>Orthogonal &mdash; bets <em>against</em> architectural change</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>MatX</strong></td><td>Stealth, Reid Hoffman-backed</td><td>LLM training ASIC (Google TPU alumni)</td><td>Orthogonal &mdash; training, hardware</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>IBM Granite</strong> (parent)</td><td>Enterprise reference customer</td><td>Hybrid Mamba-2 / Transformer in production</td><td>His own former product. Anchor design customer for whatever he ships next</td></tr>
+    </table>
+    <p style="margin-top:0.75rem;">
+      <strong>The gap:</strong> There is no independent company today selling <em>training infrastructure for post-Transformer architectures</em>
+      (MoE + Mamba-2 + RNN + hybrid) on multi-accelerator (NVIDIA + TPU + Trainium) backends. lm-engine is the OSS reference, IBM uses it internally,
+      and Granite-4 proves the hybrid Mamba-2 architecture is enterprise-ready. <strong>A company that productizes lm-engine + Ladder-Residual + SonicMoE
+      as a managed training platform for enterprises that want their own Granite-style hybrid model</strong> is the obvious next step &mdash; and would
+      directly compete with MosaicML&rsquo;s former positioning (acquired by Databricks for $1.3B). Mishra is one of two or three people in the world
+      qualified to lead it.
+    </p>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- NETWORK MAP                                            -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>Network Map</h2>
+
+    <h3>Berkeley advising cluster</h3>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Name</td><td>Role</td><td>Why it matters</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Tri Dao</strong></td><td>Co-advisor (jointly Princeton/Berkeley). Chief Scientist Together AI. FlashAttention + Mamba + Hydra author</td><td>The single most important young architecture researcher of the decade. Co-author with Mishra on Ladder-Residual + SonicMoE. Reference class for the founder trajectory</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Joseph E. Gonzalez</strong></td><td>Co-advisor. Berkeley EECS / Sky Lab / RISE Lab</td><td>Co-advised Ajay Jain (Genmo CTO). Anyscale / Sky alumni network. <a href="ajay-jain.html">Ajay Jain dossier</a></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Ion Stoica</strong></td><td>Co-advisor. Berkeley EECS. Co-founder Databricks ($62B) + Anyscale ($1B+)</td><td>Stoica being personally on a 1st-year&rsquo;s committee = work matters at Sky-Lab leadership level. Direct line into Databricks / Mosaic / Anyscale</td></tr>
+    </table>
+
+    <h3 style="margin-top:1.5rem;">Tri Dao paper cluster (Ladder-Residual + SonicMoE)</h3>
+    <ul>
+      <li><strong>Muru Zhang</strong> &mdash; Ladder-Residual first author. USC PhD</li>
+      <li><strong>Wentao Guo</strong> &mdash; SonicMoE first author. Princeton (Tri Dao&rsquo;s home dept)</li>
+      <li><strong>William Brandon</strong> &mdash; MIT, CLA first author. Architecture-side collaborator</li>
+      <li><strong>Yoon Kim</strong> &mdash; MIT EECS. Long-time Mishra/Brandon collaborator on attention variants</li>
+      <li><strong>Jonathan Ragan-Kelley</strong> &mdash; MIT EECS. Halide / TVM lineage; systems for ML</li>
+      <li><strong>Ben Athiwaratkun</strong> &mdash; Together AI. Same Together &harr; Tri Dao loop</li>
+      <li><strong>Xinle Cheng</strong> &mdash; SonicMoE co-author</li>
+    </ul>
+
+    <h3 style="margin-top:1.5rem;">IBM Granite cohort &mdash; equal contributors and core leads</h3>
+    <ul>
+      <li><strong>Matt Stallone</strong> &mdash; equal-contributor with Mishra on Granite Code. IBM Research Cambridge</li>
+      <li><strong>Gaoyuan Zhang</strong> &mdash; equal-contributor with Mishra on Granite Code. IBM Research Cambridge</li>
+      <li><strong>Rameswar Panda</strong> &mdash; corresponding author on Granite Code + Cross-Layer Attention. MIT-IBM Watson AI Lab. Long-term collaborator on multiple papers</li>
+      <li><strong>Ruchir Puri</strong> &mdash; corresponding author. IBM Chief Scientist, IBM Fellow</li>
+      <li><strong>Aniruddha Nrusimha</strong> &mdash; Cross-Layer Attention co-author</li>
+    </ul>
+
+    <h3 style="margin-top:1.5rem;">IIT Delhi cohort already in this repo (warm-network angle)</h3>
+    <ul>
+      <li><a href="akshat-bubna.html"><strong>Akshat Bubna</strong></a> &mdash; first Indian IOI Gold, MIT &rarr; Modal CTO ($1.1B)</li>
+      <li><a href="lovish-madaan.html"><strong>Lovish Madaan</strong></a> &mdash; PhD Meta MSL + UCL. ScaleRL co-lead. JEE AIR 124</li>
+      <li><a href="himanshu-gaurav-singh.html"><strong>Himanshu Gaurav Singh</strong></a> &mdash; Berkeley PhD (Abbeel + Malik). JEE AIR 2. The other Berkeley IIT Delhi</li>
+      <li><a href="kshitij-sodani.html"><strong>Kshitij Sodani</strong></a> &mdash; IIT Delhi alum in repo</li>
+      <li><a href="devvrit-khatri.html"><strong>Devvrit Khatri</strong></a> &mdash; PhD UT Austin, Reflection AI. ScaleRL co-author</li>
+      <li><a href="rohin-garg.html"><strong>Rohin Garg</strong></a>, <a href="ritvik-kapila.html"><strong>Ritvik Kapila</strong></a>, <a href="gauri-gupta.html"><strong>Gauri Gupta</strong></a> &mdash; IIT Delhi cluster</li>
+    </ul>
+
+    <h3 style="margin-top:1.5rem;">Architecture lineage peers (in this repo)</h3>
+    <ul>
+      <li><a href="sukjun-hwang.html"><strong>Sukjun Hwang</strong></a> &mdash; CMU under Albert Gu. H-Net 1st author. Hydra w/ Tri Dao. <em>The other Tri-Dao-adjacent architecture researcher in the repo</em></li>
+      <li><a href="brandon-wang.html"><strong>Brandon Wang</strong></a> &mdash; H-Net co-author. Cartesia &rarr; onepot AI. IMO Gold</li>
+      <li><a href="rishabh-tiwari.html"><strong>Rishabh Tiwari</strong></a> &mdash; Berkeley/Keutzer. QuantSpec. <em>The other Berkeley efficient-inference Indian-origin name</em></li>
+    </ul>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- CITATION ANALYSIS                                      -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>Publication &amp; Citation Footprint</h2>
+    <p>
+      <strong>Google Scholar (early 2026):</strong> ~5,778 total citations, <strong>h-index 15, i10-index 17</strong>. Affiliation listed: IBM Research
+      / UC Berkeley PhD. Research areas: <em>Model Architecture, Scaling, Optimization</em>.
+    </p>
+    <table style="width:100%; font-size:0.82rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Year</td><td>Venue</td><td>Paper</td><td>Mishra position</td><td>Cites</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2023</td><td>JMLR</td><td><strong>BLOOM: A 176B-parameter open multilingual LM</strong></td><td>Co-author (BigScience)</td><td>2,462</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2023</td><td>TMLR</td><td><strong>StarCoder: may the source be with you!</strong></td><td>Co-author (BigCode)</td><td>1,800</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2024</td><td>arXiv</td><td><strong>StarCoder 2 + The Stack v2</strong></td><td>Co-author (BigCode)</td><td>664</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2023</td><td>arXiv</td><td><strong>SantaCoder: don&rsquo;t reach for the stars!</strong></td><td>Co-author (BigCode)</td><td>301</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2024</td><td><strong>NeurIPS</strong></td><td><strong>Reducing Transformer KV Cache Size with Cross-Layer Attention</strong></td><td><strong>2nd author</strong></td><td>121</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2024</td><td>arXiv</td><td><strong>Granite Code Models</strong></td><td><strong>Equal contributor (3 of 46)</strong></td><td>115</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2024</td><td>arXiv</td><td>Dense Training, Sparse Inference for MoE LMs</td><td>Co-author</td><td>53</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2024</td><td>GitHub</td><td>Granite 3.0 Language Models</td><td>Co-author</td><td>46</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2024</td><td>arXiv</td><td>Mitigating Outlier Channels for LM Quantization</td><td>Co-author</td><td>26</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2025</td><td><strong>NeurIPS</strong></td><td>PaTH Attention: Position Encoding via Householder</td><td>Co-author</td><td>21</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2024</td><td>arXiv</td><td>Enhancing Training Efficiency Using Packing with Flash Attention</td><td>Co-author</td><td>20</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2024</td><td>arXiv</td><td>The infrastructure powering IBM&rsquo;s Gen AI model development</td><td>Co-author</td><td>20</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2024</td><td>arXiv</td><td>Power Scheduler: Batch / Token-Agnostic LR Scheduler</td><td>Co-author</td><td>18</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2024</td><td>arXiv</td><td>Aurora-M: First open red-teamed multilingual LM per US EO</td><td>Co-author</td><td>18</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2025</td><td>arXiv</td><td>Granite Vision (lightweight multimodal)</td><td>Co-author</td><td>16</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2025</td><td><strong>ICML</strong></td><td><strong>Ladder-Residual</strong></td><td><strong>2nd author</strong> (w/ Tri Dao)</td><td>&mdash;</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2026</td><td><strong>ICLR</strong></td><td><strong>SonicMoE</strong></td><td><strong>2nd author</strong> (w/ Tri Dao + Stoica)</td><td>&mdash;</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2026</td><td><strong>ICLR</strong></td><td>Distilling to Hybrid Attention via KL-Guided Layer Selection</td><td>Co-author</td><td>&mdash;</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>2026</td><td>preprint</td><td>M&sup2;RNN: Non-Linear RNNs with Matrix-Valued States</td><td>Co-author</td><td>&mdash;</td></tr>
+    </table>
+    <p style="margin-top:0.5rem;">
+      <strong>Venue and citation density:</strong> Pre-PhD h-15 with 5,778 cites is comparable to a strong mid-career assistant professor. Most of the
+      citation mass is on BigScience / BigCode efforts (BLOOM, StarCoder family) where Mishra was a contributing engineer; the senior-author signal
+      is in Granite Code (equal contributor) and the 2025+ Tri Dao papers where he is consistently in the 2nd-author senior slot.
+    </p>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- IN HIS OWN WORDS                                       -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>In His Own Words</h2>
+    <p class="small muted">Direct quotes from his personal site, paper abstracts, and OpenReview profile. Twitter (@MayankMish98) is active but not scrapable here.</p>
+    <ul>
+      <li>&ldquo;<em>Non-member of a non-technical staff at a non-technical, non-frontier lab trying to do technical work.</em>&rdquo; <em>&mdash; Twitter bio (verbatim). Self-deprecating triple-negative aimed squarely at IBM. The kind of bio someone writes on the way out the door, not at the start of a 5-year industrial career.</em></li>
+      <li>&ldquo;<em>Exploring pretraining and model architectures.</em>&rdquo; <em>&mdash; Berkeley site (verbatim). Six words; no jargon. The signature of someone whose work speaks for him.</em></li>
+      <li>&ldquo;<em>Leading pretraining and model architecture research at MIT-IBM Watson Lab for IBM&rsquo;s Granite Models.</em>&rdquo; <em>&mdash; His own description of his pre-PhD role. &ldquo;Leading&rdquo; is a self-claim worth taking literally given the Granite Code equal-contributor credit.</em></li>
+      <li>&ldquo;<em>We propose a simple architectural modification to residual-based models that decouples communication from computation, enabling straightforward overlapping that effectively hides the latency of communication.</em>&rdquo; <em>&mdash; Ladder-Residual abstract. The verb &ldquo;hides&rdquo; (vs &ldquo;reduces&rdquo;) is product-aware language &mdash; he is thinking about wall-clock at deployment, not about ablation tables.</em></li>
+      <li>&ldquo;<em>SonicMoE achieves 1.86x compute throughput on Hopper GPUs versus ScatterMoE baseline... training throughput of 213 billion tokens per day on 64 H100s.</em>&rdquo; <em>&mdash; SonicMoE results. The 64 H100s vs ScatterMoE&rsquo;s 96 framing is the cost-per-token framing of someone who has actually paid the GPU bill, not a researcher chasing percentage points.</em></li>
+      <li>&ldquo;<em>Built with &hearts; by Mayank Mishra.</em>&rdquo; <em>&mdash; lm-engine footer. Sole credit on IBM&rsquo;s production training library.</em></li>
+    </ul>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- BACKGROUND                                             -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>Background</h2>
+    <p>
+      From India. <strong>IIT Delhi B.Tech Electrical Engineering, 2016&ndash;2020</strong>. <strong>JEE Advanced AIR 921</strong> (2016) &mdash; a
+      strong rank but not the headline metric (the repo has AIR 2 and AIR 124 already; AIR 921 is solidly within IIT Delhi&rsquo;s EE intake band).
+      Undergrad GPA 8.17/10. Earliest publication: adversarial approximate inference for speech-to-electroglottograph conversion (2023, before Berkeley
+      &mdash; an India-side EE collaboration that predates his ML work).
+    </p>
+    <p>
+      <strong>Joined IBM Research India in 2020</strong> as a Research Software Engineer straight out of IIT Delhi. Spent ~4 years contributing to the
+      BigScience BLOOM and BigCode StarCoder collaborations from India, then <strong>relocated to MIT-IBM Watson AI Lab in Cambridge in 2024</strong>
+      with an elevated mandate to lead pretraining and architecture for the Granite family. Total IBM tenure: <strong>~5 years (2020&ndash;mid 2025)</strong>.
+      That is a long industrial run for someone who then chose to start a PhD at Berkeley rather than join a frontier lab &mdash; signal that he was
+      reaching for the academic-research / advisor-network access that Berkeley + Tri Dao + Sky Lab provides, not for compute (IBM had compute).
+    </p>
+    <p>
+      <strong>Started UC Berkeley EECS PhD in Aug 2025</strong>. Co-advisors: Tri Dao + Joseph Gonzalez + Ion Stoica. ~9 months in as of May 2026.
+      Currently lives in Berkeley. The OpenReview profile lists Researcher MIT (2024&ndash;2025) and Researcher IBM (2020&ndash;2025) overlap during
+      the MIT-IBM transition. Active on @MayankMish98 Twitter. Active GitHub (lm-engine sole maintainer, ibm-granite contributor).
+    </p>
+    <p>
+      <strong>Unresolved signal:</strong> his LinkedIn current affiliation reads &ldquo;Stealth AI Startup&rdquo; alongside the Berkeley PhD as of
+      early 2026. This could be (a) advisor role to a friend&rsquo;s startup, (b) a side-project, (c) a genuine co-founding under wraps, or
+      (d) a stale placeholder. <em>Worth a single follow-up question via warm intro before any check is sized.</em>
+    </p>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- OUTREACH                                               -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>Outreach</h2>
+    <p class="small muted"><strong>Best channel:</strong> email <a href="mailto:mayank_mishra@berkeley.edu">mayank_mishra@berkeley.edu</a> (public on his site). Twitter DM (@MayankMish98) is a viable second &mdash; his bio is conversational and he engages. LinkedIn is third.</p>
+
+    <div class="spike-box" style="margin-top:0.75rem; border-left-color: var(--tier2);">
+      <div class="label">&#9670; Draft Outreach (email)</div>
+      <p style="font-size:0.88rem; white-space:pre-line;">Subject: Ladder-Residual + the gap between Together&rsquo;s stack and Mosaic-style training
+
+Hi Mayank,
+
+I&rsquo;m an inception-stage investor &mdash; I spend most of my time mapping the architecture and training-infra frontier. Ladder-Residual is the cleanest paper I&rsquo;ve read on TP-aware architecture in a year: 29% wall-clock on 70B at 8-way TP by overlapping the all-reduce of layer L with the compute of L+1, and the fact that you converted Llama-3.1 8B with only 3B retraining tokens is what makes it actually deployable rather than another ablation result. SonicMoE&rsquo;s 213B tok/day on 64 H100s vs ScatterMoE&rsquo;s 225B on 96 is the same shape of insight on the MoE kernel side.
+
+What I&rsquo;m curious about is the gap I keep seeing in the landscape: Together AI sells inference, Fireworks sells inference (~$315M ARR), Baseten sells hosting ($300M Series E at $5B), Cartesia and Inception Labs sell models &mdash; but nobody has rebuilt the MosaicML wedge for the post-Transformer era. lm-engine already runs Transformer + MoE + Mamba-2 + RNN across NVIDIA + TPU + Trainium, and Granite-4&rsquo;s hybrid Mamba-2 architecture is the enterprise proof point. Productizing lm-engine + Ladder-Residual + SonicMoE as a managed training platform for enterprises that want their own Granite-style hybrid feels like the obvious next move &mdash; and I cannot think of two people in the world more qualified to lead it than you.
+
+We have a few IIT Delhi names in the orbit already &mdash; Akshat Bubna at Modal, Lovish Madaan in Meta MSL, Himanshu Gaurav Singh next door in Abbeel/Malik &mdash; happy to make any intros that are useful. I can write $500K&ndash;$1M and move fast if/when there&rsquo;s a serious build.
+
+Happy to grab coffee in Berkeley or SF &mdash; I track every IIT Delhi researcher in AI and would value your read on the architecture landscape regardless of where you land.
+
+&mdash; Vansh</p>
+    </div>
+
+    <p class="small muted" style="margin-top:0.5rem;"><strong>Why this works:</strong> Names exact paper numbers (29%, 70B TP-8, 3B retraining tokens, 213B tok/day on 64 H100s). Identifies a specific gap (post-Mosaic training platform) and connects it directly to assets he already owns (lm-engine + Ladder-Residual + SonicMoE + Granite-4 hybrid). References his IIT Delhi cohort already in the repo. No fund-thesis paragraph. No &ldquo;pick your brain.&rdquo; Ends with check size and a low-friction coffee ask. Signs &ldquo;Vansh.&rdquo;</p>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- RISKS                                                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>Risks</h2>
+    <ul>
+      <li><strong>1st-year PhD &mdash; long timeline.</strong> Started Aug 2025. Standard Berkeley EECS path puts him at 2030. Trajectory bet, not inception bet</li>
+      <li><strong>2nd-author pattern.</strong> His three flagship 2024&ndash;2026 papers (CLA, Ladder-Residual, SonicMoE) are all 2nd-author. Sukjun Hwang and Rishabh Tiwari are 1st-author on theirs. Counter-evidence: Granite Code equal-contributor (3 of 46) and sole authorship of lm-engine. But pattern-wise, he is currently the &ldquo;senior co-author who frames the problem&rdquo; not the &ldquo;PhD student who drives the experiments.&rdquo; Watch for a 1st-author Berkeley paper</li>
+      <li><strong>Together AI acquihire risk.</strong> Tri Dao is his advisor and Together&rsquo;s Chief Scientist. The most likely outcome is Mishra finishes PhD and joins Together full-time as a research engineer / staff scientist &mdash; not founding. If he&rsquo;s already informally embedded at Together via Tri Dao, the founder thesis is degraded</li>
+      <li><strong>Granite 4.x &ldquo;fingerprint&rdquo; is post-departure.</strong> The hybrid Mamba-2 architecture shipped after he left IBM, so his exact contribution is inferred (from the HF transformers PR + the timing) rather than documented in a paper. If IBM&rsquo;s actual Granite-4 designers were Stallone / Zhang / Panda and Mishra was tangential by the end, the &ldquo;led pretraining&rdquo; framing is weaker than implied</li>
+      <li><strong>Stealth AI Startup ambiguity.</strong> The LinkedIn line is unresolved. If it&rsquo;s an advisor role only, the founder timing is still PhD-bounded</li>
+      <li><strong>JEE Advanced AIR 921 is solid but not headline.</strong> The repo has AIR 2 (Singh) and AIR 124 (Madaan); 921 is a normal IIT Delhi EE rank, not the spike. The spike is the Granite + Tri Dao stack, not the credential</li>
+      <li><strong>Tri Dao&rsquo;s primary affiliation is Princeton.</strong> His Berkeley advising is a courtesy arrangement; if Tri Dao gets pulled back to Princeton full-time, the local mentorship density drops</li>
+      <li><strong>Twitter footprint is light.</strong> @MayankMish98 is active but low-following. No podcast appearances, no blog cadence beyond the IBM site. Hard to read public signals on direction. The exception is the self-deprecating bio, which reads as IBM-fatigue but is one data point</li>
+    </ul>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- NOTES                                                  -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section>
+    <h2>Notes</h2>
+    <ul>
+      <li class="small">Full name: Mayank Mishra. Based in Berkeley, CA</li>
+      <li class="small">Email: mayank_mishra@berkeley.edu</li>
+      <li class="small">Twitter: <a href="https://x.com/MayankMish98">@MayankMish98</a>. Bio: &ldquo;Non-member of a non-technical staff at a non-technical, non-frontier lab trying to do technical work&rdquo;</li>
+      <li class="small">GitHub bio (early 2026): &ldquo;Focusing.&rdquo; Affiliation: IBM Research India (stale &mdash; he is at Berkeley)</li>
+      <li class="small">GitHub repos: lm-engine (171 stars, sole author), accelerated-model-architectures (90 stars), Megatron-DeepSpeed (1.4k stars, BLOOM contributor), transformers-bloom-inference (566 stars)</li>
+      <li class="small">OpenReview lists employment overlap: IBM 2020&ndash;2025, MIT (MIT-IBM Watson) 2024&ndash;2025, Berkeley 2025&ndash;present</li>
+      <li class="small">Granite Code paper URL: arxiv.org/abs/2405.04324. Ladder-Residual: arxiv.org/abs/2501.06589. SonicMoE: arxiv.org/abs/2512.14080</li>
+      <li class="small">Granite 4.0 (Oct 2025) hybrid Mamba-2 / Transformer architecture is the operational legacy of his MIT-IBM tenure. Granite 4.1 (Apr 2026) tightens the wedge: 8B Granite-4.1 reported to match a 32B MoE on agent benchmarks</li>
+      <li class="small">Co-organized &ldquo;Agents in Academia&rdquo; SF event with Berkeley Sky Lab + Stanford PhD speakers per LinkedIn snippet &mdash; signal that he is building the Berkeley/Stanford community network early</li>
+      <li class="small">LinkedIn current line: &ldquo;Stealth AI Startup&rdquo; (unresolved &mdash; investigate via warm intro before reaching the &ldquo;serious check&rdquo; question)</li>
+      <li class="small">No olympiad results listed. Spike is publication + infrastructure + Granite-lead + Tri Dao stack, not olympiad lineage</li>
+      <li class="small">Recommended cadence: email now with Ladder-Residual + SonicMoE-specific outreach. Re-check monthly for (a) Stealth-startup resolution, (b) IBM affiliation drop, (c) 1st-author Berkeley paper, (d) Twitter pivot to building / founder language. Escalate to T0 the moment any of (a)&ndash;(d) materializes</li>
+    </ul>
+  </section>
+
+  <footer>
+    researched: 2026-05-21 &middot; 6-agent architecture (technical, social, market, background, trajectory, recursive) &middot; <a href="../index.html">back to index</a>
+  </footer>
+
+</body>
+</html>
