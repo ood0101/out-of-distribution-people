@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jiaming Song &mdash; Out of Distribution People</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="site-title">Out of Distribution People</div>
+    <div class="breadcrumb"><a href="../index.html">/ index</a> / jiaming-song</div>
+  </nav>
+
+  <div class="profile-header">
+    <h1>Jiaming Song</h1>
+    <p class="one-liner"><strong>Chief Scientist at <a href="https://lumalabs.ai/">Luma AI</a></strong> (since July 2023) &mdash; leads Dream Machine, Ray2, Ray3, and Genie. <strong>1st author of <a href="https://arxiv.org/abs/2010.02502">DDIM (Denoising Diffusion Implicit Models, ICLR 2021)</a></strong> &mdash; the accelerated-sampling algorithm shipped in every production diffusion system (Stable Diffusion, DALL&middot;E 2/3, Imagen, Midjourney, every modern video model). <strong>~14,734 citations on DDIM alone; ~35,387 total Scholar cites, h-index 51, i10-index 76</strong>. Co-author of <strong><a href="https://arxiv.org/abs/2108.01073">SDEdit (ICLR 2022 Outstanding Paper Award)</a></strong> &mdash; the methodology behind Stable Diffusion's img2img. <strong>Stanford CS PhD under <a href="https://cs.stanford.edu/~ermon/">Stefano Ermon</a></strong> (CLAUDE.md critical labs). <strong>Tsinghua CS undergrad</strong> (Jun Zhu, Lawrence Carin). Previously Research Scientist at <strong>NVIDIA Research</strong> (Deep Imagination + Learning &amp; Perception). <strong>MIT Tech Review Innovators Under 35 (Asia Pacific, 2024)</strong>. Luma raised <strong>$900M Series C from Saudi Arabia&rsquo;s HUMAIN (Nov 19, 2025)</strong> &mdash; total funding $1B+, valuation $4B+. Chinese-origin.</p>
+    <div class="tags">
+      <span class="tag tier2">tier-2: tracking</span>
+      <span class="tag">researchers</span>
+      <span class="tag">diffusion</span>
+      <span class="tag">video-ai</span>
+      <span class="tag">luma</span>
+      <span class="tag">ermon-lab</span>
+      <span class="tag">indexed-name</span>
+      <span class="tag">chinese-origin</span>
+      <span class="tag">stanford-phd</span>
+      <span class="tag">tsinghua</span>
+      <span class="tag">ddim</span>
+    </div>
+    <div class="links">
+      <a href="https://tsong.me">tsong.me</a>
+      <a href="https://x.com/baaadas">twitter/x</a>
+      <a href="https://github.com/jiamings">github</a>
+      <a href="https://scholar.google.com/citations?user=6dP660cAAAAJ">scholar</a>
+      <a href="mailto:jiaming.tsong@gmail.com">email</a>
+    </div>
+  </div>
+
+  <!-- WHY THIS NAME MATTERS -->
+  <div class="spike-box">
+    <div class="label">&#9670; Why This Name Matters (Indexed, Not Pipeline)</div>
+    <p>
+      Jiaming Song is <strong>1st author on DDIM</strong> &mdash; one of the 3&ndash;4 most consequential papers in the
+      history of generative AI, alongside Ho/Jain/Abbeel&rsquo;s DDPM, Rombach et al.&rsquo;s LDM (Stable Diffusion),
+      and Yang Song&rsquo;s score-based models. <strong>Without DDIM, no commercial diffusion product could exist</strong>:
+      DDPM&rsquo;s 1000-step sampler is too slow to ship; DDIM compresses that to 20&ndash;50 steps at the same quality.
+      Every image and video model in production &mdash; Stable Diffusion, DALL&middot;E 2/3, Imagen, Midjourney, Sora,
+      Veo, Runway, Pika, Kling, Hailuo, Genmo Mochi, and his own Dream Machine &mdash; runs on a DDIM-family sampler.
+      He is now <strong>Chief Scientist at Luma AI</strong>, the highest research seat at one of the four leading
+      video-generation companies in the world ($1B+ raised, $4B+ valuation). For an inception-stage fund this
+      is <strong>not a founder pipeline target</strong> &mdash; he just joined a venture-backed Chief Scientist seat in
+      mid-2023 with model freedom + product responsibility. He is <strong>T2: indexed as a permanent network node</strong>:
+      angel investor candidate, advisor for diffusion-stage founders, sourcing surface for the Ermon-lab + Tsinghua
+      cohort, and a 3&ndash;5 year departure watch.
+    </p>
+  </div>
+
+  <!-- THE SPIKE -->
+  <section>
+    <h2>The Spike &mdash; With Evidence</h2>
+    <p>
+      <strong>One sentence:</strong> Jiaming Song wrote the algorithm that makes commercial diffusion possible (DDIM),
+      then co-wrote the algorithm that makes Stable Diffusion img2img possible (SDEdit, ICLR 2022 Outstanding Paper),
+      then took the Chief Scientist seat at Luma AI and shipped Dream Machine + Ray2 + Ray3.
+    </p>
+
+    <h3>1. DDIM (ICLR 2021) &mdash; the sampling algorithm of the diffusion era</h3>
+    <p>
+      Song, Meng, Ermon. <strong>~14,734 citations on Google Scholar</strong> (May 2026 retrieval, ranking among the top
+      diffusion papers ever). DDIM constructs a class of non-Markovian diffusion processes that share the DDPM training
+      objective but admit a deterministic reverse process you can take large steps through. The headline result:
+      <strong>10&times;&ndash;50&times; faster sampling than DDPM at equal quality</strong>, with deterministic generation that enables
+      latent-space interpolation and editing. The DDIM sampler (or a direct descendant: DPM-Solver, PNDM, Heun, Euler-A
+      &mdash; all DDIM-family) is the default sampler in Stable Diffusion, DALL&middot;E 2/3, Imagen, Midjourney, every modern
+      video diffusion model, and Luma&rsquo;s own Ray2/Ray3.
+    </p>
+
+    <h3>2. SDEdit (ICLR 2022 Outstanding Paper Award) &mdash; the img2img methodology</h3>
+    <p>
+      Meng, He, Song, Song, Wu, Zhu, Ermon. <strong>~2,919 citations</strong>. SDEdit is the technique that lets you
+      take an existing image (or a stroke / a layout / a sketch), partially noise it, and denoise it through a
+      diffusion model to produce a photo-realistic edited version. <strong>This is the algorithm under Stable
+      Diffusion&rsquo;s &ldquo;img2img&rdquo; tab</strong>, ControlNet&rsquo;s sketch-guided generation, every &ldquo;upload a photo, restyle
+      it&rdquo; product in market, and the inpainting/outpainting pipelines in DALL&middot;E and Midjourney. ICLR 2022
+      Outstanding Paper Award (one of only a handful per year).
+    </p>
+
+    <h3>3. Dream Machine + Ray2 + Ray3 at Luma (2024&ndash;2025) &mdash; running the field</h3>
+    <p>
+      Joined Luma as Chief Scientist <strong>July 2023</strong>. Led training of <strong>Dream Machine</strong>
+      (launched Jun 12, 2024) &mdash; 1M users in 4 days with zero promotion fees, 25M+ registered users by 2025,
+      one of the viral product launches of the year. Led <strong>Ray2</strong> (540p&ndash;1080p, coherent motion) and
+      <strong>Ray3</strong> (Sep 18, 2025) &mdash; the <em>first reasoning video model</em>, also first model to produce
+      true 10/12/16-bit HDR ACES2065-1 EXR. <strong>Adobe Firefly integration. Dentsu Digital adoption.</strong>
+      He is the technical anchor of the Luma product line.
+    </p>
+
+    <h3>4. Other major papers</h3>
+    <p>
+      <strong>Loss-Guided Diffusion Models</strong> (ICML 2023). <strong>Pseudoinverse-Guided Diffusion Models</strong>
+      (ICLR 2023, ~554 cites) &mdash; the &Pi;GDM framework for solving inverse problems with diffusion priors
+      (super-resolution, inpainting, JPEG restoration). <strong>Denoising Diffusion Restoration Models (DDRM)</strong>
+      (NeurIPS 2022, ~1,505 cites). <strong>CSDI: Conditional Score-Based Diffusion for Time-Series Imputation</strong>
+      (NeurIPS 2021, ~1,271 cites). <strong>eDiff-I</strong> (NVIDIA 2022, ~1,148 cites) &mdash; NVIDIA&rsquo;s text-to-image
+      ensemble of expert denoisers, his NVIDIA Research era. Plus co-authorship on
+      <strong>BIG-bench / Beyond the Imitation Game</strong> (~2,632 cites).
+    </p>
+  </section>
+
+  <!-- ARCHITECTURE LINEAGE -->
+  <section>
+    <h2>Architecture Lineage &mdash; Jiaming Sits On the Sampling Branch</h2>
+    <pre style="font-family:var(--mono); font-size:0.75rem; line-height:1.6; background:var(--card-bg); padding:0.75rem; border:1px solid var(--border); overflow-x:auto;">
+Sohl-Dickstein 2015 (deep unsupervised learning via thermodynamics)
+        |
+        +---&gt; Yang SONG &amp; Stefano ERMON 2019 &mdash; NCSN (score matching, NeurIPS 2019)
+        |             |
+        |             v
+        |     Yang SONG et al. 2021 &mdash; Score-based SDEs (ICLR 2021 Outstanding)
+        |
+        +---&gt; Ho, Jain, Abbeel 2020 &mdash; DDPM (NeurIPS 2020) ........ 40,013 cites
+                      |
+                      v
+              JIAMING SONG, Meng, Ermon 2021 &mdash; DDIM (ICLR) ... 14,734 cites *
+                      |
+                      +---&gt; Meng, He, J. SONG, Y. SONG, ... 2022 &mdash; SDEdit (ICLR Outstanding) *
+                      |             |
+                      |             v
+                      |     Stable Diffusion img2img / ControlNet / Krea / Magnific
+                      |
+                      +---&gt; DPM-Solver / PNDM / Heun / Euler-A (all DDIM-family samplers)
+                      |
+                      +---&gt; Rombach et al. 2022 &mdash; LDM / Stable Diffusion
+                      |             |
+                      |             +---&gt; DALL&middot;E 2 / Imagen / Midjourney / Adobe Firefly
+                      |
+                      +---&gt; Video Diffusion Models / Imagen Video / Make-A-Video / SVD
+                      |             |
+                      |             +---&gt; Sora / Veo / Runway Gen-3 / Kling / Hailuo / Pika / Mochi / Dream Machine *
+                      |
+                      v
+        LUMA AI (J. Song Chief Scientist):
+              Dream Machine (Jun 2024) &rarr; Ray2 &rarr; Ray3 (Sep 2025, reasoning, 16-bit HDR) *
+
+* = Jiaming Song author / leader</pre>
+    <p class="small muted">
+      Jiaming is upstream on the <em>sampling</em> branch of the diffusion graph (DDIM + SDEdit), which is the
+      branch that ships in every product. Yang Song (different person, OpenAI &rarr; DeepMind) is upstream on the
+      <em>score-based</em> branch &mdash; they are intellectual siblings, not the same person. Ho/Jain/Abbeel are
+      upstream on the <em>training objective</em> branch.
+    </p>
+  </section>
+
+  <!-- THE DIFFUSION-INTO-VIDEO CLUSTER -->
+  <section>
+    <h2>The Diffusion-Into-Video Cluster &mdash; Critical Connection</h2>
+    <p>
+      A clean pattern visible in this repo: <strong>the founding-era diffusion paper authors are now the
+      Chief Scientists / CTOs of the leading video-generation companies</strong>. They are not the CEOs.
+      The CEOs are product / graphics people. The diffusion authors run the model.
+    </p>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Person</td><td>Foundational Paper</td><td>Company / Role</td><td>Status</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Jiaming Song</strong> (this dossier)</td><td>DDIM (~14.7K cites) + SDEdit (ICLR 2022 Outstanding)</td><td><strong>Luma AI &mdash; Chief Scientist</strong></td><td>$1B+ raised, $4B+ val (Nov 2025)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><a href="ajay-jain.html"><strong>Ajay Jain</strong></a> (repo, T1)</td><td>DDPM 2nd author (~40K cites) + DreamFusion</td><td><strong>Genmo &mdash; Co-Founder &amp; CTO</strong></td><td>$28.4M Series A NEA (Oct 2024)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Chenlin Meng</strong></td><td>DDIM 2nd author + SDEdit 1st author</td><td><strong>Pika Labs &mdash; Co-Founder &amp; CTO</strong></td><td>$55M Series A (Nov 2023), ~$500M val</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Bjorn Ommer / Robin Rombach</td><td>LDM / Stable Diffusion (Rombach et al. 2022)</td><td>Black Forest Labs (Rombach co-founded)</td><td>$31M seed + raised at $1B</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Tim Brooks / Bill Peebles</td><td>DiT (Diffusion Transformers, ICCV 2023)</td><td><strong>Sora &mdash; OpenAI co-leads</strong></td><td>Brooks left for DeepMind Oct 2024</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Ben Mildenhall</td><td>NeRF + DreamFusion</td><td><strong>Luma AI &mdash; left Google Research</strong></td><td>Now a Luma colleague of Jiaming</td></tr>
+    </table>
+    <p style="margin-top:0.75rem;">
+      <strong>Practical implication for an inception fund:</strong> the <em>next</em> wave of diffusion-era founders
+      isn&rsquo;t the DDIM/DDPM/LDM author cohort &mdash; they&rsquo;ve already taken their seats. The next wave is the
+      <strong>Ermon-lab PhD class of 2024&ndash;2026</strong>, the <strong>Tsinghua &rarr; Stanford / CMU / MIT pipeline</strong>
+      of the same cohort, and the post-Sora / post-Dream-Machine departures (Tim Brooks pattern). Jiaming is a
+      sourcing surface for all three.
+    </p>
+  </section>
+
+  <!-- ERMON LAB MAP -->
+  <section>
+    <h2>The Ermon Lab Map &mdash; Recursive Discovery</h2>
+    <p>
+      Stefano Ermon (Stanford CS, on CLAUDE.md critical-labs list) is one of the founding researchers of
+      diffusion modeling and co-author of NCSN / score-based SDE / DDIM / SDEdit. Ermon co-founded
+      <strong>Inception Labs</strong> with Aditya Grover (UCLA) and Volodymyr Kuleshov (Cornell) in 2024 &mdash;
+      Inception&rsquo;s Mercury is the world&rsquo;s first commercial diffusion LLM, $50M seed from
+      Menlo Ventures + Databricks Ventures + Mayfield + Andrew Ng + Karpathy + Schmidt (Nov 2025). This is
+      the Ermon-lab founder pattern in flight; map the lab&rsquo;s younger generations for the next wave.
+    </p>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Person</td><td>Connection</td><td>Status</td><td>Action</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Stefano Ermon</strong></td><td>PhD advisor. NCSN / DDIM / SDEdit co-author. Inception Labs co-founder</td><td>Stanford + Inception Labs</td><td>Already on CLAUDE.md critical-labs list; standing reference</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Chenlin Meng</strong></td><td>DDIM + SDEdit co-author, Ermon lab classmate. Stanford PhD on leave</td><td><strong>Co-Founder &amp; CTO, Pika Labs</strong> ($500M val)</td><td><strong>HIGH-PRIORITY standalone dossier candidate</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Aditya Grover</td><td>Ermon PhD alumnus. UCLA Asst Prof. Inception Labs co-founder</td><td>Inception Labs, $50M seed Nov 2025</td><td>Post-seed; recursive: their lab + Inception team</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Volodymyr Kuleshov</td><td>Ermon PhD alumnus. Cornell Asst Prof. Inception Labs co-founder</td><td>Inception Labs</td><td>Track Cornell PhD students of Kuleshov</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Tri Dao</td><td>Spent time in Ermon orbit / Stanford ML. Now Princeton Asst Prof</td><td>Princeton + Together AI Chief Scientist</td><td>Already known; in CLAUDE.md critical-labs</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Yang Song</td><td><em>Different person.</em> Ermon co-author on NCSN (2019) + score-based SDEs (2021 Outstanding)</td><td>Was at OpenAI &rarr; now DeepMind / academic exit</td><td>Departure watch &mdash; he is the obvious &ldquo;Hinton-tier&rdquo; researcher to spin out</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Andy Shih</td><td>Ermon PhD alum</td><td>Anthropic</td><td>Departure watch</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Chris Cundy</td><td>Ermon PhD alum</td><td>FAR AI</td><td>Tracking</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Michael Poli</td><td>Ermon group. Hyena / StripedHyena co-author. Together AI</td><td>Together AI</td><td>Departure watch / sourcing</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Aaron Lou</td><td>Current Ermon student (per lab page)</td><td>Stanford</td><td>Pre-PhD-completion tracking</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Linqi (Alex) Zhou</td><td>Current Ermon student</td><td>Stanford</td><td>Pre-PhD-completion tracking</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Minkai Xu</td><td>Current Ermon student</td><td>Stanford</td><td>Pre-PhD-completion tracking</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Dongjun Kim, Meihua Dang, Jiaqi Han, Haotian Ye, Silas Alberti, Syrine Belakaria, Zhuo Zheng, Amil Merchant, Felix Petersen, Charlie Marx</td><td>Current Ermon group (per cs.stanford.edu/~ermon/website/people.html)</td><td>Stanford</td><td>Block of tracking candidates</td></tr>
+    </table>
+  </section>
+
+  <!-- LUMA AI DEEP DIVE -->
+  <section>
+    <h2>Luma AI &mdash; the Company Around Him</h2>
+    <table style="width:100%; font-size:0.85rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted); width:170px;">Founders</td><td><strong>Amit Jain</strong> (CEO, ex-Apple Vision Pro / computer vision) + <strong>Alex Yu</strong> (CTO, UC Berkeley, Plenoxels / Plenoctrees / NeRF compression work)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">HQ</td><td>San Francisco</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Origin</td><td>Founded 2021 around the 3D/NeRF moment. Initial product was photo-to-3D capture</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Jiaming joins</td><td><strong>July 2023</strong> as Chief Scientist (post NVIDIA Research)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Series B</td><td><strong>Jan 9, 2024 &mdash; $43M led by a16z</strong>. Amplify Partners, Matrix Partners participating. Same day: Genie 1.0 GA</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Jun 12, 2024</strong></td><td><strong>Dream Machine launch</strong>. 1M users in 4 days, zero promotion. Viral Doge / Vermeer / Picard / Pixar-Egypt fan animations dominate X for a week</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Late 2024</td><td>Genie text-to-3D update; Ray1 model line scaled</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Jan 2025</td><td><strong>Ray2</strong> &mdash; text-to-video engine, 540p&ndash;1080p, coherent motion across longer windows</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Sep 18, 2025</strong></td><td><strong>Ray3 launch &mdash; first reasoning video model</strong>. First model with native 10/12/16-bit HDR ACES2065-1 EXR. Draft Mode 20&times; ideation speed. <strong>Adobe Firefly integration announced</strong>. Dentsu Digital adoption</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Nov 19, 2025</strong></td><td><strong>$900M Series C led by HUMAIN (Saudi Arabia)</strong>. AMD Ventures + existing a16z, Amplify, Matrix Partners in. Total funding: <strong>$1B+, valuation $4B+</strong>. Partnership: <strong>2-gigawatt &ldquo;Project Halo&rdquo; AI supercluster in Saudi Arabia</strong> to support large-scale world models</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2026</td><td>30M+ registered users on Dream Machine. Ray3 Modify announced for hybrid AI-acting workflows</td></tr>
+    </table>
+
+    <h3>Competitive Landscape &mdash; the Video-Generation Race</h3>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Player</td><td>Latest Model</td><td>Valuation / Backing</td><td>Position vs Luma</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Luma AI</strong> (Jiaming)</td><td>Ray3 (reasoning + 16-bit HDR)</td><td>$4B+, $1B+ raised, HUMAIN-led Series C</td><td>&mdash;</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>OpenAI Sora</strong></td><td>Sora 2</td><td>Parent $500B+; biggest GPU budget</td><td>Closed, integrated into ChatGPT. Luma is faster, more creative-tooling oriented</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Google Veo</strong></td><td>Veo 3</td><td>Alphabet</td><td>Closed, integrated into Gemini + YouTube. Luma is independent</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Runway</strong></td><td>Gen-4</td><td>$3B+</td><td>Closed, film-industry pipeline. Luma overlaps; Adobe Firefly integration is the wedge</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><a href="ajay-jain.html"><strong>Genmo</strong></a></td><td>Mochi 1 (Apache 2.0)</td><td>$28.4M Series A NEA</td><td>Open-source competitor; smaller scale; same Berkeley/Abbeel + Stanford/Ermon era</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Pika Labs</strong> (Chenlin Meng)</td><td>Pika 2.x</td><td>$500M val, $55M Series A</td><td>Consumer/social oriented. <strong>Same Ermon lab as Jiaming</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Kling (Kuaishou)</strong></td><td>Kling 2.0</td><td>Kuaishou subsidiary</td><td>China-only distribution. Strong quality, distribution-constrained outside CN</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>MiniMax Hailuo</strong></td><td>Hailuo Video</td><td>$2.5B+, China</td><td>Same as Kling pattern</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>HeyGen / Synthesia</strong></td><td>Avatar-only</td><td>$2.3B / $2.1B</td><td>Different category (avatar generation)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Black Forest Labs (FLUX)</strong></td><td>FLUX.1</td><td>$1B+ val, $31M+ seed</td><td>Image, not video, but Robin Rombach (Stable Diffusion) is the parallel CTO archetype</td></tr>
+    </table>
+  </section>
+
+  <!-- GROWTH TRAJECTORY -->
+  <section>
+    <h2>Growth Trajectory</h2>
+    <table style="width:100%; font-size:0.85rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted); width:140px;">Undergrad</td><td><strong>Tsinghua University</strong>, Department of Computer Science and Technology. Worked with <strong>Jun Zhu</strong> (Tsinghua TSAIL) and <strong>Lawrence Carin</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2015</td><td>Google Excellence Scholarship</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2016</td><td>Stanford School of Engineering Fellowship. Enters Stanford CS PhD under <strong>Stefano Ermon</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2018</td><td><strong>Qualcomm Innovation Fellowship</strong> (4.6% acceptance rate)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Oct 2020</strong></td><td><strong>DDIM preprint</strong> (Song, Meng, Ermon) &mdash; ICLR 2021. The paper that makes diffusion shippable</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2021</td><td>CSDI (NeurIPS). Continues building diffusion-for-inverse-problems portfolio</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Aug 2021</td><td><strong>SDEdit preprint</strong> (Meng, He, J. Song, Y. Song et al.) &mdash; later wins ICLR 2022 Outstanding Paper</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2022</td><td><strong>ICLR 2022 Outstanding Paper Award</strong> for SDEdit. DDRM (NeurIPS). Postdoctoral Researcher at Stanford</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2022</td><td>Joins <strong>NVIDIA Research</strong> as Research Scientist &mdash; Deep Imagination Research + Learning &amp; Perception Research. Co-authors <strong>eDiff-I</strong> (NVIDIA&rsquo;s text-to-image ensemble of expert denoisers, ~1,148 cites)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2023</td><td>Loss-Guided Diffusion (ICML). Pseudoinverse-Guided Diffusion (ICLR)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Jul 2023</strong></td><td><strong>Joins Luma AI as Chief Scientist</strong> &mdash; ~12 months before Dream Machine launches</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Jun 12, 2024</strong></td><td><strong>Dream Machine launches</strong>. 1M users in 4 days. Viral moment</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">2024</td><td><strong>MIT Technology Review Innovators Under 35 (Asia Pacific)</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Sep 25, 2024</td><td>Stanford EE talk: <em>Dream Machine: Emergent Capabilities from Video Foundation Models</em></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Jan 2025</td><td><strong>Ray2</strong> ships</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">Sep 18, 2025</td><td><strong>Ray3</strong> &mdash; first reasoning video model + 16-bit HDR + Adobe Firefly integration</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);"><strong>Nov 19, 2025</strong></td><td>Luma <strong>$900M Series C from HUMAIN</strong>; Luma at $4B+; Project Halo 2GW Saudi supercluster</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td style="padding:0.3rem 0; font-family:var(--mono); color:var(--fg-muted);">May 2026</td><td><strong>~35,387 Scholar cites, h-51, i10-76</strong>. Citation acceleration: 4,406 (2023) &rarr; 9,300 (2024) &rarr; 12,836 (2025)</td></tr>
+    </table>
+    <p style="margin-top:1rem; font-family:var(--mono); font-size:0.75rem; color:var(--accent);">
+      PACE: From DDIM preprint (Oct 2020) to Chief Scientist seat at Luma (Jul 2023) = ~2.8 years.<br>
+      ACCELERATION: Citations more than doubled from 2023 &rarr; 2024 (+5K) and again 2024 &rarr; 2025 (+3.5K). DDIM remains the production sampler, citation accrual is structural.<br>
+      PEER COMPARISON: Robin Rombach (Stable Diffusion) &rarr; Black Forest Labs CTO at $1B+. Chenlin Meng (DDIM/SDEdit co-author) &rarr; Pika CTO at $500M. Ajay Jain (DDPM 2nd author) &rarr; Genmo CTO at $28.4M Series A. <strong>Jiaming is the highest-titled (Chief Scientist) at the highest-valued (now $4B) player in this cohort.</strong>
+    </p>
+  </section>
+
+  <!-- TSINGHUA -> STANFORD -->
+  <section>
+    <h2>The Tsinghua &rarr; Stanford Pipeline</h2>
+    <p>
+      Jiaming&rsquo;s path is one of the canonical instances of what is arguably the most productive talent
+      pipeline in modern AI: <strong>Tsinghua CS &rarr; Stanford CS PhD &rarr; frontier-lab research seat or
+      founder seat</strong>. Tsinghua advisors who feed this pipeline: <strong>Jun Zhu</strong> (TSAIL, Bayesian
+      deep learning), <strong>Bo Zhang</strong>, <strong>Jianfeng Gao</strong>-adjacent labs.
+    </p>
+    <ul>
+      <li><strong>Jiaming Song</strong> &mdash; Tsinghua CS (Jun Zhu) &rarr; Stanford CS PhD (Ermon) &rarr; NVIDIA Research &rarr; Luma Chief Scientist</li>
+      <li><strong>Chenlin Meng</strong> &mdash; Stanford PhD (Ermon) &rarr; Pika Labs Co-Founder &amp; CTO</li>
+      <li><strong>Hong Liu</strong>, <strong>Yuhui Zhang</strong>, <strong>Eric Mitchell</strong>, <strong>Tatsu Hashimoto</strong> &mdash; comparable Stanford-CS-PhD diffusion / NLP archetype</li>
+      <li>Worth doing a recursive sweep of the <strong>Jun Zhu / TSAIL Tsinghua group</strong> for current PhD students likely to come to Stanford / CMU / MIT in next 2&ndash;3 years</li>
+    </ul>
+  </section>
+
+  <!-- IN HIS OWN WORDS -->
+  <section>
+    <h2>In His Own Words</h2>
+    <ul>
+      <li>On model intelligence &amp; multimodality (Cognitive Revolution interview): <strong>&ldquo;Models need to be more intelligent&hellip; you have to tell them or program them to achieve some particular type of task&hellip; eventually, it will be intelligent enough to basically take in other tasks in the multimodal sense.&rdquo;</strong></li>
+      <li>On 3D perception emerging from video models: <strong>&ldquo;Models are very great priors for things like 3D vision tasks like depth estimation&hellip; I do believe that some degree of interpretability exists, but it&rsquo;s also up to humans how interpretability exists.&rdquo;</strong></li>
+      <li>On alignment as method, not goal: &ldquo;<em>It might be good to seek more alignments or try to get the models aligned with what you want, and try to reason from there.</em>&rdquo;</li>
+      <li>On dataset design: <strong>&ldquo;What is the right dataset? It&rsquo;s actually very hard to have this right answer&hellip; a more objective-driven approach</em> works better than statistical assumptions.&rdquo;</li>
+      <li>On consistency models stability: &ldquo;<em>With one sample, the consistency model is unstable&hellip; with four samples or more, the training process actually becomes more stable.</em>&rdquo;</li>
+      <li>MIT TR profile: positioning Dream Machine to &ldquo;<em>fundamentally change the way people create and consume content in fields such as entertainment, education, marketing, and communication.</em>&rdquo;</li>
+    </ul>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section>
+    <h2>Publications &mdash; The Receipts</h2>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Paper</td><td>Venue</td><td>Cites</td><td>Position</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Denoising Diffusion Implicit Models (DDIM)</strong></td><td>ICLR 2021</td><td><strong>14,734</strong></td><td><strong>1st author</strong> (Song, Meng, Ermon)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>SDEdit: Guided Image Synthesis &amp; Editing with SDEs</strong></td><td>ICLR 2022 <em>Outstanding Paper</em></td><td><strong>2,919</strong></td><td>Co-author</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Beyond the Imitation Game (BIG-bench)</td><td>TMLR 2023</td><td>2,632</td><td>Co-author (mass collab)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Denoising Diffusion Restoration Models (DDRM)</td><td>NeurIPS 2022</td><td>1,505</td><td>Co-author</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>CSDI: Conditional Score-Based Diffusion for Time-Series</td><td>NeurIPS 2021</td><td>1,271</td><td>Co-author</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>eDiff-I: Text-to-Image Diffusion (Ensemble of Expert Denoisers)</td><td>NVIDIA 2022</td><td>1,148</td><td>Co-author (NVIDIA Research era)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Pseudoinverse-Guided Diffusion Models (&Pi;GDM)</td><td>ICLR 2023</td><td>554</td><td>Co-author</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Loss-Guided Diffusion Models</td><td>ICML 2023</td><td>&mdash;</td><td>Co-author</td></tr>
+    </table>
+    <p class="small muted" style="margin-top:0.5rem;">
+      Total Scholar citations: <strong>35,387</strong>. h-index <strong>51</strong>. i10-index <strong>76</strong>.
+      Recent (since 2021): 34,068 cites / h-50. Citation distribution: one ~15K paper (DDIM) + one ~3K paper
+      (SDEdit) + a thick mid-tail of 500&ndash;1.5K papers. <strong>Acceleration is the signal:</strong>
+      2023 &rarr; 4,406 cites; 2024 &rarr; 9,300; 2025 &rarr; 12,836; 2026 &rarr; 5,040 (partial year, on pace for ~13K).
+    </p>
+  </section>
+
+  <!-- OUTREACH -->
+  <section>
+    <h2>Outreach &mdash; Advisor / Angel / Deal-Flow Swap (NOT a Pitch)</h2>
+    <p class="small muted"><strong>Best channels:</strong> Email <a href="mailto:jiaming.tsong@gmail.com">jiaming.tsong@gmail.com</a> or Twitter DM <a href="https://x.com/baaadas">@baaadas</a>. Personal site <a href="https://tsong.me">tsong.me</a>.</p>
+
+    <div class="spike-box" style="margin-top:0.75rem; border-left-color: var(--tier2);">
+      <div class="label">&#9670; Draft Outreach (Email)</div>
+      <p style="font-size:0.88rem; white-space:pre-line;">Hi Jiaming &mdash; I&rsquo;m an inception-stage investor (pre-seed / seed into AI infra + research-led teams). Not pitching anything: Luma is obviously past where I write checks, and Ray3 + the HUMAIN Series C make that a closed conversation.
+
+What I actually want to do is map the diffusion ecosystem from the picks-and-shovels layer outward, and you sit at the most informed seat for it. DDIM is the sampler that ships in every product (Stable Diffusion, DALL&middot;E 2/3, every video model, Ray3 itself), and SDEdit is the methodology that&rsquo;s now under everyone&rsquo;s img2img / ControlNet / Krea / Magnific stack. The bet that&rsquo;s clearer to me after Ray3 + Sora 2 + Veo 3: the next decade of value isn&rsquo;t in another foundation video model &mdash; it&rsquo;s in (a) custom video VAEs / latent codecs, (b) distillation &amp; consistency-model-style inference accelerators, (c) reasoning-on-pixels evals, (d) hybrid AI-acting / performance-capture pipelines like what Ray3 Modify is opening up. I&rsquo;m mapping founders in each of those four lanes.
+
+Two specific asks:
+1. Are you open to angel-investing or advising any of these layers? I&rsquo;ll share my best 3&ndash;5 stealth diffusion-stage teams as deal-flow swap.
+2. Anyone in the Ermon-lab cohort or the Tsinghua &rarr; Stanford pipeline I should be tracking who&rsquo;s thinking about leaving for a company in the next 12 months?
+
+Coffee in SF when you have time.
+
+&mdash; Vansh</p>
+    </div>
+
+    <p class="small muted" style="margin-top:0.5rem;">
+      <strong>Why this works:</strong> Opens by explicitly closing the &ldquo;am I pitching&rdquo; door &mdash; he&rsquo;s already been
+      pitched 500 times this year. Names DDIM + SDEdit accurately and locates them in the product stack (not
+      just citing them). Demonstrates a real picks-and-shovels thesis with four concrete lanes (VAE / distillation /
+      eval / hybrid pipelines), which is the right altitude for a Chief Scientist. Offers two clean asks (angel/advisor,
+      sourcing) and a deal-flow swap as currency. Coffee in SF per SOP. No fund-thesis paragraph, no &ldquo;pick your brain.&rdquo;
+    </p>
+  </section>
+
+  <!-- BACKGROUND -->
+  <section>
+    <h2>Background</h2>
+    <p>
+      Chinese-origin. Undergrad at <strong>Tsinghua University</strong>, Department of Computer Science and
+      Technology, where he worked with <strong>Jun Zhu</strong> (TSAIL group, Bayesian deep learning) and
+      <strong>Lawrence Carin</strong> (then Duke, now KAUST president-era). Google Excellence Scholarship 2015.
+      <strong>Stanford CS PhD</strong> under <strong>Stefano Ermon</strong>, 2016&ndash;2022. Stanford School of Engineering
+      Fellowship (2016). <strong>Qualcomm Innovation Fellowship</strong> (2018, 4.6% acceptance). Postdoctoral
+      Researcher, Stanford CS (2022). <strong>Research Scientist at NVIDIA Research</strong> in the Deep Imagination
+      Research and Learning &amp; Perception Research groups &mdash; co-authored eDiff-I and other NVIDIA work.
+      Joined <strong>Luma AI as Chief Scientist in July 2023</strong>. <strong>MIT Technology Review Innovators
+      Under 35 (Asia Pacific) 2024</strong>. Personal site <a href="https://tsong.me">tsong.me</a>, GitHub
+      <a href="https://github.com/jiamings">jiamings</a>, Twitter <a href="https://x.com/baaadas">@baaadas</a>.
+    </p>
+  </section>
+
+  <!-- RISKS / WATCH ITEMS -->
+  <section>
+    <h2>Watch Items (3&ndash;5 Year Horizon)</h2>
+    <ul>
+      <li><strong>Departure watch:</strong> Tim Brooks (Sora co-lead) left OpenAI for DeepMind ~Oct 2024 after ~12 months in role. Pattern: Chief Scientists of viral diffusion products move every 18&ndash;36 months. <strong>Jiaming&rsquo;s clock: joined Jul 2023 = ~34 months in seat at May 2026.</strong> Window is opening</li>
+      <li><strong>Angel investment activity:</strong> No public angel checks tracked yet. If he starts cutting them (likely after Series C liquidity), that&rsquo;s the inflection signal &mdash; he becomes a deal source overnight</li>
+      <li><strong>Luma exit / IPO scenarios:</strong> $4B val + HUMAIN strategic + 2GW Project Halo = either accelerated foundation-model race or strategic acquisition by Adobe / Disney / Apple. Either case unlocks Jiaming&rsquo;s next move</li>
+      <li><strong>Ermon-lab activation:</strong> Ermon co-founded Inception Labs (Nov 2025). If Inception accelerates, follow-on Ermon-lab spinouts likely. Jiaming is the senior alum to talk to about that cohort</li>
+      <li><strong>Sora / Veo / Runway / Pika consolidation:</strong> The video category is unlikely to support 6 independent unicorns long-term. The cohort going to the same set of labs / acquirers is the next-wave sourcing event</li>
+    </ul>
+  </section>
+
+  <!-- NOTES -->
+  <section>
+    <h2>Notes</h2>
+    <ul>
+      <li class="small">Confirmed identity: Google Scholar profile 6dP660cAAAAJ, Stanford cs.stanford.edu email verified, tsong.me personal site, GitHub jiamings, Twitter @baaadas</li>
+      <li class="small"><strong>NOT Yang Song</strong> &mdash; different person. Yang Song authored NCSN (Song &amp; Ermon 2019) and the score-based SDEs ICLR 2021 Outstanding Paper, was at OpenAI, now at DeepMind / academia. Both were Ermon students. Easy to confuse</li>
+      <li class="small">DDIM paper: arXiv 2010.02502, ICLR 2021. Authors: Jiaming Song, Chenlin Meng, Stefano Ermon. Code: github.com/ermongroup/ddim</li>
+      <li class="small">SDEdit paper: arXiv 2108.01073, ICLR 2022 Outstanding Paper. Authors: Chenlin Meng, Yutong He, Yang Song, Jiaming Song, Jiajun Wu, Jun-Yan Zhu, Stefano Ermon (note: both Songs in the author list)</li>
+      <li class="small">Luma timeline: founded 2021. Series B $43M a16z Jan 9, 2024. Dream Machine Jun 12, 2024. Ray2 Jan 2025. Ray3 Sep 18, 2025. Series C $900M HUMAIN Nov 19, 2025. $4B+ val. 30M+ Dream Machine users. $1B+ total funding</li>
+      <li class="small">Luma co-founders: Amit Jain (CEO, ex-Apple Vision Pro / computer vision team), Alex Yu (CTO, UC Berkeley NeRF / Plenoxels). NOT the same Jain family as Ajay/Paras Jain at Genmo</li>
+      <li class="small">Ben Mildenhall (NeRF + DreamFusion co-author) left Google Research to join Luma &mdash; second major researcher hire pattern</li>
+      <li class="small">Ermon group page lists current/recent: Meihua Dang, Jiaqi Han, Haotian Ye, Dongjun Kim, Minkai Xu, Silas Alberti, Syrine Belakaria, Zhuo Zheng, Amil Merchant, Felix Petersen, Chenlin Meng, Charlie Marx, Michael Poli, Aaron Lou, Linqi (Alex) Zhou. Block of tracking candidates</li>
+      <li class="small">Ermon co-founded Inception Labs with Aditya Grover (UCLA) + Volodymyr Kuleshov (Cornell), $50M seed Nov 2025, Menlo + Databricks + Mayfield + Karpathy + Ng + Schmidt</li>
+      <li class="small">Stefano Ermon is on the CLAUDE.md critical-labs list for alumni tracking</li>
+      <li class="small">MIT Tech Review Innovators Under 35 Asia Pacific 2024 listing (note: this is the regional list, not the global one. Repo CLAUDE.md flags MIT TR 35U35 as a noisy signal &mdash; included for completeness, not as a primary credential)</li>
+    </ul>
+  </section>
+
+  <footer>
+    researched: 2026-05-21 &middot; 6-agent architecture (technical, social, market, background, trajectory, recursive) &middot; <a href="../index.html">back to index</a>
+  </footer>
+
+</body>
+</html>
