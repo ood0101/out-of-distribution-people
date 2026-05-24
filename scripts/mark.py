@@ -16,12 +16,16 @@ Status vocabulary:
     snooze N   → next_action_date = today + N days (status unchanged)
     unsnooze   → next_action_date = None
     reset      → status=not-contacted, last_contacted=None
+    email ADDR → set email_override (beats auto-extracted)
+    subject S  → set outreach_subject_override
 
 Examples:
     python3 scripts/mark.py alex-shan sent
     python3 scripts/mark.py alex-shan replied "wants to chat next week"
     python3 scripts/mark.py mayank-mishra snooze 7
     python3 scripts/mark.py kawin-ethayarajh passed
+    python3 scripts/mark.py devvrit-khatri email devvrit@reflection.ai
+    python3 scripts/mark.py alex-shan subject "Quick Q on Judgment"
 """
 from __future__ import annotations
 import json
@@ -105,6 +109,20 @@ def main():
         p["last_contacted"] = None
         p["next_action_date"] = None
         print(f"✓ {slug} reset to not-contacted.")
+
+    elif action == "email":
+        if not extra or "@" not in extra:
+            print("ERROR: provide a valid email. e.g. `mark.py alex-shan email alex@stealthco.com`", file=sys.stderr)
+            sys.exit(1)
+        p["email_override"] = extra.strip()
+        print(f"✓ {slug} email override set to {extra.strip()}")
+
+    elif action == "subject":
+        if not extra:
+            print("ERROR: provide subject. e.g. `mark.py alex-shan subject 'Re: $32M round'`", file=sys.stderr)
+            sys.exit(1)
+        p["outreach_subject_override"] = extra
+        print(f"✓ {slug} subject override set.")
 
     else:
         print(f"ERROR: unknown action '{action}'.")

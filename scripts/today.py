@@ -31,6 +31,7 @@ import json
 import sys
 from datetime import date
 from pathlib import Path
+from urllib.parse import quote
 
 REPO = Path(__file__).resolve().parent.parent
 STATE = REPO / "data" / "outreach_state.json"
@@ -88,6 +89,27 @@ def tier_badge(tier) -> str:
     return f"{colors.get(tier, '')}[T{tier}]{RESET}"
 
 
+def resolve_email(e: dict) -> tuple[str | None, str | None]:
+    """Return (email, kind). Uses override if set, else derived primary."""
+    if e.get("email_override"):
+        return e["email_override"], "override"
+    return e.get("email_primary"), e.get("email_primary_kind")
+
+
+def gmail_compose_url(email: str | None, subject: str | None, body: str | None) -> str | None:
+    if not email:
+        return None
+    base = "https://mail.google.com/mail/?view=cm&fs=1&tf=1"
+    parts = [f"to={quote(email)}"]
+    if subject:
+        parts.append(f"su={quote(subject)}")
+    if body:
+        if len(body) > 6000:
+            body = body[:5900] + "\n\n[truncated — see full draft in dossier]"
+        parts.append(f"body={quote(body)}")
+    return base + "&" + "&".join(parts)
+
+
 def render_row(slug: str, e: dict, i: int) -> str:
     name = e.get("name", slug)
     tier = e.get("tier")
@@ -99,10 +121,30 @@ def render_row(slug: str, e: dict, i: int) -> str:
     cluster = e.get("cluster")
     cluster_str = f" {DIM}#{cluster}{RESET}" if cluster else ""
 
+    # Email + Gmail compose URL (live, respects override).
+    email, kind = resolve_email(e)
+    subject = e.get("outreach_subject_override") or e.get("outreach_subject")
+    body = e.get("outreach_body_override")  # full body only available if user pasted it
+    gmail_url = gmail_compose_url(email, subject, body) if email else None
+
+    email_line = ""
+    if email:
+        all_emails = e.get("emails") or []
+        alts = [x for x in all_emails if x != email]
+        alt_str = f"  {DIM}(also: {', '.join(alts)}){RESET}" if alts else ""
+        email_line = f"\n   {CYAN}✉  {email}{RESET} {DIM}[{kind}]{RESET}{alt_str}"
+    else:
+        email_line = f"\n   {DIM}✉  no email — add via: mark.py {slug} email <addr>{RESET}"
+
+    gmail_line = ""
+    if gmail_url:
+        # Most modern terminals (iTerm2, macOS Terminal) make this cmd-clickable.
+        gmail_line = f"\n   {GREEN}📧 {gmail_url}{RESET}"
+
     lines = [
         f"{BOLD}{i}. {tier_badge(tier)} {name}{RESET} {DIM}({slug}){RESET}{cluster_str}",
         f"   {DIM}WHY:{RESET} {reason}{decay_str}",
-        f"   {GREEN}→ {channel}{RESET}  {action}",
+        f"   {GREEN}→ {channel}{RESET}  {action}{email_line}{gmail_line}",
     ]
     return "\n".join(lines)
 

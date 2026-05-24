@@ -52,11 +52,16 @@ STATE_FILE = REPO / "data" / "outreach_state.json"
 DERIVED_KEYS = {
     "name", "tier", "tier_label", "category", "tags", "indian", "delta",
     "one_liner", "signals", "last_git_touch", "needs_triage",
+    # Email + Gmail compose (added 2026-05-21).
+    "emails", "email_primary", "email_primary_kind",
+    "outreach_subject", "outreach_body_preview", "gmail_url",
 }
 USER_KEYS = {
     "status", "last_contacted", "next_action_date", "response", "notes",
     # Urgency / daily-queue fields (added 2026-05-21). Preserved across rebuilds.
     "urgency_decay_date", "urgency_reason", "channel", "next_action", "cluster",
+    # Email override (added 2026-05-21). When set, beats derived email_primary.
+    "email_override", "outreach_subject_override", "outreach_body_override",
 }
 DEFAULT_USER = {
     "status": "not-contacted",
@@ -74,12 +79,166 @@ DEFAULT_USER = {
     "next_action": None,
     # cluster: optional cluster tag (scalerl, hazy, architecture, diffusion, etc.)
     "cluster": None,
+    # Email overrides. Set these to bypass auto-extracted values.
+    "email_override": None,
+    "outreach_subject_override": None,
+    "outreach_body_override": None,
 }
 
 TAG_SPAN_RE = re.compile(r'<span\s+class="tag[^"]*"[^>]*>([^<]+)</span>', re.IGNORECASE)
 TIER_RE = re.compile(r'^tier-(\d)\b(.*)$', re.IGNORECASE)
 ONE_LINER_RE = re.compile(r'class="one-liner"[^>]*>\s*(?:<strong>)?([^<]+)', re.IGNORECASE)
 H1_RE = re.compile(r'<h1>([^<]+)</h1>', re.IGNORECASE)
+
+# Email extraction. Greedy email regex + mailto: capture.
+EMAIL_RE = re.compile(r'\b([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})\b')
+MAILTO_RE = re.compile(r'mailto:([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})', re.IGNORECASE)
+
+# Outreach draft extraction. Looks for "Subject:" in any outreach section.
+SUBJECT_RE = re.compile(r'Subject\s*:\s*([^\n<]+)', re.IGNORECASE)
+
+# Personal email providers — high confidence personal.
+PERSONAL_DOMAINS = {
+    "gmail.com", "googlemail.com", "fastmail.com", "fastmail.fm",
+    "protonmail.com", "proton.me", "pm.me", "outlook.com", "hotmail.com",
+    "icloud.com", "me.com", "mac.com", "hey.com", "yahoo.com", "ymail.com",
+    "duck.com", "tutanota.com", "tuta.io", "zoho.com",
+}
+
+# Academic TLDs / suffixes. Treated as "academic" not "personal" not "company".
+ACADEMIC_SUFFIXES = (
+    ".edu", ".ac.uk", ".ac.in", ".ac.jp", ".ac.kr", ".ac.il", ".ac.cn",
+    ".edu.au", ".edu.cn", ".edu.sg", ".uni-tuebingen.de", "ethz.ch",
+)
+
+
+def classify_email(addr: str) -> str:
+    """Return one of: 'personal' | 'academic' | 'company'."""
+    domain = addr.split("@", 1)[-1].lower()
+    if domain in PERSONAL_DOMAINS:
+        return "personal"
+    if any(domain.endswith(suf) for suf in ACADEMIC_SUFFIXES):
+        return "academic"
+    return "company"
+
+
+def extract_emails(html: str) -> list[str]:
+    """Extract all unique emails. Includes mailto: links + plain text."""
+    found = set()
+    for m in MAILTO_RE.findall(html):
+        found.add(m.lower())
+    for m in EMAIL_RE.findall(html):
+        # Filter junk like "noreply@anthropic.com" from co-author tags
+        if "noreply" in m.lower() or "example.com" in m.lower():
+            continue
+        found.add(m.lower())
+    # Stable order: by classification then alphabetical, so primary picks are deterministic.
+    return sorted(found, key=lambda a: (classify_email(a), a))
+
+
+def pick_primary_email(emails: list[str], signals: dict) -> tuple[str | None, str | None]:
+    """Pick the primary email + return (email, kind).
+
+    Rules (per user spec):
+      - Stealth signal present → prefer personal (then academic, then company)
+      - Else if company email present → prefer company (then academic, then personal)
+      - Else → academic first, then personal
+    """
+    if not emails:
+        return None, None
+
+    by_kind = {"personal": [], "academic": [], "company": []}
+    for e in emails:
+        by_kind[classify_email(e)].append(e)
+
+    is_stealth = bool(
+        signals.get("phrase_stealth")
+        or signals.get("tag_stealth_founder")
+    )
+
+    if is_stealth:
+        order = ["personal", "academic", "company"]
+    else:
+        # Default: prefer the most "current" email. Company > academic > personal.
+        # Academic email implies still affiliated with university (could be active).
+        order = ["company", "academic", "personal"]
+
+    for kind in order:
+        if by_kind[kind]:
+            return by_kind[kind][0], kind
+    return None, None
+
+
+def extract_outreach_subject(html: str) -> str | None:
+    """Find the first 'Subject: ...' line in the dossier."""
+    m = SUBJECT_RE.search(html)
+    if not m:
+        return None
+    return strip_html_entities(m.group(1).strip())
+
+
+def extract_outreach_body(html: str) -> str | None:
+    """Extract the body text of the first outreach email draft.
+
+    Strategy: find 'Subject:' line, take everything from the line AFTER it
+    until we hit a sign-off ('— Vansh', 'Vansh\\n', or end of the outreach section).
+    Returns plain text (HTML stripped).
+    """
+    # Find the position of Subject:
+    sm = SUBJECT_RE.search(html)
+    if not sm:
+        return None
+    # Take a generous chunk after Subject (next ~3500 chars).
+    after = html[sm.end():sm.end() + 3500]
+    # Strip tags
+    text = re.sub(r'<[^>]+>', '\n', after)
+    text = strip_html_entities(text)
+    # Collapse whitespace
+    lines = [ln.strip() for ln in text.split("\n")]
+    # Skip leading blank lines
+    while lines and not lines[0]:
+        lines.pop(0)
+    # Stop at sign-off
+    body_lines = []
+    for ln in lines:
+        # Sign-off detection (any of these on their own line)
+        if ln.strip() in ("Vansh", "— Vansh", "-- Vansh", "Vansh."):
+            body_lines.append(ln)
+            break
+        # Hard stop if we hit a new HTML section header that leaked through
+        if ln.startswith("◆") and len(body_lines) > 5:
+            break
+        body_lines.append(ln)
+    # Collapse internal blank-line runs to single
+    out = []
+    blank = False
+    for ln in body_lines:
+        if not ln:
+            if not blank:
+                out.append("")
+            blank = True
+        else:
+            out.append(ln)
+            blank = False
+    body = "\n".join(out).strip()
+    return body if body else None
+
+
+def build_gmail_url(email: str | None, subject: str | None, body: str | None) -> str | None:
+    """Construct Gmail compose URL. Returns None if no recipient email."""
+    if not email:
+        return None
+    from urllib.parse import quote
+    base = "https://mail.google.com/mail/?view=cm&fs=1&tf=1"
+    parts = [f"to={quote(email)}"]
+    if subject:
+        parts.append(f"su={quote(subject)}")
+    if body:
+        # Gmail URL has length limits (~8KB safe). Truncate body if needed.
+        if len(body) > 6000:
+            body = body[:5900] + "\n\n[truncated — see full draft in dossier]"
+        parts.append(f"body={quote(body)}")
+    return base + "&" + "&".join(parts)
 
 # Signal detection — kept tight and explicit. Each signal is a boolean.
 # We deliberately use a small set of high-precision phrases over a large
@@ -173,6 +332,15 @@ def parse_dossier(path: Path) -> dict:
     text_only = re.sub(r'<[^>]+>', ' ', html)
     signals = {key: bool(fn(other_tags, text_only)) for key, fn in SIGNAL_PATTERNS.items()}
 
+    # Email + outreach extraction.
+    emails = extract_emails(html)
+    email_primary, email_primary_kind = pick_primary_email(emails, signals)
+    outreach_subject = extract_outreach_subject(html)
+    outreach_body = extract_outreach_body(html)
+    # Preview = first 300 chars of body for index panel display.
+    outreach_body_preview = (outreach_body[:300] + "…") if outreach_body and len(outreach_body) > 300 else outreach_body
+    gmail_url = build_gmail_url(email_primary, outreach_subject, outreach_body)
+
     return {
         "name": name,
         "tier": tier,
@@ -185,6 +353,13 @@ def parse_dossier(path: Path) -> dict:
         "signals": signals,
         "last_git_touch": get_git_commit_time(path),
         "needs_triage": tier is None,
+        # Email + Gmail compose
+        "emails": emails,
+        "email_primary": email_primary,
+        "email_primary_kind": email_primary_kind,
+        "outreach_subject": outreach_subject,
+        "outreach_body_preview": outreach_body_preview,
+        "gmail_url": gmail_url,
     }
 
 
