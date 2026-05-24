@@ -29,14 +29,35 @@ Examples:
 """
 from __future__ import annotations
 import json
+import subprocess
 import sys
 from datetime import date, timedelta
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
 STATE = REPO / "data" / "outreach_state.json"
+BUILD_VIEW = REPO / "data" / "build_outreach_view.py"
 
 FOLLOWUP_DAYS_AFTER_SEND = 14
+
+
+def rerender_panel():
+    """Auto-rebuild the index.html outreach panel after status changes.
+
+    Silent on success; surfaces errors. Skip with MARK_NO_RENDER=1.
+    """
+    import os
+    if os.environ.get("MARK_NO_RENDER") == "1":
+        return
+    try:
+        subprocess.run(
+            ["python3", str(BUILD_VIEW)],
+            cwd=REPO, capture_output=True, text=True, check=True,
+        )
+    except subprocess.CalledProcessError as e:
+        print(f"WARN: index re-render failed: {e.stderr[:200]}", file=sys.stderr)
+    except FileNotFoundError:
+        pass  # build_outreach_view.py missing — silently skip
 
 
 def usage():
@@ -129,6 +150,7 @@ def main():
         usage()
 
     STATE.write_text(json.dumps(state, indent=2, ensure_ascii=False) + "\n")
+    rerender_panel()
 
 
 if __name__ == "__main__":

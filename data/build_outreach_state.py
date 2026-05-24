@@ -55,6 +55,8 @@ DERIVED_KEYS = {
     # Email + Gmail compose (added 2026-05-21).
     "emails", "email_primary", "email_primary_kind",
     "outreach_subject", "outreach_body_preview", "gmail_url",
+    # Social handles (added 2026-05-22) — for channel-aware compose.
+    "twitter_handle", "linkedin_slug", "github_handle",
 }
 USER_KEYS = {
     "status", "last_contacted", "next_action_date", "response", "notes",
@@ -93,6 +95,23 @@ H1_RE = re.compile(r'<h1>([^<]+)</h1>', re.IGNORECASE)
 # Email extraction. Greedy email regex + mailto: capture.
 EMAIL_RE = re.compile(r'\b([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})\b')
 MAILTO_RE = re.compile(r'mailto:([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})', re.IGNORECASE)
+
+# Social handle extraction from dossier links.
+# Matches twitter.com/handle OR x.com/handle (not /messages, /home, /search, /i/, etc.).
+TWITTER_RE = re.compile(
+    r'https?://(?:www\.)?(?:twitter\.com|x\.com)/(?!messages|home|search|i/|intent|notifications|explore|share|hashtag)([A-Za-z0-9_]{1,15})\b',
+    re.IGNORECASE,
+)
+# Matches linkedin.com/in/handle
+LINKEDIN_RE = re.compile(
+    r'https?://(?:www\.)?linkedin\.com/in/([A-Za-z0-9\-_%]+)/?',
+    re.IGNORECASE,
+)
+# Matches github.com/handle (not /search, /orgs, /topics)
+GITHUB_RE = re.compile(
+    r'https?://(?:www\.)?github\.com/(?!search|orgs|topics|features|pricing|enterprise|login)([A-Za-z0-9\-_]+)(?:/|"|\b)',
+    re.IGNORECASE,
+)
 
 # Outreach draft extraction. Looks for "Subject:" in any outreach section.
 SUBJECT_RE = re.compile(r'Subject\s*:\s*([^\n<]+)', re.IGNORECASE)
@@ -341,6 +360,15 @@ def parse_dossier(path: Path) -> dict:
     outreach_body_preview = (outreach_body[:300] + "…") if outreach_body and len(outreach_body) > 300 else outreach_body
     gmail_url = build_gmail_url(email_primary, outreach_subject, outreach_body)
 
+    # Social handle extraction.
+    twitter_matches = TWITTER_RE.findall(html)
+    twitter_handle = twitter_matches[0].lower() if twitter_matches else None
+    linkedin_matches = LINKEDIN_RE.findall(html)
+    linkedin_slug = linkedin_matches[0].lower() if linkedin_matches else None
+    github_matches = GITHUB_RE.findall(html)
+    # Filter out obvious noise (project repos that just happen to be linked)
+    github_handle = github_matches[0].lower() if github_matches else None
+
     return {
         "name": name,
         "tier": tier,
@@ -360,6 +388,10 @@ def parse_dossier(path: Path) -> dict:
         "outreach_subject": outreach_subject,
         "outreach_body_preview": outreach_body_preview,
         "gmail_url": gmail_url,
+        # Social handles
+        "twitter_handle": twitter_handle,
+        "linkedin_slug": linkedin_slug,
+        "github_handle": github_handle,
     }
 
 

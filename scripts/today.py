@@ -110,6 +110,46 @@ def gmail_compose_url(email: str | None, subject: str | None, body: str | None) 
     return base + "&" + "&".join(parts)
 
 
+def channel_compose_links(slug: str, e: dict, subject: str | None, body: str | None) -> list[tuple[str, str]]:
+    """Return list of (label, url) tuples appropriate for the chosen channel.
+
+    For ADHD-friendly UX, prioritize the channel-of-record but show alternates.
+    """
+    channel = (e.get("channel") or "").lower()
+    links: list[tuple[str, str]] = []
+
+    # Resolve identifiers
+    email, _kind = resolve_email(e)
+    twitter = e.get("twitter_handle")
+    linkedin = e.get("linkedin_slug")
+
+    # Primary action by channel
+    if channel == "twitter" and twitter:
+        # Twitter "compose DM" intent — opens DM box if user has access, else profile
+        links.append(("dm", f"https://twitter.com/messages/compose?recipient_screen_name={twitter}"))
+        links.append(("profile", f"https://twitter.com/{twitter}"))
+    elif channel == "linkedin" and linkedin:
+        links.append(("profile", f"https://linkedin.com/in/{linkedin}/"))
+    elif channel == "email" and email:
+        url = gmail_compose_url(email, subject, body)
+        if url:
+            links.append(("gmail", url))
+    elif channel == "warm-intro":
+        # No direct compose — surface profile links so user can reach the warm-intro person
+        if linkedin:
+            links.append(("linkedin", f"https://linkedin.com/in/{linkedin}/"))
+        if twitter:
+            links.append(("twitter", f"https://twitter.com/{twitter}"))
+
+    # Always show Gmail draft as a fallback if email is available
+    if email and not any(label == "gmail" for label, _ in links):
+        url = gmail_compose_url(email, subject, body)
+        if url:
+            links.append(("gmail-alt", url))
+
+    return links
+
+
 def render_row(slug: str, e: dict, i: int) -> str:
     name = e.get("name", slug)
     tier = e.get("tier")
@@ -121,30 +161,36 @@ def render_row(slug: str, e: dict, i: int) -> str:
     cluster = e.get("cluster")
     cluster_str = f" {DIM}#{cluster}{RESET}" if cluster else ""
 
-    # Email + Gmail compose URL (live, respects override).
-    email, kind = resolve_email(e)
+    # Subject + body (live, respects override).
     subject = e.get("outreach_subject_override") or e.get("outreach_subject")
-    body = e.get("outreach_body_override")  # full body only available if user pasted it
-    gmail_url = gmail_compose_url(email, subject, body) if email else None
+    body = e.get("outreach_body_override")
+    email, kind = resolve_email(e)
 
-    email_line = ""
+    # Identifier line: show what we have
+    ident_parts = []
     if email:
         all_emails = e.get("emails") or []
         alts = [x for x in all_emails if x != email]
-        alt_str = f"  {DIM}(also: {', '.join(alts)}){RESET}" if alts else ""
-        email_line = f"\n   {CYAN}✉  {email}{RESET} {DIM}[{kind}]{RESET}{alt_str}"
-    else:
-        email_line = f"\n   {DIM}✉  no email — add via: mark.py {slug} email <addr>{RESET}"
+        alt_str = f" {DIM}(also: {', '.join(alts)}){RESET}" if alts else ""
+        ident_parts.append(f"{CYAN}✉ {email}{RESET}{DIM}[{kind}]{RESET}{alt_str}")
+    if e.get("twitter_handle"):
+        ident_parts.append(f"{CYAN}𝕏 @{e['twitter_handle']}{RESET}")
+    if e.get("linkedin_slug"):
+        ident_parts.append(f"{CYAN}in/{e['linkedin_slug']}{RESET}")
+    ident_line = "\n   " + "  ".join(ident_parts) if ident_parts else f"\n   {DIM}no contact info — mark.py {slug} email <addr>{RESET}"
 
-    gmail_line = ""
-    if gmail_url:
-        # Most modern terminals (iTerm2, macOS Terminal) make this cmd-clickable.
-        gmail_line = f"\n   {GREEN}📧 {gmail_url}{RESET}"
+    # Channel-appropriate compose links
+    links = channel_compose_links(slug, e, subject, body)
+    link_lines = []
+    for label, url in links:
+        icon = {"dm": "🐦", "profile": "👤", "gmail": "📧", "gmail-alt": "📧 alt", "twitter": "🐦", "linkedin": "💼"}.get(label, "🔗")
+        link_lines.append(f"   {GREEN}{icon} {url}{RESET}")
+    link_block = "\n" + "\n".join(link_lines) if link_lines else ""
 
     lines = [
         f"{BOLD}{i}. {tier_badge(tier)} {name}{RESET} {DIM}({slug}){RESET}{cluster_str}",
         f"   {DIM}WHY:{RESET} {reason}{decay_str}",
-        f"   {GREEN}→ {channel}{RESET}  {action}{email_line}{gmail_line}",
+        f"   {GREEN}→ {channel}{RESET}  {action}{ident_line}{link_block}",
     ]
     return "\n".join(lines)
 
