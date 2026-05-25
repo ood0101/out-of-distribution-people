@@ -64,6 +64,8 @@ USER_KEYS = {
     "urgency_decay_date", "urgency_reason", "channel", "next_action", "cluster",
     # Email override (added 2026-05-21). When set, beats derived email_primary.
     "email_override", "outreach_subject_override", "outreach_body_override",
+    # Source attribution for non-dossier entries (added 2026-05-25).
+    "source", "source_rank",
 }
 DEFAULT_USER = {
     "status": "not-contacted",
@@ -437,12 +439,19 @@ def main() -> int:
         new_people[slug] = merge(prior_people, derived, slug)
 
     # Orphans: entries in prior state whose dossier has disappeared.
+    # Exception: entries with a `source` field (e.g., "exceptional100_2025")
+    # are externally-imported indexed entries, not deleted dossiers.
     orphans = []
     for slug, entry in prior_people.items():
         if slug not in new_people:
-            entry["_orphan"] = True
-            new_people[slug] = entry
-            orphans.append(slug)
+            if entry.get("source"):
+                # Externally-sourced indexed entry — preserve without orphan flag
+                entry.pop("_orphan", None)
+                new_people[slug] = entry
+            else:
+                entry["_orphan"] = True
+                new_people[slug] = entry
+                orphans.append(slug)
 
     state["people"] = new_people
     state["last_built"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
