@@ -139,6 +139,13 @@ SEED = {
         "next_action": "DM @ajayj_ ref Mochi 1 AsymmDiT vs Stable Video Diffusion architecture",
         "cluster": "diffusion-video",
     },
+    "saksham-consul": {
+        "urgency_reason": "Training at Black Forest Labs (FLUX models). FLUX.1 Kontext co-author. Stanford ME (Kennedy) + Nvidia + Lamini founding eng. BITS 9.99/10 branch topper. 5th node in diffusion cluster.",
+        "urgency_decay_date": None,
+        "channel": "twitter",
+        "next_action": "DM @TheNoise2Signal ref FLUX.1 Kontext sequence-concat trick + KontextBench question",
+        "cluster": "diffusion-video",
+    },
     "akshat-bubna": {
         "urgency_reason": "First Indian IOI Gold ever. Modal CTO ($1.1B, ~$50M ARR). Already running. Relationship.",
         "urgency_decay_date": None,

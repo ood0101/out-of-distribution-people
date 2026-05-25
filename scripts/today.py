@@ -42,19 +42,36 @@ TIER_WEIGHT = {0: 4, 1: 3, 2: 2, 3: 1, None: 0}
 # ───────────────────────────────────────────────────────────────────────
 # COMPOSITE RANKING — what makes someone "best 5 today"
 # ───────────────────────────────────────────────────────────────────────
-# score = base(tier) + decay_bonus + signal_bonus + recency + indian + urgency
+# score = base(tier) + decay + signals + recency + indian + urgency + quality
 #
 #   base(tier)       T0=400, T1=300, T2=200, T3=100, untiered=0
-#   decay_bonus      100 - days_until_decay  (max 100, only if decay set)
-#   signal_bonus     stealth-founder=35, stealth=30, departed=30,
-#                    raising=25, founded=15  (sum of detected signals)
-#   recency          30 - days_since_dossier_update  (max 30, decays in 30d)
-#   indian_bonus     +10 if Indian-origin (sourcing thesis priority)
-#   urgency_bonus    +30 if you've manually seeded urgency_reason
-#                    (curation signal — you've decided this matters)
+#   decay            100 - days_until_decay (max 100, only if decay set)
+#   signals          stealth-founder=35, stealth=30, departed=30,
+#                    raising=25, founded=15 (sum of detected signals)
+#   recency          30 - days_since_dossier_update (max 30, decays in 30d)
+#   indian           +10 if Indian-origin (sourcing thesis priority)
+#   urgency          +30 if you've manually seeded urgency_reason
+#   quality (NEW)    +20 at frontier lab (Anthropic/OpenAI/DeepMind/etc.)
+#                    +15 part of a tracked cluster
+#                    +20 dossier researched in last 7 days
+#                    (caps at 55 — captures "high conviction without inflection")
 #
 # Tunable — edit these weights if the daily 5 doesn't match your gut.
 # ───────────────────────────────────────────────────────────────────────
+
+# Frontier companies — research-pedigree multiplier. Stays in sync with
+# CLAUDE.md's "20 non-negotiable departure-tracking companies" + close peers.
+FRONTIER_COMPANIES = {
+    "anthropic", "openai", "deepmind", "google deepmind", "meta", "meta fair",
+    "meta superintelligence", "xai", "mistral", "cursor", "anysphere",
+    "runway", "midjourney", "character ai", "perplexity", "scale ai",
+    "databricks", "mosaic", "together ai", "physical intelligence",
+    "nvidia", "nvidia research", "tesla", "apple mlr", "anduril", "palantir",
+    "cohere", "thinking machines", "cartesia", "luma", "genmo", "pika",
+    "black forest labs", "bfl", "inflection", "reflection ai",
+    "evolutionaryscale", "cz biohub", "arc institute", "ai21",
+    "essential ai", "standard intelligence",
+}
 
 # ANSI for terminal readability
 BOLD = "\033[1m"
@@ -89,6 +106,19 @@ def days_since(iso: str | None) -> int:
         return 9999
 
 
+def at_frontier_company(entry: dict) -> bool:
+    """Check if the entry mentions a frontier company in one_liner or tags."""
+    ol = (entry.get("one_liner") or "").lower()
+    tags = " ".join(entry.get("tags") or []).lower()
+    haystack = ol + " " + tags
+    return any(c in haystack for c in FRONTIER_COMPANIES)
+
+
+def in_cluster(entry: dict) -> bool:
+    """Has a cluster tag set (means part of a coherent cohort)."""
+    return bool(entry.get("cluster"))
+
+
 def score_components(entry: dict) -> dict:
     """Return component breakdown for transparency. Sum = total score."""
     tier = entry.get("tier")
@@ -113,7 +143,18 @@ def score_components(entry: dict) -> dict:
     indian_bonus = 10 if entry.get("indian") else 0
     urgency_bonus = 30 if entry.get("urgency_reason") else 0
 
-    total = base + decay_bonus + signal_bonus + recency_bonus + indian_bonus + urgency_bonus
+    # Quality bonus — captures "high conviction even without inflection signal".
+    # Honors gut signal from curator + frontier lab employment + cohort membership.
+    quality_bonus = 0
+    if at_frontier_company(entry):
+        quality_bonus += 20
+    if in_cluster(entry):
+        quality_bonus += 15
+    if git_days <= 7:
+        # Researched in last week = strong curator interest signal
+        quality_bonus += 20
+
+    total = base + decay_bonus + signal_bonus + recency_bonus + indian_bonus + urgency_bonus + quality_bonus
     return {
         "base": base,
         "decay": decay_bonus,
@@ -121,6 +162,7 @@ def score_components(entry: dict) -> dict:
         "recency": recency_bonus,
         "indian": indian_bonus,
         "urgency": urgency_bonus,
+        "quality": quality_bonus,
         "total": total,
     }
 
@@ -270,19 +312,19 @@ def main():
 
     if "--all" in args:
         print(f"{BOLD}ALL ELIGIBLE — {len(ranked)} entries (T0/T1/T2 not-contacted){RESET}\n")
-        print(f"{DIM}{'name':30s} {'tier':4s} {'base':4s} {'dcy':4s} {'sig':4s} {'rec':4s} {'in':3s} {'urg':4s} {'TOTAL':5s} seeded{RESET}")
+        print(f"{DIM}{'name':30s} {'tier':4s} {'base':4s} {'dcy':4s} {'sig':4s} {'rec':4s} {'in':3s} {'urg':4s} {'qua':4s} {'TOTAL':5s} seeded{RESET}")
         for i, (slug, e) in enumerate(ranked, 1):
             tier = e.get("tier")
             sc = score_components(e)
             seeded = "✓" if e.get("urgency_reason") else ""
             name = (e.get("name") or slug)[:28]
-            print(f"  {tier_badge(tier)} {name:30s} {sc['base']:4d} {sc['decay']:4d} {sc['signal']:4d} {sc['recency']:4d} {sc['indian']:3d} {sc['urgency']:4d} {BOLD}{sc['total']:5d}{RESET}  {seeded}")
+            print(f"  {tier_badge(tier)} {name:30s} {sc['base']:4d} {sc['decay']:4d} {sc['signal']:4d} {sc['recency']:4d} {sc['indian']:3d} {sc['urgency']:4d} {sc['quality']:4d} {BOLD}{sc['total']:5d}{RESET}  {seeded}")
         return
 
     if "--why" in args:
         # Detailed breakdown for the top 10 so you understand the ranking
         print(f"\n{BOLD}═══ RANKING BREAKDOWN — top 10 ═══{RESET}\n")
-        print(f"{DIM}Formula: tier(400/300/200) + decay(max 100) + signals(max ~135) + recency(max 30) + indian(10) + urgency_seeded(30){RESET}\n")
+        print(f"{DIM}Formula: tier(400/300/200) + decay(max 100) + signals(max ~135) + recency(max 30) + indian(10) + urgency_seeded(30) + quality(max 55){RESET}\n")
         for i, (slug, e) in enumerate(ranked[:10], 1):
             sc = score_components(e)
             tier = e.get("tier")
@@ -295,12 +337,21 @@ def main():
                   + (f" + {sc['signal']} signals" if sc['signal'] else "")
                   + (f" + {sc['recency']} recency" if sc['recency'] else "")
                   + (f" + {sc['indian']} indian" if sc['indian'] else "")
-                  + (f" + {sc['urgency']} urgency_seeded" if sc['urgency'] else ""))
+                  + (f" + {sc['urgency']} urgency_seeded" if sc['urgency'] else "")
+                  + (f" + {sc['quality']} quality" if sc['quality'] else ""))
             # Decompose signals
             sigs = e.get("signals") or {}
             sig_list = [k.replace("phrase_", "").replace("tag_", "") for k, v in sigs.items() if v]
-            if sig_list:
-                print(f"    {DIM}signals: {', '.join(sig_list)}{RESET}")
+            quality_parts = []
+            if at_frontier_company(e):
+                quality_parts.append("frontier-lab")
+            if in_cluster(e):
+                quality_parts.append(f"cluster={e.get('cluster')}")
+            if days_since(e.get("last_git_touch")) <= 7:
+                quality_parts.append("researched-this-week")
+            qstr = f" · quality: {', '.join(quality_parts)}" if quality_parts else ""
+            if sig_list or qstr:
+                print(f"    {DIM}signals: {', '.join(sig_list) if sig_list else 'none'}{qstr}{RESET}")
             ol = (e.get("one_liner") or "")[:100]
             if ol:
                 print(f"    {DIM}{ol}{RESET}")
