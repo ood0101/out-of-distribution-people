@@ -1,7 +1,7 @@
 # OOD People — daily ritual + maintenance commands.
 # Run `make help` to see what's available.
 
-.PHONY: help morning today triage clusters mark refresh render install-alias
+.PHONY: help morning today triage clusters promote mark refresh render install-alias
 
 help:
 	@echo ""
@@ -10,6 +10,7 @@ help:
 	@echo "  make today         Just today's 5 names"
 	@echo "  make triage        Top 15 untriaged entries by signal score"
 	@echo "  make clusters      Cluster activity in last 14 days"
+	@echo "  make promote       Delta Fellows ready for full dossier upgrade"
 	@echo ""
 	@echo "Maintenance:"
 	@echo "  make refresh       Rebuild state from dossiers"
@@ -30,6 +31,9 @@ triage:
 
 clusters:
 	@python3 scripts/cluster_check.py
+
+promote:
+	@python3 scripts/promote_candidates.py
 
 refresh:
 	@python3 data/build_outreach_state.py > /dev/null && echo "✓ state refreshed"
