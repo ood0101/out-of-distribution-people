@@ -178,6 +178,13 @@ SEED = {
         "next_action": "Deal flow swap email — name 2 pre-seed founders he'd want to see",
         "cluster": "co-investor",
     },
+    "jennifer-zhai": {
+        "urgency_reason": "Dual role: Coho Deeptech Co-Founder/GP (Cartesia, Higgsfield, Bland, Sahara AI, Amigo) + stealth founder 'building continual learning' (Twitter bio @jennzhaii). Mei Z. archetype #2. Pending LinkedIn from Boldcap; 55+ mutuals.",
+        "urgency_decay_date": None,
+        "channel": "warm-intro",
+        "next_action": "Warm intro via Alan or Aditya (LinkedIn mutuals); fallback DM @jennzhaii — lead with Cartesia SSM lineage + Ronak Malde continual-learning cluster",
+        "cluster": "continual-learning",
+    },
 }
 
 

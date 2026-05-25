@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-05-25T07:19:27+00:00",
+  "last_built": "2026-05-25T13:45:32+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -4150,6 +4150,60 @@
       "channel": null,
       "next_action": null,
       "cluster": null,
+      "email_override": null,
+      "outreach_subject_override": null,
+      "outreach_body_override": null
+    },
+    "jennifer-zhai": {
+      "name": "Jennifer Yichen Zhai",
+      "tier": 1,
+      "tier_label": "tier-1: high conviction (VC peer + future investment target)",
+      "category": "outreach",
+      "tags": [
+        "vc-talent",
+        "investor",
+        "founder-track",
+        "stealth",
+        "continual-learning",
+        "female-investor",
+        "chinese-origin",
+        "spike: dual role — GP at Coho Deeptech + stealth founder on continual learning"
+      ],
+      "indian": false,
+      "delta": false,
+      "one_liner": "Co-Founder & GP at",
+      "signals": {
+        "tag_stealth_founder": false,
+        "tag_founders": false,
+        "phrase_stealth": true,
+        "phrase_departed": false,
+        "phrase_raising": true,
+        "phrase_founded": true
+      },
+      "last_git_touch": null,
+      "needs_triage": false,
+      "emails": [
+        "hello@cohovc.com",
+        "jennifer@cohovc.com"
+      ],
+      "email_primary": "hello@cohovc.com",
+      "email_primary_kind": "company",
+      "outreach_subject": null,
+      "outreach_body_preview": null,
+      "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hello%40cohovc.com",
+      "twitter_handle": "jennzhaii",
+      "linkedin_slug": "jenniferyichenzhai",
+      "github_handle": null,
+      "status": "not-contacted",
+      "last_contacted": null,
+      "next_action_date": null,
+      "response": null,
+      "notes": "",
+      "urgency_decay_date": null,
+      "urgency_reason": "Dual role: Coho Deeptech Co-Founder/GP (Cartesia, Higgsfield, Bland, Sahara AI, Amigo) + stealth founder 'building continual learning' (Twitter bio @jennzhaii). Mei Z. archetype #2. Pending LinkedIn from Boldcap; 55+ mutuals.",
+      "channel": "warm-intro",
+      "next_action": "Warm intro via Alan or Aditya (LinkedIn mutuals); fallback DM @jennzhaii — lead with Cartesia SSM lineage + Ronak Malde continual-learning cluster",
+      "cluster": "continual-learning",
       "email_override": null,
       "outreach_subject_override": null,
       "outreach_body_override": null
