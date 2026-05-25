@@ -25,6 +25,20 @@ STATE = REPO / "data" / "outreach_state.json"
 # Format: slug -> dict of urgency fields. Missing fields stay None.
 SEED = {
     # ─── T0 — REACH OUT THIS WEEK (windows actively closing) ──────────────
+    "shivani-poddar": {
+        "urgency_reason": "Stealth AI Startup founder (venture-backed), building agentic AI for commerce. Highest-signal untriaged entry in repo.",
+        "urgency_decay_date": None,
+        "channel": "twitter",
+        "next_action": "DM @shivanipod — ref agentic commerce wedge + ask what she's building",
+        "cluster": "agent-commerce",
+    },
+    "ronak-malde": {
+        "urgency_reason": "Stealth founder (prev DeepMind ~7 months). Trained SWE-1 at Windsurf — triggered $2.4B Google acquisition. ~2 months post-departure.",
+        "urgency_decay_date": None,
+        "channel": "twitter",
+        "next_action": "DM @rronak_ — ref continual learning thesis + SWE-1 training-from-scratch story",
+        "cluster": "windsurf-cohort",
+    },
     "alex-shan": {
         "urgency_reason": "Just raised $32M (May 12). Post-funding window — ~3 weeks before hiring ramp consumes him.",
         "urgency_decay_date": "2026-06-15",

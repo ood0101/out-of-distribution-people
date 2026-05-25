@@ -29,7 +29,7 @@ Filters:
 from __future__ import annotations
 import json
 import sys
-from datetime import date
+from datetime import date, datetime, timezone
 from pathlib import Path
 from urllib.parse import quote
 
@@ -38,6 +38,23 @@ STATE = REPO / "data" / "outreach_state.json"
 
 MAX_DAILY = 5
 TIER_WEIGHT = {0: 4, 1: 3, 2: 2, 3: 1, None: 0}
+
+# ───────────────────────────────────────────────────────────────────────
+# COMPOSITE RANKING — what makes someone "best 5 today"
+# ───────────────────────────────────────────────────────────────────────
+# score = base(tier) + decay_bonus + signal_bonus + recency + indian + urgency
+#
+#   base(tier)       T0=400, T1=300, T2=200, T3=100, untiered=0
+#   decay_bonus      100 - days_until_decay  (max 100, only if decay set)
+#   signal_bonus     stealth-founder=35, stealth=30, departed=30,
+#                    raising=25, founded=15  (sum of detected signals)
+#   recency          30 - days_since_dossier_update  (max 30, decays in 30d)
+#   indian_bonus     +10 if Indian-origin (sourcing thesis priority)
+#   urgency_bonus    +30 if you've manually seeded urgency_reason
+#                    (curation signal — you've decided this matters)
+#
+# Tunable — edit these weights if the daily 5 doesn't match your gut.
+# ───────────────────────────────────────────────────────────────────────
 
 # ANSI for terminal readability
 BOLD = "\033[1m"
@@ -62,11 +79,54 @@ def days_until(iso: str | None) -> int:
         return 999
 
 
-def priority(entry: dict) -> int:
+def days_since(iso: str | None) -> int:
+    if not iso:
+        return 9999
+    try:
+        dt = datetime.fromisoformat(iso.replace("Z", "+00:00"))
+        return (datetime.now(timezone.utc) - dt).days
+    except ValueError:
+        return 9999
+
+
+def score_components(entry: dict) -> dict:
+    """Return component breakdown for transparency. Sum = total score."""
     tier = entry.get("tier")
-    weight = TIER_WEIGHT.get(tier, 0)
-    urgency = max(0, 100 - days_until(entry.get("urgency_decay_date"))) if entry.get("urgency_decay_date") else 0
-    return weight * 100 + urgency
+    base = TIER_WEIGHT.get(tier, 0) * 100
+
+    decay_bonus = 0
+    if entry.get("urgency_decay_date"):
+        decay_bonus = max(0, 100 - days_until(entry["urgency_decay_date"]))
+
+    sigs = entry.get("signals") or {}
+    signal_bonus = (
+        (35 if sigs.get("tag_stealth_founder") else 0)
+        + (30 if sigs.get("phrase_stealth") else 0)
+        + (30 if sigs.get("phrase_departed") else 0)
+        + (25 if sigs.get("phrase_raising") else 0)
+        + (15 if sigs.get("phrase_founded") else 0)
+    )
+
+    git_days = days_since(entry.get("last_git_touch"))
+    recency_bonus = max(0, 30 - git_days) if git_days < 30 else 0
+
+    indian_bonus = 10 if entry.get("indian") else 0
+    urgency_bonus = 30 if entry.get("urgency_reason") else 0
+
+    total = base + decay_bonus + signal_bonus + recency_bonus + indian_bonus + urgency_bonus
+    return {
+        "base": base,
+        "decay": decay_bonus,
+        "signal": signal_bonus,
+        "recency": recency_bonus,
+        "indian": indian_bonus,
+        "urgency": urgency_bonus,
+        "total": total,
+    }
+
+
+def priority(entry: dict) -> int:
+    return score_components(entry)["total"]
 
 
 def is_eligible(entry: dict) -> bool:
@@ -74,6 +134,11 @@ def is_eligible(entry: dict) -> bool:
         return False
     next_dt = entry.get("next_action_date")
     if next_dt and next_dt > today_iso():
+        return False
+    # Only score T0/T1/T2 entries for the daily queue.
+    # T3 and untiered fall out (they're indexed-for-future, not active outreach).
+    tier = entry.get("tier")
+    if tier not in (0, 1, 2):
         return False
     return True
 
@@ -204,10 +269,42 @@ def main():
     ranked = sorted(eligible, key=lambda x: priority(x[1]), reverse=True)
 
     if "--all" in args:
-        print(f"{BOLD}ALL ELIGIBLE — {len(ranked)} entries{RESET}\n")
+        print(f"{BOLD}ALL ELIGIBLE — {len(ranked)} entries (T0/T1/T2 not-contacted){RESET}\n")
+        print(f"{DIM}{'name':30s} {'tier':4s} {'base':4s} {'dcy':4s} {'sig':4s} {'rec':4s} {'in':3s} {'urg':4s} {'TOTAL':5s} seeded{RESET}")
         for i, (slug, e) in enumerate(ranked, 1):
             tier = e.get("tier")
-            print(f"{tier_badge(tier)} {priority(e):4d}  {slug}")
+            sc = score_components(e)
+            seeded = "✓" if e.get("urgency_reason") else ""
+            name = (e.get("name") or slug)[:28]
+            print(f"  {tier_badge(tier)} {name:30s} {sc['base']:4d} {sc['decay']:4d} {sc['signal']:4d} {sc['recency']:4d} {sc['indian']:3d} {sc['urgency']:4d} {BOLD}{sc['total']:5d}{RESET}  {seeded}")
+        return
+
+    if "--why" in args:
+        # Detailed breakdown for the top 10 so you understand the ranking
+        print(f"\n{BOLD}═══ RANKING BREAKDOWN — top 10 ═══{RESET}\n")
+        print(f"{DIM}Formula: tier(400/300/200) + decay(max 100) + signals(max ~135) + recency(max 30) + indian(10) + urgency_seeded(30){RESET}\n")
+        for i, (slug, e) in enumerate(ranked[:10], 1):
+            sc = score_components(e)
+            tier = e.get("tier")
+            name = e.get("name", slug)
+            seeded = f" {GREEN}[SEEDED]{RESET}" if e.get("urgency_reason") else f" {DIM}[auto]{RESET}"
+            print(f"{BOLD}{i:2d}. {tier_badge(tier)} {name}{RESET}{seeded} {DIM}({slug}){RESET}")
+            print(f"    {sc['total']:>5d} total = "
+                  f"{sc['base']} base"
+                  + (f" + {sc['decay']} decay" if sc['decay'] else "")
+                  + (f" + {sc['signal']} signals" if sc['signal'] else "")
+                  + (f" + {sc['recency']} recency" if sc['recency'] else "")
+                  + (f" + {sc['indian']} indian" if sc['indian'] else "")
+                  + (f" + {sc['urgency']} urgency_seeded" if sc['urgency'] else ""))
+            # Decompose signals
+            sigs = e.get("signals") or {}
+            sig_list = [k.replace("phrase_", "").replace("tag_", "") for k, v in sigs.items() if v]
+            if sig_list:
+                print(f"    {DIM}signals: {', '.join(sig_list)}{RESET}")
+            ol = (e.get("one_liner") or "")[:100]
+            if ol:
+                print(f"    {DIM}{ol}{RESET}")
+            print()
         return
 
     if "--triage" in args:
@@ -218,26 +315,44 @@ def main():
             tier = e.get("tier")
             name = e.get("name", slug)
             ol = (e.get("one_liner") or "")[:90]
-            print(f"  {tier_badge(tier)} {name:35s} {DIM}{ol}{RESET}")
+            sc = score_components(e)
+            print(f"  {tier_badge(tier)} {name:35s} score={sc['total']:3d}  {DIM}{ol}{RESET}")
         return
 
-    # Default: daily 5
-    actionable = [(s, e) for s, e in ranked if has_urgency(e)]
-    daily = actionable[:MAX_DAILY]
+    # Default: daily 5 — ranked across ALL T0/T1/T2 not-contacted (not just seeded).
+    # If you only want seeded entries, pass --seeded-only.
+    if "--seeded-only" in args:
+        candidates = [(s, e) for s, e in ranked if has_urgency(e)]
+    else:
+        candidates = ranked
+    daily = candidates[:MAX_DAILY]
+    alternates = candidates[MAX_DAILY:MAX_DAILY + 5]
 
     if not daily:
-        print(f"{DIM}No actionable entries today. Seed urgency fields via scripts/seed_priorities.py{RESET}")
+        print(f"{DIM}No actionable entries. Check status filters.{RESET}")
         return
 
     print(f"\n{BOLD}═══ TODAY'S OUTREACH — {today_iso()} ═══{RESET}")
-    print(f"{DIM}{MAX_DAILY} max. Send these, then close the terminal.{RESET}\n")
+    print(f"{DIM}{MAX_DAILY} max. Send these, then close the terminal.{RESET}")
+    print(f"{DIM}Run with --why for ranking breakdown · --seeded-only to limit to curated{RESET}\n")
 
     for i, (slug, e) in enumerate(daily, 1):
         print(render_row(slug, e, i))
         print()
 
+    # Show alternates (#6-#10) so you see what's just below the cut
+    if alternates:
+        print(f"{DIM}─ Alternates (next 5, in case you disagree) ─{RESET}")
+        for i, (slug, e) in enumerate(alternates, MAX_DAILY + 1):
+            tier = e.get("tier")
+            name = e.get("name", slug)
+            sc = score_components(e)
+            seeded_mark = " (seeded)" if e.get("urgency_reason") else ""
+            print(f"  {i}. {tier_badge(tier)} {name:30s} {DIM}score={sc['total']:3d}{seeded_mark}{RESET}")
+        print()
+
     # Footer summary
-    total_pool = len(actionable)
+    total_pool = len(candidates)
     in_flight = sum(1 for e in people.values() if e.get("status") in ("queued", "contacted"))
     replied = sum(1 for e in people.values() if e.get("status") == "replied")
     print(f"{DIM}─" * 70 + RESET)
