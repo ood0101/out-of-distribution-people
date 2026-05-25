@@ -105,7 +105,73 @@ def gmail_button(p: dict) -> str:
     )
 
 
-def row(slug: str, p: dict, *, show_tier: bool = True) -> str:
+def truncate_at_word(text: str, max_chars: int) -> str:
+    """Truncate at word boundary so we don't show 'CEO & Co-Founder,' cut mid-comma."""
+    if not text or len(text) <= max_chars:
+        return text
+    # Cut at max_chars, then back up to last word boundary
+    cut = text[:max_chars]
+    # Strip trailing punctuation/whitespace common in mid-sentence cuts
+    cut = cut.rstrip(",.;:—–- ")
+    last_space = cut.rfind(" ")
+    if last_space > max_chars * 0.5:
+        cut = cut[:last_space]
+    return cut.rstrip(",.;:—–- ") + "…"
+
+
+def channel_links(p: dict) -> str:
+    """Render channel-appropriate compose links inline.
+
+    Browser equivalent of today.py's channel logic. Shows Gmail + Twitter +
+    LinkedIn buttons inline based on what's available + the channel-of-record.
+    """
+    from urllib.parse import quote
+    channel = (p.get("channel") or "").lower()
+    twitter = p.get("twitter_handle")
+    linkedin = p.get("linkedin_slug")
+    email = p.get("email_override") or p.get("email_primary")
+    subject = p.get("outreach_subject_override") or p.get("outreach_subject") or ""
+
+    btns = []
+    # Primary action by channel-of-record
+    if channel == "twitter" and twitter:
+        btns.append(f'<a class="ooq-btn ooq-btn-tw" href="https://twitter.com/messages/compose?recipient_screen_name={esc(twitter)}" target="_blank" rel="noopener" title="DM @{esc(twitter)}">𝕏 DM</a>')
+    elif channel == "linkedin" and linkedin:
+        btns.append(f'<a class="ooq-btn ooq-btn-li" href="https://linkedin.com/in/{esc(linkedin)}/" target="_blank" rel="noopener" title="LinkedIn">in</a>')
+    elif channel == "email" and email:
+        body = p.get("outreach_body_override") or ""
+        parts = [f"to={quote(email)}"]
+        if subject:
+            parts.append(f"su={quote(subject)}")
+        if body:
+            if len(body) > 6000:
+                body = body[:5900] + "\n\n[truncated]"
+            parts.append(f"body={quote(body)}")
+        url = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&" + "&".join(parts)
+        btns.append(f'<a class="ooq-btn ooq-btn-gm" href="{esc(url)}" target="_blank" rel="noopener" title="{esc(email)}">✉ Gmail</a>')
+
+    # Always show Gmail if we have an email and it's not the primary
+    if email and not any("Gmail" in b for b in btns):
+        body = p.get("outreach_body_override") or ""
+        parts = [f"to={quote(email)}"]
+        if subject:
+            parts.append(f"su={quote(subject)}")
+        if body:
+            if len(body) > 6000:
+                body = body[:5900] + "\n\n[truncated]"
+            parts.append(f"body={quote(body)}")
+        url = "https://mail.google.com/mail/?view=cm&fs=1&tf=1&" + "&".join(parts)
+        btns.append(f'<a class="ooq-btn ooq-btn-gm" href="{esc(url)}" target="_blank" rel="noopener" title="{esc(email)}">✉ Gmail</a>')
+    # Always show Twitter profile if handle available and not primary
+    if twitter and not any("ooq-btn-tw" in b for b in btns):
+        btns.append(f'<a class="ooq-btn ooq-btn-tw" href="https://twitter.com/{esc(twitter)}" target="_blank" rel="noopener" title="@{esc(twitter)}">𝕏</a>')
+
+    if not btns:
+        return '<a class="ooq-noemail" title="No contact info — add via mark.py">no contact</a>'
+    return "".join(btns)
+
+
+def row(slug: str, p: dict, *, show_tier: bool = True, show_urgency: bool = False) -> str:
     tier = p.get("tier")
     tier_str = (
         f'<span class="ooq-tier ooq-tier-{tier}">T{tier}</span>'
@@ -113,11 +179,10 @@ def row(slug: str, p: dict, *, show_tier: bool = True) -> str:
         else '<span class="ooq-tier ooq-tier-x">—</span>'
     )
     name = esc(p.get("name") or slug)
-    one_liner = esc((p.get("one_liner") or "")[:140])
     touch = short_date(p.get("last_git_touch"))
     chips = signal_chips(p)
     href = f"people/{slug}.html"
-    gmail = gmail_button(p)
+    btns = channel_links(p)
 
     # Status overlay
     status = p.get("status", "not-contacted")
@@ -132,6 +197,26 @@ def row(slug: str, p: dict, *, show_tier: bool = True) -> str:
     elif status == "replied":
         status_html = '<span class="ooq-status ooq-status-replied">&#9733; replied</span>'
 
+    # Body line: urgency_reason if seeded, otherwise truncated one_liner.
+    urgency_reason = p.get("urgency_reason")
+    next_action = p.get("next_action")
+    channel_label = p.get("channel")
+    decay = p.get("urgency_decay_date")
+
+    body_parts = []
+    if show_urgency and urgency_reason:
+        body_parts.append(f'<span class="ooq-why">{esc(truncate_at_word(urgency_reason, 180))}</span>')
+        if next_action:
+            ch = f' <span class="ooq-channel">→ {esc(channel_label)}</span>' if channel_label else ""
+            body_parts.append(f'<div class="ooq-action">{ch} {esc(truncate_at_word(next_action, 130))}</div>')
+        if decay:
+            body_parts.append(f'<span class="ooq-decay">closes {esc(decay)}</span>')
+    else:
+        ol = truncate_at_word(p.get("one_liner") or "", 160)
+        body_parts.append(f'<span class="ooq-oneliner">{esc(ol)}</span>')
+
+    body_html = '<div class="ooq-body">' + "".join(body_parts) + '</div>'
+
     return (
         f'<li class="ooq-row">'
         f'{tier_str}'
@@ -139,8 +224,8 @@ def row(slug: str, p: dict, *, show_tier: bool = True) -> str:
         f'<a href="{href}" class="ooq-name"{name_style}>{name}</a>'
         f'<span class="ooq-chips">{chips}</span>'
         f'{status_html}'
-        f'{gmail}'
-        f'<div class="ooq-oneliner">{one_liner}</div>'
+        f'<span class="ooq-btns">{btns}</span>'
+        f'{body_html}'
         f'</li>'
     )
 
@@ -154,12 +239,27 @@ def style_block() -> str:
 .ooq-section-h { font-family:var(--mono); font-size:0.7rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--accent); margin:0.9rem 0 0.4rem; padding-bottom:0.2rem; border-bottom:1px solid var(--border-light); }
 .ooq-section-h.ooq-h-triage { color:#9c6500; }
 .ooq-section-h.ooq-h-flight { color:#4a7a3a; }
+.ooq-section-h.ooq-h-today { color:var(--accent); border-bottom:2px solid var(--accent); font-size:0.78rem; }
+.ooq-section-h.ooq-h-capital { color:#3a5a7a; }
 .ooq-list { list-style:none; padding:0; margin:0; }
-.ooq-row { display:grid; grid-template-columns: 36px 78px 1fr auto auto auto; gap:0.45rem 0.6rem; align-items:baseline; padding:0.35rem 0; border-bottom:1px dotted var(--border-light); }
+.ooq-row { display:grid; grid-template-columns: 36px 78px 1fr auto auto auto; gap:0.45rem 0.6rem; align-items:baseline; padding:0.5rem 0; border-bottom:1px dotted var(--border-light); }
+.ooq-btns { display:flex; gap:0.25rem; flex-wrap:nowrap; }
+.ooq-btn { font-family:var(--mono); font-size:0.62rem; padding:0.1rem 0.4rem; border-radius:2px; text-decoration:none; border:1px solid transparent; white-space:nowrap; }
+.ooq-btn-gm { border-color:var(--accent); color:var(--accent); background:#fff; }
+.ooq-btn-gm:hover { background:var(--accent); color:#fff; }
+.ooq-btn-tw { border-color:#1da1f2; color:#1da1f2; background:#fff; }
+.ooq-btn-tw:hover { background:#1da1f2; color:#fff; }
+.ooq-btn-li { border-color:#0a66c2; color:#0a66c2; background:#fff; }
+.ooq-btn-li:hover { background:#0a66c2; color:#fff; }
 .ooq-gmail { font-family:var(--mono); font-size:0.65rem; padding:0.1rem 0.45rem; border:1px solid var(--accent); color:var(--accent); border-radius:2px; text-decoration:none; background:#fff; }
 .ooq-gmail:hover { background:var(--accent); color:#fff; }
 .ooq-noemail { font-family:var(--mono); font-size:0.62rem; color:var(--fg-faint); font-style:italic; }
 .ooq-row:last-child { border-bottom:none; }
+.ooq-body { grid-column: 3 / -1; margin-top:0.2rem; }
+.ooq-why { font-size:0.78rem; color:var(--fg); font-weight:500; }
+.ooq-action { font-size:0.74rem; color:var(--fg-muted); margin-top:0.15rem; }
+.ooq-channel { font-family:var(--mono); font-size:0.65rem; color:var(--accent); text-transform:uppercase; letter-spacing:0.05em; }
+.ooq-decay { font-family:var(--mono); font-size:0.65rem; color:#9c6500; margin-left:0.5rem; }
 .ooq-tier { font-family:var(--mono); font-size:0.7rem; font-weight:600; text-align:center; padding:0.1rem 0.3rem; border-radius:2px; }
 .ooq-tier-0 { background:var(--accent); color:#fff; }
 .ooq-tier-1 { background:#f0e0dd; color:var(--accent); }
@@ -186,6 +286,7 @@ def style_block() -> str:
 
 
 def build_panel(state: dict) -> str:
+    from datetime import date
     people = state.get("people", {})
     live = {s: p for s, p in people.items() if not p.get("_orphan")}
 
@@ -193,7 +294,35 @@ def build_panel(state: dict) -> str:
         slug, p = item
         return p.get("last_git_touch") or ""
 
-    # PANEL 1: Reach out next
+    today_iso = date.today().isoformat()
+
+    # PANEL 0 (NEW): TODAY'S 5 — seeded urgency entries, ranked
+    # These have urgency_reason set, status not-contacted, and next_action_date
+    # is today or earlier (or null).
+    def days_until(iso: str | None) -> int:
+        if not iso:
+            return 999
+        try:
+            return (date.fromisoformat(iso) - date.today()).days
+        except ValueError:
+            return 999
+
+    def priority(p: dict) -> int:
+        tier = p.get("tier")
+        weights = {0: 4, 1: 3, 2: 2, 3: 1}
+        w = weights.get(tier, 0)
+        urgency = max(0, 100 - days_until(p.get("urgency_decay_date"))) if p.get("urgency_decay_date") else 0
+        return w * 100 + urgency
+
+    todays = [
+        (s, p) for s, p in live.items()
+        if p.get("status") == "not-contacted"
+        and p.get("urgency_reason")
+        and (not p.get("next_action_date") or p["next_action_date"] <= today_iso)
+    ]
+    todays.sort(key=lambda x: priority(x[1]), reverse=True)
+
+    # PANEL 1: Reach out next (broader — all T0/T1 outreach not contacted)
     outreach = [
         (s, p) for s, p in live.items()
         if p.get("tier") in (0, 1)
@@ -203,14 +332,29 @@ def build_panel(state: dict) -> str:
     # T0 first, then T1, freshest within tier
     outreach.sort(key=lambda x: (x[1].get("tier", 99), -1 * (int((x[1].get("last_git_touch") or "0000")[:4]) * 10000 + int((x[1].get("last_git_touch") or "0000-00")[5:7]) * 100 + int((x[1].get("last_git_touch") or "0000-00-00")[8:10]))))
 
-    # PANEL 2: Triage — untiered with hot signal
+    # PANEL 2: Triage — untiered with hot signal, EXCLUDING LP/peer/network entries
     hot_signal_keys = ("tag_stealth_founder", "phrase_stealth", "phrase_departed", "phrase_raising")
     triage = [
         (s, p) for s, p in live.items()
         if p.get("tier") is None
         and any(p.get("signals", {}).get(k) for k in hot_signal_keys)
+        and p.get("category") not in ("network",)  # Exclude LPs/investors/peer VCs
+        and "lp-prospect" not in (p.get("tags") or [])
+        and "vc-talent" not in (p.get("tags") or [])
     ]
     triage.sort(key=sort_key, reverse=True)
+
+    # PANEL: Capital / LP / VC peers — separate from founder triage
+    capital = [
+        (s, p) for s, p in live.items()
+        if (
+            "lp-prospect" in (p.get("tags") or [])
+            or "vc-talent" in (p.get("tags") or [])
+            or p.get("category") == "network"
+        )
+        and p.get("status") == "not-contacted"
+    ]
+    capital.sort(key=sort_key, reverse=True)
 
     # PANEL 3: In flight — anything queued/contacted/replied
     in_flight = [
@@ -232,10 +376,20 @@ def build_panel(state: dict) -> str:
     parts = [style_block(), '<div class="ooq-panel">']
     parts.append(
         f'<div class="ooq-head"><span>&#9670; Outreach Queue &mdash; auto</span>'
-        f'<span class="ooq-built">built {esc(built)} &middot; {len(live)} dossiers</span></div>'
+        f'<span class="ooq-built">built {esc(built)} &middot; {len(live)} entries</span></div>'
     )
 
-    # Panel 1
+    # Panel 0 (NEW): Today's 5 — the ADHD-friendly daily queue
+    parts.append('<div class="ooq-section-h ooq-h-today">Today\'s 5 &mdash; seeded urgency, ranked by tier &times; decay</div>')
+    parts.append('<ul class="ooq-list">')
+    if todays:
+        for slug, p in todays[:5]:
+            parts.append(row(slug, p, show_urgency=True))
+    else:
+        parts.append('<li class="ooq-empty">No urgency-seeded entries. Run scripts/seed_priorities.py to add some.</li>')
+    parts.append('</ul>')
+
+    # Panel 1: broader tier-0/1 outreach
     parts.append('<div class="ooq-section-h">Reach out next &mdash; tier 0/1, not yet contacted</div>')
     parts.append('<ul class="ooq-list">')
     if outreach:
@@ -261,6 +415,14 @@ def build_panel(state: dict) -> str:
     else:
         parts.append('<li class="ooq-empty">No untiered dossiers with hot signal.</li>')
     parts.append('</ul>')
+
+    # Capital panel (LPs, investors, VC peers — separate from founder triage)
+    if capital:
+        parts.append(f'<div class="ooq-section-h ooq-h-capital">Capital &mdash; LPs / VC peers ({len(capital)})</div>')
+        parts.append('<ul class="ooq-list">')
+        for slug, p in capital[:8]:
+            parts.append(row(slug, p, show_urgency=True))
+        parts.append('</ul>')
 
     # Panel 3 (only if anything in flight)
     if in_flight:
