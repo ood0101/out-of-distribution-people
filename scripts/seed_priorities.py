@@ -95,6 +95,13 @@ SEED = {
         "next_action": "Meet before Reflection start date; ref ScaleRL co-authorship pattern",
         "cluster": "scalerl",
     },
+    "dan-kondratyuk": {
+        "urgency_reason": "Co-founder of rekursiv.ai (stealth, Mountain View, 'Autonomously Create Knowledge') with Joshua V. Dillon (TensorFlow Probability creator). FIRST LUMA RESEARCH-SCIENTIST DEPARTURE INDEXED IN REPO (ex-Luma RS Mar 2024–2025/Q1 2026, ex-Google 4.5y). 1st author VideoPoet (ICML 2024 Best Paper, 1 of 10 from 2,610) + 1st author MoViNets (CVPR 2021) + 1st author UDify (EMNLP 2019). Architectural through-line: ONE general system subsumes a zoo of specialists, now applied to scientific method. Category (AI Scientists): Sakana $2.65B, Edison $70M, Lila $550M — Kondratyuk+Dillon are the only team with a 1st-author ICML Best Paper foundation-model author on the founding bench. Site live, recruiting@rekursiv.ai hiring, no public raise = seed window NOW. 1,327 LinkedIn followers (pre-launch). NOT same as Richard Socher's Recursive Superintelligence ($650M, $4.65B). First Charles University node in repo.",
+        "urgency_decay_date": None,
+        "channel": "linkedin",
+        "next_action": "LinkedIn DM (1,327 followers = will read). Subject: 'One decoder, many specialists — the through-line from VideoPoet to rekursiv.' Lead with the architectural through-line across UDify/MoViNets/VideoPoet (one general system subsumes a zoo of specialists), name Sakana hallucination tax + Edison bio lock-in + Lila wet-lab capex, ask architectural question (custom multimodal foundation model substrate vs TFP-wrapper on open base models), $500K-$1M check, warm-intro option via Chenfeng Xu (in-repo T2, Improved Immiscible Diffusion 2025 co-author). Fallback: general@rekursiv.ai. Tertiary: X DM @hyperparticle. Sign Vansh.",
+        "cluster": "diffusion-video",
+    },
 
     # ─── T1 — RELATIONSHIP-BUILD (open-ended, monthly cadence) ────────────
     "brandon-wang": {
