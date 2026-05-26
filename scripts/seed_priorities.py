@@ -39,6 +39,13 @@ SEED = {
         "next_action": "DM @rronak_ — ref continual learning thesis + SWE-1 training-from-scratch story",
         "cluster": "windsurf-cohort",
     },
+    "michael-elabd": {
+        "urgency_reason": "Trajectory Technologies Co-Founder/Director/CFO (CA filing Nov 3 2025) alongside Ronak Malde + Arjun Karanam. Concurrent DeepMind Foundational Research (verified Gemini Robotics arXiv co-author + Gemini Robotics 1.5 contributor). Apr 14 2026 X 'own the grammar' essay = strongest founder-voice artifact in the continual-learning cluster.",
+        "urgency_decay_date": None,
+        "channel": "email",
+        "next_action": "Email hello@trajectory.ai ATTN Michael — lead with Apr 14 'own the grammar' essay + Policy Dreamer co-authorship as >=14-month team-history proof + SkillRL bitter-lesson question. Fallback Twitter DM @MichaelElabd (he's invited continual-learning DMs since ICLR Rio Apr 22).",
+        "cluster": "continual-learning",
+    },
     "alex-shan": {
         "urgency_reason": "Just raised $32M (May 12). Post-funding window — ~3 weeks before hiring ramp consumes him.",
         "urgency_decay_date": "2026-06-15",
@@ -66,6 +73,13 @@ SEED = {
         "channel": "email",
         "next_action": "Send 2-3 specific candidates from pipeline (offer value first)",
         "cluster": "healthcare-ai",
+    },
+    "weiying-wang": {
+        "urgency_reason": "Stealth humanoid robotics founder, Cambridge MA. Harvard CS PhD (Stephanie Gil/REACT Lab) + ex-Zoox 3D perception/VLM/VLA. ~6 months post-departure window. 786 LinkedIn followers — pre-launch. Category consolidating fast (Figure $39B, PI $2B+).",
+        "urgency_decay_date": None,
+        "channel": "linkedin",
+        "next_action": "LinkedIn DM ref Wi-Closure + MULAN-WC + the pi-0 vs OpenVLA transfer-vs-rebuild question; fallback warm intro via verified Yilun Du (Harvard/Kempner)",
+        "cluster": "humanoid-robotics",
     },
     "devvrit-khatri": {
         "urgency_reason": "Joining Reflection AI ($2B) — vesting cliff begins immediately. Last pre-lockup window.",
