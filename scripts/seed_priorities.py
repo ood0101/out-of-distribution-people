@@ -160,6 +160,13 @@ SEED = {
         "next_action": "Email ref Modal scale + ask for intros to IOI-track founders",
         "cluster": "ioi-pipeline",
     },
+    "arjun-karanam": {
+        "urgency_reason": "Co-Founder, Secretary & Director of Trajectory Technologies, Inc. (Nov 3 2025 CA filing, w/ Ronak Malde CEO + Michael Elabd CFO). Second-time founder — sole co-founder with prior incorporation (Time Flies, USAF AI scheduling). Policy Dreamer NeurIPS 2024 SoLaR co-authored with Michael Elabd + Kanishk Gandhi >14 months before incorporation — public-record proof of pre-Trajectory team collaboration. Stanford AI Lab thesis + 3x Apple Vision Pro + NASA Artemis + Regeneron/Siemens Scholar.",
+        "urgency_decay_date": None,
+        "channel": "email",
+        "next_action": "Email arjun.karanam@stanford.edu or hello@trajectory.ai — ref Time Flies (USAF) + Policy Dreamer + Stanford AI Lab thesis on human-agentic simulation. Reach out alongside Ronak/Michael; team will compare notes. Fallback Twitter DM @QuantumArjun.",
+        "cluster": "continual-learning",
+    },
 
     # ─── LP / CAPITAL (separate track from founders) ──────────────────────
     "jessie-jia-guo": {
