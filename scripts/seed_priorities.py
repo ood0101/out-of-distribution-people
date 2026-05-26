@@ -81,6 +81,13 @@ SEED = {
         "next_action": "LinkedIn DM ref Wi-Closure + MULAN-WC + the pi-0 vs OpenVLA transfer-vs-rebuild question; fallback warm intro via verified Yilun Du (Harvard/Kempner)",
         "cluster": "humanoid-robotics",
     },
+    "blanca-villanueva": {
+        "urgency_reason": "Stealth Founder & CEO 'autonomous robotics + biomedical AI' (LinkedIn May 2026). Stanford BS CS + MS Biomedical Informatics + Stanford School of Medicine. Nature 2023 co-author (Leskovec lab, 4th of 10) + Apple Hearing Study methods paper (JASA 2022) — shipped Apple Health algorithms. Boldcap mutuals Mo + Samir + 2 others. LinkedIn connection request PENDING. Rare female founder in autonomous medical robotics. CALIBRATION: the 3 arXiv surgical-robotics papers from brief are NOT hers (verified) — robotics half is currently a self-described stealth pitch, not a research record.",
+        "urgency_decay_date": None,
+        "channel": "warm-intro",
+        "next_action": "Warm intro via Mo / Samir (Boldcap mutuals); fallback LinkedIn DM once pending connection accepts — lead with Apple Health -> founder pattern + name 5 surgical-robotics comps + 4 wedge surfaces + $500K-$1M check; final fallback blanca@cs.stanford.edu",
+        "cluster": "surgical-robotics",
+    },
     "devvrit-khatri": {
         "urgency_reason": "Joining Reflection AI ($2B) — vesting cliff begins immediately. Last pre-lockup window.",
         "urgency_decay_date": "2026-06-30",
