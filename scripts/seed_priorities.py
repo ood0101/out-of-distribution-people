@@ -118,6 +118,13 @@ SEED = {
         "next_action": "Email ref QuantSpec ~2.5x speedup + 90% acceptance rate",
         "cluster": "scalerl",
     },
+    "chenfeng-xu": {
+        "urgency_reason": "Incoming UT Austin AP (Fall 2026) + Researcher @ Together AI + Aurora project co-lead. 2 MLSys 2026 Best Papers in one week (LEANN + StreamDiffusionV2). Bridges 4 repo clusters (Keutzer/Tiwari, Tri Dao/Wang/Hwang/Mishra, Berkeley SkyLab, Song Han). Network hub.",
+        "urgency_decay_date": None,
+        "channel": "email",
+        "next_action": "Email cxu@utexas.edu ref StreamDiffusionV2 58.28 FPS sink-token rolling KV + Together AI direction at UT Austin; fallback Twitter DM @Chenfeng_X",
+        "cluster": "efficient-inference",
+    },
     "kawin-ethayarajh": {
         "urgency_reason": "Created KTO. UChicago Booth prof. 3,200+ cites. Research collaboration angle.",
         "urgency_decay_date": None,

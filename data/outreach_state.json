@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-05-25T13:45:32+00:00",
+  "last_built": "2026-05-26T06:13:07+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -1945,6 +1945,61 @@
       "channel": null,
       "next_action": null,
       "cluster": null,
+      "email_override": null,
+      "outreach_subject_override": null,
+      "outreach_body_override": null
+    },
+    "chenfeng-xu": {
+      "name": "Chenfeng Xu",
+      "tier": 2,
+      "tier_label": "tier-2: network hub",
+      "category": "network",
+      "tags": [
+        "researchers",
+        "efficient-inference",
+        "video-generation",
+        "ut-austin",
+        "keutzer-lab",
+        "together-ai",
+        "network-hub",
+        "indexed-name",
+        "chinese-origin",
+        "spike: 2 MLSys 2026 Best Papers in 1 week + Aurora ICML 2026 + Together AI co-lead + UT Austin AP"
+      ],
+      "indian": false,
+      "delta": false,
+      "one_liner": "Incoming Assistant Professor,",
+      "signals": {
+        "tag_stealth_founder": false,
+        "tag_founders": false,
+        "phrase_stealth": false,
+        "phrase_departed": false,
+        "phrase_raising": false,
+        "phrase_founded": false
+      },
+      "last_git_touch": null,
+      "needs_triage": false,
+      "emails": [
+        "cxu@utexas.edu"
+      ],
+      "email_primary": "cxu@utexas.edu",
+      "email_primary_kind": "academic",
+      "outreach_subject": null,
+      "outreach_body_preview": null,
+      "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=cxu%40utexas.edu",
+      "twitter_handle": "chenfeng_x",
+      "linkedin_slug": "chenfeng-xu-3ba921169",
+      "github_handle": "chenfengxu714",
+      "status": "not-contacted",
+      "last_contacted": null,
+      "next_action_date": null,
+      "response": null,
+      "notes": "",
+      "urgency_decay_date": null,
+      "urgency_reason": "Incoming UT Austin AP (Fall 2026) + Researcher @ Together AI + Aurora project co-lead. 2 MLSys 2026 Best Papers in one week (LEANN + StreamDiffusionV2). Bridges 4 repo clusters (Keutzer/Tiwari, Tri Dao/Wang/Hwang/Mishra, Berkeley SkyLab, Song Han). Network hub.",
+      "channel": "email",
+      "next_action": "Email cxu@utexas.edu ref StreamDiffusionV2 58.28 FPS sink-token rolling KV + Together AI direction at UT Austin; fallback Twitter DM @Chenfeng_X",
+      "cluster": "efficient-inference",
       "email_override": null,
       "outreach_subject_override": null,
       "outreach_body_override": null
@@ -4180,7 +4235,7 @@
         "phrase_raising": true,
         "phrase_founded": true
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-05-25T19:16:17+05:30",
       "needs_triage": false,
       "emails": [
         "hello@cohovc.com",
@@ -7628,14 +7683,16 @@
         "phrase_raising": false,
         "phrase_founded": false
       },
-      "last_git_touch": "2026-03-26T14:58:30+05:30",
+      "last_git_touch": "2026-05-26T11:30:45+05:30",
       "needs_triage": false,
-      "emails": [],
-      "email_primary": null,
-      "email_primary_kind": null,
+      "emails": [
+        "hello@trajectory.ai"
+      ],
+      "email_primary": "hello@trajectory.ai",
+      "email_primary_kind": "company",
       "outreach_subject": null,
       "outreach_body_preview": null,
-      "gmail_url": null,
+      "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hello%40trajectory.ai",
       "twitter_handle": "rronak_",
       "linkedin_slug": "ronak-malde",
       "github_handle": "rmalde",
