@@ -246,6 +246,13 @@ SEED = {
         "next_action": "Email or Twitter — ref s1 + MTEB commercial deployment angle",
         "cluster": "post-training",
     },
+    "tanishq-kumar": {
+        "urgency_reason": "1st-year Stanford CS PhD (Sep 2025) co-advised by Percy Liang + Tatsu Hashimoto. 6 pre-PhD ICLR/ICML papers via Pehlevan/Bordelon (Harvard SEAS / Kempner): Grokking ICLR 24 (1st, 109 cites) + No Free Prune ICML 24 (co-1st w/ Sellke) + Scaling Laws for Precision ICLR 2025 ORAL AWARD (co-1st, 112 cites) + Do Mice Grok ICLR 25 (1st) + Overtrained LMs SCOPE Outstanding + ICBINB Best Paper ICLR 25 (4th of 8 w/ Springer + Goyal + Wen + Aditi, 56 cites). Already ICLR 2026 1st-author Speculative Speculative Decoding w/ Tri Dao (CLAUDE.md critical lab) + Avner May. 3 co-authorships with Aditi Raghunathan (CMU). Co-author w/ Niklas Muennighoff (reference class, in repo) + Chris Ré + Ben Spector (in repo). 313 Scholar cites, h-5. Indian-origin (Tanishq Mathew Kumar). Harvard math '25 (with 2019-20 SF gap year, prior boarding school London, Abu Dhabi childhood). Reference class: Niklas Muennighoff (pre-PhD prolific publisher archetype). Recursive discovery from Aditi Raghunathan dossier (her P0 student).",
+        "urgency_decay_date": None,
+        "channel": "email",
+        "next_action": "Email tanishq@stanford.edu — relationship build, NOT pitching. Lead with technical insight on Scaling Laws for Precision (low precision reduces effective parameter count + post-training quantization gets worse with more pretraining data, the cross-finding with Overtrained paper) + ask about Pehlevan/Bordelon DMFT framework prediction for precision floor below FP6. Reference Niklas + Sukjun as in-repo reference classes. Fallback Twitter DM @tanishqkumar07 (5,243 followers, verified).",
+        "cluster": "scaling-laws",
+    },
     "shreyas-sreenivas": {
         "urgency_reason": "Exa founding engineer — Vector DB in Rust. $12M ARR. Indian (Bangalore). Already at scale — relationship/sourcing angle.",
         "urgency_decay_date": None,

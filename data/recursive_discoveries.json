@@ -45,7 +45,10 @@
       "discovered_at": "2026-05-21",
       "context": "Harvard math '25 -> Stanford CS PhD (Sep 2025) under Percy Liang + Tatsu Hashimoto. ICLR 2025 Oral Scaling Laws for Precision. ~5+ pre-PhD ICLR/ICML papers via Pehlevan/Bordelon. Indian-origin (Tanishq Mathew Kumar). Reference class: Niklas Muennighoff. Site: tanishqkumar.github.io.",
       "priority": "P0",
-      "status": "pending",
+      "status": "dossiered",
+      "dossiered_at": "2026-05-27",
+      "dossier_url": "people/tanishq-kumar.html",
+      "tier_assigned": "T2",
       "tags": ["stanford", "percy-liang", "indian", "scaling-laws"]
     },
     {

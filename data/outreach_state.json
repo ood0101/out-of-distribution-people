@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-05-27T08:28:27+00:00",
+  "last_built": "2026-05-27T08:51:03+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -1663,11 +1663,11 @@
       "twitter_handle": "_bicv",
       "linkedin_slug": "blanca-villanueva-68ba3b61",
       "github_handle": "villanuevab",
-      "status": "not-contacted",
-      "last_contacted": null,
-      "next_action_date": null,
+      "status": "contacted",
+      "last_contacted": "2026-05-27",
+      "next_action_date": "2026-06-10",
       "response": null,
-      "notes": "",
+      "notes": "\n[2026-05-27] sent via warm-intro",
       "urgency_decay_date": null,
       "urgency_reason": "Stealth Founder & CEO 'autonomous robotics + biomedical AI' (LinkedIn May 2026). Stanford BS CS + MS Biomedical Informatics + Stanford School of Medicine. Nature 2023 co-author (Leskovec lab, 4th of 10) + Apple Hearing Study methods paper (JASA 2022) — shipped Apple Health algorithms. Boldcap mutuals Mo + Samir + 2 others. LinkedIn connection request PENDING. Rare female founder in autonomous medical robotics. CALIBRATION: the 3 arXiv surgical-robotics papers from brief are NOT hers (verified) — robotics half is currently a self-described stealth pitch, not a research record.",
       "channel": "warm-intro",
@@ -1676,7 +1676,13 @@
       "email_override": null,
       "outreach_subject_override": null,
       "outreach_body_override": null,
-      "channels_attempted": []
+      "channels_attempted": [
+        {
+          "channel": "warm-intro",
+          "date": "2026-05-27",
+          "note": ""
+        }
+      ]
     },
     "bo-peng": {
       "name": "Bo Peng",
@@ -9631,6 +9637,63 @@
       "channel": null,
       "next_action": null,
       "cluster": null,
+      "email_override": null,
+      "outreach_subject_override": null,
+      "outreach_body_override": null,
+      "channels_attempted": []
+    },
+    "tanishq-kumar": {
+      "name": "Tanishq Kumar",
+      "tier": 2,
+      "tier_label": "tier-2: tracking",
+      "category": "outreach",
+      "tags": [
+        "researchers",
+        "stanford",
+        "percy-liang",
+        "hashimoto-lab",
+        "indian",
+        "scaling-laws",
+        "science-of-deep-learning",
+        "pehlevan-bordelon",
+        "aditi-raghunathan-collab",
+        "network-hub",
+        "spike: ICLR 2025 Oral (Scaling Laws for Precision) + SCOPE Outstanding + 5+ pre-PhD ICLR/ICML papers + Liang+Hashimoto co-advising"
+      ],
+      "indian": true,
+      "delta": false,
+      "one_liner": "1st-year Stanford CS PhD (Sep 2025), co-advised by",
+      "signals": {
+        "tag_stealth_founder": false,
+        "tag_founders": false,
+        "phrase_stealth": true,
+        "phrase_departed": false,
+        "phrase_raising": false,
+        "phrase_founded": false
+      },
+      "last_git_touch": null,
+      "needs_triage": false,
+      "emails": [
+        "tanishq@stanford.edu"
+      ],
+      "email_primary": "tanishq@stanford.edu",
+      "email_primary_kind": "academic",
+      "outreach_subject": "a second layer of speculation on top of",
+      "outreach_body_preview": "speculative decoding, designed for big target models (LLaMA-3-70B class) sharded with tensor parallelism on H100 clusters.\n\nPer Tanishq's Twitter:\n\"\nit was written and tested on h100s, since it expects big target\nmodels (e.g. llama-3-70b) sharded with tensor parallelism.\n\" Direct inference-infra ang…",
+      "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=tanishq%40stanford.edu&su=a%20second%20layer%20of%20speculation%20on%20top%20of&body=speculative%20decoding%2C%20designed%20for%20big%20target%20models%20%28LLaMA-3-70B%20class%29%20sharded%20with%20tensor%20parallelism%20on%20H100%20clusters.%0A%0APer%20Tanishq%27s%20Twitter%3A%0A%22%0Ait%20was%20written%20and%20tested%20on%20h100s%2C%20since%20it%20expects%20big%20target%0Amodels%20%28e.g.%20llama-3-70b%29%20sharded%20with%20tensor%20parallelism.%0A%22%20Direct%20inference-infra%20angle%20%E2%80%94%20this%20is%20the%0Avector%20by%20which%20he%20could%20end%20up%20at%20Together%20AI%20/%20Cartesia%20/%20SambaNova%20post-PhD%20if%20he%20leaves%20academia.%0A%0ALower%20Data%20Diversity%20Accelerates%20Training%20%E2%80%94%20preprint%20%28co-1st%20author%29%0A%0ASuhas%20Kotha%2A%2C%20Uzay%20Girit%2A%2C%20Tanishq%20Kumar%2A%2C%20Gaurav%20Ghosal%2C%20Aditi%20Raghunathan.%0A%0ADirect%20collaboration%0Awith%20Aditi%20Raghunathan%27s%20lab%0A%28Gaurav%20Ghosal%20is%20one%20of%20Aditi%27s%203rd-year%20MLD%20PhDs%20%E2%80%94%0Asee%20Aditi%27s%0Adossier%20P1%20student%20tier%0A%29.%20Suhas%20Kotha%20is%20a%20Stanford%20student%20%28Liang/Hashimoto-adjacent%2C%20also%20co-author%20on%20the%20ICLR%202024%0Acatastrophic-forgetting%20paper%20with%20Aditi%29.%0AThis%20paper%20is%20the%20closing%20of%20the%20loop%0A%3A%20a%20Stanford%2BCMU%2BAditi%0Across-lab%20collaboration%20with%20three%20co-first%20authors%2C%20with%20Tanishq%20as%20the%20Stanford-side%20bridge.%0A%0APre-PhD%20ICLR/ICML%20count%20%28confirmed%20via%20personal%20site%29%3A%0AGrokking%20%28ICLR%202024%2C%201st%29%2C%20No%20Free%20Prune%20%28ICML%202024%2C%0Aco-1st%29%2C%20Asymptotic%20Dynamics%20%28ICML%202024%29%2C%20Scaling%20Laws%20for%20Precision%20%28ICLR%202025%20Oral%2C%20co-1st%29%2C%20Do%20Mice%20Grok%20%28ICLR%202025%2C%201st%29%2C%0AOvertrained%20LMs%20%28ICLR%202025%20SCOPE%20Outstanding%20%2B%20ICBINB%20Best%20Paper%20%2B%20ICML%202025%29.%0AThat%27s%206%20top-venue%0AICLR/ICML%20papers%20across%202024%E2%80%932025%20as%20a%20Harvard%20undergrad%0A%2C%20four%20with%20first%20or%20co-first%20authorship%2C%20plus%20a%0Aprecursor%20ICLR%202025%20paper%20on%20grokking-in-biological-systems.%0AThis%20is%20Niklas-Muennighoff-class%20output%0Apre-PhD.%0A%0AThe%20Pehlevan%20%2B%20Bordelon%20Lineage%20%E2%80%94%20Why%20This%20Matters%0A%0AThe%0APehlevan%20Group%0Aat%20Harvard%20SEAS%20%28%22%0Atheory%20of%20neural%20networks%20for%0Anatural%20and%20artificial%20intelligence%0A%22%29%20is%20one%20of%20the%20world%27s%20top%20three%20statistical-physics-of-deep-learning%0Ashops%2C%20alongside%0ALenka%20Zdeborov%26aacute%3B%20%28EPFL%29%0Aand%0ASebastian%20Goldt%20%28SISSA%29%0A.%0ACengiz%0APehlevan%0Ais%20a%20tenured%20Associate%20Professor%20at%20Harvard%20SEAS%20and%20a%20core%20faculty%20member%20of%20the%0A%0AKempner%20Institute%20for%20the%20Study%20of%20Natural%20and%20Artificial%20Intelligence%0A%28the%20Schmidt-Futures-funded%20%24500M%0AHarvard%20NeurIPS-adjacent%20research%20center%29.%0ABlake%20Bordelon%0Ais%20Pehlevan%27s%20lead%20PhD%20student%20%E2%80%94%20widely%0Aconsidered%20the%20strongest%20theorist%20of%20his%20generation%20on%20the%20lazy%26rarr%3Brich%20transition%20and%20feature-learning%20dynamics%20in%20deep%0Anetworks%20%28multiple%20ICML/NeurIPS/ICLR%20best/oral%20awards%29.%0A%0ATanishq%20did%20the%20bulk%20of%20his%20undergraduate%20research%20with%20Pehlevan%20%2B%20Bordelon.%20The%20intellectual%20lineage%20is%3A%0A%0AFeature-learning%20theory%0A%28Bordelon-Pehlevan%20papers%20on%20lazy/rich%2C%20NTK%20departures%2C%20infinite-width%20limits%29%0A%26rarr%3B%20Grokking%20ICLR%202024%20%28Tanishq%201st%20author%29",
+      "twitter_handle": "tanishqkumar07",
+      "linkedin_slug": null,
+      "github_handle": "tanishqkumar",
+      "status": "not-contacted",
+      "last_contacted": null,
+      "next_action_date": null,
+      "response": null,
+      "notes": "",
+      "urgency_decay_date": null,
+      "urgency_reason": "1st-year Stanford CS PhD (Sep 2025) co-advised by Percy Liang + Tatsu Hashimoto. 6 pre-PhD ICLR/ICML papers via Pehlevan/Bordelon (Harvard SEAS / Kempner): Grokking ICLR 24 (1st, 109 cites) + No Free Prune ICML 24 (co-1st w/ Sellke) + Scaling Laws for Precision ICLR 2025 ORAL AWARD (co-1st, 112 cites) + Do Mice Grok ICLR 25 (1st) + Overtrained LMs SCOPE Outstanding + ICBINB Best Paper ICLR 25 (4th of 8 w/ Springer + Goyal + Wen + Aditi, 56 cites). Already ICLR 2026 1st-author Speculative Speculative Decoding w/ Tri Dao (CLAUDE.md critical lab) + Avner May. 3 co-authorships with Aditi Raghunathan (CMU). Co-author w/ Niklas Muennighoff (reference class, in repo) + Chris Ré + Ben Spector (in repo). 313 Scholar cites, h-5. Indian-origin (Tanishq Mathew Kumar). Harvard math '25 (with 2019-20 SF gap year, prior boarding school London, Abu Dhabi childhood). Reference class: Niklas Muennighoff (pre-PhD prolific publisher archetype). Recursive discovery from Aditi Raghunathan dossier (her P0 student).",
+      "channel": "email",
+      "next_action": "Email tanishq@stanford.edu — relationship build, NOT pitching. Lead with technical insight on Scaling Laws for Precision (low precision reduces effective parameter count + post-training quantization gets worse with more pretraining data, the cross-finding with Overtrained paper) + ask about Pehlevan/Bordelon DMFT framework prediction for precision floor below FP6. Reference Niklas + Sukjun as in-repo reference classes. Fallback Twitter DM @tanishqkumar07 (5,243 followers, verified).",
+      "cluster": "scaling-laws",
       "email_override": null,
       "outreach_subject_override": null,
       "outreach_body_override": null,
