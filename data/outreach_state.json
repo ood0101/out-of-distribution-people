@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-05-26T10:56:25+00:00",
+  "last_built": "2026-05-27T08:28:27+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -45,7 +45,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "aakash-mishra": {
       "name": "Aakash Mishra",
@@ -91,7 +92,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "aarav-wattal": {
       "name": "Aarav Wattal",
@@ -135,7 +137,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "abhay-mitra": {
       "name": "Abhay Mitra",
@@ -184,7 +187,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "abhay-venkatesh": {
       "name": "Abhay Venkatesh",
@@ -229,7 +233,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "adam-lee": {
       "name": "Adam Lee",
@@ -274,7 +279,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "aditi-raghunathan": {
       "name": "Aditi Raghunathan",
@@ -328,7 +334,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "aditya-gupta": {
       "name": "Aditya Gupta",
@@ -373,13 +380,14 @@
       "response": null,
       "notes": "",
       "urgency_decay_date": null,
-      "urgency_reason": null,
-      "channel": null,
-      "next_action": null,
-      "cluster": null,
+      "urgency_reason": "Chess NM + USACO Plat. 2 acquisitions by 20. Percy Liang advisor. Indian.",
+      "channel": "twitter",
+      "next_action": "DM — ref 2x acquisition pattern + Percy Liang lab connection",
+      "cluster": "stanford-pipeline",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "aidan-smith": {
       "name": "Aidan Smith",
@@ -429,7 +437,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "ajay-jain": {
       "name": "Ajay Jain",
@@ -482,7 +491,8 @@
       "cluster": "diffusion-video",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "akshat-bubna": {
       "name": "Akshat Bubna",
@@ -533,7 +543,8 @@
       "cluster": "ioi-pipeline",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "alex-gu": {
       "name": "Alex Gu",
@@ -579,7 +590,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "alex-shan": {
       "name": "Alex Shan",
@@ -619,11 +631,11 @@
       "twitter_handle": "alexshander03",
       "linkedin_slug": "alex-shan-446321202",
       "github_handle": "secrolol",
-      "status": "not-contacted",
+      "status": "passed",
       "last_contacted": null,
       "next_action_date": null,
       "response": null,
-      "notes": "",
+      "notes": "\n[2026-05-27] passed: too late — funded and ramping, window closed",
       "urgency_decay_date": "2026-06-15",
       "urgency_reason": "Just raised $32M (May 12). Post-funding window — ~3 weeks before hiring ramp consumes him.",
       "channel": "twitter",
@@ -631,7 +643,8 @@
       "cluster": "agent-infra",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "alex-zhang": {
       "name": "Alex Zhang",
@@ -676,7 +689,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "alexi-gladstone": {
       "name": "Alexi Gladstone",
@@ -726,7 +740,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "allen-nie": {
       "name": "Allen Nie",
@@ -772,7 +787,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "allie-gu": {
       "name": "Allie Gu",
@@ -816,7 +832,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "ally-nakamura": {
       "name": "Ally Nakamura",
@@ -863,13 +880,14 @@
       "response": null,
       "notes": "",
       "urgency_decay_date": null,
-      "urgency_reason": null,
-      "channel": null,
-      "next_action": null,
-      "cluster": null,
+      "urgency_reason": "Catapult Technologies (PearX S24) founder — AI agents for medical device workflows. Masason Scholar. Stanford AI.",
+      "channel": "email",
+      "next_action": "Email ally@trycatapult.ai — ref Pear S24 + medical device workflow wedge",
+      "cluster": "healthcare-ai",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "ameen-patel": {
       "name": "Ameen Patel",
@@ -911,13 +929,14 @@
       "response": null,
       "notes": "",
       "urgency_decay_date": null,
-      "urgency_reason": null,
-      "channel": null,
-      "next_action": null,
-      "cluster": null,
+      "urgency_reason": "INTELLECT-3 co-author (106B SOTA). Prime Intellect. Indian.",
+      "channel": "twitter",
+      "next_action": "DM — ref INTELLECT-3 106B + decentralized training thesis",
+      "cluster": "decentralized-training",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "amrith-setlur": {
       "name": "Amrith Setlur",
@@ -969,7 +988,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "amy-jin": {
       "name": "Amy Jin",
@@ -1013,7 +1033,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "andrew-ma": {
       "name": "Andrew Ma",
@@ -1058,7 +1079,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "anne-ouyang": {
       "name": "Anne Ouyang",
@@ -1108,7 +1130,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "archer-wang": {
       "name": "Archer Wang",
@@ -1153,7 +1176,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "ari-webb": {
       "name": "Ari Webb",
@@ -1197,7 +1221,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "arin-weling": {
       "name": "Arin Weling",
@@ -1242,7 +1267,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "arjun-karanam": {
       "name": "Arjun Karanam",
@@ -1288,11 +1314,11 @@
       "twitter_handle": "quantumarjun",
       "linkedin_slug": "arjunkaranam",
       "github_handle": "quantumarjun",
-      "status": "not-contacted",
+      "status": "passed",
       "last_contacted": null,
       "next_action_date": null,
       "response": null,
-      "notes": "",
+      "notes": "\n[2026-05-27] passed: Trajectory round closed (co-founder w/ Ronak)",
       "urgency_decay_date": null,
       "urgency_reason": "Co-Founder, Secretary & Director of Trajectory Technologies, Inc. (Nov 3 2025 CA filing, w/ Ronak Malde CEO + Michael Elabd CFO). Second-time founder — sole co-founder with prior incorporation (Time Flies, USAF AI scheduling). Policy Dreamer NeurIPS 2024 SoLaR co-authored with Michael Elabd + Kanishk Gandhi >14 months before incorporation — public-record proof of pre-Trajectory team collaboration. Stanford AI Lab thesis + 3x Apple Vision Pro + NASA Artemis + Regeneron/Siemens Scholar.",
       "channel": "email",
@@ -1300,7 +1326,8 @@
       "cluster": "continual-learning",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "asher-spector": {
       "name": "Asher Spector",
@@ -1350,7 +1377,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "austin-chen": {
       "name": "Austin Chen",
@@ -1394,7 +1422,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "avanika-narayan": {
       "name": "Avanika Narayan",
@@ -1440,7 +1469,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "ayush-alag": {
       "name": "Ayush Alag",
@@ -1485,7 +1515,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "baris-akis": {
       "name": "Baris Akis",
@@ -1536,7 +1567,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "benjamin-spector": {
       "name": "Benjamin F Spector",
@@ -1586,7 +1618,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "blanca-villanueva": {
       "name": "Blanca Villanueva",
@@ -1642,7 +1675,8 @@
       "cluster": "surgical-robotics",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "bo-peng": {
       "name": "Bo Peng",
@@ -1686,7 +1720,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "bolaji-makinde": {
       "name": "Bolaji Makinde",
@@ -1731,7 +1766,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "bonnie-li": {
       "name": "Bonnie Li",
@@ -1776,7 +1812,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "brandon-wang": {
       "name": "Brandon Wang",
@@ -1832,7 +1869,8 @@
       "cluster": "architecture",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "brian-huang": {
       "name": "Brian Huang",
@@ -1877,7 +1915,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "brooke-joseph": {
       "name": "Brooke Joseph",
@@ -1922,7 +1961,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "cameron-fink": {
       "name": "Cameron Fink",
@@ -1972,7 +2012,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "charles-ding": {
       "name": "Charles Ding",
@@ -2016,7 +2057,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "chenfeng-xu": {
       "name": "Chenfeng Xu",
@@ -2071,7 +2113,8 @@
       "cluster": "efficient-inference",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "chenglei-si": {
       "name": "Chenglei Si",
@@ -2116,7 +2159,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "chris-rinard": {
       "name": "Chris Rinard",
@@ -2166,7 +2210,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "cory-levy": {
       "name": "Cory Levy",
@@ -2216,7 +2261,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "cristobal-valenzuela": {
       "name": "Crist&oacute;bal Valenzuela Barrera",
@@ -2267,7 +2313,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "cynthia-chen": {
       "name": "Cynthia Chen",
@@ -2312,7 +2359,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "damian-ho": {
       "name": "Damian Ho",
@@ -2357,7 +2405,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "dan-biderman": {
       "name": "Dan Biderman",
@@ -2409,7 +2458,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "dan-kondratyuk": {
       "name": "Dan Kondratyuk",
@@ -2454,9 +2504,9 @@
       "twitter_handle": "hyperparticle",
       "linkedin_slug": "dankondratyuk",
       "github_handle": "hyperparticle",
-      "status": "not-contacted",
-      "last_contacted": null,
-      "next_action_date": null,
+      "status": "contacted",
+      "last_contacted": "2026-05-27",
+      "next_action_date": "2026-06-10",
       "response": null,
       "notes": "",
       "urgency_decay_date": null,
@@ -2466,7 +2516,8 @@
       "cluster": "ai-scientists",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "daniel-zeng": {
       "name": "Daniel Zeng",
@@ -2510,7 +2561,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "david-krajewski": {
       "name": "David Krajewski",
@@ -2555,7 +2607,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "devansh-pandey": {
       "name": "Devansh Pandey",
@@ -2607,7 +2660,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "devendra-chaplot": {
       "name": "Devendra Singh Chaplot",
@@ -2657,7 +2711,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "devvrit-khatri": {
       "name": "Devvrit Khatri",
@@ -2705,7 +2760,8 @@
       "cluster": "scalerl",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "divy-thakkar": {
       "name": "Divy Thakkar",
@@ -2754,7 +2810,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "dylan-reid": {
       "name": "Dylan Reid",
@@ -2808,7 +2865,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "elijah-kurien": {
       "name": "Elijah Kurien",
@@ -2852,7 +2910,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "emily-han": {
       "name": "Emily Han",
@@ -2896,7 +2955,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "eric-han": {
       "name": "Eric Han",
@@ -2941,7 +3001,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "eric-zhang": {
       "name": "Eric Zhang",
@@ -2985,7 +3046,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "etash-guha": {
       "name": "Etash Guha",
@@ -3030,7 +3092,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "fan-pu-zeng": {
       "name": "Fan Pu Zeng",
@@ -3075,7 +3138,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "fan-yun-sun": {
       "name": "Fan-Yun Sun",
@@ -3121,7 +3185,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "francesco-crivelli": {
       "name": "Francesco Crivelli",
@@ -3166,7 +3231,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "galen-mead": {
       "name": "Galen Mead",
@@ -3216,7 +3282,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "gashon-hussein": {
       "name": "Gashon Hussein",
@@ -3262,13 +3329,14 @@
       "response": null,
       "notes": "",
       "urgency_decay_date": null,
-      "urgency_reason": null,
-      "channel": null,
-      "next_action": null,
-      "cluster": null,
+      "urgency_reason": "Physical Intelligence researcher. pi-0.6 co-author. Neo Scholar. Physical Intelligence is on the 20-tracked list.",
+      "channel": "twitter",
+      "next_action": "DM — ref pi-0.6 + robot foundation model serving angle",
+      "cluster": "robotics",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "gauri-gupta": {
       "name": "Gauri Gupta",
@@ -3311,13 +3379,14 @@
       "response": null,
       "notes": "",
       "urgency_decay_date": null,
-      "urgency_reason": null,
-      "channel": null,
-      "next_action": null,
-      "cluster": null,
+      "urgency_reason": "NeoSigma founder & CEO. MIT PhD dropout. IIT Delhi. Pre-seed. Indian female founder.",
+      "channel": "twitter",
+      "next_action": "DM @gauri__gupta — ref NeoSigma eval + post-training wedge",
+      "cluster": "post-training",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "grace-lam": {
       "name": "Grace Lam",
@@ -3362,7 +3431,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "grace-li": {
       "name": "Grace Li",
@@ -3407,7 +3477,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "grace-luo": {
       "name": "Grace Luo",
@@ -3452,7 +3523,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "hamza-mostafa": {
       "name": "Hamza Mostafa",
@@ -3497,7 +3569,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "haneul-shin": {
       "name": "Haneul Shin",
@@ -3543,7 +3616,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "hannah-gao": {
       "name": "Hannah Gao",
@@ -3588,7 +3662,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "harsh-shah": {
       "name": "Harsh Shah",
@@ -3633,7 +3708,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "helen-wang": {
       "name": "Helen Wang",
@@ -3678,7 +3754,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "hersh-godse": {
       "name": "Hersh Godse",
@@ -3722,7 +3799,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "hima-tammineedi": {
       "name": "Hima Tammineedi",
@@ -3767,7 +3845,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "himanshu-gaurav-singh": {
       "name": "Himanshu Gaurav Singh",
@@ -3819,7 +3898,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "ian-moore": {
       "name": "Ian Moore",
@@ -3863,7 +3943,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "isaac-fung": {
       "name": "Isaac Fung",
@@ -3909,7 +3990,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "isaac-ong": {
       "name": "Isaac Ong",
@@ -3954,7 +4036,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "ishaan-javali": {
       "name": "Ishaan Javali",
@@ -4005,7 +4088,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "ishan-khare": {
       "name": "Ishan Khare",
@@ -4059,7 +4143,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "jacob-zietek": {
       "name": "Jacob Zietek",
@@ -4104,7 +4189,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "jaeyeon-kim": {
       "name": "Jaeyeon Kim",
@@ -4153,7 +4239,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "james-chen": {
       "name": "James Chen",
@@ -4198,7 +4285,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "james-liu": {
       "name": "James Liu",
@@ -4242,7 +4330,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "jayesh-singla": {
       "name": "Jayesh Singla",
@@ -4288,7 +4377,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "jeffrey-ma": {
       "name": "Jeffrey Ma",
@@ -4333,7 +4423,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "jennifer-zhai": {
       "name": "Jennifer Yichen Zhai",
@@ -4387,7 +4478,8 @@
       "cluster": "continual-learning",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "jerry-tworek": {
       "name": "Jaroslaw \"Jerry\" Tworek",
@@ -4435,7 +4527,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "jerry-zhou": {
       "name": "Jerry Zhou",
@@ -4479,7 +4572,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "jessie-jia-guo": {
       "name": "Jessie Jia Guo",
@@ -4528,7 +4622,8 @@
       "cluster": "lp",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "jiaming-song": {
       "name": "Jiaming Song",
@@ -4583,7 +4678,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "jimmy-ba": {
       "name": "Jimmy Lei Ba",
@@ -4632,7 +4728,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "joe-li": {
       "name": "Joe Li",
@@ -4676,7 +4773,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "john-cole-kessler": {
       "name": "John Cole Kessler",
@@ -4726,7 +4824,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "john-rho": {
       "name": "John Rho",
@@ -4770,7 +4869,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "john-yang": {
       "name": "John Yang",
@@ -4815,7 +4915,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "jon-saad-falcon": {
       "name": "Jon Saad-Falcon",
@@ -4860,7 +4961,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "jonathan-mengedoht": {
       "name": "Jonathan Mengedoht",
@@ -4905,7 +5007,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "joseph-melkonian": {
       "name": "Joseph Melkonian",
@@ -4950,7 +5053,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "josh-sirota": {
       "name": "Josh Sirota",
@@ -4998,7 +5102,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "joshua-dillon": {
       "name": "Joshua V. Dillon",
@@ -5030,7 +5135,7 @@
         "phrase_raising": true,
         "phrase_founded": true
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-05-26T16:26:25+05:30",
       "needs_triage": false,
       "emails": [
         "general@rekursiv.ai",
@@ -5044,9 +5149,9 @@
       "twitter_handle": "dfacto82",
       "linkedin_slug": "jvdillon",
       "github_handle": "tensorflow",
-      "status": "not-contacted",
-      "last_contacted": null,
-      "next_action_date": null,
+      "status": "contacted",
+      "last_contacted": "2026-05-27",
+      "next_action_date": "2026-06-10",
       "response": null,
       "notes": "",
       "urgency_decay_date": null,
@@ -5056,7 +5161,8 @@
       "cluster": "ai-scientists",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "kanishk-gandhi": {
       "name": "Kanishk Gandhi",
@@ -5113,7 +5219,8 @@
       "cluster": "reasoning",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "karan-dalal": {
       "name": "Karan Dalal",
@@ -5165,7 +5272,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "karthik-balaji-ganesh": {
       "name": "Karthik Balaji Ganesh",
@@ -5210,7 +5318,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "kartik-srinivas": {
       "name": "Kartik Srinivas",
@@ -5254,7 +5363,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "karun-ram": {
       "name": "Karun Ram",
@@ -5304,7 +5414,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "kavya-anbarasu": {
       "name": "Kavya Anbarasu",
@@ -5349,7 +5460,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "kawin-ethayarajh": {
       "name": "Kawin Ethayarajh",
@@ -5399,7 +5511,8 @@
       "cluster": "post-training",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "kevin-lu": {
       "name": "Kevin Lu",
@@ -5452,7 +5565,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "kevin-wang": {
       "name": "Kevin Wang",
@@ -5497,7 +5611,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "khush-gupta": {
       "name": "Khush Gupta",
@@ -5541,7 +5656,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "kirill-acharya": {
       "name": "Kirill Acharya",
@@ -5586,7 +5702,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "kshitij-sodani": {
       "name": "Kshitij Sodani",
@@ -5636,7 +5753,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "kunal-singhal": {
       "name": "Kunal Singhal",
@@ -5686,7 +5804,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "kunvar-thaman": {
       "name": "Kunvar Thaman",
@@ -5748,7 +5867,8 @@
       "cluster": "mech-interp",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "laker-newhouse": {
       "name": "Laker Newhouse",
@@ -5797,7 +5917,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "lawrence-jang": {
       "name": "Lawrence Jang",
@@ -5842,7 +5963,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "leonard-tang": {
       "name": "Leonard Tang",
@@ -5887,7 +6009,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "liam-mcnamara": {
       "name": "Liam McNamara",
@@ -5937,7 +6060,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "lillian-sun": {
       "name": "Lillian Sun",
@@ -5985,7 +6109,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "lisa-dunlap": {
       "name": "Lisa Dunlap",
@@ -6030,7 +6155,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "lovish-madaan": {
       "name": "Lovish Madaan",
@@ -6080,7 +6206,8 @@
       "cluster": "scalerl",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "luke-melas-kyriazi": {
       "name": "Luke Melas-Kyriazi",
@@ -6128,7 +6255,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "matthew-yang": {
       "name": "Matthew Yang",
@@ -6178,7 +6306,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "maxwell-jones": {
       "name": "Maxwell Jones",
@@ -6223,7 +6352,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "mayank-mishra": {
       "name": "Mayank Mishra",
@@ -6279,7 +6409,8 @@
       "cluster": "architecture",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "mei": {
       "name": "Mei Z.",
@@ -6332,7 +6463,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "michael-elabd": {
       "name": "Michael Hany Elabd",
@@ -6377,11 +6509,11 @@
       "twitter_handle": "michaelelabd",
       "linkedin_slug": "michael-elabd",
       "github_handle": "mhelabd",
-      "status": "not-contacted",
+      "status": "passed",
       "last_contacted": null,
       "next_action_date": null,
       "response": null,
-      "notes": "",
+      "notes": "\n[2026-05-27] passed: Trajectory round closed (co-founder w/ Ronak)",
       "urgency_decay_date": null,
       "urgency_reason": "Trajectory Technologies Co-Founder/Director/CFO (CA filing Nov 3 2025) alongside Ronak Malde + Arjun Karanam. Concurrent DeepMind Foundational Research (verified Gemini Robotics arXiv co-author + Gemini Robotics 1.5 contributor). Apr 14 2026 X 'own the grammar' essay = strongest founder-voice artifact in the continual-learning cluster.",
       "channel": "email",
@@ -6389,7 +6521,8 @@
       "cluster": "continual-learning",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "michael-wornow": {
       "name": "Michael Wornow",
@@ -6440,7 +6573,8 @@
       "cluster": "healthcare-ai",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "mihika-dusad": {
       "name": "Mihika Dusad",
@@ -6484,7 +6618,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "mingyang-deng": {
       "name": "Mingyang Deng",
@@ -6529,7 +6664,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "nate-marquez": {
       "name": "Nate Marquez",
@@ -6574,7 +6710,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "neel-guha": {
       "name": "Neel Guha",
@@ -6630,7 +6767,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "neel-nanda": {
       "name": "Neel Nanda",
@@ -6680,7 +6818,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "neel-redkar": {
       "name": "Neel Redkar",
@@ -6730,7 +6869,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "neil-kale": {
       "name": "Neil Kale",
@@ -6774,7 +6914,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "nikita-mounier": {
       "name": "Nikita Mounier",
@@ -6818,7 +6959,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "niklas-muennighoff": {
       "name": "Niklas Muennighoff",
@@ -6860,13 +7002,14 @@
       "response": null,
       "notes": "",
       "urgency_decay_date": null,
-      "urgency_reason": null,
-      "channel": null,
-      "next_action": null,
-      "cluster": null,
+      "urgency_reason": "23.5K citations. MTEB creator. s1 author. Knight-Hennessy Scholar. Stanford. Reference class for Tanishq Kumar (recursive discovery).",
+      "channel": "email",
+      "next_action": "Email or Twitter — ref s1 + MTEB commercial deployment angle",
+      "cluster": "post-training",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "niloofar-mireshghallah": {
       "name": "Niloofar Mireshghallah",
@@ -6911,7 +7054,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "nina-boord": {
       "name": "Nina Boord",
@@ -6956,7 +7100,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "oam-patel": {
       "name": "Oam Patel",
@@ -7000,7 +7145,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "parsa-idehpour": {
       "name": "Parsa Idehpour",
@@ -7045,7 +7191,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "patrick-wang": {
       "name": "Patrick Wang",
@@ -7089,7 +7236,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "preston-fu": {
       "name": "Preston Fu",
@@ -7133,7 +7281,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "pushmeet-kohli": {
       "name": "Pushmeet Kohli",
@@ -7183,7 +7332,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "rahul-ravishankar": {
       "name": "Rahul Ravishankar",
@@ -7235,7 +7385,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "raj-mehta": {
       "name": "Raj Mehta",
@@ -7280,7 +7431,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "raj-palleti": {
       "name": "Raj Palleti",
@@ -7325,7 +7477,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "rajan-agarwal": {
       "name": "Rajan Agarwal",
@@ -7370,7 +7523,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "rishabh-tiwari": {
       "name": "Rishabh Tiwari",
@@ -7423,7 +7577,8 @@
       "cluster": "scalerl",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "ritvik-kapila": {
       "name": "Ritvik Kapila",
@@ -7468,13 +7623,14 @@
       "response": null,
       "notes": "",
       "urgency_decay_date": null,
-      "urgency_reason": null,
-      "channel": null,
-      "next_action": null,
-      "cluster": null,
+      "urgency_reason": "NeoSigma co-founder w/ Gauri Gupta. Essential AI under Vaswani (24T token dataset). IIT Delhi + UCSD 4.0. Indian.",
+      "channel": "twitter",
+      "next_action": "DM @ritvikkapila — ref NeoSigma + Essential AI dataset scale",
+      "cluster": "post-training",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "ritvik-singh": {
       "name": "Ritvik Singh",
@@ -7520,13 +7676,14 @@
       "response": null,
       "notes": "",
       "urgency_decay_date": null,
-      "urgency_reason": null,
-      "channel": null,
-      "next_action": null,
-      "cluster": null,
+      "urgency_reason": "Built NVIDIA ORBIT/Isaac Lab (6.8k stars). First RGB-only dexterous grasping (93% real-world). Berkeley PhD Abbeel+Malik. 855 cites. Indian.",
+      "channel": "email",
+      "next_action": "Email ritviksingh9@gmail.com — ref Dexgrasp + ORBIT/Isaac Lab adoption",
+      "cluster": "robotics",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "rohan-jain": {
       "name": "Rohan Jain",
@@ -7571,7 +7728,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "rohan-kalahasty": {
       "name": "Rohan Kalahasty",
@@ -7622,7 +7780,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "rohan-pandey": {
       "name": "Rohan Pandey",
@@ -7668,7 +7827,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "rohan-tibrewal": {
       "name": "Rohan Tibrewal",
@@ -7712,7 +7872,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "rohil-badkundri": {
       "name": "Rohil Badkundri",
@@ -7763,7 +7924,8 @@
       "cluster": "ai-bio",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "rohin-garg": {
       "name": "Rohin Garg",
@@ -7810,7 +7972,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "rohin-manvi": {
       "name": "Rohin Manvi",
@@ -7855,7 +8018,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "ronak-malde": {
       "name": "Ronak Malde",
@@ -7892,11 +8056,11 @@
       "twitter_handle": "rronak_",
       "linkedin_slug": "ronak-malde",
       "github_handle": "rmalde",
-      "status": "not-contacted",
+      "status": "passed",
       "last_contacted": null,
       "next_action_date": null,
       "response": null,
-      "notes": "",
+      "notes": "\n[2026-05-27] passed: round closed — too late",
       "urgency_decay_date": null,
       "urgency_reason": "Stealth founder (prev DeepMind ~7 months). Trained SWE-1 at Windsurf — triggered $2.4B Google acquisition. ~2 months post-departure.",
       "channel": "twitter",
@@ -7904,7 +8068,8 @@
       "cluster": "windsurf-cohort",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "rong-ye": {
       "name": "Rong Ye",
@@ -7948,7 +8113,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "roshan-rao": {
       "name": "Roshan Rao",
@@ -7998,7 +8164,8 @@
       "cluster": "ai-bio",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "rushil-mathur": {
       "name": "Rushil Mathur",
@@ -8049,7 +8216,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "sachit-menon": {
       "name": "Sachit Menon",
@@ -8094,7 +8262,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "sai-konkimalla": {
       "name": "Sai Konkimalla",
@@ -8139,7 +8308,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "saksham-consul": {
       "name": "Saksham Consul",
@@ -8192,7 +8362,8 @@
       "cluster": "diffusion-video",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "sally-zhu": {
       "name": "Sally Zhu",
@@ -8236,7 +8407,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "samarth-goel": {
       "name": "Samarth Goel",
@@ -8281,7 +8453,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "sameer-gandhi": {
       "name": "Sameer Gandhi",
@@ -8330,7 +8503,8 @@
       "cluster": "lp",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "samuel-stanton": {
       "name": "Samuel Stanton",
@@ -8382,7 +8556,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "sandra-yang": {
       "name": "Sandra Yang",
@@ -8426,7 +8601,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "seaver-dahlgren": {
       "name": "Seaver Dahlgren",
@@ -8470,7 +8646,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "serena-ge": {
       "name": "Serena Ge",
@@ -8515,7 +8692,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "shivani-poddar": {
       "name": "Shivani Poddar",
@@ -8568,7 +8746,8 @@
       "cluster": "agent-commerce",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "shobhit-agarwal": {
       "name": "Shobhit Agarwal",
@@ -8612,7 +8791,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "shreyas-sreenivas": {
       "name": "Shreyas Sreenivas",
@@ -8656,13 +8836,14 @@
       "response": null,
       "notes": "",
       "urgency_decay_date": null,
-      "urgency_reason": null,
-      "channel": null,
-      "next_action": null,
-      "cluster": null,
+      "urgency_reason": "Exa founding engineer — Vector DB in Rust. $12M ARR. Indian (Bangalore). Already at scale — relationship/sourcing angle.",
+      "channel": "email",
+      "next_action": "Email — ref Exa Rust vector DB + ask for intros to next-wave search founders",
+      "cluster": "search-infra",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "shri-kolanukuduru": {
       "name": "Shri Kolanukuduru",
@@ -8714,7 +8895,8 @@
       "cluster": "co-investor",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "shubham-goel": {
       "name": "Shubham Goel",
@@ -8766,7 +8948,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "sid-bharthulwar": {
       "name": "Sid Bharthulwar",
@@ -8810,7 +8993,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "sijun-tan": {
       "name": "Sijun Tan",
@@ -8852,13 +9036,14 @@
       "response": null,
       "notes": "",
       "urgency_decay_date": null,
-      "urgency_reason": null,
-      "channel": null,
-      "next_action": null,
-      "cluster": null,
+      "urgency_reason": "rLLM lead (5.3K stars). DeepScaleR beats o1-preview. Co-lead went stealth. Berkeley.",
+      "channel": "email",
+      "next_action": "Email or Twitter — ref rLLM + DeepScaleR co-lead departure pattern",
+      "cluster": "post-training",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "simon-guo": {
       "name": "Simon Guo",
@@ -8903,7 +9088,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "sonya-jin": {
       "name": "Sonya Jin",
@@ -8948,7 +9134,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "spruce-campbell": {
       "name": "Spruce Campbell",
@@ -8999,7 +9186,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "stephen-mcaleer": {
       "name": "Stephen McAleer",
@@ -9045,7 +9233,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "stephen-xie": {
       "name": "Stephen Xie",
@@ -9089,7 +9278,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "stuart-sul": {
       "name": "Stuart Sul",
@@ -9134,7 +9324,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "sudarshan-nambiar": {
       "name": "Sudarshan Nambiar",
@@ -9184,7 +9375,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "sujay-jayakar": {
       "name": "Sujay Jayakar",
@@ -9233,7 +9425,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "sukjun-hwang": {
       "name": "Sukjun (June) Hwang",
@@ -9290,7 +9483,8 @@
       "cluster": "architecture",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "suvansh-sanjeev": {
       "name": "Suvansh Sanjeev",
@@ -9337,13 +9531,14 @@
       "response": null,
       "notes": "",
       "urgency_decay_date": null,
-      "urgency_reason": null,
-      "channel": null,
-      "next_action": null,
-      "cluster": null,
+      "urgency_reason": "OpenAI GPT-5 team. CMU PhD dropout. Prior founder. Indian. OpenAI is on the 20-tracked list.",
+      "channel": "twitter",
+      "next_action": "DM — ref GPT-5 + prior founder background; departure-watch candidate",
+      "cluster": "openai-departure",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "taarush-grover": {
       "name": "Taarush Grover",
@@ -9388,7 +9583,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "takeru-miyato": {
       "name": "Takeru Miyato",
@@ -9437,7 +9633,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "thijs-simonian": {
       "name": "Thijs Simonian",
@@ -9488,7 +9685,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "utkarsh-priyam": {
       "name": "Utkarsh Priyam",
@@ -9533,7 +9731,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "vincent-tombari": {
       "name": "Vincent Tombari",
@@ -9578,7 +9777,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "weiying-wang": {
       "name": "Weiying Wang",
@@ -9622,9 +9822,9 @@
       "twitter_handle": null,
       "linkedin_slug": "weiying-wang-544368a7",
       "github_handle": null,
-      "status": "not-contacted",
-      "last_contacted": null,
-      "next_action_date": null,
+      "status": "contacted",
+      "last_contacted": "2026-05-27",
+      "next_action_date": "2026-06-10",
       "response": null,
       "notes": "",
       "urgency_decay_date": null,
@@ -9634,7 +9834,8 @@
       "cluster": "humanoid-robotics",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "welton-wang": {
       "name": "Welton Wang",
@@ -9680,7 +9881,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "xingjian-bai": {
       "name": "Xingjian Bai",
@@ -9725,7 +9927,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "yassine-kachrad": {
       "name": "Yassine Kachrad",
@@ -9770,7 +9973,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "yuandong-tian": {
       "name": "Yuandong Tian",
@@ -9819,7 +10023,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "yusuf-ozuysal": {
       "name": "Yusuf Ozuysal",
@@ -9864,7 +10069,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "zeeshan-patel": {
       "name": "Zeeshan Patel",
@@ -9915,7 +10121,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "zeyneb-kaya": {
       "name": "Zeyneb Kaya",
@@ -9962,13 +10169,14 @@
       "response": null,
       "notes": "",
       "urgency_decay_date": null,
-      "urgency_reason": null,
-      "channel": null,
-      "next_action": null,
-      "cluster": null,
+      "urgency_reason": "Topological (YC S25) co-founder/CTO. Physics CAD 1930x faster. Regen STS 5th ($90K). ~19. 3 hackathon wins.",
+      "channel": "email",
+      "next_action": "Email — ref Topological 1930x speedup + young second-time builder pattern",
+      "cluster": "physics-cad",
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "zhening-li": {
       "name": "Zhening Li",
@@ -10013,7 +10221,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "zirui-colin-wang": {
       "name": "Zirui (Colin) Wang",
@@ -10058,7 +10267,8 @@
       "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
-      "outreach_body_override": null
+      "outreach_body_override": null,
+      "channels_attempted": []
     },
     "justin-ko": {
       "name": "Justin Ko",

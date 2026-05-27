@@ -66,6 +66,9 @@ USER_KEYS = {
     "email_override", "outreach_subject_override", "outreach_body_override",
     # Source attribution for non-dossier entries (added 2026-05-25).
     "source", "source_rank",
+    # Multi-channel outreach tracking (added 2026-05-26).
+    # List of {channel, date, note, kind?} dicts. Every `sent` / `touch` appends.
+    "channels_attempted",
 }
 DEFAULT_USER = {
     "status": "not-contacted",
@@ -87,6 +90,8 @@ DEFAULT_USER = {
     "email_override": None,
     "outreach_subject_override": None,
     "outreach_body_override": None,
+    # Multi-channel attempts: list of {channel, date, note, kind?}.
+    "channels_attempted": [],
 }
 
 TAG_SPAN_RE = re.compile(r'<span\s+class="tag[^"]*"[^>]*>([^<]+)</span>', re.IGNORECASE)

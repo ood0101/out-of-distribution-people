@@ -1,0 +1,160 @@
+{
+  "version": 1,
+  "description": "Recursive discoveries surfaced by dossier agents. Each entry: a person mentioned in a dossier as worth following up. Status: pending|approved|dossiered|rejected.",
+  "last_updated": "2026-05-26",
+  "discoveries": [
+    {
+      "name": "Sumith Kulal",
+      "from_dossier": "saksham-consul",
+      "discovered_at": "2026-05-25",
+      "context": "Fellow FLUX.1 Kontext co-author at Black Forest Labs. Stanford CS / Hazy Research alum — bridges Chris Re cluster to BFL.",
+      "priority": "P0",
+      "status": "pending",
+      "tags": ["bfl", "stanford", "hazy-research", "diffusion-video"]
+    },
+    {
+      "name": "Chenlin Meng",
+      "from_dossier": "saksham-consul",
+      "discovered_at": "2026-05-21",
+      "context": "Pika CTO. DDIM co-author with Jiaming Song. Stanford Ermon lab. 4th node in diffusion-into-video cluster.",
+      "priority": "P0",
+      "status": "pending",
+      "tags": ["pika", "stanford", "diffusion-video", "female-founder"]
+    },
+    {
+      "name": "Robin Rombach",
+      "from_dossier": "saksham-consul",
+      "discovered_at": "2026-05-21",
+      "context": "Black Forest Labs CEO. LDM/Stable Diffusion creator. The BFL founder.",
+      "priority": "P0",
+      "status": "pending",
+      "tags": ["bfl", "diffusion-video", "founder-ceo"]
+    },
+    {
+      "name": "Sharon Zhou",
+      "from_dossier": "saksham-consul",
+      "discovered_at": "2026-05-21",
+      "context": "Lamini CEO. Saksham's direct manager 2023-2024. Indian-American female founder. Stanford CS PhD under Andrew Ng.",
+      "priority": "P1",
+      "status": "pending",
+      "tags": ["lamini", "stanford", "female-founder", "indian-american"]
+    },
+    {
+      "name": "Tanishq Kumar",
+      "from_dossier": "aditi-raghunathan",
+      "discovered_at": "2026-05-21",
+      "context": "Harvard math '25 -> Stanford CS PhD (Sep 2025) under Percy Liang + Tatsu Hashimoto. ICLR 2025 Oral Scaling Laws for Precision. ~5+ pre-PhD ICLR/ICML papers via Pehlevan/Bordelon. Indian-origin (Tanishq Mathew Kumar). Reference class: Niklas Muennighoff. Site: tanishqkumar.github.io.",
+      "priority": "P0",
+      "status": "pending",
+      "tags": ["stanford", "percy-liang", "indian", "scaling-laws"]
+    },
+    {
+      "name": "Christina Baek",
+      "from_dossier": "aditi-raghunathan",
+      "discovered_at": "2026-05-21",
+      "context": "CMU final-year PhD (Kolter + Raghunathan). Presidential Fellow. UC Berkeley EECS BS + 5th-year MS under Yi Ma. WiSE-FT reasoning-diversity paper (COLM 2025). Korean-American, female. DatologyAI + Google internships. @_christinabaek.",
+      "priority": "P1",
+      "status": "pending",
+      "tags": ["cmu", "kolter", "raghunathan", "female", "korean-american"]
+    },
+    {
+      "name": "Jacob Mitchell Springer",
+      "from_dossier": "aditi-raghunathan",
+      "discovered_at": "2026-05-21",
+      "context": "CMU 3rd-year MLD PhD (Raghunathan). NSF GRFP. Lead 1st author on SCOPE Outstanding Paper + 2 ICML 2026 papers including an oral. Swarthmore CS '22 + Los Alamos pre-PhD. 5 first-author award-tier papers in 3 years. sprin.xyz.",
+      "priority": "P1",
+      "status": "pending",
+      "tags": ["cmu", "raghunathan"]
+    },
+    {
+      "name": "Andrew Li",
+      "from_dossier": "alex-shan",
+      "discovered_at": "2026-05-12",
+      "context": "Judgment Labs Chief Scientist co-founder, 23. Early research hire at Together AI (Tri Dao's company). UC Berkeley. Best friends with Alex Shan + Joseph Camyre since childhood.",
+      "priority": "P1",
+      "status": "pending",
+      "tags": ["judgment-labs", "berkeley", "together-ai"]
+    },
+    {
+      "name": "Yichuan Wang",
+      "from_dossier": "chenfeng-xu",
+      "discovered_at": "2026-05-25",
+      "context": "Berkeley SkyLab 2nd-yr PhD, SJTU ACM Honored Class. LEANN lead author (MLSys 2026 Best Paper). Chenfeng called him 'one of my favorite people to cook with' + teased 'our next project might be even crazier'.",
+      "priority": "P0",
+      "status": "pending",
+      "tags": ["berkeley", "skylab", "stoica", "sjtu", "mlsys"]
+    },
+    {
+      "name": "Haocheng Xi",
+      "from_dossier": "chenfeng-xu",
+      "discovered_at": "2026-05-25",
+      "context": "Berkeley Keutzer + MIT HAN Lab. Tsinghua Yao Class '24. Quant VideoGen lead (7x KV memory reduction). Connects directly to architecture cluster.",
+      "priority": "P0",
+      "status": "pending",
+      "tags": ["berkeley", "keutzer", "tsinghua-yao", "han-lab"]
+    },
+    {
+      "name": "Monishwaran Maheswaran",
+      "from_dossier": "chenfeng-xu",
+      "discovered_at": "2026-05-25",
+      "context": "Berkeley Honors EECS+Math. Indian. Squeeze Evolve lead (97.5% ARC-AGI-V2 SoTA). BAIR + Berkeley Lab nuclear fusion.",
+      "priority": "P1",
+      "status": "pending",
+      "tags": ["berkeley", "indian", "fusion"]
+    },
+    {
+      "name": "Junxiong Wang",
+      "from_dossier": "chenfeng-xu",
+      "discovered_at": "2026-05-25",
+      "context": "Cornell PhD + Together AI. Aurora + I-DLM co-author with Chenfeng.",
+      "priority": "P1",
+      "status": "pending",
+      "tags": ["cornell", "together-ai"]
+    },
+    {
+      "name": "Ninad Jadhav",
+      "from_dossier": "weiying-wang",
+      "discovered_at": "2026-05-25",
+      "context": "REACT Lab labmate of Weiying Wang. WSR co-author. 'Trust-Based Algorithms for Resilient Multiagent' thesis. Highest-probability co-founder candidate for Weiying's stealth humanoid co.",
+      "priority": "P0",
+      "status": "pending",
+      "tags": ["harvard", "react-lab", "robotics", "indian"]
+    },
+    {
+      "name": "Yilun Du",
+      "from_dossier": "weiying-wang",
+      "discovered_at": "2026-05-25",
+      "context": "Harvard CS + Kempner Institute Assistant Professor. Embodied Minds Lab. Ex-OpenAI / ex-Google DeepMind. MIT EECS PhD under Kaelbling+Lozano-Perez+Tenenbaum. Verify before using as warm intro for Weiying.",
+      "priority": "P1",
+      "status": "pending",
+      "tags": ["harvard", "kempner", "ex-openai"]
+    },
+    {
+      "name": "Dustin Tran",
+      "from_dossier": "joshua-dillon",
+      "discovered_at": "2026-05-26",
+      "context": "DeepMind. TFP collaborator with Joshua Dillon. Major probabilistic ML researcher. Mid-career, departure watch candidate.",
+      "priority": "P1",
+      "status": "pending",
+      "tags": ["deepmind", "probabilistic-ml", "tfp"]
+    },
+    {
+      "name": "Yaniv Ovadia",
+      "from_dossier": "joshua-dillon",
+      "discovered_at": "2026-05-26",
+      "context": "Google. 1st author on 'Can you trust your model's uncertainty' (2,839 cites). Could be next departure candidate.",
+      "priority": "P1",
+      "status": "pending",
+      "tags": ["google", "uncertainty", "ood-detection"]
+    },
+    {
+      "name": "Jie Ren",
+      "from_dossier": "joshua-dillon",
+      "discovered_at": "2026-05-26",
+      "context": "DeepMind. 1st author on 'Likelihood ratios for OOD detection' (1,019 cites). Joshua co-author.",
+      "priority": "P2",
+      "status": "pending",
+      "tags": ["deepmind", "ood-detection"]
+    }
+  ]
+}

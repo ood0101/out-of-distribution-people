@@ -9,23 +9,30 @@ Usage:
     python3 scripts/mark.py <slug> snooze <days>
 
 Status vocabulary:
-    sent       → status=contacted, last_contacted=today, next_action_date=+14d
-    replied    → status=replied, last_contacted=today
-    meeting    → status=replied + notes "meeting booked"
-    passed     → status=passed (drops out of all queues)
-    snooze N   → next_action_date = today + N days (status unchanged)
-    unsnooze   → next_action_date = None
-    reset      → status=not-contacted, last_contacted=None
-    email ADDR → set email_override (beats auto-extracted)
-    subject S  → set outreach_subject_override
+    sent CHANNEL [note] → status=contacted via CHANNEL, +14d follow-up
+                          channel: twitter|email|linkedin|slack|whatsapp|warm-intro|meeting
+    replied [note]   → status=replied, last_contacted=today
+    meeting [note]   → status=replied + notes "meeting booked"
+    passed [note]    → status=passed (drops out of all queues)
+    snooze N         → next_action_date = today + N days (status unchanged)
+    unsnooze         → next_action_date = None
+    reset            → status=not-contacted, last_contacted=None
+    email ADDR       → set email_override (beats auto-extracted)
+    subject S        → set outreach_subject_override
+    touch CHANNEL    → record an attempt without changing status (DM bounces, etc.)
+
+Multi-channel tracking: every `sent` and `touch` appends to channels_attempted
+list with {channel, date, note}. Lets you see conversion-by-channel later.
 
 Examples:
-    python3 scripts/mark.py alex-shan sent
+    python3 scripts/mark.py alex-shan sent twitter "DM'd referencing Osiris"
+    python3 scripts/mark.py ronak-malde sent slack "MIT institute channel"
+    python3 scripts/mark.py jennifer-zhai sent whatsapp "via Aditya intro"
     python3 scripts/mark.py alex-shan replied "wants to chat next week"
     python3 scripts/mark.py mayank-mishra snooze 7
     python3 scripts/mark.py kawin-ethayarajh passed
     python3 scripts/mark.py devvrit-khatri email devvrit@reflection.ai
-    python3 scripts/mark.py alex-shan subject "Quick Q on Judgment"
+    python3 scripts/mark.py shivani-poddar touch twitter "DM bounced, will retry"
 """
 from __future__ import annotations
 import json
@@ -84,12 +91,25 @@ def main():
     today = date.today().isoformat()
 
     if action == "sent":
+        # parse: sent CHANNEL [note] — first extra token is channel
+        parts = extra.split(maxsplit=1) if extra else []
+        channel = parts[0].lower() if parts else (p.get("channel") or "email")
+        note = parts[1] if len(parts) > 1 else ""
+        VALID_CHANNELS = {"twitter", "email", "linkedin", "slack", "whatsapp", "warm-intro", "meeting", "x", "dm", "telegram", "signal"}
+        if channel not in VALID_CHANNELS:
+            print(f"WARNING: channel '{channel}' not in {VALID_CHANNELS}. Recording anyway.", file=sys.stderr)
         p["status"] = "contacted"
         p["last_contacted"] = today
         p["next_action_date"] = (date.today() + timedelta(days=FOLLOWUP_DAYS_AFTER_SEND)).isoformat()
-        if extra:
-            p["notes"] = (p.get("notes") or "") + f"\n[{today}] sent: {extra}"
-        print(f"✓ {slug} marked sent. Follow up by {p['next_action_date']}.")
+        # Multi-channel history
+        attempts = p.get("channels_attempted") or []
+        attempts.append({"channel": channel, "date": today, "note": note})
+        p["channels_attempted"] = attempts
+        if note:
+            p["notes"] = (p.get("notes") or "") + f"\n[{today}] sent via {channel}: {note}"
+        else:
+            p["notes"] = (p.get("notes") or "") + f"\n[{today}] sent via {channel}"
+        print(f"✓ {slug} marked sent via {channel}. Follow up by {p['next_action_date']}.")
 
     elif action == "replied":
         p["status"] = "replied"
@@ -144,6 +164,20 @@ def main():
             sys.exit(1)
         p["outreach_subject_override"] = extra
         print(f"✓ {slug} subject override set.")
+
+    elif action == "touch":
+        # Record an outreach attempt without flipping status (DM bounced, no response yet, etc.)
+        parts = extra.split(maxsplit=1) if extra else []
+        if not parts:
+            print("ERROR: touch requires a channel. e.g. `mark.py SLUG touch twitter \"DM bounced\"`", file=sys.stderr)
+            sys.exit(1)
+        channel = parts[0].lower()
+        note = parts[1] if len(parts) > 1 else ""
+        attempts = p.get("channels_attempted") or []
+        attempts.append({"channel": channel, "date": today, "note": note, "kind": "touch"})
+        p["channels_attempted"] = attempts
+        p["notes"] = (p.get("notes") or "") + f"\n[{today}] touch via {channel}: {note}"
+        print(f"✓ {slug} touch recorded via {channel}. Status unchanged.")
 
     else:
         print(f"ERROR: unknown action '{action}'.")

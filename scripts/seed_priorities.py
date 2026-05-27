@@ -203,6 +203,92 @@ SEED = {
         "cluster": "continual-learning",
     },
 
+    # ─── T1 FALLOW — full dossiers already exist, seeded May 26 batch ────
+    "ritvik-kapila": {
+        "urgency_reason": "NeoSigma co-founder w/ Gauri Gupta. Essential AI under Vaswani (24T token dataset). IIT Delhi + UCSD 4.0. Indian.",
+        "urgency_decay_date": None,
+        "channel": "twitter",
+        "next_action": "DM @ritvikkapila — ref NeoSigma + Essential AI dataset scale",
+        "cluster": "post-training",
+    },
+    "gauri-gupta": {
+        "urgency_reason": "NeoSigma founder & CEO. MIT PhD dropout. IIT Delhi. Pre-seed. Indian female founder.",
+        "urgency_decay_date": None,
+        "channel": "twitter",
+        "next_action": "DM @gauri__gupta — ref NeoSigma eval + post-training wedge",
+        "cluster": "post-training",
+    },
+    "ally-nakamura": {
+        "urgency_reason": "Catapult Technologies (PearX S24) founder — AI agents for medical device workflows. Masason Scholar. Stanford AI.",
+        "urgency_decay_date": None,
+        "channel": "email",
+        "next_action": "Email ally@trycatapult.ai — ref Pear S24 + medical device workflow wedge",
+        "cluster": "healthcare-ai",
+    },
+    "ritvik-singh": {
+        "urgency_reason": "Built NVIDIA ORBIT/Isaac Lab (6.8k stars). First RGB-only dexterous grasping (93% real-world). Berkeley PhD Abbeel+Malik. 855 cites. Indian.",
+        "urgency_decay_date": None,
+        "channel": "email",
+        "next_action": "Email ritviksingh9@gmail.com — ref Dexgrasp + ORBIT/Isaac Lab adoption",
+        "cluster": "robotics",
+    },
+    "sijun-tan": {
+        "urgency_reason": "rLLM lead (5.3K stars). DeepScaleR beats o1-preview. Co-lead went stealth. Berkeley.",
+        "urgency_decay_date": None,
+        "channel": "email",
+        "next_action": "Email or Twitter — ref rLLM + DeepScaleR co-lead departure pattern",
+        "cluster": "post-training",
+    },
+    "niklas-muennighoff": {
+        "urgency_reason": "23.5K citations. MTEB creator. s1 author. Knight-Hennessy Scholar. Stanford. Reference class for Tanishq Kumar (recursive discovery).",
+        "urgency_decay_date": None,
+        "channel": "email",
+        "next_action": "Email or Twitter — ref s1 + MTEB commercial deployment angle",
+        "cluster": "post-training",
+    },
+    "shreyas-sreenivas": {
+        "urgency_reason": "Exa founding engineer — Vector DB in Rust. $12M ARR. Indian (Bangalore). Already at scale — relationship/sourcing angle.",
+        "urgency_decay_date": None,
+        "channel": "email",
+        "next_action": "Email — ref Exa Rust vector DB + ask for intros to next-wave search founders",
+        "cluster": "search-infra",
+    },
+    "aditya-gupta": {
+        "urgency_reason": "Chess NM + USACO Plat. 2 acquisitions by 20. Percy Liang advisor. Indian.",
+        "urgency_decay_date": None,
+        "channel": "twitter",
+        "next_action": "DM — ref 2x acquisition pattern + Percy Liang lab connection",
+        "cluster": "stanford-pipeline",
+    },
+    "suvansh-sanjeev": {
+        "urgency_reason": "OpenAI GPT-5 team. CMU PhD dropout. Prior founder. Indian. OpenAI is on the 20-tracked list.",
+        "urgency_decay_date": None,
+        "channel": "twitter",
+        "next_action": "DM — ref GPT-5 + prior founder background; departure-watch candidate",
+        "cluster": "openai-departure",
+    },
+    "ameen-patel": {
+        "urgency_reason": "INTELLECT-3 co-author (106B SOTA). Prime Intellect. Indian.",
+        "urgency_decay_date": None,
+        "channel": "twitter",
+        "next_action": "DM — ref INTELLECT-3 106B + decentralized training thesis",
+        "cluster": "decentralized-training",
+    },
+    "gashon-hussein": {
+        "urgency_reason": "Physical Intelligence researcher. pi-0.6 co-author. Neo Scholar. Physical Intelligence is on the 20-tracked list.",
+        "urgency_decay_date": None,
+        "channel": "twitter",
+        "next_action": "DM — ref pi-0.6 + robot foundation model serving angle",
+        "cluster": "robotics",
+    },
+    "zeyneb-kaya": {
+        "urgency_reason": "Topological (YC S25) co-founder/CTO. Physics CAD 1930x faster. Regen STS 5th ($90K). ~19. 3 hackathon wins.",
+        "urgency_decay_date": None,
+        "channel": "email",
+        "next_action": "Email — ref Topological 1930x speedup + young second-time builder pattern",
+        "cluster": "physics-cad",
+    },
+
     # ─── LP / CAPITAL (separate track from founders) ──────────────────────
     "jessie-jia-guo": {
         "urgency_reason": "Next Legacy Emerging Leaders Fund: exact $1-5M emerging-manager fit.",

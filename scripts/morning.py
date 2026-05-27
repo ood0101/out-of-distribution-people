@@ -76,18 +76,25 @@ def main():
     section("Cluster activity check")
     run(SCRIPTS / "cluster_check.py")
 
-    # 4. Promotion candidates (Delta Fellows ready for full dossier)
+    # 4. Recursive discoveries — adjacents surfaced by past dossier agents
+    section("Recursive discoveries — approve to research next")
+    run(SCRIPTS / "discoveries.py", "--top", "5")
+
+    # 5. Refresh due — stale T0/T1 dossiers needing re-check
+    section("Refresh due — pick 1-2 to refresh today")
+    run(SCRIPTS / "refresh_due.py", "--top", "5")
+
+    # 6. Promotion candidates (Delta Fellows ready for full dossier)
     section("Promote candidates — Delta Fellows with signals")
     out = run(SCRIPTS / "promote_candidates.py", "--top", "3", capture=True)
     if out:
         for line in out.splitlines()[2:]:  # skip header
             print(line)
 
-    # 5. Triage suggestions (top 5 only here — full list via suggest_urgency.py)
+    # 7. Triage suggestions (top 5 only here — full list via suggest_urgency.py)
     section("Top untriaged entries (consider adding to seed)")
     out = run(SCRIPTS / "suggest_urgency.py", "--top", "5", capture=True)
     if out:
-        # Skip the header lines from suggest_urgency
         skip_header = True
         for line in out.splitlines():
             if skip_header and line.startswith(("\033", "═", "Edit")):
@@ -97,7 +104,7 @@ def main():
             if not skip_header:
                 print(line)
 
-    # 6. Today's queue
+    # 8. Today's queue
     section("TODAY'S 5 — send these and close the terminal")
     run(SCRIPTS / "today.py")
 
