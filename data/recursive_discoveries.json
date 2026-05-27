@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Recursive discoveries surfaced by dossier agents. Each entry: a person mentioned in a dossier as worth following up. Status: pending|approved|dossiered|rejected.",
-  "last_updated": "2026-05-26",
+  "last_updated": "2026-05-27",
   "discoveries": [
     {
       "name": "Sumith Kulal",
@@ -158,6 +158,105 @@
       "priority": "P2",
       "status": "pending",
       "tags": ["deepmind", "ood-detection"]
+    },
+    {
+      "name": "Prithwish Dan",
+      "from_dossier": "kushal-kedia",
+      "discovered_at": "2026-05-27",
+      "context": "Cornell CS MS student in Sanjiban Choudhury's PoRTaL lab. Co-1st author on 6 papers with Kushal Kedia: X-Sim (CoRL 2025 Oral + RSS EgoAct Best Paper Runner-up), X-Diffusion (ICRA 2026), RHyME (ICRA 2025), ManiCast (CoRL 2023), Game-Theoretic Framework (IROS 2023), InteRACT (ICRA 2024). MOST LIKELY CO-FOUNDER CANDIDATE if Kushal goes founder route — graduating MS in 2026 into same humanoid market. Site: pdan101.github.io. Verified Scholar BZGUSN8AAAAJ at cornell.edu. Indian (likely IIT undergrad). Watch his next-step LinkedIn announcement — if same place as Kushal that's industry hire; if they incorporate together, that's founding move.",
+      "priority": "P0",
+      "status": "pending",
+      "tags": ["cornell", "portal-lab", "choudhury", "robotics", "humanoid", "co-founder-candidate", "indian"]
+    },
+    {
+      "name": "Tyler Ga Wei Lum",
+      "from_dossier": "kushal-kedia",
+      "discovered_at": "2026-05-27",
+      "context": "Stanford CS PhD in C. Karen Liu's lab. Co-1st author on SimToolReal (arXiv Feb 2026) with Kushal Kedia + Bohg + Karen Liu — zero-shot dexterous tool manipulation. Verified Scholar kPq6-XIAAAAJ at stanford.edu. The Karen Liu lab bridge for Kushal. If Karen Liu's partial leave Jan-Jun 2026 is at a humanoid co, Tyler likely follows. Dexterous manipulation = direct PI / Figure / 1X wedge.",
+      "priority": "P1",
+      "status": "pending",
+      "tags": ["stanford", "karen-liu", "robotics", "humanoid", "dexterous-manipulation"]
+    },
+    {
+      "name": "Sanjiban Choudhury",
+      "from_dossier": "kushal-kedia",
+      "discovered_at": "2026-05-27",
+      "context": "Cornell CS Assistant Professor + ML Researcher at Aurora (autonomous trucking, $5B+ public co). Leads PoRTaL group (Personal Robotics at Cornell). ONR Young Investigator 2024 + OpenAI Superalignment Award 2024 + Google Research Award 2024. CMU RI PhD (Sebastian Scherer). Started Cornell Aug 2021. Advisor relationship node — if Kushal/Prithwish go founder, Choudhury becomes high-signal LP / advisor candidate. Lab alumni pipeline: Kushal Kedia (graduating May 26), Huaxiaoyue Wang, Juntao Ren, Rajat Kumar Jenamani, Atiksh Bhardwaj, Yuki Wang, Gonzalo Gonzalez-Pumariega. PoRTaL alumni map = future founding cohort tracker.",
+      "priority": "P0",
+      "status": "pending",
+      "tags": ["cornell", "aurora", "advisor-node", "robotics", "openai-superalignment"]
+    },
+    {
+      "name": "Huaxiaoyue Wang",
+      "from_dossier": "kushal-kedia",
+      "discovered_at": "2026-05-27",
+      "context": "Cornell CS PhD student in Choudhury PoRTaL lab. Co-1st author on MOSAIC (CoRL 2024 + Best Paper VLMNM ICRA 24 + Best Poster MoMa ICRA 24). Senior lab member. Verified Scholar yweLdycAAAAJ at cs.cornell.edu. Chinese-origin. Track for own graduation timeline.",
+      "priority": "P1",
+      "status": "pending",
+      "tags": ["cornell", "portal-lab", "choudhury", "robotics"]
+    },
+    {
+      "name": "Maximus Adrian Pace",
+      "from_dossier": "kushal-kedia",
+      "discovered_at": "2026-05-27",
+      "context": "Cornell CS MS in PoRTaL lab. Co-1st on X-Diffusion (ICRA 2026), co-author on X-Sim + RHyME. Verified Scholar GvFzdWoAAAAJ. Cornell MS in CS. Robotics imitation learning focus.",
+      "priority": "P1",
+      "status": "pending",
+      "tags": ["cornell", "portal-lab", "choudhury", "robotics"]
+    },
+    {
+      "name": "Rajat Kumar Jenamani",
+      "from_dossier": "kushal-kedia",
+      "discovered_at": "2026-05-27",
+      "context": "Cornell CS PhD. IIT KGP undergrad — co-author on Kushal's 2020 pre-PhD motion-planning paper. The IIT KGP -> Cornell PhD pipeline node. Verified Scholar 1lVR0HoAAAAJ at cornell.edu. Indian. Track for graduation + post-PhD step.",
+      "priority": "P1",
+      "status": "pending",
+      "tags": ["cornell", "iit-kharagpur", "indian", "robotics"]
+    },
+    {
+      "name": "Juntao Ren",
+      "from_dossier": "kushal-kedia",
+      "discovered_at": "2026-05-27",
+      "context": "Cornell CS (Choudhury PoRTaL). Co-1st on MOSAIC + 1st author on Human-to-Robot Transfer Learning (ICRA 2025, arXiv:2501.06994). PoRTaL alumni cohort.",
+      "priority": "P2",
+      "status": "pending",
+      "tags": ["cornell", "portal-lab", "choudhury", "robotics"]
+    },
+    {
+      "name": "Atiksh Bhardwaj",
+      "from_dossier": "kushal-kedia",
+      "discovered_at": "2026-05-27",
+      "context": "Cornell undergrad/MS. Long-term PoRTaL collaborator — co-author on InteRACT (ICRA 24), ManiCast, X-Diffusion. Watch for grad school choice.",
+      "priority": "P2",
+      "status": "pending",
+      "tags": ["cornell", "portal-lab", "indian-possible"]
+    },
+    {
+      "name": "C. Karen Liu",
+      "from_dossier": "kushal-kedia",
+      "discovered_at": "2026-05-27",
+      "context": "Stanford CS Professor (humanoid + character animation + computational biomechanics). ACM SIGGRAPH Academy 2021 + Sloan 2010 + MIT TR Young Innovators 2007 + SIGGRAPH Significant New Researcher 2012. UW CS PhD. Ex-Georgia Tech IC. **ON PARTIAL LEAVE JAN-JUN 2026** — high-information signal, most likely humanoid co sabbatical (PI / Figure / 1X / Skild / Boston Dynamics candidate). Stanford Movement Lab + Bio-X + HAI + Wu Tsai Human Performance Alliance. Affiliated humanoid network: Stanford IPRL (Bohg) + Tyler Lum (SimToolReal co-1st w/ Kushal). Verify destination if possible — that tells us where Kushal is most likely heading.",
+      "priority": "P0",
+      "status": "pending",
+      "tags": ["stanford", "humanoid", "biomechanics", "movement-lab", "advisor-node", "partial-leave-watch"]
+    },
+    {
+      "name": "Jeannette Bohg",
+      "from_dossier": "kushal-kedia",
+      "discovered_at": "2026-05-27",
+      "context": "Stanford CS Assistant Professor. Director of IPRL (Interactive Perception and Robot Learning Lab). 2023 Sloan Research Fellowship + 2019 IEEE RAS Early Career + 2020 RSS Early Career. KTH PhD. Ex-MPI Autonomous Motion. Canonical Stanford robotic grasping + manipulation group. Advisor relationship node for Kushal's Stanford visit. Lab pipeline: Tyler Lum + others. Track IPRL student departures.",
+      "priority": "P1",
+      "status": "pending",
+      "tags": ["stanford", "iprl", "robotics", "manipulation", "advisor-node"]
+    },
+    {
+      "name": "Wei-Chiu Ma",
+      "from_dossier": "kushal-kedia",
+      "discovered_at": "2026-05-27",
+      "context": "Cornell CS Assistant Professor. MIT PhD under Antonio Torralba + Raquel Urtasun. Ex-Senior Research Scientist at Uber ATG + Waabi. CMU MS in Robotics under Kris Kitani. Siebel Scholar 2022. CPS Rising Star 2023. 3D/4D computer vision -> robotics bridge. Kushal's co-advisor. Lab students: Chuanruo Ning, Guangzhao He, Rundong Luo, Tao Tu, Xuyi Meng. Track Cornell vision-robotics pipeline.",
+      "priority": "P2",
+      "status": "pending",
+      "tags": ["cornell", "robotics", "3d-vision", "ex-waabi", "advisor-node"]
     }
   ]
 }
