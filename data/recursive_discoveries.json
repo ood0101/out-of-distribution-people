@@ -262,10 +262,13 @@
       "name": "Karan Singhal",
       "from_dossier": "vivek-natarajan",
       "discovered_at": "2026-05-28",
-      "context": "First author Med-PaLM (Nature 2023, 5,742 cites) + Med-PaLM 2 (Nature Medicine 2025, 2,422 cites). Stanford undergrad. Reportedly departed Google for OpenAI Health in Aug 2024 — the FIRST AMIE-cluster departure signal. Highest-leverage future founder candidate among Vivek's bench. If Vivek ever founds, Karan is the most likely co-founder. Track his OpenAI Health role evolution: if it shifts to founder mode, that pulls Vivek.",
+      "context": "Co-equal first author (listed first) on Med-PaLM (Nature 2023, 5,747 cites) + Med-PaLM 2 (Nature Medicine 2025, 2,428 cites) — combined 8,175 cites. Stanford BS+MS CS '19 (4.1/4.0 MS GPA), initiated + main instructor of Stanford's first CS+Social Good AI ethics class. Departed Google → OpenAI on July 22, 2024 (X tweet 1815444769868574944; CORRECTION from earlier 'Aug 2024' — actual date is Jul 22) — the FIRST AMIE-cluster departure signal. Now Head of Health AI + AGI Benefits @ OpenAI. ~21,541 Scholar cites, h-26, i10-34. Shipped HealthBench (May 2025, 49K rubric items / 250+ physicians / 60 countries) + OpenAI for Healthcare (Jan 8 2026, HIPAA, 8 named hospital systems: Boston Children's / Cedars-Sinai / MSK / Stanford Children's / UCSF / AdventHealth / Baylor Scott & White / HCA) + ChatGPT for Clinicians + HealthBench Professional (Apr 22 2026 pinned tweet, 1.6M impressions) + Penda Health Kenya RCT. TIME100 Health 2026 (Feb 11 2026). Co-author GPT-4o + o1 + GPT-5 + gpt-oss system cards. Second AMIE departure CONFIRMED: Khaled Saab (Stanford EE PhD under Chris Ré, CLAUDE.md critical lab) now on Karan's OpenAI Health team (Jan 13 2026 reply tweet). If Vivek ever founds, Karan is the most likely co-founder. Indian-origin (Singhal = North Indian Vaishya/Marwari). Departure-watch trigger: OpenAI → OpenAI Foundation transition pattern (Yo Shavit May 25 2026 precedent). T1, relationship-build.",
       "priority": "P0",
-      "status": "pending",
-      "tags": ["openai", "google-departed", "medical-ai", "med-palm", "stanford", "frontier-departure", "indian"]
+      "status": "dossiered",
+      "dossiered_at": "2026-05-28",
+      "dossier_url": "people/karan-singhal.html",
+      "tier_assigned": "T1",
+      "tags": ["openai", "google-departed", "medical-ai", "med-palm", "stanford", "frontier-departure", "indian", "healthbench", "chatgpt-for-healthcare"]
     },
     {
       "name": "Tao Tu",
