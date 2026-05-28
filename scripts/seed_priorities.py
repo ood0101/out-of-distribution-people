@@ -209,6 +209,13 @@ SEED = {
         "next_action": "Email arjun.karanam@stanford.edu or hello@trajectory.ai — ref Time Flies (USAF) + Policy Dreamer + Stanford AI Lab thesis on human-agentic simulation. Reach out alongside Ronak/Michael; team will compare notes. Fallback Twitter DM @QuantumArjun.",
         "cluster": "continual-learning",
     },
+    "cynthia-chen": {
+        "urgency_reason": "Agent Software Engineer at Decagon ($4.5B Series D Jan 28 2026; first tender Mar 4 2026). One of first ~10 engineers (joined Sep 2024). Solo-built Trace View agent observability product + sole author of AOP Copilot launch blog. Harvard CS BS+MS '24, Eliot House. Co-author AttentionViz IEEE VIS 2023 (171 cites) under Wattenberg+Viégas at Insight + Interaction Lab. HBS Tech Innovation Fellow Cohort 6. Regeneron STS 2020 Finalist + Davidson Fellow + RSI + Intel ISEF + 2020 U.S. Presidential Scholar candidate (Harker '20 / Cupertino). Founded Startups @ Harvard (Fall 2023, Xfund-backed Member Grants) + runs SF weekend startup discussion group at her place. Founder-curious quote (unprompted): 'a lot of my friends who took big leaps and started companies of their own or joined early stage companies.' No public departure signal — relationship-build window. Decagon first tender likely re-commits her 2-3 years; founder inflection plausible Q1-Q3 2027. Prev: Scale AI (Enterprise Gen AI Platform APIs), HRT quant, LinkedIn.",
+        "urgency_decay_date": None,
+        "channel": "email",
+        "next_action": "Email cynthia9chen@gmail.com (her published contact). Subject: 'Trace View, the SF startup group, and the next agent obs layer.' Lead with Trace View vs LangSmith ($1.1B) / Braintrust ($80M a16z) / Arize Phoenix landscape and the AOP-step-structured-trace differentiator; reference the SF weekend discussion group (NOT Startups @ Harvard — the group she runs *now*); ask for coffee, $500K-$1M check offer. Backup: Twitter DM @chenxcynthia (~850 followers). Avoid LinkedIn.",
+        "cluster": "ai-agents",
+    },
 
     # ─── T1 FALLOW — full dossiers already exist, seeded May 26 batch ────
     "ritvik-kapila": {
