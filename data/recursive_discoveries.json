@@ -257,6 +257,87 @@
       "priority": "P2",
       "status": "pending",
       "tags": ["cornell", "robotics", "3d-vision", "ex-waabi", "advisor-node"]
+    },
+    {
+      "name": "Karan Singhal",
+      "from_dossier": "vivek-natarajan",
+      "discovered_at": "2026-05-28",
+      "context": "First author Med-PaLM (Nature 2023, 5,742 cites) + Med-PaLM 2 (Nature Medicine 2025, 2,422 cites). Stanford undergrad. Reportedly departed Google for OpenAI Health in Aug 2024 — the FIRST AMIE-cluster departure signal. Highest-leverage future founder candidate among Vivek's bench. If Vivek ever founds, Karan is the most likely co-founder. Track his OpenAI Health role evolution: if it shifts to founder mode, that pulls Vivek.",
+      "priority": "P0",
+      "status": "pending",
+      "tags": ["openai", "google-departed", "medical-ai", "med-palm", "stanford", "frontier-departure", "indian"]
+    },
+    {
+      "name": "Tao Tu",
+      "from_dossier": "vivek-natarajan",
+      "discovered_at": "2026-05-28",
+      "context": "First author on AMIE conversational (Nature 2025, 733 cites), AMIE-DDx (Nature 2025), Med-PaLM M / Towards Generalist Biomedical AI (NEJM AI 2024, 819 cites). CMU PhD. The current most-prolific first author on Vivek Natarajan's bench. The Tao+Vivek pairing is the obvious AMIE-spinout founding bench if Google chooses not to productize. Track LinkedIn affiliation + Twitter bio for departure signal.",
+      "priority": "P0",
+      "status": "pending",
+      "tags": ["google-deepmind", "medical-ai", "amie", "cmu-phd", "departure-watch"]
+    },
+    {
+      "name": "Khaled Saab",
+      "from_dossier": "vivek-natarajan",
+      "discovered_at": "2026-05-28",
+      "context": "First author 'Capabilities of Gemini models in medicine' (arXiv 2024, 496 cites). Stanford EE PhD under Chris Ré — CLAUDE.md critical lab. Hazy Research alumnus — the canonical Stanford → founder feeder lab (Tri Dao → Together AI; Dan Fu → Cartesia; Sukjun Hwang in repo). BRIDGES DeepMind health team ↔ Chris Ré cluster. The single highest-priority recursive discovery from Vivek's network — combines frontier-lab medical research + Hazy Research lineage. Departure-candidate by archetype.",
+      "priority": "P1",
+      "status": "pending",
+      "tags": ["google-deepmind", "stanford", "chris-re", "hazy-research", "medical-ai", "gemini-medicine", "departure-watch"]
+    },
+    {
+      "name": "Anil (Anand) Palepu",
+      "from_dossier": "vivek-natarajan",
+      "discovered_at": "2026-05-28",
+      "context": "Co-first author on AMIE conversational (Nature 2025). Harvard-MIT HST PhD (Health Sciences and Technology) — the clinician-engineer track that produces MD/PhD-adjacent researchers with both clinical and ML depth. Rare and high-leverage profile. Track for departure / startup advisor roles.",
+      "priority": "P1",
+      "status": "pending",
+      "tags": ["google-deepmind", "harvard-mit-hst", "clinician-engineer", "medical-ai", "amie"]
+    },
+    {
+      "name": "Alan Karthikesalingam",
+      "from_dossier": "vivek-natarajan",
+      "discovered_at": "2026-05-28",
+      "context": "Co-lead of Project AMIE with Vivek Natarajan. UK clinician-researcher (ophthalmologist by training, NHS background). The dosa-lunch Med-PaLM co-originator (he had the conversation with Vivek at the Mountain View dosa restaurant where Vivek wrote the first Med-PaLM project draft). Less likely to leave (clinician identity, UK-based) but would be a co-founder if AMIE spins out.",
+      "priority": "P1",
+      "status": "pending",
+      "tags": ["google-deepmind", "uk-nhs", "clinician", "ophthalmologist", "amie", "med-palm-origin"]
+    },
+    {
+      "name": "Mike Schaekermann",
+      "from_dossier": "vivek-natarajan",
+      "discovered_at": "2026-05-28",
+      "context": "Co-first author AMIE conversational. HCI / human-AI interaction background. Senior research scientist at Google DeepMind health team. Less likely founder candidate than Tu/Saab/Palepu but a key node in the AMIE cluster.",
+      "priority": "P2",
+      "status": "pending",
+      "tags": ["google-deepmind", "hci", "amie", "medical-ai"]
+    },
+    {
+      "name": "Shekoofeh Azizi",
+      "from_dossier": "vivek-natarajan",
+      "discovered_at": "2026-05-28",
+      "context": "Senior author on Med-PaLM and self-supervised medical imaging work (ICCV 2021, 1,016 cites). UBC PhD. Long-running Vivek Natarajan collaborator since the pre-medical era at FAIR / Google. Iranian-origin senior researcher.",
+      "priority": "P2",
+      "status": "pending",
+      "tags": ["google-deepmind", "medical-imaging", "ubc-phd", "senior-researcher"]
+    },
+    {
+      "name": "Juraj Gottweis",
+      "from_dossier": "vivek-natarajan",
+      "discovered_at": "2026-05-28",
+      "context": "First author 'Towards an AI Co-Scientist' (arXiv 2025, 522 cites). DeepMind AI-for-science lead. Co-leads the parallel team that Vivek also contributes to. AI Co-Scientist deployed via US Genesis Mission across all 17 Department of Energy National Labs in 2025.",
+      "priority": "P2",
+      "status": "pending",
+      "tags": ["google-deepmind", "ai-for-science", "ai-co-scientist", "doe-genesis"]
+    },
+    {
+      "name": "Greg Corrado",
+      "from_dossier": "vivek-natarajan",
+      "discovered_at": "2026-05-28",
+      "context": "Head of Google Health AI. Google Brain co-founder. The senior sponsor who recruited Vivek Natarajan to Google Health ~2020 and offered him the chance to lead Med-PaLM. If HE leaves, it's a multi-person cascade signal across the entire Google health team. Tier-3 watch (very senior, low departure probability).",
+      "priority": "P3",
+      "status": "pending",
+      "tags": ["google-deepmind", "google-brain-cofounder", "senior-sponsor", "google-health"]
     }
   ]
 }
