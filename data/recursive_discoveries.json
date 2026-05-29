@@ -1,16 +1,21 @@
 {
   "version": 1,
   "description": "Recursive discoveries surfaced by dossier agents. Each entry: a person mentioned in a dossier as worth following up. Status: pending|approved|dossiered|rejected.",
-  "last_updated": "2026-05-27",
+  "last_updated": "2026-05-29",
   "discoveries": [
     {
       "name": "Sumith Kulal",
       "from_dossier": "saksham-consul",
       "discovered_at": "2026-05-25",
-      "context": "Fellow FLUX.1 Kontext co-author at Black Forest Labs. Stanford CS / Hazy Research alum — bridges Chris Re cluster to BFL.",
+      "context": "Fellow FLUX.1 Kontext co-author at Black Forest Labs. Stanford CS / Hazy Research alum \u2014 bridges Chris Re cluster to BFL.",
       "priority": "P0",
       "status": "pending",
-      "tags": ["bfl", "stanford", "hazy-research", "diffusion-video"]
+      "tags": [
+        "bfl",
+        "stanford",
+        "hazy-research",
+        "diffusion-video"
+      ]
     },
     {
       "name": "Chenlin Meng",
@@ -19,7 +24,12 @@
       "context": "Pika CTO. DDIM co-author with Jiaming Song. Stanford Ermon lab. 4th node in diffusion-into-video cluster.",
       "priority": "P0",
       "status": "pending",
-      "tags": ["pika", "stanford", "diffusion-video", "female-founder"]
+      "tags": [
+        "pika",
+        "stanford",
+        "diffusion-video",
+        "female-founder"
+      ]
     },
     {
       "name": "Robin Rombach",
@@ -28,7 +38,11 @@
       "context": "Black Forest Labs CEO. LDM/Stable Diffusion creator. The BFL founder.",
       "priority": "P0",
       "status": "pending",
-      "tags": ["bfl", "diffusion-video", "founder-ceo"]
+      "tags": [
+        "bfl",
+        "diffusion-video",
+        "founder-ceo"
+      ]
     },
     {
       "name": "Sharon Zhou",
@@ -37,7 +51,12 @@
       "context": "Lamini CEO. Saksham's direct manager 2023-2024. Indian-American female founder. Stanford CS PhD under Andrew Ng.",
       "priority": "P1",
       "status": "pending",
-      "tags": ["lamini", "stanford", "female-founder", "indian-american"]
+      "tags": [
+        "lamini",
+        "stanford",
+        "female-founder",
+        "indian-american"
+      ]
     },
     {
       "name": "Tanishq Kumar",
@@ -49,7 +68,12 @@
       "dossiered_at": "2026-05-27",
       "dossier_url": "people/tanishq-kumar.html",
       "tier_assigned": "T2",
-      "tags": ["stanford", "percy-liang", "indian", "scaling-laws"]
+      "tags": [
+        "stanford",
+        "percy-liang",
+        "indian",
+        "scaling-laws"
+      ]
     },
     {
       "name": "Christina Baek",
@@ -58,7 +82,13 @@
       "context": "CMU final-year PhD (Kolter + Raghunathan). Presidential Fellow. UC Berkeley EECS BS + 5th-year MS under Yi Ma. WiSE-FT reasoning-diversity paper (COLM 2025). Korean-American, female. DatologyAI + Google internships. @_christinabaek.",
       "priority": "P1",
       "status": "pending",
-      "tags": ["cmu", "kolter", "raghunathan", "female", "korean-american"]
+      "tags": [
+        "cmu",
+        "kolter",
+        "raghunathan",
+        "female",
+        "korean-american"
+      ]
     },
     {
       "name": "Jacob Mitchell Springer",
@@ -67,7 +97,10 @@
       "context": "CMU 3rd-year MLD PhD (Raghunathan). NSF GRFP. Lead 1st author on SCOPE Outstanding Paper + 2 ICML 2026 papers including an oral. Swarthmore CS '22 + Los Alamos pre-PhD. 5 first-author award-tier papers in 3 years. sprin.xyz.",
       "priority": "P1",
       "status": "pending",
-      "tags": ["cmu", "raghunathan"]
+      "tags": [
+        "cmu",
+        "raghunathan"
+      ]
     },
     {
       "name": "Andrew Li",
@@ -76,7 +109,11 @@
       "context": "Judgment Labs Chief Scientist co-founder, 23. Early research hire at Together AI (Tri Dao's company). UC Berkeley. Best friends with Alex Shan + Joseph Camyre since childhood.",
       "priority": "P1",
       "status": "pending",
-      "tags": ["judgment-labs", "berkeley", "together-ai"]
+      "tags": [
+        "judgment-labs",
+        "berkeley",
+        "together-ai"
+      ]
     },
     {
       "name": "Yichuan Wang",
@@ -85,7 +122,13 @@
       "context": "Berkeley SkyLab 2nd-yr PhD, SJTU ACM Honored Class. LEANN lead author (MLSys 2026 Best Paper). Chenfeng called him 'one of my favorite people to cook with' + teased 'our next project might be even crazier'.",
       "priority": "P0",
       "status": "pending",
-      "tags": ["berkeley", "skylab", "stoica", "sjtu", "mlsys"]
+      "tags": [
+        "berkeley",
+        "skylab",
+        "stoica",
+        "sjtu",
+        "mlsys"
+      ]
     },
     {
       "name": "Haocheng Xi",
@@ -94,7 +137,12 @@
       "context": "Berkeley Keutzer + MIT HAN Lab. Tsinghua Yao Class '24. Quant VideoGen lead (7x KV memory reduction). Connects directly to architecture cluster.",
       "priority": "P0",
       "status": "pending",
-      "tags": ["berkeley", "keutzer", "tsinghua-yao", "han-lab"]
+      "tags": [
+        "berkeley",
+        "keutzer",
+        "tsinghua-yao",
+        "han-lab"
+      ]
     },
     {
       "name": "Monishwaran Maheswaran",
@@ -103,7 +151,11 @@
       "context": "Berkeley Honors EECS+Math. Indian. Squeeze Evolve lead (97.5% ARC-AGI-V2 SoTA). BAIR + Berkeley Lab nuclear fusion.",
       "priority": "P1",
       "status": "pending",
-      "tags": ["berkeley", "indian", "fusion"]
+      "tags": [
+        "berkeley",
+        "indian",
+        "fusion"
+      ]
     },
     {
       "name": "Junxiong Wang",
@@ -112,7 +164,10 @@
       "context": "Cornell PhD + Together AI. Aurora + I-DLM co-author with Chenfeng.",
       "priority": "P1",
       "status": "pending",
-      "tags": ["cornell", "together-ai"]
+      "tags": [
+        "cornell",
+        "together-ai"
+      ]
     },
     {
       "name": "Ninad Jadhav",
@@ -121,7 +176,12 @@
       "context": "REACT Lab labmate of Weiying Wang. WSR co-author. 'Trust-Based Algorithms for Resilient Multiagent' thesis. Highest-probability co-founder candidate for Weiying's stealth humanoid co.",
       "priority": "P0",
       "status": "pending",
-      "tags": ["harvard", "react-lab", "robotics", "indian"]
+      "tags": [
+        "harvard",
+        "react-lab",
+        "robotics",
+        "indian"
+      ]
     },
     {
       "name": "Yilun Du",
@@ -130,7 +190,11 @@
       "context": "Harvard CS + Kempner Institute Assistant Professor. Embodied Minds Lab. Ex-OpenAI / ex-Google DeepMind. MIT EECS PhD under Kaelbling+Lozano-Perez+Tenenbaum. Verify before using as warm intro for Weiying.",
       "priority": "P1",
       "status": "pending",
-      "tags": ["harvard", "kempner", "ex-openai"]
+      "tags": [
+        "harvard",
+        "kempner",
+        "ex-openai"
+      ]
     },
     {
       "name": "Dustin Tran",
@@ -139,7 +203,11 @@
       "context": "DeepMind. TFP collaborator with Joshua Dillon. Major probabilistic ML researcher. Mid-career, departure watch candidate.",
       "priority": "P1",
       "status": "pending",
-      "tags": ["deepmind", "probabilistic-ml", "tfp"]
+      "tags": [
+        "deepmind",
+        "probabilistic-ml",
+        "tfp"
+      ]
     },
     {
       "name": "Yaniv Ovadia",
@@ -148,7 +216,11 @@
       "context": "Google. 1st author on 'Can you trust your model's uncertainty' (2,839 cites). Could be next departure candidate.",
       "priority": "P1",
       "status": "pending",
-      "tags": ["google", "uncertainty", "ood-detection"]
+      "tags": [
+        "google",
+        "uncertainty",
+        "ood-detection"
+      ]
     },
     {
       "name": "Jie Ren",
@@ -157,34 +229,57 @@
       "context": "DeepMind. 1st author on 'Likelihood ratios for OOD detection' (1,019 cites). Joshua co-author.",
       "priority": "P2",
       "status": "pending",
-      "tags": ["deepmind", "ood-detection"]
+      "tags": [
+        "deepmind",
+        "ood-detection"
+      ]
     },
     {
       "name": "Prithwish Dan",
       "from_dossier": "kushal-kedia",
       "discovered_at": "2026-05-27",
-      "context": "Cornell CS MS student in Sanjiban Choudhury's PoRTaL lab. Co-1st author on 6 papers with Kushal Kedia: X-Sim (CoRL 2025 Oral + RSS EgoAct Best Paper Runner-up), X-Diffusion (ICRA 2026), RHyME (ICRA 2025), ManiCast (CoRL 2023), Game-Theoretic Framework (IROS 2023), InteRACT (ICRA 2024). MOST LIKELY CO-FOUNDER CANDIDATE if Kushal goes founder route — graduating MS in 2026 into same humanoid market. Site: pdan101.github.io. Verified Scholar BZGUSN8AAAAJ at cornell.edu. Indian (likely IIT undergrad). Watch his next-step LinkedIn announcement — if same place as Kushal that's industry hire; if they incorporate together, that's founding move.",
+      "context": "Cornell CS MS student in Sanjiban Choudhury's PoRTaL lab. Co-1st author on 6 papers with Kushal Kedia: X-Sim (CoRL 2025 Oral + RSS EgoAct Best Paper Runner-up), X-Diffusion (ICRA 2026), RHyME (ICRA 2025), ManiCast (CoRL 2023), Game-Theoretic Framework (IROS 2023), InteRACT (ICRA 2024). MOST LIKELY CO-FOUNDER CANDIDATE if Kushal goes founder route \u2014 graduating MS in 2026 into same humanoid market. Site: pdan101.github.io. Verified Scholar BZGUSN8AAAAJ at cornell.edu. Indian (likely IIT undergrad). Watch his next-step LinkedIn announcement \u2014 if same place as Kushal that's industry hire; if they incorporate together, that's founding move.",
       "priority": "P0",
       "status": "pending",
-      "tags": ["cornell", "portal-lab", "choudhury", "robotics", "humanoid", "co-founder-candidate", "indian"]
+      "tags": [
+        "cornell",
+        "portal-lab",
+        "choudhury",
+        "robotics",
+        "humanoid",
+        "co-founder-candidate",
+        "indian"
+      ]
     },
     {
       "name": "Tyler Ga Wei Lum",
       "from_dossier": "kushal-kedia",
       "discovered_at": "2026-05-27",
-      "context": "Stanford CS PhD in C. Karen Liu's lab. Co-1st author on SimToolReal (arXiv Feb 2026) with Kushal Kedia + Bohg + Karen Liu — zero-shot dexterous tool manipulation. Verified Scholar kPq6-XIAAAAJ at stanford.edu. The Karen Liu lab bridge for Kushal. If Karen Liu's partial leave Jan-Jun 2026 is at a humanoid co, Tyler likely follows. Dexterous manipulation = direct PI / Figure / 1X wedge.",
+      "context": "Stanford CS PhD in C. Karen Liu's lab. Co-1st author on SimToolReal (arXiv Feb 2026) with Kushal Kedia + Bohg + Karen Liu \u2014 zero-shot dexterous tool manipulation. Verified Scholar kPq6-XIAAAAJ at stanford.edu. The Karen Liu lab bridge for Kushal. If Karen Liu's partial leave Jan-Jun 2026 is at a humanoid co, Tyler likely follows. Dexterous manipulation = direct PI / Figure / 1X wedge.",
       "priority": "P1",
       "status": "pending",
-      "tags": ["stanford", "karen-liu", "robotics", "humanoid", "dexterous-manipulation"]
+      "tags": [
+        "stanford",
+        "karen-liu",
+        "robotics",
+        "humanoid",
+        "dexterous-manipulation"
+      ]
     },
     {
       "name": "Sanjiban Choudhury",
       "from_dossier": "kushal-kedia",
       "discovered_at": "2026-05-27",
-      "context": "Cornell CS Assistant Professor + ML Researcher at Aurora (autonomous trucking, $5B+ public co). Leads PoRTaL group (Personal Robotics at Cornell). ONR Young Investigator 2024 + OpenAI Superalignment Award 2024 + Google Research Award 2024. CMU RI PhD (Sebastian Scherer). Started Cornell Aug 2021. Advisor relationship node — if Kushal/Prithwish go founder, Choudhury becomes high-signal LP / advisor candidate. Lab alumni pipeline: Kushal Kedia (graduating May 26), Huaxiaoyue Wang, Juntao Ren, Rajat Kumar Jenamani, Atiksh Bhardwaj, Yuki Wang, Gonzalo Gonzalez-Pumariega. PoRTaL alumni map = future founding cohort tracker.",
+      "context": "Cornell CS Assistant Professor + ML Researcher at Aurora (autonomous trucking, $5B+ public co). Leads PoRTaL group (Personal Robotics at Cornell). ONR Young Investigator 2024 + OpenAI Superalignment Award 2024 + Google Research Award 2024. CMU RI PhD (Sebastian Scherer). Started Cornell Aug 2021. Advisor relationship node \u2014 if Kushal/Prithwish go founder, Choudhury becomes high-signal LP / advisor candidate. Lab alumni pipeline: Kushal Kedia (graduating May 26), Huaxiaoyue Wang, Juntao Ren, Rajat Kumar Jenamani, Atiksh Bhardwaj, Yuki Wang, Gonzalo Gonzalez-Pumariega. PoRTaL alumni map = future founding cohort tracker.",
       "priority": "P0",
       "status": "pending",
-      "tags": ["cornell", "aurora", "advisor-node", "robotics", "openai-superalignment"]
+      "tags": [
+        "cornell",
+        "aurora",
+        "advisor-node",
+        "robotics",
+        "openai-superalignment"
+      ]
     },
     {
       "name": "Huaxiaoyue Wang",
@@ -193,7 +288,12 @@
       "context": "Cornell CS PhD student in Choudhury PoRTaL lab. Co-1st author on MOSAIC (CoRL 2024 + Best Paper VLMNM ICRA 24 + Best Poster MoMa ICRA 24). Senior lab member. Verified Scholar yweLdycAAAAJ at cs.cornell.edu. Chinese-origin. Track for own graduation timeline.",
       "priority": "P1",
       "status": "pending",
-      "tags": ["cornell", "portal-lab", "choudhury", "robotics"]
+      "tags": [
+        "cornell",
+        "portal-lab",
+        "choudhury",
+        "robotics"
+      ]
     },
     {
       "name": "Maximus Adrian Pace",
@@ -202,16 +302,26 @@
       "context": "Cornell CS MS in PoRTaL lab. Co-1st on X-Diffusion (ICRA 2026), co-author on X-Sim + RHyME. Verified Scholar GvFzdWoAAAAJ. Cornell MS in CS. Robotics imitation learning focus.",
       "priority": "P1",
       "status": "pending",
-      "tags": ["cornell", "portal-lab", "choudhury", "robotics"]
+      "tags": [
+        "cornell",
+        "portal-lab",
+        "choudhury",
+        "robotics"
+      ]
     },
     {
       "name": "Rajat Kumar Jenamani",
       "from_dossier": "kushal-kedia",
       "discovered_at": "2026-05-27",
-      "context": "Cornell CS PhD. IIT KGP undergrad — co-author on Kushal's 2020 pre-PhD motion-planning paper. The IIT KGP -> Cornell PhD pipeline node. Verified Scholar 1lVR0HoAAAAJ at cornell.edu. Indian. Track for graduation + post-PhD step.",
+      "context": "Cornell CS PhD. IIT KGP undergrad \u2014 co-author on Kushal's 2020 pre-PhD motion-planning paper. The IIT KGP -> Cornell PhD pipeline node. Verified Scholar 1lVR0HoAAAAJ at cornell.edu. Indian. Track for graduation + post-PhD step.",
       "priority": "P1",
       "status": "pending",
-      "tags": ["cornell", "iit-kharagpur", "indian", "robotics"]
+      "tags": [
+        "cornell",
+        "iit-kharagpur",
+        "indian",
+        "robotics"
+      ]
     },
     {
       "name": "Juntao Ren",
@@ -220,25 +330,41 @@
       "context": "Cornell CS (Choudhury PoRTaL). Co-1st on MOSAIC + 1st author on Human-to-Robot Transfer Learning (ICRA 2025, arXiv:2501.06994). PoRTaL alumni cohort.",
       "priority": "P2",
       "status": "pending",
-      "tags": ["cornell", "portal-lab", "choudhury", "robotics"]
+      "tags": [
+        "cornell",
+        "portal-lab",
+        "choudhury",
+        "robotics"
+      ]
     },
     {
       "name": "Atiksh Bhardwaj",
       "from_dossier": "kushal-kedia",
       "discovered_at": "2026-05-27",
-      "context": "Cornell undergrad/MS. Long-term PoRTaL collaborator — co-author on InteRACT (ICRA 24), ManiCast, X-Diffusion. Watch for grad school choice.",
+      "context": "Cornell undergrad/MS. Long-term PoRTaL collaborator \u2014 co-author on InteRACT (ICRA 24), ManiCast, X-Diffusion. Watch for grad school choice.",
       "priority": "P2",
       "status": "pending",
-      "tags": ["cornell", "portal-lab", "indian-possible"]
+      "tags": [
+        "cornell",
+        "portal-lab",
+        "indian-possible"
+      ]
     },
     {
       "name": "C. Karen Liu",
       "from_dossier": "kushal-kedia",
       "discovered_at": "2026-05-27",
-      "context": "Stanford CS Professor (humanoid + character animation + computational biomechanics). ACM SIGGRAPH Academy 2021 + Sloan 2010 + MIT TR Young Innovators 2007 + SIGGRAPH Significant New Researcher 2012. UW CS PhD. Ex-Georgia Tech IC. **ON PARTIAL LEAVE JAN-JUN 2026** — high-information signal, most likely humanoid co sabbatical (PI / Figure / 1X / Skild / Boston Dynamics candidate). Stanford Movement Lab + Bio-X + HAI + Wu Tsai Human Performance Alliance. Affiliated humanoid network: Stanford IPRL (Bohg) + Tyler Lum (SimToolReal co-1st w/ Kushal). Verify destination if possible — that tells us where Kushal is most likely heading.",
+      "context": "Stanford CS Professor (humanoid + character animation + computational biomechanics). ACM SIGGRAPH Academy 2021 + Sloan 2010 + MIT TR Young Innovators 2007 + SIGGRAPH Significant New Researcher 2012. UW CS PhD. Ex-Georgia Tech IC. **ON PARTIAL LEAVE JAN-JUN 2026** \u2014 high-information signal, most likely humanoid co sabbatical (PI / Figure / 1X / Skild / Boston Dynamics candidate). Stanford Movement Lab + Bio-X + HAI + Wu Tsai Human Performance Alliance. Affiliated humanoid network: Stanford IPRL (Bohg) + Tyler Lum (SimToolReal co-1st w/ Kushal). Verify destination if possible \u2014 that tells us where Kushal is most likely heading.",
       "priority": "P0",
       "status": "pending",
-      "tags": ["stanford", "humanoid", "biomechanics", "movement-lab", "advisor-node", "partial-leave-watch"]
+      "tags": [
+        "stanford",
+        "humanoid",
+        "biomechanics",
+        "movement-lab",
+        "advisor-node",
+        "partial-leave-watch"
+      ]
     },
     {
       "name": "Jeannette Bohg",
@@ -247,7 +373,13 @@
       "context": "Stanford CS Assistant Professor. Director of IPRL (Interactive Perception and Robot Learning Lab). 2023 Sloan Research Fellowship + 2019 IEEE RAS Early Career + 2020 RSS Early Career. KTH PhD. Ex-MPI Autonomous Motion. Canonical Stanford robotic grasping + manipulation group. Advisor relationship node for Kushal's Stanford visit. Lab pipeline: Tyler Lum + others. Track IPRL student departures.",
       "priority": "P1",
       "status": "pending",
-      "tags": ["stanford", "iprl", "robotics", "manipulation", "advisor-node"]
+      "tags": [
+        "stanford",
+        "iprl",
+        "robotics",
+        "manipulation",
+        "advisor-node"
+      ]
     },
     {
       "name": "Wei-Chiu Ma",
@@ -256,19 +388,35 @@
       "context": "Cornell CS Assistant Professor. MIT PhD under Antonio Torralba + Raquel Urtasun. Ex-Senior Research Scientist at Uber ATG + Waabi. CMU MS in Robotics under Kris Kitani. Siebel Scholar 2022. CPS Rising Star 2023. 3D/4D computer vision -> robotics bridge. Kushal's co-advisor. Lab students: Chuanruo Ning, Guangzhao He, Rundong Luo, Tao Tu, Xuyi Meng. Track Cornell vision-robotics pipeline.",
       "priority": "P2",
       "status": "pending",
-      "tags": ["cornell", "robotics", "3d-vision", "ex-waabi", "advisor-node"]
+      "tags": [
+        "cornell",
+        "robotics",
+        "3d-vision",
+        "ex-waabi",
+        "advisor-node"
+      ]
     },
     {
       "name": "Karan Singhal",
       "from_dossier": "vivek-natarajan",
       "discovered_at": "2026-05-28",
-      "context": "Co-equal first author (listed first) on Med-PaLM (Nature 2023, 5,747 cites) + Med-PaLM 2 (Nature Medicine 2025, 2,428 cites) — combined 8,175 cites. Stanford BS+MS CS '19 (4.1/4.0 MS GPA), initiated + main instructor of Stanford's first CS+Social Good AI ethics class. Departed Google → OpenAI on July 22, 2024 (X tweet 1815444769868574944; CORRECTION from earlier 'Aug 2024' — actual date is Jul 22) — the FIRST AMIE-cluster departure signal. Now Head of Health AI + AGI Benefits @ OpenAI. ~21,541 Scholar cites, h-26, i10-34. Shipped HealthBench (May 2025, 49K rubric items / 250+ physicians / 60 countries) + OpenAI for Healthcare (Jan 8 2026, HIPAA, 8 named hospital systems: Boston Children's / Cedars-Sinai / MSK / Stanford Children's / UCSF / AdventHealth / Baylor Scott & White / HCA) + ChatGPT for Clinicians + HealthBench Professional (Apr 22 2026 pinned tweet, 1.6M impressions) + Penda Health Kenya RCT. TIME100 Health 2026 (Feb 11 2026). Co-author GPT-4o + o1 + GPT-5 + gpt-oss system cards. Second AMIE departure CONFIRMED: Khaled Saab (Stanford EE PhD under Chris Ré, CLAUDE.md critical lab) now on Karan's OpenAI Health team (Jan 13 2026 reply tweet). If Vivek ever founds, Karan is the most likely co-founder. Indian-origin (Singhal = North Indian Vaishya/Marwari). Departure-watch trigger: OpenAI → OpenAI Foundation transition pattern (Yo Shavit May 25 2026 precedent). T1, relationship-build.",
+      "context": "Co-equal first author (listed first) on Med-PaLM (Nature 2023, 5,747 cites) + Med-PaLM 2 (Nature Medicine 2025, 2,428 cites) \u2014 combined 8,175 cites. Stanford BS+MS CS '19 (4.1/4.0 MS GPA), initiated + main instructor of Stanford's first CS+Social Good AI ethics class. Departed Google \u2192 OpenAI on July 22, 2024 (X tweet 1815444769868574944; CORRECTION from earlier 'Aug 2024' \u2014 actual date is Jul 22) \u2014 the FIRST AMIE-cluster departure signal. Now Head of Health AI + AGI Benefits @ OpenAI. ~21,541 Scholar cites, h-26, i10-34. Shipped HealthBench (May 2025, 49K rubric items / 250+ physicians / 60 countries) + OpenAI for Healthcare (Jan 8 2026, HIPAA, 8 named hospital systems: Boston Children's / Cedars-Sinai / MSK / Stanford Children's / UCSF / AdventHealth / Baylor Scott & White / HCA) + ChatGPT for Clinicians + HealthBench Professional (Apr 22 2026 pinned tweet, 1.6M impressions) + Penda Health Kenya RCT. TIME100 Health 2026 (Feb 11 2026). Co-author GPT-4o + o1 + GPT-5 + gpt-oss system cards. Second AMIE departure CONFIRMED: Khaled Saab (Stanford EE PhD under Chris R\u00e9, CLAUDE.md critical lab) now on Karan's OpenAI Health team (Jan 13 2026 reply tweet). If Vivek ever founds, Karan is the most likely co-founder. Indian-origin (Singhal = North Indian Vaishya/Marwari). Departure-watch trigger: OpenAI \u2192 OpenAI Foundation transition pattern (Yo Shavit May 25 2026 precedent). T1, relationship-build.",
       "priority": "P0",
       "status": "dossiered",
       "dossiered_at": "2026-05-28",
       "dossier_url": "people/karan-singhal.html",
       "tier_assigned": "T1",
-      "tags": ["openai", "google-departed", "medical-ai", "med-palm", "stanford", "frontier-departure", "indian", "healthbench", "chatgpt-for-healthcare"]
+      "tags": [
+        "openai",
+        "google-departed",
+        "medical-ai",
+        "med-palm",
+        "stanford",
+        "frontier-departure",
+        "indian",
+        "healthbench",
+        "chatgpt-for-healthcare"
+      ]
     },
     {
       "name": "Tao Tu",
@@ -277,25 +425,45 @@
       "context": "First author on AMIE conversational (Nature 2025, 733 cites), AMIE-DDx (Nature 2025), Med-PaLM M / Towards Generalist Biomedical AI (NEJM AI 2024, 819 cites). CMU PhD. The current most-prolific first author on Vivek Natarajan's bench. The Tao+Vivek pairing is the obvious AMIE-spinout founding bench if Google chooses not to productize. Track LinkedIn affiliation + Twitter bio for departure signal.",
       "priority": "P0",
       "status": "pending",
-      "tags": ["google-deepmind", "medical-ai", "amie", "cmu-phd", "departure-watch"]
+      "tags": [
+        "google-deepmind",
+        "medical-ai",
+        "amie",
+        "cmu-phd",
+        "departure-watch"
+      ]
     },
     {
       "name": "Khaled Saab",
       "from_dossier": "vivek-natarajan",
       "discovered_at": "2026-05-28",
-      "context": "First author 'Capabilities of Gemini models in medicine' (arXiv 2024, 496 cites). Stanford EE PhD under Chris Ré — CLAUDE.md critical lab. Hazy Research alumnus — the canonical Stanford → founder feeder lab (Tri Dao → Together AI; Dan Fu → Cartesia; Sukjun Hwang in repo). BRIDGES DeepMind health team ↔ Chris Ré cluster. The single highest-priority recursive discovery from Vivek's network — combines frontier-lab medical research + Hazy Research lineage. Departure-candidate by archetype.",
+      "context": "First author 'Capabilities of Gemini models in medicine' (arXiv 2024, 496 cites). Stanford EE PhD under Chris R\u00e9 \u2014 CLAUDE.md critical lab. Hazy Research alumnus \u2014 the canonical Stanford \u2192 founder feeder lab (Tri Dao \u2192 Together AI; Dan Fu \u2192 Cartesia; Sukjun Hwang in repo). BRIDGES DeepMind health team \u2194 Chris R\u00e9 cluster. The single highest-priority recursive discovery from Vivek's network \u2014 combines frontier-lab medical research + Hazy Research lineage. Departure-candidate by archetype.",
       "priority": "P1",
       "status": "pending",
-      "tags": ["google-deepmind", "stanford", "chris-re", "hazy-research", "medical-ai", "gemini-medicine", "departure-watch"]
+      "tags": [
+        "google-deepmind",
+        "stanford",
+        "chris-re",
+        "hazy-research",
+        "medical-ai",
+        "gemini-medicine",
+        "departure-watch"
+      ]
     },
     {
       "name": "Anil (Anand) Palepu",
       "from_dossier": "vivek-natarajan",
       "discovered_at": "2026-05-28",
-      "context": "Co-first author on AMIE conversational (Nature 2025). Harvard-MIT HST PhD (Health Sciences and Technology) — the clinician-engineer track that produces MD/PhD-adjacent researchers with both clinical and ML depth. Rare and high-leverage profile. Track for departure / startup advisor roles.",
+      "context": "Co-first author on AMIE conversational (Nature 2025). Harvard-MIT HST PhD (Health Sciences and Technology) \u2014 the clinician-engineer track that produces MD/PhD-adjacent researchers with both clinical and ML depth. Rare and high-leverage profile. Track for departure / startup advisor roles.",
       "priority": "P1",
       "status": "pending",
-      "tags": ["google-deepmind", "harvard-mit-hst", "clinician-engineer", "medical-ai", "amie"]
+      "tags": [
+        "google-deepmind",
+        "harvard-mit-hst",
+        "clinician-engineer",
+        "medical-ai",
+        "amie"
+      ]
     },
     {
       "name": "Alan Karthikesalingam",
@@ -304,7 +472,14 @@
       "context": "Co-lead of Project AMIE with Vivek Natarajan. UK clinician-researcher (ophthalmologist by training, NHS background). The dosa-lunch Med-PaLM co-originator (he had the conversation with Vivek at the Mountain View dosa restaurant where Vivek wrote the first Med-PaLM project draft). Less likely to leave (clinician identity, UK-based) but would be a co-founder if AMIE spins out.",
       "priority": "P1",
       "status": "pending",
-      "tags": ["google-deepmind", "uk-nhs", "clinician", "ophthalmologist", "amie", "med-palm-origin"]
+      "tags": [
+        "google-deepmind",
+        "uk-nhs",
+        "clinician",
+        "ophthalmologist",
+        "amie",
+        "med-palm-origin"
+      ]
     },
     {
       "name": "Mike Schaekermann",
@@ -313,7 +488,12 @@
       "context": "Co-first author AMIE conversational. HCI / human-AI interaction background. Senior research scientist at Google DeepMind health team. Less likely founder candidate than Tu/Saab/Palepu but a key node in the AMIE cluster.",
       "priority": "P2",
       "status": "pending",
-      "tags": ["google-deepmind", "hci", "amie", "medical-ai"]
+      "tags": [
+        "google-deepmind",
+        "hci",
+        "amie",
+        "medical-ai"
+      ]
     },
     {
       "name": "Shekoofeh Azizi",
@@ -322,7 +502,12 @@
       "context": "Senior author on Med-PaLM and self-supervised medical imaging work (ICCV 2021, 1,016 cites). UBC PhD. Long-running Vivek Natarajan collaborator since the pre-medical era at FAIR / Google. Iranian-origin senior researcher.",
       "priority": "P2",
       "status": "pending",
-      "tags": ["google-deepmind", "medical-imaging", "ubc-phd", "senior-researcher"]
+      "tags": [
+        "google-deepmind",
+        "medical-imaging",
+        "ubc-phd",
+        "senior-researcher"
+      ]
     },
     {
       "name": "Juraj Gottweis",
@@ -331,7 +516,12 @@
       "context": "First author 'Towards an AI Co-Scientist' (arXiv 2025, 522 cites). DeepMind AI-for-science lead. Co-leads the parallel team that Vivek also contributes to. AI Co-Scientist deployed via US Genesis Mission across all 17 Department of Energy National Labs in 2025.",
       "priority": "P2",
       "status": "pending",
-      "tags": ["google-deepmind", "ai-for-science", "ai-co-scientist", "doe-genesis"]
+      "tags": [
+        "google-deepmind",
+        "ai-for-science",
+        "ai-co-scientist",
+        "doe-genesis"
+      ]
     },
     {
       "name": "Greg Corrado",
@@ -340,7 +530,85 @@
       "context": "Head of Google Health AI. Google Brain co-founder. The senior sponsor who recruited Vivek Natarajan to Google Health ~2020 and offered him the chance to lead Med-PaLM. If HE leaves, it's a multi-person cascade signal across the entire Google health team. Tier-3 watch (very senior, low departure probability).",
       "priority": "P3",
       "status": "pending",
-      "tags": ["google-deepmind", "google-brain-cofounder", "senior-sponsor", "google-health"]
+      "tags": [
+        "google-deepmind",
+        "google-brain-cofounder",
+        "senior-sponsor",
+        "google-health"
+      ]
+    },
+    {
+      "name": "Kevin Esvelt",
+      "from_dossier": "vikram-sundar",
+      "discovered_at": "2026-05-29",
+      "context": "Vikram's MIT PhD advisor. Runs the Sculpting Evolution lab (MIT Media Lab): gene-drive invention, biosecurity (SecureDNA / DNA-synthesis screening), continuous directed evolution (PACE/PANCE), protein engineering. The lab cohort is the recursive target \u2014 protein-engineering + biosecurity ICs who could spin out. Map current/recent lab members for the next ai-bio founder profile.",
+      "priority": "P2",
+      "status": "pending",
+      "tags": [
+        "mit",
+        "sculpting-evolution",
+        "protein-engineering",
+        "biosecurity",
+        "lab-cohort",
+        "ai-bio"
+      ]
+    },
+    {
+      "name": "Lucy Colwell",
+      "from_dossier": "vikram-sundar",
+      "discovered_at": "2026-05-29",
+      "context": "Vikram's Cambridge Churchill-year advisor (ML for active-ligand prediction); now also at Google DeepMind. ML-for-protein-fitness pioneer. High-value warm-intro node and a direct bridge into the DeepMind protein-design orbit. Her lab/group is a recursive target for protein-ML ICs.",
+      "priority": "P2",
+      "status": "pending",
+      "tags": [
+        "cambridge",
+        "google-deepmind",
+        "protein-ml",
+        "warm-intro-node",
+        "ai-bio"
+      ]
+    },
+    {
+      "name": "Generate:Biomedicines research team",
+      "from_dossier": "vikram-sundar",
+      "discovered_at": "2026-05-29",
+      "context": "Vikram's current employer's ML research group (Chroma / generative-protein-structure diffusion). Flagship-backed, $273M Series C (NVIDIA+Amgen), ~$700M raised. Recursive target: identify adjacent founder-profile ML scientists on the protein/antibody-generation team. Co-departure of 2+ would be an ai-bio founding signal.",
+      "priority": "P3",
+      "status": "pending",
+      "tags": [
+        "generate-biomedicines",
+        "flagship",
+        "protein-design",
+        "ai-bio",
+        "team-map"
+      ]
+    },
+    {
+      "name": "2020 Hertz Fellowship cohort",
+      "from_dossier": "vikram-sundar",
+      "discovered_at": "2026-05-29",
+      "context": "Vikram is a 2020 Hertz Fellow. The Hertz alumni base is one of the densest deep-tech founder networks in existence (~15 fellows/yr, heavily founder-skewed). Recursive target: map the 2020 cohort and adjacent years for frontier-AI/bio founders. Owner explicitly values Hertz as a top signal.",
+      "priority": "P2",
+      "status": "pending",
+      "tags": [
+        "hertz-fellowship",
+        "founder-network",
+        "deep-tech",
+        "cohort-map"
+      ]
+    },
+    {
+      "name": "Google Accelerated Science alumni",
+      "from_dossier": "vikram-sundar",
+      "discovered_at": "2026-05-29",
+      "context": "Vikram did a ~1-year Google Accelerated Science AI residency (~2019-20, DNA-encoded libraries). GAS seeded a generation of science-ML people; alumni are a recursive target for AI-for-science founders.",
+      "priority": "P3",
+      "status": "pending",
+      "tags": [
+        "google-accelerated-science",
+        "ai-for-science",
+        "residency-alumni"
+      ]
     }
   ]
 }

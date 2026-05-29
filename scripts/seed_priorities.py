@@ -188,6 +188,13 @@ SEED = {
         "next_action": "Email ref ESM3 → what's next in protein foundation models",
         "cluster": "ai-bio",
     },
+    "vikram-sundar": {
+        "urgency_reason": "ML Scientist at Generate:Biomedicines (Flagship, $273M Series C, NVIDIA+Amgen). Just completed MIT CSB PhD (May 7 2025) under Kevin Esvelt; joined Generate full-time Jul 7 2025. Spike is selection not cites (103 cites, h-5): Hertz Fellow 2020 + Churchill Scholar 2018 + Goldwater 2017 + Putnam top-27. Harvard '18 (math, Aspuru-Guzik undergrad research). Built FLIGHTED (denoises high-throughput protein assay data to recover fitness landscapes); engineered TEV protease specificities. Roshan Rao / Sam Stanton reference class (elite bio-ML IC -> founder in 3-5 yrs). NO founding signal, just locked in at Generate -> relationship build, founding watch 2028-2030. Indian (Tamil).",
+        "urgency_decay_date": None,
+        "channel": "email",
+        "next_action": "Email vsundar@generatebiomedicines.com. Subject: 'FLIGHTED — denoising the assay, not the model.' Lead with the noise-model-before-fitness-model read of FLIGHTED; name protein-design landscape (EvolutionaryScale, Cradle, Chai Discovery, Profluent, Latent Labs, Generate); reference Stanton + Rao WITHOUT pushing him to found; offer $500K-$1M only at the end. Backup: X DM @vikramsundar. Relationship build, NOT this-week urgency.",
+        "cluster": "ai-bio",
+    },
     "ajay-jain": {
         "urgency_reason": "DDPM co-author. Genmo CTO. Diffusion-to-video cluster anchor. WndrCo connects to Chonghao.",
         "urgency_decay_date": None,
