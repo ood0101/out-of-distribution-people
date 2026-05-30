@@ -1,13 +1,13 @@
 {
   "version": 1,
   "description": "Recursive discoveries surfaced by dossier agents. Each entry: a person mentioned in a dossier as worth following up. Status: pending|approved|dossiered|rejected.",
-  "last_updated": "2026-05-29",
+  "last_updated": "2026-05-30",
   "discoveries": [
     {
       "name": "Sumith Kulal",
       "from_dossier": "saksham-consul",
       "discovered_at": "2026-05-25",
-      "context": "Fellow FLUX.1 Kontext co-author at Black Forest Labs. Stanford CS / Hazy Research alum \u2014 bridges Chris Re cluster to BFL.",
+      "context": "Fellow FLUX.1 Kontext co-author at Black Forest Labs. Stanford CS / Hazy Research alum — bridges Chris Re cluster to BFL.",
       "priority": "P0",
       "status": "pending",
       "tags": [
@@ -238,7 +238,7 @@
       "name": "Prithwish Dan",
       "from_dossier": "kushal-kedia",
       "discovered_at": "2026-05-27",
-      "context": "Cornell CS MS student in Sanjiban Choudhury's PoRTaL lab. Co-1st author on 6 papers with Kushal Kedia: X-Sim (CoRL 2025 Oral + RSS EgoAct Best Paper Runner-up), X-Diffusion (ICRA 2026), RHyME (ICRA 2025), ManiCast (CoRL 2023), Game-Theoretic Framework (IROS 2023), InteRACT (ICRA 2024). MOST LIKELY CO-FOUNDER CANDIDATE if Kushal goes founder route \u2014 graduating MS in 2026 into same humanoid market. Site: pdan101.github.io. Verified Scholar BZGUSN8AAAAJ at cornell.edu. Indian (likely IIT undergrad). Watch his next-step LinkedIn announcement \u2014 if same place as Kushal that's industry hire; if they incorporate together, that's founding move.",
+      "context": "Cornell CS MS student in Sanjiban Choudhury's PoRTaL lab. Co-1st author on 6 papers with Kushal Kedia: X-Sim (CoRL 2025 Oral + RSS EgoAct Best Paper Runner-up), X-Diffusion (ICRA 2026), RHyME (ICRA 2025), ManiCast (CoRL 2023), Game-Theoretic Framework (IROS 2023), InteRACT (ICRA 2024). MOST LIKELY CO-FOUNDER CANDIDATE if Kushal goes founder route — graduating MS in 2026 into same humanoid market. Site: pdan101.github.io. Verified Scholar BZGUSN8AAAAJ at cornell.edu. Indian (likely IIT undergrad). Watch his next-step LinkedIn announcement — if same place as Kushal that's industry hire; if they incorporate together, that's founding move.",
       "priority": "P0",
       "status": "pending",
       "tags": [
@@ -255,7 +255,7 @@
       "name": "Tyler Ga Wei Lum",
       "from_dossier": "kushal-kedia",
       "discovered_at": "2026-05-27",
-      "context": "Stanford CS PhD in C. Karen Liu's lab. Co-1st author on SimToolReal (arXiv Feb 2026) with Kushal Kedia + Bohg + Karen Liu \u2014 zero-shot dexterous tool manipulation. Verified Scholar kPq6-XIAAAAJ at stanford.edu. The Karen Liu lab bridge for Kushal. If Karen Liu's partial leave Jan-Jun 2026 is at a humanoid co, Tyler likely follows. Dexterous manipulation = direct PI / Figure / 1X wedge.",
+      "context": "Stanford CS PhD in C. Karen Liu's lab. Co-1st author on SimToolReal (arXiv Feb 2026) with Kushal Kedia + Bohg + Karen Liu — zero-shot dexterous tool manipulation. Verified Scholar kPq6-XIAAAAJ at stanford.edu. The Karen Liu lab bridge for Kushal. If Karen Liu's partial leave Jan-Jun 2026 is at a humanoid co, Tyler likely follows. Dexterous manipulation = direct PI / Figure / 1X wedge.",
       "priority": "P1",
       "status": "pending",
       "tags": [
@@ -270,7 +270,7 @@
       "name": "Sanjiban Choudhury",
       "from_dossier": "kushal-kedia",
       "discovered_at": "2026-05-27",
-      "context": "Cornell CS Assistant Professor + ML Researcher at Aurora (autonomous trucking, $5B+ public co). Leads PoRTaL group (Personal Robotics at Cornell). ONR Young Investigator 2024 + OpenAI Superalignment Award 2024 + Google Research Award 2024. CMU RI PhD (Sebastian Scherer). Started Cornell Aug 2021. Advisor relationship node \u2014 if Kushal/Prithwish go founder, Choudhury becomes high-signal LP / advisor candidate. Lab alumni pipeline: Kushal Kedia (graduating May 26), Huaxiaoyue Wang, Juntao Ren, Rajat Kumar Jenamani, Atiksh Bhardwaj, Yuki Wang, Gonzalo Gonzalez-Pumariega. PoRTaL alumni map = future founding cohort tracker.",
+      "context": "Cornell CS Assistant Professor + ML Researcher at Aurora (autonomous trucking, $5B+ public co). Leads PoRTaL group (Personal Robotics at Cornell). ONR Young Investigator 2024 + OpenAI Superalignment Award 2024 + Google Research Award 2024. CMU RI PhD (Sebastian Scherer). Started Cornell Aug 2021. Advisor relationship node — if Kushal/Prithwish go founder, Choudhury becomes high-signal LP / advisor candidate. Lab alumni pipeline: Kushal Kedia (graduating May 26), Huaxiaoyue Wang, Juntao Ren, Rajat Kumar Jenamani, Atiksh Bhardwaj, Yuki Wang, Gonzalo Gonzalez-Pumariega. PoRTaL alumni map = future founding cohort tracker.",
       "priority": "P0",
       "status": "pending",
       "tags": [
@@ -313,7 +313,7 @@
       "name": "Rajat Kumar Jenamani",
       "from_dossier": "kushal-kedia",
       "discovered_at": "2026-05-27",
-      "context": "Cornell CS PhD. IIT KGP undergrad \u2014 co-author on Kushal's 2020 pre-PhD motion-planning paper. The IIT KGP -> Cornell PhD pipeline node. Verified Scholar 1lVR0HoAAAAJ at cornell.edu. Indian. Track for graduation + post-PhD step.",
+      "context": "Cornell CS PhD. IIT KGP undergrad — co-author on Kushal's 2020 pre-PhD motion-planning paper. The IIT KGP -> Cornell PhD pipeline node. Verified Scholar 1lVR0HoAAAAJ at cornell.edu. Indian. Track for graduation + post-PhD step.",
       "priority": "P1",
       "status": "pending",
       "tags": [
@@ -341,7 +341,7 @@
       "name": "Atiksh Bhardwaj",
       "from_dossier": "kushal-kedia",
       "discovered_at": "2026-05-27",
-      "context": "Cornell undergrad/MS. Long-term PoRTaL collaborator \u2014 co-author on InteRACT (ICRA 24), ManiCast, X-Diffusion. Watch for grad school choice.",
+      "context": "Cornell undergrad/MS. Long-term PoRTaL collaborator — co-author on InteRACT (ICRA 24), ManiCast, X-Diffusion. Watch for grad school choice.",
       "priority": "P2",
       "status": "pending",
       "tags": [
@@ -354,7 +354,7 @@
       "name": "C. Karen Liu",
       "from_dossier": "kushal-kedia",
       "discovered_at": "2026-05-27",
-      "context": "Stanford CS Professor (humanoid + character animation + computational biomechanics). ACM SIGGRAPH Academy 2021 + Sloan 2010 + MIT TR Young Innovators 2007 + SIGGRAPH Significant New Researcher 2012. UW CS PhD. Ex-Georgia Tech IC. **ON PARTIAL LEAVE JAN-JUN 2026** \u2014 high-information signal, most likely humanoid co sabbatical (PI / Figure / 1X / Skild / Boston Dynamics candidate). Stanford Movement Lab + Bio-X + HAI + Wu Tsai Human Performance Alliance. Affiliated humanoid network: Stanford IPRL (Bohg) + Tyler Lum (SimToolReal co-1st w/ Kushal). Verify destination if possible \u2014 that tells us where Kushal is most likely heading.",
+      "context": "Stanford CS Professor (humanoid + character animation + computational biomechanics). ACM SIGGRAPH Academy 2021 + Sloan 2010 + MIT TR Young Innovators 2007 + SIGGRAPH Significant New Researcher 2012. UW CS PhD. Ex-Georgia Tech IC. **ON PARTIAL LEAVE JAN-JUN 2026** — high-information signal, most likely humanoid co sabbatical (PI / Figure / 1X / Skild / Boston Dynamics candidate). Stanford Movement Lab + Bio-X + HAI + Wu Tsai Human Performance Alliance. Affiliated humanoid network: Stanford IPRL (Bohg) + Tyler Lum (SimToolReal co-1st w/ Kushal). Verify destination if possible — that tells us where Kushal is most likely heading.",
       "priority": "P0",
       "status": "pending",
       "tags": [
@@ -400,7 +400,7 @@
       "name": "Karan Singhal",
       "from_dossier": "vivek-natarajan",
       "discovered_at": "2026-05-28",
-      "context": "Co-equal first author (listed first) on Med-PaLM (Nature 2023, 5,747 cites) + Med-PaLM 2 (Nature Medicine 2025, 2,428 cites) \u2014 combined 8,175 cites. Stanford BS+MS CS '19 (4.1/4.0 MS GPA), initiated + main instructor of Stanford's first CS+Social Good AI ethics class. Departed Google \u2192 OpenAI on July 22, 2024 (X tweet 1815444769868574944; CORRECTION from earlier 'Aug 2024' \u2014 actual date is Jul 22) \u2014 the FIRST AMIE-cluster departure signal. Now Head of Health AI + AGI Benefits @ OpenAI. ~21,541 Scholar cites, h-26, i10-34. Shipped HealthBench (May 2025, 49K rubric items / 250+ physicians / 60 countries) + OpenAI for Healthcare (Jan 8 2026, HIPAA, 8 named hospital systems: Boston Children's / Cedars-Sinai / MSK / Stanford Children's / UCSF / AdventHealth / Baylor Scott & White / HCA) + ChatGPT for Clinicians + HealthBench Professional (Apr 22 2026 pinned tweet, 1.6M impressions) + Penda Health Kenya RCT. TIME100 Health 2026 (Feb 11 2026). Co-author GPT-4o + o1 + GPT-5 + gpt-oss system cards. Second AMIE departure CONFIRMED: Khaled Saab (Stanford EE PhD under Chris R\u00e9, CLAUDE.md critical lab) now on Karan's OpenAI Health team (Jan 13 2026 reply tweet). If Vivek ever founds, Karan is the most likely co-founder. Indian-origin (Singhal = North Indian Vaishya/Marwari). Departure-watch trigger: OpenAI \u2192 OpenAI Foundation transition pattern (Yo Shavit May 25 2026 precedent). T1, relationship-build.",
+      "context": "Co-equal first author (listed first) on Med-PaLM (Nature 2023, 5,747 cites) + Med-PaLM 2 (Nature Medicine 2025, 2,428 cites) — combined 8,175 cites. Stanford BS+MS CS '19 (4.1/4.0 MS GPA), initiated + main instructor of Stanford's first CS+Social Good AI ethics class. Departed Google → OpenAI on July 22, 2024 (X tweet 1815444769868574944; CORRECTION from earlier 'Aug 2024' — actual date is Jul 22) — the FIRST AMIE-cluster departure signal. Now Head of Health AI + AGI Benefits @ OpenAI. ~21,541 Scholar cites, h-26, i10-34. Shipped HealthBench (May 2025, 49K rubric items / 250+ physicians / 60 countries) + OpenAI for Healthcare (Jan 8 2026, HIPAA, 8 named hospital systems: Boston Children's / Cedars-Sinai / MSK / Stanford Children's / UCSF / AdventHealth / Baylor Scott & White / HCA) + ChatGPT for Clinicians + HealthBench Professional (Apr 22 2026 pinned tweet, 1.6M impressions) + Penda Health Kenya RCT. TIME100 Health 2026 (Feb 11 2026). Co-author GPT-4o + o1 + GPT-5 + gpt-oss system cards. Second AMIE departure CONFIRMED: Khaled Saab (Stanford EE PhD under Chris Ré, CLAUDE.md critical lab) now on Karan's OpenAI Health team (Jan 13 2026 reply tweet). If Vivek ever founds, Karan is the most likely co-founder. Indian-origin (Singhal = North Indian Vaishya/Marwari). Departure-watch trigger: OpenAI → OpenAI Foundation transition pattern (Yo Shavit May 25 2026 precedent). T1, relationship-build.",
       "priority": "P0",
       "status": "dossiered",
       "dossiered_at": "2026-05-28",
@@ -437,7 +437,7 @@
       "name": "Khaled Saab",
       "from_dossier": "vivek-natarajan",
       "discovered_at": "2026-05-28",
-      "context": "First author 'Capabilities of Gemini models in medicine' (arXiv 2024, 496 cites). Stanford EE PhD under Chris R\u00e9 \u2014 CLAUDE.md critical lab. Hazy Research alumnus \u2014 the canonical Stanford \u2192 founder feeder lab (Tri Dao \u2192 Together AI; Dan Fu \u2192 Cartesia; Sukjun Hwang in repo). BRIDGES DeepMind health team \u2194 Chris R\u00e9 cluster. The single highest-priority recursive discovery from Vivek's network \u2014 combines frontier-lab medical research + Hazy Research lineage. Departure-candidate by archetype.",
+      "context": "First author 'Capabilities of Gemini models in medicine' (arXiv 2024, 496 cites). Stanford EE PhD under Chris Ré — CLAUDE.md critical lab. Hazy Research alumnus — the canonical Stanford → founder feeder lab (Tri Dao → Together AI; Dan Fu → Cartesia; Sukjun Hwang in repo). BRIDGES DeepMind health team ↔ Chris Ré cluster. The single highest-priority recursive discovery from Vivek's network — combines frontier-lab medical research + Hazy Research lineage. Departure-candidate by archetype.",
       "priority": "P1",
       "status": "pending",
       "tags": [
@@ -454,7 +454,7 @@
       "name": "Anil (Anand) Palepu",
       "from_dossier": "vivek-natarajan",
       "discovered_at": "2026-05-28",
-      "context": "Co-first author on AMIE conversational (Nature 2025). Harvard-MIT HST PhD (Health Sciences and Technology) \u2014 the clinician-engineer track that produces MD/PhD-adjacent researchers with both clinical and ML depth. Rare and high-leverage profile. Track for departure / startup advisor roles.",
+      "context": "Co-first author on AMIE conversational (Nature 2025). Harvard-MIT HST PhD (Health Sciences and Technology) — the clinician-engineer track that produces MD/PhD-adjacent researchers with both clinical and ML depth. Rare and high-leverage profile. Track for departure / startup advisor roles.",
       "priority": "P1",
       "status": "pending",
       "tags": [
@@ -541,7 +541,7 @@
       "name": "Kevin Esvelt",
       "from_dossier": "vikram-sundar",
       "discovered_at": "2026-05-29",
-      "context": "Vikram's MIT PhD advisor. Runs the Sculpting Evolution lab (MIT Media Lab): gene-drive invention, biosecurity (SecureDNA / DNA-synthesis screening), continuous directed evolution (PACE/PANCE), protein engineering. The lab cohort is the recursive target \u2014 protein-engineering + biosecurity ICs who could spin out. Map current/recent lab members for the next ai-bio founder profile.",
+      "context": "Vikram's MIT PhD advisor. Runs the Sculpting Evolution lab (MIT Media Lab): gene-drive invention, biosecurity (SecureDNA / DNA-synthesis screening), continuous directed evolution (PACE/PANCE), protein engineering. The lab cohort is the recursive target — protein-engineering + biosecurity ICs who could spin out. Map current/recent lab members for the next ai-bio founder profile.",
       "priority": "P2",
       "status": "pending",
       "tags": [
@@ -608,6 +608,51 @@
         "google-accelerated-science",
         "ai-for-science",
         "residency-alumni"
+      ]
+    },
+    {
+      "name": "Zhengxuan “Zen” Wu",
+      "from_dossier": "aryaman-arora",
+      "discovered_at": "2026-05-30",
+      "context": "Stanford NLP PhD (Potts/Manning lab), lead author on pyvene, ReFT, and AxBench — the interpretability/representation-finetuning tooling principal (Aryaman is co-first on ReFT/AxBench). If anyone in the Stanford causal-interp tooling group commercializes interp infra, Wu is the most likely. Higher-priority spinout-watch than Aryaman within this group.",
+      "priority": "P1",
+      "status": "pending",
+      "tags": [
+        "stanford",
+        "mechanistic-interpretability",
+        "interp-tooling",
+        "pyvene",
+        "pyreft",
+        "spinout-watch"
+      ]
+    },
+    {
+      "name": "Atticus Geiger",
+      "from_dossier": "aryaman-arora",
+      "discovered_at": "2026-05-30",
+      "context": "Originator of Distributed Alignment Search (DAS) and the causal-abstraction theory of mechanistic interpretability (JMLR 2025, 228 cites). Runs the Pr(Ai)2R Group. The theoretical spine of the Stanford causal-interp research line; frequent Aryaman/Wu collaborator.",
+      "priority": "P2",
+      "status": "pending",
+      "tags": [
+        "mechanistic-interpretability",
+        "causal-abstraction",
+        "DAS",
+        "stanford-adjacent"
+      ]
+    },
+    {
+      "name": "Christopher Potts causal-interpretability lab cohort",
+      "from_dossier": "aryaman-arora",
+      "discovered_at": "2026-05-30",
+      "context": "The Potts/Manning Stanford NLP causal-interpretability group is a specific high-output cluster producing both papers (ReFT, AxBench, CausalGym, causal abstraction) and adopted tooling (pyvene, pyreft). Worth mapping as a cohort — members beyond Aryaman Arora, Zhengxuan Wu, Atticus Geiger include Jing Huang, Zheng Wang, and other Potts/Jurafsky advisees. A feeder for interp-commercialization talent (Goodfire/Transluce/Anthropic).",
+      "priority": "P2",
+      "status": "pending",
+      "tags": [
+        "stanford",
+        "chris-potts",
+        "mechanistic-interpretability",
+        "cohort-map",
+        "interp-tooling"
       ]
     }
   ]

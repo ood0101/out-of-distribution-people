@@ -146,6 +146,13 @@ SEED = {
         "next_action": "Email kunvar@mechinterp.com ref RHB +13.3pp DeepSeek sibling-comparison",
         "cluster": "mech-interp",
     },
+    "aryaman-arora": {
+        "urgency_reason": "3rd-year Stanford NLP CS PhD (Potts + Jurafsky), mechanistic interpretability + rare researcher-who-builds. Co-first author (w/ Zhengxuan Wu) on ReFT (NeurIPS 2024 Spotlight, 255 cites; LoReFT 15-65x more param-efficient than LoRA) + AxBench (ICML 2025 Spotlight, 153 cites; 'simple baselines beat SAEs'). Sole-led CausalGym -> ACL 2024 Outstanding Paper + SAC Award. Core contributor on pyvene (879 stars, the DAS/intervention library) + pyreft (1.6k stars). ~1,299 Scholar cites, h-14, i10-17 (top-decile for 3rd-year). Already interned at Transluce (Steinhardt) + Redwood + Apple = one step from interp commercialization. Indian-origin (born India, immigrated ~5, Wiktionary admin as teen writing code for South Asian languages). Georgetown CS+Ling '23 (Nathan Schneider; ACL paper as a first-year; Tropaia CS Award). NSF GRFP. mech-interp cluster anchor w/ Kunvar Thaman (T1) + Neel Nanda (T2); Jurafsky-lab bridge to Kawin Ethayarajh (T1, KTO). NO founding signal (only 'startup' mention is a joke tweet); real probability stays academic; if commercial likely a hire (Goodfire/Transluce/Anthropic) not founder. Voice @aryaman2020 active/funny. Higher-priority spinout-watch within his group is Zhengxuan Wu (tooling lead). T2 relationship-build, long fuse, quarterly.",
+        "urgency_decay_date": None,
+        "channel": "twitter",
+        "next_action": "DM @aryaman2020 (active/funny, do NOT pitch). Lead with a genuine question on the AxBench/SAE result (does steering-via-ReFT win, or is the honest answer still 'just finetune'); name the Goodfire/Transluce/Redwood landscape and correctly note he's already been inside Transluce + Redwood. Distinguish 'builds the tooling' vs 'cites it' (pyvene/pyreft). Coffee in SF, no ask. AUTHORSHIP PRECISION: co-first (not sole) on ReFT/AxBench w/ Zhengxuan Wu; lead on CausalGym; core contributor (not principal) on pyvene/pyreft. RECURSIVE DISCOVERIES TO INDEX: Zhengxuan 'Zen' Wu (P1, Stanford NLP, lead author on pyvene/ReFT/AxBench = the interp-tooling principal + higher-priority spinout-watch) + Atticus Geiger (P2, DAS/causal abstraction originator, Pr(Ai)2R Group).",
+        "cluster": "mech-interp",
+    },
     "kanishk-gandhi": {
         "urgency_reason": "Stanford Goodman lab. Lead researcher on Countdown task R1-Zero used. IIT Kanpur.",
         "urgency_decay_date": None,
