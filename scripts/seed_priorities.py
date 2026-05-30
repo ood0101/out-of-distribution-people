@@ -376,6 +376,13 @@ SEED = {
         "next_action": "Warm intro via Alan or Aditya (LinkedIn mutuals); fallback DM @jennzhaii — lead with Cartesia SSM lineage + Ronak Malde continual-learning cluster",
         "cluster": "continual-learning",
     },
+    "chenglei-si": {
+        "urgency_reason": "Academic anchor of the AI-Scientists cluster. 3rd-year Stanford NLP PhD (Hashimoto + Diyi Yang). 'Can LLMs Generate Novel Research Ideas?' (ICLR 2025, Nature News, 507 cites) + Ideation-Execution Gap (ICLR 2026, Science). Summer 2025 FutureHouse intern. T2 relationship-build — mid-PhD, no founding signal, 2+ yrs from inflection. Watch: FutureHouse/Edison FT return or co-founder pull.",
+        "urgency_decay_date": None,
+        "channel": "twitter",
+        "next_action": "DM @ChengleiSi (fallback sichenglei1125@gmail.com) — lead with the Ideation-Execution Gap (the honest, harder paper), name rekursiv/FutureHouse/Sakana, ask ideation-vs-execution-harness bottleneck + FutureHouse chem/bio takeaway. No pitch.",
+        "cluster": "ai-scientists",
+    },
 }
 
 

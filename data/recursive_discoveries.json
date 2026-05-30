@@ -654,6 +654,50 @@
         "cohort-map",
         "interp-tooling"
       ]
+    },
+    {
+      "name": "FutureHouse team / Sam Rodriques (+ Edison Scientific spinout)",
+      "from_dossier": "chenglei-si",
+      "discovered_at": "2026-05-30",
+      "context": "FutureHouse (Sam Rodriques + Andrew White, Eric-Schmidt-backed AI-for-science nonprofit; agents Crow/Falcon/Owl/Phoenix) spun out the for-profit Edison Scientific ($70M seed). Chenglei interned there summer 2025 on research agents for chem/bio. The org is the direct commercial frontier of the AI-Scientists thesis and a feeder of founding-scientist talent. Map: Sam Rodriques, Andrew White, Edison Scientific founding team, and other 2025 interns/researchers. Peer to rekursiv.ai (Dan Kondratyuk + Joshua Dillon, both T0).",
+      "priority": "P2",
+      "status": "pending",
+      "tags": [
+        "ai-scientists",
+        "futurehouse",
+        "edison-scientific",
+        "ai-for-science",
+        "cohort-map"
+      ]
+    },
+    {
+      "name": "Diyi Yang SALT Lab (Stanford) cohort",
+      "from_dossier": "chenglei-si",
+      "discovered_at": "2026-05-30",
+      "context": "Diyi Yang's Stanford SALT Lab (social NLP, human-AI interaction, research automation) co-advises Chenglei Si with Hashimoto. Worth mapping as a cohort alongside the Hashimoto lab (which also produces Tanishq Kumar, T2). Feeder for AI-Scientists / human-AI-collaboration commercialization talent.",
+      "priority": "P3",
+      "status": "pending",
+      "tags": [
+        "stanford",
+        "diyi-yang",
+        "salt-lab",
+        "ai-scientists",
+        "cohort-map"
+      ]
+    },
+    {
+      "name": "Design2Code collaborators (Yanzhe Zhang, Zhengyuan Yang, Ruibo Liu)",
+      "from_dossier": "chenglei-si",
+      "discovered_at": "2026-05-30",
+      "context": "Co-authors on Design2Code (NAACL 2025, 178 cites, screenshot->front-end-code benchmark): Yanzhe Zhang (Georgia Tech), Zhengyuan Yang (Microsoft), Ruibo Liu (Google DeepMind / ex). Vision-to-code / agentic-coding-eval talent adjacent to both the AI-Scientists and agentic-coding clusters.",
+      "priority": "P3",
+      "status": "pending",
+      "tags": [
+        "design2code",
+        "agentic-coding",
+        "multimodal",
+        "collaborator-map"
+      ]
     }
   ]
 }
