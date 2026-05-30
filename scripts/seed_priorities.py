@@ -39,6 +39,13 @@ SEED = {
         "next_action": "DM @rronak_ — ref continual learning thesis + SWE-1 training-from-scratch story",
         "cluster": "windsurf-cohort",
     },
+    "pannag-sanketi": {
+        "urgency_reason": "Senior DeepMind Robotics departure (Senior Staff SWE / TLM) to stealth robotics+AI. FOUNDED Open X-Embodiment / RT-X ('ImageNet for robotics', 21+ labs), RT-2 co-author, led human-level Table Tennis robot. 14,858 cites, h-30. LinkedIn flipped to 'Stealth Startup - Robotics + AI'; Google Research profile now 404s. Company not yet public = ideal inception window. Reach out before the name leaks.",
+        "urgency_decay_date": None,
+        "channel": "linkedin",
+        "next_action": "LinkedIn DM pannag-sanketi (or X DM @pannag_) — subj 'The ImageNet-for-robotics bet, now as a company'; lead with the data-substrate edge (21 labs -> RT-X) vs Physical Intelligence/Skild/Generalist, ask the 45%-vs-amateur-humans table-tennis agility-gap question, offer $500K-$1M pre-deck.",
+        "cluster": "humanoid-robotics",
+    },
     "michael-elabd": {
         "urgency_reason": "Trajectory Technologies Co-Founder/Director/CFO (CA filing Nov 3 2025) alongside Ronak Malde + Arjun Karanam. Concurrent DeepMind Foundational Research (verified Gemini Robotics arXiv co-author + Gemini Robotics 1.5 contributor). Apr 14 2026 X 'own the grammar' essay = strongest founder-voice artifact in the continual-learning cluster.",
         "urgency_decay_date": None,
