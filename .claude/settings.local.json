@@ -8,7 +8,9 @@
       "WebSearch",
       "WebFetch(domain:en.wikipedia.org)",
       "WebFetch(domain:www.imo-official.org)",
-      "WebFetch(domain:deltainstitutes.org)"
+      "WebFetch(domain:deltainstitutes.org)",
+      "Bash(python3 -c \"import json; q=json.load\\(open\\('/Users/vansh/out of distribution people repo/data/discovery_queue.json'\\)\\); print\\('Queue type:', type\\(q\\).__name__\\); print\\('Top-level keys:', list\\(q.keys\\(\\)\\) if isinstance\\(q,dict\\) else 'list len '+str\\(len\\(q\\)\\)\\);\")",
+      "Bash(python3 *)"
     ]
   }
 }

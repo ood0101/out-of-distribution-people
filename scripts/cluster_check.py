@@ -42,12 +42,15 @@ def parse_iso(s: str | None):
     if not s:
         return None
     try:
-        return datetime.fromisoformat(s.replace("Z", "+00:00"))
+        dt = datetime.fromisoformat(s.replace("Z", "+00:00"))
     except ValueError:
         try:
-            return datetime.fromisoformat(s + "T00:00:00+00:00")
+            dt = datetime.fromisoformat(s + "T00:00:00+00:00")
         except ValueError:
             return None
+    if dt.tzinfo is None:
+        dt = dt.replace(tzinfo=timezone.utc)
+    return dt
 
 
 def days_since(s: str | None) -> int:
