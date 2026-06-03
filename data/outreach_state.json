@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-06-02T09:33:03+00:00",
+  "last_built": "2026-06-03T06:28:57+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -547,6 +547,61 @@
       "channel": "email",
       "next_action": "Email ref Modal scale + ask for intros to IOI-track founders",
       "cluster": "ioi-pipeline",
+      "email_override": null,
+      "outreach_subject_override": null,
+      "outreach_body_override": null,
+      "channels_attempted": []
+    },
+    "alberto-taiuti": {
+      "name": "Alberto Taiuti",
+      "tier": 2,
+      "tier_label": "tier-2: tracking",
+      "category": "outreach",
+      "tags": [
+        "founders",
+        "world-models",
+        "realtime-video",
+        "generative-video",
+        "reactor",
+        "ex-luma",
+        "ex-apple-vision-pro",
+        "graphics-gpu",
+        "italian"
+      ],
+      "indian": false,
+      "delta": false,
+      "one_liner": "Co-Founder & CEO of",
+      "signals": {
+        "tag_stealth_founder": false,
+        "tag_founders": true,
+        "phrase_stealth": true,
+        "phrase_departed": false,
+        "phrase_raising": false,
+        "phrase_founded": true
+      },
+      "last_git_touch": null,
+      "needs_triage": false,
+      "emails": [
+        "alberto@taiuti.com"
+      ],
+      "email_primary": "alberto@taiuti.com",
+      "email_primary_kind": "company",
+      "outreach_subject": null,
+      "outreach_body_preview": null,
+      "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=alberto%40taiuti.com",
+      "twitter_handle": "taiuti",
+      "linkedin_slug": "albtaiuti",
+      "github_handle": "snowzurfer",
+      "status": "not-contacted",
+      "last_contacted": null,
+      "next_action_date": null,
+      "response": null,
+      "notes": "",
+      "urgency_decay_date": null,
+      "urgency_reason": null,
+      "channel": null,
+      "next_action": null,
+      "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
       "outreach_body_override": null,
@@ -7493,7 +7548,7 @@
         "phrase_raising": false,
         "phrase_founded": true
       },
-      "last_git_touch": "2026-05-30T15:14:10+05:30",
+      "last_git_touch": "2026-06-02T15:03:57+05:30",
       "needs_triage": false,
       "emails": [],
       "email_primary": null,
@@ -9447,7 +9502,7 @@
         "phrase_raising": false,
         "phrase_founded": true
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-06-02T15:03:57+05:30",
       "needs_triage": false,
       "emails": [
         "siddhanthaldar@nyu.edu"

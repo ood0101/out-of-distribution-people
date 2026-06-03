@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Recursive discoveries surfaced by dossier agents. Each entry: a person mentioned in a dossier as worth following up. Status: pending|approved|dossiered|rejected.",
-  "last_updated": "2026-06-02",
+  "last_updated": "2026-06-03",
   "discoveries": [
     {
       "name": "Sumith Kulal",
@@ -909,6 +909,60 @@
         "lerrel-pinto",
         "tactile",
         "still-in-lab"
+      ]
+    },
+    {
+      "name": "Alex Yu",
+      "from_dossier": "alberto-taiuti",
+      "discovered_at": "2026-06-03",
+      "context": "MONITOR (not a live lead). Recognized Luma AI Cofounder & CTO; PlenOctrees/Plenoxels/pixelNeRF (Berkeley, Kanazawa lab, ~6,800 cites). Left Luma early 2025 -> NOW on OpenAI image-gen team (demoed ChatGPT Images 2.0 with Sam Altman, Apr 2026). NOT building a new company. Becomes a HARD T0 the day he leaves OpenAI (ex-Luma-CTO + ex-OpenAI-image-lead = top-decile 2nd-time founder). Monitor alexyu.net + @alexyu00 + github @sxyu for next bio flip.",
+      "priority": "P1",
+      "status": "monitor",
+      "tags": [
+        "openai",
+        "ex-luma",
+        "nerf",
+        "world-models",
+        "watch-list"
+      ]
+    },
+    {
+      "name": "Matthew Tancik",
+      "from_dossier": "alberto-taiuti",
+      "discovered_at": "2026-06-03",
+      "context": "Original NeRF co-author (Berkeley); Plenoxels/PlenOctrees collaborator with Alex Yu. NeRF/radiance-field founder-vein. One-line status check worth doing \u2014 where is he now, building?",
+      "priority": "P2",
+      "status": "pending",
+      "tags": [
+        "berkeley",
+        "nerf",
+        "radiance-fields"
+      ]
+    },
+    {
+      "name": "Overworld",
+      "from_dossier": "alberto-taiuti",
+      "discovered_at": "2026-06-03",
+      "context": "World-model foundation lab; named partner/customer of Reactor. Company (not person) to profile \u2014 who founded it, funding, thesis. Real-time world-models cluster.",
+      "priority": "P2",
+      "status": "pending",
+      "tags": [
+        "world-models",
+        "foundation-lab",
+        "company-to-profile"
+      ]
+    },
+    {
+      "name": "Bryce Schmidtchen",
+      "from_dossier": "alberto-taiuti",
+      "discovered_at": "2026-06-03",
+      "context": "Co-founder & CTO of Reactor (with Alberto Taiuti). Ex-Apple Vision Pro technical lead; kernel/CV optimization. NOT a lead (committed to Reactor) \u2014 indexed as a high-quality node.",
+      "priority": "P3",
+      "status": "pending",
+      "tags": [
+        "reactor",
+        "ex-apple-vision-pro",
+        "committed"
       ]
     }
   ]
