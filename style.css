@@ -48,6 +48,41 @@ nav {
   border-bottom: 1px solid var(--border);
 }
 
+/* Sticky nav with jump links (index) */
+nav.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  margin-bottom: 2rem;
+  padding-top: 0.6rem;
+  background: var(--bg);
+  backdrop-filter: saturate(180%) blur(6px);
+}
+nav.sticky-nav .nav-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+nav.sticky-nav .site-title { margin-bottom: 0; }
+.nav-jump {
+  display: flex;
+  gap: 1.1rem;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.nav-jump a {
+  color: var(--fg-muted);
+  text-decoration: none;
+  padding-bottom: 0.15rem;
+  border-bottom: 1px solid transparent;
+}
+.nav-jump a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+/* offset anchors so sticky nav doesn't cover the target */
+.jump-anchor, #directory { scroll-margin-top: 64px; }
+
 nav .site-title {
   font-size: 0.8rem;
   font-family: var(--mono);
@@ -397,9 +432,11 @@ img.avatar::after {
 }
 
 /* =========================================
-   "NEW" BADGE on recently updated cards
+   "NEW" BADGE — only on genuinely recent cards
+   (.is-recent is applied by JS when data-updated
+    is within the recency window; see index.html)
    ========================================= */
-.person-card[data-updated]::before {
+.person-card.is-recent::before {
   content: 'NEW';
   position: absolute;
   top: 0.35rem;
@@ -416,12 +453,38 @@ img.avatar::after {
 }
 
 /* Dense cards: smaller badge */
-.card-grid.dense .person-card[data-updated]::before {
+.card-grid.dense .person-card.is-recent::before {
   font-size: 0.45rem;
   padding: 0.05rem 0.25rem;
   top: 0.25rem;
   right: 0.25rem;
 }
+
+/* =========================================
+   TIER CHIP — at-a-glance tier on each card
+   (injected by JS from data-tier)
+   ========================================= */
+.card-tier {
+  position: absolute;
+  top: 0.35rem;
+  left: 0.35rem;
+  font-family: var(--mono);
+  font-size: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #fff;
+  padding: 0.1rem 0.32rem;
+  border-radius: 2px;
+  line-height: 1.3;
+  z-index: 1;
+}
+.card-tier-0 { background: #c43d2e; }            /* T0 — active pursuit (accent red) */
+.card-tier-1 { background: #d98324; }            /* T1 — high conviction (amber) */
+.card-tier-2 { background: #6b7280; }            /* T2 — tracking (slate) */
+.card-tier-3 { background: #b8b8b0; }            /* T3 — indexed (muted) */
+.card-tier-rel { background: #2f6f4f; }          /* LP / peer relationships (green) */
+/* nudge avatar/name clear of the chip */
+.person-card .card-body { position: relative; }
 
 /* =========================================
    RECENT UPDATES section
