@@ -44,27 +44,30 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parent.parent
 STATE = REPO / "data" / "outreach_state.json"
 BUILD_VIEW = REPO / "data" / "build_outreach_view.py"
+BUILD_DIR = REPO / "data" / "build_directory.py"
 
 FOLLOWUP_DAYS_AFTER_SEND = 14
 
 
 def rerender_panel():
-    """Auto-rebuild the index.html outreach panel after status changes.
+    """Auto-rebuild the outreach queue (queue.html) AND the directory table
+    data (directory.json) after status changes, so both views stay live.
 
     Silent on success; surfaces errors. Skip with MARK_NO_RENDER=1.
     """
     import os
     if os.environ.get("MARK_NO_RENDER") == "1":
         return
-    try:
-        subprocess.run(
-            ["python3", str(BUILD_VIEW)],
-            cwd=REPO, capture_output=True, text=True, check=True,
-        )
-    except subprocess.CalledProcessError as e:
-        print(f"WARN: index re-render failed: {e.stderr[:200]}", file=sys.stderr)
-    except FileNotFoundError:
-        pass  # build_outreach_view.py missing — silently skip
+    for script, label in ((BUILD_VIEW, "queue"), (BUILD_DIR, "directory")):
+        try:
+            subprocess.run(
+                ["python3", str(script)],
+                cwd=REPO, capture_output=True, text=True, check=True,
+            )
+        except subprocess.CalledProcessError as e:
+            print(f"WARN: {label} re-render failed: {e.stderr[:200]}", file=sys.stderr)
+        except FileNotFoundError:
+            pass  # builder missing — silently skip
 
 
 def usage():

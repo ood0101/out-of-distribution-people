@@ -40,6 +40,7 @@ refresh:
 
 render:
 	@python3 data/build_outreach_view.py
+	@python3 data/build_directory.py
 
 install-alias:
 	@if ! grep -q "alias morning=" ~/.zshrc 2>/dev/null; then \

@@ -94,8 +94,8 @@ cluster, email_override, subject_override) are preserved across rebuilds of
 Add to your crontab (`crontab -e`):
 
 ```cron
-# 7am daily: refresh state + render index panel
-0 7 * * * cd "/Users/vansh/out of distribution people repo" && python3 data/build_outreach_state.py > /dev/null && python3 data/build_outreach_view.py > /dev/null
+# 7am daily: refresh state + render queue.html + directory table data
+0 7 * * * cd "/Users/vansh/out of distribution people repo" && python3 data/build_outreach_state.py > /dev/null && python3 data/build_outreach_view.py > /dev/null && python3 data/build_directory.py > /dev/null
 
 # 7:05am daily: cluster activity check (output goes to file you can grep)
 5 7 * * * cd "/Users/vansh/out of distribution people repo" && python3 scripts/cluster_check.py > /tmp/cluster_check.log 2>&1

@@ -65,9 +65,13 @@ def main():
             if line.strip():
                 print(f"  {DIM}{line}{RESET}")
 
-    # 2. Re-render index panel
-    section("Re-rendering index outreach panel")
+    # 2. Re-render the outreach queue page + the directory table data
+    section("Re-rendering queue.html + directory table")
     out = run(DATA / "build_outreach_view.py", capture=True)
+    if out:
+        for line in out.splitlines():
+            print(f"  {DIM}{line.strip()}{RESET}")
+    out = run(DATA / "build_directory.py", capture=True)
     if out:
         for line in out.splitlines():
             print(f"  {DIM}{line.strip()}{RESET}")
