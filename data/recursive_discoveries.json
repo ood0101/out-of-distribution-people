@@ -979,6 +979,33 @@
         "tilde-research",
         "learning-dynamics"
       ]
+    },
+    {
+      "name": "Rylan Schaeffer",
+      "from_dossier": "dhruv-pai",
+      "discovered_at": "2026-06-03",
+      "priority": "P2",
+      "status": "pending",
+      "context": "Stanford STAIR-lab researcher; Dhruv Pai's advisor. Prolific on model collapse / scaling / interp. Lab to map — produces precocious researchers (Pai). Possible founder-factory node.",
+      "tags": [
+        "stanford",
+        "stair-lab",
+        "mech-interp",
+        "advisor"
+      ]
+    },
+    {
+      "name": "Hazel (Mason Wang's prior startup)",
+      "from_dossier": "mason-wang",
+      "discovered_at": "2026-06-03",
+      "priority": "P3",
+      "status": "pending",
+      "context": "Mason Wang's first company (Co-Founder/CTO, 2023-24, $2M Pear VC at his 17). Profile the company + any co-founders/team as a node; Pear relationship is a warm path to Mason's next thing.",
+      "tags": [
+        "hazel",
+        "pear-vc",
+        "company-to-profile"
+      ]
     }
   ]
 }

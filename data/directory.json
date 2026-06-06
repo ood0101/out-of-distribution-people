@@ -1,6 +1,6 @@
 {
- "generated": "2026-06-03",
- "count": 225,
+ "generated": "2026-06-06",
+ "count": 227,
  "people": [
   {
    "slug": "pannag-sanketi",
@@ -445,6 +445,78 @@
    "delta": true,
    "needs_triage": false,
    "urgency": true
+  },
+  {
+   "slug": "dhruv-pai",
+   "name": "Dhruv Pai",
+   "tier": 1,
+   "role": "Co-Founder & Chief Scientist, Tilde Research — Stanford math+CS (STAIR lab)",
+   "spike": "T1. ~22yo Stanford researcher, Tilde Chief Scientist. Elite pedigree: Regeneron STS, ISEF ×2, Presidential Scholar. Indian. Research early (FACADE 1st-author workshop; Model Collapse middle-author COLM'24). At funded Tilde = relationship-build.",
+   "tags": [
+    "indian",
+    "researchers",
+    "founders",
+    "mechanistic-interpretability",
+    "mech-interp",
+    "tilde-research",
+    "stanford",
+    "stair-lab",
+    "regeneron-sts",
+    "isef"
+   ],
+   "cluster": null,
+   "signals": [
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "",
+   "channel": null,
+   "twitter": "dhruv31415",
+   "linkedin": "dhruvpai",
+   "email": null,
+   "gmail_url": null,
+   "indian": true,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
+  },
+  {
+   "slug": "mason-wang",
+   "name": "Mason Wang",
+   "tier": 1,
+   "role": "Co-Founder & (former) CTO, Tilde Research — Stanford, 2× technical founder",
+   "spike": "T1, the inflection one. 2× founder (Tilde CTO + Hazel CTO at 17, $2M Pear). PiTorch (LLM on bare-metal Pi Zero), Activault, Sparsity-is-Cool (co-first w/ Dhruv Pai). Résumé says left Tilde Jul'25, back at Stanford 'figuring out what's next' (departure UNCONFIRMED — LinkedIn still @ Tilde). If founds → T0.",
+   "tags": [
+    "founders",
+    "researchers",
+    "mechanistic-interpretability",
+    "mech-interp",
+    "tilde-research",
+    "systems-ml",
+    "stanford",
+    "pear-vc",
+    "neo-scholar",
+    "two-time-founder"
+   ],
+   "cluster": null,
+   "signals": [
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "",
+   "channel": null,
+   "twitter": "masonwang025",
+   "linkedin": "mason-wang",
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
   },
   {
    "slug": "vikram-sundar",
@@ -2175,7 +2247,7 @@
    "status": "not-contacted",
    "last_contacted": null,
    "next_action_date": null,
-   "updated": "",
+   "updated": "2026-06-06",
    "channel": null,
    "twitter": null,
    "linkedin": "benjaminkeigwin",

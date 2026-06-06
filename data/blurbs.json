@@ -870,5 +870,13 @@
  "benjamin-keigwin": {
   "role": "Co-Founder & CEO, Tilde Research — mechanistic-interpretability lab ($8M Khosla seed)",
   "spike": "T2 — track, not pursue. On-thesis interp lab (Sieve/Telescope/SonicMoE) but already Khosla-funded = past inception; personal research record thin (RouterBench 5th author). Math PhD UPenn. Co-founder Dhruv Pai (Stanford STAIR)."
+ },
+ "dhruv-pai": {
+  "role": "Co-Founder & Chief Scientist, Tilde Research — Stanford math+CS (STAIR lab)",
+  "spike": "T1. ~22yo Stanford researcher, Tilde Chief Scientist. Elite pedigree: Regeneron STS, ISEF ×2, Presidential Scholar. Indian. Research early (FACADE 1st-author workshop; Model Collapse middle-author COLM'24). At funded Tilde = relationship-build."
+ },
+ "mason-wang": {
+  "role": "Co-Founder & (former) CTO, Tilde Research — Stanford, 2× technical founder",
+  "spike": "T1, the inflection one. 2× founder (Tilde CTO + Hazel CTO at 17, $2M Pear). PiTorch (LLM on bare-metal Pi Zero), Activault, Sparsity-is-Cool (co-first w/ Dhruv Pai). Résumé says left Tilde Jul'25, back at Stanford 'figuring out what's next' (departure UNCONFIRMED — LinkedIn still @ Tilde). If founds → T0."
  }
 }
