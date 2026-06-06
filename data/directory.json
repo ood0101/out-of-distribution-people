@@ -1,6 +1,6 @@
 {
- "generated": "2026-06-02",
- "count": 224,
+ "generated": "2026-06-03",
+ "count": 225,
  "people": [
   {
    "slug": "pannag-sanketi",
@@ -2153,6 +2153,40 @@
    "urgency": false
   },
   {
+   "slug": "benjamin-keigwin",
+   "name": "Benjamin Keigwin",
+   "tier": 2,
+   "role": "Co-Founder & CEO, Tilde Research — mechanistic-interpretability lab ($8M Khosla seed)",
+   "spike": "T2 — track, not pursue. On-thesis interp lab (Sieve/Telescope/SonicMoE) but already Khosla-funded = past inception; personal research record thin (RouterBench 5th author). Math PhD UPenn. Co-founder Dhruv Pai (Stanford STAIR).",
+   "tags": [
+    "founders",
+    "mechanistic-interpretability",
+    "mech-interp",
+    "tilde-research",
+    "interp-lab",
+    "pretraining-science",
+    "khosla",
+    "math-phd"
+   ],
+   "cluster": null,
+   "signals": [
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "",
+   "channel": null,
+   "twitter": null,
+   "linkedin": "benjaminkeigwin",
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
+  },
+  {
    "slug": "alberto-taiuti",
    "name": "Alberto Taiuti",
    "tier": 2,
@@ -2177,7 +2211,7 @@
    "status": "not-contacted",
    "last_contacted": null,
    "next_action_date": null,
-   "updated": "",
+   "updated": "2026-06-03",
    "channel": null,
    "twitter": "taiuti",
    "linkedin": "albtaiuti",

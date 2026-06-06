@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-06-03T06:28:57+00:00",
+  "last_built": "2026-06-06T11:15:32+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -579,7 +579,7 @@
         "phrase_raising": false,
         "phrase_founded": true
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-06-03T11:59:09+05:30",
       "needs_triage": false,
       "emails": [
         "alberto@taiuti.com"
@@ -1725,6 +1725,58 @@
       "twitter_handle": "barisakis",
       "linkedin_slug": "barisakis",
       "github_handle": "barisakis",
+      "status": "not-contacted",
+      "last_contacted": null,
+      "next_action_date": null,
+      "response": null,
+      "notes": "",
+      "urgency_decay_date": null,
+      "urgency_reason": null,
+      "channel": null,
+      "next_action": null,
+      "cluster": null,
+      "email_override": null,
+      "outreach_subject_override": null,
+      "outreach_body_override": null,
+      "channels_attempted": []
+    },
+    "benjamin-keigwin": {
+      "name": "Benjamin Keigwin",
+      "tier": 2,
+      "tier_label": "tier-2: tracking",
+      "category": "outreach",
+      "tags": [
+        "founders",
+        "mechanistic-interpretability",
+        "mech-interp",
+        "tilde-research",
+        "interp-lab",
+        "pretraining-science",
+        "khosla",
+        "math-phd"
+      ],
+      "indian": false,
+      "delta": false,
+      "one_liner": "Co-Founder & CEO of",
+      "signals": {
+        "tag_stealth_founder": false,
+        "tag_founders": true,
+        "phrase_stealth": false,
+        "phrase_departed": false,
+        "phrase_raising": false,
+        "phrase_founded": false
+      },
+      "last_git_touch": null,
+      "needs_triage": false,
+      "emails": [],
+      "email_primary": null,
+      "email_primary_kind": null,
+      "outreach_subject": null,
+      "outreach_body_preview": null,
+      "gmail_url": null,
+      "twitter_handle": null,
+      "linkedin_slug": "benjaminkeigwin",
+      "github_handle": null,
       "status": "not-contacted",
       "last_contacted": null,
       "next_action_date": null,
