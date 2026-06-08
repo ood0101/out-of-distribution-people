@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-06-08T10:15:56+00:00",
+  "last_built": "2026-06-08T13:06:10+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -1817,7 +1817,7 @@
         "phrase_raising": true,
         "phrase_founded": true
       },
-      "last_git_touch": "2026-03-23T13:32:31+05:30",
+      "last_git_touch": "2026-06-08T18:19:12+05:30",
       "needs_triage": true,
       "emails": [],
       "email_primary": null,
@@ -5356,6 +5356,60 @@
       "outreach_body_override": null,
       "channels_attempted": []
     },
+    "josh-meier": {
+      "name": "Josh Meier",
+      "tier": 2,
+      "tier_label": "tier-2: tracking",
+      "category": "outreach",
+      "tags": [
+        "founders",
+        "bio-ai",
+        "protein-structure",
+        "chai-discovery",
+        "ex-meta-fair",
+        "esm",
+        "ex-absci",
+        "harvard",
+        "child-prodigy",
+        "intel-sts"
+      ],
+      "indian": false,
+      "delta": false,
+      "one_liner": "Co-Founder of",
+      "signals": {
+        "tag_stealth_founder": false,
+        "tag_founders": true,
+        "phrase_stealth": true,
+        "phrase_departed": false,
+        "phrase_raising": false,
+        "phrase_founded": true
+      },
+      "last_git_touch": null,
+      "needs_triage": false,
+      "emails": [],
+      "email_primary": null,
+      "email_primary_kind": null,
+      "outreach_subject": null,
+      "outreach_body_preview": null,
+      "gmail_url": null,
+      "twitter_handle": null,
+      "linkedin_slug": "joshmeier",
+      "github_handle": "joshim5",
+      "status": "not-contacted",
+      "last_contacted": null,
+      "next_action_date": null,
+      "response": null,
+      "notes": "",
+      "urgency_decay_date": null,
+      "urgency_reason": null,
+      "channel": null,
+      "next_action": null,
+      "cluster": null,
+      "email_override": null,
+      "outreach_subject_override": null,
+      "outreach_body_override": null,
+      "channels_attempted": []
+    },
     "josh-sirota": {
       "name": "Josh Sirota",
       "tier": null,
@@ -6753,7 +6807,7 @@
         "phrase_raising": false,
         "phrase_founded": true
       },
-      "last_git_touch": "2026-06-06T16:53:50+05:30",
+      "last_git_touch": "2026-06-08T18:19:12+05:30",
       "needs_triage": false,
       "emails": [],
       "email_primary": null,
@@ -10528,7 +10582,7 @@
         "phrase_raising": false,
         "phrase_founded": false
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-06-08T15:46:16+05:30",
       "needs_triage": false,
       "emails": [
         "tanvirb@stanford.edu"

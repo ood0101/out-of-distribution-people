@@ -1,6 +1,6 @@
 {
- "generated": "2026-06-06",
- "count": 228,
+ "generated": "2026-06-08",
+ "count": 229,
  "people": [
   {
    "slug": "pannag-sanketi",
@@ -447,6 +447,42 @@
    "urgency": true
   },
   {
+   "slug": "mason-wang",
+   "name": "Mason Wang",
+   "tier": 1,
+   "role": "Co-Founder & (former) CTO, Tilde Research — Stanford, 2× technical founder",
+   "spike": "T1 on the person; no live inflection. 2× founder (Tilde CTO + Hazel CTO at 17, $2M Pear). PiTorch (LLM on bare-metal Pi Zero, no OS), Activault, Sparsity-is-Cool (co-first w/ Dhruv Pai). CORRECTED: not pre-founding — left Tilde, now at Stanford + Neuralink 'Conceptual Telepathy' team. Watch; T0 trigger = he leaves to found.",
+   "tags": [
+    "founders",
+    "researchers",
+    "mechanistic-interpretability",
+    "mech-interp",
+    "tilde-research",
+    "systems-ml",
+    "stanford",
+    "pear-vc",
+    "neo-scholar",
+    "two-time-founder"
+   ],
+   "cluster": null,
+   "signals": [
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "2026-06-08",
+   "channel": null,
+   "twitter": "masonwang025",
+   "linkedin": "mason-wang",
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
+  },
+  {
    "slug": "dhruv-pai",
    "name": "Dhruv Pai",
    "tier": 1,
@@ -478,42 +514,6 @@
    "email": null,
    "gmail_url": null,
    "indian": true,
-   "delta": false,
-   "needs_triage": false,
-   "urgency": false
-  },
-  {
-   "slug": "mason-wang",
-   "name": "Mason Wang",
-   "tier": 1,
-   "role": "Co-Founder & (former) CTO, Tilde Research — Stanford, 2× technical founder",
-   "spike": "T1 on the person; no live inflection. 2× founder (Tilde CTO + Hazel CTO at 17, $2M Pear). PiTorch (LLM on bare-metal Pi Zero, no OS), Activault, Sparsity-is-Cool (co-first w/ Dhruv Pai). CORRECTED: not pre-founding — left Tilde, now at Stanford + Neuralink 'Conceptual Telepathy' team. Watch; T0 trigger = he leaves to found.",
-   "tags": [
-    "founders",
-    "researchers",
-    "mechanistic-interpretability",
-    "mech-interp",
-    "tilde-research",
-    "systems-ml",
-    "stanford",
-    "pear-vc",
-    "neo-scholar",
-    "two-time-founder"
-   ],
-   "cluster": null,
-   "signals": [
-    "founder"
-   ],
-   "status": "not-contacted",
-   "last_contacted": null,
-   "next_action_date": null,
-   "updated": "2026-06-06",
-   "channel": null,
-   "twitter": "masonwang025",
-   "linkedin": "mason-wang",
-   "email": null,
-   "gmail_url": null,
-   "indian": false,
    "delta": false,
    "needs_triage": false,
    "urgency": false
@@ -2225,6 +2225,43 @@
    "urgency": false
   },
   {
+   "slug": "josh-meier",
+   "name": "Josh Meier",
+   "tier": 2,
+   "role": "Co-Founder, Chai Discovery (protein-structure / biology AI) — ex-Meta FAIR ESM, ex-Absci CAIO",
+   "spike": "T2 track (Chai well-funded: Thrive/OpenAI/Dimension). The canonical child-prodigy origin: at 16 led Provita (15-person HS biotech, 'flying syringe' to FDA), Intel STS 4th, Harvard CS, GUIDES (Nature Methods '17 w/ Feng Zhang). 'CEO' unverified (co-founder 1 of 4). Showcase for the new origin/texture layers.",
+   "tags": [
+    "founders",
+    "bio-ai",
+    "protein-structure",
+    "chai-discovery",
+    "ex-meta-fair",
+    "esm",
+    "ex-absci",
+    "harvard",
+    "child-prodigy",
+    "intel-sts"
+   ],
+   "cluster": null,
+   "signals": [
+    "stealth",
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "",
+   "channel": null,
+   "twitter": null,
+   "linkedin": "joshmeier",
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
+  },
+  {
    "slug": "tanvir-bhathal",
    "name": "Tanvir Bhathal",
    "tier": 2,
@@ -2248,7 +2285,7 @@
    "status": "not-contacted",
    "last_contacted": null,
    "next_action_date": null,
-   "updated": "",
+   "updated": "2026-06-08",
    "channel": null,
    "twitter": null,
    "linkedin": "tanvir-bhathal",
@@ -2784,6 +2821,40 @@
    "indian": false,
    "delta": false,
    "needs_triage": false,
+   "urgency": false
+  },
+  {
+   "slug": "benjamin-spector",
+   "name": "Benjamin F Spector",
+   "tier": null,
+   "role": "Co-founder, Flapping Airplanes ($1.5B)",
+   "spike": "IMO Silver, IOI Gold, Hertz Fellow. ThunderKittens",
+   "tags": [
+    "catalyst",
+    "GPU systems",
+    "data-efficient learning",
+    "kernel engineering",
+    "incubator",
+    "Hertz Fellow",
+    "Prod"
+   ],
+   "cluster": null,
+   "signals": [
+    "raising",
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "2026-06-08",
+   "channel": null,
+   "twitter": "bfspector",
+   "linkedin": null,
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
+   "delta": false,
+   "needs_triage": true,
    "urgency": false
   },
   {
@@ -6387,40 +6458,6 @@
    "channel": null,
    "twitter": "barisakis",
    "linkedin": "barisakis",
-   "email": null,
-   "gmail_url": null,
-   "indian": false,
-   "delta": false,
-   "needs_triage": true,
-   "urgency": false
-  },
-  {
-   "slug": "benjamin-spector",
-   "name": "Benjamin F Spector",
-   "tier": null,
-   "role": "Co-founder, Flapping Airplanes ($1.5B)",
-   "spike": "IMO Silver, IOI Gold, Hertz Fellow. ThunderKittens",
-   "tags": [
-    "catalyst",
-    "GPU systems",
-    "data-efficient learning",
-    "kernel engineering",
-    "incubator",
-    "Hertz Fellow",
-    "Prod"
-   ],
-   "cluster": null,
-   "signals": [
-    "raising",
-    "founder"
-   ],
-   "status": "not-contacted",
-   "last_contacted": null,
-   "next_action_date": null,
-   "updated": "2026-03-23",
-   "channel": null,
-   "twitter": "bfspector",
-   "linkedin": null,
    "email": null,
    "gmail_url": null,
    "indian": false,
