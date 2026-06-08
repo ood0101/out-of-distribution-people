@@ -388,3 +388,34 @@ Origin and texture gems are the most repeated and the least sourced. The juicier
 - **Distinguish self-description from independent verification.** "Principal developer of ESM-1b" (Josh Meier's own bio) vs. "2nd author on Rives et al. 2019" (the paper) — cite the verifiable one. "CEO of Chai" is unconfirmed; "co-founder, one of four" is sourced.
 - **Beware the namesake.** Common names (Benjamin Spector, Kunvar Thaman) attract false-positive papers and profiles. Confirm identity via place/time/co-author/handle before attaching a claim. The "fuzzy-logic interpretability" Neurocomputing paper is a different Thaman — do not cite.
 - **Gated ≠ confirmed.** Private YouTube videos, login-walled Strava/Instagram, rate-limited Manifund pages: record the title/handle and the fact that it exists, mark the *content* unverified, and never invent the inside.
+
+---
+
+### Transcript Mining — the highest-yield, most-missed source
+
+**The failure mode this fixes (observed, real):** a research agent correctly found the single best video on Ben Spector (Stanford Hidden Layer Podcast #103) and even labeled it "the best 'you can hear it' asset" — then **could not extract a single fact from it**, because it had no way to listen. The richest intel about exceptional people is *said out loud and never written down*. The gap is never discovery; it is **extraction**.
+
+**The fix — a standing capability.** `scripts/transcript.py <youtube_url>` (yt-dlp under the hood) turns any YouTube/podcast video into a clean, timestamped, deduplicated transcript in ~2 seconds. Mine it with `--grep "term1,term2"` or `--around <seconds>`.
+
+```
+python3 scripts/transcript.py "https://youtube.com/watch?v=XXXX" --out /tmp/p.txt
+python3 scripts/transcript.py "<url>" --grep "grew up,founded,my brother,new lab"
+```
+
+**MANDATORY for every Tier-0/1 dossier:** after the origin/texture agents name the best 1–3 video/podcast appearances, PULL THE TRANSCRIPTS and mine them before writing. Do not file a high-conviction dossier with an un-listened-to flagship interview sitting in the sources.
+
+**What only the tape gives you (worked example — the SAME video the agent couldn't use):**
+- The Cursor founding story in his own words: *"I was actually on the original founding team of Cursor, although I left very early."* (text-only had only "early contributor")
+- The "Cursor wanted him back" lore, sourced: Cursor's President on record — *"We've tried to get him back multiple times."*
+- The network edge, said openly: he lives in a 4-person house on the Filbert Steps with **Cursor's President + a Cursor co-founder + his brother** — the exact roommate-graph that was previously "borderline-private, no public source."
+- The cello hobby, corroborated by a housemate: *"He plays cello at midnight."*
+
+**WHERE THE SPOKEN WORD LIVES:**
+- **YouTube** (podcasts, conference talks, lab channels, "fireside chats") → `transcript.py` directly.
+- **Podcasts not on YouTube** (Latent Space, No Priors, the Hidden Layer, a16z, Lightcone) → most mirror to YouTube (find that URL); many also publish transcripts on their own site — check first.
+- **Substack / newsletters** → `site:substack.com "<name>"`, plus The Information / Stratechery / personal newsletters where founder profiles and asides live.
+- **Twitter/X Spaces, Discord stages, livestreams** → often archived to YouTube afterward.
+
+**LORE TOLERANCE — calibrated.** The owner is fine with lore, *because some of the best signal only exists in spoken/social form and no one writes it on a profile.* But distinguish sharply:
+- **Spoken-word self-statement on a recorded podcast = PRIMARY SOURCE**, not lore. Cite it as *"his own words, [podcast], [timestamp]."* This is the strongest tier of human-layer evidence.
+- **Genuine unsourced rumor** (e.g., a specific "~10% / $2.5B offer" figure with no recording or document) = **flag as lore**, include if useful but never launder into fact. The tape may source the *qualitative* claim ("they tried to get him back") while the *specific number* stays lore — state each as exactly what it is.
