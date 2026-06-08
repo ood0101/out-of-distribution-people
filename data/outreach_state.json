@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-06-08T13:06:10+00:00",
+  "last_built": "2026-06-08T13:57:43+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -1607,7 +1607,7 @@
       ],
       "indian": false,
       "delta": true,
-      "one_liner": "Rox (Co-Founder/AI), Stanford CS PhD, Knight-Hennessy Scholar",
+      "one_liner": "prev",
       "signals": {
         "tag_stealth_founder": false,
         "tag_founders": true,
@@ -1817,7 +1817,7 @@
         "phrase_raising": true,
         "phrase_founded": true
       },
-      "last_git_touch": "2026-06-08T18:19:12+05:30",
+      "last_git_touch": "2026-06-08T18:48:01+05:30",
       "needs_triage": true,
       "emails": [],
       "email_primary": null,
@@ -2677,7 +2677,7 @@
         "phrase_stealth": false,
         "phrase_departed": false,
         "phrase_raising": false,
-        "phrase_founded": false
+        "phrase_founded": true
       },
       "last_git_touch": "2026-03-29T11:35:09+05:30",
       "needs_triage": false,
@@ -4409,14 +4409,14 @@
       ],
       "indian": true,
       "delta": false,
-      "one_liner": "Stanford CS MS student (2024–2026), BS CS with distinction '25 (GPA 4.04/4.0, Tau Beta Pi, Phi Beta Kappa). Research with Chris R&eacute; at",
+      "one_liner": "",
       "signals": {
         "tag_stealth_founder": false,
         "tag_founders": true,
         "phrase_stealth": true,
         "phrase_departed": false,
         "phrase_raising": false,
-        "phrase_founded": false
+        "phrase_founded": true
       },
       "last_git_touch": "2026-04-24T08:39:00-03:00",
       "needs_triage": false,
@@ -5236,7 +5236,7 @@
         "phrase_stealth": false,
         "phrase_departed": false,
         "phrase_raising": false,
-        "phrase_founded": false
+        "phrase_founded": true
       },
       "last_git_touch": "2026-03-26T13:20:51+05:30",
       "needs_triage": true,
@@ -5384,7 +5384,7 @@
         "phrase_raising": false,
         "phrase_founded": true
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-06-08T18:37:31+05:30",
       "needs_triage": false,
       "emails": [],
       "email_primary": null,
@@ -6252,7 +6252,7 @@
         "phrase_raising": false,
         "phrase_founded": false
       },
-      "last_git_touch": "2026-05-09T19:21:28+05:30",
+      "last_git_touch": "2026-06-08T18:37:31+05:30",
       "needs_triage": false,
       "emails": [
         "kunvar@mechinterp.com",
@@ -6807,7 +6807,7 @@
         "phrase_raising": false,
         "phrase_founded": true
       },
-      "last_git_touch": "2026-06-08T18:19:12+05:30",
+      "last_git_touch": "2026-06-08T18:37:31+05:30",
       "needs_triage": false,
       "emails": [],
       "email_primary": null,
@@ -9716,7 +9716,7 @@
         "phrase_raising": false,
         "phrase_founded": true
       },
-      "last_git_touch": "2026-06-02T15:03:57+05:30",
+      "last_git_touch": "2026-06-08T18:37:31+05:30",
       "needs_triage": false,
       "emails": [
         "siddhanthaldar@nyu.edu"
@@ -9872,12 +9872,14 @@
       },
       "last_git_touch": "2026-03-26T13:20:51+05:30",
       "needs_triage": true,
-      "emails": [],
-      "email_primary": null,
-      "email_primary_kind": null,
+      "emails": [
+        "simonguo@stanford.edu"
+      ],
+      "email_primary": "simonguo@stanford.edu",
+      "email_primary_kind": "academic",
       "outreach_subject": null,
       "outreach_body_preview": null,
-      "gmail_url": null,
+      "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=simonguo%40stanford.edu",
       "twitter_handle": "simonguozirui",
       "linkedin_slug": "simonguozirui",
       "github_handle": null,
@@ -10114,9 +10116,9 @@
       "outreach_subject": null,
       "outreach_body_preview": null,
       "gmail_url": null,
-      "twitter_handle": null,
+      "twitter_handle": "bfspector",
       "linkedin_slug": "stuartsul",
-      "github_handle": null,
+      "github_handle": "stuartsul",
       "status": "not-contacted",
       "last_contacted": null,
       "next_action_date": null,

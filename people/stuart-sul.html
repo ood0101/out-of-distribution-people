@@ -54,6 +54,107 @@
     <div class="label">&#9670; Alpha Insight</div>
     <p>Stuart sits at the critical intersection of ML systems research (Hazy Research / ThunderKittens) and product (Cursor). Kernel-level optimization is the bottleneck for AI product performance, and his dual role means cutting-edge research flows directly into the most-used AI coding tool.</p>
   </div>
+  <!-- HUMAN LAYERS (origin + texture, transcript-mined), added 2026-06-03 -->
+  <section>
+  <h2>Origin & Early Spike</h2>
+
+  <div class="spike-box">
+    <div class="label">◆ The shape of the spike</div>
+    <p>The "you could see it early" story here is <strong>not</strong> an olympiad pedigree — no ICPC/IOI/Codeforces record surfaced despite targeted search. It is <strong>elite-university dominance plus an unusual real-stakes detour</strong>: <strong>ranked #1 in his class at Seoul National University</strong> (Korea's top university), <strong>GPA 4.21/4.3</strong> in CS & Engineering, on a full <strong>National Science and Engineering Scholarship for Gifted Students</strong> — then he interrupted that #1 track to serve <strong>21 months as a U.S. Army Combat Medic (MOS 68W), Sergeant, in a cavalry unit via the KATUSA program (Nov 2017–Aug 2019)</strong>, returned, became the sole technical co-founder of a startup, and only then arrived at Stanford. His Stanford MS was funded by the <strong>Kwanjeong Educational Foundation</strong> fellowship, one of Korea's most selective graduate awards. (All: <a href="https://stuartsul.com/">stuartsul.com</a>, his own CV.)</p>
+  </div>
+
+  <ul>
+    <li class="small"><strong>SNU rank #1, not KAIST.</strong> BS in CS & Engineering, <strong>GPA 4.21/4.3, class rank #1</strong>, full gifted-students national scholarship (<a href="https://stuartsul.com/">stuartsul.com</a>). Corrects the earlier "KAIST" guess in this repo.</li>
+    <li class="small"><strong>Two elite Korean awards, back to back:</strong> the government <strong>National Science and Engineering Scholarship for Gifted Students</strong> (undergrad) and the <strong>Kwanjeong fellowship</strong> (funded his Stanford MS) — an elite-cohort signal in its own right (<a href="https://stuartsul.com/">stuartsul.com</a>).</li>
+    <li class="small"><strong>Now a Stanford CS PhD student, not an MS.</strong> Admitted Autumn 2024; MS→PhD, both advised by <strong>Chris Ré</strong> in Hazy Research (<a href="https://stuartsul.com/">stuartsul.com</a>).</li>
+    <li class="small"><strong>Serious electric guitarist since 2008</strong> — "performed as lead guitarist and producer for multiple rock bands since 2008" and "released two albums" (<a href="https://stuartsul.com/">stuartsul.com</a>). He started young; don't over-read the 2008 date (it is when he started, not when albums dropped).</li>
+    <li class="small"><strong>A grad-student side project that became Stanford course material:</strong> his bare-metal <strong>ELF32 dynamic linker for Raspberry Pi</strong> (C) is, per his own framing, used as a lab in <strong>Stanford CS 240LX</strong> — a real systems spike (<a href="https://stuartsul.com/">stuartsul.com</a>; <a href="https://github.com/StuartSul">github.com/StuartSul</a>). The CS 240LX causal link is stated as he frames it (unverified).</li>
+    <li class="small"><strong>The one competition on record is collegiate, not childhood:</strong> 2nd of 13 teams in an <strong>LLVM compiler-optimization competition at SNU</strong> (repo <code>llvm-optimizations</code>, Jun 2020). No prodigy-olympiad story exists; don't manufacture one.</li>
+  </ul>
+
+  <h3>Founding leadership — sole technical co-founder of Blux</h3>
+  <p>The earlier dossier misframed this: Stuart is the <strong>sole technical co-founder and founding CTO of Blux (formerly Z.Ai)</strong>, <strong>not</strong> the founder/CEO. The CEO/originator is <strong>Lee Ji-hyeok (이지혁)</strong>, who conceived it as a VC intern. His own claim is precise: <em>"I was the only technical co-founder until we acquired our first paying customer. I built everything (server, infrastructure, ML) from scratch… Over time, I recruited and led a team of 15+ engineers."</em> The company raised <strong>~₩1.5B Pre-A (Oct 2023), $3M+ total</strong>, serves 10M+ Korean shoppers (<a href="https://stuartsul.com/">stuartsul.com</a>; <a href="https://www.venturesquare.net/968429">venturesquare.net/968429</a>, Korean). Caveat carried from research: <strong>the co-founder billing is self-reported</strong> — Korean company materials name only CEO Lee Ji-hyeok, not the CTO.</p>
+
+  <h3>Author order — read precisely, not as lead-author-everywhere</h3>
+  <ul>
+    <li class="small"><strong>First author only on:</strong> <strong>ParallelKittens</strong> (SH Sul, S Arora, BF Spector, C Ré, 2025) and the multi-GPU PGL Hazy post.</li>
+    <li class="small"><strong>Middle author</strong> (listed "HU Sul," <strong>4th of 7</strong>) on <strong>MERCI</strong> (ASPLOS 2021, 46 cites), SNU architecture group under Jae W. Lee / Tae Jun Ham.</li>
+    <li class="small"><strong>3rd author</strong> on <strong>"Look Ma, No Bubbles!"</strong> (Spector, Juravsky, Sul, …). The resume's project framing should not be read as lead authorship across the board.</li>
+  </ul>
+
+  <h3>The repeatable signature — clarity of thought, his own (written) words</h3>
+  <p>His "you can see it" quality lives in <em>writing</em>, not video. The recurring thesis across his work: <em>the vendor library is not the floor — build the primitive yourself and beat it.</em> All quotes verbatim:</p>
+  <ul>
+    <li class="small"><strong>On multi-GPU kernels</strong> (first author, "One Kernel for All Your GPUs," <a href="https://hazyresearch.stanford.edu/blog/2025-09-22-pgl">Hazy Research, Sep 2025</a>): <em>"NVIDIA leaves much of this information undocumented or scattered and generally points us toward NCCL, but with the right understanding and abstractions, building multi-GPU kernels from scratch is far simpler than it appears."</em> And: <em>"We were very surprised to find that even the most basic operation, such as all-reduce, already surpasses pure NCCL performance when implemented from scratch."</em></li>
+    <li class="small"><strong>On rebuilding the MoE layer</strong> ("1.5x faster MoE training with custom MXFP8 kernels," <a href="https://cursor.com/blog/kernels">Cursor, Aug 2025</a>): <em>"We rewrote the entire MoE layer from scratch at the GPU kernel level with zero dependencies on any CUDA libraries. Instead, we used pure, good old CUDA and PTX."</em></li>
+    <li class="small"><strong>The whole man in six words</strong> (his own tagline): <em>"Passionate about ML systems research, startups, and loud guitars."</em> (<a href="https://www.linkedin.com/in/stuartsul/">linkedin.com/in/stuartsul</a>).</li>
+  </ul>
+  <p>The polymathy is one disposition — build the primitive yourself — applied identically across compilers (LLVM comp), OS (bare-metal ELF linker), hardware (VHDL matmul accelerators), GPU kernels (ThunderKittens, megakernels, all-reduce beating NCCL), and even music tooling (coding music in ChucK). It is not a list of hobbies; it is one instinct across stacks.</p>
+
+  <h3>Community-building / open-source at scale</h3>
+  <ul>
+    <li class="small"><strong>Built the entire Blux engineering org from zero:</strong> sole technical founder → "recruited and led a team of 15+ engineers" — operating leadership, not a title (<a href="https://stuartsul.com/">stuartsul.com</a>).</li>
+    <li class="small"><strong>Open-source maintainer at scale:</strong> owns/leads <strong>ThunderKittens</strong> (3,300+ stars; adopted by <strong>Cursor, Together AI, Jump Trading, Modular, TileLang, and NVIDIA CuTe 4.0</strong>) and <strong>Megakernels</strong> (600+ stars); his Hazy posts teach others to write multi-GPU kernels from scratch (<a href="https://github.com/HazyResearch/ThunderKittens">github.com/HazyResearch/ThunderKittens</a>; <a href="https://stuartsul.com/">stuartsul.com</a>).</li>
+    <li class="small"><strong>Music-as-software:</strong> <strong>Co-Chuck / WebChucK IDE</strong> — a collaborative online environment to "code" your music (multi-user synchronized ChucK shreds), contributing to the ChucK live-coding community (<a href="https://github.com/StuartSul">github.com/StuartSul/co-chuck</a>).</li>
+  </ul>
+
+  <h3>Non-obvious early footprint — GitHub, oldest-first</h3>
+  <p>His <a href="https://github.com/StuartSul">28-repo GitHub</a> is a near-perfect predictor of where he landed:</p>
+  <ul>
+    <li class="small"><strong>SNUGrad</strong> (Java, Oct 2017) — oldest repo, a "Seoul National University Graduation Planner" built right before he entered the Army. The classic scratch-my-own-itch freshman tool.</li>
+    <li class="small"><strong>MERCI</strong> (ASPLOS 2021, 46 cites) — SNU architecture-lab paper on fast embedding reduction for recommendation models; direct lineage to <strong>both</strong> Blux (recommender systems) and his later kernel work. Middle author.</li>
+    <li class="small"><strong>hardware-matmul-accelerators</strong> (VHDL, Jul 2021) — building matmul accelerators in hardware as a student, the literal precursor to GPU-kernel matmul optimization.</li>
+    <li class="small"><strong>autokomplete</strong> (Java, Oct 2021) — a Korean auto-complete engine for e-commerce, built during Blux. Product-grade NLP for the Korean commerce use case.</li>
+    <li class="small"><strong>SampyoNet</strong> — deep-learning model + inference engine + mobile app for <strong>gravel-quality assessment, deployed to production at Sampyo</strong> (a real Korean concrete manufacturer). A rare early example of shipping ML into a heavy-industry production line.</li>
+    <li class="small"><strong>co-chuck / webchuck-ide</strong> (TypeScript, Dec 2024–Jan 2025) — the guitarist coding music. The music and the CS are the same person.</li>
+  </ul>
+
+  <h3>Video / talk — he is in the room, but silent</h3>
+  <ul>
+    <li class="small"><strong>Stanford Hidden Layer Podcast #103</strong> ("Cursor — Oskar Schulz, President, and Ben Spector," <a href="https://www.youtube.com/watch?v=iNsn35bKnUU">YouTube</a>, ~84 min). Stuart is <strong>physically present but does not speak.</strong> The single datapoint is a network-proximity tell, not a self-statement — in <strong>Ben Spector's own words, Stanford Hidden Layer Podcast #103, [25:08]</strong>: Cursor wants to be an "IC-centric company… I think that is very much true, like <em>Stuart is nodding</em> [laughter]." He is in the inner Cursor / Ben-Spector circle, in the room for the flagship interview.</li>
+    <li class="small"><strong>No solo podcast or talk by Stuart found.</strong> Point an investor at his <em>written</em> work (Hazy / Cursor posts), where the voice lives.</li>
+  </ul>
+</section>
+
+  <section>
+  <h2>Life & Texture</h2>
+  <p class="small muted"><strong>Privacy hygiene:</strong> public sources only — no addresses, no precise location, no family/financial/health data. Korean birth name not publicly linked (the only fragment is the "H" in "Stuart H. Sul" / "HU Sul" on the MERCI paper); album titles and band names are almost certainly under that unsurfaced Korean name and are not invented here. Closest verified collaborator in this repo: <a href="benjamin-spector.html">Benjamin Spector</a>. (Do not conflate with Asher Spector — different person.)</p>
+
+  <h3>Hobbies & interests</h3>
+  <ul>
+    <li class="small"><strong>Electric guitar / music production — the dominant non-work identity.</strong> Verbatim, his own site: <em>"I am an electric guitarist and composer. I have released two albums and performed as lead guitarist and producer for multiple rock bands since 2008."</em> And his self-tag: <em>"ML systems research, startups, and loud guitars"</em> (<a href="https://stuartsul.com/">stuartsul.com</a>; profiles). Album/band/platform names: <strong>not published under "Stuart Sul" (unverified)</strong> — treat "two albums + lead guitarist/producer" as the durable fact.</li>
+    <li class="small"><strong>GPU kernels as a personal pastime, not just work.</strong> His GitHub hosts <code>gpu-experiments</code> — <em>"A collection of GPU experiments and benchmarks for my personal understanding and research"</em> (<a href="https://github.com/StuartSul">GitHub</a>). The hobby/craft line is genuinely blurry for him.</li>
+    <li class="small"><strong>Korean esports fan (minor texture):</strong> <code>LCK-Schedule-Scraper</code> (Python, Jun 2024) scrapes the League of Legends Champions Korea schedule.</li>
+  </ul>
+
+  <h3>Where / with whom — the network map</h3>
+  <ul>
+    <li class="small"><strong>Base:</strong> Palo Alto / SF Bay Area (<a href="https://github.com/StuartSul">GitHub profile location</a>), splitting time between Stanford (Hazy / SAIL) and Cursor. No neighborhood or residence sought or used.</li>
+    <li class="small"><strong>Social fabric = the Hazy Research / ThunderKittens co-authorship cluster</strong> (collaboration map, not cohabitation). On the megakernel work ("Look Ma, No Bubbles!", Hazy 2025-05-27) the byline is <em>Benjamin Spector, Jordan Juravsky, Stuart Sul, Owen Dugan, Dylan Lim, Dan Fu, Simran Arora, Chris Ré.</em> He also co-authored <strong>ParallelKittens</strong> with Simran Arora, Benjamin Spector, and Chris Ré.</li>
+    <li class="small"><strong>Closest verified edge: Benjamin "Ben" Spector</strong> (<a href="https://x.com/bfspector">@bfspector</a>), the TK technical lead — already a dossier in this repo (<a href="benjamin-spector.html">benjamin-spector.html</a>). The Sul↔Spector edge is the strongest verified relationship; cross-link them.</li>
+    <li class="small"><strong>Other verified lab-cohort edges:</strong> Simran Arora, Jordan Juravsky, Dan Fu, Owen Dugan, Dylan Lim, advisor Chris Ré. His X reposts lean into the same cluster (Jon Saad-Falcon / OpenJarvis, Hamza Elshafie, Kelly Buchanan / Terminal-Bench), confirming he lives socially inside the MLSys-Stanford orbit.</li>
+    <li class="small"><strong>No public roommate/housemate/hacker-house data for Stuart exists.</strong> (The "cello-at-midnight" / roommate banter in Hidden Layer #103 is the <em>Cursor founders</em>, not Stuart — excluded deliberately.)</li>
+    <li class="small"><strong>A genuine Korea↔Bay-Area bicultural axis:</strong> earlier life and the Blux chapter are Seoul-anchored (SNU; Blux serves the Korean e-commerce market, operator JetAI / 제트에이아이, CEO Lee Ji-hyeok / 이지혁).</li>
+  </ul>
+
+  <h3>Hangouts / scene</h3>
+  <p class="small">Scene, not venues: the Stanford SAIL / Hazy Research lab and the Cursor (Anysphere) engineering org. His "third places" are GitHub repos and the GPU-kernel corner of ML Twitter. No specific cafés, clubs, gyms, or recurring real-world events are public.</p>
+
+  <h3>Fitness / physical</h3>
+  <p class="small"><strong>No public fitness footprint</strong> — Strava, Instagram, and general web all confirmed negative to the extent public search can confirm. The one hard, striking physical-life data point is historical: <strong>21 months as a U.S. Army Combat Medic (MOS 68W) in a cavalry unit via KATUSA (Nov 2017–Aug 2019)</strong> (<a href="https://stuartsul.com/">stuartsul.com</a>) — a high-discipline, physically demanding chapter, not a gym hobby.</p>
+
+  <h3>Online personality & taste</h3>
+  <ul>
+    <li class="small"><strong>An all-business, ML-systems-native poster.</strong> X (<a href="https://x.com/stuart_sul">@stuart_sul</a>, joined Jul 2024, ~3,450 followers, ~92 posts) is almost entirely kernel / training-systems content and reposts of lab-cohort releases. Pinned (Feb 20): <em>"(1/7) We're releasing ThunderKittens 2.0! Faster kernels, cleaner code, industry contributions, and new state-of-the-art BF16 / MXFP8 / NVFP4 GEMMs that match or surpass cuBLAS!"</em></li>
+    <li class="small"><strong>No public personal asides, taste posts, or off-topic content surfaced</strong> — Letterboxd, Goodreads, and Spotify-as-listener all confirmed negative. The most personality-revealing line is his own self-tag, <em>"ML systems research, startups, and loud guitars"</em> — rigor, ambition, and a rock-and-roll streak he keeps off the timeline.</li>
+    <li class="small"><strong>Profile photo:</strong> an understated outdoor portrait (appears spring/blossoms, casual) — consistent with a "lets the work speak" posture, not a personal-brand headshot.</li>
+  </ul>
+
+  <h3>Outreach hook</h3>
+  <p class="small">Best opener is the arc almost nobody references: <strong>"From running a cavalry aid station as a 68W combat medic to writing the megakernels that surpass cuBLAS — that's not a path I've seen before."</strong> Then prove you read the actual contribution: his Cursor MXFP8 result — rebuilding the MoE layer at the kernel level for a <strong>3.5× faster MoE layer / 1.5× end-to-end training speedup</strong> (<a href="https://cursor.com/blog/kernels">cursor.com/blog/kernels</a>), tied to the ThunderKittens 2.0 / ParallelKittens lineage with Ben Spector and Simran Arora. The disarming personal in: ask what he played — "ML systems, startups, and <em>loud guitars</em>" and two albums — precisely because it is the one thing he never posts about (and don't pretend to know the titles, you don't).</p>
+</section>
+
+
 
   <footer>
     researched: 2026-03 &middot; delta institute cohort 1 &middot; <a href="../index.html">back to index</a>
