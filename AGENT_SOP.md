@@ -305,3 +305,86 @@ Before any dossier page goes live, verify:
 - [ ] Tier is assigned with rationale
 - [ ] Recursive discovery surfaced at least 2 connected people
 - [ ] Indian demographic flag checked
+
+
+---
+
+## The Human Layers: Origin-Spike + Life-Texture
+
+Two research layers, run alongside the 6-agent investment dive. The investment dive finds the *spike*. These two layers find the *root of the spike* and the *person around it*. Run both for every Tier 0/1 dossier; run Layer A at minimum for Tier 2.
+
+---
+
+### Layer A — Origin & Early Spike
+
+**WHY:** The investment spike (papers, departures, funding) tells you the person is extraordinary now. Layer A tells you *why they were always going to be* — the causal root, the "you could see it early" story. It is the single most convincing thing in an outreach email and the best predictor of whether the current spike is a fluke or the latest point on a 15-year line. Critically, it is where the owner's Indian-sourcing thesis lives: the highest-signal version is **achievement despite no scaffolding** — a teenager running a global research community from Chandigarh, a 14-year-old winning a 200-team hackathon with no accelerator behind them. Do not let this layer collapse into "prodigy won a competition." Weight the *absence of advantage* as heavily as the achievement.
+
+**WHAT TO FIND (checklist):**
+- [ ] Earliest dated achievement (the floor — "first email at 5," "programming at 8," "led a 15-person company at 16")
+- [ ] The conceptual ancestor of their current work (does today's company trace to a teenage project?)
+- [ ] Upbringing/context, especially scaffolding-or-not (Tier-2/3 city, no lab access, immigrant/first-gen, self-funded on a small grant)
+- [ ] Community-building before it was professional (ran a Discord/club/workshop, wrote curriculum, curated a resource list for others)
+- [ ] Polymath / clarity-of-thought signals (quantifies the un-quantified, cross-domain fluency, an unusual deliberate choice)
+- [ ] Lineage echoes (2nd-gen fellow, parent in the field, advisor they cold-emailed at 16)
+- [ ] Video/talk/podcast presence — the literal "see it early" artifact
+- [ ] Persistent online identity (a handle carried from a teen repo into professional work)
+
+**WHERE TO LOOK (source-type playbook):**
+- **Hometown / school student newspapers** → the richest single source for the pre-fame arc; names the teenage project, the motivation, the team. (saratogafalcon.org, Horace Mann news, school alumni notes)
+- **Competition archives** → ISEF/STS, FRC/FTC Dean's List, IOI/IMO/Putnam, regional science fairs — and reconcile the *exact* prize/category (these are routinely garbled across summaries).
+- **Old GitHub (scroll to first repos) + Wayback on personal sites** → raw-CUDA-CNN-with-no-framework, teen tool repos, the handle that persists.
+- **arXiv / Nature Methods / lab reprints under their teen name** → real systems papers written at 16-17, not school projects.
+- **YouTube / podcasts** → science-fair explainer videos (often later set Private — note existence + title even if gated), long-form lab podcasts where you can *hear* the thinking.
+- **Niche-community founding posts** → LessWrong/Discord/forum threads that timestamp who actually founded vs. co-built a community (credit precisely — see Evidence Discipline).
+- **Music-school / arts / debate archives, religious-community press** → cross-domain and "despite/alongside" signals.
+
+**WORKED EXAMPLE — Mason Wang (Origin & Early Spike).**
+The gem: at ~14, freshman Mason led **Archiscape to 1st of 200+ submissions at LA Hacks (March 2020)**, a virtual-house-tour tool "inspired by Mason's mother, a realtor" — the literal conceptual ancestor of **Hazel**, the realtor-AI company he raised $2M from Pear VC for at 17, three years later. The source-type that surfaced it: a **hometown student newspaper** (saratogafalcon.org) — not Crunchbase, not his site. The causal arc (mother's profession → teen hackathon win → funded company) only exists in the local-press record. *Teaching point: the student paper is the first place to look and the last place agents think to check.*
+
+---
+
+### Layer B — Life & Texture
+
+**WHY (both halves — neither alone is enough):** (1) **Outreach.** A note that knows the person plays cello recitals or walked the full length of Manhattan lands as written by someone who actually paid attention, not a fund running a template. (2) **Network intelligence.** Who they live with, train with, and hang out with are *mappable edges*. A 5am workout club is a co-founder relationship; a roommate is a warm intro. Texture is not small talk — it is the social graph rendered in human terms. Capture both or the layer is half-done.
+
+**WHAT TO FIND (checklist):**
+- [ ] Hobbies pursued seriously (instrument + level, sport, a 30-mile walk, turtle conservation)
+- [ ] Where / with whom they live — **only where publicly disclosed** (see Privacy Boundary)
+- [ ] Co-located relationships that are also professional edges (co-founder who's also a brother / roommate / workout partner; a club member who's also a VC)
+- [ ] Hangouts/communities (running club, founder house, a recurring hackathon crew)
+- [ ] Fitness footprint (Strava club/route, a race result) — *if public*
+- [ ] Online personality (bio location jokes, in-group humor, scrape-warnings) — quote it
+- [ ] Media/taste tells (Letterboxd, Goodreads, the tools they unwind with — Geoguessr, Radio Garden)
+
+**WHERE TO LOOK (source-type playbook):**
+- **Music-school recital archives / arts-org pages** → instrument, years of training, *and* who they perform with (often a family member or future co-founder).
+- **Club / community sites + their team/about pages** → the workout club or founder house, and crucially the *other members* (cross-reference each against VC/founder rolls).
+- **Their own "about" / "now" / personal-essay pages** → the 30-mile-walk, the unwind tools, the rare vulnerable line — quote verbatim.
+- **Strava / Letterboxd / Goodreads** → fitness and taste; expect login-gating — record only what's genuinely public, never fabricate a route or race time.
+- **Instagram / X bios and pinned content** → personality and location jokes; many are gated — note the handle, mark content unverified if you can't load it.
+- **Friends'/co-founders' public posts and podcasts** → texture about the person that they don't post themselves (origin of a friendship, a gap-year story).
+
+**WORKED EXAMPLE — Ben Spector (Life & Texture).**
+The gem: Ben has played serious **cello since age 4**, performing chamber music with his brother **Asher** as "The Spector Trio" — and Asher is now his **co-founder at Flapping Airplanes**. The source-type that surfaced it: a **music-school recital archive** (Hoff-Barthelson). This is pure texture (a decade-plus of cello, recital-level at the New England Conservatory) that simultaneously delivers the single most important network fact in his dossier — his co-founder is his brother, and the relationship predates the company by ~20 years. *Teaching point: the arts archive is where the deepest network edge was hiding in plain sight.* (Compare Mason Wang's Victory Club, a 5am workout club whose co-member Sam Beskind is a Floodgate Associate and Chief of Staff to Mike Maples Jr. — a warm founder↔VC bridge found via the club's own team page.)
+
+---
+
+### PRIVACY BOUNDARY (strict — read before writing either layer)
+
+The governing heuristic: **include only the texture a warm acquaintance would already know.** If a stranger shouldn't know it, neither should the dossier.
+
+- **Public-only.** Every fact must trace to a public, citable source (their site, a news piece, a public club page). If it required gating, guessing, or inference about a private detail, it is out.
+- **Hard NO — never include, even if findable:** home addresses or precise location; phone/email/PII; financial details (personal net worth, exact equity, salary, undisclosed valuations); health, medical, or family-private matters; religious/political specifics beyond what *they* have made public; anything harm-enabling or that aids stalking/doxxing.
+- **The "where/with-whom they live" tension — resolved, not waved away.** This is both Layer B's network ask *and* its highest privacy risk. Rule: a **publicly disclosed** arrangement involving public figures is OK (a named, press-covered founder house; a co-founder who has publicly stated they're roommates). **Inferred private cohabitation is NOT** — e.g., "Ben lives with ~3 others including Cursor's first hire" was plausible from density alone but had no public source; it stays **flagged, not stated**. Likewise "eats at Mahalo" could not be sourced to him and is left out.
+- **Flag-don't-include.** When something is borderline-private or merely plausible, do not assert it. Note it in internal research notes as "unconfirmed / borderline-private — not for dossier" and move on. The bar for Layer B facts is *higher* than for the investment spike, not lower.
+
+### EVIDENCE DISCIPLINE (these layers embellish the easiest — verify the juicy stuff)
+
+Origin and texture gems are the most repeated and the least sourced. The juicier the gem, the harder you verify it.
+
+- **Quotes, dates, links over adjectives.** "Walked Met Cloisters to Battery Park; unwinds with Geoguessr and Radio Garden (his about page)" beats "an interesting, curious person." Every gem carries its source-type.
+- **Flag the unverified explicitly — don't launder it into fact.** Cautionary cases from the first run: Ben Spector's **"Cofactory AI co-founder"** is asserted as fact in three places in the live file off a single thin link — mark it *plausible, unconfirmed*, not fact. The **"~10% equity / ~$2.5B Cursor offer"** is widely repeated lore with no primary source. The **"~$50B combined ecosystem valuation"** conflates portfolio valuation with money he raised (~$25M per Hertz). State each as exactly what it is.
+- **Attribute community/founding claims with precision.** Kunvar Thaman did **not** found the mech-interp Discord — Victor Levoso did (founding LessWrong post, Mar 12 2023); Thaman was a co-builder. And ~512 of his ~549 Scholar citations are HLE *contributor* credit, not his own papers. Get the role right; "co-built" and "founded" are different facts.
+- **Distinguish self-description from independent verification.** "Principal developer of ESM-1b" (Josh Meier's own bio) vs. "2nd author on Rives et al. 2019" (the paper) — cite the verifiable one. "CEO of Chai" is unconfirmed; "co-founder, one of four" is sourced.
+- **Beware the namesake.** Common names (Benjamin Spector, Kunvar Thaman) attract false-positive papers and profiles. Confirm identity via place/time/co-author/handle before attaching a claim. The "fuzzy-logic interpretability" Neurocomputing paper is a different Thaman — do not cite.
+- **Gated ≠ confirmed.** Private YouTube videos, login-walled Strava/Instagram, rate-limited Manifund pages: record the title/handle and the fact that it exists, mark the *content* unverified, and never invent the inside.
