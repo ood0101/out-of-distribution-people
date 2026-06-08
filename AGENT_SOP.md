@@ -441,7 +441,8 @@ Exceptional people cluster in a handful of high-precision selection filters. Whe
 - **Hertz Fellowship** (6) — tiny annual cohort (~15), extreme technical density. Ben, Ishaan Javali, Kunvar Thaman, Vikram Sundar, Galen Mead, Devansh Pandey.
 - **RSI / Research Science Institute** (6) — ~80 high-schoolers/yr, the most selective summer research program.
 - **FRC / FIRST Robotics Dean's List** (4) — Ben was 1 of ~4 worldwide/yr; a tiny, builder-flavored filter.
-- **Coolidge Scholars** (1), **Davidson Fellows** (3), **Neo Scholars** (7), **Knight-Hennessy** (7), **Coca-Cola Scholars** (4), **Cutler-Bell ACM** (4), **Soros New Americans** (2), **Schmidt Science** (3).
+- **Coolidge Scholars** (1), **Davidson Fellows** (3), **Knight-Hennessy** (7), **Coca-Cola Scholars** (4), **Cutler-Bell ACM** (4), **Soros New Americans** (2), **Schmidt Science** (3).
+- **DEPRIORITIZED (owner call): Neo Scholars** — ~30 strong CS students/yr; less rarefied than Hertz/RSI and a talent-program rather than an outcome filter. Skip as a primary mining pool; a Neo signal counts only when paired with a sharper one (competition pedigree, Hertz/RSI).
 - (Already in the SOP as competition pools: IMO 28, IOI 27, Putnam 15, ISEF 13, Regeneron STS 11.)
 
 **MINING METHOD (per pool):** (1) get the public roster (foundation site, Wikipedia, press); (2) cross-reference against the index (slug/name match); (3) for un-indexed names, run a Depth-0 triage (worth-tracking?); (4) capture cohort-mates of our best people as recursive discoveries — the person who shared a Hertz year or an RSI summer with someone we love is "in the vicinity."
