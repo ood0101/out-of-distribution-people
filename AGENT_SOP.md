@@ -419,3 +419,33 @@ python3 scripts/transcript.py "<url>" --grep "grew up,founded,my brother,new lab
 **LORE TOLERANCE — calibrated.** The owner is fine with lore, *because some of the best signal only exists in spoken/social form and no one writes it on a profile.* But distinguish sharply:
 - **Spoken-word self-statement on a recorded podcast = PRIMARY SOURCE**, not lore. Cite it as *"his own words, [podcast], [timestamp]."* This is the strongest tier of human-layer evidence.
 - **Genuine unsourced rumor** (e.g., a specific "~10% / $2.5B offer" figure with no recording or document) = **flag as lore**, include if useful but never launder into fact. The tape may source the *qualitative* claim ("they tried to get him back") while the *specific number* stays lore — state each as exactly what it is.
+
+---
+
+### The Read — calibrated inference (a third human layer)
+
+Facts tell you what someone did. **The Read** tells you what it means — a falsifiable thesis about what actually drives them (ambition, values, what they're optimizing for, what they'll do next). This is the highest-value, highest-risk layer; it is where a VC's judgment lives, and where bullshit lives if you're sloppy.
+
+**RULES:**
+- **Flag it as interpretation, always.** A dossier section titled "The Read — interpretation, not fact." Never blend inference into the factual record.
+- **Ground every claim in declined/chosen evidence.** The strongest reads come from what someone *turned down*. Worked example (Ben Spector): "optimizing for the highest-ceiling problem, not the biggest outcome" — evidenced by *passing on Cursor* (founding team, asked back "multiple times" per its President, said no as it hit tens of billions) + *leaving the PhD to start a research lab* (not a product company) on a fundamental anti-scale thesis. The read is the line connecting the choices.
+- **State the falsifiers.** End every Read with "what would prove this wrong" (e.g., "if Flapping Airplanes pivots to an applied product; if he rejoins Cursor"). A read without falsifiers is a horoscope.
+- **Keep lore lore.** If the read leans on an unverified claim (the "~10% offer"), say the qualitative part is sourced and the number isn't.
+- **It changes outreach.** The Read tells you the *way in*: for Ben, lead with the problem (data-efficiency, anti-scale), never the money or the logo.
+
+### Pedigree Pools — mine the filters, not just the people
+
+Exceptional people cluster in a handful of high-precision selection filters. When a pool keeps recurring across the people you already rate, the *pool itself* is a sourcing vein — pull the full roster, cross-reference the index, surface the un-indexed names + their "vicinity" (cohort-mates, the people one hop away).
+
+**Pools that recur in OUR index (count = people already indexed who hold it) — mine these:**
+- **Hertz Fellowship** (6) — tiny annual cohort (~15), extreme technical density. Ben, Ishaan Javali, Kunvar Thaman, Vikram Sundar, Galen Mead, Devansh Pandey.
+- **RSI / Research Science Institute** (6) — ~80 high-schoolers/yr, the most selective summer research program.
+- **FRC / FIRST Robotics Dean's List** (4) — Ben was 1 of ~4 worldwide/yr; a tiny, builder-flavored filter.
+- **Coolidge Scholars** (1), **Davidson Fellows** (3), **Neo Scholars** (7), **Knight-Hennessy** (7), **Coca-Cola Scholars** (4), **Cutler-Bell ACM** (4), **Soros New Americans** (2), **Schmidt Science** (3).
+- (Already in the SOP as competition pools: IMO 28, IOI 27, Putnam 15, ISEF 13, Regeneron STS 11.)
+
+**MINING METHOD (per pool):** (1) get the public roster (foundation site, Wikipedia, press); (2) cross-reference against the index (slug/name match); (3) for un-indexed names, run a Depth-0 triage (worth-tracking?); (4) capture cohort-mates of our best people as recursive discoveries — the person who shared a Hertz year or an RSI summer with someone we love is "in the vicinity."
+
+### Video Census — find ALL of them, not one
+
+When pulling video intel (see Transcript Mining), do a CENSUS first: `yt-dlp "ytsearch10:<name> <topic>"` across 3-4 query phrasings to enumerate every substantive appearance, then transcribe the high-value ones. We initially mined 1 of Ben Spector's 3 substantive videos and missed a 4.5-hour live session and a 75-min AMA. One flagship interview is a start, not coverage. Beware namesakes in search results (SNL/Minecraft/luthier hits were not him).
