@@ -1,6 +1,6 @@
 {
  "generated": "2026-06-06",
- "count": 227,
+ "count": 228,
  "people": [
   {
    "slug": "pannag-sanketi",
@@ -471,7 +471,7 @@
    "status": "not-contacted",
    "last_contacted": null,
    "next_action_date": null,
-   "updated": "",
+   "updated": "2026-06-06",
    "channel": null,
    "twitter": "dhruv31415",
    "linkedin": "dhruvpai",
@@ -507,7 +507,7 @@
    "status": "not-contacted",
    "last_contacted": null,
    "next_action_date": null,
-   "updated": "",
+   "updated": "2026-06-06",
    "channel": null,
    "twitter": "masonwang025",
    "linkedin": "mason-wang",
@@ -2219,6 +2219,41 @@
    "linkedin": "rohin-garg-362bb8226",
    "email": null,
    "gmail_url": null,
+   "indian": true,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
+  },
+  {
+   "slug": "tanvir-bhathal",
+   "name": "Tanvir Bhathal",
+   "tier": 2,
+   "role": "Stanford CS/EE undergrad ('27) — Hazy Research (Chris Ré) + Scaling Intelligence orbit",
+   "spike": "T2 track, no inflection yet. Lab-adjacent undergrad: middle-author Weaver (NeurIPS'25); first-author WebSight (⚠ self-reported 'beats OpenAI', non-peer-reviewed). No competition pedigree. nSpire=career-coaching (off-thesis). Indian. Watch for founding signal ~2027 grad.",
+   "tags": [
+    "indian",
+    "researchers",
+    "stanford",
+    "hazy-research",
+    "chris-re",
+    "scaling-intelligence",
+    "ai-agents",
+    "undergrad",
+    "watch-2027"
+   ],
+   "cluster": null,
+   "signals": [
+    "stealth"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "",
+   "channel": null,
+   "twitter": null,
+   "linkedin": "tanvir-bhathal",
+   "email": "tanvirb@stanford.edu",
+   "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=tanvirb%40stanford.edu",
    "indian": true,
    "delta": false,
    "needs_triage": false,

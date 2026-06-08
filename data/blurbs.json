@@ -878,5 +878,9 @@
  "mason-wang": {
   "role": "Co-Founder & (former) CTO, Tilde Research — Stanford, 2× technical founder",
   "spike": "T1, the inflection one. 2× founder (Tilde CTO + Hazel CTO at 17, $2M Pear). PiTorch (LLM on bare-metal Pi Zero), Activault, Sparsity-is-Cool (co-first w/ Dhruv Pai). Résumé says left Tilde Jul'25, back at Stanford 'figuring out what's next' (departure UNCONFIRMED — LinkedIn still @ Tilde). If founds → T0."
+ },
+ "tanvir-bhathal": {
+  "role": "Stanford CS/EE undergrad ('27) — Hazy Research (Chris Ré) + Scaling Intelligence orbit",
+  "spike": "T2 track, no inflection yet. Lab-adjacent undergrad: middle-author Weaver (NeurIPS'25); first-author WebSight (⚠ self-reported 'beats OpenAI', non-peer-reviewed). No competition pedigree. nSpire=career-coaching (off-thesis). Indian. Watch for founding signal ~2027 grad."
  }
 }

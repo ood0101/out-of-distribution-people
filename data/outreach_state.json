@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-06-06T11:23:15+00:00",
+  "last_built": "2026-06-08T10:15:56+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -3037,7 +3037,7 @@
         "phrase_raising": false,
         "phrase_founded": true
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-06-06T16:53:50+05:30",
       "needs_triage": false,
       "emails": [],
       "email_primary": null,
@@ -6753,7 +6753,7 @@
         "phrase_raising": false,
         "phrase_founded": true
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-06-06T16:53:50+05:30",
       "needs_triage": false,
       "emails": [],
       "email_primary": null,
@@ -10496,6 +10496,61 @@
       "channel": "email",
       "next_action": "Email tanishq@stanford.edu — relationship build, NOT pitching. Lead with technical insight on Scaling Laws for Precision (low precision reduces effective parameter count + post-training quantization gets worse with more pretraining data, the cross-finding with Overtrained paper) + ask about Pehlevan/Bordelon DMFT framework prediction for precision floor below FP6. Reference Niklas + Sukjun as in-repo reference classes. Fallback Twitter DM @tanishqkumar07 (5,243 followers, verified).",
       "cluster": "scaling-laws",
+      "email_override": null,
+      "outreach_subject_override": null,
+      "outreach_body_override": null,
+      "channels_attempted": []
+    },
+    "tanvir-bhathal": {
+      "name": "Tanvir Bhathal",
+      "tier": 2,
+      "tier_label": "tier-2: tracking",
+      "category": "outreach",
+      "tags": [
+        "indian",
+        "researchers",
+        "stanford",
+        "hazy-research",
+        "chris-re",
+        "scaling-intelligence",
+        "ai-agents",
+        "undergrad",
+        "watch-2027"
+      ],
+      "indian": true,
+      "delta": false,
+      "one_liner": "Stanford CS/EE undergrad (class of 2027), working in the",
+      "signals": {
+        "tag_stealth_founder": false,
+        "tag_founders": false,
+        "phrase_stealth": true,
+        "phrase_departed": false,
+        "phrase_raising": false,
+        "phrase_founded": false
+      },
+      "last_git_touch": null,
+      "needs_triage": false,
+      "emails": [
+        "tanvirb@stanford.edu"
+      ],
+      "email_primary": "tanvirb@stanford.edu",
+      "email_primary_kind": "academic",
+      "outreach_subject": null,
+      "outreach_body_preview": null,
+      "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=tanvirb%40stanford.edu",
+      "twitter_handle": null,
+      "linkedin_slug": "tanvir-bhathal",
+      "github_handle": "mrtsb",
+      "status": "not-contacted",
+      "last_contacted": null,
+      "next_action_date": null,
+      "response": null,
+      "notes": "",
+      "urgency_decay_date": null,
+      "urgency_reason": null,
+      "channel": null,
+      "next_action": null,
+      "cluster": null,
       "email_override": null,
       "outreach_subject_override": null,
       "outreach_body_override": null,
