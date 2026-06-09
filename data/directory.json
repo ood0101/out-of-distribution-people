@@ -1,6 +1,6 @@
 {
- "generated": "2026-06-08",
- "count": 230,
+ "generated": "2026-06-09",
+ "count": 231,
  "people": [
   {
    "slug": "michael-wornow",
@@ -447,6 +447,42 @@
    "urgency": true
   },
   {
+   "slug": "isha-puri",
+   "name": "Isha Puri",
+   "tier": 1,
+   "role": "MIT CSAIL PhD (Yoon Kim + Marzyeh Ghassemi) — inference-time-scaling / RL-for-reasoning",
+   "spike": "T1. 1st-author Rollout Roulette (NeurIPS'25): particle-filter test-time scaling, training-free, Qwen-7B→o1 in 32 rollouts (52★). Accelerating cadence (NeurIPS'21/'25, ICLR'26, ICML'26). Joining DeepMind; NeurIPS'25 Assistant PC. Harvard '23. Davidson/ISEF/Cutler-Bell. Indian. Co-founded CreAIte at 15. Watch for T0.",
+   "tags": [
+    "indian",
+    "researchers",
+    "mit-csail",
+    "inference-time-scaling",
+    "rl-reasoning",
+    "test-time-compute",
+    "harvard",
+    "davidson-fellow",
+    "isef"
+   ],
+   "cluster": null,
+   "signals": [
+    "stealth",
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "",
+   "channel": null,
+   "twitter": "ishapuri101",
+   "linkedin": null,
+   "email": null,
+   "gmail_url": null,
+   "indian": true,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
+  },
+  {
    "slug": "owen-dugan",
    "name": "Owen Dugan",
    "tier": 1,
@@ -472,7 +508,7 @@
    "status": "not-contacted",
    "last_contacted": null,
    "next_action_date": null,
-   "updated": "",
+   "updated": "2026-06-09",
    "channel": null,
    "twitter": "owendugan",
    "linkedin": "owen-m-dugan",

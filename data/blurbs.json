@@ -890,5 +890,9 @@
  "owen-dugan": {
   "role": "Stanford CS PhD, Chris Ré's Hazy lab — AI×physics (MIT physics BS in 2.5yr)",
   "spike": "T1. Verified rate-of-change: 2 granted patents pre-MIT, OccamNet as HS-er, MIT physics in 2.5yr, 1st-author ICML'23 (Q-Flow) + NeurIPS'24 (OccamLLM) + a 1st-author Hazy paper WITH Chris Ré. Hertz+RSI+Davidson+Presidential+Knight-Hennessy. Bidirectional AI×physics → now ML-systems/interp. Watch for T0. (3-pool pedigree hit.)"
+ },
+ "isha-puri": {
+  "role": "MIT CSAIL PhD (Yoon Kim + Marzyeh Ghassemi) — inference-time-scaling / RL-for-reasoning",
+  "spike": "T1. 1st-author Rollout Roulette (NeurIPS'25): particle-filter test-time scaling, training-free, Qwen-7B→o1 in 32 rollouts (52★). Accelerating cadence (NeurIPS'21/'25, ICLR'26, ICML'26). Joining DeepMind; NeurIPS'25 Assistant PC. Harvard '23. Davidson/ISEF/Cutler-Bell. Indian. Co-founded CreAIte at 15. Watch for T0."
  }
 }

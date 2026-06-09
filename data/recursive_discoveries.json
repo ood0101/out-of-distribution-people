@@ -1059,6 +1059,45 @@
         "stanford",
         "hazy-research"
       ]
+    },
+    {
+      "name": "Mehul Damani",
+      "from_dossier": "isha-puri",
+      "discovered_at": "2026-06-03",
+      "priority": "P2",
+      "status": "pending",
+      "context": "Isha Puri's most frequent collaborator (co-first on 'Beyond Binary Rewards', ICLR'26). MIT PhD, RL-for-reasoning. @MehulDamani2. Highest-signal name in her orbit.",
+      "tags": [
+        "mit",
+        "rl-reasoning",
+        "llm"
+      ]
+    },
+    {
+      "name": "Idan Shenfeld",
+      "from_dossier": "isha-puri",
+      "discovered_at": "2026-06-03",
+      "priority": "P3",
+      "status": "pending",
+      "context": "MIT PhD (Pulkit Agrawal), RLHF/alignment; co-author with Isha Puri on 3 papers. @IdanShenfeld.",
+      "tags": [
+        "mit",
+        "rlhf",
+        "alignment"
+      ]
+    },
+    {
+      "name": "Akarsh Kumar",
+      "from_dossier": "isha-puri",
+      "discovered_at": "2026-06-03",
+      "priority": "P3",
+      "status": "pending",
+      "context": "MIT, open-endedness/evolution (w/ Sebastian Risi); co-author with Isha Puri on Vector Policy Optimization. @akarshkumar0101.",
+      "tags": [
+        "mit",
+        "open-endedness",
+        "evolution"
+      ]
     }
   ]
 }
