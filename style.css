@@ -1,6 +1,11 @@
 /* === Out of Distribution People — Digital Garden === */
 /* Minimalist hypertext aesthetic. Plain. Functional. Dense with signal. */
 
+/* Bundle the body font so every page renders in Inter, not the OS fallback.
+   (The font stack named 'Inter' but never loaded it — pages on machines without
+   Inter installed silently fell back to Helvetica/Arial and looked off.) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 :root {
   --bg: #fafaf8;
   --fg: #1a1a1a;
