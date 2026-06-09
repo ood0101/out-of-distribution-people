@@ -7,76 +7,89 @@
   <link rel="stylesheet" href="style.css">
   <style>
     body.dir-body { max-width: 1180px; }
-    /* sticky header */
+    /* sticky top bar */
     .dir-top { position: sticky; top: 0; z-index: 50; background: var(--bg);
-      border-bottom: 1px solid var(--border); margin: 0 -2rem 1.25rem; padding: 0.7rem 2rem 0.7rem; }
+      border-bottom: 1px solid var(--border); margin: 0 -2rem 0.7rem; padding: 0.6rem 2rem; }
     .dir-top-row { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
     .dir-title { font-family: var(--mono); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--fg-muted); }
     .dir-top-links { display: flex; gap: 1.1rem; font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; }
     .dir-top-links a { color: var(--fg-muted); text-decoration: none; padding-bottom: 0.15rem; border-bottom: 1px solid transparent; }
     .dir-top-links a:hover, .dir-top-links a.cur { color: var(--accent); border-bottom-color: var(--accent); }
+    /* page heading — compact, single row */
+    .dir-head { display: flex; align-items: baseline; justify-content: space-between; gap: 0.8rem 1.2rem; flex-wrap: wrap; margin: 0.1rem 0 0.6rem; }
+    .dir-head h1 { font-size: 1.35rem; margin: 0; line-height: 1.1; }
+    .dir-head .subtitle { font-size: 0.78rem; margin: 0; color: var(--fg-muted); font-style: italic; }
     /* controls */
-    .dir-search { width: 100%; box-sizing: border-box; padding: 0.6rem 0.8rem; font-size: 0.95rem;
-      font-family: var(--mono); border: 1px solid var(--border); border-radius: 4px; background: #fff; color: var(--fg); margin-bottom: 0.6rem; }
+    .dir-search { width: 100%; box-sizing: border-box; padding: 0.5rem 0.75rem; font-size: 0.9rem;
+      font-family: var(--mono); border: 1px solid var(--border); border-radius: 4px; background: #fff; color: var(--fg); margin-bottom: 0.5rem; }
     .dir-search:focus { outline: none; border-color: var(--accent); }
-    .dir-filters { display: flex; flex-wrap: wrap; gap: 0.35rem 0.4rem; align-items: center; margin-bottom: 0.5rem; }
+    /* quick presets */
+    .dir-quick { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; margin-bottom: 0.5rem; }
+    .preset { font-family: var(--mono); font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.05em;
+      padding: 0.28rem 0.6rem; border-radius: 4px; cursor: pointer; user-select: none; border: 1px solid var(--accent); color: var(--accent); background: #fff; }
+    .preset:hover { background: var(--accent); color: #fff; }
+    .preset.is-on { background: var(--accent); color: #fff; }
+    .preset.clear { border-color: var(--border); color: var(--fg-muted); }
+    .preset.clear:hover { border-color: var(--fg); background: var(--fg); color: #fff; }
+    .dir-filters { display: flex; flex-wrap: wrap; gap: 0.3rem 0.4rem; align-items: center; margin-bottom: 0.35rem; }
     .pill { font-family: var(--mono); font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.04em;
-      padding: 0.2rem 0.5rem; border: 1px solid var(--border); border-radius: 999px; background: #fff; color: var(--fg-muted); cursor: pointer; user-select: none; }
+      padding: 0.18rem 0.5rem; border: 1px solid var(--border); border-radius: 999px; background: #fff; color: var(--fg-muted); cursor: pointer; user-select: none; }
     .pill:hover { border-color: var(--accent); color: var(--accent); }
     .pill.active { background: var(--fg); color: #fff; border-color: var(--fg); }
     .pill.active.tier-T0 { background: #c43d2e; border-color: #c43d2e; }
     .pill.active.tier-T1 { background: #d98324; border-color: #d98324; }
     .pill.active.tier-T2 { background: #6b7280; border-color: #6b7280; }
-    .pill-sep { width: 1px; height: 16px; background: var(--border); margin: 0 0.3rem; }
-    .pill-label { font-family: var(--mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--fg-faint); margin-right: 0.1rem; }
-    .dir-meta { font-family: var(--mono); font-size: 0.72rem; color: var(--fg-faint); margin: 0.2rem 0 0.8rem; }
+    .pill-sep { width: 1px; height: 15px; background: var(--border); margin: 0 0.3rem; }
+    .pill-label { font-family: var(--mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--fg-faint); margin-right: 0.1rem; min-width: 3.1em; }
+    .dir-meta { font-family: var(--mono); font-size: 0.72rem; color: var(--fg-faint); margin: 0.35rem 0 0.5rem; }
     /* table */
     table.dir-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
-    .dir-table thead th { position: sticky; top: 96px; background: var(--bg); z-index: 5;
+    .dir-table thead th { position: sticky; top: 44px; background: var(--bg); z-index: 5;
       text-align: left; font-family: var(--mono); font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.08em;
       color: var(--fg-faint); font-weight: 600; padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--border); cursor: pointer; white-space: nowrap; }
     .dir-table thead th.nosort { cursor: default; }
+    .dir-table thead th:hover:not(.nosort) { color: var(--accent); }
     .dir-table thead th .arr { color: var(--accent); }
     .dir-table tbody tr { border-bottom: 1px solid var(--border-light); cursor: pointer; }
     .dir-table tbody tr:hover { background: #f2f1ec; }
-    .dir-table td { padding: 0.5rem 0.6rem; vertical-align: top; }
-    .c-tier { width: 38px; }
+    .dir-table td { padding: 0.3rem 0.6rem; vertical-align: top; }
+    .c-tier { width: 44px; white-space: nowrap; }
     .t-chip { display: inline-block; font-family: var(--mono); font-size: 0.6rem; font-weight: 700; letter-spacing: 0.04em;
-      color: #fff; padding: 0.12rem 0.34rem; border-radius: 2px; }
+      color: #fff; padding: 0.1rem 0.32rem; border-radius: 2px; vertical-align: middle; }
     .t-chip.t0 { background: #c43d2e; } .t-chip.t1 { background: #d98324; }
     .t-chip.t2 { background: #6b7280; } .t-chip.t3 { background: #b8b8b0; }
     .t-chip.tnone { background: #d8d8d2; color: #777; }
-    .c-person { min-width: 230px; }
-    .p-name { font-weight: 600; color: var(--fg); }
-    .p-name .indian-dot { color: var(--accent); font-size: 0.7rem; }
-    .p-role { color: var(--fg-muted); font-size: 0.78rem; margin-top: 0.1rem;
-      display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; max-width: 340px; }
-    .sig { display: inline-block; font-family: var(--mono); font-size: 0.56rem; text-transform: uppercase; letter-spacing: 0.04em;
-      padding: 0.05rem 0.3rem; border-radius: 2px; margin: 0.18rem 0.2rem 0 0; }
+    .c-person { min-width: 280px; }
+    .p-line { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.3rem; }
+    .p-name { font-weight: 600; color: var(--fg); white-space: nowrap; }
+    .p-name .indian-dot { color: var(--accent); font-size: 0.62rem; vertical-align: middle; }
+    .p-role { color: var(--fg-muted); font-size: 0.76rem; margin-top: 0.05rem; max-width: 540px;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .p-role .cl { font-family: var(--mono); font-size: 0.66rem; color: var(--fg-faint); }
+    .sig { display: inline-block; font-family: var(--mono); font-size: 0.55rem; text-transform: uppercase; letter-spacing: 0.04em;
+      padding: 0.05rem 0.3rem; border-radius: 2px; }
     .sig-stealth { background: #fbeae0; color: #b4571f; } .sig-departed { background: #fde8e6; color: #c43d2e; }
     .sig-raising { background: #e6f0e9; color: #2f6f4f; } .sig-founder { background: #ece4f5; color: #5b4b8a; }
-    .sig-cluster { background: #eef0f2; color: #555; }
-    .c-why { color: var(--fg-muted); font-size: 0.78rem; max-width: 360px; }
-    .c-why .why-txt { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
     .c-status { white-space: nowrap; font-size: 0.76rem; }
     .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 0.35rem; vertical-align: middle; }
     .dot-not-contacted { background: #cfcfc8; } .dot-contacted { background: #d98324; }
     .dot-replied { background: #2f6f4f; } .dot-meeting { background: #2f6f4f; } .dot-passed { background: #cf6f6f; }
-    .c-status .sub { color: var(--fg-faint); font-size: 0.68rem; font-family: var(--mono); margin-top: 0.12rem; }
+    .c-status .sub { color: var(--fg-faint); font-size: 0.66rem; font-family: var(--mono); margin-top: 0.1rem; }
     .c-upd { white-space: nowrap; font-family: var(--mono); font-size: 0.72rem; color: var(--fg-faint); }
     .c-act { white-space: nowrap; text-align: right; }
     .act { display: inline-block; font-family: var(--mono); font-size: 0.66rem; text-decoration: none; border: 1px solid var(--border);
-      border-radius: 3px; padding: 0.12rem 0.34rem; margin-left: 0.2rem; color: var(--fg-muted); }
+      border-radius: 3px; padding: 0.1rem 0.32rem; margin-left: 0.2rem; color: var(--fg-muted); }
     .act:hover { border-color: var(--accent); color: var(--accent); }
-    .urgency-flag { color: var(--accent); font-weight: 700; margin-left: 0.25rem; }
+    .urgency-flag { color: var(--accent); font-weight: 700; margin-left: 0.2rem; }
     .dir-empty { padding: 2rem; text-align: center; color: var(--fg-faint); font-style: italic; }
     /* hide heavier columns on narrow screens */
     @media (max-width: 820px) {
-      .c-why, .c-upd { display: none; }
-      .dir-table thead th.h-why, .dir-table thead th.h-upd { display: none; }
+      .c-upd { display: none; }
+      .dir-table thead th.h-upd { display: none; }
+      .p-role { white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
     }
     @media (max-width: 600px) {
-      .dir-top { margin: 0 -1rem 1rem; padding: 0.6rem 1rem; }
+      .dir-top { margin: 0 -1rem 0.6rem; padding: 0.55rem 1rem; }
       .c-status { display: none; } .dir-table thead th.h-status { display: none; }
     }
     .recent-updates { margin-top: 2.5rem; }
@@ -95,10 +108,17 @@
     </div>
   </div>
 
-  <h1 style="margin-bottom:0.2rem;">People Repository</h1>
-  <p class="subtitle" style="margin-top:0;">A searchable directory of exceptional builders, researchers, and outliers &mdash; click any row to open the dossier.</p>
+  <div class="dir-head">
+    <h1>People Repository</h1>
+    <p class="subtitle">Exceptional builders, researchers, and outliers &mdash; click any row to open the dossier.</p>
+  </div>
 
   <input type="text" id="dir-search" class="dir-search" placeholder="Search name, role, company, tag, cluster&hellip;" autocomplete="off" />
+
+  <div class="dir-quick">
+    <span class="preset" id="preset-triage" title="T0 founders you have not contacted yet">&#9889; Daily Triage &mdash; T0 &middot; not contacted</span>
+    <span class="preset clear" id="preset-clear" style="display:none;">&#10005; Clear filters</span>
+  </div>
 
   <div class="dir-filters" id="tier-filters"><span class="pill-label">Tier</span></div>
   <div class="dir-filters" id="signal-filters"><span class="pill-label">Signal</span></div>
@@ -111,7 +131,6 @@
       <tr>
         <th class="c-tier" data-sort="tier">Tier <span class="arr"></span></th>
         <th class="c-person" data-sort="name">Person <span class="arr"></span></th>
-        <th class="h-why nosort">Why</th>
         <th class="h-status" data-sort="status">Status <span class="arr"></span></th>
         <th class="h-upd" data-sort="updated">Updated <span class="arr"></span></th>
         <th class="nosort">Reach</th>
@@ -124,6 +143,8 @@
   <details class="recent-updates">
     <summary>&#9670; Recent Updates &mdash; <span id="updates-count">&hellip;</span> latest changes</summary>
     <ul>
+      <li><span class="update-date">Jun 9</span><span class="update-badge new">NEW &middot; T0</span> <a href="people/emmett-bicker.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Emmett Bicker</a> &mdash; ~19yo solo founder of Aster (asterlab.ai, &ldquo;first AI-native AI research lab,&rdquo; YC S26); dropped out &rarr; ~1yr RL researcher at Magic &rarr; sole-authored arXiv founder. Real pedigree (Nature Comms co-author as a HS-er; merged kernel record in Keller Jordan&rsquo;s modded-nanogpt). <strong>Claims run hot</strong> (3 adversarial verifiers: 1/5 SOTA claims confirmed, TriMul not actually SOTA, autonomy thesis least-verified). Owner call: T0 &mdash; pursue now alongside YC, price the hype…</li>
+      <li><span class="update-date">Jun 9</span><span class="update-badge new">NEW &middot; T0</span> <a href="people/raunaq-bhirangi.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Raunaq Bhirangi</a> &mdash; CONFIRMED stealth-robotics co-founder (NYU CILVR / Pinto; CMU PhD '24); creator of the ReSkin&rarr;AnySkin&rarr;eFlesh tactile-sensor stack. <strong>Cracked the company name: raunaq@indexrobots.ai &rarr; &ldquo;Index Robots&rdquo; (domain registered Sept 2025, verified).</strong> Suspected co-founder of <a href="people/siddhant-haldar.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Siddhant Haldar</a>'s same company (strong, unconfirmed). IIT Bombay, JEE AIR 348. Indian. Reach out NOW…</li>
       <li><span class="update-date">Jun 3</span><span class="update-badge new">NEW &middot; T1</span> <a href="people/ellen-xu.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Ellen Xu</a> &mdash; Stanford CS undergrad ('27); embodied RL at comma.ai + Tesla Autopilot; Polychromic RL (ICLR'26, Finn+Sadigh). Teen: Kawasaki-disease CNN (Scientific Reports), Regeneron STS 3rd. Serial builder, anti-convergence. Loop dossier 5/5 — loop complete…</li>
       <li><span class="update-date">Jun 3</span><span class="update-badge new">NEW &middot; T1</span> <a href="people/aayush-karan.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Aayush Karan</a> &mdash; 3rd-yr Harvard CS PhD (Sitan Chen + Yilun Du); 1st-author "Reasoning with Sampling" (ICLR'26 Oral). Polymath: solved a 30-yr knot-theory problem at 17, Nature Methods RNA, generative-ML theory. Soros/Davidson. Indian. Loop dossier 4/5…</li>
       <li><span class="update-date">Jun 3</span><span class="update-badge new">NEW &middot; T1</span> <a href="people/cade-gordon.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Cade Gordon</a> &mdash; MTS at Anthropic (pretraining); deferred a Stanford PhD. Core author LAION-5B + OpenCLIP; 1st-author protein-LM (ICLR'25, Abbeel). Hertz'25, Berkeley BS in 2.5yr. Frontier-lab insider, departure-watch. Loop dossier 3/5…</li>
@@ -235,8 +256,9 @@
     var TIERS = [['T0','0'],['T1','1'],['T2','2'],['T3','3'],['—','none']];
     var SIGNALS = ['stealth','departed','raising','founder'];
     var STATUSES = ['not-contacted','contacted','replied','meeting','passed'];
-    var state = { q:'', tier:'all', signals:{}, status:'all', indian:false, urgency:false, delta:'all',
-                  sortKey:'tier', sortDir:1 };
+    var DEFAULT_STATE = { q:'', tier:'all', signals:{}, status:'all', indian:false, urgency:false, delta:'all',
+                          sortKey:'tier', sortDir:1 };
+    var state = JSON.parse(JSON.stringify(DEFAULT_STATE));
     var DATA = [], body = document.getElementById('dir-body'),
         meta = document.getElementById('dir-meta'), empty = document.getElementById('dir-empty');
 
@@ -246,6 +268,11 @@
       return '<span class="t-chip t'+t+'">T'+t+'</span>';
     }
     function tierRank(t){ return (t===null||t===undefined)?9:t; }
+
+    function anyFilterActive(){
+      return state.q || state.tier!=='all' || state.status!=='all' || state.indian ||
+             state.urgency || state.delta!=='all' || Object.values(state.signals).some(Boolean);
+    }
 
     function matches(p){
       if (state.tier!=='all'){ var tv = (p.tier===null||p.tier===undefined)?'none':String(p.tier); if (tv!==state.tier) return false; }
@@ -269,9 +296,13 @@
         var av, bv;
         if (k==='tier'){ av=tierRank(a.tier); bv=tierRank(b.tier);
           if (av!==bv) return (av-bv)*d;
+          // within a tier: flagged-urgent first, then most-recently updated
+          if (!!a.urgency !== !!b.urgency) return (b.urgency?1:0)-(a.urgency?1:0);
           return (b.updated||'').localeCompare(a.updated||''); }
         if (k==='name'){ return a.name.localeCompare(b.name)*d; }
-        if (k==='status'){ av=STATUSES.indexOf(a.status); bv=STATUSES.indexOf(b.status); return (av-bv)*d; }
+        if (k==='status'){ av=STATUSES.indexOf(a.status); bv=STATUSES.indexOf(b.status);
+          if (av!==bv) return (av-bv)*d;
+          return tierRank(a.tier)-tierRank(b.tier); }
         if (k==='updated'){ return (a.updated||'').localeCompare(b.updated||'')*d*-1; }
         return 0;
       });
@@ -279,8 +310,12 @@
     }
 
     function rowHTML(p){
-      var sigs = (p.signals||[]).map(function(s){return '<span class="sig sig-'+s+'">'+s+'</span>';}).join('');
-      if (p.cluster) sigs += '<span class="sig sig-cluster">'+esc(p.cluster)+'</span>';
+      var sigs = (p.signals||[]).map(function(s){return '<span class="sig sig-'+s+'">'+s+'</span>';}).join(' ');
+      // Person cell folds the old "Why" column: role is the always-present descriptor,
+      // the investment "why" (spike) is preserved as a hover tooltip (full text in the dossier).
+      var desc = p.role || p.spike || '';
+      var why  = p.spike || p.role || '';
+      var clHTML = p.cluster ? ' <span class="cl">'+esc(p.cluster)+'</span>' : '';
       var acts = '';
       if (p.twitter) acts += '<a class="act" href="https://twitter.com/'+encodeURIComponent(p.twitter)+'" target="_blank" rel="noopener" data-stop title="@'+esc(p.twitter)+'">𝕏</a>';
       if (p.linkedin) acts += '<a class="act" href="https://linkedin.com/in/'+encodeURIComponent(p.linkedin)+'" target="_blank" rel="noopener" data-stop title="LinkedIn">in</a>';
@@ -289,10 +324,9 @@
       var sub = p.last_contacted ? ('contacted '+p.last_contacted) : (p.next_action_date ? ('by '+p.next_action_date) : '');
       return ''+
         '<td class="c-tier">'+tierChip(p.tier)+(p.urgency?'<span class="urgency-flag" title="urgency set">!</span>':'')+'</td>'+
-        '<td class="c-person"><div class="p-name">'+esc(p.name)+(p.indian?' <span class="indian-dot" title="Indian / Indian-origin">●</span>':'')+'</div>'+
-          (p.role?'<div class="p-role">'+esc(p.role)+'</div>':'')+
-          (sigs?'<div>'+sigs+'</div>':'')+'</td>'+
-        '<td class="c-why h-why"><div class="why-txt">'+esc(p.spike)+'</div></td>'+
+        '<td class="c-person">'+
+          '<div class="p-line"><span class="p-name">'+esc(p.name)+(p.indian?' <span class="indian-dot" title="Indian / Indian-origin">●</span>':'')+'</span>'+sigs+'</div>'+
+          (desc?'<div class="p-role" title="'+esc(why)+'">'+esc(desc)+clHTML+'</div>':'')+'</td>'+
         '<td class="c-status h-status"><span class="dot dot-'+p.status+'"></span>'+p.status+(sub?'<div class="sub">'+esc(sub)+'</div>':'')+'</td>'+
         '<td class="c-upd h-upd">'+(p.updated||'—')+'</td>'+
         '<td class="c-act">'+acts+'</td>';
@@ -315,8 +349,12 @@
         frag.appendChild(tr);
       });
       body.appendChild(frag);
-      meta.textContent = rows.length + ' of ' + DATA.length + ' people' +
-        (state.q||state.tier!=='all'||state.status!=='all'||state.indian||state.urgency||state.delta!=='all'||Object.values(state.signals).some(Boolean) ? '  (filtered)' : '');
+      var filtered = anyFilterActive();
+      meta.textContent = rows.length + ' of ' + DATA.length + ' people' + (filtered ? '  (filtered)' : '');
+      document.getElementById('preset-clear').style.display = filtered ? '' : 'none';
+      // triage preset reflects whether its exact filter combo is live
+      var triageOn = (state.tier==='0' && state.status==='not-contacted');
+      document.getElementById('preset-triage').classList.toggle('is-on', triageOn);
       // header arrows
       document.querySelectorAll('.dir-table th[data-sort]').forEach(function(th){
         var a = th.querySelector('.arr');
@@ -327,12 +365,11 @@
     function buildFilters(){
       var tf = document.getElementById('tier-filters');
       var present = {}; DATA.forEach(function(p){ present[(p.tier===null||p.tier===undefined)?'none':String(p.tier)]=true; });
-      var allP = mkPill('All', state.tier==='all', function(){ state.tier='all'; syncTier(); render(); });
-      tf.appendChild(allP);
+      var allP = mkPill('All', false, function(){ state.tier='all'; syncAll(); render(); }); allP.dataset.tier='all'; tf.appendChild(allP);
       TIERS.forEach(function(t){
         if (!present[t[1]]) return;
         var n = DATA.filter(function(p){return ((p.tier===null||p.tier===undefined)?'none':String(p.tier))===t[1];}).length;
-        var pill = mkPill(t[0]+' ('+n+')', state.tier===t[1], function(){ state.tier=t[1]; syncTier(); render(); });
+        var pill = mkPill(t[0]+' ('+n+')', false, function(){ state.tier=t[1]; syncAll(); render(); });
         if (t[1]!=='none') pill.classList.add('tier-T'+t[1]);
         pill.dataset.tier=t[1];
         tf.appendChild(pill);
@@ -341,31 +378,58 @@
       SIGNALS.forEach(function(s){
         var n = DATA.filter(function(p){return (p.signals||[]).indexOf(s)>=0;}).length;
         if (!n) return;
-        var pill = mkPill(s+' ('+n+')', false, function(){ state.signals[s]=!state.signals[s]; pill.classList.toggle('active'); render(); });
+        var pill = mkPill(s+' ('+n+')', false, function(){ state.signals[s]=!state.signals[s]; syncAll(); render(); });
         pill.dataset.sig=s; sf.appendChild(pill);
       });
       var mf = document.getElementById('meta-filters');
-      var allS = mkPill('All', true, function(){ state.status='all'; syncStatus(); render(); }); allS.dataset.st='all'; mf.appendChild(allS);
+      var allS = mkPill('All', false, function(){ state.status='all'; syncAll(); render(); }); allS.dataset.st='all'; mf.appendChild(allS);
       STATUSES.forEach(function(s){
         var n = DATA.filter(function(p){return p.status===s;}).length; if (!n) return;
-        var pill = mkPill(s+' ('+n+')', false, function(){ state.status=s; syncStatus(); render(); }); pill.dataset.st=s; mf.appendChild(pill);
+        var pill = mkPill(s+' ('+n+')', false, function(){ state.status=s; syncAll(); render(); }); pill.dataset.st=s; mf.appendChild(pill);
       });
       mf.appendChild(sep());
-      mf.appendChild(mkPill('★ urgency', false, function(){ state.urgency=!state.urgency; this.classList.toggle('active'); render(); }));
-      mf.appendChild(mkPill('● indian', false, function(){ state.indian=!state.indian; this.classList.toggle('active'); render(); }));
-      mf.appendChild(mkPill('hide delta', false, function(){ state.delta = state.delta==='hide'?'all':'hide'; this.classList.toggle('active'); render(); }));
+      var pu = mkPill('★ urgency', false, function(){ state.urgency=!state.urgency; syncAll(); render(); }); pu.dataset.flag='urgency'; mf.appendChild(pu);
+      var pi = mkPill('● indian', false, function(){ state.indian=!state.indian; syncAll(); render(); }); pi.dataset.flag='indian'; mf.appendChild(pi);
+      var pd = mkPill('hide delta', false, function(){ state.delta = state.delta==='hide'?'all':'hide'; syncAll(); render(); }); pd.dataset.flag='delta'; mf.appendChild(pd);
+      syncAll();
     }
-    function syncTier(){ document.querySelectorAll('#tier-filters .pill').forEach(function(p){
-      var v = p.dataset.tier!==undefined?p.dataset.tier:'all'; p.classList.toggle('active', v===state.tier); }); }
-    function syncStatus(){ document.querySelectorAll('#meta-filters .pill[data-st]').forEach(function(p){
-      p.classList.toggle('active', p.dataset.st===state.status); }); }
+
+    // Single source of truth for pill UI -> derives every pill's active class from `state`.
+    function syncAll(){
+      document.querySelectorAll('#tier-filters .pill').forEach(function(p){
+        p.classList.toggle('active', (p.dataset.tier||'all')===state.tier); });
+      document.querySelectorAll('#signal-filters .pill').forEach(function(p){
+        p.classList.toggle('active', !!state.signals[p.dataset.sig]); });
+      document.querySelectorAll('#meta-filters .pill[data-st]').forEach(function(p){
+        p.classList.toggle('active', p.dataset.st===state.status); });
+      document.querySelectorAll('#meta-filters .pill[data-flag]').forEach(function(p){
+        var f=p.dataset.flag;
+        var on = f==='urgency'?state.urgency : f==='indian'?state.indian : (state.delta==='hide');
+        p.classList.toggle('active', on); });
+    }
+
+    function resetFilters(){
+      var sk=state.sortKey, sd=state.sortDir;
+      state = JSON.parse(JSON.stringify(DEFAULT_STATE));
+      state.sortKey=sk; state.sortDir=sd;             // keep the user's current sort
+      document.getElementById('dir-search').value='';
+      syncAll(); render();
+    }
+
     function mkPill(label, active, fn){ var b=document.createElement('span'); b.className='pill'+(active?' active':''); b.textContent=label; b.addEventListener('click', fn); return b; }
     function sep(){ var s=document.createElement('span'); s.className='pill-sep'; return s; }
 
     document.getElementById('dir-search').addEventListener('input', function(e){ state.q=e.target.value.toLowerCase().trim(); render(); });
+    document.getElementById('preset-triage').addEventListener('click', function(){
+      var on = (state.tier==='0' && state.status==='not-contacted');
+      if (on){ state.tier='all'; state.status='all'; }   // toggle off
+      else   { state.tier='0';  state.status='not-contacted'; }
+      syncAll(); render();
+    });
+    document.getElementById('preset-clear').addEventListener('click', resetFilters);
     document.querySelectorAll('.dir-table th[data-sort]').forEach(function(th){
       th.addEventListener('click', function(){ var k=th.dataset.sort;
-        if (state.sortKey===k) state.sortDir*=-1; else { state.sortKey=k; state.sortDir = (k==='name')?1:1; }
+        if (state.sortKey===k) state.sortDir*=-1; else { state.sortKey=k; state.sortDir = 1; }
         render(); });
     });
 

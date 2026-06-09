@@ -1154,6 +1154,64 @@
         "sail",
         "rl-reasoning"
       ]
+    },
+    {
+      "name": "Venkatesh Pattabiraman",
+      "from_dossier": "raunaq-bhirangi",
+      "discovered_at": "2026-06-03",
+      "priority": "P2",
+      "status": "pending",
+      "context": "NYU CILVR; eFlesh co-author and hosts the eFlesh repo (363★) on his GitHub (@notvenky). RUKA Hand co-author. Possible early Index Robots teammate alongside Raunaq Bhirangi + Siddhant Haldar.",
+      "tags": [
+        "nyu-cilvr",
+        "lerrel-pinto",
+        "robotics",
+        "tactile-sensing",
+        "index-robots-adjacent"
+      ]
+    },
+    {
+      "name": "Irmak Güzey",
+      "from_dossier": "raunaq-bhirangi",
+      "discovered_at": "2026-06-03",
+      "priority": "P3",
+      "status": "pending",
+      "context": "NYU CILVR (Pinto) PhD; RUKA Hand co-author; tactile/dexterous-manipulation cohort. Frequent Raunaq Bhirangi collaborator.",
+      "tags": [
+        "nyu-cilvr",
+        "lerrel-pinto",
+        "robotics",
+        "dexterity",
+        "tactile-sensing"
+      ]
+    },
+    {
+      "name": "Anya Zorin",
+      "from_dossier": "raunaq-bhirangi",
+      "discovered_at": "2026-06-03",
+      "priority": "P3",
+      "status": "pending",
+      "context": "RUKA Hand co-author (Pinto-lab dexterous-hand cohort). @anyazorin.",
+      "tags": [
+        "nyu-cilvr",
+        "lerrel-pinto",
+        "robotics",
+        "dexterity"
+      ]
+    },
+    {
+      "name": "Ziqian Li",
+      "from_dossier": "raunaq-bhirangi",
+      "discovered_at": "2026-06-03",
+      "priority": "P3",
+      "status": "pending",
+      "context": "RUKA Hand co-author (Pinto-lab dexterous-hand cohort). @zhazhali01.",
+      "tags": [
+        "nyu-cilvr",
+        "lerrel-pinto",
+        "robotics",
+        "dexterity"
+      ]
     }
   ]
 }
