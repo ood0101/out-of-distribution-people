@@ -1112,6 +1112,20 @@
         "ai-for-bio",
         "berkeley"
       ]
+    },
+    {
+      "name": "Marvin Li",
+      "from_dossier": "aayush-karan",
+      "discovered_at": "2026-06-03",
+      "priority": "P2",
+      "status": "pending",
+      "context": "Harvard undergrad; LEAD author on 'Blink of an Eye: feature localization in generative models' (ICML 2025 Oral, w/ Aayush Karan + Sitan Chen). Won the Captain Jonathan Fay Prize (Harvard's top thesis prize) for the thesis behind it. Strong young inflection — worth a dedicated dossier. marvinfli.github.io. (Note: distinct from the 'Marvin Li' RSI entry surfaced earlier — verify which.)",
+      "tags": [
+        "harvard",
+        "generative-models",
+        "diffusion-theory",
+        "fay-prize"
+      ]
     }
   ]
 }

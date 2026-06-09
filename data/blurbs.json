@@ -898,5 +898,9 @@
  "cade-gordon": {
   "role": "MTS at Anthropic (pretraining science) — deferred a Stanford PhD; ex-Berkeley/LAION",
   "spike": "T1 frontier-lab insider, departure-watch. Core author LAION-5B (NeurIPS'22 Outstanding, 4th/16) + OpenCLIP scaling-laws; scaled CLIP '8 GPUs→thousands'. 1st-author protein-LM fitness (ICLR'25, Abbeel). Berkeley BS in 2.5yr; Hertz'25. Citation honesty: ~9K cites ~99% big-collab middle-author. Taste-over-credential (deferred Stanford PhD for Anthropic). Re-tier T0 on departure."
+ },
+ "aayush-karan": {
+  "role": "3rd-yr Harvard CS PhD (Sitan Chen + Yilun Du, Kempner) — generative-model / LLM-reasoning theory",
+  "spike": "T1, leaning T0-watch. 1st-author 'Reasoning with Sampling' (ICLR'26 ORAL): training-free MCMC matches RL post-training while preserving diversity. Verified polymath: solved a 30-yr-open knot-theory problem at 17, Nature Methods RNA (1st author), generative-ML theory. Harvard summa '23 + Sophia Freund (top GPA). Soros/Goldwater/Davidson/Regeneron. Indian. Citation honesty: 87 cites, one-paper-dominated."
  }
 }
