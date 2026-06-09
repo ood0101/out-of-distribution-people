@@ -1098,6 +1098,20 @@
         "open-endedness",
         "evolution"
       ]
+    },
+    {
+      "name": "Amy X. Lu",
+      "from_dossier": "cade-gordon",
+      "discovered_at": "2026-06-03",
+      "priority": "P2",
+      "status": "pending",
+      "context": "Cade Gordon's protein-LM co-author (Protein LM Fitness, ICLR'25). Berkeley CS PhD → Research Scientist at Isomorphic Labs; author of PLAID/CHEAP/CPCProt (all-atom protein generation from function/organism prompts). Deeply-technical AI-for-bio / protein-ML frontier. @amyxlu, amyx.lu.",
+      "tags": [
+        "isomorphic-labs",
+        "protein-ml",
+        "ai-for-bio",
+        "berkeley"
+      ]
     }
   ]
 }

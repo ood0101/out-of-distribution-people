@@ -894,5 +894,9 @@
  "isha-puri": {
   "role": "MIT CSAIL PhD (Yoon Kim + Marzyeh Ghassemi) — inference-time-scaling / RL-for-reasoning",
   "spike": "T1. 1st-author Rollout Roulette (NeurIPS'25): particle-filter test-time scaling, training-free, Qwen-7B→o1 in 32 rollouts (52★). Accelerating cadence (NeurIPS'21/'25, ICLR'26, ICML'26). Joining DeepMind; NeurIPS'25 Assistant PC. Harvard '23. Davidson/ISEF/Cutler-Bell. Indian. Co-founded CreAIte at 15. Watch for T0."
+ },
+ "cade-gordon": {
+  "role": "MTS at Anthropic (pretraining science) — deferred a Stanford PhD; ex-Berkeley/LAION",
+  "spike": "T1 frontier-lab insider, departure-watch. Core author LAION-5B (NeurIPS'22 Outstanding, 4th/16) + OpenCLIP scaling-laws; scaled CLIP '8 GPUs→thousands'. 1st-author protein-LM fitness (ICLR'25, Abbeel). Berkeley BS in 2.5yr; Hertz'25. Citation honesty: ~9K cites ~99% big-collab middle-author. Taste-over-credential (deferred Stanford PhD for Anthropic). Re-tier T0 on departure."
  }
 }

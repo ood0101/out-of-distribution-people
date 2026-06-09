@@ -1,6 +1,6 @@
 {
  "generated": "2026-06-09",
- "count": 231,
+ "count": 232,
  "people": [
   {
    "slug": "michael-wornow",
@@ -447,6 +447,40 @@
    "urgency": true
   },
   {
+   "slug": "cade-gordon",
+   "name": "Cade Gordon",
+   "tier": 1,
+   "role": "MTS at Anthropic (pretraining science) — deferred a Stanford PhD; ex-Berkeley/LAION",
+   "spike": "T1 frontier-lab insider, departure-watch. Core author LAION-5B (NeurIPS'22 Outstanding, 4th/16) + OpenCLIP scaling-laws; scaled CLIP '8 GPUs→thousands'. 1st-author protein-LM fitness (ICLR'25, Abbeel). Berkeley BS in 2.5yr; Hertz'25. Citation honesty: ~9K cites ~99% big-collab middle-author. Taste-over-credential (deferred Stanford PhD for Anthropic). Re-tier T0 on departure.",
+   "tags": [
+    "researchers",
+    "anthropic",
+    "frontier-labs",
+    "pretraining",
+    "laion",
+    "openclip",
+    "ai-for-bio",
+    "berkeley",
+    "hertz-fellow",
+    "departure-watch"
+   ],
+   "cluster": null,
+   "signals": [],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "",
+   "channel": null,
+   "twitter": "cadegordonml",
+   "linkedin": null,
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
+  },
+  {
    "slug": "isha-puri",
    "name": "Isha Puri",
    "tier": 1,
@@ -471,7 +505,7 @@
    "status": "not-contacted",
    "last_contacted": null,
    "next_action_date": null,
-   "updated": "",
+   "updated": "2026-06-09",
    "channel": null,
    "twitter": "ishapuri101",
    "linkedin": null,
