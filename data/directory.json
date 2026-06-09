@@ -1,6 +1,6 @@
 {
  "generated": "2026-06-09",
- "count": 233,
+ "count": 234,
  "people": [
   {
    "slug": "michael-wornow",
@@ -447,6 +447,42 @@
    "urgency": true
   },
   {
+   "slug": "ellen-xu",
+   "name": "Ellen Xu",
+   "tier": 1,
+   "role": "Stanford CS undergrad ('27) — embodied/real-world RL; comma.ai + Tesla Autopilot intern",
+   "spike": "T1, watch for T0 at grad. Validated on both axes: ICLR'26 Polychromic RL (3rd author; Finn+Sadigh senior) + shipped RL at comma.ai & Tesla Autopilot. Teen: 1st-author Kawasaki-disease CNN (Scientific Reports), Regeneron STS 3rd ($150K), RSI'22, CyberPatriot champion, Coolidge. Serial builder, anti-convergence ('find your voice among the noise'). Plays/flies/fences/reads heavily. Chinese-origin.",
+   "tags": [
+    "researchers",
+    "embodied-rl",
+    "self-driving",
+    "autonomy",
+    "stanford",
+    "comma-ai",
+    "tesla",
+    "coolidge",
+    "regeneron-sts",
+    "builder"
+   ],
+   "cluster": null,
+   "signals": [
+    "stealth"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "",
+   "channel": null,
+   "twitter": "ellenjxu_",
+   "linkedin": null,
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
+  },
+  {
    "slug": "aayush-karan",
    "name": "Aayush Karan",
    "tier": 1,
@@ -471,7 +507,7 @@
    "status": "not-contacted",
    "last_contacted": null,
    "next_action_date": null,
-   "updated": "",
+   "updated": "2026-06-09",
    "channel": null,
    "twitter": "aakaran31",
    "linkedin": null,

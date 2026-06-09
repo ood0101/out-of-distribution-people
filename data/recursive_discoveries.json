@@ -1126,6 +1126,34 @@
         "diffusion-theory",
         "fay-prize"
       ]
+    },
+    {
+      "name": "Jubayer Ibn Hamid",
+      "from_dossier": "ellen-xu",
+      "discovered_at": "2026-06-03",
+      "priority": "P2",
+      "status": "pending",
+      "context": "1st author of Polychromic Objectives for RL (ICLR'26, w/ Ellen Xu + Finn + Sadigh). Stanford CS PhD (Dorsa Sadigh + Chelsea Finn + Noah Goodman); Google DeepMind student researcher; RL exploration for scientific discovery. jubayer-ibn-hamid.github.io.",
+      "tags": [
+        "stanford",
+        "rl",
+        "sadigh",
+        "finn",
+        "deepmind"
+      ]
+    },
+    {
+      "name": "Ifdita Hasan Orney",
+      "from_dossier": "ellen-xu",
+      "discovered_at": "2026-06-03",
+      "priority": "P3",
+      "status": "pending",
+      "context": "2nd author of Polychromic (ICLR'26); Stanford SAIL; lead author of Poly-EPO (exploratory reasoning models, set-RL follow-on).",
+      "tags": [
+        "stanford",
+        "sail",
+        "rl-reasoning"
+      ]
     }
   ]
 }

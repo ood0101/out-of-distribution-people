@@ -902,5 +902,9 @@
  "aayush-karan": {
   "role": "3rd-yr Harvard CS PhD (Sitan Chen + Yilun Du, Kempner) — generative-model / LLM-reasoning theory",
   "spike": "T1, leaning T0-watch. 1st-author 'Reasoning with Sampling' (ICLR'26 ORAL): training-free MCMC matches RL post-training while preserving diversity. Verified polymath: solved a 30-yr-open knot-theory problem at 17, Nature Methods RNA (1st author), generative-ML theory. Harvard summa '23 + Sophia Freund (top GPA). Soros/Goldwater/Davidson/Regeneron. Indian. Citation honesty: 87 cites, one-paper-dominated."
+ },
+ "ellen-xu": {
+  "role": "Stanford CS undergrad ('27) — embodied/real-world RL; comma.ai + Tesla Autopilot intern",
+  "spike": "T1, watch for T0 at grad. Validated on both axes: ICLR'26 Polychromic RL (3rd author; Finn+Sadigh senior) + shipped RL at comma.ai & Tesla Autopilot. Teen: 1st-author Kawasaki-disease CNN (Scientific Reports), Regeneron STS 3rd ($150K), RSI'22, CyberPatriot champion, Coolidge. Serial builder, anti-convergence ('find your voice among the noise'). Plays/flies/fences/reads heavily. Chinese-origin."
  }
 }
