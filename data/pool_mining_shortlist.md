@@ -3,7 +3,7 @@ _Pools: Hertz, RSI, FRC Dean's List, Davidson, Coolidge. 40 unique new people, c
 
 | Verdict | Tier | Indian | Name | Pool(s) | Now | Spike | Why |
 |---|---|---|---|---|---|---|---|
-| TRACK | T1 |  | **Owen Dugan** | Davidson+Hertz+RSI | CS PhD student at Stanford (started fall 2024). Earned physi | Works at the AI x physics frontier: built ML that auto-discovers scientific theo | Genuine frontier AI+physics spike, very young (MIT degree in 2.5 yrs), interp +  |
+| TRACK | T1 |  | **Owen Dugan** ✅dossiered | Davidson+Hertz+RSI | CS PhD student at Stanford (started fall 2024). Earned physi | Works at the AI x physics frontier: built ML that auto-discovers scientific theo | Genuine frontier AI+physics spike, very young (MIT degree in 2.5 yrs), interp +  |
 | TRACK | T1 |  | **Cade Gordon** | Hertz | Finishing EECS MS at UC Berkeley (BAIR / Pieter Abbeel lab); | Co-authored LAION-5B (NeurIPS 2022 Outstanding Paper) and OpenCLIP scaling-laws  | Top-decile spike (NeurIPS Outstanding Paper on LAION-5B/OpenCLIP) plus AI-for-bi |
 | TRACK | T1 |  | **Logan Engstrom** | Hertz | PhD student at MIT in Aleksander Madry's lab (likely finishi | Core contributor to the Madry-lab adversarial-robustness and datamodels line (Ex | Madry-lab pedigree, hard ML-systems/data-curation spike; PhD-finishing timing ma |
 | TRACK | T1 | ✓ | **Isha Puri** | Davidson | PhD student at MIT CSAIL (co-advised by Yoon Kim and Marzyeh | First-author 'Probabilistic Inference Approach to Inference-Time Scaling of LLMs | Frontier LLM inference-scaling researcher with a real, talked-about result; MIT  |

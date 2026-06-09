@@ -1006,6 +1006,59 @@
         "pear-vc",
         "company-to-profile"
       ]
+    },
+    {
+      "name": "Zhuo Chen",
+      "from_dossier": "owen-dugan",
+      "discovered_at": "2026-06-03",
+      "priority": "P2",
+      "status": "pending",
+      "context": "1st author of QuanTA (NeurIPS 2024, quantum-informed high-rank LLM fine-tuning); MIT/Soljačić. The one who beat Owen Dugan to first-author on QuanTA — young AI×physics researcher worth a look.",
+      "tags": [
+        "mit",
+        "soljacic",
+        "ai-physics",
+        "llm-finetuning"
+      ]
+    },
+    {
+      "name": "Sabri Eyuboglu",
+      "from_dossier": "owen-dugan",
+      "discovered_at": "2026-06-03",
+      "priority": "P2",
+      "status": "pending",
+      "context": "Senior Hazy Research (Chris Ré) PhD; recurs across the repo (co-author on fact-storing MLPs etc.) but lacks a dedicated dossier. Core Hazy figure — worth his own page.",
+      "tags": [
+        "stanford",
+        "hazy-research",
+        "chris-re"
+      ]
+    },
+    {
+      "name": "Simran Arora",
+      "from_dossier": "owen-dugan",
+      "discovered_at": "2026-06-03",
+      "priority": "P2",
+      "status": "pending",
+      "context": "Senior Hazy Research (Chris Ré) PhD (Based, ZoologY/linear-attention architectures). Referenced across the repo, no dedicated page. Strong founder-watch in the Hazy cohort.",
+      "tags": [
+        "stanford",
+        "hazy-research",
+        "chris-re",
+        "architecture"
+      ]
+    },
+    {
+      "name": "Jerry Liu (JW Liu)",
+      "from_dossier": "owen-dugan",
+      "discovered_at": "2026-06-03",
+      "priority": "P3",
+      "status": "pending",
+      "context": "Hazy Research; first-authors the least-squares-in-transformers line + on Fact-Storing MLPs with Owen Dugan + Chris Ré.",
+      "tags": [
+        "stanford",
+        "hazy-research"
+      ]
     }
   ]
 }

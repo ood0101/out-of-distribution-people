@@ -1,7 +1,40 @@
 {
  "generated": "2026-06-08",
- "count": 229,
+ "count": 230,
  "people": [
+  {
+   "slug": "michael-wornow",
+   "name": "Michael Wornow",
+   "tier": 0,
+   "role": "Kinetic Systems, Stanford CS PhD",
+   "spike": "",
+   "tags": [
+    "healthcare-ai",
+    "computer-use-agents",
+    "chris-re-lab",
+    "stealth-founder",
+    "enterprise-automation",
+    "delta"
+   ],
+   "cluster": "healthcare-ai",
+   "signals": [
+    "stealth",
+    "raising"
+   ],
+   "status": "contacted",
+   "last_contacted": "2026-05-27",
+   "next_action_date": "2026-06-10",
+   "updated": "2026-06-08",
+   "channel": "email",
+   "twitter": "michaelwornow",
+   "linkedin": "michael-wornow",
+   "email": "team@kineticsystems.ai",
+   "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=team%40kineticsystems.ai",
+   "indian": false,
+   "delta": true,
+   "needs_triage": false,
+   "urgency": true
+  },
   {
    "slug": "siddhant-haldar",
    "name": "Siddhant Haldar",
@@ -414,37 +447,110 @@
    "urgency": true
   },
   {
-   "slug": "michael-wornow",
-   "name": "Michael Wornow",
-   "tier": 0,
-   "role": "Kinetic Systems, Stanford CS PhD",
-   "spike": "",
+   "slug": "owen-dugan",
+   "name": "Owen Dugan",
+   "tier": 1,
+   "role": "Stanford CS PhD, Chris Ré's Hazy lab — AI×physics (MIT physics BS in 2.5yr)",
+   "spike": "T1. Verified rate-of-change: 2 granted patents pre-MIT, OccamNet as HS-er, MIT physics in 2.5yr, 1st-author ICML'23 (Q-Flow) + NeurIPS'24 (OccamLLM) + a 1st-author Hazy paper WITH Chris Ré. Hertz+RSI+Davidson+Presidential+Knight-Hennessy. Bidirectional AI×physics → now ML-systems/interp. Watch for T0. (3-pool pedigree hit.)",
    "tags": [
-    "healthcare-ai",
-    "computer-use-agents",
-    "chris-re-lab",
-    "stealth-founder",
-    "enterprise-automation",
-    "delta"
+    "researchers",
+    "ai-physics",
+    "mechanistic-interpretability",
+    "hazy-research",
+    "chris-re",
+    "stanford",
+    "mit",
+    "hertz-fellow",
+    "rsi",
+    "davidson-fellow"
    ],
-   "cluster": "healthcare-ai",
+   "cluster": null,
    "signals": [
     "stealth",
-    "raising"
+    "founder"
    ],
-   "status": "contacted",
-   "last_contacted": "2026-05-27",
-   "next_action_date": "2026-06-10",
-   "updated": "2026-03-29",
-   "channel": "email",
-   "twitter": "michaelwornow",
-   "linkedin": "michael-wornow",
-   "email": "team@kineticsystems.ai",
-   "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=team%40kineticsystems.ai",
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "",
+   "channel": null,
+   "twitter": "owendugan",
+   "linkedin": "owen-m-dugan",
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
+  },
+  {
+   "slug": "dan-biderman",
+   "name": "Dan Biderman",
+   "tier": 1,
+   "role": "Stanford CS Postdoc",
+   "spike": "",
+   "tags": [
+    "efficient-llm",
+    "parameter-efficient-finetuning",
+    "on-device-inference",
+    "multi-agent-systems",
+    "neuroscience-to-ai",
+    "chris-re-lab",
+    "delta"
+   ],
+   "cluster": null,
+   "signals": [
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "2026-06-08",
+   "channel": null,
+   "twitter": "dan_biderman",
+   "linkedin": "dan-biderman-066039202",
+   "email": "biderman@stanford.edu",
+   "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=biderman%40stanford.edu",
    "indian": false,
    "delta": true,
    "needs_triage": false,
-   "urgency": true
+   "urgency": false
+  },
+  {
+   "slug": "ishan-khare",
+   "name": "Ishan Khare",
+   "tier": 1,
+   "role": "Stanford CS MS, Hazy Research (Chris Ré) — AND founder of Nimbic AI (YC X25)",
+   "spike": "BURIED HEADLINE: already a YC founder — founded/CEO'd Nimbic AI (YC Spring '25), appears wound down, back in research. 3 top-venue papers in 12mo (Smoothie, WONDERBREAD, Agentic Info Theory ICLR'26). 1st-author Comp Materials Science paper as HS junior; Regeneron STS, RSI, Coolidge Senator, Eagle Scout w/ Palm. Indian. Father is a UToledo physics prof (scaffolding-fully-converted).",
+   "tags": [
+    "founders (potential)",
+    "indian",
+    "researchers",
+    "stanford",
+    "chris-re-lab",
+    "hazy-research",
+    "llm-routing",
+    "agentic-systems",
+    "spike: Hazy + 2 NeurIPS + ICLR + Regeneron STS + RSI + high-school first-author DFT paper"
+   ],
+   "cluster": null,
+   "signals": [
+    "stealth",
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "2026-06-08",
+   "channel": null,
+   "twitter": "ishanskhare",
+   "linkedin": "iskhare",
+   "email": "iskhare@stanford.edu",
+   "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=iskhare%40stanford.edu&su=Smoothie%20%2B%20the%20gap%20in%20label-free%20routing&body=Hi%20Ishan%2C%0A%0AI%27m%20an%20inception-stage%20investor%20%E2%80%94%20spend%20most%20of%20my%20time%20mapping%20the%20multi-model%20orchestration%20layer.%20Martian%20is%20selling%20training-based%20routing%20to%20enterprise%2C%20NotDiamond%20is%20selling%20a%20hosted%20SDK%2C%20Portkey%20and%20LiteLLM%20are%20shipping%20gateway-plus-basic-router%2C%20OpenRouter%20is%20effectively%20a%20marketplace%20without%20real%20routing%2C%20and%20Unify%20is%20pitching%20benchmark-driven%20routing.%20The%20entire%20category%20still%20assumes%20you%20have%20labeled%20preference%20data%20%E2%80%94%20which%20no%20real%20enterprise%20does.%20Smoothie%20is%20the%20first%20algorithm%20that%20actually%20sidesteps%20that%3A%20%2B27%20points%20on%20AlpacaEval%20and%2075%25%2B%20optimal%20routing%20across%2014%20tasks%20with%20no%20labels%20is%20the%20number%20every%20buyer%20actually%20needs%2C%20and%20the%20embedding-centroid%20construction%20is%20genuinely%20the%20right%20level%20of%20abstraction.%0A%0AThe%20question%20I%20keep%20coming%20back%20to%3A%20is%20the%20right%20commercial%20form-factor%20%28a%29%20an%20SDK%20that%20drops%20into%20any%20existing%20multi-model%20deployment%2C%20%28b%29%20a%20hosted%20routing%20API%20priced%20per-token%2C%20or%20%28c%29%20the%20compressor%20layer%20from%20the%20agentic-IT%20paper%2C%20where%20routing%20is%20a%20special%20case%20of%20%22information-efficient%20distillation%20of%20context%22%3F%20The%20compressor%20angle%20is%20the%20more%20defensible%20moat%20%E2%80%94%205.5%26times%3B%20more%20MI%20per%20token%20and%20102%25%20of%20frontier%20at%2028%25%20cost%20is%20the%20thesis%20every%20Deep%20Research%20/%20agentic%20infra%20company%20has%20to%20solve.%20Given%20how%20tight%20the%20Wornow%20/%20Narayan%20/%20Biderman%20cluster%20already%20is%2C%20I%20suspect%20you%20have%20a%20strong%20prior%20on%20which%20wedge%20matters%20first.%0A%0AI%27m%20not%20pitching%20anything.%20Happy%20to%20be%20useful%20on%20the%20GTM%20side%20when%20you%27re%20ready%20%E2%80%94%20I%20can%20write%20%24500K%E2%80%93%241M%20and%20move%20fast.%0A%0A%E2%80%94%20Vansh",
+   "indian": true,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
   },
   {
    "slug": "kunvar-thaman",
@@ -1087,42 +1193,6 @@
    "urgency": true
   },
   {
-   "slug": "ishan-khare",
-   "name": "Ishan Khare",
-   "tier": 1,
-   "role": "Stanford CS MS, Hazy Research (Chris Ré) — AND founder of Nimbic AI (YC X25)",
-   "spike": "BURIED HEADLINE: already a YC founder — founded/CEO'd Nimbic AI (YC Spring '25), appears wound down, back in research. 3 top-venue papers in 12mo (Smoothie, WONDERBREAD, Agentic Info Theory ICLR'26). 1st-author Comp Materials Science paper as HS junior; Regeneron STS, RSI, Coolidge Senator, Eagle Scout w/ Palm. Indian. Father is a UToledo physics prof (scaffolding-fully-converted).",
-   "tags": [
-    "founders (potential)",
-    "indian",
-    "researchers",
-    "stanford",
-    "chris-re-lab",
-    "hazy-research",
-    "llm-routing",
-    "agentic-systems",
-    "spike: Hazy + 2 NeurIPS + ICLR + Regeneron STS + RSI + high-school first-author DFT paper"
-   ],
-   "cluster": null,
-   "signals": [
-    "stealth",
-    "founder"
-   ],
-   "status": "not-contacted",
-   "last_contacted": null,
-   "next_action_date": null,
-   "updated": "2026-04-24",
-   "channel": null,
-   "twitter": "ishanskhare",
-   "linkedin": "iskhare",
-   "email": "iskhare@stanford.edu",
-   "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=iskhare%40stanford.edu&su=Smoothie%20%2B%20the%20gap%20in%20label-free%20routing&body=Hi%20Ishan%2C%0A%0AI%27m%20an%20inception-stage%20investor%20%E2%80%94%20spend%20most%20of%20my%20time%20mapping%20the%20multi-model%20orchestration%20layer.%20Martian%20is%20selling%20training-based%20routing%20to%20enterprise%2C%20NotDiamond%20is%20selling%20a%20hosted%20SDK%2C%20Portkey%20and%20LiteLLM%20are%20shipping%20gateway-plus-basic-router%2C%20OpenRouter%20is%20effectively%20a%20marketplace%20without%20real%20routing%2C%20and%20Unify%20is%20pitching%20benchmark-driven%20routing.%20The%20entire%20category%20still%20assumes%20you%20have%20labeled%20preference%20data%20%E2%80%94%20which%20no%20real%20enterprise%20does.%20Smoothie%20is%20the%20first%20algorithm%20that%20actually%20sidesteps%20that%3A%20%2B27%20points%20on%20AlpacaEval%20and%2075%25%2B%20optimal%20routing%20across%2014%20tasks%20with%20no%20labels%20is%20the%20number%20every%20buyer%20actually%20needs%2C%20and%20the%20embedding-centroid%20construction%20is%20genuinely%20the%20right%20level%20of%20abstraction.%0A%0AThe%20question%20I%20keep%20coming%20back%20to%3A%20is%20the%20right%20commercial%20form-factor%20%28a%29%20an%20SDK%20that%20drops%20into%20any%20existing%20multi-model%20deployment%2C%20%28b%29%20a%20hosted%20routing%20API%20priced%20per-token%2C%20or%20%28c%29%20the%20compressor%20layer%20from%20the%20agentic-IT%20paper%2C%20where%20routing%20is%20a%20special%20case%20of%20%22information-efficient%20distillation%20of%20context%22%3F%20The%20compressor%20angle%20is%20the%20more%20defensible%20moat%20%E2%80%94%205.5%26times%3B%20more%20MI%20per%20token%20and%20102%25%20of%20frontier%20at%2028%25%20cost%20is%20the%20thesis%20every%20Deep%20Research%20/%20agentic%20infra%20company%20has%20to%20solve.%20Given%20how%20tight%20the%20Wornow%20/%20Narayan%20/%20Biderman%20cluster%20already%20is%2C%20I%20suspect%20you%20have%20a%20strong%20prior%20on%20which%20wedge%20matters%20first.%0A%0AI%27m%20not%20pitching%20anything.%20Happy%20to%20be%20useful%20on%20the%20GTM%20side%20when%20you%27re%20ready%20%E2%80%94%20I%20can%20write%20%24500K%E2%80%93%241M%20and%20move%20fast.%0A%0A%E2%80%94%20Vansh",
-   "indian": true,
-   "delta": false,
-   "needs_triage": false,
-   "urgency": false
-  },
-  {
    "slug": "abhay-mitra",
    "name": "Abhay Mitra",
    "tier": 1,
@@ -1588,39 +1658,6 @@
    "delta": false,
    "needs_triage": false,
    "urgency": true
-  },
-  {
-   "slug": "dan-biderman",
-   "name": "Dan Biderman",
-   "tier": 1,
-   "role": "Stanford CS Postdoc",
-   "spike": "",
-   "tags": [
-    "efficient-llm",
-    "parameter-efficient-finetuning",
-    "on-device-inference",
-    "multi-agent-systems",
-    "neuroscience-to-ai",
-    "chris-re-lab",
-    "delta"
-   ],
-   "cluster": null,
-   "signals": [
-    "founder"
-   ],
-   "status": "not-contacted",
-   "last_contacted": null,
-   "next_action_date": null,
-   "updated": "2026-03-29",
-   "channel": null,
-   "twitter": "dan_biderman",
-   "linkedin": "dan-biderman-066039202",
-   "email": "biderman@stanford.edu",
-   "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=biderman%40stanford.edu",
-   "indian": false,
-   "delta": true,
-   "needs_triage": false,
-   "urgency": false
   },
   {
    "slug": "devvrit-khatri",
@@ -2264,6 +2301,43 @@
    "urgency": false
   },
   {
+   "slug": "neel-guha",
+   "name": "Neel Guha",
+   "tier": 2,
+   "role": "Stanford JD/PhD, Hazy + RegLab (Chris Ré)",
+   "spike": "Final-year Stanford JD/PhD (Chris Ré + RegLab). 1st author LegalBench. CONFIRMED: joining Columbia Law as Associate Professor July 2026 (law prof, not founding — T2). CS↔law isomorphism; access-to-justice legal-AI. Indian-origin.",
+   "tags": [
+    "researchers",
+    "founders (latent)",
+    "indian",
+    "stanford",
+    "chris-re-lab",
+    "hazy-research",
+    "legal-ai",
+    "legaltech",
+    "ai-regulation",
+    "spike: JD + PhD (Ré) + LegalBench author + NEJM + PNAS + Wharton job-market track"
+   ],
+   "cluster": null,
+   "signals": [
+    "stealth",
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "2026-06-08",
+   "channel": null,
+   "twitter": "neelguha",
+   "linkedin": "neelguha",
+   "email": "nguha@cs.stanford.edu",
+   "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=nguha%40cs.stanford.edu&su=LegalBench%20%26rarr%3B%20Vals%20VLAIR%20%26rarr%3B%20the%20missing%20institutional%20layer&body=Hi%20Neel%2C%0A%0AInception-stage%20investor%20here%20%E2%80%94%20I%20spend%20most%20of%20my%20time%20in%20the%20Hazy%20/%20RegLab%20orbit%2C%20and%20I%27ve%20been%20watching%20the%20legal-AI%20category%20harden%20around%20the%20benchmarks%20you%20built.%20Harvey%20is%20at%20%243B%20on%20Series%20E%2C%20CoCounsel%20is%20embedded%20in%20Westlaw%2C%20Leya%20raised%20%2435M%20from%20Sequoia%2C%20Robin%20AI%20is%20at%20a%20Series%20B%2C%20Spellbook%20is%20riding%20the%20Word%20integration.%20What%27s%20interesting%20is%20that%20the%20Feb%202025%20Vals%20VLAIR%20study%20%E2%80%94%20the%20one%20that%20finally%20gave%20the%20field%20a%20third-party%20scorecard%20with%20Harvey%20at%2094.8%25%20on%20document%20QA%20and%20Thomson%20Reuters%20right%20behind%20%E2%80%94%20relied%20on%20task%20designs%20pulled%20from%20LegalBench.%20Your%20PNAS%20paper%20%28%22There%27s%20No%20Free%20Benchmark%22%29%20lands%20directly%20on%20the%20same%20problem%3A%20the%20commercial%20legal-AI%20ecosystem%20has%20no%20legibility%2C%20and%20the%20institutional%20layer%20that%20could%20provide%20it%20doesn%27t%20exist.%0A%0AI%27d%20love%20to%20learn%20how%20you%27re%20thinking%20about%20that%20gap.%20Is%20the%20right%20artifact%20%28a%29%20a%20chartered%20institution%20%E2%80%94%20something%20like%20the%20FDA-for-legal-AI%20you%20gesture%20at%20in%20the%20GW%20L.%20Rev.%20piece%20%E2%80%94%20%28b%29%20a%20continuously-run%20benchmarking%20service%20like%20MLPerf%20but%20for%20legal%20reasoning%2C%20%28c%29%20something%20inside%20academia%20with%20mixed%20commercial%20funding%20%28ImageNet-style%29%2C%20or%20%28d%29%20none%20of%20the%20above%20because%20application-specific%20regulation%20makes%20the%20monolithic%20benchmarking%20layer%20the%20wrong%20abstraction%3F%20I%20ask%20as%20someone%20who%27d%20potentially%20fund%20the%20commercial%20version%20if%20a%20founder%20ever%20picked%20it%20up%20%E2%80%94%20but%20no%20pitch%20here%2C%20just%20genuine%20interest%20in%20the%20intellectual%20question.%0A%0AIf%20you%27re%20in%20the%20Bay%20sometime%20between%20job-talks%2C%20happy%20to%20grab%20coffee.%20Congrats%20on%20Wharton%20and%20the%20PNAS%20piece.%0A%0A%E2%80%94%20Vansh",
+   "indian": true,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
+  },
+  {
    "slug": "tanvir-bhathal",
    "name": "Tanvir Bhathal",
    "tier": 2,
@@ -2690,43 +2764,6 @@
    "urgency": false
   },
   {
-   "slug": "neel-guha",
-   "name": "Neel Guha",
-   "tier": 2,
-   "role": "Stanford JD/PhD, Hazy + RegLab (Chris Ré)",
-   "spike": "Final-year Stanford JD/PhD (Chris Ré + RegLab). 1st author LegalBench. CONFIRMED: joining Columbia Law as Associate Professor July 2026 (law prof, not founding — T2). CS↔law isomorphism; access-to-justice legal-AI. Indian-origin.",
-   "tags": [
-    "researchers",
-    "founders (latent)",
-    "indian",
-    "stanford",
-    "chris-re-lab",
-    "hazy-research",
-    "legal-ai",
-    "legaltech",
-    "ai-regulation",
-    "spike: JD + PhD (Ré) + LegalBench author + NEJM + PNAS + Wharton job-market track"
-   ],
-   "cluster": null,
-   "signals": [
-    "stealth",
-    "founder"
-   ],
-   "status": "not-contacted",
-   "last_contacted": null,
-   "next_action_date": null,
-   "updated": "2026-04-24",
-   "channel": null,
-   "twitter": "neelguha",
-   "linkedin": "neelguha",
-   "email": "nguha@cs.stanford.edu",
-   "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=nguha%40cs.stanford.edu&su=LegalBench%20%26rarr%3B%20Vals%20VLAIR%20%26rarr%3B%20the%20missing%20institutional%20layer&body=Hi%20Neel%2C%0A%0AInception-stage%20investor%20here%20%E2%80%94%20I%20spend%20most%20of%20my%20time%20in%20the%20Hazy%20/%20RegLab%20orbit%2C%20and%20I%27ve%20been%20watching%20the%20legal-AI%20category%20harden%20around%20the%20benchmarks%20you%20built.%20Harvey%20is%20at%20%243B%20on%20Series%20E%2C%20CoCounsel%20is%20embedded%20in%20Westlaw%2C%20Leya%20raised%20%2435M%20from%20Sequoia%2C%20Robin%20AI%20is%20at%20a%20Series%20B%2C%20Spellbook%20is%20riding%20the%20Word%20integration.%20What%27s%20interesting%20is%20that%20the%20Feb%202025%20Vals%20VLAIR%20study%20%E2%80%94%20the%20one%20that%20finally%20gave%20the%20field%20a%20third-party%20scorecard%20with%20Harvey%20at%2094.8%25%20on%20document%20QA%20and%20Thomson%20Reuters%20right%20behind%20%E2%80%94%20relied%20on%20task%20designs%20pulled%20from%20LegalBench.%20Your%20PNAS%20paper%20%28%22There%27s%20No%20Free%20Benchmark%22%29%20lands%20directly%20on%20the%20same%20problem%3A%20the%20commercial%20legal-AI%20ecosystem%20has%20no%20legibility%2C%20and%20the%20institutional%20layer%20that%20could%20provide%20it%20doesn%27t%20exist.%0A%0AI%27d%20love%20to%20learn%20how%20you%27re%20thinking%20about%20that%20gap.%20Is%20the%20right%20artifact%20%28a%29%20a%20chartered%20institution%20%E2%80%94%20something%20like%20the%20FDA-for-legal-AI%20you%20gesture%20at%20in%20the%20GW%20L.%20Rev.%20piece%20%E2%80%94%20%28b%29%20a%20continuously-run%20benchmarking%20service%20like%20MLPerf%20but%20for%20legal%20reasoning%2C%20%28c%29%20something%20inside%20academia%20with%20mixed%20commercial%20funding%20%28ImageNet-style%29%2C%20or%20%28d%29%20none%20of%20the%20above%20because%20application-specific%20regulation%20makes%20the%20monolithic%20benchmarking%20layer%20the%20wrong%20abstraction%3F%20I%20ask%20as%20someone%20who%27d%20potentially%20fund%20the%20commercial%20version%20if%20a%20founder%20ever%20picked%20it%20up%20%E2%80%94%20but%20no%20pitch%20here%2C%20just%20genuine%20interest%20in%20the%20intellectual%20question.%0A%0AIf%20you%27re%20in%20the%20Bay%20sometime%20between%20job-talks%2C%20happy%20to%20grab%20coffee.%20Congrats%20on%20Wharton%20and%20the%20PNAS%20piece.%0A%0A%E2%80%94%20Vansh",
-   "indian": true,
-   "delta": false,
-   "needs_triage": false,
-   "urgency": false
-  },
-  {
    "slug": "takeru-miyato",
    "name": "Takeru Miyato",
    "tier": 2,
@@ -2826,6 +2863,35 @@
    "urgency": false
   },
   {
+   "slug": "avanika-narayan",
+   "name": "Avanika Narayan",
+   "tier": null,
+   "role": "Rox ($50M, Sequoia), Stanford CS PhD",
+   "spike": "",
+   "tags": [
+    "delta",
+    "founders",
+    "researchers"
+   ],
+   "cluster": null,
+   "signals": [
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "2026-06-08",
+   "channel": null,
+   "twitter": "avanika15",
+   "linkedin": "avanika-narayan-a35a02a3",
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
+   "delta": true,
+   "needs_triage": true,
+   "urgency": false
+  },
+  {
    "slug": "benjamin-spector",
    "name": "Benjamin F Spector",
    "tier": null,
@@ -2856,6 +2922,88 @@
    "gmail_url": null,
    "indian": false,
    "delta": false,
+   "needs_triage": true,
+   "urgency": false
+  },
+  {
+   "slug": "jon-saad-falcon",
+   "name": "Jon Saad-Falcon",
+   "tier": null,
+   "role": "Stanford CS PhD",
+   "spike": "",
+   "tags": [
+    "delta",
+    "researchers"
+   ],
+   "cluster": null,
+   "signals": [
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "2026-06-08",
+   "channel": null,
+   "twitter": "jonsaadfalcon",
+   "linkedin": null,
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
+   "delta": true,
+   "needs_triage": true,
+   "urgency": false
+  },
+  {
+   "slug": "simon-guo",
+   "name": "Simon Guo",
+   "tier": null,
+   "role": "Stanford CS PhD",
+   "spike": "",
+   "tags": [
+    "delta",
+    "researchers"
+   ],
+   "cluster": null,
+   "signals": [],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "2026-06-08",
+   "channel": null,
+   "twitter": "simonguozirui",
+   "linkedin": "simonguozirui",
+   "email": "simonguo@stanford.edu",
+   "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=simonguo%40stanford.edu",
+   "indian": false,
+   "delta": true,
+   "needs_triage": true,
+   "urgency": false
+  },
+  {
+   "slug": "stuart-sul",
+   "name": "Stuart Sul",
+   "tier": null,
+   "role": "Cursor, Stanford CS PhD",
+   "spike": "",
+   "tags": [
+    "delta",
+    "founders"
+   ],
+   "cluster": null,
+   "signals": [
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "2026-06-08",
+   "channel": null,
+   "twitter": "bfspector",
+   "linkedin": "stuartsul",
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
+   "delta": true,
    "needs_triage": true,
    "urgency": false
   },
@@ -3669,35 +3817,6 @@
    "channel": null,
    "twitter": null,
    "linkedin": "austinchen12",
-   "email": null,
-   "gmail_url": null,
-   "indian": false,
-   "delta": true,
-   "needs_triage": true,
-   "urgency": false
-  },
-  {
-   "slug": "avanika-narayan",
-   "name": "Avanika Narayan",
-   "tier": null,
-   "role": "Rox ($50M, Sequoia), Stanford CS PhD",
-   "spike": "",
-   "tags": [
-    "delta",
-    "founders",
-    "researchers"
-   ],
-   "cluster": null,
-   "signals": [
-    "founder"
-   ],
-   "status": "not-contacted",
-   "last_contacted": null,
-   "next_action_date": null,
-   "updated": "2026-03-26",
-   "channel": null,
-   "twitter": "avanika15",
-   "linkedin": "avanika-narayan-a35a02a3",
    "email": null,
    "gmail_url": null,
    "indian": false,
@@ -4821,34 +4940,6 @@
    "urgency": false
   },
   {
-   "slug": "jon-saad-falcon",
-   "name": "Jon Saad-Falcon",
-   "tier": null,
-   "role": "Stanford CS PhD",
-   "spike": "",
-   "tags": [
-    "delta",
-    "researchers"
-   ],
-   "cluster": null,
-   "signals": [
-    "founder"
-   ],
-   "status": "not-contacted",
-   "last_contacted": null,
-   "next_action_date": null,
-   "updated": "2026-03-26",
-   "channel": null,
-   "twitter": "jonsaadfalcon",
-   "linkedin": null,
-   "email": null,
-   "gmail_url": null,
-   "indian": false,
-   "delta": true,
-   "needs_triage": true,
-   "urgency": false
-  },
-  {
    "slug": "jonathan-mengedoht",
    "name": "Jonathan Mengedoht",
    "tier": null,
@@ -5895,32 +5986,6 @@
    "urgency": false
   },
   {
-   "slug": "simon-guo",
-   "name": "Simon Guo",
-   "tier": null,
-   "role": "Stanford CS PhD",
-   "spike": "",
-   "tags": [
-    "delta",
-    "researchers"
-   ],
-   "cluster": null,
-   "signals": [],
-   "status": "not-contacted",
-   "last_contacted": null,
-   "next_action_date": null,
-   "updated": "2026-03-26",
-   "channel": null,
-   "twitter": "simonguozirui",
-   "linkedin": "simonguozirui",
-   "email": "simonguo@stanford.edu",
-   "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=simonguo%40stanford.edu",
-   "indian": false,
-   "delta": true,
-   "needs_triage": true,
-   "urgency": false
-  },
-  {
    "slug": "sonya-jin",
    "name": "Sonya Jin",
    "tier": null,
@@ -5993,34 +6058,6 @@
    "channel": null,
    "twitter": "stephenx_",
    "linkedin": null,
-   "email": null,
-   "gmail_url": null,
-   "indian": false,
-   "delta": true,
-   "needs_triage": true,
-   "urgency": false
-  },
-  {
-   "slug": "stuart-sul",
-   "name": "Stuart Sul",
-   "tier": null,
-   "role": "Cursor, Stanford CS PhD",
-   "spike": "",
-   "tags": [
-    "delta",
-    "founders"
-   ],
-   "cluster": null,
-   "signals": [
-    "founder"
-   ],
-   "status": "not-contacted",
-   "last_contacted": null,
-   "next_action_date": null,
-   "updated": "2026-03-26",
-   "channel": null,
-   "twitter": "bfspector",
-   "linkedin": "stuartsul",
    "email": null,
    "gmail_url": null,
    "indian": false,

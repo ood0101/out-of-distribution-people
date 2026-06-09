@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-06-08T13:57:43+00:00",
+  "last_built": "2026-06-09T07:38:31+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -1616,7 +1616,7 @@
         "phrase_raising": false,
         "phrase_founded": true
       },
-      "last_git_touch": "2026-03-26T13:20:51+05:30",
+      "last_git_touch": "2026-06-08T19:28:01+05:30",
       "needs_triage": true,
       "emails": [],
       "email_primary": null,
@@ -1817,7 +1817,7 @@
         "phrase_raising": true,
         "phrase_founded": true
       },
-      "last_git_touch": "2026-06-08T18:48:01+05:30",
+      "last_git_touch": "2026-06-08T19:55:45+05:30",
       "needs_triage": true,
       "emails": [],
       "email_primary": null,
@@ -2679,7 +2679,7 @@
         "phrase_raising": false,
         "phrase_founded": true
       },
-      "last_git_touch": "2026-03-29T11:35:09+05:30",
+      "last_git_touch": "2026-06-08T19:28:01+05:30",
       "needs_triage": false,
       "emails": [
         "biderman@stanford.edu"
@@ -4418,7 +4418,7 @@
         "phrase_raising": false,
         "phrase_founded": true
       },
-      "last_git_touch": "2026-04-24T08:39:00-03:00",
+      "last_git_touch": "2026-06-08T19:28:01+05:30",
       "needs_triage": false,
       "emails": [
         "iskhare@stanford.edu"
@@ -5238,7 +5238,7 @@
         "phrase_raising": false,
         "phrase_founded": true
       },
-      "last_git_touch": "2026-03-26T13:20:51+05:30",
+      "last_git_touch": "2026-06-08T19:28:01+05:30",
       "needs_triage": true,
       "emails": [],
       "email_primary": null,
@@ -7129,7 +7129,7 @@
         "phrase_raising": true,
         "phrase_founded": false
       },
-      "last_git_touch": "2026-03-29T14:01:42+05:30",
+      "last_git_touch": "2026-06-08T19:28:01+05:30",
       "needs_triage": false,
       "emails": [
         "team@kineticsystems.ai"
@@ -7328,7 +7328,7 @@
         "phrase_raising": false,
         "phrase_founded": false
       },
-      "last_git_touch": "2026-04-24T08:50:58-03:00",
+      "last_git_touch": "2026-06-08T19:28:01+05:30",
       "needs_triage": false,
       "emails": [
         "nguha@cs.stanford.edu",
@@ -7720,6 +7720,60 @@
       "twitter_handle": "_oampatel_",
       "linkedin_slug": "oam-patel",
       "github_handle": null,
+      "status": "not-contacted",
+      "last_contacted": null,
+      "next_action_date": null,
+      "response": null,
+      "notes": "",
+      "urgency_decay_date": null,
+      "urgency_reason": null,
+      "channel": null,
+      "next_action": null,
+      "cluster": null,
+      "email_override": null,
+      "outreach_subject_override": null,
+      "outreach_body_override": null,
+      "channels_attempted": []
+    },
+    "owen-dugan": {
+      "name": "Owen Dugan",
+      "tier": 1,
+      "tier_label": "tier-1: high conviction",
+      "category": "outreach",
+      "tags": [
+        "researchers",
+        "ai-physics",
+        "mechanistic-interpretability",
+        "hazy-research",
+        "chris-re",
+        "stanford",
+        "mit",
+        "hertz-fellow",
+        "rsi",
+        "davidson-fellow"
+      ],
+      "indian": false,
+      "delta": false,
+      "one_liner": "Stanford CS PhD in",
+      "signals": {
+        "tag_stealth_founder": false,
+        "tag_founders": false,
+        "phrase_stealth": true,
+        "phrase_departed": false,
+        "phrase_raising": false,
+        "phrase_founded": true
+      },
+      "last_git_touch": null,
+      "needs_triage": false,
+      "emails": [],
+      "email_primary": null,
+      "email_primary_kind": null,
+      "outreach_subject": null,
+      "outreach_body_preview": null,
+      "gmail_url": null,
+      "twitter_handle": "owendugan",
+      "linkedin_slug": "owen-m-dugan",
+      "github_handle": "druidowm",
       "status": "not-contacted",
       "last_contacted": null,
       "next_action_date": null,
@@ -9870,7 +9924,7 @@
         "phrase_raising": false,
         "phrase_founded": false
       },
-      "last_git_touch": "2026-03-26T13:20:51+05:30",
+      "last_git_touch": "2026-06-08T19:28:01+05:30",
       "needs_triage": true,
       "emails": [
         "simonguo@stanford.edu"
@@ -10108,7 +10162,7 @@
         "phrase_raising": false,
         "phrase_founded": true
       },
-      "last_git_touch": "2026-03-26T13:20:51+05:30",
+      "last_git_touch": "2026-06-08T19:28:01+05:30",
       "needs_triage": true,
       "emails": [],
       "email_primary": null,
