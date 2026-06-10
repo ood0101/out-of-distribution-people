@@ -69,7 +69,8 @@ PAGE_HEAD = """<!DOCTYPE html>
     <div class="q-top-row">
       <span class="q-title">Out of Distribution People</span>
       <span class="q-links">
-        <a href="index.html">&larr; Directory</a>
+        <a href="today.html">The Desk</a>
+        <a href="index.html">Directory</a>
         <a href="queue.html" class="cur">Outreach Queue</a>
         <a href="delta-fellows.html">Delta Fellows</a>
       </span>

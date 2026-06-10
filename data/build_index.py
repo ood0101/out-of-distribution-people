@@ -137,6 +137,7 @@ TEMPLATE = r"""<!DOCTYPE html>
     <div class="dir-top-row">
       <span class="dir-title">Out of Distribution People</span>
       <span class="dir-top-links">
+        <a href="today.html">The Desk</a>
         <a href="index.html" class="cur">Directory</a>
         <a href="queue.html">Outreach Queue &rarr;</a>
         <a href="delta-fellows.html">Delta Fellows</a>
