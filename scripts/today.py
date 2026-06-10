@@ -126,7 +126,12 @@ def score_components(entry: dict) -> dict:
 
     decay_bonus = 0
     if entry.get("urgency_decay_date"):
-        decay_bonus = max(0, 100 - days_until(entry["urgency_decay_date"]))
+        d = days_until(entry["urgency_decay_date"])
+        # Window still open: closer = higher, capped 0..100.
+        # Window CLOSED (d < 0): strip the urgency entirely — the "why now" is
+        # over, so it must DROP, not climb. (Prior code had no ceiling, so a
+        # past-due date inflated the bonus without limit — ranked higher forever.)
+        decay_bonus = 0 if d < 0 else max(0, min(100, 100 - d))
 
     sigs = entry.get("signals") or {}
     signal_bonus = (

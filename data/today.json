@@ -1,0 +1,386 @@
+{
+  "built_at": "2026-06-10T08:27:45+00:00",
+  "date": "2026-06-10",
+  "stats": {
+    "t0": 14,
+    "t1": 57,
+    "in_flight": 8,
+    "pool": 105
+  },
+  "replies": [],
+  "followups": [
+    {
+      "slug": "shivani-poddar",
+      "name": "Shivani Poddar",
+      "tier": 0,
+      "channel": "twitter",
+      "last_contacted": "2026-05-26",
+      "overdue_days": 1,
+      "touches": 0,
+      "dossier": "people/shivani-poddar.html",
+      "link": {
+        "label": "𝕏 @shivanipod",
+        "url": "https://twitter.com/messages/compose?recipient_screen_name=shivanipod"
+      }
+    },
+    {
+      "slug": "blanca-villanueva",
+      "name": "Blanca Villanueva",
+      "tier": 0,
+      "channel": "warm-intro",
+      "last_contacted": "2026-05-27",
+      "overdue_days": 0,
+      "touches": 1,
+      "dossier": "people/blanca-villanueva.html",
+      "link": {
+        "label": "in/blanca-villanueva-68ba3b61",
+        "url": "https://linkedin.com/in/blanca-villanueva-68ba3b61/"
+      }
+    },
+    {
+      "slug": "dan-kondratyuk",
+      "name": "Dan Kondratyuk",
+      "tier": 0,
+      "channel": "linkedin",
+      "last_contacted": "2026-05-27",
+      "overdue_days": 0,
+      "touches": 0,
+      "dossier": "people/dan-kondratyuk.html",
+      "link": {
+        "label": "in/dankondratyuk",
+        "url": "https://linkedin.com/in/dankondratyuk/"
+      }
+    },
+    {
+      "slug": "joshua-dillon",
+      "name": "Joshua V. Dillon",
+      "tier": 0,
+      "channel": "linkedin",
+      "last_contacted": "2026-05-27",
+      "overdue_days": 0,
+      "touches": 0,
+      "dossier": "people/joshua-dillon.html",
+      "link": {
+        "label": "in/jvdillon",
+        "url": "https://linkedin.com/in/jvdillon/"
+      }
+    },
+    {
+      "slug": "michael-wornow",
+      "name": "Michael Wornow",
+      "tier": 0,
+      "channel": "email",
+      "last_contacted": "2026-05-27",
+      "overdue_days": 0,
+      "touches": 1,
+      "dossier": "people/michael-wornow.html",
+      "link": {
+        "label": "✉ email",
+        "url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=team%40kineticsystems.ai"
+      }
+    },
+    {
+      "slug": "weiying-wang",
+      "name": "Weiying Wang",
+      "tier": 0,
+      "channel": "linkedin",
+      "last_contacted": "2026-05-27",
+      "overdue_days": 0,
+      "touches": 0,
+      "dossier": "people/weiying-wang.html",
+      "link": {
+        "label": "in/weiying-wang-544368a7",
+        "url": "https://linkedin.com/in/weiying-wang-544368a7/"
+      }
+    },
+    {
+      "slug": "ajay-jain",
+      "name": "Ajay Jain",
+      "tier": 1,
+      "channel": "twitter",
+      "last_contacted": "2026-05-27",
+      "overdue_days": 0,
+      "touches": 1,
+      "dossier": "people/ajay-jain.html",
+      "link": {
+        "label": "𝕏 @ajayj_",
+        "url": "https://twitter.com/messages/compose?recipient_screen_name=ajayj_"
+      }
+    },
+    {
+      "slug": "mayank-mishra",
+      "name": "Mayank Mishra",
+      "tier": 1,
+      "channel": "twitter",
+      "last_contacted": "2026-05-27",
+      "overdue_days": 0,
+      "touches": 1,
+      "dossier": "people/mayank-mishra.html",
+      "link": {
+        "label": "𝕏 @mayankmish98",
+        "url": "https://twitter.com/messages/compose?recipient_screen_name=mayankmish98"
+      }
+    }
+  ],
+  "today5": [
+    {
+      "slug": "pannag-sanketi",
+      "name": "Pannag R. Sanketi",
+      "tier": 0,
+      "score": 628,
+      "chips": [
+        "stealth",
+        "departed",
+        "founder",
+        "indian"
+      ],
+      "window": {
+        "text": "pre-name · open",
+        "kind": "open"
+      },
+      "why_now": "Senior DeepMind Robotics departure (Senior Staff SWE / TLM) to stealth robotics+AI. FOUNDED Open X-Embodiment / RT-X ('ImageNet for robotics', 21+ labs), RT-2 co-author, led human-level Table Tennis robot. 14,858 cites, h-30. LinkedIn flipped to 'Stealth…",
+      "do_this": "LinkedIn DM pannag-sanketi (or X DM @pannag_) — subj 'The ImageNet-for-robotics bet, now as a company'; lead with the data-substrate edge (21 labs -> RT-X) vs Physical Intelligence/Skild/Generalist,…",
+      "channel": "linkedin",
+      "draft": {
+        "subject": "the part none of the robotics companies started from",
+        "body": "Hi Pannag — SAS-Prompt read to me like the honest next step after RT-X: once you've pooled cross-embodiment data, the self-improvement loop on top of it becomes the real bottleneck. I invest at inception and have spent serious time on the post-DeepMind wave (Physical Intelligence, Skild, Generalist, Figure's Helix) — and the part none of them started from is the thing you actually pulled off: getting 21 competing labs to pool their data is rarer than any single model. I'd love to hear how you're weighing the data flywheel against the dynamic-control gap your table-tennis work exposed — 45% vs. humans is the most honest agility number anyone's published. I can write $500K–$1M, but mostly I'd just like to know what you're building. — Vansh"
+      },
+      "link": {
+        "label": "in/pannag-sanketi",
+        "url": "https://linkedin.com/in/pannag-sanketi/"
+      },
+      "twitter": "pannag_",
+      "linkedin": "pannag-sanketi",
+      "email": null,
+      "dossier": "people/pannag-sanketi.html"
+    },
+    {
+      "slug": "siddhant-haldar",
+      "name": "Siddhant Haldar",
+      "tier": 0,
+      "score": 614,
+      "chips": [
+        "stealth",
+        "departed",
+        "founder",
+        "indian"
+      ],
+      "window": {
+        "text": "pre-name · open",
+        "kind": "open"
+      },
+      "why_now": "CLEAN T0 FOUNDING MOMENT, DOUBLE-SOURCED. Own resume lists top entry verbatim 'Stealth Startup | Co-Founder & CTO | Dec 2025-Present'; Lerrel Pinto's lab page independently lists him as 'co-founder of a stealth robotics company.' Just finished PhD at NYU…",
+      "do_this": "DM @haldar_siddhant (fallback email siddhanthaldar@nyu.edu, may bounce post-grad; warm intro via Pinto orbit strongest). Subject: 'FISH -> Point Policy, and the data bottleneck as a company.' Lead…",
+      "channel": "twitter",
+      "draft": {
+        "subject": "FISH &rarr; Point Policy, and the data bottleneck as a company",
+        "body": "Hi Siddhant — I invest at inception and spend most of my time around the robot-data-bottleneck crowd (Physical Intelligence, Skild, the human-demo-to-robot people). Your line of work is the cleanest answer I've seen to the question everyone's now throwing money at: FISH learning from a minute of dem…"
+      },
+      "link": {
+        "label": "𝕏 @haldar_siddhant",
+        "url": "https://twitter.com/messages/compose?recipient_screen_name=haldar_siddhant"
+      },
+      "twitter": "haldar_siddhant",
+      "linkedin": null,
+      "email": "siddhanthaldar@nyu.edu",
+      "dossier": "people/siddhant-haldar.html"
+    },
+    {
+      "slug": "scott-reed",
+      "name": "Scott Reed",
+      "tier": 0,
+      "score": 595,
+      "chips": [
+        "stealth",
+        "departed",
+        "founder"
+      ],
+      "window": {
+        "text": "pre-name · open",
+        "kind": "open"
+      },
+      "why_now": "ONE OF THE MOST SENIOR RESEARCHER-DEPARTURES IN THE REPO + explicit founding signal. Site + LinkedIn both say 'building something new' / 'Something new' (Atlanta Metro). Just left NVIDIA (one of 20 tracked) where he was PRINCIPAL RESEARCH SCIENTIST + FOUNDING…",
+      "do_this": "DM @scott_e_reed (fallback LinkedIn reedscott); STRONGEST path = warm intro via Jim Fan (Exceptional 100, GEAR co-lead). Subject: 'GATO's generalist thesis, now as a company.' Lead with the GATO…",
+      "channel": "twitter",
+      "draft": {
+        "subject": "World Action Models, and where the representation lives",
+        "body": "Hi Scott — I partner with out-of-distribution people solving truly hard problems in AI, and I saw you're building something new. World Action Models stuck with me — the policy emerging from predicting how the world evolves, rather than trained separately like VLAs or GATO. I think that's the right frame. Where my head goes next is the representation: DreamZero and Cosmos predict in video space, but the JEPA bet is to predict in latent space instead — throw away the pixel detail that doesn't matter and model the abstract dynamics. I'm genuinely curious whether you see video as the representation that works, or a stepping stone toward predicting in representation space. (WAM almost feels like your 2016 generative work and the GATO thesis finally fused.) I write $500K–$1M at inception, but mostly I'd love to hear how you're thinking about it. — Vansh"
+      },
+      "link": {
+        "label": "𝕏 @scott_e_reed",
+        "url": "https://twitter.com/messages/compose?recipient_screen_name=scott_e_reed"
+      },
+      "twitter": "scott_e_reed",
+      "linkedin": "reedscott",
+      "email": "scott.ellison.reed@gmail.com",
+      "dossier": "people/scott-reed.html"
+    },
+    {
+      "slug": "kushal-kedia",
+      "name": "Kushal Kedia",
+      "tier": 0,
+      "score": 567,
+      "chips": [
+        "stealth",
+        "indian"
+      ],
+      "window": {
+        "text": "closes 2026-07-15",
+        "kind": "open"
+      },
+      "why_now": "Cornell CS PhD candidate GRADUATING MAY 2026 (5 weeks out). Advised by Sanjiban Choudhury (Cornell + Aurora; ONR YIP + OpenAI Superalignment Award + Google Research Award; PoRTaL Lab) + Wei-Chiu Ma (Cornell, MIT/Torralba+Urtasun, ex-Uber ATG/Waabi).…",
+      "do_this": "Email kk837@cornell.edu THIS WEEK. Subject: 'X-Sim, Moving Beyond Teleoperation, and what's next post-Cornell.' Lead with X-Sim Oral (CoRL 25) + RSS EgoAct Best Paper Runner-up + the…",
+      "channel": "email",
+      "draft": null,
+      "link": {
+        "label": "✉ email",
+        "url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=kk837%40cornell.edu"
+      },
+      "twitter": "kushalk_",
+      "linkedin": "kushal-kedia",
+      "email": "kk837@cornell.edu",
+      "dossier": "people/kushal-kedia.html"
+    },
+    {
+      "slug": "raunaq-bhirangi",
+      "name": "Raunaq Bhirangi",
+      "tier": 0,
+      "score": 535,
+      "chips": [
+        "stealth",
+        "founder",
+        "indian"
+      ],
+      "window": {
+        "text": "pre-name · open",
+        "kind": "open"
+      },
+      "why_now": "CONFIRMED T0 STEALTH-ROBOTICS CO-FOUNDER, BUILDING NOW, PRE-NAME. Advisor Lerrel Pinto's lab page lists him verbatim as 'co-founder of a stealth robotics company'; LinkedIn 'Building something new in Robotics+AI'; site 'I am currently working on a new company…",
+      "do_this": "DM @raunaqmb (fallback raunaqbhirangi@nyu.edu academic; AVOID the raunaq@indexrobots.ai stealth address). Subject: 'AnySkin's cross-instance transfer as the company.' Lead with the ReSkin->AnySkin…",
+      "channel": "twitter",
+      "draft": {
+        "subject": "AnySkin's cross-instance transfer as the company",
+        "body": "Hi Raunaq — I invest at inception and spend most of my time around the contact-rich manipulation crowd (Physical Intelligence, Skild, the tactile-for-dexterity people, GelSight on the sensor side). Your arc reads like a company thesis, not a paper line: ReSkin made touch ~$6 and durable, then AnySki…"
+      },
+      "link": {
+        "label": "𝕏 @raunaqmb",
+        "url": "https://twitter.com/messages/compose?recipient_screen_name=raunaqmb"
+      },
+      "twitter": "raunaqmb",
+      "linkedin": "raunaq-bhirangi",
+      "email": "raunaqbhirangi@nyu.edu",
+      "dossier": "people/raunaq-bhirangi.html"
+    }
+  ],
+  "signals": [
+    {
+      "slug": "ellen-xu",
+      "name": "Ellen Xu",
+      "tier": 1,
+      "date": "2026-06-09",
+      "days_ago": 0,
+      "type": "dossier updated",
+      "text": "Stanford CS undergrad (class of 2027) building at the embodied-RL / real-world-AI frontier — with shipped reps at both leading self-driving shops.",
+      "hot": true
+    },
+    {
+      "slug": "aayush-karan",
+      "name": "Aayush Karan",
+      "tier": 1,
+      "date": "2026-06-09",
+      "days_ago": 1,
+      "type": "dossier updated",
+      "text": "3rd-year Harvard CS PhD (co-advised by",
+      "hot": true
+    },
+    {
+      "slug": "avanika-narayan",
+      "name": "Avanika Narayan",
+      "tier": null,
+      "date": "2026-06-08",
+      "days_ago": 1,
+      "type": "dossier updated",
+      "text": "prev",
+      "hot": false
+    },
+    {
+      "slug": "benjamin-spector",
+      "name": "Benjamin F Spector",
+      "tier": null,
+      "date": "2026-06-08",
+      "days_ago": 1,
+      "type": "dossier updated",
+      "text": "Co-founder, Flapping Airplanes ($180M seed, $1.5B valuation, Sequoia + Index + GV). Hertz Fellow ($250K). Stanford CS PhD (Chris R&eacute; lab, Hazy…",
+      "hot": false
+    },
+    {
+      "slug": "cade-gordon",
+      "name": "Cade Gordon",
+      "tier": 1,
+      "date": "2026-06-09",
+      "days_ago": 1,
+      "type": "dossier updated",
+      "text": "",
+      "hot": true
+    },
+    {
+      "slug": "dan-biderman",
+      "name": "Dan Biderman",
+      "tier": 1,
+      "date": "2026-06-08",
+      "days_ago": 1,
+      "type": "dossier updated",
+      "text": "Stanford postdoc co-advised by Chris R&eacute; (Hazy Research — the most prolific founder-factory lab in ML) and Scott Linderman. Lead author of…",
+      "hot": true
+    },
+    {
+      "slug": "isha-puri",
+      "name": "Isha Puri",
+      "tier": 1,
+      "date": "2026-06-09",
+      "days_ago": 1,
+      "type": "dossier updated",
+      "text": "MIT CSAIL PhD (co-advised by",
+      "hot": true
+    },
+    {
+      "slug": "ishan-khare",
+      "name": "Ishan Khare",
+      "tier": 1,
+      "date": "2026-06-08",
+      "days_ago": 1,
+      "type": "dossier updated",
+      "text": "",
+      "hot": true
+    }
+  ],
+  "triage": {
+    "pending": 79,
+    "highlights": [
+      {
+        "name": "Sumith Kulal",
+        "note": "Fellow FLUX.1 Kontext co-author at Black Forest Labs. Stanford CS / Hazy Research alum —…"
+      },
+      {
+        "name": "Chenlin Meng",
+        "note": "Pika CTO. DDIM co-author with Jiaming Song. Stanford Ermon lab. 4th node in…"
+      },
+      {
+        "name": "Robin Rombach",
+        "note": "Black Forest Labs CEO. LDM/Stable Diffusion creator. The BFL founder."
+      },
+      {
+        "name": "Sharon Zhou",
+        "note": "Lamini CEO. Saksham's direct manager 2023-2024. Indian-American female founder. Stanford…"
+      },
+      {
+        "name": "Christina Baek",
+        "note": "CMU final-year PhD (Kolter + Raghunathan). Presidential Fellow. UC Berkeley EECS BS +…"
+      },
+      {
+        "name": "Jacob Mitchell Springer",
+        "note": "CMU 3rd-year MLD PhD (Raghunathan). NSF GRFP. Lead 1st author on SCOPE Outstanding Paper…"
+      }
+    ]
+  }
+}

@@ -75,6 +75,11 @@ def main():
     if out:
         for line in out.splitlines():
             print(f"  {DIM}{line.strip()}{RESET}")
+    # The Desk — action-first daily surface (today.html reads this JSON).
+    out = run(DATA / "build_today.py", capture=True)
+    if out:
+        for line in out.splitlines():
+            print(f"  {DIM}{line.strip()}{RESET}")
 
     # 3. Cluster activity
     section("Cluster activity check")

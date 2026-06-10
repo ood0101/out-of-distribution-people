@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Desk — Out of Distribution People</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* ── The Desk — action-first daily surface. Reads data/today.json. ── */
+.desk{max-width:1180px;margin:0 auto;padding:0 1.5rem 5rem}
+.hero{display:flex;justify-content:space-between;align-items:flex-end;margin:1.9rem 0 .4rem;gap:1rem}
+.hero h1{font-family:var(--serif);font-size:2.5rem;font-weight:400;letter-spacing:-.01em}
+.hero .meta{font-family:var(--mono);font-size:.72rem;color:var(--fg-faint);text-align:right;letter-spacing:.04em;line-height:1.7}
+.hero .meta b{color:var(--fg-muted);font-weight:600}
+
+.stale{display:flex;align-items:center;gap:.6rem;font-family:var(--mono);font-size:.72rem;letter-spacing:.03em;border-radius:5px;padding:.5rem .8rem;margin:1rem 0 1.8rem}
+.stale.fresh{color:#3a7d44;background:#e3efe4;border:1px solid #cfe2d0}
+.stale.stale-warn{color:#b8791a;background:#f6ecd8;border:1px solid #e8d4a8}
+.stale .dot{width:7px;height:7px;border-radius:50%;background:currentColor}
+.stale code{background:rgba(0,0,0,.05);padding:1px 6px;border-radius:3px}
+
+.shead{display:flex;align-items:baseline;gap:.7rem;margin:2.3rem 0 1rem;padding-bottom:.5rem;border-bottom:1.5px solid var(--fg)}
+.shead h2{font-family:var(--mono);font-size:.82rem;letter-spacing:.13em;text-transform:uppercase;font-weight:600}
+.shead .count{font-family:var(--mono);font-size:.72rem;color:#fff;background:var(--accent);border-radius:20px;padding:.1rem .55rem}
+.shead .count.amber{background:#b8791a}.shead .count.muted{background:var(--fg-faint)}
+.shead .sub{margin-left:auto;font-family:var(--mono);font-size:.68rem;color:var(--fg-faint);letter-spacing:.04em}
+.empty{font-size:.88rem;color:var(--fg-faint);padding:.3rem 0}
+
+/* action card */
+.card{background:var(--card-bg);border:1px solid var(--card-border);border-radius:8px;margin-bottom:.9rem;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.02)}
+.card-top{display:flex;align-items:center;gap:.7rem;padding:.85rem 1.1rem .7rem;border-bottom:1px solid var(--border-light);flex-wrap:wrap}
+.tier{font-family:var(--mono);font-size:.66rem;font-weight:700;letter-spacing:.04em;color:#fff;background:var(--accent);border-radius:4px;padding:.16rem .4rem;flex-shrink:0}
+.tier.t1{background:#b8503f}.tier.t2{background:#d4a574;color:#3a2a16}
+.pname{font-family:var(--serif);font-size:1.18rem;font-weight:600;text-decoration:none;color:var(--fg)}
+.pname:hover{color:var(--accent)}
+.chips{display:flex;gap:.32rem;align-items:center;flex-wrap:wrap}
+.chip{font-family:var(--mono);font-size:.6rem;letter-spacing:.05em;text-transform:uppercase;padding:.13rem .4rem;border-radius:3px;background:var(--tag-bg);color:var(--tag-fg)}
+.chip.stealth{background:#ece9f5;color:#6b5b95}.chip.departed{background:#f6ecd8;color:#b8791a}
+.chip.founder{background:#e9eef5;color:#3a5a8c}.chip.indian{background:#fbeee6;color:#b5651d}
+.chip.raising{background:#e3efe4;color:#3a7d44}.chip.yc-s26{background:#f3d9d4;color:var(--accent)}
+.score{font-family:var(--mono);font-size:.64rem;color:var(--fg-faint);border:1px solid var(--border);border-radius:4px;padding:.12rem .4rem}
+.window{margin-left:auto;font-family:var(--mono);font-size:.66rem;letter-spacing:.03em;white-space:nowrap;color:var(--fg-faint)}
+.window.soon{color:var(--accent)}.window.closed{color:#b8791a}
+.card-body{padding:.8rem 1.1rem .5rem}
+.row{display:flex;gap:.7rem;margin-bottom:.55rem;font-size:.9rem;line-height:1.5}
+.lbl{font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--fg-faint);width:64px;flex-shrink:0;padding-top:.1rem}
+.row .v{flex:1}.row.do .v{color:#222}
+.card-actions{display:flex;gap:.5rem;align-items:center;padding:.7rem 1.1rem .9rem;flex-wrap:wrap}
+.btn{font-family:var(--mono);font-size:.68rem;letter-spacing:.03em;text-decoration:none;padding:.4rem .7rem;border-radius:5px;border:1px solid var(--border);background:#fff;color:var(--fg);cursor:pointer;transition:all .12s;display:inline-flex;align-items:center;gap:.35rem}
+.btn:hover{background:var(--card-hover)}
+.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}.btn.primary:hover{background:#a83426}
+.btn.ghost{border-color:transparent;color:var(--fg-faint)}
+.btn.done{background:#e3efe4;border-color:#cfe2d0;color:#3a7d44}
+.spacer{flex:1}
+.draft{margin:0 1.1rem .9rem;border:1px dashed var(--border);border-radius:6px;background:#fcfcfb;padding:.85rem 1rem;display:none}
+.draft.open{display:block}
+.draft .dsub{font-family:var(--mono);font-size:.7rem;color:var(--fg-muted);margin-bottom:.5rem}
+.draft .dsub b{color:var(--fg)}
+.draft .dbody{font-size:.86rem;line-height:1.6;color:#333;white-space:pre-line;font-family:var(--serif)}
+.draft .dactions{display:flex;gap:.5rem;margin-top:.7rem;padding-top:.6rem;border-top:1px solid var(--border-light)}
+
+/* follow-up / reply rows */
+.frow{display:flex;align-items:center;gap:.8rem;background:#fff;border:1px solid var(--card-border);border-left:3px solid #b8791a;border-radius:6px;padding:.6rem .9rem;margin-bottom:.5rem;flex-wrap:wrap}
+.frow.reply{border-left-color:#3a7d44}
+.frow .fn{font-family:var(--serif);font-size:1rem;font-weight:600;min-width:160px;text-decoration:none;color:var(--fg)}
+.frow .fn:hover{color:var(--accent)}
+.frow .fmeta{font-family:var(--mono);font-size:.68rem;color:var(--fg-muted);flex:1}
+.frow .od{color:#b8791a;font-weight:600}.frow .od.due{color:#3a7d44}
+.frow .fch{font-family:var(--mono);font-size:.62rem;text-transform:uppercase;letter-spacing:.05em;color:var(--tag-fg);background:var(--tag-bg);padding:.1rem .4rem;border-radius:3px}
+.frow .factions{margin-left:auto;display:flex;gap:.4rem}
+.more{font-family:var(--mono);font-size:.68rem;color:var(--fg-faint);padding:.3rem 0 0 .2rem}
+
+/* signal feed */
+.feed{border-left:2px solid var(--border);margin-left:.4rem;padding-left:1.1rem}
+.sig{position:relative;padding:.55rem 0;border-bottom:1px dotted var(--border-light)}
+.sig:last-child{border-bottom:none}
+.sig::before{content:"";position:absolute;left:-1.52rem;top:.8rem;width:8px;height:8px;border-radius:50%;background:var(--fg-faint);border:2px solid var(--bg)}
+.sig.hot::before{background:var(--accent)}
+.sig .sdate{font-family:var(--mono);font-size:.64rem;color:var(--fg-faint)}
+.sig .stype{font-family:var(--mono);font-size:.6rem;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-left:.5rem}
+.sig .sbody{font-size:.9rem;margin-top:.15rem;line-height:1.5}
+.sig .sbody a{font-weight:600;text-decoration:none;border-bottom:1px solid var(--accent);color:var(--fg)}
+.sig .smut{color:var(--fg-muted)}
+
+.triage-cta{display:flex;align-items:center;gap:1rem;background:linear-gradient(180deg,#fff,#fbfaf8);border:1px solid var(--card-border);border-radius:8px;padding:1.1rem 1.3rem;margin-top:1rem;flex-wrap:wrap}
+.triage-cta .big{font-family:var(--serif);font-size:2rem;color:var(--accent);font-weight:600;line-height:1}
+.triage-cta .tx{flex:1;min-width:280px}
+.triage-cta .tx .t1{font-weight:600;font-size:.95rem}
+.triage-cta .tx .t2{font-size:.82rem;color:var(--fg-muted);margin-top:.15rem}
+.triage-cta .tx .t2 b{color:var(--fg)}
+.footnote{font-family:var(--mono);font-size:.66rem;color:var(--fg-faint);text-align:center;margin-top:3rem;letter-spacing:.04em;line-height:1.9}
+.toast{position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%) translateY(2rem);background:var(--fg);color:#fff;font-family:var(--mono);font-size:.72rem;padding:.6rem 1rem;border-radius:6px;opacity:0;transition:all .2s;pointer-events:none;z-index:50;max-width:90vw}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+@media(max-width:600px){.hero h1{font-size:1.9rem}.frow .factions{margin-left:0;width:100%}}
+</style>
+</head>
+<body class="dir-body">
+
+<nav class="dir-top" style="display:flex;justify-content:space-between;align-items:center;max-width:1180px;margin:0 auto;padding:1.4rem 1.5rem 1.2rem;border-bottom:1px solid var(--border)">
+  <div class="site-title" style="font-family:var(--mono);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase">Out of Distribution People</div>
+  <div style="font-family:var(--mono);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;display:flex;gap:1.4rem">
+    <a href="today.html" style="color:var(--accent);text-decoration:none;border-bottom:1.5px solid var(--accent);padding-bottom:2px">The Desk</a>
+    <a href="index.html" style="color:var(--fg-faint);text-decoration:none">Directory</a>
+    <a href="queue.html" style="color:var(--fg-faint);text-decoration:none">Outreach Queue</a>
+    <a href="delta-fellows.html" style="color:var(--fg-faint);text-decoration:none">Delta Fellows</a>
+  </div>
+</nav>
+
+<div class="desk">
+  <div class="hero">
+    <h1>The Desk</h1>
+    <div class="meta" id="hero-meta">…</div>
+  </div>
+  <div id="stale" class="stale fresh"><span class="dot"></span> <span id="stale-text">loading…</span></div>
+
+  <div id="sections"><p class="empty">Loading today.json…</p></div>
+
+  <div class="footnote">
+    THE DESK · regenerated by <span style="color:var(--fg-muted)">make morning</span> · data/build_today.py → today.json<br>
+    action-first daily surface · reads live state, never baked
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const esc = s => (s==null?'':String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const tierCls = t => t===1?'t1':t===2?'t2':'';
+const tierLbl = t => t==null?'—':'T'+t;
+function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),1800);}
+function copy(text,msg){navigator.clipboard.writeText(text).then(()=>toast(msg||'Copied ✓')).catch(()=>toast('Copy failed'));}
+
+function staleBanner(builtAt){
+  const el=document.getElementById('stale'), txt=document.getElementById('stale-text');
+  const hrs=Math.max(0,Math.round((Date.now()-new Date(builtAt).getTime())/36e5));
+  const ago = hrs<1?'just now':hrs<24?hrs+'h ago':Math.round(hrs/24)+'d ago';
+  if(hrs>=24){el.className='stale stale-warn';txt.innerHTML=`BUILT ${ago} — STALE · rerun <code>make morning</code> to refresh`;}
+  else{el.className='stale fresh';txt.innerHTML=`BUILT ${ago} · fresh · rerun <code>make morning</code> to refresh`;}
+}
+
+function chip(c){return `<span class="chip ${c}">${esc(c)}</span>`;}
+
+function card(c){
+  const chips = (c.chips||[]).map(chip).join('');
+  const win = `<span class="window ${c.window.kind}">${esc(c.window.text)}</span>`;
+  const dossier = c.dossier?`<a class="btn" href="${esc(c.dossier)}">Dossier →</a>`:'';
+  const link = c.link?`<a class="btn" href="${esc(c.link.url)}" target="_blank" rel="noopener">${esc(c.link.label)}</a>`:'';
+  const draftBtn = c.draft?`<button class="btn primary" data-draft="${c.slug}">✶ View draft</button>`:'';
+  const draftBlock = c.draft?`<div class="draft" id="draft-${c.slug}">
+      ${c.draft.subject?`<div class="dsub">SUBJECT: <b>${esc(c.draft.subject)}</b></div>`:''}
+      <div class="dbody">${esc(c.draft.body||'(no draft body — see dossier)')}</div>
+      <div class="dactions">
+        <button class="btn primary" data-copy="${c.slug}">⧉ Copy draft</button>
+        ${link}
+        <button class="btn ghost" data-closedraft="${c.slug}">close</button>
+      </div></div>`:'';
+  const chan = c.channel?` ${esc(c.channel)}`:'';
+  return `<div class="card">
+    <div class="card-top">
+      <span class="tier ${tierCls(c.tier)}">${tierLbl(c.tier)}</span>
+      <a class="pname" href="${esc(c.dossier||'#')}">${esc(c.name)}</a>
+      <span class="chips">${chips}</span>
+      <span class="score">act ${c.score}</span>${win}
+    </div>
+    <div class="card-body">
+      ${c.why_now?`<div class="row"><span class="lbl">Why now</span><span class="v">${esc(c.why_now)}</span></div>`:''}
+      ${c.do_this?`<div class="row do"><span class="lbl">Do this</span><span class="v">${esc(c.do_this)}</span></div>`:''}
+    </div>
+    ${draftBlock}
+    <div class="card-actions">
+      ${draftBtn}${link}${dossier}
+      <span class="spacer"></span>
+      <button class="btn" data-mark="${c.slug}" data-chan="${esc((c.channel||'').replace(/"/g,''))}">✓ mark contacted</button>
+    </div>
+  </div>`;
+}
+
+function followRow(f){
+  const od = f.overdue_days>0?`<span class="od">${f.overdue_days}d overdue</span>`:`<span class="od due">due today</span>`;
+  const link = f.link?`<a class="btn" href="${esc(f.link.url)}" target="_blank" rel="noopener">${esc(f.link.label)}</a>`:'';
+  return `<div class="frow">
+    <span class="tier ${tierCls(f.tier)}">${tierLbl(f.tier)}</span>
+    <a class="fn" href="${esc(f.dossier||'#')}">${esc(f.name)}</a>
+    <span class="fmeta">${esc(f.channel)} ${esc((f.last_contacted||'').slice(5))} · ${od}${f.touches>1?` · ${f.touches} touches`:''}</span>
+    <span class="factions">${link}
+      <button class="btn" data-mark="${f.slug}" data-chan="${esc(f.channel)}">↻ follow up</button>
+      <button class="btn ghost" data-reply="${f.slug}">replied</button>
+      <button class="btn ghost" data-pass="${f.slug}">pass</button>
+    </span></div>`;
+}
+
+function replyRow(r){
+  return `<div class="frow reply">
+    <span class="tier ${tierCls(r.tier)}">${tierLbl(r.tier)}</span>
+    <a class="fn" href="${esc(r.dossier||'#')}">${esc(r.name)}</a>
+    <span class="fmeta">replied · ${esc(r.response||'')}</span>
+    <span class="factions"><button class="btn primary" data-meeting="${r.slug}">book meeting</button></span></div>`;
+}
+
+function sigRow(s){
+  const nm = s.dossier!==false ? `<a href="people/${esc(s.slug)}.html">${esc(s.name)}</a>` : esc(s.name);
+  return `<div class="sig ${s.hot?'hot':''}">
+    <span class="sdate">${esc(s.date)}</span><span class="stype">${esc(s.type)}</span>
+    <div class="sbody"><a href="people/${esc(s.slug)}.html">${esc(s.name)}</a> <span class="smut">— ${esc(s.text)}</span></div>
+  </div>`;
+}
+
+function shead(title,count,cls,sub){
+  return `<div class="shead"><h2>${title}</h2>${count!=null?`<span class="count ${cls||''}">${count}</span>`:''}${sub?`<span class="sub">${sub}</span>`:''}</div>`;
+}
+
+function render(d){
+  staleBanner(d.built_at);
+  document.getElementById('hero-meta').innerHTML =
+    `<b>${new Date(d.date+'T12:00:00').toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'})}</b><br>${d.stats.t0} T0 · ${d.stats.t1} T1 · ${d.stats.in_flight} in flight`;
+
+  let h='';
+  // replies
+  h += shead('Replies — book the meeting', d.replies.length, d.replies.length?'':'muted', 'gmail · highest priority');
+  h += d.replies.length ? d.replies.map(replyRow).join('') :
+    `<div class="empty">No new replies. When someone answers, they surface here first.</div>`;
+  // follow-ups
+  const fu = d.followups;
+  h += shead('Follow-ups due', fu.length, 'amber', 'contacted · no reply · the 2nd touch books meetings');
+  if(fu.length){ h += fu.slice(0,6).map(followRow).join('');
+    if(fu.length>6) h += `<div class="more">+ ${fu.length-6} more</div>`;
+  } else h += `<div class="empty">Nothing due. 🎉</div>`;
+  // today's 5
+  h += shead("Today's 5 — act now", d.today5.length, '', 'ranked tier × decay × signal');
+  h += d.today5.map(card).join('');
+  // signals
+  h += shead('Fresh signals', d.signals.length, 'muted', 'recently updated · sourced');
+  h += `<div class="feed">${d.signals.map(sigRow).join('')}</div>`;
+  // triage
+  const tg=d.triage;
+  h += shead('Triage queue', tg.pending, 'muted', 'surfaced by the flywheel · awaiting yes/no/later');
+  const hl = (tg.highlights||[]).map(x=>`<b>${esc(x.name)}</b>${x.note?` (${esc(x.note)})`:''}`).join(', ');
+  h += `<div class="triage-cta"><div class="big">${tg.pending}</div>
+    <div class="tx"><div class="t1">pending discoveries — already-researched names reconciled out</div>
+    <div class="t2">${hl?'Top of queue: '+hl+'.':'Run discoveries.py to triage.'}</div></div>
+    <a class="btn primary" href="#" style="padding:.6rem 1rem" onclick="toast('Triage page ships next — for now: python3 scripts/discoveries.py');return false;">Triage →</a></div>`;
+
+  document.getElementById('sections').innerHTML=h;
+}
+
+// event delegation
+document.addEventListener('click',e=>{
+  const t=e.target.closest('button'); if(!t)return;
+  if(t.dataset.draft){document.getElementById('draft-'+t.dataset.draft)?.classList.toggle('open');}
+  if(t.dataset.closedraft){document.getElementById('draft-'+t.dataset.closedraft)?.classList.remove('open');}
+  if(t.dataset.copy){const b=document.querySelector('#draft-'+t.dataset.copy+' .dbody');copy(b?b.textContent:'','Draft copied ✓');}
+  if(t.dataset.mark){copy(`python3 scripts/mark.py ${t.dataset.mark} sent ${t.dataset.chan||''}`.trim(),'Command copied — paste in terminal');t.classList.add('done');t.textContent='✓ copied cmd';}
+  if(t.dataset.reply){copy(`python3 scripts/mark.py ${t.dataset.reply} replied`,'Command copied');}
+  if(t.dataset.pass){copy(`python3 scripts/mark.py ${t.dataset.pass} passed`,'Command copied');}
+  if(t.dataset.meeting){copy(`python3 scripts/mark.py ${t.dataset.meeting} meeting`,'Command copied');}
+});
+
+fetch('data/today.json',{cache:'no-store'}).then(r=>r.json()).then(render).catch(err=>{
+  document.getElementById('sections').innerHTML=`<div class="empty">Couldn't load data/today.json — run <code>python3 data/build_today.py</code>. (${esc(err.message)})</div>`;
+  document.getElementById('stale-text').textContent='no data';
+});
+</script>
+</body>
+</html>
