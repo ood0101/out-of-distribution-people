@@ -39,10 +39,33 @@ STATE = REPO / "data" / "outreach_state.json"
 MAX_DAILY = 5
 TIER_WEIGHT = {0: 4, 1: 3, 2: 2, 3: 1, None: 0}
 
+# Signal-events engine (dated/sourced/decaying inflection) — lazy singleton.
+_INFLECTIONS: dict[str, float] | None = None
+
+
+def inflection_for(slug: str) -> float:
+    global _INFLECTIONS
+    if _INFLECTIONS is None:
+        try:
+            sys.path.insert(0, str(REPO / "scripts"))
+            from signals import all_inflections
+            _INFLECTIONS = all_inflections()
+        except Exception:
+            _INFLECTIONS = {}
+    return _INFLECTIONS.get(slug, 0.0)
+
 # ───────────────────────────────────────────────────────────────────────
 # COMPOSITE RANKING — what makes someone "best 5 today"
 # ───────────────────────────────────────────────────────────────────────
 # score = base(tier) + decay + signals + recency + indian + urgency + quality
+#         + inflection
+#
+#   inflection (NEW)  dated, sourced, half-life-decayed events from
+#                     data/signal_events.json (scripts/signals.py) —
+#                     domain regs, departures, bio flips, filings.
+#                     Clamped [-80, +120]. Negative events (round closed,
+#                     joined a big lab) DRAG the score down. This is the
+#                     "how NOW" axis the phrase-greps could never measure.
 #
 #   base(tier)       T0=400, T1=300, T2=200, T3=100, untiered=0
 #   decay            100 - days_until_decay (max 100, only if decay set)
@@ -119,7 +142,7 @@ def in_cluster(entry: dict) -> bool:
     return bool(entry.get("cluster"))
 
 
-def score_components(entry: dict) -> dict:
+def score_components(entry: dict, slug: str | None = None) -> dict:
     """Return component breakdown for transparency. Sum = total score."""
     tier = entry.get("tier")
     base = TIER_WEIGHT.get(tier, 0) * 100
@@ -159,7 +182,14 @@ def score_components(entry: dict) -> dict:
         # Researched in last week = strong curator interest signal
         quality_bonus += 20
 
-    total = base + decay_bonus + signal_bonus + recency_bonus + indian_bonus + urgency_bonus + quality_bonus
+    # Inflection — dated/sourced/decaying events (signals.py). Clamped so one
+    # hot week can't bury tier entirely, and negatives genuinely drag.
+    inflect_bonus = 0
+    if slug:
+        inflect_bonus = int(round(max(-80.0, min(120.0, inflection_for(slug)))))
+
+    total = (base + decay_bonus + signal_bonus + recency_bonus + indian_bonus
+             + urgency_bonus + quality_bonus + inflect_bonus)
     return {
         "base": base,
         "decay": decay_bonus,
@@ -168,12 +198,13 @@ def score_components(entry: dict) -> dict:
         "indian": indian_bonus,
         "urgency": urgency_bonus,
         "quality": quality_bonus,
+        "inflect": inflect_bonus,
         "total": total,
     }
 
 
-def priority(entry: dict) -> int:
-    return score_components(entry)["total"]
+def priority(entry: dict, slug: str | None = None) -> int:
+    return score_components(entry, slug)["total"]
 
 
 def is_eligible(entry: dict) -> bool:
@@ -313,17 +344,17 @@ def main():
     people = state["people"]
 
     eligible = [(slug, e) for slug, e in people.items() if is_eligible(e)]
-    ranked = sorted(eligible, key=lambda x: priority(x[1]), reverse=True)
+    ranked = sorted(eligible, key=lambda x: priority(x[1], x[0]), reverse=True)
 
     if "--all" in args:
         print(f"{BOLD}ALL ELIGIBLE — {len(ranked)} entries (T0/T1/T2 not-contacted){RESET}\n")
-        print(f"{DIM}{'name':30s} {'tier':4s} {'base':4s} {'dcy':4s} {'sig':4s} {'rec':4s} {'in':3s} {'urg':4s} {'qua':4s} {'TOTAL':5s} seeded{RESET}")
+        print(f"{DIM}{'name':30s} {'base':4s} {'dcy':4s} {'sig':4s} {'rec':4s} {'in':3s} {'urg':4s} {'qua':4s} {'inf':4s} {'TOTAL':5s} seeded{RESET}")
         for i, (slug, e) in enumerate(ranked, 1):
             tier = e.get("tier")
-            sc = score_components(e)
+            sc = score_components(e, slug)
             seeded = "✓" if e.get("urgency_reason") else ""
             name = (e.get("name") or slug)[:28]
-            print(f"  {tier_badge(tier)} {name:30s} {sc['base']:4d} {sc['decay']:4d} {sc['signal']:4d} {sc['recency']:4d} {sc['indian']:3d} {sc['urgency']:4d} {sc['quality']:4d} {BOLD}{sc['total']:5d}{RESET}  {seeded}")
+            print(f"  {tier_badge(tier)} {name:30s} {sc['base']:4d} {sc['decay']:4d} {sc['signal']:4d} {sc['recency']:4d} {sc['indian']:3d} {sc['urgency']:4d} {sc['quality']:4d} {sc['inflect']:+4d} {BOLD}{sc['total']:5d}{RESET}  {seeded}")
         return
 
     if "--why" in args:
@@ -331,7 +362,7 @@ def main():
         print(f"\n{BOLD}═══ RANKING BREAKDOWN — top 10 ═══{RESET}\n")
         print(f"{DIM}Formula: tier(400/300/200) + decay(max 100) + signals(max ~135) + recency(max 30) + indian(10) + urgency_seeded(30) + quality(max 55){RESET}\n")
         for i, (slug, e) in enumerate(ranked[:10], 1):
-            sc = score_components(e)
+            sc = score_components(e, slug)
             tier = e.get("tier")
             name = e.get("name", slug)
             seeded = f" {GREEN}[SEEDED]{RESET}" if e.get("urgency_reason") else f" {DIM}[auto]{RESET}"
@@ -343,7 +374,8 @@ def main():
                   + (f" + {sc['recency']} recency" if sc['recency'] else "")
                   + (f" + {sc['indian']} indian" if sc['indian'] else "")
                   + (f" + {sc['urgency']} urgency_seeded" if sc['urgency'] else "")
-                  + (f" + {sc['quality']} quality" if sc['quality'] else ""))
+                  + (f" + {sc['quality']} quality" if sc['quality'] else "")
+                  + (f" {GREEN if sc['inflect'] > 0 else RED}{sc['inflect']:+d} inflection{RESET}" if sc['inflect'] else ""))
             # Decompose signals
             sigs = e.get("signals") or {}
             sig_list = [k.replace("phrase_", "").replace("tag_", "") for k, v in sigs.items() if v]
@@ -371,7 +403,7 @@ def main():
             tier = e.get("tier")
             name = e.get("name", slug)
             ol = (e.get("one_liner") or "")[:90]
-            sc = score_components(e)
+            sc = score_components(e, slug)
             print(f"  {tier_badge(tier)} {name:35s} score={sc['total']:3d}  {DIM}{ol}{RESET}")
         return
 
@@ -402,7 +434,7 @@ def main():
         for i, (slug, e) in enumerate(alternates, MAX_DAILY + 1):
             tier = e.get("tier")
             name = e.get("name", slug)
-            sc = score_components(e)
+            sc = score_components(e, slug)
             seeded_mark = " (seeded)" if e.get("urgency_reason") else ""
             print(f"  {i}. {tier_badge(tier)} {name:30s} {DIM}score={sc['total']:3d}{seeded_mark}{RESET}")
         print()

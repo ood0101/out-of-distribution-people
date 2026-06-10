@@ -116,6 +116,16 @@ def dossier_path(slug: str) -> str | None:
     return f"people/{slug}.html" if has_dossier(slug) else None
 
 
+def days_ago_date(iso: str | None) -> int:
+    """Days since a bare YYYY-MM-DD (today.days_since only handles tz-aware ts)."""
+    if not iso:
+        return 9999
+    try:
+        return max(0, (date.today() - date.fromisoformat(iso[:10])).days)
+    except ValueError:
+        return 9999
+
+
 def primary_link(e: dict) -> dict | None:
     """The single best reach-out link for the card's channel.
     Label is derived from the actual URL (never assume profile==twitter)."""
@@ -136,7 +146,7 @@ def primary_link(e: dict) -> dict | None:
 
 
 def build_card(slug: str, e: dict) -> dict:
-    sc = T.score_components(e)
+    sc = T.score_components(e, slug)
     subject = e.get("outreach_subject_override") or e.get("outreach_subject")
     body = e.get("outreach_body_override") or e.get("outreach_body_preview")
     return {
@@ -204,29 +214,57 @@ def build_replies(people: dict) -> list[dict]:
 
 
 def build_signals(people: dict) -> list[dict]:
-    """v1: real 'what changed lately' feed from dossier git-touch recency.
-    The richer dated/sourced event types (domain-reg, co-departure cluster)
-    arrive with the signal-events engine; this is the honest stand-in."""
-    rows = []
-    for slug, e in people.items():
-        if not has_dossier(slug):
-            continue
-        gt = e.get("last_git_touch")
-        d = T.days_since(gt)
-        if d > SIGNAL_WINDOW_DAYS:
-            continue
-        tier = e.get("tier")
-        rows.append({
-            "slug": slug,
-            "name": e.get("name", slug),
-            "tier": tier,
-            "date": (gt or "")[:10],
-            "days_ago": d,
-            "type": "dossier updated",
-            "text": clamp(e.get("urgency_reason") or e.get("one_liner"), 150),
-            "hot": tier in (0, 1),
-        })
-    rows.sort(key=lambda x: x["days_ago"])
+    """The fresh-signals feed. Primary source: the signal-events engine
+    (data/signal_events.json via scripts/signals.py) — dated, sourced,
+    decay-scored events. Fallback filler: recently-updated dossiers."""
+    rows: list[dict] = []
+    try:
+        from signals import load_events, event_score
+        for ev in load_events():
+            slug = ev.get("slug") or ""
+            d = days_ago_date(ev.get("observed") or ev.get("date"))
+            if d > SIGNAL_WINDOW_DAYS:
+                continue
+            p = people.get(slug, {})
+            sc = event_score(ev)
+            neg = int(ev.get("direction", 1)) < 0
+            rows.append({
+                "slug": slug,
+                "name": p.get("name", slug),
+                "tier": p.get("tier"),
+                "date": (ev.get("date") or "")[:10],
+                "days_ago": d,
+                "type": (ev.get("type") or "event").replace("_", " ") + (" (neg)" if neg else ""),
+                "text": clamp(ev.get("value"), 150),
+                "source_url": ev.get("source_url"),
+                "source_kind": ev.get("source_kind"),
+                "delta": round(sc),
+                "hot": abs(sc) >= 40,
+                "has_dossier": has_dossier(slug),
+            })
+    except Exception:
+        pass
+    rows.sort(key=lambda x: (x["days_ago"], -abs(x.get("delta") or 0)))
+
+    if len(rows) < SIGNAL_MAX:  # fill with dossier-update recency
+        have = {r["slug"] for r in rows}
+        fillers = []
+        for slug, e in people.items():
+            if slug in have or not has_dossier(slug):
+                continue
+            gt = e.get("last_git_touch")
+            d = T.days_since(gt)
+            if d > SIGNAL_WINDOW_DAYS:
+                continue
+            fillers.append({
+                "slug": slug, "name": e.get("name", slug), "tier": e.get("tier"),
+                "date": (gt or "")[:10], "days_ago": d, "type": "dossier updated",
+                "text": clamp(e.get("urgency_reason") or e.get("one_liner"), 150),
+                "source_url": None, "source_kind": "git", "delta": None,
+                "hot": False,
+            })
+        fillers.sort(key=lambda x: x["days_ago"])
+        rows.extend(fillers[: SIGNAL_MAX - len(rows)])
     return rows[:SIGNAL_MAX]
 
 
@@ -272,7 +310,7 @@ def main():
     people = state["people"]
 
     eligible = [(s, e) for s, e in people.items() if T.is_eligible(e)]
-    ranked = sorted(eligible, key=lambda x: T.priority(x[1]), reverse=True)
+    ranked = sorted(eligible, key=lambda x: T.priority(x[1], x[0]), reverse=True)
     today5 = [build_card(s, e) for s, e in ranked[:5]]
 
     n_t0 = sum(1 for e in people.values() if e.get("tier") == 0)

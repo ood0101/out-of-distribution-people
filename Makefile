@@ -1,7 +1,7 @@
 # OOD People — daily ritual + maintenance commands.
 # Run `make help` to see what's available.
 
-.PHONY: help morning today triage clusters promote mark refresh render install-alias
+.PHONY: help morning today triage clusters promote mark refresh render desk signals sweep install-alias
 
 help:
 	@echo ""
@@ -14,7 +14,12 @@ help:
 	@echo ""
 	@echo "Maintenance:"
 	@echo "  make refresh       Rebuild state from dossiers"
-	@echo "  make render        Re-render index outreach panel"
+	@echo "  make render        Re-render queue + directory + The Desk"
+	@echo "  make desk          Rebuild today.json (The Desk)"
+	@echo ""
+	@echo "Signals (flagging engine):"
+	@echo "  make signals       Show inflection scores (signal_events.json)"
+	@echo "  make sweep         Run RDAP/EDGAR sweep → append new events"
 	@echo ""
 	@echo "Setup:"
 	@echo "  make install-alias Add 'morning' shell alias to ~/.zshrc"
@@ -45,6 +50,12 @@ render:
 
 desk:
 	@python3 data/build_today.py
+
+signals:
+	@python3 scripts/signals.py scores --top 25
+
+sweep:
+	@python3 scripts/sweep_signals.py && python3 data/build_today.py
 
 install-alias:
 	@if ! grep -q "alias morning=" ~/.zshrc 2>/dev/null; then \

@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-06-10T08:27:45+00:00",
+  "built_at": "2026-06-10T08:42:16+00:00",
   "date": "2026-06-10",
   "stats": {
     "t0": 14,
@@ -127,7 +127,7 @@
       "slug": "pannag-sanketi",
       "name": "Pannag R. Sanketi",
       "tier": 0,
-      "score": 628,
+      "score": 690,
       "chips": [
         "stealth",
         "departed",
@@ -155,10 +155,40 @@
       "dossier": "people/pannag-sanketi.html"
     },
     {
+      "slug": "scott-reed",
+      "name": "Scott Reed",
+      "tier": 0,
+      "score": 655,
+      "chips": [
+        "stealth",
+        "departed",
+        "founder"
+      ],
+      "window": {
+        "text": "pre-name · open",
+        "kind": "open"
+      },
+      "why_now": "ONE OF THE MOST SENIOR RESEARCHER-DEPARTURES IN THE REPO + explicit founding signal. Site + LinkedIn both say 'building something new' / 'Something new' (Atlanta Metro). Just left NVIDIA (one of 20 tracked) where he was PRINCIPAL RESEARCH SCIENTIST + FOUNDING…",
+      "do_this": "DM @scott_e_reed (fallback LinkedIn reedscott); STRONGEST path = warm intro via Jim Fan (Exceptional 100, GEAR co-lead). Subject: 'GATO's generalist thesis, now as a company.' Lead with the GATO…",
+      "channel": "twitter",
+      "draft": {
+        "subject": "World Action Models, and where the representation lives",
+        "body": "Hi Scott — I partner with out-of-distribution people solving truly hard problems in AI, and I saw you're building something new. World Action Models stuck with me — the policy emerging from predicting how the world evolves, rather than trained separately like VLAs or GATO. I think that's the right frame. Where my head goes next is the representation: DreamZero and Cosmos predict in video space, but the JEPA bet is to predict in latent space instead — throw away the pixel detail that doesn't matter and model the abstract dynamics. I'm genuinely curious whether you see video as the representation that works, or a stepping stone toward predicting in representation space. (WAM almost feels like your 2016 generative work and the GATO thesis finally fused.) I write $500K–$1M at inception, but mostly I'd love to hear how you're thinking about it. — Vansh"
+      },
+      "link": {
+        "label": "𝕏 @scott_e_reed",
+        "url": "https://twitter.com/messages/compose?recipient_screen_name=scott_e_reed"
+      },
+      "twitter": "scott_e_reed",
+      "linkedin": "reedscott",
+      "email": "scott.ellison.reed@gmail.com",
+      "dossier": "people/scott-reed.html"
+    },
+    {
       "slug": "siddhant-haldar",
       "name": "Siddhant Haldar",
       "tier": 0,
-      "score": 614,
+      "score": 647,
       "chips": [
         "stealth",
         "departed",
@@ -186,66 +216,10 @@
       "dossier": "people/siddhant-haldar.html"
     },
     {
-      "slug": "scott-reed",
-      "name": "Scott Reed",
-      "tier": 0,
-      "score": 595,
-      "chips": [
-        "stealth",
-        "departed",
-        "founder"
-      ],
-      "window": {
-        "text": "pre-name · open",
-        "kind": "open"
-      },
-      "why_now": "ONE OF THE MOST SENIOR RESEARCHER-DEPARTURES IN THE REPO + explicit founding signal. Site + LinkedIn both say 'building something new' / 'Something new' (Atlanta Metro). Just left NVIDIA (one of 20 tracked) where he was PRINCIPAL RESEARCH SCIENTIST + FOUNDING…",
-      "do_this": "DM @scott_e_reed (fallback LinkedIn reedscott); STRONGEST path = warm intro via Jim Fan (Exceptional 100, GEAR co-lead). Subject: 'GATO's generalist thesis, now as a company.' Lead with the GATO…",
-      "channel": "twitter",
-      "draft": {
-        "subject": "World Action Models, and where the representation lives",
-        "body": "Hi Scott — I partner with out-of-distribution people solving truly hard problems in AI, and I saw you're building something new. World Action Models stuck with me — the policy emerging from predicting how the world evolves, rather than trained separately like VLAs or GATO. I think that's the right frame. Where my head goes next is the representation: DreamZero and Cosmos predict in video space, but the JEPA bet is to predict in latent space instead — throw away the pixel detail that doesn't matter and model the abstract dynamics. I'm genuinely curious whether you see video as the representation that works, or a stepping stone toward predicting in representation space. (WAM almost feels like your 2016 generative work and the GATO thesis finally fused.) I write $500K–$1M at inception, but mostly I'd love to hear how you're thinking about it. — Vansh"
-      },
-      "link": {
-        "label": "𝕏 @scott_e_reed",
-        "url": "https://twitter.com/messages/compose?recipient_screen_name=scott_e_reed"
-      },
-      "twitter": "scott_e_reed",
-      "linkedin": "reedscott",
-      "email": "scott.ellison.reed@gmail.com",
-      "dossier": "people/scott-reed.html"
-    },
-    {
-      "slug": "kushal-kedia",
-      "name": "Kushal Kedia",
-      "tier": 0,
-      "score": 567,
-      "chips": [
-        "stealth",
-        "indian"
-      ],
-      "window": {
-        "text": "closes 2026-07-15",
-        "kind": "open"
-      },
-      "why_now": "Cornell CS PhD candidate GRADUATING MAY 2026 (5 weeks out). Advised by Sanjiban Choudhury (Cornell + Aurora; ONR YIP + OpenAI Superalignment Award + Google Research Award; PoRTaL Lab) + Wei-Chiu Ma (Cornell, MIT/Torralba+Urtasun, ex-Uber ATG/Waabi).…",
-      "do_this": "Email kk837@cornell.edu THIS WEEK. Subject: 'X-Sim, Moving Beyond Teleoperation, and what's next post-Cornell.' Lead with X-Sim Oral (CoRL 25) + RSS EgoAct Best Paper Runner-up + the…",
-      "channel": "email",
-      "draft": null,
-      "link": {
-        "label": "✉ email",
-        "url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=kk837%40cornell.edu"
-      },
-      "twitter": "kushalk_",
-      "linkedin": "kushal-kedia",
-      "email": "kk837@cornell.edu",
-      "dossier": "people/kushal-kedia.html"
-    },
-    {
       "slug": "raunaq-bhirangi",
       "name": "Raunaq Bhirangi",
       "tier": 0,
-      "score": 535,
+      "score": 623,
       "chips": [
         "stealth",
         "founder",
@@ -270,88 +244,146 @@
       "linkedin": "raunaq-bhirangi",
       "email": "raunaqbhirangi@nyu.edu",
       "dossier": "people/raunaq-bhirangi.html"
+    },
+    {
+      "slug": "kushal-kedia",
+      "name": "Kushal Kedia",
+      "tier": 0,
+      "score": 605,
+      "chips": [
+        "stealth",
+        "indian"
+      ],
+      "window": {
+        "text": "closes 2026-07-15",
+        "kind": "open"
+      },
+      "why_now": "Cornell CS PhD candidate GRADUATING MAY 2026 (5 weeks out). Advised by Sanjiban Choudhury (Cornell + Aurora; ONR YIP + OpenAI Superalignment Award + Google Research Award; PoRTaL Lab) + Wei-Chiu Ma (Cornell, MIT/Torralba+Urtasun, ex-Uber ATG/Waabi).…",
+      "do_this": "Email kk837@cornell.edu THIS WEEK. Subject: 'X-Sim, Moving Beyond Teleoperation, and what's next post-Cornell.' Lead with X-Sim Oral (CoRL 25) + RSS EgoAct Best Paper Runner-up + the…",
+      "channel": "email",
+      "draft": null,
+      "link": {
+        "label": "✉ email",
+        "url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=kk837%40cornell.edu"
+      },
+      "twitter": "kushalk_",
+      "linkedin": "kushal-kedia",
+      "email": "kk837@cornell.edu",
+      "dossier": "people/kushal-kedia.html"
     }
   ],
   "signals": [
     {
-      "slug": "ellen-xu",
-      "name": "Ellen Xu",
-      "tier": 1,
+      "slug": "raunaq-bhirangi",
+      "name": "Raunaq Bhirangi",
+      "tier": 0,
       "date": "2026-06-09",
       "days_ago": 0,
-      "type": "dossier updated",
-      "text": "Stanford CS undergrad (class of 2027) building at the embodied-RL / real-world-AI frontier — with shipped reps at both leading self-driving shops.",
-      "hot": true
+      "type": "founding listed",
+      "text": "Lerrel Pinto lab page lists him verbatim 'co-founder of a stealth robotics company'; LinkedIn 'Building something new in Robotics+AI'",
+      "source_url": "https://www.lerrelpinto.com/group/",
+      "source_kind": "lab_page",
+      "delta": 76,
+      "hot": true,
+      "has_dossier": true
     },
     {
-      "slug": "aayush-karan",
-      "name": "Aayush Karan",
+      "slug": "pannag-sanketi",
+      "name": "Pannag R. Sanketi",
+      "tier": 0,
+      "date": "2026-06-02",
+      "days_ago": 0,
+      "type": "bio change",
+      "text": "LinkedIn flipped to 'Stealth Startup · Robotics + AI'; Google Research profile 404s",
+      "source_url": "https://www.linkedin.com/in/pannag-sanketi",
+      "source_kind": "linkedin",
+      "delta": 62,
+      "hot": true,
+      "has_dossier": true
+    },
+    {
+      "slug": "scott-reed",
+      "name": "Scott Reed",
+      "tier": 0,
+      "date": "2026-05-31",
+      "days_ago": 0,
+      "type": "departure",
+      "text": "Left NVIDIA (Principal Research Scientist, GEAR co-lead); site + LinkedIn both read 'building something new'",
+      "source_url": "https://www.scottreed.info/",
+      "source_kind": "own_site",
+      "delta": 60,
+      "hot": true,
+      "has_dossier": true
+    },
+    {
+      "slug": "augustus-odena",
+      "name": "Augustus Odena",
       "tier": 1,
-      "date": "2026-06-09",
-      "days_ago": 1,
-      "type": "dossier updated",
-      "text": "3rd-year Harvard CS PhD (co-advised by",
-      "hot": true
+      "date": "2026-05-01",
+      "days_ago": 0,
+      "type": "round closed (neg)",
+      "text": "Raise at ~$700M post — stage past the fund's inception rule",
+      "source_url": null,
+      "source_kind": "manual",
+      "delta": -48,
+      "hot": true,
+      "has_dossier": true
     },
     {
-      "slug": "avanika-narayan",
-      "name": "Avanika Narayan",
+      "slug": "emmett-bicker",
+      "name": "Emmett Bicker",
+      "tier": 0,
+      "date": "2026-02-03",
+      "days_ago": 0,
+      "type": "founding listed",
+      "text": "Aster (asterlab.ai) — sole-author arXiv 2602.07040 + YC Spring 2026, team of 1, SF",
+      "source_url": "https://arxiv.org/abs/2602.07040",
+      "source_kind": "own_site",
+      "delta": 45,
+      "hot": true,
+      "has_dossier": true
+    },
+    {
+      "slug": "emmett-bicker",
+      "name": "Emmett Bicker",
+      "tier": 0,
+      "date": "2026-06-09",
+      "days_ago": 0,
+      "type": "research shipped",
+      "text": "Aster research posts: 'An LLM Made from Logic Gate Operations' + 'Scaling Autonomous Research to Thousands of Agents' (contributor #2: Olivia Long,…",
+      "source_url": "https://www.asterlab.ai/research/an_llm_made_from_logic_gates",
+      "source_kind": "own_site",
+      "delta": 45,
+      "hot": true,
+      "has_dossier": true
+    },
+    {
+      "slug": "kushal-kedia",
+      "name": "Kushal Kedia",
+      "tier": 0,
+      "date": "2026-05-27",
+      "days_ago": 0,
+      "type": "calendar window",
+      "text": "Cornell CS PhD graduating May 2026 — signing-decision window open (urgency decay 2026-07-15)",
+      "source_url": null,
+      "source_kind": "manual",
+      "delta": 38,
+      "hot": false,
+      "has_dossier": true
+    },
+    {
+      "slug": "jimmy-ba",
+      "name": "Jimmy Lei Ba",
       "tier": null,
-      "date": "2026-06-08",
-      "days_ago": 1,
-      "type": "dossier updated",
-      "text": "prev",
-      "hot": false
-    },
-    {
-      "slug": "benjamin-spector",
-      "name": "Benjamin F Spector",
-      "tier": null,
-      "date": "2026-06-08",
-      "days_ago": 1,
-      "type": "dossier updated",
-      "text": "Co-founder, Flapping Airplanes ($180M seed, $1.5B valuation, Sequoia + Index + GV). Hertz Fellow ($250K). Stanford CS PhD (Chris R&eacute; lab, Hazy…",
-      "hot": false
-    },
-    {
-      "slug": "cade-gordon",
-      "name": "Cade Gordon",
-      "tier": 1,
-      "date": "2026-06-09",
-      "days_ago": 1,
-      "type": "dossier updated",
-      "text": "",
-      "hot": true
-    },
-    {
-      "slug": "dan-biderman",
-      "name": "Dan Biderman",
-      "tier": 1,
-      "date": "2026-06-08",
-      "days_ago": 1,
-      "type": "dossier updated",
-      "text": "Stanford postdoc co-advised by Chris R&eacute; (Hazy Research — the most prolific founder-factory lab in ML) and Scott Linderman. Lead author of…",
-      "hot": true
-    },
-    {
-      "slug": "isha-puri",
-      "name": "Isha Puri",
-      "tier": 1,
-      "date": "2026-06-09",
-      "days_ago": 1,
-      "type": "dossier updated",
-      "text": "MIT CSAIL PhD (co-advised by",
-      "hot": true
-    },
-    {
-      "slug": "ishan-khare",
-      "name": "Ishan Khare",
-      "tier": 1,
-      "date": "2026-06-08",
-      "days_ago": 1,
-      "type": "dossier updated",
-      "text": "",
-      "hot": true
+      "date": "2026-02-10",
+      "days_ago": 0,
+      "type": "departure",
+      "text": "Departed xAI (co-founder) Feb 10 2026",
+      "source_url": null,
+      "source_kind": "news",
+      "delta": 38,
+      "hot": false,
+      "has_dossier": true
     }
   ],
   "triage": {

@@ -198,10 +198,13 @@ function replyRow(r){
 }
 
 function sigRow(s){
-  const nm = s.dossier!==false ? `<a href="people/${esc(s.slug)}.html">${esc(s.name)}</a>` : esc(s.name);
+  const nm = (s.has_dossier!==false) ? `<a href="people/${esc(s.slug)}.html">${esc(s.name)}</a>` : `<b>${esc(s.name)}</b>`;
+  const delta = s.delta!=null ? ` · <span style="color:${s.delta<0?'#b8791a':'#3a7d44'};font-weight:600">act ${s.delta<0?'↓':'↑'} ${Math.abs(s.delta)}</span>` : '';
+  const src = s.source_url ? ` · <a href="${esc(s.source_url)}" target="_blank" rel="noopener" style="color:var(--fg-faint)">src: ${esc(s.source_kind||'link')}</a>` : (s.source_kind?` · src: ${esc(s.source_kind)}`:'');
   return `<div class="sig ${s.hot?'hot':''}">
     <span class="sdate">${esc(s.date)}</span><span class="stype">${esc(s.type)}</span>
-    <div class="sbody"><a href="people/${esc(s.slug)}.html">${esc(s.name)}</a> <span class="smut">— ${esc(s.text)}</span></div>
+    <div class="sbody">${nm} <span class="smut">— ${esc(s.text)}</span></div>
+    <div style="font-family:var(--mono);font-size:.62rem;color:var(--fg-faint);margin-top:.2rem">${esc(s.date)}${src}${delta}</div>
   </div>`;
 }
 
