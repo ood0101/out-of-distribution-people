@@ -1,11 +1,11 @@
 {
-  "built_at": "2026-06-11T09:32:11+00:00",
+  "built_at": "2026-06-11T09:49:52+00:00",
   "date": "2026-06-11",
   "stats": {
-    "t0": 16,
-    "t1": 58,
+    "t0": 18,
+    "t1": 59,
     "in_flight": 8,
-    "pool": 110
+    "pool": 115
   },
   "replies": [],
   "followups": [
@@ -124,6 +124,34 @@
   ],
   "today5": [
     {
+      "slug": "amanpreet-singh",
+      "name": "Amanpreet Singh",
+      "tier": 0,
+      "score": 689,
+      "chips": [
+        "stealth",
+        "departed",
+        "founder",
+        "indian"
+      ],
+      "window": {
+        "text": "pre-name · open",
+        "kind": "open"
+      },
+      "why_now": "T0 ACTIVE PURSUIT. Repeat venture-scale founder at maximal inflection: just LEFT his OWN funded company (Founder & CTO of Contextual AI, co-founded 2023 w/ Douwe Kiela; $20M seed Bain, $80M Series A) and is ACTIVELY HIRING A FOUNDING TEAM (LinkedIn 'something…",
+      "do_this": "DM/InMail on LinkedIn (apsdehal) or email — he's in founder-hiring mode so responsive. Subject: lead with 'system over models' + the verification-generation asymmetry from Weaviate Pod #114, and…",
+      "channel": "linkedin",
+      "draft": null,
+      "link": {
+        "label": "in/apsdehal",
+        "url": "https://linkedin.com/in/apsdehal/"
+      },
+      "twitter": "apsdehal",
+      "linkedin": "apsdehal",
+      "email": null,
+      "dossier": "people/amanpreet-singh.html"
+    },
+    {
       "slug": "raunaq-bhirangi",
       "name": "Raunaq Bhirangi",
       "tier": 0,
@@ -157,7 +185,7 @@
       "slug": "pannag-sanketi",
       "name": "Pannag R. Sanketi",
       "tier": 0,
-      "score": 668,
+      "score": 667,
       "chips": [
         "stealth",
         "departed",
@@ -215,66 +243,47 @@
       "dossier": "people/scott-reed.html"
     },
     {
-      "slug": "siddhant-haldar",
-      "name": "Siddhant Haldar",
+      "slug": "michael-luo",
+      "name": "Michael Luo",
       "tier": 0,
       "score": 647,
       "chips": [
         "stealth",
-        "departed",
-        "founder",
-        "indian"
+        "founder"
       ],
       "window": {
         "text": "pre-name · open",
         "kind": "open"
       },
-      "why_now": "CLEAN T0 FOUNDING MOMENT, DOUBLE-SOURCED. Own resume lists top entry verbatim 'Stealth Startup | Co-Founder & CTO | Dec 2025-Present'; Lerrel Pinto's lab page independently lists him as 'co-founder of a stealth robotics company.' Just finished PhD at NYU…",
-      "do_this": "DM @haldar_siddhant (fallback email siddhanthaldar@nyu.edu, may bounce post-grad; warm intro via Pinto orbit strongest). Subject: 'FISH -> Point Policy, and the data bottleneck as a company.' Lead…",
+      "why_now": "CONFIRMED T0 — building a stealth startup NOW, just left Google DeepMind (PhD done Fall 2025). Site verbatim: 'I am currently building a stealth startup … efficient serving and post-training.' Best founder-pedigree in the RL-post-training lane: 1st author on…",
+      "do_this": "DM @michaelzluo (X) or LinkedIn michaelzhiluo; email michael.luo@berkeley.edu. WARM PATH STRONGEST = Ion Stoica / Sky Lab orbit, or the rLLM open-source community, or Sijun Tan (in repo). Lead with…",
       "channel": "twitter",
-      "draft": {
-        "subject": "FISH &rarr; Point Policy, and the data bottleneck as a company",
-        "body": "Hi Siddhant — I invest at inception and spend most of my time around the robot-data-bottleneck crowd (Physical Intelligence, Skild, the human-demo-to-robot people). Your line of work is the cleanest answer I've seen to the question everyone's now throwing money at: FISH learning from a minute of dem…"
-      },
-      "link": {
-        "label": "𝕏 @haldar_siddhant",
-        "url": "https://twitter.com/messages/compose?recipient_screen_name=haldar_siddhant"
-      },
-      "twitter": "haldar_siddhant",
-      "linkedin": null,
-      "email": "siddhanthaldar@nyu.edu",
-      "dossier": "people/siddhant-haldar.html"
-    },
-    {
-      "slug": "amanpreet-singh",
-      "name": "Amanpreet Singh",
-      "tier": 0,
-      "score": 639,
-      "chips": [
-        "stealth",
-        "departed",
-        "founder",
-        "indian"
-      ],
-      "window": {
-        "text": "pre-name · open",
-        "kind": "open"
-      },
-      "why_now": "T0 ACTIVE PURSUIT. Repeat venture-scale founder at maximal inflection: just LEFT his OWN funded company (Founder & CTO of Contextual AI, co-founded 2023 w/ Douwe Kiela; $20M seed Bain, $80M Series A) and is ACTIVELY HIRING A FOUNDING TEAM (LinkedIn 'something…",
-      "do_this": "DM/InMail on LinkedIn (apsdehal) or email — he's in founder-hiring mode so responsive. Subject: lead with 'system over models' + the verification-generation asymmetry from Weaviate Pod #114, and…",
-      "channel": "linkedin",
       "draft": null,
       "link": {
-        "label": "in/apsdehal",
-        "url": "https://linkedin.com/in/apsdehal/"
+        "label": "𝕏 @michaelzluo",
+        "url": "https://twitter.com/messages/compose?recipient_screen_name=michaelzluo"
       },
-      "twitter": "apsdehal",
-      "linkedin": "apsdehal",
-      "email": null,
-      "dossier": "people/amanpreet-singh.html"
+      "twitter": "michaelzluo",
+      "linkedin": "michaelzhiluo",
+      "email": "michael.luo@berkeley.edu",
+      "dossier": "people/michael-luo.html"
     }
   ],
   "signals": [
+    {
+      "slug": "abhinav-shrivastava",
+      "name": "Abhinav Shrivastava",
+      "tier": 0,
+      "date": "2026-06-11",
+      "days_ago": 0,
+      "type": "founding listed",
+      "text": "Own site + LinkedIn: 'Co-Founder & CEO, <stealth startup> — next-gen AI-native video infrastructure' (NeRV→NeRV-Diffusion video-as-weights);…",
+      "source_url": "https://abhinavsh.info",
+      "source_kind": "own_site",
+      "delta": 76,
+      "hot": true,
+      "has_dossier": true
+    },
     {
       "slug": "michael-luo",
       "name": "Michael Luo",
@@ -286,6 +295,34 @@
       "source_url": "https://michaelzhiluo.github.io",
       "source_kind": "own_site",
       "delta": 63,
+      "hot": true,
+      "has_dossier": true
+    },
+    {
+      "slug": "russ-tedrake",
+      "name": "Russ Tedrake",
+      "tier": 0,
+      "date": "2026-03-24",
+      "days_ago": 0,
+      "type": "founding listed",
+      "text": "MIT page: 'Founder of a Stealth Startup in Physical AI'; LEFT TRI (bio past-tense); The Robot Report confirms LBMs-for-industry",
+      "source_url": "https://locomotion.csail.mit.edu/russt.html",
+      "source_kind": "own_site",
+      "delta": 56,
+      "hot": true,
+      "has_dossier": true
+    },
+    {
+      "slug": "russ-tedrake",
+      "name": "Russ Tedrake",
+      "tier": 0,
+      "date": "2026-03-24",
+      "days_ago": 0,
+      "type": "departure",
+      "text": "Left TRI (10yr SVP Robotics Research & Large Behavior Models) to found the stealth co; kept MIT chair",
+      "source_url": "https://www.therobotreport.com/russ-tedrake-to-unveil-stealth-ai-startup-at-robotics-summit/",
+      "source_kind": "news",
+      "delta": 48,
       "hot": true,
       "has_dossier": true
     },
@@ -304,6 +341,34 @@
       "has_dossier": true
     },
     {
+      "slug": "luca-weihs",
+      "name": "Luca Weihs",
+      "tier": 2,
+      "date": "2026-02-25",
+      "days_ago": 0,
+      "type": "joined big lab (neg)",
+      "text": "Vercept (his computer-use-agents co; founded Nov 2024) acquihired by Anthropic Feb 25 2026; now at Anthropic — NOT foundable now",
+      "source_url": "https://www.anthropic.com/news/acquires-vercept",
+      "source_kind": "news",
+      "delta": -38,
+      "hot": false,
+      "has_dossier": true
+    },
+    {
+      "slug": "jiayi-pan",
+      "name": "Jiayi Pan",
+      "tier": 1,
+      "date": "2026-02-15",
+      "days_ago": 0,
+      "type": "departure",
+      "text": "Left xAI (Grok-4 RL team; part of the 50+ post-SpaceX-absorption exodus); site now 'I am building language model agents' (company UNCONFIRMED)",
+      "source_url": "https://www.jiayipan.com",
+      "source_kind": "own_site",
+      "delta": 35,
+      "hot": false,
+      "has_dossier": true
+    },
+    {
       "slug": "amanpreet-singh",
       "name": "Amanpreet Singh",
       "tier": 0,
@@ -316,80 +381,10 @@
       "delta": 32,
       "hot": false,
       "has_dossier": true
-    },
-    {
-      "slug": "michael-luo",
-      "name": "Michael Luo",
-      "tier": 0,
-      "date": "2026-01-01",
-      "days_ago": 0,
-      "type": "departure",
-      "text": "Left Google DeepMind (efficient agentic systems) after Berkeley PhD (Stoica) — short stint",
-      "source_url": "https://michaelzhiluo.github.io",
-      "source_kind": "own_site",
-      "delta": 23,
-      "hot": false,
-      "has_dossier": true
-    },
-    {
-      "slug": "chris-fifty",
-      "name": "Chris Fifty",
-      "tier": 1,
-      "date": "2025-04-24",
-      "days_ago": 0,
-      "type": "paper award",
-      "text": "ICLR 2025 ORAL (top 1.8%) — 'Restructuring Vector Quantization with the Rotation Trick' (1st author; Thrun + Ré co-authors)",
-      "source_url": "https://arxiv.org/abs/2410.06424",
-      "source_kind": "own_site",
-      "delta": 17,
-      "hot": false,
-      "has_dossier": true
-    },
-    {
-      "slug": "chris-fifty",
-      "name": "Chris Fifty",
-      "tier": 1,
-      "date": "2025-07-15",
-      "days_ago": 0,
-      "type": "manual",
-      "text": "Post-grad company DISINTEGRATED (unnamed) -> 'between things' / available; per his essay 'applying to jobs ... couch surfing'; grinding latent-space…",
-      "source_url": "https://cfifty.github.io/writings/latent_lm.html",
-      "source_kind": "own_site",
-      "delta": 1,
-      "hot": false,
-      "has_dossier": true
-    },
-    {
-      "slug": "raunaq-bhirangi",
-      "name": "Raunaq Bhirangi",
-      "tier": 0,
-      "date": "2026-06-09",
-      "days_ago": 1,
-      "type": "founding listed",
-      "text": "Lerrel Pinto lab page lists him verbatim 'co-founder of a stealth robotics company'; LinkedIn 'Building something new in Robotics+AI'",
-      "source_url": "https://www.lerrelpinto.com/group/",
-      "source_kind": "lab_page",
-      "delta": 76,
-      "hot": true,
-      "has_dossier": true
-    },
-    {
-      "slug": "pannag-sanketi",
-      "name": "Pannag R. Sanketi",
-      "tier": 0,
-      "date": "2026-06-02",
-      "days_ago": 1,
-      "type": "bio change",
-      "text": "LinkedIn flipped to 'Stealth Startup · Robotics + AI'; Google Research profile 404s",
-      "source_url": "https://www.linkedin.com/in/pannag-sanketi",
-      "source_kind": "linkedin",
-      "delta": 61,
-      "hot": true,
-      "has_dossier": true
     }
   ],
   "triage": {
-    "pending": 83,
+    "pending": 85,
     "highlights": [
       {
         "name": "Sumith Kulal",

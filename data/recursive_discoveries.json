@@ -1270,6 +1270,37 @@
         "founder",
         "past-inception"
       ]
+    },
+    {
+      "name": "Matt Deitke",
+      "from_dossier": "luca-weihs",
+      "discovered_at": "2026-06-11",
+      "priority": "P1",
+      "status": "pending",
+      "context": "24yo; 1st author Molmo/Objaverse/ProcTHOR; co-founded Vercept (→Anthropic acquihire) but he went to META SUPERINTELLIGENCE on a reported ~$250M/4yr package (turned down $125M, Zuck doubled it). One-time founder who chose money/optionality over the team. THE single highest-priority departure-watch — T0 the moment he leaves Meta. @mattdeitke.",
+      "tags": [
+        "vercept",
+        "meta-superintelligence",
+        "molmo",
+        "departed-once",
+        "founder",
+        "highest-watch"
+      ]
+    },
+    {
+      "name": "Kiana Ehsani",
+      "from_dossier": "luca-weihs",
+      "discovered_at": "2026-06-11",
+      "priority": "P2",
+      "status": "pending",
+      "context": "Vercept CEO (→Anthropic acquihire). Led robotics/embodied-AI at AI2 (ManipulaTHOR 1st author). Repeat-founder CEO now locked at Anthropic — future-departure cohort. @ehsanik.",
+      "tags": [
+        "vercept",
+        "anthropic",
+        "embodied-ai",
+        "ai2-diaspora",
+        "founder-ceo"
+      ]
     }
   ]
 }
