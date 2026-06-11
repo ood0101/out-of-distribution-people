@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-06-11T09:49:52+00:00",
+  "last_built": "2026-06-11T10:57:42+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -318,7 +318,7 @@
         "phrase_raising": false,
         "phrase_founded": false
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-06-11T15:20:17+05:30",
       "needs_triage": false,
       "emails": [
         "abhinav@cs.umd.edu"
@@ -5437,7 +5437,7 @@
         "phrase_raising": false,
         "phrase_founded": false
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-06-11T15:20:17+05:30",
       "needs_triage": false,
       "emails": [],
       "email_primary": null,
@@ -7292,7 +7292,7 @@
         "phrase_raising": false,
         "phrase_founded": true
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-06-11T15:20:17+05:30",
       "needs_triage": false,
       "emails": [],
       "email_primary": null,
@@ -9691,7 +9691,7 @@
         "phrase_raising": false,
         "phrase_founded": false
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-06-11T15:20:17+05:30",
       "needs_triage": false,
       "emails": [],
       "email_primary": null,
@@ -10273,7 +10273,7 @@
         "phrase_raising": false,
         "phrase_founded": false
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-06-11T15:20:17+05:30",
       "needs_triage": false,
       "emails": [
         "shikharbahl24@gmail.com"
