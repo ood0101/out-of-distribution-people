@@ -8,7 +8,7 @@
 <style>
 /* ── The Desk — action-first daily surface. Reads data/today.json. ── */
 body.dir-body{max-width:1180px}
-.desk{max-width:1180px;margin:0 auto;padding:0 1.5rem 5rem}
+.desk{max-width:1180px;margin:0 auto;padding:0 0 5rem}/* no h-padding: body.dir-body already insets 1.5rem, so content aligns with the nav (matches index.html) */
 /* Shared top nav — identical to index.html/.dir-top so Desk↔Directory don't jump. */
 .dir-top{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--border);margin:0 -2rem 0.7rem;padding:0.6rem 2rem}
 .dir-top-row{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap}
