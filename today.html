@@ -7,7 +7,16 @@
 <link rel="stylesheet" href="style.css">
 <style>
 /* ── The Desk — action-first daily surface. Reads data/today.json. ── */
+body.dir-body{max-width:1180px}
 .desk{max-width:1180px;margin:0 auto;padding:0 1.5rem 5rem}
+/* Shared top nav — identical to index.html/.dir-top so Desk↔Directory don't jump. */
+.dir-top{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--border);margin:0 -2rem 0.7rem;padding:0.6rem 2rem}
+.dir-top-row{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.dir-title{font-family:var(--mono);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.12em;color:var(--fg-muted)}
+.dir-top-links{display:flex;gap:1.1rem;font-family:var(--mono);font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em}
+.dir-top-links a{color:var(--fg-muted);text-decoration:none;padding-bottom:0.15rem;border-bottom:1px solid transparent}
+.dir-top-links a:hover,.dir-top-links a.cur{color:var(--accent);border-bottom-color:var(--accent)}
+@media(max-width:600px){.dir-top{margin:0 -1rem 0.6rem;padding:0.55rem 1rem}}
 .hero{display:flex;justify-content:space-between;align-items:flex-end;margin:1.9rem 0 .4rem;gap:1rem}
 .hero h1{font-family:var(--serif);font-size:2.5rem;font-weight:400;letter-spacing:-.01em}
 .hero .meta{font-family:var(--mono);font-size:.72rem;color:var(--fg-faint);text-align:right;letter-spacing:.04em;line-height:1.7}
@@ -96,15 +105,17 @@
 </head>
 <body class="dir-body">
 
-<nav class="dir-top" style="display:flex;justify-content:space-between;align-items:center;max-width:1180px;margin:0 auto;padding:1.4rem 1.5rem 1.2rem;border-bottom:1px solid var(--border)">
-  <div class="site-title" style="font-family:var(--mono);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase">Out of Distribution People</div>
-  <div style="font-family:var(--mono);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;display:flex;gap:1.4rem">
-    <a href="today.html" style="color:var(--accent);text-decoration:none;border-bottom:1.5px solid var(--accent);padding-bottom:2px">The Desk</a>
-    <a href="index.html" style="color:var(--fg-faint);text-decoration:none">Directory</a>
-    <a href="queue.html" style="color:var(--fg-faint);text-decoration:none">Outreach Queue</a>
-    <a href="delta-fellows.html" style="color:var(--fg-faint);text-decoration:none">Delta Fellows</a>
+<div class="dir-top">
+  <div class="dir-top-row">
+    <span class="dir-title">Out of Distribution People</span>
+    <span class="dir-top-links">
+      <a href="today.html" class="cur">The Desk</a>
+      <a href="index.html">Directory</a>
+      <a href="queue.html">Outreach Queue &rarr;</a>
+      <a href="delta-fellows.html">Delta Fellows</a>
+    </span>
   </div>
-</nav>
+</div>
 
 <div class="desk">
   <div class="hero">
