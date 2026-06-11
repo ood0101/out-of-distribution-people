@@ -1,11 +1,11 @@
 {
-  "built_at": "2026-06-11T09:14:07+00:00",
+  "built_at": "2026-06-11T09:32:11+00:00",
   "date": "2026-06-11",
   "stats": {
-    "t0": 14,
-    "t1": 57,
+    "t0": 16,
+    "t1": 58,
     "in_flight": 8,
-    "pool": 106
+    "pool": 110
   },
   "replies": [],
   "followups": [
@@ -246,36 +246,119 @@
       "dossier": "people/siddhant-haldar.html"
     },
     {
-      "slug": "emmett-bicker",
-      "name": "Emmett Bicker",
+      "slug": "amanpreet-singh",
+      "name": "Amanpreet Singh",
       "tier": 0,
-      "score": 614,
+      "score": 639,
       "chips": [
+        "stealth",
+        "departed",
         "founder",
-        "yc-s26"
+        "indian"
       ],
       "window": {
-        "text": "open",
+        "text": "pre-name · open",
         "kind": "open"
       },
-      "why_now": "T0 ACTIVE PURSUIT (owner call Jun 2026: pursue now alongside YC; hot claims = risk to price, not a blocker). Maximal inflection: ~19yo, dropped out of college 3 weeks in (fall 2024) -> ~1yr RL/post-training researcher on ultra-long-context coding LLMs at…",
-      "do_this": "DM/InMail on LinkedIn (emmett-bicker-604117238; no X, no public email — LinkedIn is the channel). Subject: 'ThoughtsFormer -> Aster, and what autonomous really means.' Lead with the…",
+      "why_now": "T0 ACTIVE PURSUIT. Repeat venture-scale founder at maximal inflection: just LEFT his OWN funded company (Founder & CTO of Contextual AI, co-founded 2023 w/ Douwe Kiela; $20M seed Bain, $80M Series A) and is ACTIVELY HIRING A FOUNDING TEAM (LinkedIn 'something…",
+      "do_this": "DM/InMail on LinkedIn (apsdehal) or email — he's in founder-hiring mode so responsive. Subject: lead with 'system over models' + the verification-generation asymmetry from Weaviate Pod #114, and…",
       "channel": "linkedin",
-      "draft": {
-        "subject": "ThoughtsFormer &rarr; Aster, and what \"autonomous\" really means",
-        "body": "Hi Emmett — I invest at inception and spend my time around the AI-for-AI-research crowd (DeepMind's AlphaEvolve, Sakana's AI Scientist, K-Search, the Prime Intellect auto-nanogpt people). What made me reach out isn't the launch thread — it's that your ThoughtsFormer repo from 2024 already had the re…"
-      },
+      "draft": null,
       "link": {
-        "label": "in/emmett-bicker-604117238",
-        "url": "https://linkedin.com/in/emmett-bicker-604117238/"
+        "label": "in/apsdehal",
+        "url": "https://linkedin.com/in/apsdehal/"
       },
-      "twitter": null,
-      "linkedin": "emmett-bicker-604117238",
+      "twitter": "apsdehal",
+      "linkedin": "apsdehal",
       "email": null,
-      "dossier": "people/emmett-bicker.html"
+      "dossier": "people/amanpreet-singh.html"
     }
   ],
   "signals": [
+    {
+      "slug": "michael-luo",
+      "name": "Michael Luo",
+      "tier": 0,
+      "date": "2026-05-01",
+      "days_ago": 0,
+      "type": "founding listed",
+      "text": "Site verbatim: 'I am currently building a stealth startup … efficient serving and post-training' — name/funding not public (EDGAR 0 hits)",
+      "source_url": "https://michaelzhiluo.github.io",
+      "source_kind": "own_site",
+      "delta": 63,
+      "hot": true,
+      "has_dossier": true
+    },
+    {
+      "slug": "amanpreet-singh",
+      "name": "Amanpreet Singh",
+      "tier": 0,
+      "date": "2026-05-01",
+      "days_ago": 0,
+      "type": "bio change",
+      "text": "LinkedIn headline 'something new | hiring founding…' + 'Stealth, SF Bay Area' — founder-mode (hiring a founding team)",
+      "source_url": "https://www.linkedin.com/in/apsdehal",
+      "source_kind": "linkedin",
+      "delta": 42,
+      "hot": true,
+      "has_dossier": true
+    },
+    {
+      "slug": "amanpreet-singh",
+      "name": "Amanpreet Singh",
+      "tier": 0,
+      "date": "2026-02-01",
+      "days_ago": 0,
+      "type": "departure",
+      "text": "Left Contextual AI (co-founder & CTO) — all his surfaces flipped to past-tense; Scholar email reverted to nyu.edu",
+      "source_url": "https://apsdehal.in",
+      "source_kind": "own_site",
+      "delta": 32,
+      "hot": false,
+      "has_dossier": true
+    },
+    {
+      "slug": "michael-luo",
+      "name": "Michael Luo",
+      "tier": 0,
+      "date": "2026-01-01",
+      "days_ago": 0,
+      "type": "departure",
+      "text": "Left Google DeepMind (efficient agentic systems) after Berkeley PhD (Stoica) — short stint",
+      "source_url": "https://michaelzhiluo.github.io",
+      "source_kind": "own_site",
+      "delta": 23,
+      "hot": false,
+      "has_dossier": true
+    },
+    {
+      "slug": "chris-fifty",
+      "name": "Chris Fifty",
+      "tier": 1,
+      "date": "2025-04-24",
+      "days_ago": 0,
+      "type": "paper award",
+      "text": "ICLR 2025 ORAL (top 1.8%) — 'Restructuring Vector Quantization with the Rotation Trick' (1st author; Thrun + Ré co-authors)",
+      "source_url": "https://arxiv.org/abs/2410.06424",
+      "source_kind": "own_site",
+      "delta": 17,
+      "hot": false,
+      "has_dossier": true
+    },
+    {
+      "slug": "chris-fifty",
+      "name": "Chris Fifty",
+      "tier": 1,
+      "date": "2025-07-15",
+      "days_ago": 0,
+      "type": "manual",
+      "text": "Post-grad company DISINTEGRATED (unnamed) -> 'between things' / available; per his essay 'applying to jobs ... couch surfing'; grinding latent-space…",
+      "source_url": "https://cfifty.github.io/writings/latent_lm.html",
+      "source_kind": "own_site",
+      "delta": 1,
+      "hot": false,
+      "has_dossier": true
+    },
     {
       "slug": "raunaq-bhirangi",
       "name": "Raunaq Bhirangi",
@@ -303,94 +386,10 @@
       "delta": 61,
       "hot": true,
       "has_dossier": true
-    },
-    {
-      "slug": "scott-reed",
-      "name": "Scott Reed",
-      "tier": 0,
-      "date": "2026-05-31",
-      "days_ago": 1,
-      "type": "departure",
-      "text": "Left NVIDIA (Principal Research Scientist, GEAR co-lead); site + LinkedIn both read 'building something new'",
-      "source_url": "https://www.scottreed.info/",
-      "source_kind": "own_site",
-      "delta": 60,
-      "hot": true,
-      "has_dossier": true
-    },
-    {
-      "slug": "kyle-lo",
-      "name": "Kyle Lo",
-      "tier": 2,
-      "date": "2026-03-26",
-      "days_ago": 1,
-      "type": "departure",
-      "text": "Left AI2 (co-lead of OLMo); site: 'farewell to Ai2 … now working on something new'",
-      "source_url": "https://kyleclo.com/news/",
-      "source_kind": "own_site",
-      "delta": 52,
-      "hot": true,
-      "has_dossier": true
-    },
-    {
-      "slug": "augustus-odena",
-      "name": "Augustus Odena",
-      "tier": 1,
-      "date": "2026-05-01",
-      "days_ago": 1,
-      "type": "round closed (neg)",
-      "text": "Raise at ~$700M post — stage past the fund's inception rule",
-      "source_url": null,
-      "source_kind": "manual",
-      "delta": -48,
-      "hot": true,
-      "has_dossier": true
-    },
-    {
-      "slug": "kyle-lo",
-      "name": "Kyle Lo",
-      "tier": 2,
-      "date": "2026-05-15",
-      "days_ago": 1,
-      "type": "joined big lab (neg)",
-      "text": "Joined Microsoft AI MAI Superintelligence (post-training, Suleyman) w/ OLMo build-core — NOT a startup; not foundable now",
-      "source_url": "https://www.geekwire.com/2026/microsoft-adds-more-former-ai2-researchers-to-its-superintelligence-team/",
-      "source_kind": "news",
-      "delta": -46,
-      "hot": true,
-      "has_dossier": true
-    },
-    {
-      "slug": "emmett-bicker",
-      "name": "Emmett Bicker",
-      "tier": 0,
-      "date": "2026-02-03",
-      "days_ago": 1,
-      "type": "founding listed",
-      "text": "Aster (asterlab.ai) — sole-author arXiv 2602.07040 + YC Spring 2026, team of 1, SF",
-      "source_url": "https://arxiv.org/abs/2602.07040",
-      "source_kind": "own_site",
-      "delta": 45,
-      "hot": true,
-      "has_dossier": true
-    },
-    {
-      "slug": "emmett-bicker",
-      "name": "Emmett Bicker",
-      "tier": 0,
-      "date": "2026-06-09",
-      "days_ago": 1,
-      "type": "research shipped",
-      "text": "Aster research posts: 'An LLM Made from Logic Gate Operations' + 'Scaling Autonomous Research to Thousands of Agents' (contributor #2: Olivia Long,…",
-      "source_url": "https://www.asterlab.ai/research/an_llm_made_from_logic_gates",
-      "source_kind": "own_site",
-      "delta": 44,
-      "hot": true,
-      "has_dossier": true
     }
   ],
   "triage": {
-    "pending": 81,
+    "pending": 83,
     "highlights": [
       {
         "name": "Sumith Kulal",

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Recursive discoveries surfaced by dossier agents. Each entry: a person mentioned in a dossier as worth following up. Status: pending|approved|dossiered|rejected.",
-  "last_updated": "2026-06-10",
+  "last_updated": "2026-06-11",
   "discoveries": [
     {
       "name": "Sumith Kulal",
@@ -1241,6 +1241,34 @@
         "ai2-diaspora",
         "microsoft-mai",
         "watch-pair"
+      ]
+    },
+    {
+      "name": "David Luan",
+      "from_dossier": "augustus-odena",
+      "discovered_at": "2026-06-11",
+      "priority": "P1",
+      "status": "pending",
+      "context": "Adept co-founder/CEO; left Amazon AGI (where Adept landed) Feb 2026 'to cook up something new.' A genuinely FRESH possibly-inception node off the Adept tree (unlike Augustus's Arda, which is McGrew's $700M co past inception). Surfaced during the Augustus Odena refresh.",
+      "tags": [
+        "adept-diaspora",
+        "departed",
+        "founder",
+        "frontier-departure"
+      ]
+    },
+    {
+      "name": "Bob McGrew",
+      "from_dossier": "augustus-odena",
+      "discovered_at": "2026-06-11",
+      "priority": "P3",
+      "status": "pending",
+      "context": "Ex-OpenAI Chief Research Officer; CEO/co-founder of Arda (AI-for-manufacturing, w/ Augustus Odena + ex-Palantir Jakob Frick & Alex Mark). $20M seed + $70M at $700M (Founders Fund/Accel) = past inception. Index for network, not active pursuit.",
+      "tags": [
+        "openai-diaspora",
+        "arda",
+        "founder",
+        "past-inception"
       ]
     }
   ]

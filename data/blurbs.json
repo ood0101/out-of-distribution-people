@@ -1,923 +1,940 @@
 {
- "kyle-lo": {
-  "role": "The data architect of the fully-open-LLM movement — co-led OLMo at AI2 and first-authored/anchored the open-data stack the field builds on (S2ORC, Dolma, peS2o, olmOCR). ~25K cites, h-50. NOT a PhD (MS Statistics, UW). Left AI2 Mar 26 2026 → Microsoft AI MAI Superintelligence (post-training, under Suleyman). Seattle.",
-  "spike": "T2 — track / departure-watch. Frontier-grade talent at the wrong moment: his site says 'working on something new' but it's NOT a startup — he + the OLMo build-core (Luca Soldaini, Dirk Groeneveld, Pete Walsh, Matt Jordan, Jake Poznanski) joined Microsoft AI MAI Superintelligence (GeekWire May 15 2026). Not raising, can't be backed today. THE SPIKE: data brain of the open-LLM movement — S2ORC (co-1st, ACL'20, the 81M-paper corpus), SciBERT (2nd author, ~5.9K cites), CORD-19, Dolma (data co-lead, ACL'24 Best Resource Paper), OLMo (data lead, ACL'24 Best Paper), olmOCR, Olmix, 2× NeurIPS'25 Spotlight (Signal&Noise + FlexOlmo). Authorship precise: 1st-author on corpus work, senior data anchor on model work — never the model-architecture 1st author. ~35-person elite mentee roster (Muennighoff, Wettig, Mayee Chen, Orion Weller). Thesis: data curation/mixing, benchmark validity, fully-open science. NOT Indian. RE-RATE TO T0 if he leaves Microsoft / domain reg / Form D / founder bio. THE FOUNDABLE OLMo-diaspora name is Nathan Lambert (left AI2, NOT to Microsoft, 'building what's next' on open post-training). Texture: serious D&D DM (4yr Eberron + homebrew West Marches), board games (Hanabi = AI benchmark), cat Belphegor, Seattle boba, 🐟🐠🐡 emoji tic, handed out Blu-Ray discs of model weights at COLM'25. T2."
- },
- "emmett-bicker": {
-  "role": "Solo founder of Aster (asterlab.ai), \"the first AI-native AI research lab\" — YC Spring 2026, team of 1, SF, ~19 yo. Dropped out of college 3 weeks in (fall 2024) → ~1yr RL/post-training researcher on ultra-long-context coding LLMs at Magic (frontier lab, NON-canonical) → left late Jan 2026 → sole-authored the Aster arXiv paper → YC. Not Indian.",
-  "spike": "T0 — active pursuit (owner call Jun 2026: pursue now, co-investing alongside YC; hot claims are a risk to price, not a blocker). Maximal inflection: just left a frontier lab + founded solo weeks ago. The rate-of-change is the signal — HS → Nature Comms 2025 co-author (Flatiron/Chklovskii, as a high-schooler) → Magic RL researcher at 18 → solo arXiv founder at 19. Real dated talent trail on @em-flower GitHub (matrix-mult \"in a machine learning course\" at 14; ThoughtsFormer at 17 prefigures the Aster reasoning thesis). HONEST CALIBRATION (3 independent adversarial verifiers): his SOTA claims run measurably hot — of 5 claims in the sole-authored, non-peer-reviewed arXiv paper, ONE is independently confirmed (NanoGPT kernel record merged into Keller Jordan's modded-nanogpt, METR-assessed \"real improvement\" — but revised −1.6s→−0.4s, ~4x haircut), ONE is verifiably NOT SOTA (TriMul: K-Search 1030µs & CUDA 1074µs beat Aster's 1114µs; Aster absent from official leaderboard), THREE self-reported with 0 released code. The autonomy thesis (the whole pitch) is the least-verified claim — the one confirmed result is human-co-credited. NOT fraud — real win + normal founder hype. OWNER CALL = T0 despite (a) YC S26 (usual 'too late' heuristic) + (b) hot claims vs 'evidence over claims' — person is T0-caliber, timing urgent; price the risks. Other texture: Steel City Codes COO (Python Teacher→COO, 1,000 volunteers/5,000+ kids, before 18); Hunter College HS '24; RoHawks robotics co-captain; competition piano (Tom Brier ragtime, 3rd Charleston European, self-taught cold during COVID). College likely Stony Brook (inference). Outreach: LinkedIn/email, substance-first, lead ThoughtsFormer→Aster + the autonomy question. T0."
- },
- "raunaq-bhirangi": {
-  "role": "Co-founder of a stealth robotics company — likely \"Index Robots\" (his own contact email is raunaq@indexrobots.ai; Lerrel Pinto's lab page lists him as \"co-founder of a stealth robotics company\"; LinkedIn: \"Building something new in Robotics+AI\"). NYU CILVR postdoc (Lerrel Pinto); CMU Robotics PhD '24 (Abhinav Gupta + Carmel Majidi). Indian.",
-  "spike": "T0 founder, building NOW, pre-name. Owns the leading low-cost magnetic tactile-sensing stack in academic robotics across 3 generations: ReSkin (CoRL 2021 Oral, co-1st w/ Tess Hellebrekers, ~$6/sensor, 122★), AnySkin (ICRA 2025, 1st author — the FIRST uncalibrated tactile sensor whose learned manipulation policies transfer cross-instance with no recalibration = the unlock for pooling tactile data, 78★), eFlesh (2025, 3D-printable, <$5 magnets, 363★). Thesis (his words): touch is \"conspicuously absent\" from robot AI — contact-rich generalist manipulation needs cheap, durable, data-reusable touch. Calls himself a \"full-stack roboticist.\" Scholar ~463c, h-11; the real signal is open-hardware ADOPTION. Suspected co-founder = Siddhant Haldar (T0; identical Pinto-page descriptor, constant co-author, complementary tactile-hardware vs policy/IL) — STRONG HYPOTHESIS they co-founded the same entity (Index Robots), not independently confirmed. JEE Advanced 2014 AIR 348; IIT Bombay ME; Bengaluru. Meta AI visiting researcher (tactile). Honesty: \"co-founder\" label is Pinto-page + LinkedIn (his own CV is stale, no title); \"ICRA 2025 Best Paper\" for AnySkin is self-reported (verified award = RSS 2025 workshop best paper). Reach out NOW via X DM @raunaqmb. T0.",
-  "_human_": "Hobbies (his site, verbatim): hiking, reading, cooking, photography — and \"I can have long discussions about history, culture, politics and philosophy with no regard for time, hunger, thirst or the other person's evident lack of interest.\" NYC. Pinto-lab social fabric: Irmak Güzey, Anya Zorin, Ziqian Li, Venkatesh Pattabiraman (RUKA/eFlesh). Calls Skild AI team \"my PhD friends\" (CMU cohort). Outreach hook: the open-hardware-vs-code insight + the conversation-as-sport personality."
- },
- "karan-singhal": {
-  "role": "Head of Health AI + AGI Benefits at OpenAI (one of 20 CLAUDE.md tracked cos). The FIRST AMIE-cluster departure from Google DeepMind — announced Jul 22 2024. Stanford BS+MS CS ’19.",
-  "spike": "Co-equal first author (listed first) on the 2 most-cited medical-LLM papers in history: Med-PaLM (Nature 2023, 5,747 cites, corresponding author) + Med-PaLM 2 (Nature Medicine 2025, 2,428 cites, 86.5% MedQA). Combined 8,175 cites just from those 2 papers. 21,541 total Scholar cites, h-26, i10-34 (99.9% post-2021). Stanford ’19 (4.1/4.0 MS GPA); initiated + main instructor of Stanford’s first CS+Social Good AI ethics class (Apr 2018). Google Research Jul 2019–Apr 2024 (~5y, federated learning lead author NeurIPS 2021 → Med-PaLM “bottom-up brain moonshot”). Departed Jul 22 2024 (X tweet 923 likes; Greg Brockman: “Welcome!”). Now leads OpenAI’s entire health surface: HealthBench (May 2025, 49K rubric items / 250+ physicians / 60 countries) + Penda Health Kenya RCT (first real-world LLM clinical copilot RCT) + OpenAI for Healthcare (Jan 8 2026 HIPAA, 8 named hospital systems: Boston Children’s, Cedars-Sinai, MSK, Stanford Children’s, UCSF, AdventHealth, Baylor Scott & White, HCA) + ChatGPT Health consumer (Jan 2026, Apple Health/wearables) + ChatGPT for Clinicians + HealthBench Professional (Apr 22 2026, pinned tweet 4,846 likes / 1.6M impressions = peak engagement). TIME100 Health 2026 (Feb 11). Co-author GPT-4o + o1 + GPT-5 + gpt-oss system cards. 2nd AMIE departure CONFIRMED: Khaled Saab (Stanford EE PhD under Chris Ré = CLAUDE.md critical lab, Hazy Research alumnus) now on Karan’s OpenAI Health team per Jan 13 2026 reply (“Remarkable leadership and execution. I’m lucky to be part of this team!!”) — bridges DeepMind health ↔ Ré cluster ↔ OpenAI Health pipeline. Jan 13 2026 recap: “we completed that original plan — in 2026 we enter the scaling era for the impact of AI on human health” (founder-voice). Aug 2023 Rising Stars #4 talk articulated “post-training refinement on real workflow feedback” thesis ONE YEAR before joining OpenAI — ChatGPT for Healthcare is the operational realization. Reference class: Roshan Rao (T1, FAIR → EvolutionaryScale, bio analogue) + Vivek Natarajan (T1, parallel-track comp who stayed). Earliest meaningful departure window Q3 2027 (3-yr vesting milestone). Triggers: (1) OpenAI → OpenAI Foundation move (Yo Shavit May 25 2026 precedent — Karan retweeted), (2) X bio change (currently “Health AI, AGI benefits, safety @OpenAI”), (3) Vivek’s next move (canonical co-founder), (4) Khaled Saab inverse-signal departure, (5) Health team spin-out / external acquisition. Recursive: Nate Gross (Doximity co-founder + ex-CSO, joined OpenAI ~late 2025 as healthcare strategy lead, P0), Ashley Alexander (ex-Instagram product co-Head, OpenAI healthcare product, P1) — the operator+product side of the OpenAI Health founding kernel. Indian-origin (Singhal = North Indian Vaishya/Marwari surname; name-based, not interview-confirmed). SF-based. @thekaransinghal (9,815 followers). Frame: peer/researcher relationship build, NOT pitch — he’s mid-build on the biggest product launch of his career. T1."
- },
- "vivek-natarajan": {
-  "role": "Research Lead, Google DeepMind (one of the 20 CLAUDE.md tracked cos). Lead researcher on Med-PaLM + Med-PaLM 2 + Project AMIE. The canonical world-class healthcare AI researcher.",
-  "spike": "4 most-cited medical-LLM papers in history, all his: Med-PaLM (Nature 2023, 5,742 cites) + Med-PaLM 2 (Nature Medicine 2025, 2,422 cites, 86.5% MedQA = +19pp) + AMIE conversational (Nature 2025, 733 cites, beat PCPs in OSCE) + AMIE-DDx (Nature 2025). 20,301 total cites, h-35, i10-50. Co-leads AMIE w/ Alan Karthikesalingam. Mar 2026 Beth Israel feasibility study (arXiv 2603.08448): 100 patients, 90% top-DDx, ZERO safety stops — first real-world AMIE deployment, the moment medical AI stopped being a benchmark game. Included Health randomized study underway. NIT India BS → UT Austin MS CS → FAIR (won 2018 VQA Challenge, Pythia/MMF; TextVQA 2,285 cites) → Google Health (recruited by Greg Corrado) → DeepMind. Founder thesis (his own quote, Pear Healthcare Playbook): “The unicorns will be the workflow-rebuilds. I don’t see anyone doing that yet.” Landscape: Hippocratic ($1.6B), Abridge ($850M), OpenEvidence ($1B), Innovaccer ($3.2B), K Health, Kinetic Systems. Reference class: Roshan Rao (T1; FAIR → EvolutionaryScale → CZI). Recursive: Karan Singhal (Med-PaLM 1st author, departed Google → OpenAI Health Aug 2024 = first AMIE-cluster departure), Tao Tu, Khaled Saab (Stanford Ré lineage), Anil Palepu. No public departure signal yet. Indian-origin (Tamil). T1 (relationship-build, monthly)."
- },
- "kushal-kedia": {
-  "role": "Cornell CS PhD candidate graduating May 2026 — Sanjiban Choudhury (PoRTaL + Aurora) + Wei-Chiu Ma (ex-Waabi); concurrent Stanford visiting under Jeannette Bohg (IPRL Sloan) + C. Karen Liu.",
-  "spike": "T0 by timing — PhD ends in 5 weeks. X-Sim (CoRL 2025 ORAL + RSS EgoAct Best Paper Runner-up) — real→sim→real with no teleop, the exact PI pi-0.5 / Figure Helix / 1X World Model / Skild Brain wedge. RHyME (ICRA 25, Cornell Chronicle press). MOSAIC (CoRL 24 + 2 ICRA 24 workshop awards). X-Diffusion (ICRA 26). SimToolReal (Feb 26 w/ Bohg + Karen Liu). 4 best/oral awards in 18 months. 154 cites, h-7, i10-5. Oct 2025 invited talks: NVIDIA Robotics Mobility + RAI Institute (pre-offer pattern). Karen Liu on partial leave Jan–Jun 26 = humanoid co sabbatical signal. Modal: PI/Figure/1X/Skild research scientist. Co-founder candidate if founding: Prithwish Dan (Cornell MS, co-1st on 6 papers). IIT KGP undergrad (CSE; advised PP Chakrabarti). Cruise + MSR India interns. Bridges Weiying Wang + Ritvik Singh + Himanshu Gaurav Singh. Indian. Reach out THIS WEEK before he signs. Email kk837@cornell.edu. T0"
- },
- "siddhant-haldar": {
-  "role": "Co-Founder & CTO of a stealth robotics startup (Dec 2025–) — just finished his PhD at NYU CILVR under Lerrel Pinto.",
-  "spike": "T0 founder, primary-source confirmed (own résumé + Pinto lab page). First author on the data-efficiency award line: ROT (CoRL 22 Best Paper Finalist), FISH (RSS 23 Best Student Paper), BAKU (NeurIPS 24), Point Policy (CoRL 25) — manipulation from ~1 min of demos → human-to-robot with no teleop. The robot-data-bottleneck thesis (PI / Skild lane). Company pre-name; likely co-founder Raunaq Bhirangi. IIT KGP. Indian. Reach out NOW."
- },
- "weiying-wang": {
-  "role": "Stealth humanoid founder, Cambridge MA. Harvard SEAS CS PhD ’24 (Stephanie Gil / REACT Lab). Ex-Zoox (3D Perception / VLM / VLA).",
-  "spike": "LinkedIn: “Building humanoid that reasons the physical world.” Thesis: Communication as a Spatial Sensor for Multi-Robot SLAM. 1st-author Wi-Closure (ICRA 23) + MULAN-WC (IROS 24). 2nd-author WSR (IJRR 22, w/ Oussama Khatib). At Zoox shipped “large foundation models for self-driving” (AWS re:Invent). Operator-pivot — not citation-prodigy (~73 cites). Cambridge accessibility + 786 LinkedIn followers = lowest-friction stealth DM. Co-founder watch: labmate Ninad Jadhav. Yilun mutual likely Yilun Du (Harvard/Kempner). Chinese-origin. T0"
- },
- "blanca-villanueva": {
-  "role": "Founder & CEO, stealth co at “autonomous robotics + biomedical AI”. Stanford BS CS + MS Biomedical Informatics. Stanford School of Medicine affiliation. Ex-Apple Health.",
-  "spike": "Nature 2023 co-author — “Human mobility networks reveal increased segregation in large cities” (4th of 10, Leskovec + Grusky senior; her byline = Stanford Biomedical Data Science). Apple Hearing Study methods paper (JASA 2022) co-author w/ Apple Inc team — the “shipped Apple Health algorithms” in her bio (Apple Watch noise app, hearing features, watchOS / iOS Health). Rare female founder in autonomous medical robotics. HONEST CALIBRATION: the three arXiv surgical-robotics papers from the brief (Colan ASARs, Lee NP-swab, Li liver-US) were verified author-by-author — she is NOT on any. The robotics half is currently a self-described stealth pitch, not a research record. Boldcap mutuals Mo + Samir + 2 others. LinkedIn connection request PENDING. Latin-American. T0"
- },
- "chenfeng-xu": {
-  "role": "Incoming Asst Prof, UT Austin CS (Fall 2026). Researcher @ Together AI. Berkeley PhD ’25 (Keutzer + Tomizuka)",
-  "spike": "2 Best Papers at MLSys 2026 in one week: LEANN (97% storage, w/ Yichuan Wang + SkyLab) + StreamDiffusionV2 (58.28 FPS @ 14B on 4xH100, w/ Song Han + Agrawala + Keutzer). Aurora ICML 2026 project co-lead w/ Xiaoxia Wu + Junxiong Wang — Together’s RL speculative decoding. I-DLM + Squeeze Evolve (97.5% ARC-AGI) w/ Tri Dao. 8,573 cites, h-29. Qualcomm Innovation Fellow ’24. Bridges 4 repo clusters: Keutzer (Tiwari), Tri Dao (Wang+Hwang+Mishra), SkyLab, Song Han. Chinese-origin. T2"
- },
- "aditi-raghunathan": {
-  "role": "Asst Prof, CMU CS + MLD. AI Reliability Lab. Stanford PhD ’21 (Percy Liang, Arthur Samuel Award). IIT Madras ’16",
-  "spike": "ICML 2025 Outstanding Paper (Roll the dice, Nagarajan et al.) + ICLR 25 SCOPE Outstanding + ICLR 25 Oral (Scaling Laws for Precision). 2026 Sloan Fellow + Schmidt AI2050 + NSF CAREER + Okawa. 21,885 cites, h-34. Network hub: Sachin Goyal → Anthropic. Vaishnavh Nagarajan (IIT Madras ’15) → DeepMind. Tanishq Kumar → Stanford Liang. Christina Baek + Springer + Ghosal final-stretch. Indian. T2"
- },
- "tanishq-kumar": {
-  "role": "1st-year Stanford CS PhD (Sep 2025), co-advised by Percy Liang + Tatsu Hashimoto. Harvard math ’25 (Pehlevan + Bordelon stat-physics group, Kempner Institute)",
-  "spike": "6 ICLR/ICML papers BEFORE starting PhD: Grokking (ICLR 24, 1st, 109 cites) + No Free Prune (ICML 24, co-1st w/ Sellke) + Scaling Laws for Precision (ICLR 2025 Oral, co-1st, 112 cites) + Do Mice Grok (ICLR 25, 1st) + Overtrained LMs (SCOPE Outstanding + ICBINB Best Paper at ICLR 25, 4th of 8 w/ Springer + Goyal + Wen + Aditi). Already ICLR 2026 1st-author Speculative Speculative Decoding w/ Tri Dao 9 months into PhD. 313 cites, h-5. 3 co-authorships with Aditi Raghunathan (CMU bridge). Co-author w/ Niklas Muennighoff (reference class) + Chris Ré + Benjamin Spector. Reference class: Niklas Muennighoff — pre-PhD prolific-publisher archetype. Indian-origin (Tanishq Mathew Kumar). Boarding school London → SF gap year → Harvard. Recursive from Aditi Raghunathan. T2"
- },
- "shivani-poddar": {
-  "role": "Founder, Stealth (commerce agents). Prev Head of Eng, Jules @ Google Labs. DeepMind. Meta. CMU LTI MLT (Carolyn Rosé). IIIT Hyderabad",
-  "spike": "Shipped Jules — Google’s autonomous coding agent on Gemini 2.5/3 (Dec 2024 → GA Aug 2025). Departed Google ~Jan 2026: “I left Google last week to build a rocket-ship.” First CMU Alexa-Prize-funded student (CMU Magnus, SGC1). SIMMC (COLING 20, 107 cites) + 2 Meta patents. 620 cites, h12. Indian, female founder. T0"
- },
- "saksham-consul": {
-  "role": "MTS — Training, Black Forest Labs (FLUX). Stanford MS ME (ARMLab/Kennedy). Ex Nvidia. Lamini founding MLSys. MPI Tübingen (Lieder). BITS Pilani 9.99",
-  "spike": "Co-author FLUX.1 Kontext (arXiv 2506.15742, Jun 25) — sequence-concatenation unified edit + gen, KontextBench. 4th of 21 BFL authors. BFL $300M Series B at $3.25B (Dec 1, 25). 5th node in diffusion cluster (Jain Genmo / Song Luma / Meng Pika / Rombach BFL / Consul). @TheNoise2Signal — the denoising direction of a diffusion model. Indian. T1"
- },
- "alberto-taiuti": {
-  "role": "Co-Founder & CEO of Reactor — real-time world-models / generative-video infra. Ex-Apple Vision Pro, founding-team Luma, ex-Skydio.",
-  "spike": "T2 — track, don’t pursue. Reactor came out of stealth May 28 2026 with $59M led by Lightspeed (+ Katzenberg/WndrCo) — a funded Series A, past our inception window. Frontier world-models thesis we like; real-time-graphics/GPU (Vulkan) + Apple Vision Pro pedigree. Luma claim calibrated: founding-team member who left after ~10 mos (recognized CTO is Alex Yu), NOT “the co-founder of $4B Luma.” Cluster anchor for real-time video (Decart, World Labs, Overworld, Genie). Italian. Relationship + monitor, no inception check."
- },
- "dan-kondratyuk": {
-  "role": "Co-founder, rekursiv.ai (stealth, Mountain View — AI Scientists). Ex-Luma RS (Dream Machine + Ray2). Ex-Google 4.5y. Boise State BS + Charles University + Saarland (Erasmus Mundus MS)",
-  "spike": "1st author VideoPoet (ICML 2024 Best Paper, 1 of 10 from 2,610, 27 authors) — decoder-only LLM for video, the bet against the diffusion consensus. 1st author MoViNets (CVPR 21, 411 cites) + 1st UDify (EMNLP 19, 371 cites) — same architectural move across 3 fields: one general system subsumes a zoo of specialists. 1,648 cites, h-10. FIRST LUMA RESEARCH-SCIENTIST DEPARTURE INDEXED. Co-founded with Joshua V. Dillon (TensorFlow Probability creator, 13,301 cites, ~10–15y Google Research). Tagline “Autonomously Create Knowledge.” Category: Sakana ($2.65B), Edison ($70M), Lila ($550M). NOT Richard Socher’s Recursive Superintelligence ($650M). Direct in-repo network bridge to Chenfeng Xu (Improved Immiscible Diffusion 2025 co-author). Czech-origin. T0"
- },
- "joshua-dillon": {
-  "role": "Co-founder, rekursiv.ai (stealth, Mountain View — AI Scientists) with Dan Kondratyuk. Ex-Google Research ~10–15y. PhD ML Georgia Tech / Guy Lebanon. Declined Marshall Sherfield Postdoc",
-  "spike": "Creator + engineering lead of TensorFlow Probability (4.4K stars, the canonical probabilistic-ML library inside the Google + Alphabet stack). 1st author TensorFlow Distributions (Nov 2017, 744 cites) — the founding TFP paper. 13,301 Scholar cites, h-25, i10-32. 11,671 cites SINCE 2021 = accelerating. Three papers over 1,000 cites: Deep Variational Information Bottleneck (Alemi+Fischer+Dillon+Murphy 2016, 2,878 cites) — founding paper of info-theoretic deep learning; “Can You Trust Your Model’s Uncertainty” (Ovadia et al. NeurIPS 2019, 2,839 cites); “Likelihood Ratios for OOD” (Ren et al. NeurIPS 2019, 1,019 cites). OOD-detection trilogy ~3,991 combined cites = the rekursiv differentiator (AI Scientists hallucinate; Joshua’s trilogy is literally the toolkit for catching that). Co-author Gemini 2.5 (2025, 3,101 cites already). VideoPoet (ICML 2024 Best Paper) 15th of 27 = the bonding-event paper with Dan inside Google before they co-founded. Verified @rekursiv.ai Scholar email. Pairs with Dan: foundation-model author + probabilistic-infra creator = strongest AI-Scientist founding bench in May 2026 cohort. T0"
- },
- "ajay-jain": {
-  "role": "Co-Founder & CTO, Genmo. Berkeley PhD (Abbeel + Gonzalez). MIT SB CS",
-  "spike": "2nd author DDPM (NeurIPS 2020, 40,013 cites) — the diffusion paper. 2nd author DreamFusion (3,753). Mochi 1 (10B, AsymmDiT, Apache 2.0) — largest open video model. $28.4M Series A NEA. Co-founded with brother Paras. Indian"
- },
- "jiaming-song": {
-  "role": "Chief Scientist, Luma AI. Stanford PhD (Ermon). Tsinghua CS. Prev NVIDIA Research",
-  "spike": "1st author DDIM (ICLR 21, 14,734 cites) — the sampler under every production diffusion system. SDEdit (ICLR 22 Outstanding Paper). Leads Dream Machine + Ray2 + Ray3 (Sep 25, first reasoning video model, 16-bit HDR). 35,387 cites, h-51. Luma $1B+ raised at $4B+ (HUMAIN Series C Nov 25). MIT TR 35U35 APAC 24. Chinese"
- },
- "kanishk-gandhi": {
-  "role": "Stanford CS PhD (Noah Goodman, CoCoLab) + Sadigh + Gerstenberg",
-  "spike": "Cognitive Behaviors (CoLM 25 Oral, CNBC press) + Stream of Search (CoLM 24 Oral) sole 1st author. Lead TinyZero. NeurIPS 23 Spotlight. Lab’s STaR alum Zelikman + Goodman cofounded Humans& ($4.48B). IIT Kanpur. Indian"
- },
- "sukjun-hwang": {
-  "role": "CMU ML PhD (Albert Gu, Goomba Lab). Yonsei BS rank 1 + MS",
-  "spike": "H-Net 1st author (ICLR 2026, 846 stars). Hydra 1st author w/ Tri Dao (NeurIPS 24). dnaHNet ICML Spotlight. ~650 Scholar cites. Jane Street GRF Finalist"
- },
- "mayank-mishra": {
-  "role": "PhD Berkeley EECS (Aug 2025–) under Tri Dao + Joseph Gonzalez + Ion Stoica. Ex-MIT-IBM Watson Granite lead. IIT Delhi EE",
-  "spike": "Granite Code equal contributor (3/46). Sole author of lm-engine (171⭐, multi-accel MoE/Mamba2/RNN). 2nd-author Ladder-Residual (ICML 25, 29% TP speedup) + SonicMoE (ICLR 26, 1.86x Hopper) w/ Tri Dao. BLOOM + StarCoder + StarCoder 2. 5,778 cites, h-15. LinkedIn lists “Stealth AI Startup”. Indian. T1"
- },
- "brandon-wang": {
-  "role": "ML Engineer, onepot AI. Prev Cartesia (H-Net co-author). MIT 6-7 ’24",
-  "spike": "H-Net 2nd author (ICLR 2026). IMO 2019 Gold (rank 15). 3× USAMO Winner (rank 1, 1, 7). Putnam B6 only-solver 2023. STOC 2024. Cartesia→onepot pivot"
- },
- "takeru-miyato": {
-  "role": "PhD Tübingen (Geiger + Welling). Part-time Preferred Networks",
-  "spike": "Spectral Normalization for GANs (ICLR 2018 Oral, ~4,717 cites). 2× ICLR Oral. Goodfellow intern. ~15K Scholar cites"
- },
- "pushmeet-kohli": {
-  "role": "VP Research, Google DeepMind",
-  "spike": "AlphaFold, AlphaEvolve, TIME 100 AI"
- },
- "neel-nanda": {
-  "role": "Mech Interp Lead, Google DeepMind",
-  "spike": "Double IMO Gold. Reverse-engineering neural networks"
- },
- "galen-mead": {
-  "role": "Founder & CEO, Standard Intelligence",
-  "spike": "Metalearning obsessive who incorporated an AGI lab"
- },
- "devansh-pandey": {
-  "role": "Co-founder, Standard Intelligence",
-  "spike": "Operational backbone — Atlas Fellowship's first employee"
- },
- "neel-redkar": {
-  "role": "Standard Intelligence",
-  "spike": "Davidson Fellow. NeurIPS at 18. Throughput machine"
- },
- "anne-ouyang": {
-  "role": "Co-founder, Standard Kernel",
-  "spike": "Ex-NVIDIA cuDNN. KernelBench. Building the missing AI compiler"
- },
- "chris-rinard": {
-  "role": "Co-founder, Standard Kernel",
-  "spike": "CUDA kernels beating PyTorch. MIT 6.172 TA"
- },
- "benjamin-spector": {
-  "role": "Co-founder, Flapping Airplanes ($1.5B)",
-  "spike": "IMO Silver, IOI Gold, Hertz Fellow. ThunderKittens"
- },
- "asher-spector": {
-  "role": "Co-founder, Flapping Airplanes",
-  "spike": "Stanford Stats PhD (Candès). Theory that ships as software"
- },
- "aidan-smith": {
-  "role": "Co-founder, Flapping Airplanes",
-  "spike": "Thiel Fellow. 3 yrs Neuralink. Agency density incarnate"
- },
- "cameron-fink": {
-  "role": "Co-founder & CEO, Aaru (~$1B)",
-  "spike": "19 at founding. Predicted NY primary within 371 votes"
- },
- "john-cole-kessler": {
-  "role": "Co-founder & CTO, Aaru (~$1B)",
-  "spike": "15 at founding. Z Fellows. Teenage founder prodigy"
- },
- "karun-ram": {
-  "role": "Quant Researcher, Optiver",
-  "spike": "Dartmouth Salutatorian. TLA+ formal verification of concurrent algorithms"
- },
- "devendra-chaplot": {
-  "role": "Co-founder, Recursive (stealth). Ex-Mistral",
-  "spike": "22K+ citations. Embodied AI + LLM training. 4 AI waves"
- },
- "baris-akis": {
-  "role": "Co-founder, Human Capital ($1.4B AUM)",
-  "spike": "Invented talent-as-venture-infrastructure. xAI Talent Engineering"
- },
- "cory-levy": {
-  "role": "Founder, Z Fellows",
-  "spike": "Built Silicon Valley's most efficient young-founder pipeline"
- },
- "cristobal-valenzuela": {
-  "role": "Co-founder & CEO, Runway (~$3B)",
-  "spike": "Co-invented Stable Diffusion. Defined generative video"
- },
- "dylan-reid": {
-  "role": "MD, Zetta Venture Partners",
-  "spike": "AI-native biotech investing before consensus. Forbes 30U30"
- },
- "kunvar-thaman": {
-  "role": "ML Engineer, Standard Intelligence. Incoming MIT CS PhD. BITS Pilani ’22",
-  "spike": "Solo-author ICML 2026 (Reward Hacking Benchmark, 13 frontier models, +13.3pp RL sibling gap). hertz-dev co-author. Benchmark Inflation (ICML DMLR 24). mechinterp.com. Manifund. 26, Chandigarh, Indian"
- },
- "liam-mcnamara": {
-  "role": "Founder & CEO, Cybe (YC W26)",
-  "spike": "7-fig ARR in 2 months. Queen's dropout. Nobel Prize lab"
- },
- "zeeshan-patel": {
-  "role": "Stealth, prev xAI + NVIDIA. CVPR 2025. 461 citations",
-  "spike": ""
- },
- "rahul-ravishankar": {
-  "role": "Departed xAI (Feb 2026). Berkeley CS, Malik lab",
-  "spike": "CVPR + ICCV 2025. Grok 3.5 pretraining. Left 2 weeks after co-author Zeeshan Patel"
- },
- "shubham-goel": {
-  "role": "MTS at xAI. Berkeley PhD (Malik). IIT Bombay",
-  "spike": "IChO Silver + JEE AIR 6/150K. 3D human reconstruction SOTA (1,600+ stars). 1,100 citations"
- },
- "rishabh-tiwari": {
-  "role": "PhD Berkeley/Keutzer (SqueezeAILab). Ex-DeepMind. RS Intern Meta",
-  "spike": "QuantSpec ~2.5x speedup, >90% accept, on Apple ML Research. ICLR first-author as undergrad. 9 papers, ~846 cites"
- },
- "lovish-madaan": {
-  "role": "PhD Meta MSL + UCL NLP. Prev 3yr Google Research India (Prateek Jain)",
-  "spike": "Co-lead ScaleRL (ICLR 2026 Oral, 400K+ GPU-hr). 1st-author PDR +11% AIME. Llama 3 core contributor. JEE AIR 124. IIT Delhi. 3rd ScaleRL author in repo"
- },
- "amrith-setlur": {
-  "role": "PhD CMU. Test-time compute pioneer",
-  "spike": "7+ NeurIPS/ICLR/ICML papers in 18 months. e3 (EXAIT Best Paper). JP Morgan AI Fellowship"
- },
- "himanshu-gaurav-singh": {
-  "role": "PhD Berkeley (Abbeel + Malik). IIT Delhi",
-  "spike": "JEE Advanced AIR 2/161K. IJSO Gold (14). APhO Silver (16). Robot learning from video. Gorakhpur, UP"
- },
- "ritvik-singh": {
-  "role": "PhD Berkeley (Abbeel + Malik). Prev NVIDIA",
-  "spike": "Built ORBIT/Isaac Lab (6.8k stars). First RGB-only dexterous grasping, 93% real-world"
- },
- "karan-dalal": {
-  "role": "TTT architect. Berkeley/Stanford. Prior founder",
-  "spike": "TTT layers (4,700+ stars). ICML+CVPR 2025. Founded PetCode at 16 ($1.6M raised)"
- },
- "josh-sirota": {
-  "role": "Founder & CEO, Eragon AI ($100M val)",
-  "spike": "Non-technical GTM founder. $100M in 7 months. a16z Speedrun"
- },
- "divy-thakkar": {
-  "role": "Staff PM & Researcher, Google DeepMind",
-  "spike": "Founding member Google Research India + DeepMind India. SAHELI"
- },
- "yuandong-tian": {
-  "role": "Co-founder, Recursive (stealth)",
-  "spike": "22K+ citations. DarkForest Go. StreamingLLM. Sci-fi novelist"
- },
- "jimmy-ba": {
-  "role": "xAI co-founder (departed). UofT Prof. PhD under Hinton",
-  "spike": "313K citations. Co-authored Adam optimizer + LayerNorm — inside every LLM on Earth"
- },
- "jerry-tworek": {
-  "role": "Founder, Core Automation. Ex-OpenAI VP Research (7 yrs)",
-  "spike": "47K citations. Shipped Codex, Copilot, ChatGPT, GPT-4, o1, o3. \"Father of Reasoning\""
- },
- "ronak-malde": {
-  "role": "DeepMind (RL post-training). Trained SWE-1 at Windsurf. Stanford. [full dossier]",
-  "spike": ""
- },
- "sujay-jayakar": {
-  "role": "Head of Eng (Infra), Cursor. Co-founder, Convex ($53.5M, a16z). Ex-Dropbox Principal Eng",
-  "spike": "Math major, no CS degree. Led Nucleus rewrite (Rust, 100M+ users). SOSP 2021. Interviewed at Dropbox in Haskell"
- },
- "rohin-garg": {
-  "role": "IOI 2023 Gold (Rank 12/350). AI R&D Intern, Character.AI. MIT CS ’29. CF IGM (2729)",
-  "spike": "Cognition AI pattern: IOI gold → AI company. Self-taught to 12th in the world in 3.5 years. Indian-origin"
- },
- "niklas-muennighoff": {
-  "role": "Stanford CS PhD",
-  "spike": "23,500+ citations on Google Scholar — extraordinary for a PhD student"
- },
- "kawin-ethayarajh": {
-  "role": "Asst Professor, UChicago Booth",
-  "spike": "Created KTO (ICML Spotlight). SHP in Llama-2. ICML Outstanding Paper. 3,200+ cites"
- },
- "john-yang": {
-  "role": "Stanford CS PhD",
-  "spike": "Creator of SWE-bench — THE benchmark for AI coding agents (4,981+ citations)"
- },
- "laker-newhouse": {
-  "role": "MIT Math",
-  "spike": "Co-author of Muon optimizer — now one of the most important alternatives to Adam"
- },
- "rushil-mathur": {
-  "role": "Oxford Math+CS · Jane Street",
-  "spike": "IMO 2024 Gold (India, rank ~29/609). 1st in Oxford cohort Year 1. Author at 18. OTIS instructor."
- },
- "kshitij-sodani": {
-  "role": "MIT CS",
-  "spike": "2x IOI Gold Medalist — India's youngest-ever IOI gold medalist at age 17 (2023)"
- },
- "akshat-bubna": {
-  "role": "Co-Founder & CTO, Modal ($1.1B)",
-  "spike": "First Indian IOI gold ever. MIT. Scale AI → Modal (~$50M ARR, $2.5B talks)"
- },
- "leonard-tang": {
-  "role": "CEO, Haize Labs ($100M)",
-  "spike": "Founded Haize Labs at 23, valued at $100M post-money (General Catalyst led)"
- },
- "bo-peng": {
-  "role": "Peking University",
-  "spike": "ICPC World Finals 2nd Place (47th ICPC, Luxor, Egypt) — representing Peking University"
- },
- "chenglei-si": {
-  "role": "Stanford NLP PhD · Hashimoto + Diyi Yang · FutureHouse",
-  "spike": "Academic anchor of the AI-Scientists cluster. “Can LLMs Generate Novel Research Ideas?” (ICLR 2025, Nature News, 507 cites) + Ideation–Execution Gap (ICLR 2026, Science). FutureHouse intern. Bridges rekursiv (T0) + Tanishq Kumar (Hashimoto co-advisee)."
- },
- "siddharth-karamcheti": {
-  "role": "Incoming GT Asst Prof · Stanford CS PhD (Liang + Sadigh) · OpenVLA",
-  "spike": "Academic / VLA anchor of the robotics cluster. OpenVLA co-author (2,682 cites, 6.3K★ — the open VLA standard vs π-0 / RT-2) + 1st-author Voltron (RSS 2023). Incoming Asst Prof, Georgia Tech, Fall 2026 — T2: not founding now, but professor-founder optionality (Finn/Levine → Physical Intelligence). Bridges Kushal Kedia / Ritvik Singh / Himanshu Gaurav Singh + Tanishq Kumar (Liang)."
- },
- "luke-melas-kyriazi": {
-  "role": "Cursor (Anysphere)",
-  "spike": "Rhodes Scholar. Oxford PhD. Training coding LLMs"
- },
- "kevin-wang": {
-  "role": "OpenAI, NeurIPS Best Paper",
-  "spike": ""
- },
- "welton-wang": {
-  "role": "OpenAI, prev Parallel",
-  "spike": ""
- },
- "eric-han": {
-  "role": "OpenAI, Stanford EE",
-  "spike": ""
- },
- "brooke-joseph": {
-  "role": "OpenAI",
-  "spike": ""
- },
- "suvansh-sanjeev": {
-  "role": "OpenAI",
-  "spike": ""
- },
- "kavya-anbarasu": {
-  "role": "OpenAI",
-  "spike": ""
- },
- "ayush-alag": {
-  "role": "OpenAI",
-  "spike": ""
- },
- "hannah-gao": {
-  "role": "Stanford Math + CS, OpenAI",
-  "spike": ""
- },
- "stephen-mcaleer": {
-  "role": "Anthropic",
-  "spike": ""
- },
- "isaac-fung": {
-  "role": "Anthropic",
-  "spike": ""
- },
- "isaac-ong": {
-  "role": "Anthropic",
-  "spike": ""
- },
- "helen-wang": {
-  "role": "Anthropic",
-  "spike": ""
- },
- "brian-huang": {
-  "role": "DeepMind",
-  "spike": ""
- },
- "bonnie-li": {
-  "role": "DeepMind",
-  "spike": ""
- },
- "allen-nie": {
-  "role": "DeepMind, Stanford CS PhD",
-  "spike": ""
- },
- "kevin-lu": {
-  "role": "Thinking Machines (Mira Murati), prev OpenAI",
-  "spike": ""
- },
- "joseph-melkonian": {
-  "role": "Meta Superintelligence Labs",
-  "spike": ""
- },
- "gashon-hussein": {
-  "role": "Physical Intelligence",
-  "spike": ""
- },
- "jayesh-singla": {
-  "role": "Skild AI",
-  "spike": ""
- },
- "vincent-tombari": {
-  "role": "NVIDIA",
-  "spike": ""
- },
- "harsh-shah": {
-  "role": "Tesla AI",
-  "spike": ""
- },
- "bolaji-makinde": {
-  "role": "Tesla",
-  "spike": ""
- },
- "alexi-gladstone": {
-  "role": "Flapping Airplanes, UIUC CS PhD",
-  "spike": ""
- },
- "sally-zhu": {
-  "role": "Flapping Airplanes, Stanford CS",
-  "spike": ""
- },
- "rohan-pandey": {
-  "role": "Periodic Labs ($300M seed), prev OpenAI",
-  "spike": ""
- },
- "avanika-narayan": {
-  "role": "Rox ($50M, Sequoia), Stanford CS PhD",
-  "spike": ""
- },
- "austin-chen": {
-  "role": "Rox",
-  "spike": ""
- },
- "jerry-zhou": {
-  "role": "Rox",
-  "spike": ""
- },
- "cynthia-chen": {
-  "role": "Decagon (1st-10 eng, built Trace View) · Harvard CS ’24 · T1",
-  "spike": "Regeneron STS 2020 Finalist + Davidson Fellow + RSI + Intel ISEF + Presidential Scholar candidate. AttentionViz IEEE VIS 2023 (171 cites) under Wattenberg+Viégas. Built Decagon Trace View (own quote). HBS Tech Innovation Fellow C6. Founded Startups @ Harvard (Fall 2023, Xfund-backed). Runs SF weekend startup discussion group. Prev: Scale AI, HRT, LinkedIn. Founder-curious, no departure signal yet — relationship-build now."
- },
- "amy-jin": {
-  "role": "Decagon",
-  "spike": ""
- },
- "rohan-kalahasty": {
-  "role": "a37 (AI DevOps agents), Caltech Physics",
-  "spike": ""
- },
- "oam-patel": {
-  "role": "Applied Compute",
-  "spike": ""
- },
- "grace-li": {
-  "role": "Design Arena (YC S25), Harvard CS",
-  "spike": ""
- },
- "nina-boord": {
-  "role": "Cogent Security ($53M), prev Stanford CS",
-  "spike": ""
- },
- "ritvik-kapila": {
-  "role": "NeoSigma, prev Essential AI, UCSD",
-  "spike": "Built 24T token pre-training dataset under Vaswani. NeoSigma co-founder"
- },
- "gauri-gupta": {
-  "role": "NeoSigma, prev Parallel, MIT CS PhD",
-  "spike": ""
- },
- "rohan-tibrewal": {
-  "role": "Cartesia",
-  "spike": ""
- },
- "fan-yun-sun": {
-  "role": "Moonlake, Stanford CS PhD",
-  "spike": ""
- },
- "serena-ge": {
-  "role": "Datacurve",
-  "spike": ""
- },
- "john-rho": {
-  "role": "Datacurve",
-  "spike": ""
- },
- "patrick-wang": {
-  "role": "Voyage AI",
-  "spike": ""
- },
- "alex-shan": {
-  "role": "CEO & Co-Founder, Judgment Labs",
-  "spike": "$32M Seed+A from Lightspeed (May 12, 2026). 22yo. Stanford NLP under Chris Manning. judgeval 1k☆. Childhood-friends triad w/ Andrew Li (Together AI) + Joseph Camyre (Datadog). T0 just-raised."
- },
- "michael-wornow": {
-  "role": "Kinetic Systems, Stanford CS PhD",
-  "spike": ""
- },
- "ishan-khare": {
-  "role": "Stanford CS MS, Hazy Research (Chris Ré) — AND founder of Nimbic AI (YC X25)",
-  "spike": "BURIED HEADLINE: already a YC founder — founded/CEO'd Nimbic AI (YC Spring '25), appears wound down, back in research. 3 top-venue papers in 12mo (Smoothie, WONDERBREAD, Agentic Info Theory ICLR'26). 1st-author Comp Materials Science paper as HS junior; Regeneron STS, RSI, Coolidge Senator, Eagle Scout w/ Palm. Indian. Father is a UToledo physics prof (scaffolding-fully-converted)."
- },
- "neel-guha": {
-  "role": "Stanford JD/PhD, Hazy + RegLab (Chris Ré)",
-  "spike": "Final-year Stanford JD/PhD (Chris Ré + RegLab). 1st author LegalBench. CONFIRMED: joining Columbia Law as Associate Professor July 2026 (law prof, not founding — T2). CS↔law isomorphism; access-to-justice legal-AI. Indian-origin."
- },
- "raj-palleti": {
-  "role": "AlphaXiv",
-  "spike": ""
- },
- "david-krajewski": {
-  "role": "Reve, CMU CS",
-  "spike": ""
- },
- "ari-webb": {
-  "role": "Letta",
-  "spike": ""
- },
- "ameen-patel": {
-  "role": "MTS (LLM Inference), Prime Intellect — INTELLECT-3 co-author",
-  "spike": ""
- },
- "sudarshan-nambiar": {
-  "role": "Founding Eng @ Conway — KP + First Round",
-  "spike": ""
- },
- "rong-ye": {
-  "role": "Avoca",
-  "spike": ""
- },
- "daniel-zeng": {
-  "role": "Genesis Molecular AI",
-  "spike": ""
- },
- "raj-mehta": {
-  "role": "Percepta",
-  "spike": ""
- },
- "shreyas-sreenivas": {
-  "role": "Exa",
-  "spike": ""
- },
- "niloofar-mireshghallah": {
-  "role": "Humans&",
-  "spike": ""
- },
- "joe-li": {
-  "role": "Stanford CS, Cognition",
-  "spike": ""
- },
- "samarth-goel": {
-  "role": "Harvey, prev HRT",
-  "spike": ""
- },
- "grace-lam": {
-  "role": "Character AI, Palantir",
-  "spike": ""
- },
- "nate-marquez": {
-  "role": "Netflix",
-  "spike": ""
- },
- "seaver-dahlgren": {
-  "role": "Amazon",
-  "spike": ""
- },
- "jacob-zietek": {
-  "role": "a16z Engineering",
-  "spike": ""
- },
- "karthik-balaji-ganesh": {
-  "role": "Databricks",
-  "spike": ""
- },
- "kartik-srinivas": {
-  "role": "Waymo",
-  "spike": ""
- },
- "ally-nakamura": {
-  "role": "Stealth, prev Stanford CS",
-  "spike": ""
- },
- "hersh-godse": {
-  "role": "Stealth, prev Adept",
-  "spike": ""
- },
- "yusuf-ozuysal": {
-  "role": "Stealth, prev Snowflake",
-  "spike": ""
- },
- "aadi-nashikkar": {
-  "role": "Stealth, Stanford CS",
-  "spike": ""
- },
- "sonya-jin": {
-  "role": "Stealth, Stanford CS",
-  "spike": ""
- },
- "arjun-karanam": {
-  "role": "Co-founder Trajectory Technologies, Stanford CS",
-  "spike": ""
- },
- "michael-elabd": {
-  "role": "Co-founder/CFO Trajectory Technologies, DeepMind Foundational Research",
-  "spike": ""
- },
- "neil-kale": {
-  "role": "Stealth, prev CMU ML",
-  "spike": ""
- },
- "allie-gu": {
-  "role": "prev xAI",
-  "spike": ""
- },
- "stuart-sul": {
-  "role": "Cursor, Stanford CS PhD",
-  "spike": ""
- },
- "elijah-kurien": {
-  "role": "Cursor",
-  "spike": ""
- },
- "haneul-shin": {
-  "role": "Jane Street, prev Harvard CS + Math",
-  "spike": ""
- },
- "james-chen": {
-  "role": "Stanford CS, Jane Street",
-  "spike": ""
- },
- "sai-konkimalla": {
-  "role": "Stanford CS, Jane Street",
-  "spike": ""
- },
- "fan-pu-zeng": {
-  "role": "Jane Street",
-  "spike": ""
- },
- "yassine-kachrad": {
-  "role": "Jane Street",
-  "spike": ""
- },
- "jonathan-mengedoht": {
-  "role": "Jane Street",
-  "spike": ""
- },
- "sid-bharthulwar": {
-  "role": "Jump Trading",
-  "spike": ""
- },
- "rohan-jain": {
-  "role": "CMU CS, DRW",
-  "spike": ""
- },
- "lillian-sun": {
-  "role": "Harvard CS, prev HRT",
-  "spike": ""
- },
- "damian-ho": {
-  "role": "Stanford CS, prev HRT",
-  "spike": ""
- },
- "andrew-ma": {
-  "role": "Harvard CSE, prev Jane Street",
-  "spike": ""
- },
- "lisa-dunlap": {
-  "role": "Berkeley EECS PhD",
-  "spike": ""
- },
- "alex-zhang": {
-  "role": "MIT CS PhD, RLM Author",
-  "spike": ""
- },
- "dan-biderman": {
-  "role": "Stanford CS Postdoc",
-  "spike": ""
- },
- "simon-guo": {
-  "role": "Stanford CS PhD",
-  "spike": ""
- },
- "archer-wang": {
-  "role": "MIT CS PhD",
-  "spike": ""
- },
- "grace-luo": {
-  "role": "Berkeley EECS PhD",
-  "spike": ""
- },
- "alex-gu": {
-  "role": "MIT CS PhD",
-  "spike": ""
- },
- "sachit-menon": {
-  "role": "Columbia CS PhD",
-  "spike": ""
- },
- "xingjian-bai": {
-  "role": "MIT CS PhD",
-  "spike": ""
- },
- "etash-guha": {
-  "role": "Stanford CS PhD",
-  "spike": ""
- },
- "sijun-tan": {
-  "role": "Berkeley EECS PhD, rLLM Author",
-  "spike": ""
- },
- "mingyang-deng": {
-  "role": "MIT CS PhD",
-  "spike": ""
- },
- "zhening-li": {
-  "role": "MIT CS PhD",
-  "spike": ""
- },
- "jon-saad-falcon": {
-  "role": "Stanford CS PhD",
-  "spike": ""
- },
- "rohin-manvi": {
-  "role": "Berkeley EECS PhD",
-  "spike": ""
- },
- "kirill-acharya": {
-  "role": "Stanford CS PhD",
-  "spike": ""
- },
- "maxwell-jones": {
-  "role": "CMU ML PhD",
-  "spike": ""
- },
- "utkarsh-priyam": {
-  "role": "CMU ML PhD",
-  "spike": ""
- },
- "lawrence-jang": {
-  "role": "CMU ML PhD",
-  "spike": ""
- },
- "jeffrey-ma": {
-  "role": "Harvard CS PhD",
-  "spike": ""
- },
- "jaeyeon-kim": {
-  "role": "Harvard CS PhD",
-  "spike": ""
- },
- "devvrit-khatri": {
-  "role": "UT Austin CS, prev MSL",
-  "spike": ""
- },
- "emily-han": {
-  "role": "Modal, Stanford CS",
-  "spike": ""
- },
- "zeyneb-kaya": {
-  "role": "Stanford CS",
-  "spike": ""
- },
- "nikita-mounier": {
-  "role": "Penn CS, prev Ramp, Rox",
-  "spike": ""
- },
- "aarav-wattal": {
-  "role": "Stanford EE + CS",
-  "spike": ""
- },
- "thijs-simonian": {
-  "role": "Stanford CS, prev LMArena",
-  "spike": ""
- },
- "spruce-campbell": {
-  "role": "MIT Physics, prev OpenAI",
-  "spike": ""
- },
- "roshan-rao": {
-  "role": "Co-founder EvolutionaryScale. CZ Biohub",
-  "spike": "ESM/ESMFold/ESM3 (Science cover). 11,400+ cites. Built protein language modeling"
- },
- "vikram-sundar": {
-  "role": "ML Scientist, Generate:Biomedicines. MIT PhD (Esvelt)",
-  "spike": "Hertz + Churchill + Goldwater stack. Built FLIGHTED (protein-fitness denoising). Roshan Rao / Sam Stanton reference class"
- },
- "rohil-badkundri": {
-  "role": "Building (stealth). Prev EvolutionaryScale",
-  "spike": "ESM3 co-author (Science cover, 98B params). Post-acquisition, now building clinical trial AI"
- },
- "samuel-stanton": {
-  "role": "Anthropic (via Coefficient Bio ~$400M acq)",
-  "spike": "Co-founded Coefficient Bio, acquired today. NYU PhD (Wilson). Genentech lab-in-the-loop. 620+ cites"
- },
- "khush-gupta": {
-  "role": "Penn CS, Together AI",
-  "spike": ""
- },
- "mihika-dusad": {
-  "role": "MIT CS",
-  "spike": ""
- },
- "sandra-yang": {
-  "role": "Stanford CS + Math",
-  "spike": ""
- },
- "hamza-mostafa": {
-  "role": "Waterloo CS, prev OpenAI",
-  "spike": ""
- },
- "eric-zhang": {
-  "role": "Waterloo, prev Suno",
-  "spike": ""
- },
- "arin-weling": {
-  "role": "IIT Bombay",
-  "spike": ""
- },
- "francesco-crivelli": {
-  "role": "Berkeley EECS",
-  "spike": ""
- },
- "preston-fu": {
-  "role": "Berkeley EECS",
-  "spike": ""
- },
- "stephen-xie": {
-  "role": "Berkeley EECS",
-  "spike": ""
- },
- "shobhit-agarwal": {
-  "role": "Stanford CS",
-  "spike": ""
- },
- "rajan-agarwal": {
-  "role": "Waterloo SWE",
-  "spike": ""
- },
- "ian-moore": {
-  "role": "Harvard CS",
-  "spike": ""
- },
- "abhay-venkatesh": {
-  "role": "Anduril",
-  "spike": ""
- },
- "aditya-gupta": {
-  "role": "Stanford CS · Jump Trading · Rogo acq. · Polymarket 1st intern",
-  "spike": ""
- },
- "ishaan-javali": {
-  "role": "Princeton CS",
-  "spike": ""
- },
- "charles-ding": {
-  "role": "Stanford CS",
-  "spike": ""
- },
- "aakash-mishra": {
-  "role": "Meta AI, Stanford CS",
-  "spike": ""
- },
- "hima-tammineedi": {
-  "role": "Forge, CMU ML",
-  "spike": ""
- },
- "taarush-grover": {
-  "role": "Stanford CS",
-  "spike": ""
- },
- "james-liu": {
-  "role": "Stanford CS",
-  "spike": ""
- },
- "parsa-idehpour": {
-  "role": "Penn CS",
-  "spike": ""
- },
- "adam-lee": {
-  "role": "Berkeley CS",
-  "spike": ""
- },
- "matthew-yang": {
-  "role": "CMU ML",
-  "spike": ""
- },
- "abhay-mitra": {
-  "role": "CEO, Effective AI. Prev CTO Nirvana ($1.5B)",
-  "spike": "Built Nirvana AI stack from zero to $1.5B. Second-time founder. IIT Delhi. Rubrik pre-IPO"
- },
- "kunal-singhal": {
-  "role": "CTO, Effective AI. 2x ICPC World Finalist",
-  "spike": "IOI 2012 + INMO topper + 2x ICPC WF. Facebook, Grammarly, WisdomAI. IIT Delhi"
- },
- "shri-kolanukuduru": {
-  "role": "Investing Partner, Category Ventures ($160M)",
-  "spike": "Prev Insight, Pioneer (day-0 $20K/2%), HFT, Simplify YC W21. UNC Carolina Scholar. Co-investor / peer"
- },
- "jessie-jia-guo": {
-  "role": "Investment Partner, Next Legacy ($3.5B FoF)",
-  "spike": "Emerging Leaders Fund: $1-5M into emerging managers. Kauffman Fellow. Bridge Funding Global. LP prospect"
- },
- "sameer-gandhi": {
-  "role": "Partner, Accel (25+ yrs venture)",
-  "spike": "Board: Perplexity ($14B), CrowdStrike. Anthropic Series G. Led Flipkart from seed. LP prospect"
- },
- "mei": {
-  "role": "AI Pre-Seed Investor. MIT dropout",
-  "spike": "First check: Etched ($5B), MatX, Standard Intelligence, RadixArk ($400M), Mirendil ($1B). $6B+ portfolio"
- },
- "jennifer-zhai": {
-  "role": "Co-Founder & GP, Coho Deeptech + Stealth Founder",
-  "spike": "Coho (Cartesia, Higgsfield, Bland, Sahara, Amigo) + bio “building continual learning”. Mei Z. archetype #2"
- },
- "benjamin-keigwin": {
-  "role": "Co-Founder & CEO, Tilde Research — mechanistic-interpretability lab ($8M Khosla seed)",
-  "spike": "T2 — track, not pursue. On-thesis interp lab (Sieve/Telescope/SonicMoE) but already Khosla-funded = past inception; personal research record thin (RouterBench 5th author). Math PhD UPenn. Co-founder Dhruv Pai (Stanford STAIR)."
- },
- "dhruv-pai": {
-  "role": "Co-Founder & Chief Scientist, Tilde Research — Stanford math+CS (STAIR lab)",
-  "spike": "T1. ~22yo Stanford researcher, Tilde Chief Scientist. Elite pedigree: Regeneron STS, ISEF ×2, Presidential Scholar. Indian. Research early (FACADE 1st-author workshop; Model Collapse middle-author COLM'24). At funded Tilde = relationship-build."
- },
- "mason-wang": {
-  "role": "Co-Founder & (former) CTO, Tilde Research — Stanford, 2× technical founder",
-  "spike": "T1 on the person; no live inflection. 2× founder (Tilde CTO + Hazel CTO at 17, $2M Pear). PiTorch (LLM on bare-metal Pi Zero, no OS), Activault, Sparsity-is-Cool (co-first w/ Dhruv Pai). CORRECTED: not pre-founding — left Tilde, now at Stanford + Neuralink 'Conceptual Telepathy' team. Watch; T0 trigger = he leaves to found."
- },
- "tanvir-bhathal": {
-  "role": "Stanford CS/EE undergrad ('27) — Hazy Research (Chris Ré) + Scaling Intelligence orbit",
-  "spike": "T2 track, no inflection yet. Lab-adjacent undergrad: middle-author Weaver (NeurIPS'25); first-author WebSight (⚠ self-reported 'beats OpenAI', non-peer-reviewed). No competition pedigree. nSpire=career-coaching (off-thesis). Indian. Watch for founding signal ~2027 grad."
- },
- "josh-meier": {
-  "role": "Co-Founder, Chai Discovery (protein-structure / biology AI) — ex-Meta FAIR ESM, ex-Absci CAIO",
-  "spike": "T2 track (Chai well-funded: Thrive/OpenAI/Dimension). The canonical child-prodigy origin: at 16 led Provita (15-person HS biotech, 'flying syringe' to FDA), Intel STS 4th, Harvard CS, GUIDES (Nature Methods '17 w/ Feng Zhang). 'CEO' unverified (co-founder 1 of 4). Showcase for the new origin/texture layers."
- },
- "owen-dugan": {
-  "role": "Stanford CS PhD, Chris Ré's Hazy lab — AI×physics (MIT physics BS in 2.5yr)",
-  "spike": "T1. Verified rate-of-change: 2 granted patents pre-MIT, OccamNet as HS-er, MIT physics in 2.5yr, 1st-author ICML'23 (Q-Flow) + NeurIPS'24 (OccamLLM) + a 1st-author Hazy paper WITH Chris Ré. Hertz+RSI+Davidson+Presidential+Knight-Hennessy. Bidirectional AI×physics → now ML-systems/interp. Watch for T0. (3-pool pedigree hit.)"
- },
- "isha-puri": {
-  "role": "MIT CSAIL PhD (Yoon Kim + Marzyeh Ghassemi) — inference-time-scaling / RL-for-reasoning",
-  "spike": "T1. 1st-author Rollout Roulette (NeurIPS'25): particle-filter test-time scaling, training-free, Qwen-7B→o1 in 32 rollouts (52★). Accelerating cadence (NeurIPS'21/'25, ICLR'26, ICML'26). Joining DeepMind; NeurIPS'25 Assistant PC. Harvard '23. Davidson/ISEF/Cutler-Bell. Indian. Co-founded CreAIte at 15. Watch for T0."
- },
- "cade-gordon": {
-  "role": "MTS at Anthropic (pretraining science) — deferred a Stanford PhD; ex-Berkeley/LAION",
-  "spike": "T1 frontier-lab insider, departure-watch. Core author LAION-5B (NeurIPS'22 Outstanding, 4th/16) + OpenCLIP scaling-laws; scaled CLIP '8 GPUs→thousands'. 1st-author protein-LM fitness (ICLR'25, Abbeel). Berkeley BS in 2.5yr; Hertz'25. Citation honesty: ~9K cites ~99% big-collab middle-author. Taste-over-credential (deferred Stanford PhD for Anthropic). Re-tier T0 on departure."
- },
- "aayush-karan": {
-  "role": "3rd-yr Harvard CS PhD (Sitan Chen + Yilun Du, Kempner) — generative-model / LLM-reasoning theory",
-  "spike": "T1, leaning T0-watch. 1st-author 'Reasoning with Sampling' (ICLR'26 ORAL): training-free MCMC matches RL post-training while preserving diversity. Verified polymath: solved a 30-yr-open knot-theory problem at 17, Nature Methods RNA (1st author), generative-ML theory. Harvard summa '23 + Sophia Freund (top GPA). Soros/Goldwater/Davidson/Regeneron. Indian. Citation honesty: 87 cites, one-paper-dominated."
- },
- "ellen-xu": {
-  "role": "Stanford CS undergrad ('27) — embodied/real-world RL; comma.ai + Tesla Autopilot intern",
-  "spike": "T1, watch for T0 at grad. Validated on both axes: ICLR'26 Polychromic RL (3rd author; Finn+Sadigh senior) + shipped RL at comma.ai & Tesla Autopilot. Teen: 1st-author Kawasaki-disease CNN (Scientific Reports), Regeneron STS 3rd ($150K), RSI'22, CyberPatriot champion, Coolidge. Serial builder, anti-convergence ('find your voice among the noise'). Plays/flies/fences/reads heavily. Chinese-origin."
- }
+  "michael-luo": {
+    "role": "Building a stealth startup (efficient serving + post-training / next-gen AI systems). Berkeley EECS PhD (Ion Stoica, Sky Lab/BAIR); ex-Google DeepMind (efficient agentic systems). Creator of the Agentica Project — DeepScaleR / DeepCoder / DeepSWE, rLLM framework (5.6K★). Chinese-origin (not Indian).",
+    "spike": "T0 — building NOW, just left DeepMind, the best founder-pedigree in the RL-post-training lane. 1st author on the entire Agentica line: DeepScaleR-1.5B (surpasses o1-preview at 1.5B by scaling RL), DeepCoder-14B (o3-mini level), DeepSWE-32B (SOTA open-weight SWE agent w/ Together AI); rLLM framework 5.6K★ (Agentica self-reports 2M+ HF downloads — not independently verified). Writes the systems code, not a figurehead (Kubernetes/R2E-Gym, agent-env abstractions, rLLM perf). Deep efficient-serving roots: Autellix (NSDI'26), Stylus (NeurIPS'24 Oral), Starburst (ATC'24 Best Paper); full-stack kernels→serving→distributed-training→RL→frontier-matching models. Scholar 2,169 cites, h-19 (2,134 post-2021 = sharp acceleration). Berkeley M.E.T. dual BS (EECS+Business, Summa, 3.98) → MS → PhD (Stoica = founder factory: Databricks/Anyscale/Conviva). COMPANY IS A BLACK BOX: no name/co-founders/funding public (EDGAR 0 hits, no org); get-in-before-the-name. Co-founder candidate Sijun Tan (in repo) but mid-PhD. X @michaelzluo. Warm path via Ion Stoica / rLLM community. T0."
+  },
+  "preetum-nakkiran": {
+    "role": "Deep-learning theorist (Deep Double Descent — sole 1st author; calibration). NOT a founder — 'Founding Member of Technical Staff' (early employee) at Mirendil, the already-funded ~$1B 'self-accelerating AI R&D' lab founded by Behnam Neyshabur + Harsh Mehta (ex-Anthropic). Ex-Apple MLR (2022–26); Harvard PhD (Boaz Barak + Madhu Sudan).",
+    "spike": "T2 — track, NOT a foundable signal (verify-before-tier caught it). His site reads 'Founding Member of Technical Staff, Mirendil' + 'I have left to build Mirendil' — LOOKS like a founder, but Mirendil was founded by his former Google-Brain host Behnam Neyshabur (CEO, ex-Anthropic) + Harsh Mehta (CTO, ex-Anthropic); Preetum is a trust-network early hire, named in zero launch coverage. Mirendil is reportedly raising $175M at ~$1B (a16z + Kleiner) = already funded, no inception entry, no founder to back. THE SPIKE: Deep Double Descent (sole 1st author, ICLR'20, 1,575 cites, ahead of Barak + Sutskever); the calibration line (STOC'23, NeurIPS'23 Spotlight, 1st-author Semantic Calibration in LLMs 2025); 'Towards an Empirical Theory of Deep Learning.' Scholar ~4,766 cites, h-28. Harvard PhD (Barak/Sudan), Berkeley undergrad, UCSD postdoc (Belkin). Indian/Tamil-origin = HYPOTHESIS only (poet-name inference, no biographical confirmation — do NOT assert). Value = (1) clean correction of a false founder-signal, (2) high-value relationship/network node (deep mentee roster: Hattie Zhou→Anthropic, Jacob Springer, Noam Razin). RE-RATE if he solo-departs or ships his 'new mechanisms for peer review' idea as a product. T2."
+  },
+  "chris-fifty": {
+    "role": "Stanford CS PhD in 2.5 years (department record), co-advised by Christopher Ré + Sebastian Thrun. Ex-Google Brain. 2× founder, now 'between things' after a post-grad company disintegrated. Not Indian.",
+    "spike": "T1 (high conviction, between things; live T0 watch). The textbook inception profile the moment he re-founds: 2× founder + frontier-research spike + just-failed-startup + available. First-author ICLR 2025 Oral 'Restructuring Vector Quantization with the Rotation Trick' (top 1.8%, reframes the VQ straight-through estimator as parallel transport — applied differential geometry; Thrun+Ré co-authors; repo 172★) + first-author NeurIPS 2021 Spotlight 'Efficiently Identifying Task Groupings' (w/ Chelsea Finn, ~439c). Cornell SGC paper (4th author, ~5,200c = citation anchor). Scholar ~5.9k cites, h-10. Currently grinding a CONTRARIAN bet: latent-space language modeling ('English isn't the right substrate for machines to think in' — train LMs on a latent language for autoregressive modeling), unpublished/catchable. Spike is velocity + taste, not olympiads. Self-brands on speed (LinkedIn: 'Stanford CS PhD speedrunner'). Rare intellectual honesty (publishes his own negative results). 70.3 Ironman; ex-Google Brain (Babelfish, YouTube content-understanding); Cornell BS+MEng (Weinberger, ASAPP employee #1); imagineart.ai solo (YC final round). WHY T1 NOT T0: no evidence of re-founding NOW (dormant X, no new org/Crunchbase, 'applying to jobs'). T0 TRIGGER: latent-LM → company. HONESTY: disintegrated company UNNAMED (the gap); 'now at Apple' = hallucination; 2015 Toxicon paper = likely namesake; 'dept record' is his own claim. Field hasn't found him (zero podcasts). Reach out NOW (email, relationship-build). T1.",
+    "_human_": "Endurance athlete: Stanford Triathlon (collegiate nationals, 70.3 Ironman) — same compression-under-load temperament as the 2.5yr PhD. Writes own pure-math course notes (diff geo, topology, info theory) for fun. Motto: 'If you can't reach the stars, then raise the earth.' Candid/dry voice — self-describes as 'unemployed and homeless PhD graduate'; cites Cryptonomicon as an info-theory primer. From Nashua NH. Outreach: rotation-trick-as-parallel-transport + latent-language thesis + respect the published negative result."
+  },
+  "kyle-lo": {
+    "role": "The data architect of the fully-open-LLM movement — co-led OLMo at AI2 and first-authored/anchored the open-data stack the field builds on (S2ORC, Dolma, peS2o, olmOCR). ~25K cites, h-50. NOT a PhD (MS Statistics, UW). Left AI2 Mar 26 2026 → Microsoft AI MAI Superintelligence (post-training, under Suleyman). Seattle.",
+    "spike": "T2 — track / departure-watch. Frontier-grade talent at the wrong moment: his site says 'working on something new' but it's NOT a startup — he + the OLMo build-core (Luca Soldaini, Dirk Groeneveld, Pete Walsh, Matt Jordan, Jake Poznanski) joined Microsoft AI MAI Superintelligence (GeekWire May 15 2026). Not raising, can't be backed today. THE SPIKE: data brain of the open-LLM movement — S2ORC (co-1st, ACL'20, the 81M-paper corpus), SciBERT (2nd author, ~5.9K cites), CORD-19, Dolma (data co-lead, ACL'24 Best Resource Paper), OLMo (data lead, ACL'24 Best Paper), olmOCR, Olmix, 2× NeurIPS'25 Spotlight (Signal&Noise + FlexOlmo). Authorship precise: 1st-author on corpus work, senior data anchor on model work — never the model-architecture 1st author. ~35-person elite mentee roster (Muennighoff, Wettig, Mayee Chen, Orion Weller). Thesis: data curation/mixing, benchmark validity, fully-open science. NOT Indian. RE-RATE TO T0 if he leaves Microsoft / domain reg / Form D / founder bio. THE FOUNDABLE OLMo-diaspora name is Nathan Lambert (left AI2, NOT to Microsoft, 'building what's next' on open post-training). Texture: serious D&D DM (4yr Eberron + homebrew West Marches), board games (Hanabi = AI benchmark), cat Belphegor, Seattle boba, 🐟🐠🐡 emoji tic, handed out Blu-Ray discs of model weights at COLM'25. T2."
+  },
+  "emmett-bicker": {
+    "role": "Solo founder of Aster (asterlab.ai), \"the first AI-native AI research lab\" — YC Spring 2026, team of 1, SF, ~19 yo. Dropped out of college 3 weeks in (fall 2024) → ~1yr RL/post-training researcher on ultra-long-context coding LLMs at Magic (frontier lab, NON-canonical) → left late Jan 2026 → sole-authored the Aster arXiv paper → YC. Not Indian.",
+    "spike": "T0 — active pursuit (owner call Jun 2026: pursue now, co-investing alongside YC; hot claims are a risk to price, not a blocker). Maximal inflection: just left a frontier lab + founded solo weeks ago. The rate-of-change is the signal — HS → Nature Comms 2025 co-author (Flatiron/Chklovskii, as a high-schooler) → Magic RL researcher at 18 → solo arXiv founder at 19. Real dated talent trail on @em-flower GitHub (matrix-mult \"in a machine learning course\" at 14; ThoughtsFormer at 17 prefigures the Aster reasoning thesis). HONEST CALIBRATION (3 independent adversarial verifiers): his SOTA claims run measurably hot — of 5 claims in the sole-authored, non-peer-reviewed arXiv paper, ONE is independently confirmed (NanoGPT kernel record merged into Keller Jordan's modded-nanogpt, METR-assessed \"real improvement\" — but revised −1.6s→−0.4s, ~4x haircut), ONE is verifiably NOT SOTA (TriMul: K-Search 1030µs & CUDA 1074µs beat Aster's 1114µs; Aster absent from official leaderboard), THREE self-reported with 0 released code. The autonomy thesis (the whole pitch) is the least-verified claim — the one confirmed result is human-co-credited. NOT fraud — real win + normal founder hype. OWNER CALL = T0 despite (a) YC S26 (usual 'too late' heuristic) + (b) hot claims vs 'evidence over claims' — person is T0-caliber, timing urgent; price the risks. Other texture: Steel City Codes COO (Python Teacher→COO, 1,000 volunteers/5,000+ kids, before 18); Hunter College HS '24; RoHawks robotics co-captain; competition piano (Tom Brier ragtime, 3rd Charleston European, self-taught cold during COVID). College likely Stony Brook (inference). Outreach: LinkedIn/email, substance-first, lead ThoughtsFormer→Aster + the autonomy question. T0."
+  },
+  "raunaq-bhirangi": {
+    "role": "Co-founder of a stealth robotics company — likely \"Index Robots\" (his own contact email is raunaq@indexrobots.ai; Lerrel Pinto's lab page lists him as \"co-founder of a stealth robotics company\"; LinkedIn: \"Building something new in Robotics+AI\"). NYU CILVR postdoc (Lerrel Pinto); CMU Robotics PhD '24 (Abhinav Gupta + Carmel Majidi). Indian.",
+    "spike": "T0 founder, building NOW, pre-name. Owns the leading low-cost magnetic tactile-sensing stack in academic robotics across 3 generations: ReSkin (CoRL 2021 Oral, co-1st w/ Tess Hellebrekers, ~$6/sensor, 122★), AnySkin (ICRA 2025, 1st author — the FIRST uncalibrated tactile sensor whose learned manipulation policies transfer cross-instance with no recalibration = the unlock for pooling tactile data, 78★), eFlesh (2025, 3D-printable, <$5 magnets, 363★). Thesis (his words): touch is \"conspicuously absent\" from robot AI — contact-rich generalist manipulation needs cheap, durable, data-reusable touch. Calls himself a \"full-stack roboticist.\" Scholar ~463c, h-11; the real signal is open-hardware ADOPTION. Suspected co-founder = Siddhant Haldar (T0; identical Pinto-page descriptor, constant co-author, complementary tactile-hardware vs policy/IL) — STRONG HYPOTHESIS they co-founded the same entity (Index Robots), not independently confirmed. JEE Advanced 2014 AIR 348; IIT Bombay ME; Bengaluru. Meta AI visiting researcher (tactile). Honesty: \"co-founder\" label is Pinto-page + LinkedIn (his own CV is stale, no title); \"ICRA 2025 Best Paper\" for AnySkin is self-reported (verified award = RSS 2025 workshop best paper). Reach out NOW via X DM @raunaqmb. T0.",
+    "_human_": "Hobbies (his site, verbatim): hiking, reading, cooking, photography — and \"I can have long discussions about history, culture, politics and philosophy with no regard for time, hunger, thirst or the other person's evident lack of interest.\" NYC. Pinto-lab social fabric: Irmak Güzey, Anya Zorin, Ziqian Li, Venkatesh Pattabiraman (RUKA/eFlesh). Calls Skild AI team \"my PhD friends\" (CMU cohort). Outreach hook: the open-hardware-vs-code insight + the conversation-as-sport personality."
+  },
+  "karan-singhal": {
+    "role": "Head of Health AI + AGI Benefits at OpenAI (one of 20 CLAUDE.md tracked cos). The FIRST AMIE-cluster departure from Google DeepMind — announced Jul 22 2024. Stanford BS+MS CS ’19.",
+    "spike": "Co-equal first author (listed first) on the 2 most-cited medical-LLM papers in history: Med-PaLM (Nature 2023, 5,747 cites, corresponding author) + Med-PaLM 2 (Nature Medicine 2025, 2,428 cites, 86.5% MedQA). Combined 8,175 cites just from those 2 papers. 21,541 total Scholar cites, h-26, i10-34 (99.9% post-2021). Stanford ’19 (4.1/4.0 MS GPA); initiated + main instructor of Stanford’s first CS+Social Good AI ethics class (Apr 2018). Google Research Jul 2019–Apr 2024 (~5y, federated learning lead author NeurIPS 2021 → Med-PaLM “bottom-up brain moonshot”). Departed Jul 22 2024 (X tweet 923 likes; Greg Brockman: “Welcome!”). Now leads OpenAI’s entire health surface: HealthBench (May 2025, 49K rubric items / 250+ physicians / 60 countries) + Penda Health Kenya RCT (first real-world LLM clinical copilot RCT) + OpenAI for Healthcare (Jan 8 2026 HIPAA, 8 named hospital systems: Boston Children’s, Cedars-Sinai, MSK, Stanford Children’s, UCSF, AdventHealth, Baylor Scott & White, HCA) + ChatGPT Health consumer (Jan 2026, Apple Health/wearables) + ChatGPT for Clinicians + HealthBench Professional (Apr 22 2026, pinned tweet 4,846 likes / 1.6M impressions = peak engagement). TIME100 Health 2026 (Feb 11). Co-author GPT-4o + o1 + GPT-5 + gpt-oss system cards. 2nd AMIE departure CONFIRMED: Khaled Saab (Stanford EE PhD under Chris Ré = CLAUDE.md critical lab, Hazy Research alumnus) now on Karan’s OpenAI Health team per Jan 13 2026 reply (“Remarkable leadership and execution. I’m lucky to be part of this team!!”) — bridges DeepMind health ↔ Ré cluster ↔ OpenAI Health pipeline. Jan 13 2026 recap: “we completed that original plan — in 2026 we enter the scaling era for the impact of AI on human health” (founder-voice). Aug 2023 Rising Stars #4 talk articulated “post-training refinement on real workflow feedback” thesis ONE YEAR before joining OpenAI — ChatGPT for Healthcare is the operational realization. Reference class: Roshan Rao (T1, FAIR → EvolutionaryScale, bio analogue) + Vivek Natarajan (T1, parallel-track comp who stayed). Earliest meaningful departure window Q3 2027 (3-yr vesting milestone). Triggers: (1) OpenAI → OpenAI Foundation move (Yo Shavit May 25 2026 precedent — Karan retweeted), (2) X bio change (currently “Health AI, AGI benefits, safety @OpenAI”), (3) Vivek’s next move (canonical co-founder), (4) Khaled Saab inverse-signal departure, (5) Health team spin-out / external acquisition. Recursive: Nate Gross (Doximity co-founder + ex-CSO, joined OpenAI ~late 2025 as healthcare strategy lead, P0), Ashley Alexander (ex-Instagram product co-Head, OpenAI healthcare product, P1) — the operator+product side of the OpenAI Health founding kernel. Indian-origin (Singhal = North Indian Vaishya/Marwari surname; name-based, not interview-confirmed). SF-based. @thekaransinghal (9,815 followers). Frame: peer/researcher relationship build, NOT pitch — he’s mid-build on the biggest product launch of his career. T1."
+  },
+  "vivek-natarajan": {
+    "role": "Research Lead, Google DeepMind (one of the 20 CLAUDE.md tracked cos). Lead researcher on Med-PaLM + Med-PaLM 2 + Project AMIE. The canonical world-class healthcare AI researcher.",
+    "spike": "4 most-cited medical-LLM papers in history, all his: Med-PaLM (Nature 2023, 5,742 cites) + Med-PaLM 2 (Nature Medicine 2025, 2,422 cites, 86.5% MedQA = +19pp) + AMIE conversational (Nature 2025, 733 cites, beat PCPs in OSCE) + AMIE-DDx (Nature 2025). 20,301 total cites, h-35, i10-50. Co-leads AMIE w/ Alan Karthikesalingam. Mar 2026 Beth Israel feasibility study (arXiv 2603.08448): 100 patients, 90% top-DDx, ZERO safety stops — first real-world AMIE deployment, the moment medical AI stopped being a benchmark game. Included Health randomized study underway. NIT India BS → UT Austin MS CS → FAIR (won 2018 VQA Challenge, Pythia/MMF; TextVQA 2,285 cites) → Google Health (recruited by Greg Corrado) → DeepMind. Founder thesis (his own quote, Pear Healthcare Playbook): “The unicorns will be the workflow-rebuilds. I don’t see anyone doing that yet.” Landscape: Hippocratic ($1.6B), Abridge ($850M), OpenEvidence ($1B), Innovaccer ($3.2B), K Health, Kinetic Systems. Reference class: Roshan Rao (T1; FAIR → EvolutionaryScale → CZI). Recursive: Karan Singhal (Med-PaLM 1st author, departed Google → OpenAI Health Aug 2024 = first AMIE-cluster departure), Tao Tu, Khaled Saab (Stanford Ré lineage), Anil Palepu. No public departure signal yet. Indian-origin (Tamil). T1 (relationship-build, monthly)."
+  },
+  "kushal-kedia": {
+    "role": "Cornell CS PhD candidate graduating May 2026 — Sanjiban Choudhury (PoRTaL + Aurora) + Wei-Chiu Ma (ex-Waabi); concurrent Stanford visiting under Jeannette Bohg (IPRL Sloan) + C. Karen Liu.",
+    "spike": "T0 by timing — PhD ends in 5 weeks. X-Sim (CoRL 2025 ORAL + RSS EgoAct Best Paper Runner-up) — real→sim→real with no teleop, the exact PI pi-0.5 / Figure Helix / 1X World Model / Skild Brain wedge. RHyME (ICRA 25, Cornell Chronicle press). MOSAIC (CoRL 24 + 2 ICRA 24 workshop awards). X-Diffusion (ICRA 26). SimToolReal (Feb 26 w/ Bohg + Karen Liu). 4 best/oral awards in 18 months. 154 cites, h-7, i10-5. Oct 2025 invited talks: NVIDIA Robotics Mobility + RAI Institute (pre-offer pattern). Karen Liu on partial leave Jan–Jun 26 = humanoid co sabbatical signal. Modal: PI/Figure/1X/Skild research scientist. Co-founder candidate if founding: Prithwish Dan (Cornell MS, co-1st on 6 papers). IIT KGP undergrad (CSE; advised PP Chakrabarti). Cruise + MSR India interns. Bridges Weiying Wang + Ritvik Singh + Himanshu Gaurav Singh. Indian. Reach out THIS WEEK before he signs. Email kk837@cornell.edu. T0"
+  },
+  "siddhant-haldar": {
+    "role": "Co-Founder & CTO of a stealth robotics startup (Dec 2025–) — just finished his PhD at NYU CILVR under Lerrel Pinto.",
+    "spike": "T0 founder, primary-source confirmed (own résumé + Pinto lab page). First author on the data-efficiency award line: ROT (CoRL 22 Best Paper Finalist), FISH (RSS 23 Best Student Paper), BAKU (NeurIPS 24), Point Policy (CoRL 25) — manipulation from ~1 min of demos → human-to-robot with no teleop. The robot-data-bottleneck thesis (PI / Skild lane). Company pre-name; likely co-founder Raunaq Bhirangi. IIT KGP. Indian. Reach out NOW."
+  },
+  "weiying-wang": {
+    "role": "Stealth humanoid founder, Cambridge MA. Harvard SEAS CS PhD ’24 (Stephanie Gil / REACT Lab). Ex-Zoox (3D Perception / VLM / VLA).",
+    "spike": "LinkedIn: “Building humanoid that reasons the physical world.” Thesis: Communication as a Spatial Sensor for Multi-Robot SLAM. 1st-author Wi-Closure (ICRA 23) + MULAN-WC (IROS 24). 2nd-author WSR (IJRR 22, w/ Oussama Khatib). At Zoox shipped “large foundation models for self-driving” (AWS re:Invent). Operator-pivot — not citation-prodigy (~73 cites). Cambridge accessibility + 786 LinkedIn followers = lowest-friction stealth DM. Co-founder watch: labmate Ninad Jadhav. Yilun mutual likely Yilun Du (Harvard/Kempner). Chinese-origin. T0"
+  },
+  "blanca-villanueva": {
+    "role": "Founder & CEO, stealth co at “autonomous robotics + biomedical AI”. Stanford BS CS + MS Biomedical Informatics. Stanford School of Medicine affiliation. Ex-Apple Health.",
+    "spike": "Nature 2023 co-author — “Human mobility networks reveal increased segregation in large cities” (4th of 10, Leskovec + Grusky senior; her byline = Stanford Biomedical Data Science). Apple Hearing Study methods paper (JASA 2022) co-author w/ Apple Inc team — the “shipped Apple Health algorithms” in her bio (Apple Watch noise app, hearing features, watchOS / iOS Health). Rare female founder in autonomous medical robotics. HONEST CALIBRATION: the three arXiv surgical-robotics papers from the brief (Colan ASARs, Lee NP-swab, Li liver-US) were verified author-by-author — she is NOT on any. The robotics half is currently a self-described stealth pitch, not a research record. Boldcap mutuals Mo + Samir + 2 others. LinkedIn connection request PENDING. Latin-American. T0"
+  },
+  "chenfeng-xu": {
+    "role": "Incoming Asst Prof, UT Austin CS (Fall 2026). Researcher @ Together AI. Berkeley PhD ’25 (Keutzer + Tomizuka)",
+    "spike": "2 Best Papers at MLSys 2026 in one week: LEANN (97% storage, w/ Yichuan Wang + SkyLab) + StreamDiffusionV2 (58.28 FPS @ 14B on 4xH100, w/ Song Han + Agrawala + Keutzer). Aurora ICML 2026 project co-lead w/ Xiaoxia Wu + Junxiong Wang — Together’s RL speculative decoding. I-DLM + Squeeze Evolve (97.5% ARC-AGI) w/ Tri Dao. 8,573 cites, h-29. Qualcomm Innovation Fellow ’24. Bridges 4 repo clusters: Keutzer (Tiwari), Tri Dao (Wang+Hwang+Mishra), SkyLab, Song Han. Chinese-origin. T2"
+  },
+  "aditi-raghunathan": {
+    "role": "Asst Prof, CMU CS + MLD. AI Reliability Lab. Stanford PhD ’21 (Percy Liang, Arthur Samuel Award). IIT Madras ’16",
+    "spike": "ICML 2025 Outstanding Paper (Roll the dice, Nagarajan et al.) + ICLR 25 SCOPE Outstanding + ICLR 25 Oral (Scaling Laws for Precision). 2026 Sloan Fellow + Schmidt AI2050 + NSF CAREER + Okawa. 21,885 cites, h-34. Network hub: Sachin Goyal → Anthropic. Vaishnavh Nagarajan (IIT Madras ’15) → DeepMind. Tanishq Kumar → Stanford Liang. Christina Baek + Springer + Ghosal final-stretch. Indian. T2"
+  },
+  "tanishq-kumar": {
+    "role": "1st-year Stanford CS PhD (Sep 2025), co-advised by Percy Liang + Tatsu Hashimoto. Harvard math ’25 (Pehlevan + Bordelon stat-physics group, Kempner Institute)",
+    "spike": "6 ICLR/ICML papers BEFORE starting PhD: Grokking (ICLR 24, 1st, 109 cites) + No Free Prune (ICML 24, co-1st w/ Sellke) + Scaling Laws for Precision (ICLR 2025 Oral, co-1st, 112 cites) + Do Mice Grok (ICLR 25, 1st) + Overtrained LMs (SCOPE Outstanding + ICBINB Best Paper at ICLR 25, 4th of 8 w/ Springer + Goyal + Wen + Aditi). Already ICLR 2026 1st-author Speculative Speculative Decoding w/ Tri Dao 9 months into PhD. 313 cites, h-5. 3 co-authorships with Aditi Raghunathan (CMU bridge). Co-author w/ Niklas Muennighoff (reference class) + Chris Ré + Benjamin Spector. Reference class: Niklas Muennighoff — pre-PhD prolific-publisher archetype. Indian-origin (Tanishq Mathew Kumar). Boarding school London → SF gap year → Harvard. Recursive from Aditi Raghunathan. T2"
+  },
+  "shivani-poddar": {
+    "role": "Founder, Stealth (commerce agents). Prev Head of Eng, Jules @ Google Labs. DeepMind. Meta. CMU LTI MLT (Carolyn Rosé). IIIT Hyderabad",
+    "spike": "Shipped Jules — Google’s autonomous coding agent on Gemini 2.5/3 (Dec 2024 → GA Aug 2025). Departed Google ~Jan 2026: “I left Google last week to build a rocket-ship.” First CMU Alexa-Prize-funded student (CMU Magnus, SGC1). SIMMC (COLING 20, 107 cites) + 2 Meta patents. 620 cites, h12. Indian, female founder. T0"
+  },
+  "saksham-consul": {
+    "role": "MTS — Training, Black Forest Labs (FLUX). Stanford MS ME (ARMLab/Kennedy). Ex Nvidia. Lamini founding MLSys. MPI Tübingen (Lieder). BITS Pilani 9.99",
+    "spike": "Co-author FLUX.1 Kontext (arXiv 2506.15742, Jun 25) — sequence-concatenation unified edit + gen, KontextBench. 4th of 21 BFL authors. BFL $300M Series B at $3.25B (Dec 1, 25). 5th node in diffusion cluster (Jain Genmo / Song Luma / Meng Pika / Rombach BFL / Consul). @TheNoise2Signal — the denoising direction of a diffusion model. Indian. T1"
+  },
+  "alberto-taiuti": {
+    "role": "Co-Founder & CEO of Reactor — real-time world-models / generative-video infra. Ex-Apple Vision Pro, founding-team Luma, ex-Skydio.",
+    "spike": "T2 — track, don’t pursue. Reactor came out of stealth May 28 2026 with $59M led by Lightspeed (+ Katzenberg/WndrCo) — a funded Series A, past our inception window. Frontier world-models thesis we like; real-time-graphics/GPU (Vulkan) + Apple Vision Pro pedigree. Luma claim calibrated: founding-team member who left after ~10 mos (recognized CTO is Alex Yu), NOT “the co-founder of $4B Luma.” Cluster anchor for real-time video (Decart, World Labs, Overworld, Genie). Italian. Relationship + monitor, no inception check."
+  },
+  "dan-kondratyuk": {
+    "role": "Co-founder, rekursiv.ai (stealth, Mountain View — AI Scientists). Ex-Luma RS (Dream Machine + Ray2). Ex-Google 4.5y. Boise State BS + Charles University + Saarland (Erasmus Mundus MS)",
+    "spike": "1st author VideoPoet (ICML 2024 Best Paper, 1 of 10 from 2,610, 27 authors) — decoder-only LLM for video, the bet against the diffusion consensus. 1st author MoViNets (CVPR 21, 411 cites) + 1st UDify (EMNLP 19, 371 cites) — same architectural move across 3 fields: one general system subsumes a zoo of specialists. 1,648 cites, h-10. FIRST LUMA RESEARCH-SCIENTIST DEPARTURE INDEXED. Co-founded with Joshua V. Dillon (TensorFlow Probability creator, 13,301 cites, ~10–15y Google Research). Tagline “Autonomously Create Knowledge.” Category: Sakana ($2.65B), Edison ($70M), Lila ($550M). NOT Richard Socher’s Recursive Superintelligence ($650M). Direct in-repo network bridge to Chenfeng Xu (Improved Immiscible Diffusion 2025 co-author). Czech-origin. T0"
+  },
+  "joshua-dillon": {
+    "role": "Co-founder, rekursiv.ai (stealth, Mountain View — AI Scientists) with Dan Kondratyuk. Ex-Google Research ~10–15y. PhD ML Georgia Tech / Guy Lebanon. Declined Marshall Sherfield Postdoc",
+    "spike": "Creator + engineering lead of TensorFlow Probability (4.4K stars, the canonical probabilistic-ML library inside the Google + Alphabet stack). 1st author TensorFlow Distributions (Nov 2017, 744 cites) — the founding TFP paper. 13,301 Scholar cites, h-25, i10-32. 11,671 cites SINCE 2021 = accelerating. Three papers over 1,000 cites: Deep Variational Information Bottleneck (Alemi+Fischer+Dillon+Murphy 2016, 2,878 cites) — founding paper of info-theoretic deep learning; “Can You Trust Your Model’s Uncertainty” (Ovadia et al. NeurIPS 2019, 2,839 cites); “Likelihood Ratios for OOD” (Ren et al. NeurIPS 2019, 1,019 cites). OOD-detection trilogy ~3,991 combined cites = the rekursiv differentiator (AI Scientists hallucinate; Joshua’s trilogy is literally the toolkit for catching that). Co-author Gemini 2.5 (2025, 3,101 cites already). VideoPoet (ICML 2024 Best Paper) 15th of 27 = the bonding-event paper with Dan inside Google before they co-founded. Verified @rekursiv.ai Scholar email. Pairs with Dan: foundation-model author + probabilistic-infra creator = strongest AI-Scientist founding bench in May 2026 cohort. T0"
+  },
+  "ajay-jain": {
+    "role": "Co-Founder & CTO, Genmo. Berkeley PhD (Abbeel + Gonzalez). MIT SB CS",
+    "spike": "2nd author DDPM (NeurIPS 2020, 40,013 cites) — the diffusion paper. 2nd author DreamFusion (3,753). Mochi 1 (10B, AsymmDiT, Apache 2.0) — largest open video model. $28.4M Series A NEA. Co-founded with brother Paras. Indian"
+  },
+  "jiaming-song": {
+    "role": "Chief Scientist, Luma AI. Stanford PhD (Ermon). Tsinghua CS. Prev NVIDIA Research",
+    "spike": "1st author DDIM (ICLR 21, 14,734 cites) — the sampler under every production diffusion system. SDEdit (ICLR 22 Outstanding Paper). Leads Dream Machine + Ray2 + Ray3 (Sep 25, first reasoning video model, 16-bit HDR). 35,387 cites, h-51. Luma $1B+ raised at $4B+ (HUMAIN Series C Nov 25). MIT TR 35U35 APAC 24. Chinese"
+  },
+  "kanishk-gandhi": {
+    "role": "Stanford CS PhD (Noah Goodman, CoCoLab) + Sadigh + Gerstenberg",
+    "spike": "Cognitive Behaviors (CoLM 25 Oral, CNBC press) + Stream of Search (CoLM 24 Oral) sole 1st author. Lead TinyZero. NeurIPS 23 Spotlight. Lab’s STaR alum Zelikman + Goodman cofounded Humans& ($4.48B). IIT Kanpur. Indian"
+  },
+  "sukjun-hwang": {
+    "role": "CMU ML PhD (Albert Gu, Goomba Lab). Yonsei BS rank 1 + MS",
+    "spike": "H-Net 1st author (ICLR 2026, 846 stars). Hydra 1st author w/ Tri Dao (NeurIPS 24). dnaHNet ICML Spotlight. ~650 Scholar cites. Jane Street GRF Finalist"
+  },
+  "mayank-mishra": {
+    "role": "PhD Berkeley EECS (Aug 2025–) under Tri Dao + Joseph Gonzalez + Ion Stoica. Ex-MIT-IBM Watson Granite lead. IIT Delhi EE",
+    "spike": "Granite Code equal contributor (3/46). Sole author of lm-engine (171⭐, multi-accel MoE/Mamba2/RNN). 2nd-author Ladder-Residual (ICML 25, 29% TP speedup) + SonicMoE (ICLR 26, 1.86x Hopper) w/ Tri Dao. BLOOM + StarCoder + StarCoder 2. 5,778 cites, h-15. LinkedIn lists “Stealth AI Startup”. Indian. T1"
+  },
+  "brandon-wang": {
+    "role": "ML Engineer, onepot AI. Prev Cartesia (H-Net co-author). MIT 6-7 ’24",
+    "spike": "H-Net 2nd author (ICLR 2026). IMO 2019 Gold (rank 15). 3× USAMO Winner (rank 1, 1, 7). Putnam B6 only-solver 2023. STOC 2024. Cartesia→onepot pivot"
+  },
+  "takeru-miyato": {
+    "role": "PhD Tübingen (Geiger + Welling). Part-time Preferred Networks",
+    "spike": "Spectral Normalization for GANs (ICLR 2018 Oral, ~4,717 cites). 2× ICLR Oral. Goodfellow intern. ~15K Scholar cites"
+  },
+  "pushmeet-kohli": {
+    "role": "VP Research, Google DeepMind",
+    "spike": "AlphaFold, AlphaEvolve, TIME 100 AI"
+  },
+  "neel-nanda": {
+    "role": "Mech Interp Lead, Google DeepMind",
+    "spike": "Double IMO Gold. Reverse-engineering neural networks"
+  },
+  "galen-mead": {
+    "role": "Founder & CEO, Standard Intelligence",
+    "spike": "Metalearning obsessive who incorporated an AGI lab"
+  },
+  "devansh-pandey": {
+    "role": "Co-founder, Standard Intelligence",
+    "spike": "Operational backbone — Atlas Fellowship's first employee"
+  },
+  "neel-redkar": {
+    "role": "Standard Intelligence",
+    "spike": "Davidson Fellow. NeurIPS at 18. Throughput machine"
+  },
+  "anne-ouyang": {
+    "role": "Co-founder, Standard Kernel",
+    "spike": "Ex-NVIDIA cuDNN. KernelBench. Building the missing AI compiler"
+  },
+  "chris-rinard": {
+    "role": "Co-founder, Standard Kernel",
+    "spike": "CUDA kernels beating PyTorch. MIT 6.172 TA"
+  },
+  "benjamin-spector": {
+    "role": "Co-founder, Flapping Airplanes ($1.5B)",
+    "spike": "IMO Silver, IOI Gold, Hertz Fellow. ThunderKittens"
+  },
+  "asher-spector": {
+    "role": "Co-founder, Flapping Airplanes",
+    "spike": "Stanford Stats PhD (Candès). Theory that ships as software"
+  },
+  "aidan-smith": {
+    "role": "Co-founder, Flapping Airplanes",
+    "spike": "Thiel Fellow. 3 yrs Neuralink. Agency density incarnate"
+  },
+  "cameron-fink": {
+    "role": "Co-founder & CEO, Aaru (~$1B)",
+    "spike": "19 at founding. Predicted NY primary within 371 votes"
+  },
+  "john-cole-kessler": {
+    "role": "Co-founder & CTO, Aaru (~$1B)",
+    "spike": "15 at founding. Z Fellows. Teenage founder prodigy"
+  },
+  "karun-ram": {
+    "role": "Quant Researcher, Optiver",
+    "spike": "Dartmouth Salutatorian. TLA+ formal verification of concurrent algorithms"
+  },
+  "devendra-chaplot": {
+    "role": "Co-founder, Recursive (stealth). Ex-Mistral",
+    "spike": "22K+ citations. Embodied AI + LLM training. 4 AI waves"
+  },
+  "baris-akis": {
+    "role": "Co-founder, Human Capital ($1.4B AUM)",
+    "spike": "Invented talent-as-venture-infrastructure. xAI Talent Engineering"
+  },
+  "cory-levy": {
+    "role": "Founder, Z Fellows",
+    "spike": "Built Silicon Valley's most efficient young-founder pipeline"
+  },
+  "cristobal-valenzuela": {
+    "role": "Co-founder & CEO, Runway (~$3B)",
+    "spike": "Co-invented Stable Diffusion. Defined generative video"
+  },
+  "dylan-reid": {
+    "role": "MD, Zetta Venture Partners",
+    "spike": "AI-native biotech investing before consensus. Forbes 30U30"
+  },
+  "kunvar-thaman": {
+    "role": "ML Engineer, Standard Intelligence. Incoming MIT CS PhD. BITS Pilani ’22",
+    "spike": "Solo-author ICML 2026 (Reward Hacking Benchmark, 13 frontier models, +13.3pp RL sibling gap). hertz-dev co-author. Benchmark Inflation (ICML DMLR 24). mechinterp.com. Manifund. 26, Chandigarh, Indian"
+  },
+  "liam-mcnamara": {
+    "role": "Founder & CEO, Cybe (YC W26)",
+    "spike": "7-fig ARR in 2 months. Queen's dropout. Nobel Prize lab"
+  },
+  "zeeshan-patel": {
+    "role": "Stealth, prev xAI + NVIDIA. CVPR 2025. 461 citations",
+    "spike": ""
+  },
+  "rahul-ravishankar": {
+    "role": "Departed xAI (Feb 2026). Berkeley CS, Malik lab",
+    "spike": "CVPR + ICCV 2025. Grok 3.5 pretraining. Left 2 weeks after co-author Zeeshan Patel"
+  },
+  "shubham-goel": {
+    "role": "MTS at xAI. Berkeley PhD (Malik). IIT Bombay",
+    "spike": "IChO Silver + JEE AIR 6/150K. 3D human reconstruction SOTA (1,600+ stars). 1,100 citations"
+  },
+  "rishabh-tiwari": {
+    "role": "PhD Berkeley/Keutzer (SqueezeAILab). Ex-DeepMind. RS Intern Meta",
+    "spike": "QuantSpec ~2.5x speedup, >90% accept, on Apple ML Research. ICLR first-author as undergrad. 9 papers, ~846 cites"
+  },
+  "lovish-madaan": {
+    "role": "PhD Meta MSL + UCL NLP. Prev 3yr Google Research India (Prateek Jain)",
+    "spike": "Co-lead ScaleRL (ICLR 2026 Oral, 400K+ GPU-hr). 1st-author PDR +11% AIME. Llama 3 core contributor. JEE AIR 124. IIT Delhi. 3rd ScaleRL author in repo"
+  },
+  "amrith-setlur": {
+    "role": "PhD CMU. Test-time compute pioneer",
+    "spike": "7+ NeurIPS/ICLR/ICML papers in 18 months. e3 (EXAIT Best Paper). JP Morgan AI Fellowship"
+  },
+  "himanshu-gaurav-singh": {
+    "role": "PhD Berkeley (Abbeel + Malik). IIT Delhi",
+    "spike": "JEE Advanced AIR 2/161K. IJSO Gold (14). APhO Silver (16). Robot learning from video. Gorakhpur, UP"
+  },
+  "ritvik-singh": {
+    "role": "PhD Berkeley (Abbeel + Malik). Prev NVIDIA",
+    "spike": "Built ORBIT/Isaac Lab (6.8k stars). First RGB-only dexterous grasping, 93% real-world"
+  },
+  "karan-dalal": {
+    "role": "TTT architect. Berkeley/Stanford. Prior founder",
+    "spike": "TTT layers (4,700+ stars). ICML+CVPR 2025. Founded PetCode at 16 ($1.6M raised)"
+  },
+  "josh-sirota": {
+    "role": "Founder & CEO, Eragon AI ($100M val)",
+    "spike": "Non-technical GTM founder. $100M in 7 months. a16z Speedrun"
+  },
+  "divy-thakkar": {
+    "role": "Staff PM & Researcher, Google DeepMind",
+    "spike": "Founding member Google Research India + DeepMind India. SAHELI"
+  },
+  "yuandong-tian": {
+    "role": "Co-founder, Recursive (stealth)",
+    "spike": "22K+ citations. DarkForest Go. StreamingLLM. Sci-fi novelist"
+  },
+  "jimmy-ba": {
+    "role": "xAI co-founder (departed). UofT Prof. PhD under Hinton",
+    "spike": "313K citations. Co-authored Adam optimizer + LayerNorm — inside every LLM on Earth"
+  },
+  "jerry-tworek": {
+    "role": "Founder, Core Automation. Ex-OpenAI VP Research (7 yrs)",
+    "spike": "47K citations. Shipped Codex, Copilot, ChatGPT, GPT-4, o1, o3. \"Father of Reasoning\""
+  },
+  "ronak-malde": {
+    "role": "DeepMind (RL post-training). Trained SWE-1 at Windsurf. Stanford. [full dossier]",
+    "spike": ""
+  },
+  "sujay-jayakar": {
+    "role": "Head of Eng (Infra), Cursor. Co-founder, Convex ($53.5M, a16z). Ex-Dropbox Principal Eng",
+    "spike": "Math major, no CS degree. Led Nucleus rewrite (Rust, 100M+ users). SOSP 2021. Interviewed at Dropbox in Haskell"
+  },
+  "rohin-garg": {
+    "role": "IOI 2023 Gold (Rank 12/350). AI R&D Intern, Character.AI. MIT CS ’29. CF IGM (2729)",
+    "spike": "Cognition AI pattern: IOI gold → AI company. Self-taught to 12th in the world in 3.5 years. Indian-origin"
+  },
+  "niklas-muennighoff": {
+    "role": "Stanford CS PhD",
+    "spike": "23,500+ citations on Google Scholar — extraordinary for a PhD student"
+  },
+  "kawin-ethayarajh": {
+    "role": "Asst Professor, UChicago Booth",
+    "spike": "Created KTO (ICML Spotlight). SHP in Llama-2. ICML Outstanding Paper. 3,200+ cites"
+  },
+  "john-yang": {
+    "role": "Stanford CS PhD",
+    "spike": "Creator of SWE-bench — THE benchmark for AI coding agents (4,981+ citations)"
+  },
+  "laker-newhouse": {
+    "role": "MIT Math",
+    "spike": "Co-author of Muon optimizer — now one of the most important alternatives to Adam"
+  },
+  "rushil-mathur": {
+    "role": "Oxford Math+CS · Jane Street",
+    "spike": "IMO 2024 Gold (India, rank ~29/609). 1st in Oxford cohort Year 1. Author at 18. OTIS instructor."
+  },
+  "kshitij-sodani": {
+    "role": "MIT CS",
+    "spike": "2x IOI Gold Medalist — India's youngest-ever IOI gold medalist at age 17 (2023)"
+  },
+  "akshat-bubna": {
+    "role": "Co-Founder & CTO, Modal ($1.1B)",
+    "spike": "First Indian IOI gold ever. MIT. Scale AI → Modal (~$50M ARR, $2.5B talks)"
+  },
+  "leonard-tang": {
+    "role": "CEO, Haize Labs ($100M)",
+    "spike": "Founded Haize Labs at 23, valued at $100M post-money (General Catalyst led)"
+  },
+  "bo-peng": {
+    "role": "Peking University",
+    "spike": "ICPC World Finals 2nd Place (47th ICPC, Luxor, Egypt) — representing Peking University"
+  },
+  "chenglei-si": {
+    "role": "Stanford NLP PhD · Hashimoto + Diyi Yang · FutureHouse",
+    "spike": "Academic anchor of the AI-Scientists cluster. “Can LLMs Generate Novel Research Ideas?” (ICLR 2025, Nature News, 507 cites) + Ideation–Execution Gap (ICLR 2026, Science). FutureHouse intern. Bridges rekursiv (T0) + Tanishq Kumar (Hashimoto co-advisee)."
+  },
+  "siddharth-karamcheti": {
+    "role": "Incoming GT Asst Prof · Stanford CS PhD (Liang + Sadigh) · OpenVLA",
+    "spike": "Academic / VLA anchor of the robotics cluster. OpenVLA co-author (2,682 cites, 6.3K★ — the open VLA standard vs π-0 / RT-2) + 1st-author Voltron (RSS 2023). Incoming Asst Prof, Georgia Tech, Fall 2026 — T2: not founding now, but professor-founder optionality (Finn/Levine → Physical Intelligence). Bridges Kushal Kedia / Ritvik Singh / Himanshu Gaurav Singh + Tanishq Kumar (Liang)."
+  },
+  "luke-melas-kyriazi": {
+    "role": "Cursor (Anysphere)",
+    "spike": "Rhodes Scholar. Oxford PhD. Training coding LLMs"
+  },
+  "kevin-wang": {
+    "role": "OpenAI, NeurIPS Best Paper",
+    "spike": ""
+  },
+  "welton-wang": {
+    "role": "OpenAI, prev Parallel",
+    "spike": ""
+  },
+  "eric-han": {
+    "role": "OpenAI, Stanford EE",
+    "spike": ""
+  },
+  "brooke-joseph": {
+    "role": "OpenAI",
+    "spike": ""
+  },
+  "suvansh-sanjeev": {
+    "role": "OpenAI",
+    "spike": ""
+  },
+  "kavya-anbarasu": {
+    "role": "OpenAI",
+    "spike": ""
+  },
+  "ayush-alag": {
+    "role": "OpenAI",
+    "spike": ""
+  },
+  "hannah-gao": {
+    "role": "Stanford Math + CS, OpenAI",
+    "spike": ""
+  },
+  "stephen-mcaleer": {
+    "role": "Anthropic",
+    "spike": ""
+  },
+  "isaac-fung": {
+    "role": "Anthropic",
+    "spike": ""
+  },
+  "isaac-ong": {
+    "role": "Anthropic",
+    "spike": ""
+  },
+  "helen-wang": {
+    "role": "Anthropic",
+    "spike": ""
+  },
+  "brian-huang": {
+    "role": "DeepMind",
+    "spike": ""
+  },
+  "bonnie-li": {
+    "role": "DeepMind",
+    "spike": ""
+  },
+  "allen-nie": {
+    "role": "DeepMind, Stanford CS PhD",
+    "spike": ""
+  },
+  "kevin-lu": {
+    "role": "Thinking Machines (Mira Murati), prev OpenAI",
+    "spike": ""
+  },
+  "joseph-melkonian": {
+    "role": "Meta Superintelligence Labs",
+    "spike": ""
+  },
+  "gashon-hussein": {
+    "role": "Physical Intelligence",
+    "spike": ""
+  },
+  "jayesh-singla": {
+    "role": "Skild AI",
+    "spike": ""
+  },
+  "vincent-tombari": {
+    "role": "NVIDIA",
+    "spike": ""
+  },
+  "harsh-shah": {
+    "role": "Tesla AI",
+    "spike": ""
+  },
+  "bolaji-makinde": {
+    "role": "Tesla",
+    "spike": ""
+  },
+  "alexi-gladstone": {
+    "role": "Flapping Airplanes, UIUC CS PhD",
+    "spike": ""
+  },
+  "sally-zhu": {
+    "role": "Flapping Airplanes, Stanford CS",
+    "spike": ""
+  },
+  "rohan-pandey": {
+    "role": "Periodic Labs ($300M seed), prev OpenAI",
+    "spike": ""
+  },
+  "avanika-narayan": {
+    "role": "Rox ($50M, Sequoia), Stanford CS PhD",
+    "spike": ""
+  },
+  "austin-chen": {
+    "role": "Rox",
+    "spike": ""
+  },
+  "jerry-zhou": {
+    "role": "Rox",
+    "spike": ""
+  },
+  "cynthia-chen": {
+    "role": "Decagon (1st-10 eng, built Trace View) · Harvard CS ’24 · T1",
+    "spike": "Regeneron STS 2020 Finalist + Davidson Fellow + RSI + Intel ISEF + Presidential Scholar candidate. AttentionViz IEEE VIS 2023 (171 cites) under Wattenberg+Viégas. Built Decagon Trace View (own quote). HBS Tech Innovation Fellow C6. Founded Startups @ Harvard (Fall 2023, Xfund-backed). Runs SF weekend startup discussion group. Prev: Scale AI, HRT, LinkedIn. Founder-curious, no departure signal yet — relationship-build now."
+  },
+  "amy-jin": {
+    "role": "Decagon",
+    "spike": ""
+  },
+  "rohan-kalahasty": {
+    "role": "a37 (AI DevOps agents), Caltech Physics",
+    "spike": ""
+  },
+  "oam-patel": {
+    "role": "Applied Compute",
+    "spike": ""
+  },
+  "grace-li": {
+    "role": "Design Arena (YC S25), Harvard CS",
+    "spike": ""
+  },
+  "nina-boord": {
+    "role": "Cogent Security ($53M), prev Stanford CS",
+    "spike": ""
+  },
+  "ritvik-kapila": {
+    "role": "NeoSigma, prev Essential AI, UCSD",
+    "spike": "Built 24T token pre-training dataset under Vaswani. NeoSigma co-founder"
+  },
+  "gauri-gupta": {
+    "role": "NeoSigma, prev Parallel, MIT CS PhD",
+    "spike": ""
+  },
+  "rohan-tibrewal": {
+    "role": "Cartesia",
+    "spike": ""
+  },
+  "fan-yun-sun": {
+    "role": "Moonlake, Stanford CS PhD",
+    "spike": ""
+  },
+  "serena-ge": {
+    "role": "Datacurve",
+    "spike": ""
+  },
+  "john-rho": {
+    "role": "Datacurve",
+    "spike": ""
+  },
+  "patrick-wang": {
+    "role": "Voyage AI",
+    "spike": ""
+  },
+  "alex-shan": {
+    "role": "CEO & Co-Founder, Judgment Labs",
+    "spike": "$32M Seed+A from Lightspeed (May 12, 2026). 22yo. Stanford NLP under Chris Manning. judgeval 1k☆. Childhood-friends triad w/ Andrew Li (Together AI) + Joseph Camyre (Datadog). T0 just-raised."
+  },
+  "michael-wornow": {
+    "role": "Kinetic Systems, Stanford CS PhD",
+    "spike": ""
+  },
+  "ishan-khare": {
+    "role": "Stanford CS MS, Hazy Research (Chris Ré) — AND founder of Nimbic AI (YC X25)",
+    "spike": "BURIED HEADLINE: already a YC founder — founded/CEO'd Nimbic AI (YC Spring '25), appears wound down, back in research. 3 top-venue papers in 12mo (Smoothie, WONDERBREAD, Agentic Info Theory ICLR'26). 1st-author Comp Materials Science paper as HS junior; Regeneron STS, RSI, Coolidge Senator, Eagle Scout w/ Palm. Indian. Father is a UToledo physics prof (scaffolding-fully-converted)."
+  },
+  "neel-guha": {
+    "role": "Stanford JD/PhD, Hazy + RegLab (Chris Ré)",
+    "spike": "Final-year Stanford JD/PhD (Chris Ré + RegLab). 1st author LegalBench. CONFIRMED: joining Columbia Law as Associate Professor July 2026 (law prof, not founding — T2). CS↔law isomorphism; access-to-justice legal-AI. Indian-origin."
+  },
+  "raj-palleti": {
+    "role": "AlphaXiv",
+    "spike": ""
+  },
+  "david-krajewski": {
+    "role": "Reve, CMU CS",
+    "spike": ""
+  },
+  "ari-webb": {
+    "role": "Letta",
+    "spike": ""
+  },
+  "ameen-patel": {
+    "role": "MTS (LLM Inference), Prime Intellect — INTELLECT-3 co-author",
+    "spike": ""
+  },
+  "sudarshan-nambiar": {
+    "role": "Founding Eng @ Conway — KP + First Round",
+    "spike": ""
+  },
+  "rong-ye": {
+    "role": "Avoca",
+    "spike": ""
+  },
+  "daniel-zeng": {
+    "role": "Genesis Molecular AI",
+    "spike": ""
+  },
+  "raj-mehta": {
+    "role": "Percepta",
+    "spike": ""
+  },
+  "shreyas-sreenivas": {
+    "role": "Exa",
+    "spike": ""
+  },
+  "niloofar-mireshghallah": {
+    "role": "Humans&",
+    "spike": ""
+  },
+  "joe-li": {
+    "role": "Stanford CS, Cognition",
+    "spike": ""
+  },
+  "samarth-goel": {
+    "role": "Harvey, prev HRT",
+    "spike": ""
+  },
+  "grace-lam": {
+    "role": "Character AI, Palantir",
+    "spike": ""
+  },
+  "nate-marquez": {
+    "role": "Netflix",
+    "spike": ""
+  },
+  "seaver-dahlgren": {
+    "role": "Amazon",
+    "spike": ""
+  },
+  "jacob-zietek": {
+    "role": "a16z Engineering",
+    "spike": ""
+  },
+  "karthik-balaji-ganesh": {
+    "role": "Databricks",
+    "spike": ""
+  },
+  "kartik-srinivas": {
+    "role": "Waymo",
+    "spike": ""
+  },
+  "ally-nakamura": {
+    "role": "Stealth, prev Stanford CS",
+    "spike": ""
+  },
+  "hersh-godse": {
+    "role": "Stealth, prev Adept",
+    "spike": ""
+  },
+  "yusuf-ozuysal": {
+    "role": "Stealth, prev Snowflake",
+    "spike": ""
+  },
+  "aadi-nashikkar": {
+    "role": "Stealth, Stanford CS",
+    "spike": ""
+  },
+  "sonya-jin": {
+    "role": "Stealth, Stanford CS",
+    "spike": ""
+  },
+  "arjun-karanam": {
+    "role": "Co-founder Trajectory Technologies, Stanford CS",
+    "spike": ""
+  },
+  "michael-elabd": {
+    "role": "Co-founder/CFO Trajectory Technologies, DeepMind Foundational Research",
+    "spike": ""
+  },
+  "neil-kale": {
+    "role": "Stealth, prev CMU ML",
+    "spike": ""
+  },
+  "allie-gu": {
+    "role": "prev xAI",
+    "spike": ""
+  },
+  "stuart-sul": {
+    "role": "Cursor, Stanford CS PhD",
+    "spike": ""
+  },
+  "elijah-kurien": {
+    "role": "Cursor",
+    "spike": ""
+  },
+  "haneul-shin": {
+    "role": "Jane Street, prev Harvard CS + Math",
+    "spike": ""
+  },
+  "james-chen": {
+    "role": "Stanford CS, Jane Street",
+    "spike": ""
+  },
+  "sai-konkimalla": {
+    "role": "Stanford CS, Jane Street",
+    "spike": ""
+  },
+  "fan-pu-zeng": {
+    "role": "Jane Street",
+    "spike": ""
+  },
+  "yassine-kachrad": {
+    "role": "Jane Street",
+    "spike": ""
+  },
+  "jonathan-mengedoht": {
+    "role": "Jane Street",
+    "spike": ""
+  },
+  "sid-bharthulwar": {
+    "role": "Jump Trading",
+    "spike": ""
+  },
+  "rohan-jain": {
+    "role": "CMU CS, DRW",
+    "spike": ""
+  },
+  "lillian-sun": {
+    "role": "Harvard CS, prev HRT",
+    "spike": ""
+  },
+  "damian-ho": {
+    "role": "Stanford CS, prev HRT",
+    "spike": ""
+  },
+  "andrew-ma": {
+    "role": "Harvard CSE, prev Jane Street",
+    "spike": ""
+  },
+  "lisa-dunlap": {
+    "role": "Berkeley EECS PhD",
+    "spike": ""
+  },
+  "alex-zhang": {
+    "role": "MIT CS PhD, RLM Author",
+    "spike": ""
+  },
+  "dan-biderman": {
+    "role": "Stanford CS Postdoc",
+    "spike": ""
+  },
+  "simon-guo": {
+    "role": "Stanford CS PhD",
+    "spike": ""
+  },
+  "archer-wang": {
+    "role": "MIT CS PhD",
+    "spike": ""
+  },
+  "grace-luo": {
+    "role": "Berkeley EECS PhD",
+    "spike": ""
+  },
+  "alex-gu": {
+    "role": "MIT CS PhD",
+    "spike": ""
+  },
+  "sachit-menon": {
+    "role": "Columbia CS PhD",
+    "spike": ""
+  },
+  "xingjian-bai": {
+    "role": "MIT CS PhD",
+    "spike": ""
+  },
+  "etash-guha": {
+    "role": "Stanford CS PhD",
+    "spike": ""
+  },
+  "sijun-tan": {
+    "role": "Berkeley EECS PhD, rLLM Author",
+    "spike": ""
+  },
+  "mingyang-deng": {
+    "role": "MIT CS PhD",
+    "spike": ""
+  },
+  "zhening-li": {
+    "role": "MIT CS PhD",
+    "spike": ""
+  },
+  "jon-saad-falcon": {
+    "role": "Stanford CS PhD",
+    "spike": ""
+  },
+  "rohin-manvi": {
+    "role": "Berkeley EECS PhD",
+    "spike": ""
+  },
+  "kirill-acharya": {
+    "role": "Stanford CS PhD",
+    "spike": ""
+  },
+  "maxwell-jones": {
+    "role": "CMU ML PhD",
+    "spike": ""
+  },
+  "utkarsh-priyam": {
+    "role": "CMU ML PhD",
+    "spike": ""
+  },
+  "lawrence-jang": {
+    "role": "CMU ML PhD",
+    "spike": ""
+  },
+  "jeffrey-ma": {
+    "role": "Harvard CS PhD",
+    "spike": ""
+  },
+  "jaeyeon-kim": {
+    "role": "Harvard CS PhD",
+    "spike": ""
+  },
+  "devvrit-khatri": {
+    "role": "UT Austin CS, prev MSL",
+    "spike": ""
+  },
+  "emily-han": {
+    "role": "Modal, Stanford CS",
+    "spike": ""
+  },
+  "zeyneb-kaya": {
+    "role": "Stanford CS",
+    "spike": ""
+  },
+  "nikita-mounier": {
+    "role": "Penn CS, prev Ramp, Rox",
+    "spike": ""
+  },
+  "aarav-wattal": {
+    "role": "Stanford EE + CS",
+    "spike": ""
+  },
+  "thijs-simonian": {
+    "role": "Stanford CS, prev LMArena",
+    "spike": ""
+  },
+  "spruce-campbell": {
+    "role": "MIT Physics, prev OpenAI",
+    "spike": ""
+  },
+  "roshan-rao": {
+    "role": "Co-founder EvolutionaryScale. CZ Biohub",
+    "spike": "ESM/ESMFold/ESM3 (Science cover). 11,400+ cites. Built protein language modeling"
+  },
+  "vikram-sundar": {
+    "role": "ML Scientist, Generate:Biomedicines. MIT PhD (Esvelt)",
+    "spike": "Hertz + Churchill + Goldwater stack. Built FLIGHTED (protein-fitness denoising). Roshan Rao / Sam Stanton reference class"
+  },
+  "rohil-badkundri": {
+    "role": "Building (stealth). Prev EvolutionaryScale",
+    "spike": "ESM3 co-author (Science cover, 98B params). Post-acquisition, now building clinical trial AI"
+  },
+  "samuel-stanton": {
+    "role": "Anthropic (via Coefficient Bio ~$400M acq)",
+    "spike": "Co-founded Coefficient Bio, acquired today. NYU PhD (Wilson). Genentech lab-in-the-loop. 620+ cites"
+  },
+  "khush-gupta": {
+    "role": "Penn CS, Together AI",
+    "spike": ""
+  },
+  "mihika-dusad": {
+    "role": "MIT CS",
+    "spike": ""
+  },
+  "sandra-yang": {
+    "role": "Stanford CS + Math",
+    "spike": ""
+  },
+  "hamza-mostafa": {
+    "role": "Waterloo CS, prev OpenAI",
+    "spike": ""
+  },
+  "eric-zhang": {
+    "role": "Waterloo, prev Suno",
+    "spike": ""
+  },
+  "arin-weling": {
+    "role": "IIT Bombay",
+    "spike": ""
+  },
+  "francesco-crivelli": {
+    "role": "Berkeley EECS",
+    "spike": ""
+  },
+  "preston-fu": {
+    "role": "Berkeley EECS",
+    "spike": ""
+  },
+  "stephen-xie": {
+    "role": "Berkeley EECS",
+    "spike": ""
+  },
+  "shobhit-agarwal": {
+    "role": "Stanford CS",
+    "spike": ""
+  },
+  "rajan-agarwal": {
+    "role": "Waterloo SWE",
+    "spike": ""
+  },
+  "ian-moore": {
+    "role": "Harvard CS",
+    "spike": ""
+  },
+  "abhay-venkatesh": {
+    "role": "Anduril",
+    "spike": ""
+  },
+  "aditya-gupta": {
+    "role": "Stanford CS · Jump Trading · Rogo acq. · Polymarket 1st intern",
+    "spike": ""
+  },
+  "ishaan-javali": {
+    "role": "Princeton CS",
+    "spike": ""
+  },
+  "charles-ding": {
+    "role": "Stanford CS",
+    "spike": ""
+  },
+  "aakash-mishra": {
+    "role": "Meta AI, Stanford CS",
+    "spike": ""
+  },
+  "hima-tammineedi": {
+    "role": "Forge, CMU ML",
+    "spike": ""
+  },
+  "taarush-grover": {
+    "role": "Stanford CS",
+    "spike": ""
+  },
+  "james-liu": {
+    "role": "Stanford CS",
+    "spike": ""
+  },
+  "parsa-idehpour": {
+    "role": "Penn CS",
+    "spike": ""
+  },
+  "adam-lee": {
+    "role": "Berkeley CS",
+    "spike": ""
+  },
+  "matthew-yang": {
+    "role": "CMU ML",
+    "spike": ""
+  },
+  "abhay-mitra": {
+    "role": "CEO, Effective AI. Prev CTO Nirvana ($1.5B)",
+    "spike": "Built Nirvana AI stack from zero to $1.5B. Second-time founder. IIT Delhi. Rubrik pre-IPO"
+  },
+  "kunal-singhal": {
+    "role": "CTO, Effective AI. 2x ICPC World Finalist",
+    "spike": "IOI 2012 + INMO topper + 2x ICPC WF. Facebook, Grammarly, WisdomAI. IIT Delhi"
+  },
+  "shri-kolanukuduru": {
+    "role": "Investing Partner, Category Ventures ($160M)",
+    "spike": "Prev Insight, Pioneer (day-0 $20K/2%), HFT, Simplify YC W21. UNC Carolina Scholar. Co-investor / peer"
+  },
+  "jessie-jia-guo": {
+    "role": "Investment Partner, Next Legacy ($3.5B FoF)",
+    "spike": "Emerging Leaders Fund: $1-5M into emerging managers. Kauffman Fellow. Bridge Funding Global. LP prospect"
+  },
+  "sameer-gandhi": {
+    "role": "Partner, Accel (25+ yrs venture)",
+    "spike": "Board: Perplexity ($14B), CrowdStrike. Anthropic Series G. Led Flipkart from seed. LP prospect"
+  },
+  "mei": {
+    "role": "AI Pre-Seed Investor. MIT dropout",
+    "spike": "First check: Etched ($5B), MatX, Standard Intelligence, RadixArk ($400M), Mirendil ($1B). $6B+ portfolio"
+  },
+  "jennifer-zhai": {
+    "role": "Co-Founder & GP, Coho Deeptech + Stealth Founder",
+    "spike": "Coho (Cartesia, Higgsfield, Bland, Sahara, Amigo) + bio “building continual learning”. Mei Z. archetype #2"
+  },
+  "benjamin-keigwin": {
+    "role": "Co-Founder & CEO, Tilde Research — mechanistic-interpretability lab ($8M Khosla seed)",
+    "spike": "T2 — track, not pursue. On-thesis interp lab (Sieve/Telescope/SonicMoE) but already Khosla-funded = past inception; personal research record thin (RouterBench 5th author). Math PhD UPenn. Co-founder Dhruv Pai (Stanford STAIR)."
+  },
+  "dhruv-pai": {
+    "role": "Co-Founder & Chief Scientist, Tilde Research — Stanford math+CS (STAIR lab)",
+    "spike": "T1. ~22yo Stanford researcher, Tilde Chief Scientist. Elite pedigree: Regeneron STS, ISEF ×2, Presidential Scholar. Indian. Research early (FACADE 1st-author workshop; Model Collapse middle-author COLM'24). At funded Tilde = relationship-build."
+  },
+  "mason-wang": {
+    "role": "Co-Founder & (former) CTO, Tilde Research — Stanford, 2× technical founder",
+    "spike": "T1 on the person; no live inflection. 2× founder (Tilde CTO + Hazel CTO at 17, $2M Pear). PiTorch (LLM on bare-metal Pi Zero, no OS), Activault, Sparsity-is-Cool (co-first w/ Dhruv Pai). CORRECTED: not pre-founding — left Tilde, now at Stanford + Neuralink 'Conceptual Telepathy' team. Watch; T0 trigger = he leaves to found."
+  },
+  "tanvir-bhathal": {
+    "role": "Stanford CS/EE undergrad ('27) — Hazy Research (Chris Ré) + Scaling Intelligence orbit",
+    "spike": "T2 track, no inflection yet. Lab-adjacent undergrad: middle-author Weaver (NeurIPS'25); first-author WebSight (⚠ self-reported 'beats OpenAI', non-peer-reviewed). No competition pedigree. nSpire=career-coaching (off-thesis). Indian. Watch for founding signal ~2027 grad."
+  },
+  "josh-meier": {
+    "role": "Co-Founder, Chai Discovery (protein-structure / biology AI) — ex-Meta FAIR ESM, ex-Absci CAIO",
+    "spike": "T2 track (Chai well-funded: Thrive/OpenAI/Dimension). The canonical child-prodigy origin: at 16 led Provita (15-person HS biotech, 'flying syringe' to FDA), Intel STS 4th, Harvard CS, GUIDES (Nature Methods '17 w/ Feng Zhang). 'CEO' unverified (co-founder 1 of 4). Showcase for the new origin/texture layers."
+  },
+  "owen-dugan": {
+    "role": "Stanford CS PhD, Chris Ré's Hazy lab — AI×physics (MIT physics BS in 2.5yr)",
+    "spike": "T1. Verified rate-of-change: 2 granted patents pre-MIT, OccamNet as HS-er, MIT physics in 2.5yr, 1st-author ICML'23 (Q-Flow) + NeurIPS'24 (OccamLLM) + a 1st-author Hazy paper WITH Chris Ré. Hertz+RSI+Davidson+Presidential+Knight-Hennessy. Bidirectional AI×physics → now ML-systems/interp. Watch for T0. (3-pool pedigree hit.)"
+  },
+  "isha-puri": {
+    "role": "MIT CSAIL PhD (Yoon Kim + Marzyeh Ghassemi) — inference-time-scaling / RL-for-reasoning",
+    "spike": "T1. 1st-author Rollout Roulette (NeurIPS'25): particle-filter test-time scaling, training-free, Qwen-7B→o1 in 32 rollouts (52★). Accelerating cadence (NeurIPS'21/'25, ICLR'26, ICML'26). Joining DeepMind; NeurIPS'25 Assistant PC. Harvard '23. Davidson/ISEF/Cutler-Bell. Indian. Co-founded CreAIte at 15. Watch for T0."
+  },
+  "cade-gordon": {
+    "role": "MTS at Anthropic (pretraining science) — deferred a Stanford PhD; ex-Berkeley/LAION",
+    "spike": "T1 frontier-lab insider, departure-watch. Core author LAION-5B (NeurIPS'22 Outstanding, 4th/16) + OpenCLIP scaling-laws; scaled CLIP '8 GPUs→thousands'. 1st-author protein-LM fitness (ICLR'25, Abbeel). Berkeley BS in 2.5yr; Hertz'25. Citation honesty: ~9K cites ~99% big-collab middle-author. Taste-over-credential (deferred Stanford PhD for Anthropic). Re-tier T0 on departure."
+  },
+  "aayush-karan": {
+    "role": "3rd-yr Harvard CS PhD (Sitan Chen + Yilun Du, Kempner) — generative-model / LLM-reasoning theory",
+    "spike": "T1, leaning T0-watch. 1st-author 'Reasoning with Sampling' (ICLR'26 ORAL): training-free MCMC matches RL post-training while preserving diversity. Verified polymath: solved a 30-yr-open knot-theory problem at 17, Nature Methods RNA (1st author), generative-ML theory. Harvard summa '23 + Sophia Freund (top GPA). Soros/Goldwater/Davidson/Regeneron. Indian. Citation honesty: 87 cites, one-paper-dominated."
+  },
+  "ellen-xu": {
+    "role": "Stanford CS undergrad ('27) — embodied/real-world RL; comma.ai + Tesla Autopilot intern",
+    "spike": "T1, watch for T0 at grad. Validated on both axes: ICLR'26 Polychromic RL (3rd author; Finn+Sadigh senior) + shipped RL at comma.ai & Tesla Autopilot. Teen: 1st-author Kawasaki-disease CNN (Scientific Reports), Regeneron STS 3rd ($150K), RSI'22, CyberPatriot champion, Coolidge. Serial builder, anti-convergence ('find your voice among the noise'). Plays/flies/fences/reads heavily. Chinese-origin."
+  },
+  "amanpreet-singh": {
+    "role": "Co-founder & CTO of Contextual AI (Douwe Kiela's enterprise-RAG company; $20M seed Bain 2023, $80M Series A 2024) FROM INCEPTION — just LEFT and is 'building something new' (stealth, SF, LinkedIn headline 'something new | hiring founding…' = recruiting a founding team). The hands-on systems-builder half of Contextual. Indian-origin: Amanpreet Singh Dehal, from Una, Himachal Pradesh; IIT Roorkee BS → NYU MS.",
+    "spike": "T0 — active pursuit. REPEAT venture-scale founder at maximal inflection: walked away from his OWN funded, co-founded company (Founder/CTO of Contextual AI w/ Douwe Kiela) and is actively HIRING A FOUNDING TEAM — a stronger conviction signal than a salaried frontier-lab departure. DEPARTURE VERIFIED across three lockstep self-authored surfaces: site ('Exploring new possibilities'), GitHub bio ('Something new.'), LinkedIn ('Building something new' / 'hiring founding…', status Stealth SF); Scholar email reverted to nyu.edu. Exact departure date UNKNOWN (est. H1 2026; some DBs lag, still list him CTO). CO-FOUNDER+CTO VERIFIED (Equilar 'Founder, CTO'; Crunchbase; Businesswire stealth-emergence Jun 7 2023; Bain memo — met Kiela at Meta AI 2016). TECH RECORD (overwhelming): author/maintainer of MMF/Pythia (FAIR multimodal framework, 5.6k★, Pythia won VQA 2018), 1st author TextVQA (CVPR'19, 2.3K cites) + FLAVA (CVPR'22, 1.2K, last-author Kiela), 2nd author GLUE (10.8K cites) + SuperGLUE, co-author BLOOM/OBELICS/GritLM (confirmed-his: Kiela co-authors)/OLMoE. ~30,333 cites, h-index 32. CORRECTION: NOT an author on LMUnit (it's his team's Contextual product, not his byline). DISAMBIG: a DIFFERENT Amanpreet Singh is at Ai2 (Scholar rk0hg3YAAAAJ); ours is aWiMKLsAAAAJ (NYU email) — attribution checked via author blocks, not name-match. ORIGIN/SPIKE visible early: President of SDSLabs @ IIT Roorkee (2014-16), competitive CTF/security (built 'Backdoor' platform, authors awesome-ctf 11.6k★), shipped Muzi campus music player; self-taught-into-web origin (blog 'Into the Web'). THESIS (from Weaviate Pod #114, the one substantive video): 'system over models' + 'specialization for enterprises' + obsession with the VERIFICATION-GENERATION ASYMMETRY and in-production/continual learning ('the model weights are not really changing'). Likely next wedge: eval/reliability for agents (he authored the LMUnit 'unit tests for LLMs' paradigm) or continual-learning infra (overlaps Ronak Malde / Jennifer Zhai cluster). OPEN: no company entity/domain/Form D/co-founder/thesis located yet — 'hiring founding' is the only hard founder-mode datum; if he's joining/advising not founding, drop to T1. X (@apsdehal) auth-walled — could not census non-work posts. Outreach: LinkedIn/email (founder-hiring = responsive); lead with the verification-asymmetry / 'system over models' / LMUnit thread + name Galileo/Patronus/Arize + OpenPipe/Predibase; fast first check. Flag indian. T0."
+  }
 }

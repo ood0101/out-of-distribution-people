@@ -333,6 +333,76 @@
       "source_url": "https://www.geekwire.com/2026/microsoft-adds-more-former-ai2-researchers-to-its-superintelligence-team/",
       "source_kind": "news",
       "confidence": 0.85
+    },
+    {
+      "date": "2025-04-24",
+      "observed": "2026-06-11",
+      "slug": "chris-fifty",
+      "type": "paper_award",
+      "value": "ICLR 2025 ORAL (top 1.8%) — 'Restructuring Vector Quantization with the Rotation Trick' (1st author; Thrun + Ré co-authors)",
+      "direction": 1,
+      "source_url": "https://arxiv.org/abs/2410.06424",
+      "source_kind": "own_site",
+      "confidence": 0.95
+    },
+    {
+      "date": "2025-07-15",
+      "observed": "2026-06-11",
+      "slug": "chris-fifty",
+      "type": "manual",
+      "value": "Post-grad company DISINTEGRATED (unnamed) -> 'between things' / available; per his essay 'applying to jobs ... couch surfing'; grinding latent-space LM (unpublished). Founder available = inflection toward re-founding.",
+      "direction": 1,
+      "source_url": "https://cfifty.github.io/writings/latent_lm.html",
+      "source_kind": "own_site",
+      "confidence": 0.8,
+      "note": "T1 with live T0 watch — flip if latent-LM becomes a company"
+    },
+    {
+      "date": "2026-02-01",
+      "observed": "2026-06-11",
+      "slug": "amanpreet-singh",
+      "type": "departure",
+      "direction": 1,
+      "value": "Left Contextual AI (co-founder & CTO) — all his surfaces flipped to past-tense; Scholar email reverted to nyu.edu",
+      "source_url": "https://apsdehal.in",
+      "source_kind": "own_site",
+      "confidence": 0.8,
+      "note": "exact departure date unconfirmed; est H1 2026"
+    },
+    {
+      "date": "2026-05-01",
+      "observed": "2026-06-11",
+      "slug": "amanpreet-singh",
+      "type": "bio_change",
+      "direction": 1,
+      "value": "LinkedIn headline 'something new | hiring founding…' + 'Stealth, SF Bay Area' — founder-mode (hiring a founding team)",
+      "source_url": "https://www.linkedin.com/in/apsdehal",
+      "source_kind": "linkedin",
+      "confidence": 0.85,
+      "note": "the 'hiring founding' language is the founder-mode tell"
+    },
+    {
+      "date": "2026-01-01",
+      "observed": "2026-06-11",
+      "slug": "michael-luo",
+      "type": "departure",
+      "direction": 1,
+      "value": "Left Google DeepMind (efficient agentic systems) after Berkeley PhD (Stoica) — short stint",
+      "source_url": "https://michaelzhiluo.github.io",
+      "source_kind": "own_site",
+      "confidence": 0.7,
+      "note": "exact DeepMind dates unconfirmed"
+    },
+    {
+      "date": "2026-05-01",
+      "observed": "2026-06-11",
+      "slug": "michael-luo",
+      "type": "founding_listed",
+      "direction": 1,
+      "value": "Site verbatim: 'I am currently building a stealth startup … efficient serving and post-training' — name/funding not public (EDGAR 0 hits)",
+      "source_url": "https://michaelzhiluo.github.io",
+      "source_kind": "own_site",
+      "confidence": 0.9
     }
   ]
 }
