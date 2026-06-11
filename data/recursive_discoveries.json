@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Recursive discoveries surfaced by dossier agents. Each entry: a person mentioned in a dossier as worth following up. Status: pending|approved|dossiered|rejected.",
-  "last_updated": "2026-06-03",
+  "last_updated": "2026-06-10",
   "discoveries": [
     {
       "name": "Sumith Kulal",
@@ -1211,6 +1211,36 @@
         "lerrel-pinto",
         "robotics",
         "dexterity"
+      ]
+    },
+    {
+      "name": "Nathan Lambert",
+      "from_dossier": "kyle-lo",
+      "discovered_at": "2026-06-10",
+      "priority": "P1",
+      "status": "pending",
+      "context": "OLMo post-training lead who left AI2 and pointedly did NOT go to Microsoft (unlike the rest of the OLMo core). Public 'carefully building what I'm doing next' on independent open post-training. Interconnects author. THE foundable OLMo-diaspora name — verify if it's a company.",
+      "tags": [
+        "open-llm",
+        "post-training",
+        "ai2-diaspora",
+        "olmo",
+        "foundable"
+      ]
+    },
+    {
+      "name": "Luca Soldaini",
+      "from_dossier": "kyle-lo",
+      "discovered_at": "2026-06-10",
+      "priority": "P2",
+      "status": "pending",
+      "context": "Dolma 1st author; Kyle Lo's data co-lead twin. Now at Microsoft MAI with Kyle. Watch the Lo+Soldaini pair as a unit for the next departure — if they leave together it's a data-infra company. @soldni.",
+      "tags": [
+        "open-llm",
+        "data-curation",
+        "ai2-diaspora",
+        "microsoft-mai",
+        "watch-pair"
       ]
     }
   ]

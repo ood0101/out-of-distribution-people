@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-06-09T18:39:10+00:00",
+  "last_built": "2026-06-11T09:13:41+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -3446,7 +3446,7 @@
         "phrase_raising": false,
         "phrase_founded": false
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-06-10T00:10:32+05:30",
       "needs_triage": false,
       "emails": [],
       "email_primary": null,
@@ -6605,6 +6605,60 @@
       "outreach_body_override": null,
       "channels_attempted": []
     },
+    "kyle-lo": {
+      "name": "Kyle Lo",
+      "tier": 2,
+      "tier_label": "tier-2: tracking",
+      "category": "outreach",
+      "tags": [
+        "researcher",
+        "open-llm",
+        "data-curation",
+        "pretraining",
+        "olmo",
+        "ai2-diaspora",
+        "microsoft-mai",
+        "departure-watch"
+      ],
+      "indian": false,
+      "delta": false,
+      "one_liner": "The data architect of the fully-open-LLM movement",
+      "signals": {
+        "tag_stealth_founder": false,
+        "tag_founders": false,
+        "phrase_stealth": true,
+        "phrase_departed": false,
+        "phrase_raising": true,
+        "phrase_founded": false
+      },
+      "last_git_touch": null,
+      "needs_triage": false,
+      "emails": [
+        "kyleclo@cs.washington.edu"
+      ],
+      "email_primary": "kyleclo@cs.washington.edu",
+      "email_primary_kind": "academic",
+      "outreach_subject": null,
+      "outreach_body_preview": null,
+      "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=kyleclo%40cs.washington.edu",
+      "twitter_handle": "kylelostat",
+      "linkedin_slug": null,
+      "github_handle": "kyleclo",
+      "status": "not-contacted",
+      "last_contacted": null,
+      "next_action_date": null,
+      "response": null,
+      "notes": "T2 DEPARTURE-WATCH. Elite open-LLM data architect but NOT foundable now — joined Microsoft AI MAI Superintelligence (post-training, Suleyman) Mar/May 2026 w/ OLMo core (GeekWire May 15 2026). Standing monitor: kyleclo.com/news + GitHub @kyleclo bio + X @kylelostat. RE-RATE TO T0 if he leaves Microsoft / registers a domain or Form D / bio flips to founder language. Relationship-build only (D&D/open-data wavelength), NOT a pitch. Priority recursive lead = Nathan Lambert (foundable OLMo-diaspora, left AI2 not to MSFT).",
+      "urgency_decay_date": null,
+      "urgency_reason": null,
+      "channel": null,
+      "next_action": null,
+      "cluster": "ai2-diaspora",
+      "email_override": null,
+      "outreach_subject_override": null,
+      "outreach_body_override": null,
+      "channels_attempted": []
+    },
     "l-raja-sekhar-reddy": {
       "name": "L Raja Sekhar Reddy, IRS",
       "tier": null,
@@ -8515,7 +8569,7 @@
         "phrase_raising": false,
         "phrase_founded": true
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-06-10T00:10:32+05:30",
       "needs_triage": false,
       "emails": [
         "raunaqbhirangi@nyu.edu",
@@ -10094,7 +10148,7 @@
         "phrase_raising": false,
         "phrase_founded": true
       },
-      "last_git_touch": "2026-06-08T18:37:31+05:30",
+      "last_git_touch": "2026-06-10T00:10:32+05:30",
       "needs_triage": false,
       "emails": [
         "siddhanthaldar@nyu.edu",

@@ -311,6 +311,28 @@
       "source_kind": "rdap",
       "confidence": 0.85,
       "note": "auto: sweep_signals.py RDAP check"
+    },
+    {
+      "date": "2026-03-26",
+      "observed": "2026-06-10",
+      "slug": "kyle-lo",
+      "type": "departure",
+      "value": "Left AI2 (co-lead of OLMo); site: 'farewell to Ai2 … now working on something new'",
+      "direction": 1,
+      "source_url": "https://kyleclo.com/news/",
+      "source_kind": "own_site",
+      "confidence": 0.95
+    },
+    {
+      "date": "2026-05-15",
+      "observed": "2026-06-10",
+      "slug": "kyle-lo",
+      "type": "joined_big_lab",
+      "direction": -1,
+      "value": "Joined Microsoft AI MAI Superintelligence (post-training, Suleyman) w/ OLMo build-core — NOT a startup; not foundable now",
+      "source_url": "https://www.geekwire.com/2026/microsoft-adds-more-former-ai2-researchers-to-its-superintelligence-team/",
+      "source_kind": "news",
+      "confidence": 0.85
     }
   ]
 }
