@@ -1315,6 +1315,67 @@
         "founder-ceo",
         "product"
       ]
+    },
+    {
+      "name": "Samarth Sinha",
+      "from_dossier": "animesh-garg",
+      "discovered_at": "2026-06-12",
+      "priority": "P1",
+      "status": "pending",
+      "context": "STRONGEST node in Garg's tree. Just hired (June 4 2026) to LAUNCH + LEAD 1X Technologies' new World Model Lab (from-scratch foundation-model effort). Prior: founding research scientist @ Luma AI (scaled video/multimodal). PAIR alum (UofT, Garg) + MILA + Berkeley(Darrell). Founding-CTO caliber — one departure from spinning out a world-models/embodied-FM company. Relationship-now, capital-on-departure.",
+      "tags": [
+        "1x",
+        "world-models",
+        "luma-alum",
+        "embodied-fm",
+        "garg-tree",
+        "relationship-now"
+      ]
+    },
+    {
+      "name": "Arthur Allshire",
+      "from_dossier": "animesh-garg",
+      "discovered_at": "2026-06-12",
+      "priority": "P1",
+      "status": "pending",
+      "context": "Best pure pre-founder bet. UC Berkeley PhD (Abbeel + Malik + Kanazawa); lead/equal-1st author VideoMimic — Best Student Paper CoRL 2025 (monocular video → transferable humanoid skills, real2sim2real). PAIR undergrad alum (UofT, Garg). Site teases unreleased work ('not yet…') + chatter of 'new tech for generalizable real-time control' — HYPOTHESIS, not confirmed founding. Irish-Canadian (not Indian). Back-him-the-day-he-leaves. allshire.org, @arthurallshire.",
+      "tags": [
+        "berkeley",
+        "abbeel",
+        "humanoid",
+        "videomimic",
+        "garg-tree",
+        "watch-departure"
+      ]
+    },
+    {
+      "name": "Lorand Cheng",
+      "from_dossier": "animesh-garg",
+      "discovered_at": "2026-06-12",
+      "priority": "P2",
+      "status": "pending",
+      "context": "PAIR PhD student ON LEAVE as AI Resident @ 1X Technologies (since May 2025). Generative modeling + LLM-guided RL for robots (AMPLIFY co-author w/ Garg). Inside a top humanoid co as a student — watch for full-time/founding.",
+      "tags": [
+        "1x",
+        "garg-tree",
+        "rl",
+        "watch"
+      ]
+    },
+    {
+      "name": "Ignat Georgiev",
+      "from_dossier": "animesh-garg",
+      "discovered_at": "2026-06-12",
+      "priority": "P2",
+      "status": "pending",
+      "context": "PAIR PhD student ON LEAVE / Senior ML Scientist @ Tesla (Optimus orbit). Strong systems+RL builder; previously founded the AI team at Edinburgh Formula Student (founder instinct). No company yet. imgeorgiev.com.",
+      "tags": [
+        "tesla",
+        "optimus",
+        "garg-tree",
+        "rl",
+        "watch"
+      ]
     }
   ]
 }
