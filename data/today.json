@@ -1,11 +1,11 @@
 {
-  "built_at": "2026-06-12T04:55:19+00:00",
+  "built_at": "2026-06-12T06:57:24+00:00",
   "date": "2026-06-12",
   "stats": {
     "t0": 18,
     "t1": 60,
     "in_flight": 8,
-    "pool": 118
+    "pool": 119
   },
   "replies": [],
   "followups": [
@@ -385,7 +385,7 @@
     }
   ],
   "triage": {
-    "pending": 93,
+    "pending": 96,
     "highlights": [
       {
         "name": "Sumith Kulal",

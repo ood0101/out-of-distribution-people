@@ -1421,6 +1421,58 @@
         "post-phd-inflection",
         "P1"
       ]
+    },
+    {
+      "name": "Eli Lifland",
+      "from_dossier": "misha-yagudin",
+      "discovered_at": "2026-06-12",
+      "priority": "P2",
+      "status": "pending",
+      "context": "Samotsvety forecaster — '1st all-time INFER'; co-author of the AI-2027 scenario. Highest-value adjacent node from the OLO DIN/forecasting cluster. Worth a direct look (is he building anything technical / at an inflection?).",
+      "tags": [
+        "forecasting",
+        "ai-2027",
+        "samotsvety",
+        "ai-safety"
+      ]
+    },
+    {
+      "name": "Dwarkesh Patel",
+      "from_dossier": "gavin-leech",
+      "discovered_at": "2026-06-12",
+      "priority": "P3",
+      "status": "pending",
+      "context": "Co-author w/ Gavin Leech of The Scaling Era (Stripe Press). Top AI-podcast/intellectual node — network value, not a target himself.",
+      "tags": [
+        "scaling-era",
+        "podcast",
+        "network-node"
+      ]
+    },
+    {
+      "name": "Nuño Sempere",
+      "from_dossier": "misha-yagudin",
+      "discovered_at": "2026-06-12",
+      "priority": "P3",
+      "status": "pending",
+      "context": "Samotsvety + Sage co-founder; forecasting-tooling/estimation builder (nunosempere.com). Forecasting-meets-alignment cluster.",
+      "tags": [
+        "forecasting",
+        "sage",
+        "estimation"
+      ]
+    },
+    {
+      "name": "Charles Dillon",
+      "from_dossier": "gavin-leech",
+      "discovered_at": "2026-06-12",
+      "priority": "P3",
+      "status": "pending",
+      "context": "Co-founder of Arb Research (w/ Gavin Leech). Forecasting/ML/policy research consultancy.",
+      "tags": [
+        "arb-research",
+        "forecasting"
+      ]
     }
   ]
 }

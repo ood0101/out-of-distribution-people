@@ -1,6 +1,6 @@
 {
  "generated": "2026-06-12",
- "count": 249,
+ "count": 251,
  "people": [
   {
    "slug": "abhinav-shrivastava",
@@ -2722,36 +2722,32 @@
    "urgency": false
   },
   {
-   "slug": "mihir-bafna",
-   "name": "Mihir Bafna",
+   "slug": "gavin-leech",
+   "name": "Gavin Leech",
    "tier": 2,
-   "role": "2nd-year MIT CSAIL PhD under Bonnie Berger (DL for structural biology / protein design) + embedded ML researcher at Liquid AI. Co-first SwitchCraft (ICML 2026), sole-first DynaProt (ICLR 2026). Georgia Tech BS CS (3.5yr accelerated). Indian-origin, comp-bio family (Vineet Bafna / Boundless Bio lineage).",
-   "spike": "T2 — track closely; NO founding signal yet (2nd-year PhD), clear T1 upgrade path. Exceptional early-career AI-for-bio talent in the most investable bio sub-vein (programmatic protein design on structure-prediction models), in a founder-factory lab (Berger, co-introduced protein language models), with a frontier-startup tie (Liquid AI, Hasani/Rus). HONEST: Liquid AI is embedded-research not his venture (middle author on Liquid's drug-discovery paper); X dormant (0 posts); founder window 2-4yr out. SPIKE: SwitchCraft (co-first, equal-but-second-listed w/ Bowen Jing; backprop through Boltz-1 to design state-switching proteins; repo ~71★), DynaProt (SOLE first, ICLR'26, protein dynamics from structure), CLARIFY (1st-author undergrad, ISMB'23 oral, ~49c). Cites ~110 h-4 — early; trajectory + authorship quality is the signal, not h-index. ORIGIN: comp-bio family (Vineet Bafna UCSD/Boundless Bio = father/relative; interned there freshman yr), San Diego, GT 3.5yr, Broad BSRP'23. Indian-origin confirmed. THE NEARER-TERM INFLECTION = Bowen Jing (SwitchCraft co-first; just finished MIT PhD, DiffDock/Torsional Diffusion author; post-PhD founding moment NOW) — Mihir is the warm line in. UPGRADE TRIGGERS→T1: leaves Liquid/spinout signal/tool adoption/Jing founds & pulls him in. T2.",
+   "role": "Co-author (w/ Dwarkesh Patel) of The Scaling Era (Stripe Press 2025); co-founder of Arb Research (forecasting/ML/policy consultancy; clients Open Phil, Schmidt Futures, Stripe, FHI); AI PhD Bristol; AI-safety/forecasting/evals researcher + prolific writer. Director/operator of OLO DIN (Dmitrii Galatenko's AI-alignment venture). Not Indian.",
+   "spike": "T2 — track (the most investable OLO DIN operator, but the technical-founder bet there stays Galatenko). HONEST: adjacent-not-core — his spike is synthesis/forecasting/evals/writing, NOT frontier-ML building. The Scaling Era (Stripe Press, w/ Dwarkesh — editorial/curatorial role, not original ML); Arb Research (co-founder w/ Charles Dillon); real pubs but mostly COVID epidemiology (PNAS 2022 mask study, Bayesian causal-effect — applied stats not DL, co-authors Mrinank Sharma→Anthropic + Jan Brauner); one core ML paper = meta-science evals critique 'Questionable practices in ML' (arXiv 2407.12220). Substantive AI-safety writer (gleech.org/LessWrong); ISF + Cosmos fellow. OLO DIN = Galatenko's owner-vehicle (kept 75%+, resigned board 20 May 2026) operated by Leech + Yagudin → consultancy/operator situation, soft inflection. T1 TRIGGER: OLO DIN ships a technical artifact w/ him as full-time technical lead, or raises. X @g_leech_ (not @gleech). Recursive: Dwarkesh Patel, Charles Dillon, Mrinank Sharma (Anthropic). T2.",
    "tags": [
-    "researcher",
-    "indian",
-    "ai-for-bio",
-    "protein-design",
-    "mit-csail",
-    "berger-lab",
-    "liquid-ai",
-    "early-career"
+    "ai-safety",
+    "forecasting",
+    "evals",
+    "arb-research",
+    "writer",
+    "olo-din",
+    "ai-public-intellectual"
    ],
-   "cluster": "ai-for-bio",
-   "signals": [
-    "stealth",
-    "raising"
-   ],
+   "cluster": "ai-safety-agentic",
+   "signals": [],
    "status": "not-contacted",
    "last_contacted": null,
    "next_action_date": null,
    "updated": "",
-   "channel": "email",
-   "twitter": null,
+   "channel": "twitter",
+   "twitter": "g_leech_",
    "linkedin": null,
    "email": null,
    "gmail_url": null,
-   "indian": true,
+   "indian": false,
    "delta": false,
    "needs_triage": false,
    "urgency": false
@@ -2787,6 +2783,41 @@
    "email": "hi@olodin.com",
    "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hi%40olodin.com&su=Isara%20%26rarr%3B%20OLO%20DIN%2C%20and%20which%20reliability%20problem&body=Hi%20Dmitrii%20%E2%80%94%20I%20invest%20at%20inception%20and%20noticed%20you%20started%20OLO%20DIN%20around%20%22reliable%20autonomous%20systems%22%20almost%20the%20day%20you%20stepped%20out%20of%20Isara%27s%20orbit%2C%20now%20with%20Gavin%20and%20Misha.%20That%20timing%20is%20the%20interesting%20part%20to%20me%3A%20agent%20swarms%20break%20on%20coordination%20and%20reliability%20long%20before%20capability%2C%20and%20it%20sounds%20like%20you%20saw%20that%20up%20close.%20Curious%20where%20your%20wedge%20lands%20%E2%80%94%20alignment/reliability%20of%20agent%0Aswarms%0A%28the%20Isara-shaped%20problem%29%2C%20or%20evals/forecasting%20tooling%20for%20autonomous%20systems%3F%20I%20can%20write%20a%20%24500K%E2%80%93%241M%20first%20check%20and%20move%20fast%2C%20and%20I%27d%20rather%20be%20useful%20early%20than%20pitch%20you.%20What%20are%20you%20building%20%E2%80%94%20and%20is%20this%20the%20full-time%20thing%3F%0A%0A%E2%80%94%20Vansh",
    "indian": false,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
+  },
+  {
+   "slug": "mihir-bafna",
+   "name": "Mihir Bafna",
+   "tier": 2,
+   "role": "2nd-year MIT CSAIL PhD under Bonnie Berger (DL for structural biology / protein design) + embedded ML researcher at Liquid AI. Co-first SwitchCraft (ICML 2026), sole-first DynaProt (ICLR 2026). Georgia Tech BS CS (3.5yr accelerated). Indian-origin, comp-bio family (Vineet Bafna / Boundless Bio lineage).",
+   "spike": "T2 — track closely; NO founding signal yet (2nd-year PhD), clear T1 upgrade path. Exceptional early-career AI-for-bio talent in the most investable bio sub-vein (programmatic protein design on structure-prediction models), in a founder-factory lab (Berger, co-introduced protein language models), with a frontier-startup tie (Liquid AI, Hasani/Rus). HONEST: Liquid AI is embedded-research not his venture (middle author on Liquid's drug-discovery paper); X dormant (0 posts); founder window 2-4yr out. SPIKE: SwitchCraft (co-first, equal-but-second-listed w/ Bowen Jing; backprop through Boltz-1 to design state-switching proteins; repo ~71★), DynaProt (SOLE first, ICLR'26, protein dynamics from structure), CLARIFY (1st-author undergrad, ISMB'23 oral, ~49c). Cites ~110 h-4 — early; trajectory + authorship quality is the signal, not h-index. ORIGIN: comp-bio family (Vineet Bafna UCSD/Boundless Bio = father/relative; interned there freshman yr), San Diego, GT 3.5yr, Broad BSRP'23. Indian-origin confirmed. THE NEARER-TERM INFLECTION = Bowen Jing (SwitchCraft co-first; just finished MIT PhD, DiffDock/Torsional Diffusion author; post-PhD founding moment NOW) — Mihir is the warm line in. UPGRADE TRIGGERS→T1: leaves Liquid/spinout signal/tool adoption/Jing founds & pulls him in. T2.",
+   "tags": [
+    "researcher",
+    "indian",
+    "ai-for-bio",
+    "protein-design",
+    "mit-csail",
+    "berger-lab",
+    "liquid-ai",
+    "early-career"
+   ],
+   "cluster": "ai-for-bio",
+   "signals": [
+    "stealth",
+    "raising"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "2026-06-12",
+   "channel": "email",
+   "twitter": null,
+   "linkedin": null,
+   "email": null,
+   "gmail_url": null,
+   "indian": true,
    "delta": false,
    "needs_triage": false,
    "urgency": false
@@ -3519,6 +3550,38 @@
    "channel": null,
    "twitter": null,
    "linkedin": "lilsun",
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
+  },
+  {
+   "slug": "misha-yagudin",
+   "name": "Mikhail \"Misha\" Yagudin",
+   "tier": 3,
+   "role": "Co-founder & leader of Samotsvety Forecasting (top-tier superforecasting group); co-founder of Sage; long-standing AI-risk forecaster (EA/AI-safety). Director/operator of OLO DIN (Galatenko's AI-alignment venture). Russian, based in Mexico. Not Indian.",
+   "spike": "T3 — index as a NETWORK NODE (off-core-thesis). Genuinely elite forecaster: Samotsvety holds 1st in INFER/CSET-Foretell 2021 (~2x the 2nd-best team), '1st-4th all-time' INFER; Yagudin personally 3rd all-time. Co-founded Sage (forecasting tools/Quantified Intuitions); long-standing Samotsvety AI-risk forecasts + AGI timelines. BUT off the core thesis: spike is forecasting accuracy, FULL STOP — no technical/ML building (his only ML-paper credit is co-author on Leech's evals critique), no foundable inflection of his own (Samotsvety/Sage/Arb = forecasting collectives/consultancies; OLO DIN = Galatenko's pre-product vehicle he co-operates). NOT a pass only because of the OLO DIN role + elite-forecaster credibility; NO path to T1/T2 absent him building something technical. VALUE = the network: Eli Lifland (Samotsvety, 1st all-time INFER, AI 2027 co-author — worth a direct look), Nuño Sempere. Namesake cleared (skater = Alexei Yagudin). T3.",
+   "tags": [
+    "forecasting",
+    "ai-safety",
+    "network-node",
+    "samotsvety",
+    "sage",
+    "olo-din"
+   ],
+   "cluster": "ai-safety-agentic",
+   "signals": [
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "",
+   "channel": "twitter",
+   "twitter": "mishayagudin",
+   "linkedin": null,
    "email": null,
    "gmail_url": null,
    "indian": false,
