@@ -1488,6 +1488,81 @@
         "isara-orbit",
         "disambiguate"
       ]
+    },
+    {
+      "name": "Amitayush Thakur",
+      "from_dossier": "swarat-chaudhuri",
+      "discovered_at": "2026-06-12",
+      "priority": "P2",
+      "status": "pending",
+      "context": "Swarat Chaudhuri PhD (UT Austin). 1st author of COPRA (first open-source LLM theorem-proving agent, Lean+Coq); 'AI for Math ∩ AI for Code'; Vellum core team; INTERNING AT ASARI AI (student→startup bridge). Senior PhD w/ a shipped, cited system + live startup exposure — prime graduates-into-founding-team/founds candidate on the verified-code frontier. amit9oct.github.io.",
+      "tags": [
+        "ai-for-math",
+        "theorem-proving",
+        "copra",
+        "verified-code",
+        "asari",
+        "watch-now"
+      ]
+    },
+    {
+      "name": "George Tsoukalas",
+      "from_dossier": "swarat-chaudhuri",
+      "discovered_at": "2026-06-12",
+      "priority": "P2",
+      "status": "pending",
+      "context": "Swarat Chaudhuri PhD (UT Austin, ~4th yr) embedded at Google DeepMind on AlphaProof (title 'Senior Research Scientist' is self-reported, unusually senior for a PhD — verify). Lead author PutnamBench (the standard formal-math benchmark). Rutgers math undergrad. Profile that leaves to found/join an Axiom/Harmonic-class startup at graduation. @GTsoukalasRU.",
+      "tags": [
+        "ai-for-math",
+        "alphaproof",
+        "putnambench",
+        "deepmind",
+        "watch-at-graduation"
+      ]
+    },
+    {
+      "name": "Stephan Zheng",
+      "from_dossier": "swarat-chaudhuri",
+      "discovered_at": "2026-06-12",
+      "priority": "P2",
+      "status": "pending",
+      "context": "Founder/CEO of Asari AI ('scalable reliable AI agents for engineering design'; ~$14M, Eric Schmidt/Jeff Dean-backed) — the startup Swarat advises. Caltech Physics PhD under Yisong Yue; ex-Salesforce 'AI Economist' lead. Already funded = relationship node, not inception-check. stephanzheng.com.",
+      "tags": [
+        "asari",
+        "ai-agents",
+        "engineering-design",
+        "funded",
+        "relationship"
+      ]
+    },
+    {
+      "name": "Jon Stephens",
+      "from_dossier": "swarat-chaudhuri",
+      "discovered_at": "2026-06-12",
+      "priority": "P3",
+      "status": "pending",
+      "context": "CEO & co-founder of Veridise (formal-verification/ZK security, founded 2022 w/ Isil Dillig — Swarat's spouse). Operating founder w/ deep formal-methods chops. Veridise is established (crypto-audit); the T0 conversation is IF he spins a GENERAL verified-code play out of it. Watch.",
+      "tags": [
+        "veridise",
+        "formal-verification",
+        "zk",
+        "founder",
+        "established"
+      ]
+    },
+    {
+      "name": "Isil Dillig",
+      "from_dossier": "swarat-chaudhuri",
+      "discovered_at": "2026-06-12",
+      "priority": "P3",
+      "status": "pending",
+      "context": "UT Austin PL professor (UToPiA group), Swarat's spouse + frequent collaborator; co-founder/President of Veridise. A FOUNDER-MAKER node — her students are a repeatable founder factory (Jon Stephens, Yu Feng→UCSB/Veridise-origin). Track her graduating students.",
+      "tags": [
+        "program-synthesis",
+        "veridise",
+        "founder-maker",
+        "ut-austin"
+      ]
     }
   ]
 }
