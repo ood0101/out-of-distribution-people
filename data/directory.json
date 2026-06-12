@@ -1,6 +1,6 @@
 {
  "generated": "2026-06-12",
- "count": 248,
+ "count": 249,
  "people": [
   {
    "slug": "abhinav-shrivastava",
@@ -2722,6 +2722,41 @@
    "urgency": false
   },
   {
+   "slug": "mihir-bafna",
+   "name": "Mihir Bafna",
+   "tier": 2,
+   "role": "2nd-year MIT CSAIL PhD under Bonnie Berger (DL for structural biology / protein design) + embedded ML researcher at Liquid AI. Co-first SwitchCraft (ICML 2026), sole-first DynaProt (ICLR 2026). Georgia Tech BS CS (3.5yr accelerated). Indian-origin, comp-bio family (Vineet Bafna / Boundless Bio lineage).",
+   "spike": "T2 — track closely; NO founding signal yet (2nd-year PhD), clear T1 upgrade path. Exceptional early-career AI-for-bio talent in the most investable bio sub-vein (programmatic protein design on structure-prediction models), in a founder-factory lab (Berger, co-introduced protein language models), with a frontier-startup tie (Liquid AI, Hasani/Rus). HONEST: Liquid AI is embedded-research not his venture (middle author on Liquid's drug-discovery paper); X dormant (0 posts); founder window 2-4yr out. SPIKE: SwitchCraft (co-first, equal-but-second-listed w/ Bowen Jing; backprop through Boltz-1 to design state-switching proteins; repo ~71★), DynaProt (SOLE first, ICLR'26, protein dynamics from structure), CLARIFY (1st-author undergrad, ISMB'23 oral, ~49c). Cites ~110 h-4 — early; trajectory + authorship quality is the signal, not h-index. ORIGIN: comp-bio family (Vineet Bafna UCSD/Boundless Bio = father/relative; interned there freshman yr), San Diego, GT 3.5yr, Broad BSRP'23. Indian-origin confirmed. THE NEARER-TERM INFLECTION = Bowen Jing (SwitchCraft co-first; just finished MIT PhD, DiffDock/Torsional Diffusion author; post-PhD founding moment NOW) — Mihir is the warm line in. UPGRADE TRIGGERS→T1: leaves Liquid/spinout signal/tool adoption/Jing founds & pulls him in. T2.",
+   "tags": [
+    "researcher",
+    "indian",
+    "ai-for-bio",
+    "protein-design",
+    "mit-csail",
+    "berger-lab",
+    "liquid-ai",
+    "early-career"
+   ],
+   "cluster": "ai-for-bio",
+   "signals": [
+    "stealth",
+    "raising"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "",
+   "channel": "email",
+   "twitter": null,
+   "linkedin": null,
+   "email": null,
+   "gmail_url": null,
+   "indian": true,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
+  },
+  {
    "slug": "dmitrii-galatenko",
    "name": "Dmitrii Galatenko",
    "tier": 2,
@@ -2745,7 +2780,7 @@
    "status": "not-contacted",
    "last_contacted": null,
    "next_action_date": null,
-   "updated": "",
+   "updated": "2026-06-12",
    "channel": "linkedin",
    "twitter": null,
    "linkedin": "dmitrii-galatenko-740799211",

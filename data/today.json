@@ -1,11 +1,11 @@
 {
-  "built_at": "2026-06-12T04:42:58+00:00",
+  "built_at": "2026-06-12T04:50:53+00:00",
   "date": "2026-06-12",
   "stats": {
     "t0": 18,
     "t1": 60,
     "in_flight": 8,
-    "pool": 117
+    "pool": 118
   },
   "replies": [],
   "followups": [
@@ -286,6 +286,20 @@
       "has_dossier": true
     },
     {
+      "slug": "mihir-bafna",
+      "name": "Mihir Bafna",
+      "tier": 2,
+      "date": "2026-05-01",
+      "days_ago": 0,
+      "type": "paper award",
+      "text": "Co-first author SwitchCraft (ICML 2026) — programmatic state-switching protein design via backprop through Boltz-1; + sole-first DynaProt (ICLR 2026)",
+      "source_url": "https://arxiv.org/abs/2605.31236",
+      "source_kind": "own_site",
+      "delta": 33,
+      "hot": false,
+      "has_dossier": true
+    },
+    {
       "slug": "dmitrii-galatenko",
       "name": "Dmitrii Galatenko",
       "tier": 2,
@@ -368,24 +382,10 @@
       "delta": 48,
       "hot": true,
       "has_dossier": true
-    },
-    {
-      "slug": "amanpreet-singh",
-      "name": "Amanpreet Singh",
-      "tier": 0,
-      "date": "2026-05-01",
-      "days_ago": 1,
-      "type": "bio change",
-      "text": "LinkedIn headline 'something new | hiring founding…' + 'Stealth, SF Bay Area' — founder-mode (hiring a founding team)",
-      "source_url": "https://www.linkedin.com/in/apsdehal",
-      "source_kind": "linkedin",
-      "delta": 42,
-      "hot": true,
-      "has_dossier": true
     }
   ],
   "triage": {
-    "pending": 92,
+    "pending": 93,
     "highlights": [
       {
         "name": "Sumith Kulal",

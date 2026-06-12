@@ -1405,6 +1405,22 @@
         "founder",
         "bigger-node"
       ]
+    },
+    {
+      "name": "Bowen Jing",
+      "from_dossier": "mihir-bafna",
+      "discovered_at": "2026-06-12",
+      "priority": "P1",
+      "status": "pending",
+      "context": "JUST FINISHED MIT PhD (Tommi Jaakkola + Bonnie Berger). Author of DiffDock (ICLR'23), Torsional Diffusion (NeurIPS'22 oral), EigenFold, AlphaFold-Meets-Flow-Matching (ICML'24 oral) — top-tier generative-bio researcher AT the classic post-PhD founding inflection RIGHT NOW. No company disclosed yet. Co-first w/ Mihir Bafna on SwitchCraft. HIGHER-priority inflection target than Mihir — research directly. bjing2016.github.io.",
+      "tags": [
+        "generative-bio",
+        "protein-design",
+        "diffdock",
+        "jaakkola-berger",
+        "post-phd-inflection",
+        "P1"
+      ]
     }
   ]
 }

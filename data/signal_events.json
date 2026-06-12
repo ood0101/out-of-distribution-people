@@ -496,6 +496,18 @@
       "source_kind": "news",
       "confidence": 0.7,
       "note": "role at Isara unverified beyond the UK-entity directorship"
+    },
+    {
+      "date": "2026-05-01",
+      "observed": "2026-06-12",
+      "slug": "mihir-bafna",
+      "type": "paper_award",
+      "direction": 1,
+      "value": "Co-first author SwitchCraft (ICML 2026) — programmatic state-switching protein design via backprop through Boltz-1; + sole-first DynaProt (ICLR 2026)",
+      "source_url": "https://arxiv.org/abs/2605.31236",
+      "source_kind": "own_site",
+      "confidence": 0.9,
+      "note": "spike signal, not inflection — 2nd-yr PhD, no founding"
     }
   ]
 }

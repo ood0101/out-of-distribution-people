@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-06-12T04:42:58+00:00",
+  "last_built": "2026-06-12T04:50:52+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -3411,7 +3411,7 @@
         "phrase_raising": false,
         "phrase_founded": true
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-06-12T10:13:31+05:30",
       "needs_triage": false,
       "emails": [
         "hi@olodin.com"
@@ -7899,6 +7899,58 @@
       "channel": null,
       "next_action": null,
       "cluster": null,
+      "email_override": null,
+      "outreach_subject_override": null,
+      "outreach_body_override": null,
+      "channels_attempted": []
+    },
+    "mihir-bafna": {
+      "name": "Mihir Bafna",
+      "tier": 2,
+      "tier_label": "tier-2: tracking",
+      "category": "outreach",
+      "tags": [
+        "researcher",
+        "indian",
+        "ai-for-bio",
+        "protein-design",
+        "mit-csail",
+        "berger-lab",
+        "liquid-ai",
+        "early-career"
+      ],
+      "indian": true,
+      "delta": false,
+      "one_liner": "2nd-year MIT CSAIL PhD under",
+      "signals": {
+        "tag_stealth_founder": false,
+        "tag_founders": false,
+        "phrase_stealth": true,
+        "phrase_departed": false,
+        "phrase_raising": true,
+        "phrase_founded": false
+      },
+      "last_git_touch": null,
+      "needs_triage": false,
+      "emails": [],
+      "email_primary": null,
+      "email_primary_kind": null,
+      "outreach_subject": null,
+      "outreach_body_preview": null,
+      "gmail_url": null,
+      "twitter_handle": null,
+      "linkedin_slug": null,
+      "github_handle": "mihirbafna",
+      "status": "not-contacted",
+      "last_contacted": null,
+      "next_action_date": null,
+      "response": null,
+      "notes": "T2 — track quarterly; NOT a reach-out-now target (relationship-build only). Exceptional early-career AI-for-bio (protein design) talent: MIT CSAIL PhD (Berger, 2nd yr) + embedded ML researcher @ Liquid AI; co-first SwitchCraft ICML'26 + sole-first DynaProt ICLR'26; Indian; comp-bio family (Vineet Bafna/Boundless Bio). NO founding signal (PhD yr 2, Liquid=embedded, X dormant; founder window 2-4yr). T1 TRIGGERS: leaves Liquid/spinout/tool adoption (watch SwitchCraft repo)/Bowen Jing founds & pulls him in/'building' voice. THE ACTIONABLE INFLECTION = Bowen Jing (SwitchCraft co-first; just finished MIT PhD, DiffDock/Torsional Diffusion; post-PhD founding moment NOW) — research him directly; Mihir is the warm path. HONESTY: SwitchCraft co-first equal-but-second-listed (Jing first); Liquid title 'ML researcher' (not 'Scientist'); ~110c/h-4 early.",
+      "urgency_decay_date": null,
+      "urgency_reason": null,
+      "channel": "email",
+      "next_action": null,
+      "cluster": "ai-for-bio",
       "email_override": null,
       "outreach_subject_override": null,
       "outreach_body_override": null,
