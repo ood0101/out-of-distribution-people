@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-06-12T04:50:53+00:00",
+  "built_at": "2026-06-12T04:55:19+00:00",
   "date": "2026-06-12",
   "stats": {
     "t0": 18,
@@ -286,6 +286,20 @@
       "has_dossier": true
     },
     {
+      "slug": "dmitrii-galatenko",
+      "name": "Dmitrii Galatenko",
+      "tier": 2,
+      "date": "2026-01-28",
+      "days_ago": 0,
+      "type": "departure",
+      "text": "Director of ISARA LABORATORIES UK LTD (16847905, co-directed w/ Isara founders Gasztowtt + Zhang) until ~28 Jan 2026 — day before incorporating OLO…",
+      "source_url": "https://find-and-update.company-information.service.gov.uk/company/16847905/officers",
+      "source_kind": "edgar",
+      "delta": 35,
+      "hot": false,
+      "has_dossier": true
+    },
+    {
       "slug": "mihir-bafna",
       "name": "Mihir Bafna",
       "tier": 2,
@@ -296,20 +310,6 @@
       "source_url": "https://arxiv.org/abs/2605.31236",
       "source_kind": "own_site",
       "delta": 33,
-      "hot": false,
-      "has_dossier": true
-    },
-    {
-      "slug": "dmitrii-galatenko",
-      "name": "Dmitrii Galatenko",
-      "tier": 2,
-      "date": "2026-01-28",
-      "days_ago": 0,
-      "type": "departure",
-      "text": "Left Isara Laboratories UK Ltd board (OpenAI-backed agent-swarm startup $94M/$650M) one day before incorporating OLO DIN",
-      "source_url": "https://www.northdata.com/Galatenko,%20Dmitrii,%20Altrincham/zgd",
-      "source_kind": "news",
-      "delta": 27,
       "hot": false,
       "has_dossier": true
     },

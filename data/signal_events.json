@@ -491,11 +491,11 @@
       "slug": "dmitrii-galatenko",
       "type": "departure",
       "direction": 1,
-      "value": "Left Isara Laboratories UK Ltd board (OpenAI-backed agent-swarm startup $94M/$650M) one day before incorporating OLO DIN",
-      "source_url": "https://www.northdata.com/Galatenko,%20Dmitrii,%20Altrincham/zgd",
-      "source_kind": "news",
-      "confidence": 0.7,
-      "note": "role at Isara unverified beyond the UK-entity directorship"
+      "value": "Director of ISARA LABORATORIES UK LTD (16847905, co-directed w/ Isara founders Gasztowtt + Zhang) until ~28 Jan 2026 — day before incorporating OLO DIN. Companies House primary-source confirmed.",
+      "source_url": "https://find-and-update.company-information.service.gov.uk/company/16847905/officers",
+      "source_kind": "edgar",
+      "confidence": 0.9,
+      "note": "primary-source verified on Companies House (his officer appointment record); substantive role at Isara still unknown; OLO DIN shares Isara UK's registered office (formation-agent)"
     },
     {
       "date": "2026-05-01",
