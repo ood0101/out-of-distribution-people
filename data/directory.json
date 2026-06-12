@@ -1,6 +1,6 @@
 {
  "generated": "2026-06-11",
- "count": 246,
+ "count": 247,
  "people": [
   {
    "slug": "abhinav-shrivastava",
@@ -657,6 +657,40 @@
    "email": null,
    "gmail_url": null,
    "indian": true,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": true
+  },
+  {
+   "slug": "nada-amin",
+   "name": "Nada Amin",
+   "tier": 1,
+   "role": "Co-founder of Midspiral — 'the correctness layer for AI-generated software' (compiles LLM-written TypeScript to Lean 4/Dafny to PROVE it correct). Harvard CS professor (Metareflection Lab); EPFL PhD on the core Scala team under Martin Odersky — her DOT calculus underpins Scala 3's type system. MIT BS+MEng → Google (Closure compiler) → EPFL → Cambridge → Harvard. NOT Indian.",
+   "spike": "T1 — high conviction, reach out now (T0 if Midspiral is her full-time leap + still unfunded). Verified-exceptional PL researcher who JUST co-founded an on-thesis inception-stage company in a hot intersection: formal verification of AI-generated code. Pedigree is load-bearing: EPFL PhD on the core Scala team under Martin Odersky; DOT calculus foundational to Scala 3's type system; co-showed Java/Scala type systems unsound. Midspiral (w/ CEO Fernanda Graciolli): LemmaScript (TypeScript→Lean 4/Dafny proofs), lemmafit (npm, Claude Code integration), claimcheck. Thesis: 'Humans define what should be built. AI handles implementation. Machines guarantee correctness.' Hands-on + pre-hype — her llm-verified-with-monte-carlo-tree-search repo (~290★) ran the LLM×verification line before it was fundable. Wedge = proving LLM-written APP code (vs theorem-proving: Harmonic, Lean FRO). CITATION HONESTY: ~56K Scholar cites is distorted by ONE outlier (Cytoscape bioinformatics, ~54K, 5th author, unrelated) — real PL impact ≈ h-25 normal-for-PL; don't quote 56K. Caveats: retains Harvard professorship (full-time or side-project?); funding undisclosed. MIT BS+MEng. NOT Indian (name-based assumption avoided). Recursive: Fernanda Graciolli (co-founder/CEO). T1.",
+   "tags": [
+    "founders",
+    "just-founded",
+    "formal-verification",
+    "ai-codegen",
+    "programming-languages",
+    "harvard",
+    "professor-founder",
+    "midspiral"
+   ],
+   "cluster": "ai-codegen-verification",
+   "signals": [
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "",
+   "channel": "linkedin",
+   "twitter": null,
+   "linkedin": "mitnamin",
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
    "delta": false,
    "needs_triage": false,
    "urgency": true

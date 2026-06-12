@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Recursive discoveries surfaced by dossier agents. Each entry: a person mentioned in a dossier as worth following up. Status: pending|approved|dossiered|rejected.",
-  "last_updated": "2026-06-11",
+  "last_updated": "2026-06-12",
   "discoveries": [
     {
       "name": "Sumith Kulal",
@@ -1300,6 +1300,20 @@
         "embodied-ai",
         "ai2-diaspora",
         "founder-ceo"
+      ]
+    },
+    {
+      "name": "Fernanda Graciolli",
+      "from_dossier": "nada-amin",
+      "discovered_at": "2026-06-12",
+      "priority": "P2",
+      "status": "pending",
+      "context": "Co-founder & CEO of Midspiral (Nada Amin's company; correctness layer for AI-generated code). The product/operating half (UMD Psych/Neuro; Product Hunt builder; Cambridge MA). Meet both — the complete founding pair.",
+      "tags": [
+        "midspiral",
+        "ai-codegen",
+        "founder-ceo",
+        "product"
       ]
     }
   ]

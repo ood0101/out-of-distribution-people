@@ -1,11 +1,11 @@
 {
-  "built_at": "2026-06-11T10:57:42+00:00",
-  "date": "2026-06-11",
+  "built_at": "2026-06-12T04:11:36+00:00",
+  "date": "2026-06-12",
   "stats": {
     "t0": 18,
-    "t1": 59,
+    "t1": 60,
     "in_flight": 8,
-    "pool": 115
+    "pool": 116
   },
   "replies": [],
   "followups": [
@@ -15,7 +15,7 @@
       "tier": 0,
       "channel": "twitter",
       "last_contacted": "2026-05-26",
-      "overdue_days": 2,
+      "overdue_days": 3,
       "touches": 0,
       "dossier": "people/shivani-poddar.html",
       "link": {
@@ -29,7 +29,7 @@
       "tier": 0,
       "channel": "warm-intro",
       "last_contacted": "2026-05-27",
-      "overdue_days": 1,
+      "overdue_days": 2,
       "touches": 1,
       "dossier": "people/blanca-villanueva.html",
       "link": {
@@ -43,7 +43,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-05-27",
-      "overdue_days": 1,
+      "overdue_days": 2,
       "touches": 0,
       "dossier": "people/dan-kondratyuk.html",
       "link": {
@@ -57,7 +57,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-05-27",
-      "overdue_days": 1,
+      "overdue_days": 2,
       "touches": 0,
       "dossier": "people/joshua-dillon.html",
       "link": {
@@ -71,7 +71,7 @@
       "tier": 0,
       "channel": "email",
       "last_contacted": "2026-05-27",
-      "overdue_days": 1,
+      "overdue_days": 2,
       "touches": 1,
       "dossier": "people/michael-wornow.html",
       "link": {
@@ -85,7 +85,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-05-27",
-      "overdue_days": 1,
+      "overdue_days": 2,
       "touches": 0,
       "dossier": "people/weiying-wang.html",
       "link": {
@@ -99,7 +99,7 @@
       "tier": 1,
       "channel": "twitter",
       "last_contacted": "2026-05-27",
-      "overdue_days": 1,
+      "overdue_days": 2,
       "touches": 1,
       "dossier": "people/ajay-jain.html",
       "link": {
@@ -113,7 +113,7 @@
       "tier": 1,
       "channel": "twitter",
       "last_contacted": "2026-05-27",
-      "overdue_days": 1,
+      "overdue_days": 2,
       "touches": 1,
       "dossier": "people/mayank-mishra.html",
       "link": {
@@ -182,7 +182,7 @@
       "slug": "raunaq-bhirangi",
       "name": "Raunaq Bhirangi",
       "tier": 0,
-      "score": 672,
+      "score": 670,
       "chips": [
         "stealth",
         "founder",
@@ -272,11 +272,25 @@
   ],
   "signals": [
     {
+      "slug": "nada-amin",
+      "name": "Nada Amin",
+      "tier": 1,
+      "date": "2026-05-01",
+      "days_ago": 0,
+      "type": "founding listed",
+      "text": "Co-founded Midspiral ('correctness layer for AI-generated software'; LemmaScript/lemmafit/claimcheck) — midspiral.com lists her as Cofounder w/…",
+      "source_url": "https://midspiral.com/",
+      "source_kind": "own_site",
+      "delta": 63,
+      "hot": true,
+      "has_dossier": true
+    },
+    {
       "slug": "abhinav-shrivastava",
       "name": "Abhinav Shrivastava",
       "tier": 0,
       "date": "2026-06-11",
-      "days_ago": 0,
+      "days_ago": 1,
       "type": "founding listed",
       "text": "Own site + LinkedIn: 'Co-Founder & CEO, <stealth startup> — next-gen AI-native video infrastructure' (NeRV→NeRV-Diffusion video-as-weights);…",
       "source_url": "https://abhinavsh.info",
@@ -290,7 +304,7 @@
       "name": "Michael Luo",
       "tier": 0,
       "date": "2026-05-01",
-      "days_ago": 0,
+      "days_ago": 1,
       "type": "founding listed",
       "text": "Site verbatim: 'I am currently building a stealth startup … efficient serving and post-training' — name/funding not public (EDGAR 0 hits)",
       "source_url": "https://michaelzhiluo.github.io",
@@ -304,7 +318,7 @@
       "name": "Russ Tedrake",
       "tier": 0,
       "date": "2026-03-24",
-      "days_ago": 0,
+      "days_ago": 1,
       "type": "founding listed",
       "text": "MIT page: 'Founder of a Stealth Startup in Physical AI'; LEFT TRI (bio past-tense); The Robot Report confirms LBMs-for-industry",
       "source_url": "https://locomotion.csail.mit.edu/russt.html",
@@ -318,7 +332,7 @@
       "name": "Russ Tedrake",
       "tier": 0,
       "date": "2026-03-24",
-      "days_ago": 0,
+      "days_ago": 1,
       "type": "departure",
       "text": "Left TRI (10yr SVP Robotics Research & Large Behavior Models) to found the stealth co; kept MIT chair",
       "source_url": "https://www.therobotreport.com/russ-tedrake-to-unveil-stealth-ai-startup-at-robotics-summit/",
@@ -332,7 +346,7 @@
       "name": "Amanpreet Singh",
       "tier": 0,
       "date": "2026-05-01",
-      "days_ago": 0,
+      "days_ago": 1,
       "type": "bio change",
       "text": "LinkedIn headline 'something new | hiring founding…' + 'Stealth, SF Bay Area' — founder-mode (hiring a founding team)",
       "source_url": "https://www.linkedin.com/in/apsdehal",
@@ -346,7 +360,7 @@
       "name": "Luca Weihs",
       "tier": 2,
       "date": "2026-02-25",
-      "days_ago": 0,
+      "days_ago": 1,
       "type": "joined big lab (neg)",
       "text": "Vercept (his computer-use-agents co; founded Nov 2024) acquihired by Anthropic Feb 25 2026; now at Anthropic — NOT foundable now",
       "source_url": "https://www.anthropic.com/news/acquires-vercept",
@@ -360,7 +374,7 @@
       "name": "Jiayi Pan",
       "tier": 1,
       "date": "2026-02-15",
-      "days_ago": 0,
+      "days_ago": 1,
       "type": "departure",
       "text": "Left xAI (Grok-4 RL team; part of the 50+ post-SpaceX-absorption exodus); site now 'I am building language model agents' (company UNCONFIRMED)",
       "source_url": "https://www.jiayipan.com",
@@ -368,24 +382,10 @@
       "delta": 35,
       "hot": false,
       "has_dossier": true
-    },
-    {
-      "slug": "amanpreet-singh",
-      "name": "Amanpreet Singh",
-      "tier": 0,
-      "date": "2026-02-01",
-      "days_ago": 0,
-      "type": "departure",
-      "text": "Left Contextual AI (co-founder & CTO) — all his surfaces flipped to past-tense; Scholar email reverted to nyu.edu",
-      "source_url": "https://apsdehal.in",
-      "source_kind": "own_site",
-      "delta": 32,
-      "hot": false,
-      "has_dossier": true
     }
   ],
   "triage": {
-    "pending": 85,
+    "pending": 86,
     "highlights": [
       {
         "name": "Sumith Kulal",

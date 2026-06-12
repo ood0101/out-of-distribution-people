@@ -460,6 +460,18 @@
       "source_kind": "own_site",
       "confidence": 0.8,
       "note": "T0 trigger: confirm company via @jiayi_pirate"
+    },
+    {
+      "date": "2026-05-01",
+      "observed": "2026-06-12",
+      "slug": "nada-amin",
+      "type": "founding_listed",
+      "direction": 1,
+      "value": "Co-founded Midspiral ('correctness layer for AI-generated software'; LemmaScript/lemmafit/claimcheck) — midspiral.com lists her as Cofounder w/ Fernanda Graciolli (CEO)",
+      "source_url": "https://midspiral.com/",
+      "source_kind": "own_site",
+      "confidence": 0.9,
+      "note": "launch ~recent; ©2026, no disclosed funding"
     }
   ]
 }
