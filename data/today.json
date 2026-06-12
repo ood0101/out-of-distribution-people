@@ -1,11 +1,11 @@
 {
-  "built_at": "2026-06-12T04:11:36+00:00",
+  "built_at": "2026-06-12T04:42:58+00:00",
   "date": "2026-06-12",
   "stats": {
     "t0": 18,
     "t1": 60,
     "in_flight": 8,
-    "pool": 116
+    "pool": 117
   },
   "replies": [],
   "followups": [
@@ -286,6 +286,34 @@
       "has_dossier": true
     },
     {
+      "slug": "dmitrii-galatenko",
+      "name": "Dmitrii Galatenko",
+      "tier": 2,
+      "date": "2026-01-28",
+      "days_ago": 0,
+      "type": "departure",
+      "text": "Left Isara Laboratories UK Ltd board (OpenAI-backed agent-swarm startup $94M/$650M) one day before incorporating OLO DIN",
+      "source_url": "https://www.northdata.com/Galatenko,%20Dmitrii,%20Altrincham/zgd",
+      "source_kind": "news",
+      "delta": 27,
+      "hot": false,
+      "has_dossier": true
+    },
+    {
+      "slug": "dmitrii-galatenko",
+      "name": "Dmitrii Galatenko",
+      "tier": 2,
+      "date": "2026-01-29",
+      "days_ago": 0,
+      "type": "incorporation filing",
+      "text": "Founded OLO DIN UK LTD (Companies House 16999093) — sole PSC 75%+; AI-alignment/reliable-autonomous-systems (olodin.com)",
+      "source_url": "https://find-and-update.company-information.service.gov.uk/company/16999093",
+      "source_kind": "edgar",
+      "delta": 19,
+      "hot": false,
+      "has_dossier": true
+    },
+    {
       "slug": "abhinav-shrivastava",
       "name": "Abhinav Shrivastava",
       "tier": 0,
@@ -354,38 +382,10 @@
       "delta": 42,
       "hot": true,
       "has_dossier": true
-    },
-    {
-      "slug": "luca-weihs",
-      "name": "Luca Weihs",
-      "tier": 2,
-      "date": "2026-02-25",
-      "days_ago": 1,
-      "type": "joined big lab (neg)",
-      "text": "Vercept (his computer-use-agents co; founded Nov 2024) acquihired by Anthropic Feb 25 2026; now at Anthropic — NOT foundable now",
-      "source_url": "https://www.anthropic.com/news/acquires-vercept",
-      "source_kind": "news",
-      "delta": -38,
-      "hot": false,
-      "has_dossier": true
-    },
-    {
-      "slug": "jiayi-pan",
-      "name": "Jiayi Pan",
-      "tier": 1,
-      "date": "2026-02-15",
-      "days_ago": 1,
-      "type": "departure",
-      "text": "Left xAI (Grok-4 RL team; part of the 50+ post-SpaceX-absorption exodus); site now 'I am building language model agents' (company UNCONFIRMED)",
-      "source_url": "https://www.jiayipan.com",
-      "source_kind": "own_site",
-      "delta": 35,
-      "hot": false,
-      "has_dossier": true
     }
   ],
   "triage": {
-    "pending": 86,
+    "pending": 92,
     "highlights": [
       {
         "name": "Sumith Kulal",

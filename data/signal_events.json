@@ -472,6 +472,30 @@
       "source_kind": "own_site",
       "confidence": 0.9,
       "note": "launch ~recent; ©2026, no disclosed funding"
+    },
+    {
+      "date": "2026-01-29",
+      "observed": "2026-06-12",
+      "slug": "dmitrii-galatenko",
+      "type": "incorporation_filing",
+      "direction": 1,
+      "value": "Founded OLO DIN UK LTD (Companies House 16999093) — sole PSC 75%+; AI-alignment/reliable-autonomous-systems (olodin.com)",
+      "source_url": "https://find-and-update.company-information.service.gov.uk/company/16999093",
+      "source_kind": "edgar",
+      "confidence": 0.9,
+      "note": "UK Companies House (primary). Resigned directorship 20 May 2026 but retains 75%+ control"
+    },
+    {
+      "date": "2026-01-28",
+      "observed": "2026-06-12",
+      "slug": "dmitrii-galatenko",
+      "type": "departure",
+      "direction": 1,
+      "value": "Left Isara Laboratories UK Ltd board (OpenAI-backed agent-swarm startup $94M/$650M) one day before incorporating OLO DIN",
+      "source_url": "https://www.northdata.com/Galatenko,%20Dmitrii,%20Altrincham/zgd",
+      "source_kind": "news",
+      "confidence": 0.7,
+      "note": "role at Isara unverified beyond the UK-entity directorship"
     }
   ]
 }

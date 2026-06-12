@@ -1376,6 +1376,35 @@
         "rl",
         "watch"
       ]
+    },
+    {
+      "name": "Gavin Leech",
+      "from_dossier": "dmitrii-galatenko",
+      "discovered_at": "2026-06-12",
+      "priority": "P2",
+      "status": "pending",
+      "context": "OLO DIN co-director; co-founder of Arb Research (AI/ML/policy forecasting consultancy, clients incl. Stripe/Schmidt Futures); AI PhD Bristol; AI-safety/forecasting researcher. Senior credibility on Galatenko's OLO DIN team.",
+      "tags": [
+        "ai-safety",
+        "forecasting",
+        "arb-research",
+        "olo-din"
+      ]
+    },
+    {
+      "name": "Henry Gasztowtt",
+      "from_dossier": "dmitrii-galatenko",
+      "discovered_at": "2026-06-12",
+      "priority": "P2",
+      "status": "pending",
+      "context": "Co-founder of Isara (OpenAI-backed agent-swarm startup, $94M at $650M). Galatenko's co-officer at Isara Laboratories UK Ltd. The Isara node is itself high-value — mine it (other founder: Eddie Zhang).",
+      "tags": [
+        "isara",
+        "openai-backed",
+        "agentic",
+        "founder",
+        "bigger-node"
+      ]
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-06-12T04:11:36+00:00",
+  "last_built": "2026-06-12T04:42:58+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -3379,6 +3379,61 @@
       "channel": null,
       "next_action": null,
       "cluster": null,
+      "email_override": null,
+      "outreach_subject_override": null,
+      "outreach_body_override": null,
+      "channels_attempted": []
+    },
+    "dmitrii-galatenko": {
+      "name": "Dmitrii Galatenko",
+      "tier": 2,
+      "tier_label": "tier-2: tracking",
+      "category": "outreach",
+      "tags": [
+        "founders",
+        "just-founded",
+        "ai-safety",
+        "agentic",
+        "alignment",
+        "cambridge",
+        "imo",
+        "olo-din",
+        "isara-orbit"
+      ],
+      "indian": false,
+      "delta": false,
+      "one_liner": "",
+      "signals": {
+        "tag_stealth_founder": false,
+        "tag_founders": true,
+        "phrase_stealth": false,
+        "phrase_departed": false,
+        "phrase_raising": false,
+        "phrase_founded": true
+      },
+      "last_git_touch": null,
+      "needs_triage": false,
+      "emails": [
+        "hi@olodin.com"
+      ],
+      "email_primary": "hi@olodin.com",
+      "email_primary_kind": "company",
+      "outreach_subject": "Isara &rarr; OLO DIN, and which reliability problem",
+      "outreach_body_preview": "Hi Dmitrii — I invest at inception and noticed you started OLO DIN around \"reliable autonomous systems\" almost the day you stepped out of Isara's orbit, now with Gavin and Misha. That timing is the interesting part to me: agent swarms break on coordination and reliability long before capability, and…",
+      "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hi%40olodin.com&su=Isara%20%26rarr%3B%20OLO%20DIN%2C%20and%20which%20reliability%20problem&body=Hi%20Dmitrii%20%E2%80%94%20I%20invest%20at%20inception%20and%20noticed%20you%20started%20OLO%20DIN%20around%20%22reliable%20autonomous%20systems%22%20almost%20the%20day%20you%20stepped%20out%20of%20Isara%27s%20orbit%2C%20now%20with%20Gavin%20and%20Misha.%20That%20timing%20is%20the%20interesting%20part%20to%20me%3A%20agent%20swarms%20break%20on%20coordination%20and%20reliability%20long%20before%20capability%2C%20and%20it%20sounds%20like%20you%20saw%20that%20up%20close.%20Curious%20where%20your%20wedge%20lands%20%E2%80%94%20alignment/reliability%20of%20agent%0Aswarms%0A%28the%20Isara-shaped%20problem%29%2C%20or%20evals/forecasting%20tooling%20for%20autonomous%20systems%3F%20I%20can%20write%20a%20%24500K%E2%80%93%241M%20first%20check%20and%20move%20fast%2C%20and%20I%27d%20rather%20be%20useful%20early%20than%20pitch%20you.%20What%20are%20you%20building%20%E2%80%94%20and%20is%20this%20the%20full-time%20thing%3F%0A%0A%E2%80%94%20Vansh",
+      "twitter_handle": null,
+      "linkedin_slug": "dmitrii-galatenko-740799211",
+      "github_handle": null,
+      "status": "not-contacted",
+      "last_contacted": null,
+      "next_action_date": null,
+      "response": null,
+      "notes": "T2 — track; T1 trigger = confirmation he's FULL-TIME on OLO DIN + a concrete technical artifact (research post/demo/hire/raise). VERIFIED founding (Companies House 16999093, OLO DIN UK LTD inc 29 Jan 2026, Galatenko sole PSC 75%+; AI-alignment/agent-reliability, olodin.com, pre-product). Owner corrected a prior PASS (initial research saw the Altrincham filing + waved it past — flag-then-ignore). THE THREAD: director of Isara Laboratories UK Ltd (OpenAI-backed agent-swarm, $94M/$650M) until 28 Jan 2026 (day before OLO DIN); co-founders Gavin Leech (Arb Research) + Misha Yagudin (Samotsvety). OPEN Qs: full-time or owner-while-others-operate (resigned directorship 20 May 2026, still mid-degree)? technical wedge? Isara substantive role? CALIBRATION: CF 'grandmaster'/'ICPC first prize' overstated — not credited. Outreach hook: Isara->OLO DIN timing + agent-swarm reliability. Recursive: Gavin Leech, Misha Yagudin, Isara founders (Gasztowtt/Zhang).",
+      "urgency_decay_date": null,
+      "urgency_reason": null,
+      "channel": "linkedin",
+      "next_action": null,
+      "cluster": "ai-safety-agentic",
       "email_override": null,
       "outreach_subject_override": null,
       "outreach_body_override": null,
@@ -7921,7 +7976,7 @@
         "phrase_raising": false,
         "phrase_founded": true
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-06-12T09:42:21+05:30",
       "needs_triage": false,
       "emails": [],
       "email_primary": null,
