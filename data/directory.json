@@ -1,6 +1,6 @@
 {
  "generated": "2026-06-12",
- "count": 251,
+ "count": 253,
  "people": [
   {
    "slug": "abhinav-shrivastava",
@@ -2722,6 +2722,42 @@
    "urgency": false
   },
   {
+   "slug": "dmitrii-galatenko",
+   "name": "Dmitrii Galatenko",
+   "tier": 2,
+   "role": "Founder & controlling owner (sole PSC 75%+) of OLO DIN UK LTD — an AI-alignment / reliable-autonomous-systems venture (olodin.com), incorporated 29 Jan 2026. ~20yo Cambridge (Trinity) maths undergrad, IMO 2022 Silver. Co-directors: Gavin Leech + Misha Yagudin (Arb Research / Samotsvety). German-raised, Russian-origin. NOT Indian.",
+   "spike": "T2 — track (T1 the moment he's confirmed full-time + a technical artifact). OVERTURNS an earlier PASS: a UK Companies House PSC filing (primary source) confirms the inflection I'd said was missing — OLO DIN UK LTD (16999093), inc. 29 Jan 2026, Galatenko sole PSC. (Initial research literally saw the Altrincham filing and waved it past as 'a dormant student-company' — a flag-then-ignore miss the owner caught.) WHAT IT IS: AI-alignment / agent-reliability — olodin.com 'steering the path to increasingly capable and reliable autonomous systems for the benefit of humanity' (NOT the 'online school' he'd mused about). On-thesis, pre-product. THE THREAD: he was a director of ISARA Laboratories UK Ltd — the OpenAI-backed agent-swarm startup ($94M/$650M) — until 28 Jan 2026, the day before incorporating OLO DIN; co-founders are AI-safety forecasters Gavin Leech (Arb Research) + Misha Yagudin (Samotsvety). WHY T2 NOT T1: (1) resigned the OLO DIN directorship 20 May 2026 while keeping 75%+ — full-time? ambiguous (still mid-degree at Cambridge); (2) pre-product/zero traction/no funding; (3) co-founders are forecasters not infra builders. Spike: IMO 2022 Silver (verified) + Cambridge Trinity maths + the Isara proximity. CALIBRATION: CF 'grandmaster' (real max ~2422, below 2600 IGM) + 'ICPC first prize' (unverified) overstated — not credited. Isara substantive role unverified beyond the filing. T2.",
+   "tags": [
+    "founders",
+    "just-founded",
+    "ai-safety",
+    "agentic",
+    "alignment",
+    "cambridge",
+    "imo",
+    "olo-din",
+    "isara-orbit"
+   ],
+   "cluster": "ai-safety-agentic",
+   "signals": [
+    "stealth",
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "2026-06-12",
+   "channel": "linkedin",
+   "twitter": null,
+   "linkedin": "dmitrii-galatenko-740799211",
+   "email": "hi@olodin.com",
+   "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hi%40olodin.com&su=Isara%20%26rarr%3B%20OLO%20DIN%2C%20and%20which%20reliability%20problem&body=Hi%20Dmitrii%20%E2%80%94%20I%20invest%20at%20inception%20and%20noticed%20you%20started%20OLO%20DIN%20around%20%22reliable%20autonomous%20systems%22%20almost%20the%20day%20you%20stepped%20out%20of%20Isara%27s%20orbit%2C%20now%20with%20Gavin%20and%20Misha.%20That%20timing%20is%20the%20interesting%20part%20to%20me%3A%20agent%20swarms%20break%20on%20coordination%20and%20reliability%20long%20before%20capability%2C%20and%20it%20sounds%20like%20you%20saw%20that%20up%20close.%20Curious%20where%20your%20wedge%20lands%20%E2%80%94%20alignment/reliability%20of%20agent%0Aswarms%0A%28the%20Isara-shaped%20problem%29%2C%20or%20evals/forecasting%20tooling%20for%20autonomous%20systems%3F%20I%20can%20write%20a%20%24500K%E2%80%93%241M%20first%20check%20and%20move%20fast%2C%20and%20I%27d%20rather%20be%20useful%20early%20than%20pitch%20you.%20What%20are%20you%20building%20%E2%80%94%20and%20is%20this%20the%20full-time%20thing%3F%0A%0A%E2%80%94%20Vansh",
+   "indian": false,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
+  },
+  {
    "slug": "gavin-leech",
    "name": "Gavin Leech",
    "tier": 2,
@@ -2741,47 +2777,12 @@
    "status": "not-contacted",
    "last_contacted": null,
    "next_action_date": null,
-   "updated": "",
+   "updated": "2026-06-12",
    "channel": "twitter",
    "twitter": "g_leech_",
    "linkedin": null,
    "email": null,
    "gmail_url": null,
-   "indian": false,
-   "delta": false,
-   "needs_triage": false,
-   "urgency": false
-  },
-  {
-   "slug": "dmitrii-galatenko",
-   "name": "Dmitrii Galatenko",
-   "tier": 2,
-   "role": "Founder & controlling owner (sole PSC 75%+) of OLO DIN UK LTD — an AI-alignment / reliable-autonomous-systems venture (olodin.com), incorporated 29 Jan 2026. ~20yo Cambridge (Trinity) maths undergrad, IMO 2022 Silver. Co-directors: Gavin Leech + Misha Yagudin (Arb Research / Samotsvety). German-raised, Russian-origin. NOT Indian.",
-   "spike": "T2 — track (T1 the moment he's confirmed full-time + a technical artifact). OVERTURNS an earlier PASS: a UK Companies House PSC filing (primary source) confirms the inflection I'd said was missing — OLO DIN UK LTD (16999093), inc. 29 Jan 2026, Galatenko sole PSC. (Initial research literally saw the Altrincham filing and waved it past as 'a dormant student-company' — a flag-then-ignore miss the owner caught.) WHAT IT IS: AI-alignment / agent-reliability — olodin.com 'steering the path to increasingly capable and reliable autonomous systems for the benefit of humanity' (NOT the 'online school' he'd mused about). On-thesis, pre-product. THE THREAD: he was a director of ISARA Laboratories UK Ltd — the OpenAI-backed agent-swarm startup ($94M/$650M) — until 28 Jan 2026, the day before incorporating OLO DIN; co-founders are AI-safety forecasters Gavin Leech (Arb Research) + Misha Yagudin (Samotsvety). WHY T2 NOT T1: (1) resigned the OLO DIN directorship 20 May 2026 while keeping 75%+ — full-time? ambiguous (still mid-degree at Cambridge); (2) pre-product/zero traction/no funding; (3) co-founders are forecasters not infra builders. Spike: IMO 2022 Silver (verified) + Cambridge Trinity maths + the Isara proximity. CALIBRATION: CF 'grandmaster' (real max ~2422, below 2600 IGM) + 'ICPC first prize' (unverified) overstated — not credited. Isara substantive role unverified beyond the filing. T2.",
-   "tags": [
-    "founders",
-    "just-founded",
-    "ai-safety",
-    "agentic",
-    "alignment",
-    "cambridge",
-    "imo",
-    "olo-din",
-    "isara-orbit"
-   ],
-   "cluster": "ai-safety-agentic",
-   "signals": [
-    "founder"
-   ],
-   "status": "not-contacted",
-   "last_contacted": null,
-   "next_action_date": null,
-   "updated": "2026-06-12",
-   "channel": "linkedin",
-   "twitter": null,
-   "linkedin": "dmitrii-galatenko-740799211",
-   "email": "hi@olodin.com",
-   "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hi%40olodin.com&su=Isara%20%26rarr%3B%20OLO%20DIN%2C%20and%20which%20reliability%20problem&body=Hi%20Dmitrii%20%E2%80%94%20I%20invest%20at%20inception%20and%20noticed%20you%20started%20OLO%20DIN%20around%20%22reliable%20autonomous%20systems%22%20almost%20the%20day%20you%20stepped%20out%20of%20Isara%27s%20orbit%2C%20now%20with%20Gavin%20and%20Misha.%20That%20timing%20is%20the%20interesting%20part%20to%20me%3A%20agent%20swarms%20break%20on%20coordination%20and%20reliability%20long%20before%20capability%2C%20and%20it%20sounds%20like%20you%20saw%20that%20up%20close.%20Curious%20where%20your%20wedge%20lands%20%E2%80%94%20alignment/reliability%20of%20agent%0Aswarms%0A%28the%20Isara-shaped%20problem%29%2C%20or%20evals/forecasting%20tooling%20for%20autonomous%20systems%3F%20I%20can%20write%20a%20%24500K%E2%80%93%241M%20first%20check%20and%20move%20fast%2C%20and%20I%27d%20rather%20be%20useful%20early%20than%20pitch%20you.%20What%20are%20you%20building%20%E2%80%94%20and%20is%20this%20the%20full-time%20thing%3F%0A%0A%E2%80%94%20Vansh",
    "indian": false,
    "delta": false,
    "needs_triage": false,
@@ -3558,6 +3559,70 @@
    "urgency": false
   },
   {
+   "slug": "nick-malozemov",
+   "name": "Nick (Nikolai) Malozemov",
+   "tier": 3,
+   "role": "Founding Engineer at a stealth startup (almost certainly OLO DIN) — ex-Isara Labs (AI Engineer Nov 2025–Jan 2026). Energetic applied/hackathon multi-agent builder; his GitHub (wanderingspirit03) is the best INTEL LENS into what OLO DIN is building. KCL Business/Marketing (non-technical). Russian. Not Indian.",
+   "spike": "T3 — indexed as a NETWORK/INTEL node, soft-pass as investment. Verified ex-Isara → stealth Founding Member. REAL VALUE = INTEL: his GitHub wanderingspirit03 cracks OLO DIN's hidden wedge — agent-harness-design ('expose primitives, let the agent self-heal'), harness-as-backend, repoeval, researching-agentic-model-training ('verifiable reward loops with tests, math checkers, browser/API state') = agent-harness + verifiable-reward-environment play. WHY SOFT-PASS: by his own About 'building fun stuff with LLMs and calling it «research»… background in business, growth, strategy'; non-technical degree; hackathon-prototype portfolio (real wins e.g. SpriteFlow 1st + $50k). He scare-quotes 'research' himself — don't credit as a researcher. Index for intel+network (Eurasian Startup Hub/Isara orbit). RECURSIVE: Savva Bojko (savka777, 'founding engineer building autonomous agents' — 3rd OLO DIN engineer or own thing 'Tavi'?). T3.",
+   "tags": [
+    "agentic",
+    "multi-agent",
+    "founding-engineer",
+    "olo-din",
+    "isara-orbit",
+    "intel-node"
+   ],
+   "cluster": "ai-safety-agentic",
+   "signals": [
+    "stealth"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "",
+   "channel": "linkedin",
+   "twitter": "acoolcss03",
+   "linkedin": "nick-malozemov-7001332a1",
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
+  },
+  {
+   "slug": "vsevolod-voropaev",
+   "name": "Vsevolod Voropaev",
+   "tier": 3,
+   "role": "Founding Engineer at a stealth startup (almost certainly OLO DIN, Galatenko's AI-alignment venture) — ex-Isara Labs (MTS Dec 2025–Feb 2026). KCL Maths-with-Finance undergrad. Russian. Not Indian.",
+   "spike": "T3 — indexed (OLO DIN cluster); watch for T2. Real ex-Isara → stealth Founding Engineer; topically on-thesis (agent environments + multi-agent orchestration + reliability via 'small verifiable steps, not one confident guess' — his own words, LLMday London). WHY ONLY T3: KCL Maths-Management-Finance undergrad (2024–2027), no elite-research/olympiad pedigree, no public GitHub/artifact under his name, junior engineer on Galatenko's venture not a founder. The interesting thing is the company, not yet him. RE-RATE→T2 if he ships a named artifact / confirmed co-founder. OLO DIN membership inferred ~75-85% (lists only 'Stealth'; ex-Isara + timing + Malozemov's people-graph place him in the cluster). T3.",
+   "tags": [
+    "agentic",
+    "multi-agent",
+    "founding-engineer",
+    "olo-din",
+    "isara-orbit",
+    "early-career"
+   ],
+   "cluster": "ai-safety-agentic",
+   "signals": [
+    "stealth"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "",
+   "channel": "linkedin",
+   "twitter": null,
+   "linkedin": "vsevolodvv",
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
+  },
+  {
    "slug": "misha-yagudin",
    "name": "Mikhail \"Misha\" Yagudin",
    "tier": 3,
@@ -3578,7 +3643,7 @@
    "status": "not-contacted",
    "last_contacted": null,
    "next_action_date": null,
-   "updated": "",
+   "updated": "2026-06-12",
    "channel": "twitter",
    "twitter": "mishayagudin",
    "linkedin": null,

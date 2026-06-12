@@ -1473,6 +1473,21 @@
         "arb-research",
         "forecasting"
       ]
+    },
+    {
+      "name": "Savva Bojko",
+      "from_dossier": "nick-malozemov",
+      "discovered_at": "2026-06-12",
+      "priority": "P3",
+      "status": "pending",
+      "context": "GitHub savka777 / X @savboj. 'Founding engineer building autonomous agents,' prolific multi-agent GitHub; appears in Malozemov's people-graph (OLO DIN/Isara orbit). EITHER a 3rd OLO DIN engineer OR runs his own thing ('Tavi' per LinkedIn) — disambiguate. Russian.",
+      "tags": [
+        "agentic",
+        "multi-agent",
+        "olo-din-orbit",
+        "isara-orbit",
+        "disambiguate"
+      ]
     }
   ]
 }
