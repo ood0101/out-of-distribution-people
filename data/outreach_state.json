@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-06-12T07:25:11+00:00",
+  "last_built": "2026-06-16T07:58:42+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -3411,7 +3411,7 @@
         "phrase_raising": false,
         "phrase_founded": true
       },
-      "last_git_touch": "2026-06-12T10:25:19+05:30",
+      "last_git_touch": "2026-06-12T12:55:46+05:30",
       "needs_triage": false,
       "emails": [
         "hi@olodin.com"
@@ -8429,7 +8429,7 @@
         "phrase_raising": false,
         "phrase_founded": false
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-06-12T12:55:46+05:30",
       "needs_triage": false,
       "emails": [],
       "email_primary": null,
@@ -11934,6 +11934,60 @@
       "outreach_body_override": null,
       "channels_attempted": []
     },
+    "vidhi-jain": {
+      "name": "Vidhi Jain",
+      "tier": 2,
+      "tier_label": "tier-2: tracking",
+      "category": "outreach",
+      "tags": [
+        "researcher",
+        "indian",
+        "robotics-vla",
+        "robot-learning",
+        "rl-post-training",
+        "openai-alum",
+        "on-the-market",
+        "bisk-lab"
+      ],
+      "indian": true,
+      "delta": false,
+      "one_liner": "Just-graduated CMU Robotics PhD (Yonatan Bisk, Aug 2025) and ex-OpenAI AI-for-Science —",
+      "signals": {
+        "tag_stealth_founder": false,
+        "tag_founders": false,
+        "phrase_stealth": true,
+        "phrase_departed": true,
+        "phrase_raising": true,
+        "phrase_founded": false
+      },
+      "last_git_touch": null,
+      "needs_triage": false,
+      "emails": [
+        "vidhij@alumni.cmu.edu"
+      ],
+      "email_primary": "vidhij@alumni.cmu.edu",
+      "email_primary_kind": "academic",
+      "outreach_subject": "Vid2Robot &rarr; verifiable rewards, and whether you build or join",
+      "outreach_body_preview": "Hi Vidhi — I invest at inception and you're a rare combination I keep thinking about: you first-authored Vid2Robot (robot policies straight from human video) and then spent a year at OpenAI making RL-with-verifiable-rewards actually work for chip-design code-gen, reward-hacking and all. That human-i…",
+      "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=vidhij%40alumni.cmu.edu&su=Vid2Robot%20%26rarr%3B%20verifiable%20rewards%2C%20and%20whether%20you%20build%20or%20join&body=Hi%20Vidhi%20%E2%80%94%20I%20invest%20at%20inception%20and%20you%27re%20a%20rare%20combination%20I%20keep%20thinking%20about%3A%20you%20first-authored%20Vid2Robot%20%28robot%20policies%20straight%20from%20human%20video%29%20and%20then%20spent%20a%20year%20at%20OpenAI%20making%20RL-with-verifiable-rewards%20actually%20work%20for%20chip-design%20code-gen%2C%20reward-hacking%20and%20all.%20That%20human-intent-to-action%20thread%20plus%20reward-hacking-resistant%20post-training%20is%2C%20to%20me%2C%20exactly%20the%20wedge%20for%20the%20next%20robot-foundation-model%20company.%20Saw%20you%27re%20looking%20at%20what%27s%20next%20%E2%80%94%20genuinely%20curious%20whether%20you%27re%20leaning%20toward%20joining%20a%20lab%20or%20building%2C%20and%20if%20it%27s%20the%20latter%20I%20can%20write%20%24500K%E2%80%93%241M%20and%20move%20fast.%20Either%20way%20I%27d%20rather%20be%20useful%20while%20you%27re%20deciding%20than%20pitch%20you.%0A%0A%E2%80%94%20Vansh",
+      "twitter_handle": "viddivj",
+      "linkedin_slug": "vidhijain96",
+      "github_handle": "vidhijain",
+      "status": "not-contacted",
+      "last_contacted": null,
+      "next_action_date": null,
+      "response": null,
+      "notes": "",
+      "urgency_decay_date": "2026-08-31",
+      "urgency_reason": "T2 but TIME-SENSITIVE WINDOW: just left OpenAI (~Mar 2026) + finished CMU PhD (Aug 2025), site says 'actively looking for new opportunities in robotics and AI' — the post-lab deciding moment (build vs join) is NOW, the highest-optionality time to build a relationship. NOT founding (no building/stealth signal; job-seeking) so it's relationship-build/founder-curious probe, not a hard pitch. Exceptional Indian robot-learning researcher: 1st author Vid2Robot (RSS'24); OpenAI did RL-post-training w/ verifiable rewards for chip-design code-gen. One hop from the robotics-VLA cluster (co-author Pannag Sanketi in repo). UPGRADE T1/T0 if she registers a company / X-LinkedIn flips to 'building'/'founder' / named on a robotics-startup team / takes an EIR. WATCH her X @viddivj (blocked in research — a building pivot surfaces there first).",
+      "channel": "twitter",
+      "next_action": "Light relationship-touch via X DM @viddivj (or LinkedIn vidhijain96 / vidhij@alumni.cmu.edu) WHILE she's deciding. Lead with Vid2Robot + the verifiable-rewards-chip-design RL combo (proves homework); pose build-vs-join honestly; offer value during the window, $500K-$1M if she builds. Sign Vansh. FIRST: read her X (post-Mar 2026) for any building signal — that would re-rate to T0.",
+      "cluster": "robotics-vla",
+      "email_override": null,
+      "outreach_subject_override": null,
+      "outreach_body_override": null,
+      "channels_attempted": []
+    },
     "vikram-sundar": {
       "name": "Vikram Sundar",
       "tier": 1,
@@ -12112,7 +12166,7 @@
         "phrase_raising": false,
         "phrase_founded": false
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-06-12T12:55:46+05:30",
       "needs_triage": false,
       "emails": [],
       "email_primary": null,

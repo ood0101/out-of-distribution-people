@@ -1,11 +1,11 @@
 {
-  "built_at": "2026-06-12T07:25:11+00:00",
-  "date": "2026-06-12",
+  "built_at": "2026-06-16T07:58:42+00:00",
+  "date": "2026-06-16",
   "stats": {
     "t0": 18,
     "t1": 60,
     "in_flight": 8,
-    "pool": 119
+    "pool": 120
   },
   "replies": [],
   "followups": [
@@ -15,7 +15,7 @@
       "tier": 0,
       "channel": "twitter",
       "last_contacted": "2026-05-26",
-      "overdue_days": 3,
+      "overdue_days": 7,
       "touches": 0,
       "dossier": "people/shivani-poddar.html",
       "link": {
@@ -29,7 +29,7 @@
       "tier": 0,
       "channel": "warm-intro",
       "last_contacted": "2026-05-27",
-      "overdue_days": 2,
+      "overdue_days": 6,
       "touches": 1,
       "dossier": "people/blanca-villanueva.html",
       "link": {
@@ -43,7 +43,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-05-27",
-      "overdue_days": 2,
+      "overdue_days": 6,
       "touches": 0,
       "dossier": "people/dan-kondratyuk.html",
       "link": {
@@ -57,7 +57,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-05-27",
-      "overdue_days": 2,
+      "overdue_days": 6,
       "touches": 0,
       "dossier": "people/joshua-dillon.html",
       "link": {
@@ -71,7 +71,7 @@
       "tier": 0,
       "channel": "email",
       "last_contacted": "2026-05-27",
-      "overdue_days": 2,
+      "overdue_days": 6,
       "touches": 1,
       "dossier": "people/michael-wornow.html",
       "link": {
@@ -85,7 +85,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-05-27",
-      "overdue_days": 2,
+      "overdue_days": 6,
       "touches": 0,
       "dossier": "people/weiying-wang.html",
       "link": {
@@ -99,7 +99,7 @@
       "tier": 1,
       "channel": "twitter",
       "last_contacted": "2026-05-27",
-      "overdue_days": 2,
+      "overdue_days": 6,
       "touches": 1,
       "dossier": "people/ajay-jain.html",
       "link": {
@@ -113,7 +113,7 @@
       "tier": 1,
       "channel": "twitter",
       "last_contacted": "2026-05-27",
-      "overdue_days": 2,
+      "overdue_days": 6,
       "touches": 1,
       "dossier": "people/mayank-mishra.html",
       "link": {
@@ -127,7 +127,7 @@
       "slug": "russ-tedrake",
       "name": "Russ Tedrake",
       "tier": 0,
-      "score": 694,
+      "score": 688,
       "chips": [
         "stealth",
         "departed",
@@ -154,7 +154,7 @@
       "slug": "amanpreet-singh",
       "name": "Amanpreet Singh",
       "tier": 0,
-      "score": 689,
+      "score": 682,
       "chips": [
         "stealth",
         "departed",
@@ -182,7 +182,7 @@
       "slug": "raunaq-bhirangi",
       "name": "Raunaq Bhirangi",
       "tier": 0,
-      "score": 670,
+      "score": 664,
       "chips": [
         "stealth",
         "founder",
@@ -209,10 +209,40 @@
       "dossier": "people/raunaq-bhirangi.html"
     },
     {
+      "slug": "abhinav-shrivastava",
+      "name": "Abhinav Shrivastava",
+      "tier": 0,
+      "score": 661,
+      "chips": [
+        "stealth",
+        "founder",
+        "indian"
+      ],
+      "window": {
+        "text": "pre-name · open",
+        "kind": "open"
+      },
+      "why_now": "T0 (lean) — Co-Founder & CEO of a stealth 'AI-native video infrastructure' co (own site + LinkedIn, verbatim). Likely wedge = video-as-neural-weights INFRA (NeRV→NeRV-Diffusion), not a generator. Scholar h-53 ~20K cites; CMU/Abhinav-Gupta lineage (shared w/…",
+      "do_this": "EMAIL abhinav@cs.umd.edu (or X DM @abhi2610). Lead with video-as-weights (NeRV-Diffusion 'generate weights, decode to video') as an INFRA bet vs Luma/Runway/Pika/Genmo; note the Luma student…",
+      "channel": "email",
+      "draft": {
+        "subject": "Video-as-weights as the infra bet",
+        "body": "Hi Abhinav — I invest at inception and spend my time around the video-model wave (Luma, Runway, Pika, Genmo on the generation side). What made me reach out is that \"AI-native video infrastructure\" from you reads as a different bet than another generator: your NeRV &rarr; NeRV-Diffusion line treats a…"
+      },
+      "link": {
+        "label": "✉ email",
+        "url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=abhinav%40cs.umd.edu"
+      },
+      "twitter": "abhi2610",
+      "linkedin": "abhi2610",
+      "email": "abhinav@cs.umd.edu",
+      "dossier": "people/abhinav-shrivastava.html"
+    },
+    {
       "slug": "pannag-sanketi",
       "name": "Pannag R. Sanketi",
       "tier": 0,
-      "score": 667,
+      "score": 660,
       "chips": [
         "stealth",
         "departed",
@@ -238,36 +268,6 @@
       "linkedin": "pannag-sanketi",
       "email": null,
       "dossier": "people/pannag-sanketi.html"
-    },
-    {
-      "slug": "abhinav-shrivastava",
-      "name": "Abhinav Shrivastava",
-      "tier": 0,
-      "score": 666,
-      "chips": [
-        "stealth",
-        "founder",
-        "indian"
-      ],
-      "window": {
-        "text": "pre-name · open",
-        "kind": "open"
-      },
-      "why_now": "T0 (lean) — Co-Founder & CEO of a stealth 'AI-native video infrastructure' co (own site + LinkedIn, verbatim). Likely wedge = video-as-neural-weights INFRA (NeRV→NeRV-Diffusion), not a generator. Scholar h-53 ~20K cites; CMU/Abhinav-Gupta lineage (shared w/…",
-      "do_this": "EMAIL abhinav@cs.umd.edu (or X DM @abhi2610). Lead with video-as-weights (NeRV-Diffusion 'generate weights, decode to video') as an INFRA bet vs Luma/Runway/Pika/Genmo; note the Luma student…",
-      "channel": "email",
-      "draft": {
-        "subject": "Video-as-weights as the infra bet",
-        "body": "Hi Abhinav — I invest at inception and spend my time around the video-model wave (Luma, Runway, Pika, Genmo on the generation side). What made me reach out is that \"AI-native video infrastructure\" from you reads as a different bet than another generator: your NeRV &rarr; NeRV-Diffusion line treats a…"
-      },
-      "link": {
-        "label": "✉ email",
-        "url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=abhinav%40cs.umd.edu"
-      },
-      "twitter": "abhi2610",
-      "linkedin": "abhi2610",
-      "email": "abhinav@cs.umd.edu",
-      "dossier": "people/abhinav-shrivastava.html"
     }
   ],
   "signals": [
@@ -276,13 +276,27 @@
       "name": "Nada Amin",
       "tier": 1,
       "date": "2026-05-01",
-      "days_ago": 0,
+      "days_ago": 4,
       "type": "founding listed",
       "text": "Co-founded Midspiral ('correctness layer for AI-generated software'; LemmaScript/lemmafit/claimcheck) — midspiral.com lists her as Cofounder w/…",
       "source_url": "https://midspiral.com/",
       "source_kind": "own_site",
-      "delta": 63,
+      "delta": 62,
       "hot": true,
+      "has_dossier": true
+    },
+    {
+      "slug": "vidhi-jain",
+      "name": "Vidhi Jain",
+      "tier": 2,
+      "date": "2026-03-01",
+      "days_ago": 4,
+      "type": "departure",
+      "text": "Left OpenAI (AI-for-Science, ~8mo) ~Mar 2026; finished CMU PhD Aug 2025; 'actively looking for new opportunities in robotics and AI' — on the market…",
+      "source_url": "https://vidhijain.github.io/",
+      "source_kind": "own_site",
+      "delta": 39,
+      "hot": false,
       "has_dossier": true
     },
     {
@@ -290,12 +304,12 @@
       "name": "Dmitrii Galatenko",
       "tier": 2,
       "date": "2026-01-28",
-      "days_ago": 0,
+      "days_ago": 4,
       "type": "departure",
       "text": "Director of ISARA LABORATORIES UK LTD (16847905, co-directed w/ Isara founders Gasztowtt + Zhang) until ~28 Jan 2026 — day before incorporating OLO…",
       "source_url": "https://find-and-update.company-information.service.gov.uk/company/16847905/officers",
       "source_kind": "edgar",
-      "delta": 35,
+      "delta": 34,
       "hot": false,
       "has_dossier": true
     },
@@ -304,7 +318,7 @@
       "name": "Mihir Bafna",
       "tier": 2,
       "date": "2026-05-01",
-      "days_ago": 0,
+      "days_ago": 4,
       "type": "paper award",
       "text": "Co-first author SwitchCraft (ICML 2026) — programmatic state-switching protein design via backprop through Boltz-1; + sole-first DynaProt (ICLR 2026)",
       "source_url": "https://arxiv.org/abs/2605.31236",
@@ -318,12 +332,12 @@
       "name": "Dmitrii Galatenko",
       "tier": 2,
       "date": "2026-01-29",
-      "days_ago": 0,
+      "days_ago": 4,
       "type": "incorporation filing",
       "text": "Founded OLO DIN UK LTD (Companies House 16999093) — sole PSC 75%+; AI-alignment/reliable-autonomous-systems (olodin.com)",
       "source_url": "https://find-and-update.company-information.service.gov.uk/company/16999093",
       "source_kind": "edgar",
-      "delta": 19,
+      "delta": 18,
       "hot": false,
       "has_dossier": true
     },
@@ -332,12 +346,12 @@
       "name": "Abhinav Shrivastava",
       "tier": 0,
       "date": "2026-06-11",
-      "days_ago": 1,
+      "days_ago": 5,
       "type": "founding listed",
       "text": "Own site + LinkedIn: 'Co-Founder & CEO, <stealth startup> — next-gen AI-native video infrastructure' (NeRV→NeRV-Diffusion video-as-weights);…",
       "source_url": "https://abhinavsh.info",
       "source_kind": "own_site",
-      "delta": 76,
+      "delta": 75,
       "hot": true,
       "has_dossier": true
     },
@@ -346,12 +360,12 @@
       "name": "Michael Luo",
       "tier": 0,
       "date": "2026-05-01",
-      "days_ago": 1,
+      "days_ago": 5,
       "type": "founding listed",
       "text": "Site verbatim: 'I am currently building a stealth startup … efficient serving and post-training' — name/funding not public (EDGAR 0 hits)",
       "source_url": "https://michaelzhiluo.github.io",
       "source_kind": "own_site",
-      "delta": 63,
+      "delta": 62,
       "hot": true,
       "has_dossier": true
     },
@@ -360,32 +374,18 @@
       "name": "Russ Tedrake",
       "tier": 0,
       "date": "2026-03-24",
-      "days_ago": 1,
+      "days_ago": 5,
       "type": "founding listed",
       "text": "MIT page: 'Founder of a Stealth Startup in Physical AI'; LEFT TRI (bio past-tense); The Robot Report confirms LBMs-for-industry",
       "source_url": "https://locomotion.csail.mit.edu/russt.html",
       "source_kind": "own_site",
-      "delta": 56,
-      "hot": true,
-      "has_dossier": true
-    },
-    {
-      "slug": "russ-tedrake",
-      "name": "Russ Tedrake",
-      "tier": 0,
-      "date": "2026-03-24",
-      "days_ago": 1,
-      "type": "departure",
-      "text": "Left TRI (10yr SVP Robotics Research & Large Behavior Models) to found the stealth co; kept MIT chair",
-      "source_url": "https://www.therobotreport.com/russ-tedrake-to-unveil-stealth-ai-startup-at-robotics-summit/",
-      "source_kind": "news",
-      "delta": 48,
+      "delta": 55,
       "hot": true,
       "has_dossier": true
     }
   ],
   "triage": {
-    "pending": 97,
+    "pending": 101,
     "highlights": [
       {
         "name": "Sumith Kulal",

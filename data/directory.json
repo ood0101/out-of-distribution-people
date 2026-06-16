@@ -1,6 +1,6 @@
 {
  "generated": "2026-06-12",
- "count": 253,
+ "count": 254,
  "people": [
   {
    "slug": "abhinav-shrivastava",
@@ -2722,6 +2722,42 @@
    "urgency": false
   },
   {
+   "slug": "vidhi-jain",
+   "name": "Vidhi Jain",
+   "tier": 2,
+   "role": "Just-graduated CMU Robotics PhD (Yonatan Bisk, Aug 2025) + ex-OpenAI AI-for-Science — on the market now ('actively looking for new opportunities in robotics and AI'). 1st author Vid2Robot (RSS'24). BITS Pilani → MSR India → Mila (Courville) → CMU → Meta FAIR → GDM Robotics → OpenAI. Indian.",
+   "spike": "T2 — track closely; the post-OpenAI 'actively looking' window (exactly when a founder-curious researcher decides build-vs-join). She's JOB-SEEKING, not founding — zero building/stealth signal (CV self-IDs 'research scientist' seeking a role; GitHub dead in 2026; LinkedIn still on OpenAI). Held below T1 b/c she's most likely about to JOIN a lab (PI/Skild/Figure/TRI/GDM/OpenAI-return) → founding clock resets; output strong-but-not-singular. SPIKE: Vid2Robot (1st author, RSS'24 — robot policies from human video, +20% over BC-Z; GDM w/ Dwibedi, co-author Pannag Sanketi who's in repo), ANAVI (1st, CoRL'24), Transformers-as-Task-Planners (1st, CoRL'22, Meta), foundation-models-for-robots survey (co-lead); contributor Open X-Embodiment (ICRA'24 BEST PAPER), FlexCap, HomeRobot. OpenAI (Jul'25–Mar'26, Boris Power): RL-post-training w/ VERIFIABLE REWARDS for chip-design code-gen + anti-reward-hacking — defensible pivot. BITS Pilani 9.06; MSR India (GAN theory); Mila (Courville, bachelor's thesis); BITS Global 30U30 2025. WORTH A RELATIONSHIP-TOUCH NOW (highest-optionality moment). UPGRADE T1/T0: company/stealth reg / X-LinkedIn 'building'/'founder' flip / named on a robotics-startup team / EIR. GAPS: Scholar numbers + X feed blocked (X is where a building-pivot shows first). One hop from robotics-VLA cluster (Haldar/Raunaq/Kedia). T2.",
+   "tags": [
+    "researcher",
+    "indian",
+    "robotics-vla",
+    "robot-learning",
+    "rl-post-training",
+    "openai-alum",
+    "on-the-market",
+    "bisk-lab"
+   ],
+   "cluster": "robotics-vla",
+   "signals": [
+    "stealth",
+    "departed",
+    "raising"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "",
+   "channel": "twitter",
+   "twitter": "viddivj",
+   "linkedin": "vidhijain96",
+   "email": "vidhij@alumni.cmu.edu",
+   "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=vidhij%40alumni.cmu.edu&su=Vid2Robot%20%26rarr%3B%20verifiable%20rewards%2C%20and%20whether%20you%20build%20or%20join&body=Hi%20Vidhi%20%E2%80%94%20I%20invest%20at%20inception%20and%20you%27re%20a%20rare%20combination%20I%20keep%20thinking%20about%3A%20you%20first-authored%20Vid2Robot%20%28robot%20policies%20straight%20from%20human%20video%29%20and%20then%20spent%20a%20year%20at%20OpenAI%20making%20RL-with-verifiable-rewards%20actually%20work%20for%20chip-design%20code-gen%2C%20reward-hacking%20and%20all.%20That%20human-intent-to-action%20thread%20plus%20reward-hacking-resistant%20post-training%20is%2C%20to%20me%2C%20exactly%20the%20wedge%20for%20the%20next%20robot-foundation-model%20company.%20Saw%20you%27re%20looking%20at%20what%27s%20next%20%E2%80%94%20genuinely%20curious%20whether%20you%27re%20leaning%20toward%20joining%20a%20lab%20or%20building%2C%20and%20if%20it%27s%20the%20latter%20I%20can%20write%20%24500K%E2%80%93%241M%20and%20move%20fast.%20Either%20way%20I%27d%20rather%20be%20useful%20while%20you%27re%20deciding%20than%20pitch%20you.%0A%0A%E2%80%94%20Vansh",
+   "indian": true,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": true
+  },
+  {
    "slug": "dmitrii-galatenko",
    "name": "Dmitrii Galatenko",
    "tier": 2,
@@ -3559,6 +3595,38 @@
    "urgency": false
   },
   {
+   "slug": "misha-yagudin",
+   "name": "Mikhail \"Misha\" Yagudin",
+   "tier": 3,
+   "role": "Co-founder & leader of Samotsvety Forecasting (top-tier superforecasting group); co-founder of Sage; long-standing AI-risk forecaster (EA/AI-safety). Director/operator of OLO DIN (Galatenko's AI-alignment venture). Russian, based in Mexico. Not Indian.",
+   "spike": "T3 — index as a NETWORK NODE (off-core-thesis). Genuinely elite forecaster: Samotsvety holds 1st in INFER/CSET-Foretell 2021 (~2x the 2nd-best team), '1st-4th all-time' INFER; Yagudin personally 3rd all-time. Co-founded Sage (forecasting tools/Quantified Intuitions); long-standing Samotsvety AI-risk forecasts + AGI timelines. BUT off the core thesis: spike is forecasting accuracy, FULL STOP — no technical/ML building (his only ML-paper credit is co-author on Leech's evals critique), no foundable inflection of his own (Samotsvety/Sage/Arb = forecasting collectives/consultancies; OLO DIN = Galatenko's pre-product vehicle he co-operates). NOT a pass only because of the OLO DIN role + elite-forecaster credibility; NO path to T1/T2 absent him building something technical. VALUE = the network: Eli Lifland (Samotsvety, 1st all-time INFER, AI 2027 co-author — worth a direct look), Nuño Sempere. Namesake cleared (skater = Alexei Yagudin). T3.",
+   "tags": [
+    "forecasting",
+    "ai-safety",
+    "network-node",
+    "samotsvety",
+    "sage",
+    "olo-din"
+   ],
+   "cluster": "ai-safety-agentic",
+   "signals": [
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "2026-06-12",
+   "channel": "twitter",
+   "twitter": "mishayagudin",
+   "linkedin": null,
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
+  },
+  {
    "slug": "nick-malozemov",
    "name": "Nick (Nikolai) Malozemov",
    "tier": 3,
@@ -3579,7 +3647,7 @@
    "status": "not-contacted",
    "last_contacted": null,
    "next_action_date": null,
-   "updated": "",
+   "updated": "2026-06-12",
    "channel": "linkedin",
    "twitter": "acoolcss03",
    "linkedin": "nick-malozemov-7001332a1",
@@ -3611,42 +3679,10 @@
    "status": "not-contacted",
    "last_contacted": null,
    "next_action_date": null,
-   "updated": "",
+   "updated": "2026-06-12",
    "channel": "linkedin",
    "twitter": null,
    "linkedin": "vsevolodvv",
-   "email": null,
-   "gmail_url": null,
-   "indian": false,
-   "delta": false,
-   "needs_triage": false,
-   "urgency": false
-  },
-  {
-   "slug": "misha-yagudin",
-   "name": "Mikhail \"Misha\" Yagudin",
-   "tier": 3,
-   "role": "Co-founder & leader of Samotsvety Forecasting (top-tier superforecasting group); co-founder of Sage; long-standing AI-risk forecaster (EA/AI-safety). Director/operator of OLO DIN (Galatenko's AI-alignment venture). Russian, based in Mexico. Not Indian.",
-   "spike": "T3 — index as a NETWORK NODE (off-core-thesis). Genuinely elite forecaster: Samotsvety holds 1st in INFER/CSET-Foretell 2021 (~2x the 2nd-best team), '1st-4th all-time' INFER; Yagudin personally 3rd all-time. Co-founded Sage (forecasting tools/Quantified Intuitions); long-standing Samotsvety AI-risk forecasts + AGI timelines. BUT off the core thesis: spike is forecasting accuracy, FULL STOP — no technical/ML building (his only ML-paper credit is co-author on Leech's evals critique), no foundable inflection of his own (Samotsvety/Sage/Arb = forecasting collectives/consultancies; OLO DIN = Galatenko's pre-product vehicle he co-operates). NOT a pass only because of the OLO DIN role + elite-forecaster credibility; NO path to T1/T2 absent him building something technical. VALUE = the network: Eli Lifland (Samotsvety, 1st all-time INFER, AI 2027 co-author — worth a direct look), Nuño Sempere. Namesake cleared (skater = Alexei Yagudin). T3.",
-   "tags": [
-    "forecasting",
-    "ai-safety",
-    "network-node",
-    "samotsvety",
-    "sage",
-    "olo-din"
-   ],
-   "cluster": "ai-safety-agentic",
-   "signals": [
-    "founder"
-   ],
-   "status": "not-contacted",
-   "last_contacted": null,
-   "next_action_date": null,
-   "updated": "2026-06-12",
-   "channel": "twitter",
-   "twitter": "mishayagudin",
-   "linkedin": null,
    "email": null,
    "gmail_url": null,
    "indian": false,

@@ -508,6 +508,18 @@
       "source_kind": "own_site",
       "confidence": 0.9,
       "note": "spike signal, not inflection — 2nd-yr PhD, no founding"
+    },
+    {
+      "date": "2026-03-01",
+      "observed": "2026-06-12",
+      "slug": "vidhi-jain",
+      "type": "departure",
+      "direction": 1,
+      "value": "Left OpenAI (AI-for-Science, ~8mo) ~Mar 2026; finished CMU PhD Aug 2025; 'actively looking for new opportunities in robotics and AI' — on the market (JOB-SEEKING, not founding)",
+      "source_url": "https://vidhijain.github.io/",
+      "source_kind": "own_site",
+      "confidence": 0.85,
+      "note": "departure from a frontier lab = watch signal, but no founding signal — relationship-build window"
     }
   ]
 }
