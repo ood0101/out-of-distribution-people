@@ -520,6 +520,18 @@
       "source_kind": "own_site",
       "confidence": 0.85,
       "note": "departure from a frontier lab = watch signal, but no founding signal — relationship-build window"
+    },
+    {
+      "date": "2026-04-01",
+      "observed": "2026-06-12",
+      "slug": "shiwali-mohan",
+      "type": "bio_change",
+      "direction": 1,
+      "value": "LinkedIn current position flipped to 'Stealth — Agent Architectures' (left settled senior-PI seat PARC→SRI→TRI-consult) — real post-lab inflection; founding UNCONFIRMED (could be undisclosed employer/advisory)",
+      "source_url": "https://www.linkedin.com/in/shiwalimohan/",
+      "source_kind": "linkedin",
+      "confidence": 0.65,
+      "note": "date approximate; founding not verified — watch signal, not a confirmed company"
     }
   ]
 }

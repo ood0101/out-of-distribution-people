@@ -1,11 +1,11 @@
 {
-  "built_at": "2026-06-16T07:58:42+00:00",
+  "built_at": "2026-06-16T08:57:39+00:00",
   "date": "2026-06-16",
   "stats": {
     "t0": 18,
     "t1": 60,
     "in_flight": 8,
-    "pool": 120
+    "pool": 121
   },
   "replies": [],
   "followups": [
@@ -328,6 +328,20 @@
       "has_dossier": true
     },
     {
+      "slug": "shiwali-mohan",
+      "name": "Shiwali Mohan",
+      "tier": 2,
+      "date": "2026-04-01",
+      "days_ago": 4,
+      "type": "bio change",
+      "text": "LinkedIn current position flipped to 'Stealth — Agent Architectures' (left settled senior-PI seat PARC→SRI→TRI-consult) — real post-lab inflection;…",
+      "source_url": "https://www.linkedin.com/in/shiwalimohan/",
+      "source_kind": "linkedin",
+      "delta": 22,
+      "hot": false,
+      "has_dossier": true
+    },
+    {
       "slug": "dmitrii-galatenko",
       "name": "Dmitrii Galatenko",
       "tier": 2,
@@ -368,24 +382,10 @@
       "delta": 62,
       "hot": true,
       "has_dossier": true
-    },
-    {
-      "slug": "russ-tedrake",
-      "name": "Russ Tedrake",
-      "tier": 0,
-      "date": "2026-03-24",
-      "days_ago": 5,
-      "type": "founding listed",
-      "text": "MIT page: 'Founder of a Stealth Startup in Physical AI'; LEFT TRI (bio past-tense); The Robot Report confirms LBMs-for-industry",
-      "source_url": "https://locomotion.csail.mit.edu/russt.html",
-      "source_kind": "own_site",
-      "delta": 55,
-      "hot": true,
-      "has_dossier": true
     }
   ],
   "triage": {
-    "pending": 101,
+    "pending": 102,
     "highlights": [
       {
         "name": "Sumith Kulal",

@@ -1563,6 +1563,21 @@
         "founder-maker",
         "ut-austin"
       ]
+    },
+    {
+      "name": "John E. Laird",
+      "from_dossier": "shiwali-mohan",
+      "discovered_at": "2026-06-12",
+      "priority": "P3",
+      "status": "pending",
+      "context": "Shiwali Mohan's PhD advisor; creator of the Soar cognitive architecture; runs the Center for Integrated Cognition (CIC). Anchor of the Soar/cognitive-architecture lineage — a network node + a map of recent CIC people (neuro-symbolic agent talent). Senior figure, not a target himself.",
+      "tags": [
+        "soar",
+        "cognitive-architecture",
+        "cic",
+        "network-node",
+        "neuro-symbolic"
+      ]
     }
   ]
 }

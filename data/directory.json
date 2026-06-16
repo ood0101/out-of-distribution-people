@@ -1,6 +1,6 @@
 {
- "generated": "2026-06-12",
- "count": 254,
+ "generated": "2026-06-16",
+ "count": 255,
  "people": [
   {
    "slug": "abhinav-shrivastava",
@@ -2722,6 +2722,40 @@
    "urgency": false
   },
   {
+   "slug": "shiwali-mohan",
+   "name": "Shiwali Mohan",
+   "tier": 2,
+   "role": "Senior neuro-symbolic agent-architectures researcher (15 yrs; PhD under John Laird/Soar) whose LinkedIn now reads 'Stealth — Agent Architectures' — a real post-lab inflection, founding unconfirmed. Arc: Yahoo → Michigan (Laird) → PARC → SRI Future Concepts → Toyota Research (consultant) → Stealth. DARPA PI. Indian.",
+   "spike": "T2 — watch closely; resolve to T1 if a company+raise confirms, T3 if 'Stealth' is an undisclosed employer/advisory. MORE INTERESTING than the 'settled senior PI' baseline: LinkedIn current position = 'Stealth — Agent Architectures' (founder pattern) + 2025 'building radical agents' talk circuit (MSR/Adobe/UCSC). Left her settled senior-research seat (PARC→SRI, then TRI consult). SPIKE: built Rosie (interactive task learning agent on Soar — her signature), HYDRA (open-world model-based agents, auto-detects model drift); DARPA PI ~$10M (SAIL-ON open-world novelty, GAILA grounded-language agents); AAAI 2018 Blue Sky Award w/ Laird; ~50 pubs, ~10 patents. Neuro-symbolic 'Hybrid AI' — symbolic+deep interfaces. PhD Michigan (John Laird/Soar). HONEST CAVEATS keeping it T2 not T1: (1) founding UNCONFIRMED — no company/co-founder/funding/CEO title found; 'Stealth' could be undisclosed employer/advisory; reflective book 'On Minds: Reflections of a Cognitive Architect' (Aug 2026) reads established-scholar not founder-GTM; (2) fights core thesis — 15-yr SENIOR researcher (vs early-career acceleration) + CLASSICAL-AI/Soar tradition (vs frontier-LLM-scaling). Investable thesis if building: 'symbolic world models impose structure → data-efficient, interpretable, amenable to guarantees.' Thematic cluster: reliable/verified agents (OLO DIN, Nada Amin). NEXT ACTION: read full LinkedIn Stealth entry (start date/founder sub-title/headcount) or Clay enrich → resolves T1 vs T3. Recursive: John Laird (Soar/CIC). T2.",
+   "tags": [
+    "researcher",
+    "indian",
+    "neuro-symbolic",
+    "agent-architectures",
+    "stealth",
+    "cognitive-architecture",
+    "soar-lineage",
+    "reliable-agents"
+   ],
+   "cluster": "reliable-agents",
+   "signals": [
+    "stealth"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "",
+   "channel": "linkedin",
+   "twitter": "shiwalimohan",
+   "linkedin": "shiwalimohan",
+   "email": null,
+   "gmail_url": null,
+   "indian": true,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
+  },
+  {
    "slug": "vidhi-jain",
    "name": "Vidhi Jain",
    "tier": 2,
@@ -2746,7 +2780,7 @@
    "status": "not-contacted",
    "last_contacted": null,
    "next_action_date": null,
-   "updated": "",
+   "updated": "2026-06-16",
    "channel": "twitter",
    "twitter": "viddivj",
    "linkedin": "vidhijain96",
