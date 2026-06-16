@@ -1578,6 +1578,21 @@
         "network-node",
         "neuro-symbolic"
       ]
+    },
+    {
+      "name": "Pablo Garrido",
+      "from_dossier": "gaurav-bharaj",
+      "discovered_at": "2026-06-12",
+      "priority": "P2",
+      "status": "pending",
+      "context": "Long-time Gaurav Bharaj collaborator (Flawless/RD-era neural face work; ex-Flawless AI). THE most likely co-founder/early-hire if Gaurav's stealth venture is in synthetic media/authenticity. Watch — if he also leaves to join Gaurav, that's the founding-team signal.",
+      "tags": [
+        "generative-media",
+        "neural-rendering",
+        "flawless",
+        "likely-cofounder",
+        "gaurav-bharaj-orbit"
+      ]
     }
   ]
 }

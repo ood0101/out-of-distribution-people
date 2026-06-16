@@ -1,11 +1,11 @@
 {
-  "built_at": "2026-06-16T08:57:39+00:00",
+  "built_at": "2026-06-16T10:43:02+00:00",
   "date": "2026-06-16",
   "stats": {
-    "t0": 18,
+    "t0": 19,
     "t1": 60,
     "in_flight": 8,
-    "pool": 121
+    "pool": 122
   },
   "replies": [],
   "followups": [
@@ -127,7 +127,7 @@
       "slug": "russ-tedrake",
       "name": "Russ Tedrake",
       "tier": 0,
-      "score": 688,
+      "score": 687,
       "chips": [
         "stealth",
         "departed",
@@ -154,7 +154,7 @@
       "slug": "amanpreet-singh",
       "name": "Amanpreet Singh",
       "tier": 0,
-      "score": 682,
+      "score": 681,
       "chips": [
         "stealth",
         "departed",
@@ -177,6 +177,37 @@
       "linkedin": "apsdehal",
       "email": null,
       "dossier": "people/amanpreet-singh.html"
+    },
+    {
+      "slug": "gaurav-bharaj",
+      "name": "Gaurav Bharaj",
+      "tier": 0,
+      "score": 670,
+      "chips": [
+        "stealth",
+        "departed",
+        "founder",
+        "indian"
+      ],
+      "window": {
+        "text": "pre-name · open",
+        "kind": "open"
+      },
+      "why_now": "T0 — repeat technical generative-media founder, just left + building in stealth (reach out NOW, pre-name). Co-founder & Chief Scientist Reality Defender (YC W22, ~$52M) + CSO Flawless AI + VP Research AI Foundation. INFLECTION VERIFIED multi-source: LinkedIn…",
+      "do_this": "CRACK THE COMPANY first (WHOIS on Perpetual-AI variants, Crunchbase, Form D, his X recent posts) THEN X DM @gauravbharaj / LinkedIn. Subject: 'the new chapter, and provenance upstream of detection.'…",
+      "channel": "twitter",
+      "draft": {
+        "subject": "the new chapter, and provenance upstream of detection",
+        "body": "Hi Gaurav — I invest at inception and saw the \"new chapter\" note. After co-founding Reality Defender and then authoring the AVFF&rarr;Polyjuice red-teaming line, you've probably concluded what I keep landing on: detection is a treadmill, and the durable problem is authenticity/provenance\nupstream\nof…"
+      },
+      "link": {
+        "label": "𝕏 @gauravbharaj",
+        "url": "https://twitter.com/messages/compose?recipient_screen_name=gauravbharaj"
+      },
+      "twitter": "gauravbharaj",
+      "linkedin": "gauravbharaj",
+      "email": null,
+      "dossier": "people/gaurav-bharaj.html"
     },
     {
       "slug": "raunaq-bhirangi",
@@ -212,7 +243,7 @@
       "slug": "abhinav-shrivastava",
       "name": "Abhinav Shrivastava",
       "tier": 0,
-      "score": 661,
+      "score": 660,
       "chips": [
         "stealth",
         "founder",
@@ -237,40 +268,37 @@
       "linkedin": "abhi2610",
       "email": "abhinav@cs.umd.edu",
       "dossier": "people/abhinav-shrivastava.html"
-    },
-    {
-      "slug": "pannag-sanketi",
-      "name": "Pannag R. Sanketi",
-      "tier": 0,
-      "score": 660,
-      "chips": [
-        "stealth",
-        "departed",
-        "founder",
-        "indian"
-      ],
-      "window": {
-        "text": "pre-name · open",
-        "kind": "open"
-      },
-      "why_now": "Senior DeepMind Robotics departure (Senior Staff SWE / TLM) to stealth robotics+AI. FOUNDED Open X-Embodiment / RT-X ('ImageNet for robotics', 21+ labs), RT-2 co-author, led human-level Table Tennis robot. 14,858 cites, h-30. LinkedIn flipped to 'Stealth…",
-      "do_this": "LinkedIn DM pannag-sanketi (or X DM @pannag_) — subj 'The ImageNet-for-robotics bet, now as a company'; lead with the data-substrate edge (21 labs -> RT-X) vs Physical Intelligence/Skild/Generalist,…",
-      "channel": "linkedin",
-      "draft": {
-        "subject": "the part none of the robotics companies started from",
-        "body": "Hi Pannag — SAS-Prompt read to me like the honest next step after RT-X: once you've pooled cross-embodiment data, the self-improvement loop on top of it becomes the real bottleneck. I invest at inception and have spent serious time on the post-DeepMind wave (Physical Intelligence, Skild, Generalist, Figure's Helix) — and the part none of them started from is the thing you actually pulled off: getting 21 competing labs to pool their data is rarer than any single model. I'd love to hear how you're weighing the data flywheel against the dynamic-control gap your table-tennis work exposed — 45% vs. humans is the most honest agility number anyone's published. I can write $500K–$1M, but mostly I'd just like to know what you're building. — Vansh"
-      },
-      "link": {
-        "label": "in/pannag-sanketi",
-        "url": "https://linkedin.com/in/pannag-sanketi/"
-      },
-      "twitter": "pannag_",
-      "linkedin": "pannag-sanketi",
-      "email": null,
-      "dossier": "people/pannag-sanketi.html"
     }
   ],
   "signals": [
+    {
+      "slug": "gaurav-bharaj",
+      "name": "Gaurav Bharaj",
+      "tier": 0,
+      "date": "2026-05-13",
+      "days_ago": 4,
+      "type": "departure",
+      "text": "Left Reality Defender (co-founder & Chief Scientist) — LinkedIn 'a new chapter begins' post; site past-tenses RD, no current employer",
+      "source_url": "https://gauravbharaj.github.io/",
+      "source_kind": "own_site",
+      "delta": 66,
+      "hot": true,
+      "has_dossier": true
+    },
+    {
+      "slug": "gaurav-bharaj",
+      "name": "Gaurav Bharaj",
+      "tier": 0,
+      "date": "2026-09-01",
+      "days_ago": 4,
+      "type": "bio change",
+      "text": "GitHub bio 'Perpetual AI' (SF) + StealthCoSpy tracker 'now building in Stealth Mode' — repeat founder building in stealth; company UNCONFIRMED…",
+      "source_url": "https://github.com/gauravbharaj",
+      "source_kind": "github",
+      "delta": 64,
+      "hot": true,
+      "has_dossier": true
+    },
     {
       "slug": "nada-amin",
       "name": "Nada Amin",
@@ -354,38 +382,10 @@
       "delta": 18,
       "hot": false,
       "has_dossier": true
-    },
-    {
-      "slug": "abhinav-shrivastava",
-      "name": "Abhinav Shrivastava",
-      "tier": 0,
-      "date": "2026-06-11",
-      "days_ago": 5,
-      "type": "founding listed",
-      "text": "Own site + LinkedIn: 'Co-Founder & CEO, <stealth startup> — next-gen AI-native video infrastructure' (NeRV→NeRV-Diffusion video-as-weights);…",
-      "source_url": "https://abhinavsh.info",
-      "source_kind": "own_site",
-      "delta": 75,
-      "hot": true,
-      "has_dossier": true
-    },
-    {
-      "slug": "michael-luo",
-      "name": "Michael Luo",
-      "tier": 0,
-      "date": "2026-05-01",
-      "days_ago": 5,
-      "type": "founding listed",
-      "text": "Site verbatim: 'I am currently building a stealth startup … efficient serving and post-training' — name/funding not public (EDGAR 0 hits)",
-      "source_url": "https://michaelzhiluo.github.io",
-      "source_kind": "own_site",
-      "delta": 62,
-      "hot": true,
-      "has_dossier": true
     }
   ],
   "triage": {
-    "pending": 102,
+    "pending": 103,
     "highlights": [
       {
         "name": "Sumith Kulal",

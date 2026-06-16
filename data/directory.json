@@ -1,7 +1,43 @@
 {
  "generated": "2026-06-16",
- "count": 255,
+ "count": 256,
  "people": [
+  {
+   "slug": "gaurav-bharaj",
+   "name": "Gaurav Bharaj",
+   "tier": 0,
+   "role": "Serial generative-media founder, just left and now building in stealth. Co-founder & Chief Scientist of Reality Defender (deepfake detection, YC W22, ~$52M); also CSO at Flawless AI + VP Research at AI Foundation. GitHub bio 'Perpetual AI', SF, tracked 'building in stealth'. Harvard CS PhD (Pfister); MPI neural-rendering lineage. Punjabi University, India. Indian.",
+   "spike": "T0 — repeat technical founder in stealth, reach out NOW; the company itself (name/topic/raise) is the open crack. INFLECTION VERIFIED (multi-sourced): own LinkedIn 'a new chapter begins' post (May 2025) + site past-tenses Reality Defender w/ NO current employer + StealthCoSpy tracker 'now building in Stealth Mode' (Sep 2025) + GitHub bio 'Perpetual AI' (SF). ~13mo out, building pre-name. SERIAL OPERATOR: co-founder+Chief Scientist Reality Defender (lab-lead on its deepfake corpus), CSO Flawless AI, VP Research AI Foundation, Technicolor R&I — a 0→1 builder. Harvard CS PhD (Hanspeter Pfister) + MPI Informatics (Theobalt/Zollhöfer/Tewari neural-rendering nexus = StyleRig/FML lineage); ~2,142 cites h-16; patent on detecting NN fake images. THESIS ARC: graphics/neural-rendering → deepfake detection & red-teaming (AVFF CVPR'24, Polyjuice NeurIPS'25, FoeGlass ICML'26, senior/last author) → stealth. THE READ (likely vector): after the AVFF→Polyjuice red-teaming line, the durable problem is provenance/authenticity UPSTREAM of detection (verifiable media origin / generative tooling w/ authenticity built in). HONEST CAVEATS: company UNCONFIRMED — 'Perpetual AI' did NOT crack to a domain (perpetual.ai = old 2017 reg, likely unrelated); no Crunchbase entity/co-founder/raise found. Marquee-cited work is middle-author graphics (StyleRig/FML 3rd/4th); lead record is strong-lab-PI not singular. NEXT: crack the company + reach out on the 'new chapter' thread. Recursive: Pablo Garrido (likely co-founder), Vishnu Boddeti/Sepehr Dehdashtian (MSU). T0.",
+   "tags": [
+    "founders",
+    "stealth-founder",
+    "repeat-founder",
+    "indian",
+    "generative-media",
+    "deepfakes",
+    "multimodal",
+    "reality-defender-alum"
+   ],
+   "cluster": "generative-media",
+   "signals": [
+    "stealth",
+    "departed",
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "",
+   "channel": "twitter",
+   "twitter": "gauravbharaj",
+   "linkedin": "gauravbharaj",
+   "email": null,
+   "gmail_url": null,
+   "indian": true,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": true
+  },
   {
    "slug": "abhinav-shrivastava",
    "name": "Abhinav Shrivastava",
@@ -2744,7 +2780,7 @@
    "status": "not-contacted",
    "last_contacted": null,
    "next_action_date": null,
-   "updated": "",
+   "updated": "2026-06-16",
    "channel": "linkedin",
    "twitter": "shiwalimohan",
    "linkedin": "shiwalimohan",
