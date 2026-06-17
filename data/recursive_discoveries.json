@@ -1640,6 +1640,52 @@
         "fluid-interfaces",
         "network-node"
       ]
+    },
+    {
+      "name": "Chi Han",
+      "from_dossier": "ninad-daithankar",
+      "discovered_at": "2026-06-17",
+      "priority": "P0",
+      "status": "pending",
+      "context": "UIUC BLENDER Lab (Heng Ji) PhD, graduating June 2026 and unplaced. Flagship mCLM (3B chemical language model beating GPT-5 on synthesizability, ICLR 2026 Oral); Tsinghua Yao Class. A STRONGER near-term inflection than Ninad himself — credible AI-for-science spin-out, reachable right now. Site: glaciohound.github.io.",
+      "tags": [
+        "blender-lab",
+        "heng-ji",
+        "uiuc",
+        "ai-for-science",
+        "yao-class",
+        "graduating-unplaced"
+      ]
+    },
+    {
+      "name": "Sahil Shah",
+      "from_dossier": "ninad-daithankar",
+      "discovered_at": "2026-06-17",
+      "priority": "P1",
+      "status": "pending",
+      "context": "Incoming UIUC PhD, pure video-understanding fit. ECCV 2024 Oral + CVPR 2025 + AAAI 2026; NVIDIA & Tesla internships. Likely Indian-origin (name-based, unconfirmed). Multi-year track. Site: sahilshah379.github.io.",
+      "tags": [
+        "video-understanding",
+        "uiuc",
+        "indian",
+        "nvidia",
+        "tesla"
+      ]
+    },
+    {
+      "name": "Aditi Tiwari",
+      "from_dossier": "ninad-daithankar",
+      "discovered_at": "2026-06-17",
+      "priority": "P2",
+      "status": "pending",
+      "context": "UIUC BLENDER Lab, confirmed Indian-origin. NeurIPS 2025 Spotlight (360-degree firefighting video understanding); Adobe Research. Network/index node from the same lab.",
+      "tags": [
+        "blender-lab",
+        "uiuc",
+        "indian",
+        "video",
+        "adobe-research"
+      ]
     }
   ]
 }
