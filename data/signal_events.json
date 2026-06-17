@@ -556,6 +556,18 @@
       "source_kind": "github",
       "confidence": 0.8,
       "note": "building-in-stealth confirmed; the specific company is the open crack"
+    },
+    {
+      "date": "2025-11-19",
+      "observed": "2026-06-17",
+      "slug": "andrei-tyrin",
+      "type": "incorporation_filing",
+      "direction": 1,
+      "value": "Co-founder of Onepot AI (autonomous AI-chemist; ML/agentic half) — $13M out of stealth Nov 19 2025 (Fifty Years lead; Zaremba + Jeff Dean angels)",
+      "source_url": "https://onepot.ai",
+      "source_kind": "news",
+      "confidence": 0.95,
+      "note": "just-funded co-founder; allocation still writable per owner rule"
     }
   ]
 }

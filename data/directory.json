@@ -1,7 +1,42 @@
 {
  "generated": "2026-06-17",
- "count": 257,
+ "count": 258,
  "people": [
+  {
+   "slug": "andrei-tyrin",
+   "name": "Andrei Tyrin",
+   "tier": 0,
+   "role": "The technical (ML/agentic) co-founder of Onepot AI (autonomous AI-chemist; $13M, Nov 2025) — the other half of Daniil Boiko. Owns LLM orchestration / agentic coordination / long-horizon synthesis planning; Boiko owns chemistry/lab/robotics. MIT CS; prior Schrödinger → Genesis Therapeutics. Russian (Ananikov-lab lineage). NOT Indian.",
+   "spike": "T0 — active pursuit (just-funded co-founder; $500K-$1M allocation still writable). The genuinely-technical ML co-founder of Onepot (not a figurehead — VERIFIED via Rowan interview: he owns LLM orchestration, agentic coordination, long-horizon multi-step synthesis planning; 'general-layer intelligence + atom-level specialized intelligence'). Pairs with Daniil Boiko (T0) → Onepot is now a 2-founder node. PEDIGREE = the end-to-end 'why synthesis is the bottleneck' arc: MIT BS CS → Schrödinger (generative molecular design) → Genesis Therapeutics (protein-ligand folding) → wet-lab co-founder. 1st author 'Digitization of molecular complexity with ML' (Chemical Science 2025, ~300K-datapoint LTR, w/ Boiko+Ananikov) + 1st author onepot CORE (arXiv 2026, w/ Brandon Wang). Onepot: $13M (Fifty Years lead; Khosla, Speedinvest; angels Zaremba + Jeff Dean), stealth-exit Nov 19 2025. HONESTY: ~29 cites (spike = engineering/agentic-systems + elite credential stack, not citation volume); no formal 'CTO' title (consistently 'co-founder'); 'met Boiko at MSU' is a HYPOTHESIS (verified link = Ananikov Lab, not a shared degree; his path is HS chem → MIT, no MSU). NOT Indian (Russian). RECURSIVE: Onepot cap table (Fifty Years/Khosla/Zaremba/Jeff Dean), Ananikov pipeline, Schrödinger/Genesis alumni; Brandon Wang (T1) already in repo. T0.",
+   "tags": [
+    "founders",
+    "just-funded",
+    "ai-for-science",
+    "autonomous-research-agents",
+    "chemistry-automation",
+    "agentic",
+    "onepot",
+    "mit"
+   ],
+   "cluster": "ai-for-science",
+   "signals": [
+    "stealth",
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "",
+   "channel": "twitter",
+   "twitter": null,
+   "linkedin": "andrei-tyrin",
+   "email": "andrei@onepot.ai",
+   "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=andrei%40onepot.ai&su=the%20synthesis%20bottleneck%2C%20and%20agentic%20planning%20over%20long%20horizons&body=Hi%20Andrei%20%E2%80%94%20I%20invest%20at%20inception%20and%20Onepot%20is%20the%20cleanest%20version%20of%20a%20thesis%20I%20keep%20landing%20on%3A%20after%20Schr%26ouml%3Bdinger%20and%20Genesis%20you%27ve%20seen%20first-hand%20that%20the%20models%20generate%20ideas%20in%20hours%20but%20the%20lab%20takes%20months%20to%20catch%20up%20%E2%80%94%20so%20the%20durable%20wedge%20isn%27t%20another%20generative-design%20model%2C%20it%27s%20the%20agentic-planning%20%2B%20autonomous-synthesis%20layer%20that%20closes%20that%20loop.%20The%20%22general-layer%20intelligence%20%2B%20atom-level%20specialized%20intelligence%22%20framing%2C%20and%20long-horizon%20multi-step%20planning%20toward%20something%20like%20taxol%2C%20is%20exactly%20the%20hard%20part%20you%20own.%20I%20know%20Fifty%20Years%20led%20and%20the%20lead%20is%20spoken%20for%20%E2%80%94%20I%27m%20not%20trying%20to%20lead%2C%20I%20can%20write%20%24500K%E2%80%93%241M%20as%20a%20strategic%20check%20and%20move%20fast%2C%20and%20I%27d%20rather%20be%20genuinely%20useful%20on%20the%20agent%20side%20than%20pitch%20you.%20How%20are%20you%20thinking%20about%20planning%20reliability%20as%20the%20synthesis%20horizon%20gets%20longer%3F%0A%0A%E2%80%94%20Vansh",
+   "indian": false,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": true
+  },
   {
    "slug": "daniil-boiko",
    "name": "Daniil Boiko",

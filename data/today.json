@@ -1,11 +1,11 @@
 {
-  "built_at": "2026-06-17T08:34:05+00:00",
+  "built_at": "2026-06-17T08:47:58+00:00",
   "date": "2026-06-17",
   "stats": {
-    "t0": 20,
+    "t0": 21,
     "t1": 60,
     "in_flight": 8,
-    "pool": 123
+    "pool": 124
   },
   "replies": [],
   "followups": [
@@ -272,6 +272,20 @@
   ],
   "signals": [
     {
+      "slug": "andrei-tyrin",
+      "name": "Andrei Tyrin",
+      "tier": 0,
+      "date": "2025-11-19",
+      "days_ago": 0,
+      "type": "incorporation filing",
+      "text": "Co-founder of Onepot AI (autonomous AI-chemist; ML/agentic half) — $13M out of stealth Nov 19 2025 (Fifty Years lead; Zaremba + Jeff Dean angels)",
+      "source_url": "https://onepot.ai",
+      "source_kind": "news",
+      "delta": 8,
+      "hot": false,
+      "has_dossier": true
+    },
+    {
       "slug": "gaurav-bharaj",
       "name": "Gaurav Bharaj",
       "tier": 0,
@@ -366,20 +380,6 @@
       "source_url": "https://www.linkedin.com/in/shiwalimohan/",
       "source_kind": "linkedin",
       "delta": 21,
-      "hot": false,
-      "has_dossier": true
-    },
-    {
-      "slug": "dmitrii-galatenko",
-      "name": "Dmitrii Galatenko",
-      "tier": 2,
-      "date": "2026-01-29",
-      "days_ago": 5,
-      "type": "incorporation filing",
-      "text": "Founded OLO DIN UK LTD (Companies House 16999093) — sole PSC 75%+; AI-alignment/reliable-autonomous-systems (olodin.com)",
-      "source_url": "https://find-and-update.company-information.service.gov.uk/company/16999093",
-      "source_kind": "edgar",
-      "delta": 18,
       "hot": false,
       "has_dossier": true
     }

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-06-17T08:34:05+00:00",
+  "last_built": "2026-06-17T08:47:58+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -1253,6 +1253,60 @@
       "channel": null,
       "next_action": null,
       "cluster": null,
+      "email_override": null,
+      "outreach_subject_override": null,
+      "outreach_body_override": null,
+      "channels_attempted": []
+    },
+    "andrei-tyrin": {
+      "name": "Andrei Tyrin",
+      "tier": 0,
+      "tier_label": "tier-0: active pursuit",
+      "category": "outreach",
+      "tags": [
+        "founders",
+        "just-funded",
+        "ai-for-science",
+        "autonomous-research-agents",
+        "chemistry-automation",
+        "agentic",
+        "onepot",
+        "mit"
+      ],
+      "indian": false,
+      "delta": false,
+      "one_liner": "The technical (ML/agentic) co-founder of",
+      "signals": {
+        "tag_stealth_founder": false,
+        "tag_founders": true,
+        "phrase_stealth": true,
+        "phrase_departed": false,
+        "phrase_raising": false,
+        "phrase_founded": false
+      },
+      "last_git_touch": null,
+      "needs_triage": false,
+      "emails": [
+        "andrei@onepot.ai"
+      ],
+      "email_primary": "andrei@onepot.ai",
+      "email_primary_kind": "company",
+      "outreach_subject": "the synthesis bottleneck, and agentic planning over long horizons",
+      "outreach_body_preview": "Hi Andrei — I invest at inception and Onepot is the cleanest version of a thesis I keep landing on: after Schr&ouml;dinger and Genesis you've seen first-hand that the models generate ideas in hours but the lab takes months to catch up — so the durable wedge isn't another generative-design model, it'…",
+      "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=andrei%40onepot.ai&su=the%20synthesis%20bottleneck%2C%20and%20agentic%20planning%20over%20long%20horizons&body=Hi%20Andrei%20%E2%80%94%20I%20invest%20at%20inception%20and%20Onepot%20is%20the%20cleanest%20version%20of%20a%20thesis%20I%20keep%20landing%20on%3A%20after%20Schr%26ouml%3Bdinger%20and%20Genesis%20you%27ve%20seen%20first-hand%20that%20the%20models%20generate%20ideas%20in%20hours%20but%20the%20lab%20takes%20months%20to%20catch%20up%20%E2%80%94%20so%20the%20durable%20wedge%20isn%27t%20another%20generative-design%20model%2C%20it%27s%20the%20agentic-planning%20%2B%20autonomous-synthesis%20layer%20that%20closes%20that%20loop.%20The%20%22general-layer%20intelligence%20%2B%20atom-level%20specialized%20intelligence%22%20framing%2C%20and%20long-horizon%20multi-step%20planning%20toward%20something%20like%20taxol%2C%20is%20exactly%20the%20hard%20part%20you%20own.%20I%20know%20Fifty%20Years%20led%20and%20the%20lead%20is%20spoken%20for%20%E2%80%94%20I%27m%20not%20trying%20to%20lead%2C%20I%20can%20write%20%24500K%E2%80%93%241M%20as%20a%20strategic%20check%20and%20move%20fast%2C%20and%20I%27d%20rather%20be%20genuinely%20useful%20on%20the%20agent%20side%20than%20pitch%20you.%20How%20are%20you%20thinking%20about%20planning%20reliability%20as%20the%20synthesis%20horizon%20gets%20longer%3F%0A%0A%E2%80%94%20Vansh",
+      "twitter_handle": null,
+      "linkedin_slug": "andrei-tyrin",
+      "github_handle": "andreytyrin",
+      "status": "not-contacted",
+      "last_contacted": null,
+      "next_action_date": null,
+      "response": null,
+      "notes": "",
+      "urgency_decay_date": "2026-08-31",
+      "urgency_reason": "T0 — active pursuit (just-funded co-founder; $500K-$1M inception/strategic allocation still writable into Onepot's just-closed $13M, even though Fifty Years led). The genuinely-technical ML/agentic co-founder of Onepot AI (owns LLM orchestration + agentic coordination + long-horizon synthesis planning — VERIFIED Rowan interview); the other half of Daniil Boiko (T0) → 2-founder node. MIT CS → Schrödinger → Genesis Therapeutics → wet-lab co-founder; 1st author 'Digitization of molecular complexity w/ ML' (Chem Sci 2025) + onepot CORE. Russian (Ananikov lineage), NOT Indian. Reach out alongside Boiko + mine the cap table (Fifty Years/Khosla/Zaremba/Jeff Dean). HONESTY: ~29 cites (spike = engineering+credentials not citations); no formal CTO title; 'met Boiko at MSU' = hypothesis (verified = Ananikov Lab).",
+      "channel": "twitter",
+      "next_action": "Reach out NOW (X / andrei@onepot.ai / LinkedIn) for the allocation, alongside Daniil Boiko. Lead with his Schrödinger→Genesis→wet-lab arc + the exact layer he owns (agentic long-horizon synthesis planning) + his 'ideas in hours, lab in months' line; be upfront not leading (Fifty Years has it), $500K-$1M strategic; ask a real question on planning reliability as the synthesis horizon lengthens. Sign Vansh. Mine the cap table + Ananikov pipeline + Schrödinger/Genesis alumni.",
+      "cluster": "ai-for-science",
       "email_override": null,
       "outreach_subject_override": null,
       "outreach_body_override": null,
@@ -3103,7 +3157,7 @@
         "phrase_raising": false,
         "phrase_founded": false
       },
-      "last_git_touch": "2026-06-17T12:57:52+05:30",
+      "last_git_touch": "2026-06-17T14:04:25+05:30",
       "needs_triage": false,
       "emails": [],
       "email_primary": null,
