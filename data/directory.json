@@ -1,41 +1,7 @@
 {
  "generated": "2026-06-17",
- "count": 261,
+ "count": 264,
  "people": [
-  {
-   "slug": "maruan-al-shedivat",
-   "name": "Maruan Al-Shedivat",
-   "tier": 0,
-   "role": "CMU/Eric Xing ML PhD, ex-OpenAI + ex-Google Research, who led ML research at Genesis Molecular AI (the Pearl all-atom structure model) and just left to build in stealth (NYC). AI × Science. Raised in Moscow; MSU physics → KAUST → CMU. NOT Indian.",
-   "spike": "T0 — active pursuit. JUST departed Genesis at peak visibility (still senior author on its late-2025 papers, Scholar email still @genesis.ml) and his own site (updated Jun 12 2026) now headers 'Building @ Stealth' in NYC: 'building autonomous systems capable of solving problems at the intersection of AI × Science.' Scholar affiliation reads 'Stealth'; the Genesis team page that listed him now 404s. No raise, no named entity = the $500K-$1M inception window is genuinely open — reach out now. SPIKE (genuine lead-researcher arc): 1st author ICLR 2018 'Continuous Adaptation via Meta-Learning in Nonstationary and Competitive Environments' — positioned AHEAD of Sutskever, Mordatch, Abbeel (DBLP Al-ShedivatBBSM18; arXiv 1710.03641; from his 2017 OpenAI internship) + 1st author FedPA (ICLR'21) + Contextual Explanation Networks (JMLR'20) + last/senior author on Genesis's 'Triangle Multiplication Is All You Need' (arXiv 2510.18870). CMU PhD under Eric Xing; Google PhD Fellowship; ~3,843 cites, h-index 21. HONESTY: (1) founder-vs-early-joiner UNCONFIRMED — no named entity/co-founder/raise/incorporation; 'founding' is a high-confidence inference from the active 'Building' verb (#1 outreach question). (2) 'led the team behind Pearl' is self-described (senior contributor + arXiv submitter, not documented sole lead; his clean verified PI slot is last-author on Triangle Multiplication). (3) 'Pearl beats AlphaFold 3' is a Genesis first-party non-peer-reviewed claim — attribute, don't assert. (4) 'Celly repeat-founder' = misattribution (different person), don't use it. NOT Indian. RECURSIVE: ex-Genesis departure cluster (Daniel Zeng also left, T3 watch; Sergey Edunov ex-FAIR now Genesis CTO; Evan Feinberg CEO), Eric Xing/CMU lineage, OpenAI-2017 co-author cluster (Sutskever/SSI, Mordatch, Abbeel). T0.",
-   "tags": [
-    "stealth",
-    "just-departed",
-    "ai-for-science",
-    "autonomous-science",
-    "meta-learning",
-    "cmu",
-    "ex-openai"
-   ],
-   "cluster": "ai-for-science",
-   "signals": [
-    "stealth",
-    "departed"
-   ],
-   "status": "not-contacted",
-   "last_contacted": null,
-   "next_action_date": null,
-   "updated": "",
-   "channel": "x",
-   "twitter": null,
-   "linkedin": "alshedivat",
-   "email": null,
-   "gmail_url": null,
-   "indian": false,
-   "delta": false,
-   "needs_triage": false,
-   "urgency": true
-  },
   {
    "slug": "andrei-tyrin",
    "name": "Andrei Tyrin",
@@ -72,6 +38,42 @@
    "urgency": true
   },
   {
+   "slug": "corrado-pezzato",
+   "name": "Corrado Pezzato",
+   "tier": 0,
+   "role": "Co-Founder & Head of Robotics, The Blanket (stealth active-inference robotics spinout of VERSES — 'Robots that think before they act'). TU Delft Cognitive Robotics PhD; first-author T-RO/RA-L on active inference + sampling-MPC for manipulation. Italian.",
+   "spike": "T0 — active pursuit (VERIFIED co-founder, pre-funding, inception window). Co-Founder & Head of Robotics of The Blanket (theblanket.ai) — VERIFIED via his own LinkedIn headline + Scholar affiliation flip VERSES→The Blanket. The technical robotics core: first-author applied-active-inference manipulation line that IS the product (auto·motion) — RA-L'20 'novel adaptive controller via active inference' (~135c, most-cited), IEEE T-RO'23 'Active Inference + Behavior Trees' (~72c, flagship journal), RA-L'25 sampling-based MPC on parallel physics sims (~66c, fast-rising). TU Delft Cognitive Robotics PhD (def. Jan'24; Wisse + Hernández Corbato). Left VERSES to build the productized version of his own thesis. Scholar h-10, 653c. Survey (2112.01871) = 3rd-of-11, not lead (calibrated). Differentiated bet: model-based, data-efficient, uncertainty-aware reasoning layer vs the data-hungry VLA wave (Physical Intelligence, Skild). OPEN: the CEO/rest of cap table (strongest lead = Riddhi Pitliya); 'Fiamma Robotics' (Jan'26–) = Blanket entity or his consulting shell, unresolved. Italian (NOT Indian). T0.",
+   "tags": [
+    "founders",
+    "stealth-founder",
+    "robotics",
+    "active-inference",
+    "the-blanket",
+    "manipulation",
+    "tu-delft",
+    "ex-verses",
+    "free-energy"
+   ],
+   "cluster": null,
+   "signals": [
+    "stealth",
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "2026-06-17",
+   "channel": null,
+   "twitter": "corradopezz",
+   "linkedin": "corrado-pezzato",
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
+  },
+  {
    "slug": "daniil-boiko",
    "name": "Daniil Boiko",
    "tier": 0,
@@ -100,6 +102,76 @@
    "delta": false,
    "needs_triage": false,
    "urgency": true
+  },
+  {
+   "slug": "maruan-al-shedivat",
+   "name": "Maruan Al-Shedivat",
+   "tier": 0,
+   "role": "CMU/Eric Xing ML PhD, ex-OpenAI + ex-Google Research, who led ML research at Genesis Molecular AI (the Pearl all-atom structure model) and just left to build in stealth (NYC). AI × Science. Raised in Moscow; MSU physics → KAUST → CMU. NOT Indian.",
+   "spike": "T0 — active pursuit. JUST departed Genesis at peak visibility (still senior author on its late-2025 papers, Scholar email still @genesis.ml) and his own site (updated Jun 12 2026) now headers 'Building @ Stealth' in NYC: 'building autonomous systems capable of solving problems at the intersection of AI × Science.' Scholar affiliation reads 'Stealth'; the Genesis team page that listed him now 404s. No raise, no named entity = the $500K-$1M inception window is genuinely open — reach out now. SPIKE (genuine lead-researcher arc): 1st author ICLR 2018 'Continuous Adaptation via Meta-Learning in Nonstationary and Competitive Environments' — positioned AHEAD of Sutskever, Mordatch, Abbeel (DBLP Al-ShedivatBBSM18; arXiv 1710.03641; from his 2017 OpenAI internship) + 1st author FedPA (ICLR'21) + Contextual Explanation Networks (JMLR'20) + last/senior author on Genesis's 'Triangle Multiplication Is All You Need' (arXiv 2510.18870). CMU PhD under Eric Xing; Google PhD Fellowship; ~3,843 cites, h-index 21. HONESTY: (1) founder-vs-early-joiner UNCONFIRMED — no named entity/co-founder/raise/incorporation; 'founding' is a high-confidence inference from the active 'Building' verb (#1 outreach question). (2) 'led the team behind Pearl' is self-described (senior contributor + arXiv submitter, not documented sole lead; his clean verified PI slot is last-author on Triangle Multiplication). (3) 'Pearl beats AlphaFold 3' is a Genesis first-party non-peer-reviewed claim — attribute, don't assert. (4) 'Celly repeat-founder' = misattribution (different person), don't use it. NOT Indian. RECURSIVE: ex-Genesis departure cluster (Daniel Zeng also left, T3 watch; Sergey Edunov ex-FAIR now Genesis CTO; Evan Feinberg CEO), Eric Xing/CMU lineage, OpenAI-2017 co-author cluster (Sutskever/SSI, Mordatch, Abbeel). T0.",
+   "tags": [
+    "stealth",
+    "just-departed",
+    "ai-for-science",
+    "autonomous-science",
+    "meta-learning",
+    "cmu",
+    "ex-openai"
+   ],
+   "cluster": "ai-for-science",
+   "signals": [
+    "stealth",
+    "departed"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "2026-06-17",
+   "channel": "x",
+   "twitter": null,
+   "linkedin": "alshedivat",
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": true
+  },
+  {
+   "slug": "tim-verbelen",
+   "name": "Tim Verbelen",
+   "tier": 0,
+   "role": "Senior research anchor of The Blanket (stealth active-inference robotics, VERSES spinout); reported Co-Founder & CTO (OpenReview lists 'Principal Researcher' — title unconfirmed). Founder of IWAI; h-35. Ghent/imec → VERSES → The Blanket.",
+   "spike": "T0 — the technical/research center of gravity of a VERIFIED stealth founding. VERIFIED: Scholar affiliation = The Blanket (email-verified @theblanket.ai); FOUNDER of IWAI (International Workshop on Active Inference, per VERSES' own blog); senior/last author on both founding-team papers (arXiv 2507.17338 mobile manipulation + 2508.00401 ToM); h-35, ~4888c, i10-68. TITLE HEDGED HONESTLY: research reports his LinkedIn says 'Co-Founder, CTO, Jun'26–' but his own OpenReview lists 'Principal Researcher, The Blanket' — co-founder status REPORTED, not independently re-verifiable (LinkedIn gated). T0 on centrality regardless; confirm title in first call. Ghent/imec IDLab 2013–23 (Distributed-ML survey ACM CSUR'20 ~1406c; Cloudlets ~516c — real distributed-systems/edge depth) → VERSES Director, Intelligent Systems Lab → The Blanket. NOT the pymdp maintainer (Conor Heins) — don't over-credit tooling. Belgian (NOT Indian). DILIGENCE: whole team ex-VERSES — confirm clean departure + no VERSES IP/equity claim. T0.",
+   "tags": [
+    "founders",
+    "stealth-founder",
+    "active-inference",
+    "robotics",
+    "the-blanket",
+    "free-energy",
+    "iwai",
+    "ex-verses",
+    "ghent"
+   ],
+   "cluster": null,
+   "signals": [
+    "stealth",
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "2026-06-17",
+   "channel": null,
+   "twitter": null,
+   "linkedin": "timverbelen",
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
   },
   {
    "slug": "gaurav-bharaj",
@@ -2891,6 +2963,39 @@
    "urgency": false
   },
   {
+   "slug": "riddhi-jain-pitliya",
+   "name": "Riddhi Jain Pitliya",
+   "tier": 2,
+   "role": "Oxford active-inference researcher (DPhil Experimental Psychology '24, Friston-co-supervised) who moved VERSES → The Blanket (2026). 1st author 'Theory of Mind Using Active Inference' (IWAI'25). IWAI chair/editor. Indian-origin (Indore).",
+   "spike": "T2 — track (early member of a T0 company; her OWN founder status UNVERIFIED). At The Blanket (theblanket.ai — the Pezzato/Verbelen active-inference robotics co), 2026–present; on the founding papers (1st author ToM 2508.00401; co-author manipulation 2507.17338). Oxford DPhil (St Anne's; supervisors Robin Murphy + Karl FRISTON + Nick Yeung); Friston also her VERSES employer + co-author + the 'Does AI Have Agency?' podcast — a genuine tie. WHY NOT T0: (1) founder status UNVERIFIED — the 'Co-Founder & CEO' reading traced to an ADJACENT LinkedIn comment-card, NOT her profile; her OpenReview + cached LinkedIn say 'Researcher'; X bio stale ('PhD student, funded by VERSES'). (2) Independent research footprint early-career — solo active-inference papers each <10c; headline 444c/h-9 inflated by 2018 edu-psych (114c) + a multi-author VERSES manifesto (86c). Real edge = community standing (IWAI'24 Local Chair, IWAI'25 proceedings co-editor). UPGRADE TRIGGER: she is the strongest lead for The Blanket's unidentified CEO — if a primary source confirms co-founder/CEO, re-tier T0 immediately (Indian-origin Oxford/Friston CEO of an active-inference robotics co = marquee). Undergrad/master's unresolved (likely Hong Kong; King/HKU co-authorships). Indian. T2.",
+   "tags": [
+    "researchers",
+    "indian",
+    "active-inference",
+    "the-blanket",
+    "free-energy",
+    "oxford",
+    "theory-of-mind",
+    "friston",
+    "ex-verses"
+   ],
+   "cluster": null,
+   "signals": [],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "2026-06-17",
+   "channel": null,
+   "twitter": "riddhijp",
+   "linkedin": "riddhi-jain-pitliya-98092b1b9",
+   "email": null,
+   "gmail_url": null,
+   "indian": true,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
+  },
+  {
    "slug": "shiwali-mohan",
    "name": "Shiwali Mohan",
    "tier": 2,
@@ -3798,6 +3903,36 @@
    "urgency": false
   },
   {
+   "slug": "daniel-zeng",
+   "name": "Daniel Zeng",
+   "tier": 3,
+   "role": "Genesis Molecular AI",
+   "spike": "",
+   "tags": [
+    "watch",
+    "just-departed",
+    "delta"
+   ],
+   "cluster": "ai-for-science",
+   "signals": [
+    "stealth",
+    "departed"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "2026-06-17",
+   "channel": null,
+   "twitter": null,
+   "linkedin": null,
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
+   "delta": true,
+   "needs_triage": false,
+   "urgency": false
+  },
+  {
    "slug": "georgia-channing",
    "name": "Georgia Channing",
    "tier": 3,
@@ -3922,36 +4057,6 @@
    "gmail_url": null,
    "indian": false,
    "delta": false,
-   "needs_triage": false,
-   "urgency": false
-  },
-  {
-   "slug": "daniel-zeng",
-   "name": "Daniel Zeng",
-   "tier": 3,
-   "role": "Genesis Molecular AI",
-   "spike": "",
-   "tags": [
-    "watch",
-    "just-departed",
-    "delta"
-   ],
-   "cluster": "ai-for-science",
-   "signals": [
-    "stealth",
-    "departed"
-   ],
-   "status": "not-contacted",
-   "last_contacted": null,
-   "next_action_date": null,
-   "updated": "2026-03-26",
-   "channel": null,
-   "twitter": null,
-   "linkedin": null,
-   "email": null,
-   "gmail_url": null,
-   "indian": false,
-   "delta": true,
    "needs_triage": false,
    "urgency": false
   },

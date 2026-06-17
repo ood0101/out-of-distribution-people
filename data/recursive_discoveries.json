@@ -1686,6 +1686,91 @@
         "video",
         "adobe-research"
       ]
+    },
+    {
+      "name": "Toon Van de Maele",
+      "from_dossier": "corrado-pezzato",
+      "discovered_at": "2026-06-17",
+      "priority": "P0",
+      "status": "pending",
+      "context": "Reported Co-Founder & Head of AI of The Blanket (theblanket.ai, stealth active-inference robotics, VERSES spinout). Ghent; active inference + world models. On both founding papers (2507.17338, 2508.00401). Completes the founding-team map.",
+      "tags": [
+        "the-blanket",
+        "active-inference",
+        "ghent",
+        "world-models",
+        "ex-verses",
+        "co-founder"
+      ]
+    },
+    {
+      "name": "Ozan Catal",
+      "from_dossier": "corrado-pezzato",
+      "discovered_at": "2026-06-17",
+      "priority": "P1",
+      "status": "pending",
+      "context": "Likely co-founder of The Blanket; ex-VERSES (Ghent). On both founding papers. Confirm exact title + clean VERSES departure. Part of the active-inference robotics founding group.",
+      "tags": [
+        "the-blanket",
+        "active-inference",
+        "ghent",
+        "ex-verses"
+      ]
+    },
+    {
+      "name": "Pablo Lanillos",
+      "from_dossier": "corrado-pezzato",
+      "discovered_at": "2026-06-17",
+      "priority": "P1",
+      "status": "pending",
+      "context": "Lead author of the field-defining survey 'Active Inference in Robotics and Artificial Agents' (arXiv 2112.01871). Central node of the active-inference-in-robotics network; possible lab-founder watch.",
+      "tags": [
+        "active-inference",
+        "robotics",
+        "network-hub",
+        "survey-lead"
+      ]
+    },
+    {
+      "name": "Mohamed Baioumy",
+      "from_dossier": "corrado-pezzato",
+      "discovered_at": "2026-06-17",
+      "priority": "P2",
+      "status": "pending",
+      "context": "Oxford (Nick Hawes lab); active inference + fault-tolerant robot control; frequent Pezzato co-author. Check if building/founding.",
+      "tags": [
+        "active-inference",
+        "oxford",
+        "robotics"
+      ]
+    },
+    {
+      "name": "Mahault Albarracin",
+      "from_dossier": "riddhi-jain-pitliya",
+      "discovered_at": "2026-06-17",
+      "priority": "P2",
+      "status": "pending",
+      "context": "UQAM / VERSES; Riddhi Pitliya's most frequent senior co-author (beliefs, resilience, emotion). Central node in the Friston/VERSES network. Network hub, not a confirmed departure.",
+      "tags": [
+        "active-inference",
+        "verses",
+        "friston-network",
+        "network-node"
+      ]
+    },
+    {
+      "name": "Conor Heins",
+      "from_dossier": "tim-verbelen",
+      "discovered_at": "2026-06-17",
+      "priority": "P2",
+      "status": "pending",
+      "context": "Lead maintainer of pymdp (the main active-inference Python library); central infrastructure node in the active-inference community. Ex-VERSES / Friston orbit.",
+      "tags": [
+        "active-inference",
+        "pymdp",
+        "tooling",
+        "infrastructure"
+      ]
     }
   ]
 }
