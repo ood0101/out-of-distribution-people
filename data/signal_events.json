@@ -568,6 +568,42 @@
       "source_kind": "news",
       "confidence": 0.95,
       "note": "just-funded co-founder; allocation still writable per owner rule"
+    },
+    {
+      "date": "2026-06-12",
+      "observed": "2026-06-17",
+      "slug": "maruan-al-shedivat",
+      "type": "departure",
+      "direction": 1,
+      "value": "Left Genesis Molecular AI (Head of ML Research, Pearl all-atom structure team) — Genesis now past-tense on his site; team page 404s",
+      "source_url": "https://maruan.alshedivat.com/",
+      "source_kind": "lab_page",
+      "confidence": 0.9,
+      "note": "fresh departure from a frontier comp-bio lab at peak visibility"
+    },
+    {
+      "date": "2026-06-12",
+      "observed": "2026-06-17",
+      "slug": "maruan-al-shedivat",
+      "type": "bio_change",
+      "direction": 1,
+      "value": "Site + Scholar → 'Building @ Stealth' (NYC): 'autonomous systems at the AI × Science intersection.' No named entity/raise yet — inception window open.",
+      "source_url": "https://scholar.google.com/citations?user=iUe4TdgAAAAJ",
+      "source_kind": "x_bio",
+      "confidence": 0.88,
+      "note": "active 'Building' verb; founder-vs-joiner unconfirmed"
+    },
+    {
+      "date": "2026-06-12",
+      "observed": "2026-06-17",
+      "slug": "daniel-zeng",
+      "type": "departure",
+      "direction": 1,
+      "value": "Left Genesis Molecular AI (~Jun 2026, site past-tense Jun-12-2026) — but page is passive ('I am an ML researcher and engineer'), no stealth/building language",
+      "source_url": "https://danielzeng.com/",
+      "source_kind": "lab_page",
+      "confidence": 0.85,
+      "note": "real departure but between-jobs/passive, NOT a confirmed inflection — T3 watch"
     }
   ]
 }

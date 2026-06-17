@@ -1,11 +1,106 @@
 {
-  "built_at": "2026-06-17T14:54:55+00:00",
+  "built_at": "2026-06-17T15:16:10+00:00",
   "date": "2026-06-17",
   "stats": {
-    "t0": 21,
+    "t0": 22,
     "t1": 60,
     "in_flight": 8,
-    "pool": 125
+    "pool": 126
+  },
+  "pipeline": {
+    "funnel": [
+      {
+        "status": "not-contacted",
+        "n": 278
+      },
+      {
+        "status": "contacted",
+        "n": 8
+      },
+      {
+        "status": "passed",
+        "n": 4
+      },
+      {
+        "status": "indexed",
+        "n": 70
+      }
+    ],
+    "in_flight": [
+      {
+        "slug": "shivani-poddar",
+        "name": "Shivani Poddar",
+        "tier": 0,
+        "channel": "twitter",
+        "last_contacted": "2026-05-26",
+        "days_since": 22,
+        "dossier": "people/shivani-poddar.html"
+      },
+      {
+        "slug": "blanca-villanueva",
+        "name": "Blanca Villanueva",
+        "tier": 0,
+        "channel": "warm-intro",
+        "last_contacted": "2026-05-27",
+        "days_since": 21,
+        "dossier": "people/blanca-villanueva.html"
+      },
+      {
+        "slug": "dan-kondratyuk",
+        "name": "Dan Kondratyuk",
+        "tier": 0,
+        "channel": "linkedin",
+        "last_contacted": "2026-05-27",
+        "days_since": 21,
+        "dossier": "people/dan-kondratyuk.html"
+      },
+      {
+        "slug": "joshua-dillon",
+        "name": "Joshua V. Dillon",
+        "tier": 0,
+        "channel": "linkedin",
+        "last_contacted": "2026-05-27",
+        "days_since": 21,
+        "dossier": "people/joshua-dillon.html"
+      },
+      {
+        "slug": "michael-wornow",
+        "name": "Michael Wornow",
+        "tier": 0,
+        "channel": "email",
+        "last_contacted": "2026-05-27",
+        "days_since": 21,
+        "dossier": "people/michael-wornow.html"
+      },
+      {
+        "slug": "weiying-wang",
+        "name": "Weiying Wang",
+        "tier": 0,
+        "channel": "linkedin",
+        "last_contacted": "2026-05-27",
+        "days_since": 21,
+        "dossier": "people/weiying-wang.html"
+      },
+      {
+        "slug": "ajay-jain",
+        "name": "Ajay Jain",
+        "tier": 1,
+        "channel": "twitter",
+        "last_contacted": "2026-05-27",
+        "days_since": 21,
+        "dossier": "people/ajay-jain.html"
+      },
+      {
+        "slug": "mayank-mishra",
+        "name": "Mayank Mishra",
+        "tier": 1,
+        "channel": "twitter",
+        "last_contacted": "2026-05-27",
+        "days_since": 21,
+        "dossier": "people/mayank-mishra.html"
+      }
+    ],
+    "total": 360
   },
   "replies": [],
   "followups": [
@@ -155,6 +250,32 @@
       "dossier": "people/gaurav-bharaj.html"
     },
     {
+      "slug": "maruan-al-shedivat",
+      "name": "Maruan Al-Shedivat",
+      "tier": 0,
+      "score": 686,
+      "chips": [
+        "stealth",
+        "departed"
+      ],
+      "window": {
+        "text": "closes 2026-08-15",
+        "kind": "open"
+      },
+      "why_now": "T0 — active pursuit. JUST left Genesis Molecular AI (led ML research on the Pearl all-atom structure model) and his own site (updated Jun 12 2026) now headers 'Building @ Stealth' in NYC — 'autonomous systems at the AI × Science intersection.' No raise, no…",
+      "do_this": "Reach out NOW (X @… / LinkedIn / via maruan.alshedivat.com). Lead with his thesis ('autonomous systems at the AI×Science intersection') + the verifiable 2017…",
+      "channel": "x",
+      "draft": {
+        "subject": "autonomous systems at the AI &times; Science intersection — after Pearl",
+        "body": "Hi Maruan — I invest at inception and your jump to \"Building @ Stealth\" caught my eye, because the leap you describe — from an all-atom structure model like Pearl to\nautonomous systems that solve problems at the AI&times;Science intersection\n— is the part I think is most underbuilt. The structure la…"
+      },
+      "link": null,
+      "twitter": null,
+      "linkedin": "alshedivat",
+      "email": null,
+      "dossier": "people/maruan-al-shedivat.html"
+    },
+    {
       "slug": "russ-tedrake",
       "name": "Russ Tedrake",
       "tier": 0,
@@ -238,39 +359,51 @@
       "linkedin": "raunaq-bhirangi",
       "email": "raunaqbhirangi@nyu.edu",
       "dossier": "people/raunaq-bhirangi.html"
-    },
-    {
-      "slug": "abhinav-shrivastava",
-      "name": "Abhinav Shrivastava",
-      "tier": 0,
-      "score": 658,
-      "chips": [
-        "stealth",
-        "founder",
-        "indian"
-      ],
-      "window": {
-        "text": "pre-name · open",
-        "kind": "open"
-      },
-      "why_now": "T0 (lean) — Co-Founder & CEO of a stealth 'AI-native video infrastructure' co (own site + LinkedIn, verbatim). Likely wedge = video-as-neural-weights INFRA (NeRV→NeRV-Diffusion), not a generator. Scholar h-53 ~20K cites; CMU/Abhinav-Gupta lineage (shared w/…",
-      "do_this": "EMAIL abhinav@cs.umd.edu (or X DM @abhi2610). Lead with video-as-weights (NeRV-Diffusion 'generate weights, decode to video') as an INFRA bet vs Luma/Runway/Pika/Genmo; note the Luma student…",
-      "channel": "email",
-      "draft": {
-        "subject": "Video-as-weights as the infra bet",
-        "body": "Hi Abhinav — I invest at inception and spend my time around the video-model wave (Luma, Runway, Pika, Genmo on the generation side). What made me reach out is that \"AI-native video infrastructure\" from you reads as a different bet than another generator: your NeRV &rarr; NeRV-Diffusion line treats a…"
-      },
-      "link": {
-        "label": "✉ email",
-        "url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=abhinav%40cs.umd.edu"
-      },
-      "twitter": "abhi2610",
-      "linkedin": "abhi2610",
-      "email": "abhinav@cs.umd.edu",
-      "dossier": "people/abhinav-shrivastava.html"
     }
   ],
   "signals": [
+    {
+      "slug": "maruan-al-shedivat",
+      "name": "Maruan Al-Shedivat",
+      "tier": 0,
+      "date": "2026-06-12",
+      "days_ago": 0,
+      "type": "departure",
+      "text": "Left Genesis Molecular AI (Head of ML Research, Pearl all-atom structure team) — Genesis now past-tense on his site; team page 404s",
+      "source_url": "https://maruan.alshedivat.com/",
+      "source_kind": "lab_page",
+      "delta": 74,
+      "hot": true,
+      "has_dossier": true
+    },
+    {
+      "slug": "daniel-zeng",
+      "name": "Daniel Zeng",
+      "tier": 3,
+      "date": "2026-06-12",
+      "days_ago": 0,
+      "type": "departure",
+      "text": "Left Genesis Molecular AI (~Jun 2026, site past-tense Jun-12-2026) — but page is passive ('I am an ML researcher and engineer'), no stealth/building…",
+      "source_url": "https://danielzeng.com/",
+      "source_kind": "lab_page",
+      "delta": 70,
+      "hot": true,
+      "has_dossier": true
+    },
+    {
+      "slug": "maruan-al-shedivat",
+      "name": "Maruan Al-Shedivat",
+      "tier": 0,
+      "date": "2026-06-12",
+      "days_ago": 0,
+      "type": "bio change",
+      "text": "Site + Scholar → 'Building @ Stealth' (NYC): 'autonomous systems at the AI × Science intersection.' No named entity/raise yet — inception window open.",
+      "source_url": "https://scholar.google.com/citations?user=iUe4TdgAAAAJ",
+      "source_kind": "x_bio",
+      "delta": 66,
+      "hot": true,
+      "has_dossier": true
+    },
     {
       "slug": "andrei-tyrin",
       "name": "Andrei Tyrin",
@@ -340,52 +473,10 @@
       "delta": 39,
       "hot": false,
       "has_dossier": true
-    },
-    {
-      "slug": "dmitrii-galatenko",
-      "name": "Dmitrii Galatenko",
-      "tier": 2,
-      "date": "2026-01-28",
-      "days_ago": 5,
-      "type": "departure",
-      "text": "Director of ISARA LABORATORIES UK LTD (16847905, co-directed w/ Isara founders Gasztowtt + Zhang) until ~28 Jan 2026 — day before incorporating OLO…",
-      "source_url": "https://find-and-update.company-information.service.gov.uk/company/16847905/officers",
-      "source_kind": "edgar",
-      "delta": 34,
-      "hot": false,
-      "has_dossier": true
-    },
-    {
-      "slug": "mihir-bafna",
-      "name": "Mihir Bafna",
-      "tier": 2,
-      "date": "2026-05-01",
-      "days_ago": 5,
-      "type": "paper award",
-      "text": "Co-first author SwitchCraft (ICML 2026) — programmatic state-switching protein design via backprop through Boltz-1; + sole-first DynaProt (ICLR 2026)",
-      "source_url": "https://arxiv.org/abs/2605.31236",
-      "source_kind": "own_site",
-      "delta": 33,
-      "hot": false,
-      "has_dossier": true
-    },
-    {
-      "slug": "shiwali-mohan",
-      "name": "Shiwali Mohan",
-      "tier": 2,
-      "date": "2026-04-01",
-      "days_ago": 5,
-      "type": "bio change",
-      "text": "LinkedIn current position flipped to 'Stealth — Agent Architectures' (left settled senior-PI seat PARC→SRI→TRI-consult) — real post-lab inflection;…",
-      "source_url": "https://www.linkedin.com/in/shiwalimohan/",
-      "source_kind": "linkedin",
-      "delta": 21,
-      "hot": false,
-      "has_dossier": true
     }
   ],
   "triage": {
-    "pending": 106,
+    "pending": 109,
     "highlights": [
       {
         "name": "Sumith Kulal",
