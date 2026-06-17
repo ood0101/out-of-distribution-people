@@ -1,6 +1,6 @@
 {
  "generated": "2026-06-16",
- "count": 256,
+ "count": 257,
  "people": [
   {
    "slug": "gaurav-bharaj",
@@ -27,7 +27,7 @@
    "status": "not-contacted",
    "last_contacted": null,
    "next_action_date": null,
-   "updated": "",
+   "updated": "2026-06-16",
    "channel": "twitter",
    "twitter": "gauravbharaj",
    "linkedin": "gauravbharaj",
@@ -693,6 +693,36 @@
    "email": null,
    "gmail_url": null,
    "indian": true,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": true
+  },
+  {
+   "slug": "daniil-boiko",
+   "name": "Daniil Boiko",
+   "tier": 1,
+   "role": "Co-founder & CEO of Onepot AI (autonomous AI chemist; POT-1 lab + 'Phil'). FIRST author of Coscientist (Nature 2023, ~1,880 cites — the seminal autonomous-chemistry-agent paper). Left CMU ChemE PhD (Gabe Gomes). Onepot raised $13M (Fifty Years; angels Wojciech Zaremba + Jeff Dean; Khosla, Speedinvest), out of stealth Nov 19 2025. Russian-origin (MSU/Ananikov). NOT Indian.",
+   "spike": "T0-CALIBER founder, but PAST your inception window → T1 (relationship-build + mine the network), parallel to Augustus Odena/Arda. Seminal autonomous-AI-for-science founder: 1st author Coscientist (Nature 624:570, 2023, ~1,880 cites — GPT-4 agent running real Pd cross-coupling on lab hardware) + 1st author MEDUSA (JACS 2022); aggregate ~2,562 cites, h-15. FOUNDED + FUNDED Onepot ($13M, Fifty Years lead + Zaremba + Jeff Dean angels, stealth-exit Nov 19 2025) w/ cofounder Andrei Tyrin (MIT CS). 'The best ideas in drug discovery were blocked not by biology, but by synthesis.' WHY T1 NOT T0: the round is closed with a frontier-tier syndicate — no lead window for a first check; the play is relationship + small follow-on + mining his lab/cap table. Russian (MSU honors, Ananikov Lab, ex-VK ML eng → CMU/Gomes). NOT Indian. RECURSIVE: Andrei Tyrin (cofounder, MIT CS), Robert MacKnight (Coscientist 2nd author, Gomes lab — likely next founder), Gabe Gomes (CMU PI lab as a node). Repo already tracks the Onepot orbit (Brandon Wang T1 = their ML engineer, Sukjun Hwang). T1.",
+   "tags": [
+    "ai-for-science",
+    "autonomous-research-agents",
+    "chemistry-automation",
+    "just-founded"
+   ],
+   "cluster": "ai-for-science",
+   "signals": [
+    "stealth"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "",
+   "channel": "twitter",
+   "twitter": null,
+   "linkedin": "daniil-boiko",
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
    "delta": false,
    "needs_triage": false,
    "urgency": true

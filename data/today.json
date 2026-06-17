@@ -1,11 +1,11 @@
 {
-  "built_at": "2026-06-16T10:43:02+00:00",
-  "date": "2026-06-16",
+  "built_at": "2026-06-17T07:27:05+00:00",
+  "date": "2026-06-17",
   "stats": {
     "t0": 19,
-    "t1": 60,
+    "t1": 61,
     "in_flight": 8,
-    "pool": 122
+    "pool": 123
   },
   "replies": [],
   "followups": [
@@ -15,7 +15,7 @@
       "tier": 0,
       "channel": "twitter",
       "last_contacted": "2026-05-26",
-      "overdue_days": 7,
+      "overdue_days": 8,
       "touches": 0,
       "dossier": "people/shivani-poddar.html",
       "link": {
@@ -29,7 +29,7 @@
       "tier": 0,
       "channel": "warm-intro",
       "last_contacted": "2026-05-27",
-      "overdue_days": 6,
+      "overdue_days": 7,
       "touches": 1,
       "dossier": "people/blanca-villanueva.html",
       "link": {
@@ -43,7 +43,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-05-27",
-      "overdue_days": 6,
+      "overdue_days": 7,
       "touches": 0,
       "dossier": "people/dan-kondratyuk.html",
       "link": {
@@ -57,7 +57,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-05-27",
-      "overdue_days": 6,
+      "overdue_days": 7,
       "touches": 0,
       "dossier": "people/joshua-dillon.html",
       "link": {
@@ -71,7 +71,7 @@
       "tier": 0,
       "channel": "email",
       "last_contacted": "2026-05-27",
-      "overdue_days": 6,
+      "overdue_days": 7,
       "touches": 1,
       "dossier": "people/michael-wornow.html",
       "link": {
@@ -85,7 +85,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-05-27",
-      "overdue_days": 6,
+      "overdue_days": 7,
       "touches": 0,
       "dossier": "people/weiying-wang.html",
       "link": {
@@ -99,7 +99,7 @@
       "tier": 1,
       "channel": "twitter",
       "last_contacted": "2026-05-27",
-      "overdue_days": 6,
+      "overdue_days": 7,
       "touches": 1,
       "dossier": "people/ajay-jain.html",
       "link": {
@@ -113,7 +113,7 @@
       "tier": 1,
       "channel": "twitter",
       "last_contacted": "2026-05-27",
-      "overdue_days": 6,
+      "overdue_days": 7,
       "touches": 1,
       "dossier": "people/mayank-mishra.html",
       "link": {
@@ -124,65 +124,10 @@
   ],
   "today5": [
     {
-      "slug": "russ-tedrake",
-      "name": "Russ Tedrake",
-      "tier": 0,
-      "score": 687,
-      "chips": [
-        "stealth",
-        "departed",
-        "founder"
-      ],
-      "window": {
-        "text": "pre-name · open",
-        "kind": "open"
-      },
-      "why_now": "T0 FOUNDING NOW, PRE-NAME (access-gated). MIT page verbatim 'Founder of a Stealth Startup in Physical AI (more soon!)'; LEFT TRI (bio past-tense, The Robot Report 'former TRI SVP'), kept MIT. Builds LBMs-for-industry. Owns Diffusion Policy→LBM (Science…",
-      "do_this": "WARM INTRO via MIT CSAIL / Drake-RSS-CoRL community / TRI alumni / mutual LP (cold is too late). X DM @RussTedrake fallback ('checks email rarely'). RESOLVE: company name, co-founders…",
-      "channel": "warm-intro",
-      "draft": null,
-      "link": {
-        "label": "𝕏 @russtedrake",
-        "url": "https://twitter.com/russtedrake"
-      },
-      "twitter": "russtedrake",
-      "linkedin": null,
-      "email": null,
-      "dossier": "people/russ-tedrake.html"
-    },
-    {
-      "slug": "amanpreet-singh",
-      "name": "Amanpreet Singh",
-      "tier": 0,
-      "score": 681,
-      "chips": [
-        "stealth",
-        "departed",
-        "founder",
-        "indian"
-      ],
-      "window": {
-        "text": "pre-name · open",
-        "kind": "open"
-      },
-      "why_now": "T0 ACTIVE PURSUIT. Repeat venture-scale founder at maximal inflection: just LEFT his OWN funded company (Founder & CTO of Contextual AI, co-founded 2023 w/ Douwe Kiela; $20M seed Bain, $80M Series A) and is ACTIVELY HIRING A FOUNDING TEAM (LinkedIn 'something…",
-      "do_this": "DM/InMail on LinkedIn (apsdehal) or email — he's in founder-hiring mode so responsive. Subject: lead with 'system over models' + the verification-generation asymmetry from Weaviate Pod #114, and…",
-      "channel": "linkedin",
-      "draft": null,
-      "link": {
-        "label": "in/apsdehal",
-        "url": "https://linkedin.com/in/apsdehal/"
-      },
-      "twitter": "apsdehal",
-      "linkedin": "apsdehal",
-      "email": null,
-      "dossier": "people/amanpreet-singh.html"
-    },
-    {
       "slug": "gaurav-bharaj",
       "name": "Gaurav Bharaj",
       "tier": 0,
-      "score": 670,
+      "score": 720,
       "chips": [
         "stealth",
         "departed",
@@ -210,10 +155,65 @@
       "dossier": "people/gaurav-bharaj.html"
     },
     {
+      "slug": "russ-tedrake",
+      "name": "Russ Tedrake",
+      "tier": 0,
+      "score": 686,
+      "chips": [
+        "stealth",
+        "departed",
+        "founder"
+      ],
+      "window": {
+        "text": "pre-name · open",
+        "kind": "open"
+      },
+      "why_now": "T0 FOUNDING NOW, PRE-NAME (access-gated). MIT page verbatim 'Founder of a Stealth Startup in Physical AI (more soon!)'; LEFT TRI (bio past-tense, The Robot Report 'former TRI SVP'), kept MIT. Builds LBMs-for-industry. Owns Diffusion Policy→LBM (Science…",
+      "do_this": "WARM INTRO via MIT CSAIL / Drake-RSS-CoRL community / TRI alumni / mutual LP (cold is too late). X DM @RussTedrake fallback ('checks email rarely'). RESOLVE: company name, co-founders…",
+      "channel": "warm-intro",
+      "draft": null,
+      "link": {
+        "label": "𝕏 @russtedrake",
+        "url": "https://twitter.com/russtedrake"
+      },
+      "twitter": "russtedrake",
+      "linkedin": null,
+      "email": null,
+      "dossier": "people/russ-tedrake.html"
+    },
+    {
+      "slug": "amanpreet-singh",
+      "name": "Amanpreet Singh",
+      "tier": 0,
+      "score": 680,
+      "chips": [
+        "stealth",
+        "departed",
+        "founder",
+        "indian"
+      ],
+      "window": {
+        "text": "pre-name · open",
+        "kind": "open"
+      },
+      "why_now": "T0 ACTIVE PURSUIT. Repeat venture-scale founder at maximal inflection: just LEFT his OWN funded company (Founder & CTO of Contextual AI, co-founded 2023 w/ Douwe Kiela; $20M seed Bain, $80M Series A) and is ACTIVELY HIRING A FOUNDING TEAM (LinkedIn 'something…",
+      "do_this": "DM/InMail on LinkedIn (apsdehal) or email — he's in founder-hiring mode so responsive. Subject: lead with 'system over models' + the verification-generation asymmetry from Weaviate Pod #114, and…",
+      "channel": "linkedin",
+      "draft": null,
+      "link": {
+        "label": "in/apsdehal",
+        "url": "https://linkedin.com/in/apsdehal/"
+      },
+      "twitter": "apsdehal",
+      "linkedin": "apsdehal",
+      "email": null,
+      "dossier": "people/amanpreet-singh.html"
+    },
+    {
       "slug": "raunaq-bhirangi",
       "name": "Raunaq Bhirangi",
       "tier": 0,
-      "score": 664,
+      "score": 663,
       "chips": [
         "stealth",
         "founder",
@@ -243,7 +243,7 @@
       "slug": "abhinav-shrivastava",
       "name": "Abhinav Shrivastava",
       "tier": 0,
-      "score": 660,
+      "score": 659,
       "chips": [
         "stealth",
         "founder",
@@ -276,7 +276,7 @@
       "name": "Gaurav Bharaj",
       "tier": 0,
       "date": "2026-05-13",
-      "days_ago": 4,
+      "days_ago": 5,
       "type": "departure",
       "text": "Left Reality Defender (co-founder & Chief Scientist) — LinkedIn 'a new chapter begins' post; site past-tenses RD, no current employer",
       "source_url": "https://gauravbharaj.github.io/",
@@ -290,7 +290,7 @@
       "name": "Gaurav Bharaj",
       "tier": 0,
       "date": "2026-09-01",
-      "days_ago": 4,
+      "days_ago": 5,
       "type": "bio change",
       "text": "GitHub bio 'Perpetual AI' (SF) + StealthCoSpy tracker 'now building in Stealth Mode' — repeat founder building in stealth; company UNCONFIRMED…",
       "source_url": "https://github.com/gauravbharaj",
@@ -304,7 +304,7 @@
       "name": "Nada Amin",
       "tier": 1,
       "date": "2026-05-01",
-      "days_ago": 4,
+      "days_ago": 5,
       "type": "founding listed",
       "text": "Co-founded Midspiral ('correctness layer for AI-generated software'; LemmaScript/lemmafit/claimcheck) — midspiral.com lists her as Cofounder w/…",
       "source_url": "https://midspiral.com/",
@@ -318,7 +318,7 @@
       "name": "Vidhi Jain",
       "tier": 2,
       "date": "2026-03-01",
-      "days_ago": 4,
+      "days_ago": 5,
       "type": "departure",
       "text": "Left OpenAI (AI-for-Science, ~8mo) ~Mar 2026; finished CMU PhD Aug 2025; 'actively looking for new opportunities in robotics and AI' — on the market…",
       "source_url": "https://vidhijain.github.io/",
@@ -332,7 +332,7 @@
       "name": "Dmitrii Galatenko",
       "tier": 2,
       "date": "2026-01-28",
-      "days_ago": 4,
+      "days_ago": 5,
       "type": "departure",
       "text": "Director of ISARA LABORATORIES UK LTD (16847905, co-directed w/ Isara founders Gasztowtt + Zhang) until ~28 Jan 2026 — day before incorporating OLO…",
       "source_url": "https://find-and-update.company-information.service.gov.uk/company/16847905/officers",
@@ -346,7 +346,7 @@
       "name": "Mihir Bafna",
       "tier": 2,
       "date": "2026-05-01",
-      "days_ago": 4,
+      "days_ago": 5,
       "type": "paper award",
       "text": "Co-first author SwitchCraft (ICML 2026) — programmatic state-switching protein design via backprop through Boltz-1; + sole-first DynaProt (ICLR 2026)",
       "source_url": "https://arxiv.org/abs/2605.31236",
@@ -360,12 +360,12 @@
       "name": "Shiwali Mohan",
       "tier": 2,
       "date": "2026-04-01",
-      "days_ago": 4,
+      "days_ago": 5,
       "type": "bio change",
       "text": "LinkedIn current position flipped to 'Stealth — Agent Architectures' (left settled senior-PI seat PARC→SRI→TRI-consult) — real post-lab inflection;…",
       "source_url": "https://www.linkedin.com/in/shiwalimohan/",
       "source_kind": "linkedin",
-      "delta": 22,
+      "delta": 21,
       "hot": false,
       "has_dossier": true
     },
@@ -374,7 +374,7 @@
       "name": "Dmitrii Galatenko",
       "tier": 2,
       "date": "2026-01-29",
-      "days_ago": 4,
+      "days_ago": 5,
       "type": "incorporation filing",
       "text": "Founded OLO DIN UK LTD (Companies House 16999093) — sole PSC 75%+; AI-alignment/reliable-autonomous-systems (olodin.com)",
       "source_url": "https://find-and-update.company-information.service.gov.uk/company/16999093",
@@ -385,7 +385,7 @@
     }
   ],
   "triage": {
-    "pending": 103,
+    "pending": 106,
     "highlights": [
       {
         "name": "Sumith Kulal",

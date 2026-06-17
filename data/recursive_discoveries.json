@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Recursive discoveries surfaced by dossier agents. Each entry: a person mentioned in a dossier as worth following up. Status: pending|approved|dossiered|rejected.",
-  "last_updated": "2026-06-12",
+  "last_updated": "2026-06-17",
   "discoveries": [
     {
       "name": "Sumith Kulal",
@@ -1592,6 +1592,53 @@
         "flawless",
         "likely-cofounder",
         "gaurav-bharaj-orbit"
+      ]
+    },
+    {
+      "name": "Swathi Manda",
+      "from_dossier": "zeno-fox-PASS",
+      "discovered_at": "2026-06-17",
+      "priority": "P1",
+      "status": "pending",
+      "context": "THE REDIRECT from the zenofox drop (Zeno Fox = PASS, business CEO no spike). Manda is the technical core: co-founder & CTO of Continuity (continuity.bio — nanotech wearable biosensor for autonomous AI physicians; out of stealth ~Sep 2025). MIT PhD candidate (biosensors, DNA nanotech, molecular ML); FIRST author 'DNA nanopores as artificial membrane channels for bioprotonics' (Nature Communications 2023, ~38 cites); named on a bio-molecular-sensor US patent (likely Continuity core IP). LIKELY INDIAN-ORIGIN (verify). CAVEATS: health-tech/biosensors (off frontier-AI/ML core) + past inception (company launched). Worth a fresh dossier — the real on-thesis node here. linkedin.com/in/swathimanda, Scholar xhGREPwAAAAJ.",
+      "tags": [
+        "biosensor",
+        "dna-nanotech",
+        "molecular-ml",
+        "continuity",
+        "cto",
+        "likely-indian",
+        "the-redirect"
+      ]
+    },
+    {
+      "name": "Robert MacKnight",
+      "from_dossier": "daniil-boiko",
+      "discovered_at": "2026-06-17",
+      "priority": "P2",
+      "status": "pending",
+      "context": "2nd author on Coscientist (Daniil Boiko's seminal autonomous-chemistry paper); Gabe Gomes lab (CMU). The autonomous-science cohort — likely next founder out of the Gomes lab. Mine alongside the Onepot cap table.",
+      "tags": [
+        "ai-for-science",
+        "coscientist",
+        "gomes-lab",
+        "autonomous-chemistry",
+        "likely-next-founder"
+      ]
+    },
+    {
+      "name": "Nataliya Kosmyna",
+      "from_dossier": "dunya-baradari-PASS",
+      "discovered_at": "2026-06-17",
+      "priority": "P3",
+      "status": "pending",
+      "context": "MIT research scientist (EEG/BCI); senior technical driver + co-author on Dünya Baradari's NeuroChat (the more investable BCI node if the MIT Media Lab human-augmentation group ever spins out a real BCI company). Fluid Interfaces (Pattie Maes).",
+      "tags": [
+        "bci",
+        "eeg",
+        "mit-media-lab",
+        "fluid-interfaces",
+        "network-node"
       ]
     }
   ]
