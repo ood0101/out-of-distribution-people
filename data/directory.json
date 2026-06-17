@@ -1,6 +1,6 @@
 {
  "generated": "2026-06-17",
- "count": 258,
+ "count": 260,
  "people": [
   {
    "slug": "andrei-tyrin",
@@ -26,7 +26,7 @@
    "status": "not-contacted",
    "last_contacted": null,
    "next_action_date": null,
-   "updated": "",
+   "updated": "2026-06-17",
    "channel": "twitter",
    "twitter": null,
    "linkedin": "andrei-tyrin",
@@ -2823,6 +2823,40 @@
    "urgency": false
   },
   {
+   "slug": "ninad-daithankar",
+   "name": "Ninad Daithankar",
+   "tier": 2,
+   "role": "Co-first author on TDV (self-supervised video / world models) with Yann LeCun & Heng Ji — UIUC BLENDER Lab. UIUC CS MS '25; ex-3yr SWE (eQ Technologic, Pune); SPPU undergrad. Indian.",
+   "spike": "T2 (track — high caliber, no inflection). The whole case is one rare artifact: co-first author (equal contribution w/ Alexi Gladstone, already T1) on TDV — 'You Don't Need Strong Assumptions: Visual Representation Learning via Temporal Differences' (arXiv 2606.15956, submitted 14 Jun 2026, under review NeurIPS'26) — with Yann LeCun & Heng Ji, squarely in LeCun's JEPA/world-models line; he owns the codebase (github/ninaddaithankar/tdv, 28★). Calibrate honestly: ONE substantive paper (other is IRJET undergrad filler), no Google Scholar profile yet, '0 cites' = days-old not low-impact. 'making gpus go brrr' is a tagline — NO original CUDA/kernel/systems artifact across 39 repos (eval harnesses + nanoGPT/Stable-Diffusion learning reimplementations). LeCun is 3rd/4th (NYU collaborator, not personal mentor); the co-first credit is SHARED with the stronger Gladstone (EBT, ICLR'26 Oral). NO company / NO founding signal anywhere — that clean negative caps the tier. The hook is the OPEN WINDOW: graduated Dec'25, not enrolled in a PhD, unattached, his own site says 'I'm on the job market.' Re-tier T0/T1 the instant a founding / co-founder-pairing / 'left to build' move appears. Indian. T2.",
+   "tags": [
+    "researchers",
+    "indian",
+    "world-models",
+    "self-supervised",
+    "computer-vision",
+    "jepa",
+    "lecun",
+    "heng-ji",
+    "uiuc",
+    "blender-lab"
+   ],
+   "cluster": null,
+   "signals": [],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "",
+   "channel": null,
+   "twitter": null,
+   "linkedin": "ninaddaithankar",
+   "email": null,
+   "gmail_url": null,
+   "indian": true,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
+  },
+  {
    "slug": "shiwali-mohan",
    "name": "Shiwali Mohan",
    "tier": 2,
@@ -3722,6 +3756,38 @@
    "channel": null,
    "twitter": null,
    "linkedin": "lilsun",
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
+  },
+  {
+   "slug": "georgia-channing",
+   "name": "Georgia Channing",
+   "tier": 3,
+   "role": "ML-for-Science lead at Hugging Face (since 2025) + Oxford DPhil under Philip Torr (Torr Vision Group, 2024–2028). Organizer of Hugging Science, a ~7,000-member open-source AI-for-Science community. Imperial physics → Oxford (DeepMind scholarship, not employment). NOT Indian (Georgia Wexler Channing).",
+   "spike": "T3 — indexed network node + watch. Genuinely technical AI-for-science researcher and an established first author (clean non-alphabetical lead on audio-deepfake-detection arXiv:2410.07436, ahead of senior authors Torr + Schröder de Witt; first/equal on 'AI for Scientific Discovery is a Social Problem' arXiv:2509.06580). BUT no inflection: adversarial sweep (personal site, OpenReview, GitHub, HF, X-renderings, advicehub) found NO founder/stealth/departure/job-market signal (~0.88 conf the negative holds). Both roles freshly-started and framed through 2028 — locked-in, not accelerating. HF is not on the 20 departure-tracking companies; 'DeepMind Scholar' = an Oxford scholarship funding a master's, NOT DeepMind employment. Footprint modest (Scholar h-index 5, ~73 cites) — spike is the role+community, not citation volume. NOT Indian. THE REAL ASSET IS THE COMMUNITY: she organizes Hugging Science (~7,000 members / ~700–800 actual code contributors per her Oct'25 post) — a recursive sourcing vein to mine for members who ARE at an inflection. No outreach for Georgia herself at this tier. RECHECK trigger: live X bio (x.com/cgeorgiaw) unreadable (402/451) — where a future stealth/leaving signal surfaces first. RECURSIVE: Hugging Science contributor pool + Torr Vision Group lineage. T3.",
+   "tags": [
+    "network-node",
+    "watch",
+    "ai-for-science",
+    "hugging-face",
+    "oxford",
+    "torr-vision-group"
+   ],
+   "cluster": "ai-for-science",
+   "signals": [
+    "stealth"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "",
+   "channel": "x",
+   "twitter": "cgeorgiaw",
+   "linkedin": "georgia-channing",
    "email": null,
    "gmail_url": null,
    "indian": false,

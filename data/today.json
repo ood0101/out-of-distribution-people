@@ -1,11 +1,11 @@
 {
-  "built_at": "2026-06-17T08:47:58+00:00",
+  "built_at": "2026-06-17T14:54:55+00:00",
   "date": "2026-06-17",
   "stats": {
     "t0": 21,
     "t1": 60,
     "in_flight": 8,
-    "pool": 124
+    "pool": 125
   },
   "replies": [],
   "followups": [
@@ -127,7 +127,7 @@
       "slug": "gaurav-bharaj",
       "name": "Gaurav Bharaj",
       "tier": 0,
-      "score": 720,
+      "score": 719,
       "chips": [
         "stealth",
         "departed",
@@ -158,7 +158,7 @@
       "slug": "russ-tedrake",
       "name": "Russ Tedrake",
       "tier": 0,
-      "score": 686,
+      "score": 685,
       "chips": [
         "stealth",
         "departed",
@@ -185,7 +185,7 @@
       "slug": "amanpreet-singh",
       "name": "Amanpreet Singh",
       "tier": 0,
-      "score": 680,
+      "score": 679,
       "chips": [
         "stealth",
         "departed",
@@ -243,7 +243,7 @@
       "slug": "abhinav-shrivastava",
       "name": "Abhinav Shrivastava",
       "tier": 0,
-      "score": 659,
+      "score": 658,
       "chips": [
         "stealth",
         "founder",
