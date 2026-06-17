@@ -14,7 +14,7 @@ help:
 	@echo ""
 	@echo "Maintenance:"
 	@echo "  make refresh       Rebuild state from dossiers"
-	@echo "  make render        Re-render queue + directory + The Desk"
+	@echo "  make render        Re-render directory table + The Desk"
 	@echo "  make desk          Rebuild today.json (The Desk)"
 	@echo ""
 	@echo "Signals (flagging engine):"
@@ -44,7 +44,6 @@ refresh:
 	@python3 data/build_outreach_state.py > /dev/null && echo "✓ state refreshed"
 
 render:
-	@python3 data/build_outreach_view.py
 	@python3 data/build_directory.py
 	@python3 data/build_today.py
 

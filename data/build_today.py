@@ -305,6 +305,31 @@ def build_triage() -> dict:
     return {"pending": len(pending), "highlights": p0[:6]}
 
 
+def build_pipeline(people: dict) -> dict:
+    """The outreach funnel — status counts + the in-flight (contacted, awaiting
+    reply) list. Folds the retired queue.html status-board into The Desk."""
+    from collections import Counter
+    counts = Counter((e.get("status") or "not-contacted") for e in people.values())
+    in_flight = []
+    for slug, e in people.items():
+        if e.get("status") == "contacted" and not e.get("response"):
+            lc = e.get("last_contacted")
+            in_flight.append({
+                "slug": slug, "name": e.get("name", slug), "tier": e.get("tier"),
+                "channel": e.get("channel"), "last_contacted": lc,
+                "days_since": days_ago_date(lc) if lc else None,
+                "dossier": dossier_path(slug),
+            })
+    in_flight.sort(key=lambda x: ((x["tier"] if x["tier"] is not None else 9),
+                                  -(x["days_since"] or 0)))
+    order = ["not-contacted", "queued", "contacted", "replied", "passed", "indexed"]
+    funnel = [{"status": s, "n": counts.get(s, 0)} for s in order if counts.get(s, 0)]
+    for s, n in counts.items():
+        if s not in order:
+            funnel.append({"status": s, "n": n})
+    return {"funnel": funnel, "in_flight": in_flight, "total": len(people)}
+
+
 def main():
     state = json.loads(STATE.read_text())
     people = state["people"]
@@ -322,6 +347,7 @@ def main():
         "date": date.today().isoformat(),
         "stats": {"t0": n_t0, "t1": n_t1, "in_flight": in_flight,
                   "pool": len(ranked)},
+        "pipeline": build_pipeline(people),
         "replies": build_replies(people),
         "followups": build_followups(people),
         "today5": today5,

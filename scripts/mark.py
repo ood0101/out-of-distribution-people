@@ -43,22 +43,22 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
 STATE = REPO / "data" / "outreach_state.json"
-BUILD_VIEW = REPO / "data" / "build_outreach_view.py"
+BUILD_TODAY = REPO / "data" / "build_today.py"
 BUILD_DIR = REPO / "data" / "build_directory.py"
 
 FOLLOWUP_DAYS_AFTER_SEND = 14
 
 
 def rerender_panel():
-    """Auto-rebuild the outreach queue (queue.html) AND the directory table
-    data (directory.json) after status changes, so both views stay live.
+    """Auto-rebuild The Desk (today.json) AND the directory table data
+    (directory.json) after status changes, so both views stay live.
 
     Silent on success; surfaces errors. Skip with MARK_NO_RENDER=1.
     """
     import os
     if os.environ.get("MARK_NO_RENDER") == "1":
         return
-    for script, label in ((BUILD_VIEW, "queue"), (BUILD_DIR, "directory")):
+    for script, label in ((BUILD_TODAY, "desk"), (BUILD_DIR, "directory")):
         try:
             subprocess.run(
                 ["python3", str(script)],

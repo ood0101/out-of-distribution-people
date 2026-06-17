@@ -2,6 +2,12 @@
 """
 build_outreach_view.py
 ======================
+DEPRECATED (2026-06-17): queue.html has been retired. The outreach pipeline
+now lives in The Desk (today.html ← build_today.py): Today's-5 + Follow-ups-due
++ Replies + a status funnel. Nothing calls this script anymore; it is kept only
+as a reference for the old status-board logic (e.g. if a future kanban wants it).
+Do NOT wire it back into morning.py / mark.py / Makefile.
+
 Inject auto-generated outreach panel into index.html.
 
 Reads data/outreach_state.json. Generates HTML for the daily outreach queue.

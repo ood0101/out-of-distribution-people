@@ -65,12 +65,8 @@ def main():
             if line.strip():
                 print(f"  {DIM}{line}{RESET}")
 
-    # 2. Re-render the outreach queue page + the directory table data
-    section("Re-rendering queue.html + directory table")
-    out = run(DATA / "build_outreach_view.py", capture=True)
-    if out:
-        for line in out.splitlines():
-            print(f"  {DIM}{line.strip()}{RESET}")
+    # 2. Re-render the directory table data (queue.html retired → The Desk)
+    section("Re-rendering directory table + The Desk")
     out = run(DATA / "build_directory.py", capture=True)
     if out:
         for line in out.splitlines():

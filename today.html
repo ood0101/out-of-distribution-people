@@ -28,6 +28,14 @@ body.dir-body{max-width:1180px}
 .stale .dot{width:7px;height:7px;border-radius:50%;background:currentColor}
 .stale code{background:rgba(0,0,0,.05);padding:1px 6px;border-radius:3px}
 
+.funnel{display:flex;gap:.5rem;flex-wrap:wrap;margin:.1rem 0 .5rem}
+.fseg{font-family:var(--mono);font-size:.72rem;color:var(--fg-muted);background:#fff;border:1px solid var(--border);border-radius:20px;padding:.32rem .72rem}
+.fseg b{color:var(--fg);font-weight:700}
+.fseg.s-contacted b{color:#d99a2b}.fseg.s-replied b{color:#3a7d44}.fseg.s-passed b{color:var(--accent)}.fseg.s-indexed{color:var(--fg-faint)}
+.flight{font-family:var(--mono);font-size:.7rem;color:var(--fg-muted);margin:.1rem 0 .3rem;line-height:1.9}
+.flight a{color:var(--fg);text-decoration:none;border-bottom:1px solid var(--border)}
+.flight a:hover{color:var(--accent)}
+.flight .fd{color:var(--fg-faint);font-size:.62rem;margin-left:.15rem}
 .shead{display:flex;align-items:baseline;gap:.7rem;margin:2.3rem 0 1rem;padding-bottom:.5rem;border-bottom:1.5px solid var(--fg)}
 .shead h2{font-family:var(--mono);font-size:.82rem;letter-spacing:.13em;text-transform:uppercase;font-weight:600}
 .shead .count{font-family:var(--mono);font-size:.72rem;color:#fff;background:var(--accent);border-radius:20px;padding:.1rem .55rem}
@@ -111,7 +119,6 @@ body.dir-body{max-width:1180px}
     <span class="dir-top-links">
       <a href="today.html" class="cur">The Desk</a>
       <a href="index.html">Directory</a>
-      <a href="queue.html">Outreach Queue &rarr;</a>
       <a href="delta-fellows.html">Delta Fellows</a>
     </span>
   </div>
@@ -223,12 +230,23 @@ function shead(title,count,cls,sub){
   return `<div class="shead"><h2>${title}</h2>${count!=null?`<span class="count ${cls||''}">${count}</span>`:''}${sub?`<span class="sub">${sub}</span>`:''}</div>`;
 }
 
+function funnelBar(p){
+  if(!p||!p.funnel||!p.funnel.length) return '';
+  const seg = p.funnel.map(f=>`<span class="fseg s-${esc(f.status).replace(/-/g,'')}"><b>${f.n}</b> ${esc(f.status).replace('not-contacted','not contacted')}</span>`).join('');
+  const flight = (p.in_flight||[]).length
+    ? `<div class="flight">In flight: ${p.in_flight.map(x=>`<a href="${x.dossier||'#'}">${esc(x.name)}</a><span class="fd">${x.days_since!=null?x.days_since+'d':''}</span>`).join(' · ')}</div>` : '';
+  return shead('Pipeline', null, 'muted', `where everyone stands · ${p.total} total`) +
+    `<div class="funnel">${seg}</div>${flight}`;
+}
+
 function render(d){
   staleBanner(d.built_at);
   document.getElementById('hero-meta').innerHTML =
     `<b>${new Date(d.date+'T12:00:00').toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'})}</b><br>${d.stats.t0} T0 · ${d.stats.t1} T1 · ${d.stats.in_flight} in flight`;
 
   let h='';
+  // pipeline funnel (folds in the retired Outreach Queue's status board)
+  h += funnelBar(d.pipeline);
   // replies
   h += shead('Replies — book the meeting', d.replies.length, d.replies.length?'':'muted', 'gmail · highest priority');
   h += d.replies.length ? d.replies.map(replyRow).join('') :
