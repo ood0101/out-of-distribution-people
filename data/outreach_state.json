@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-06-17T07:27:05+00:00",
+  "last_built": "2026-06-17T08:34:05+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -3083,8 +3083,8 @@
     },
     "daniil-boiko": {
       "name": "Daniil Boiko",
-      "tier": 1,
-      "tier_label": "tier-1: high conviction (past inception)",
+      "tier": 0,
+      "tier_label": "tier-0: active pursuit",
       "category": "outreach",
       "tags": [
         "ai-for-science",
@@ -3103,7 +3103,7 @@
         "phrase_raising": false,
         "phrase_founded": false
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-06-17T12:57:52+05:30",
       "needs_triage": false,
       "emails": [],
       "email_primary": null,
@@ -3119,10 +3119,10 @@
       "next_action_date": null,
       "response": null,
       "notes": "",
-      "urgency_decay_date": null,
-      "urgency_reason": "T0-caliber but PAST inception → T1. Seminal autonomous-AI-for-science founder (1st author Coscientist, Nature 2023, ~1,880 cites) now co-founder & CEO of Onepot AI — FOUNDED + FUNDED ($13M, Fifty Years lead + Zaremba + Jeff Dean angels, stealth-exit Nov 19 2025, cofounder Andrei Tyrin/MIT). The round is closed with a frontier syndicate (no lead window) → relationship-build + small-follow-on + mine the lab/cap table (Tyrin, Robert MacKnight, Gabe Gomes). Russian, NOT Indian. Repo already tracks the Onepot orbit (Brandon Wang T1 = ML engineer).",
+      "urgency_decay_date": "2026-08-31",
+      "urgency_reason": "T0 ACTIVE PURSUIT — reach out NOW (owner: he can STILL write the check, a $500K-$1M inception/strategic allocation into Onepot's just-closed pre-seed+seed even though Fifty Years took the lead). Seminal autonomous-AI-for-science founder: 1st author Coscientist (Nature 2023, ~1,880 cites) → co-founder & CEO Onepot AI ($13M, Fifty Years + Zaremba + Jeff Dean, stealth-exit Nov 19 2025, cofounder Andrei Tyrin/MIT). 'Synthesis is the bottleneck, not biology.' Russian, NOT Indian. Also mine the cap table/lab (Tyrin, Robert MacKnight, Gabe Gomes). Repo tracks the Onepot orbit (Brandon Wang T1).",
       "channel": "twitter",
-      "next_action": "Relationship-build via X / boiko.sh / dboiko.substack.com. Lead with the Coscientist→Onepot arc + the 'synthesis is the bottleneck, not biology' thesis; not a first-check pitch (round closed) — be a useful conversation partner + position for follow-on. MINE THE NETWORK: Robert MacKnight (Coscientist 2nd author, likely next founder), the Gomes lab.",
+      "next_action": "Reach out NOW (X / boiko.sh / dboiko.substack.com) for the allocation. Lead with the Coscientist→Onepot arc + 'synthesis is the bottleneck, not biology'; ask to get in on the round (allocation/strategic, $500K-$1M) — the lead is Fifty Years but there's room. Sign Vansh. Also mine: Robert MacKnight (Coscientist 2nd author, likely next founder), the Gomes lab + the Fifty Years/Khosla syndicate.",
       "cluster": "ai-for-science",
       "email_override": null,
       "outreach_subject_override": null,
