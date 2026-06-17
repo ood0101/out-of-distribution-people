@@ -96,7 +96,11 @@ def main():
         "count": len(rows),
         "people": rows,
     }
-    OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=1))
+    # Atomic write: a browser fetching directory.json mid-rebuild must never
+    # see a half-written file (caused a transient partial-table render).
+    _tmp = OUT.with_name(OUT.name + ".tmp")
+    _tmp.write_text(json.dumps(payload, ensure_ascii=False, indent=1))
+    _tmp.replace(OUT)
 
     # quick console summary
     from collections import Counter

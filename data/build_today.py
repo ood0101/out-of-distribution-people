@@ -354,7 +354,10 @@ def main():
         "signals": build_signals(people),
         "triage": build_triage(),
     }
-    OUT.write_text(json.dumps(out, indent=2, ensure_ascii=False))
+    # Atomic write (temp + rename) so The Desk never fetches a half-written file.
+    _tmp = OUT.with_name(OUT.name + ".tmp")
+    _tmp.write_text(json.dumps(out, indent=2, ensure_ascii=False))
+    _tmp.replace(OUT)
     fu = len(out["followups"])
     print(f"today.json: {len(today5)} act-now · {fu} follow-ups due · "
           f"{len(out['replies'])} replies · {out['triage']['pending']} triage pending")

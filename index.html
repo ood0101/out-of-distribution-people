@@ -285,7 +285,7 @@
     var DATA = [], body = document.getElementById('dir-body'),
         meta = document.getElementById('dir-meta'), empty = document.getElementById('dir-empty');
 
-    function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+    function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
     function tierChip(t){
       if (t===null||t===undefined) return '<span class="t-chip tnone">—</span>';
       return '<span class="t-chip t'+t+'">T'+t+'</span>';
