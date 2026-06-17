@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Recursive discoveries surfaced by dossier agents. Each entry: a person mentioned in a dossier as worth following up. Status: pending|approved|dossiered|rejected.",
-  "last_updated": "2026-06-17",
+  "last_updated": "2026-06-18",
   "discoveries": [
     {
       "name": "Sumith Kulal",
@@ -1692,7 +1692,7 @@
       "from_dossier": "corrado-pezzato",
       "discovered_at": "2026-06-17",
       "priority": "P0",
-      "status": "pending",
+      "status": "dossiered",
       "context": "Reported Co-Founder & Head of AI of The Blanket (theblanket.ai, stealth active-inference robotics, VERSES spinout). Ghent; active inference + world models. On both founding papers (2507.17338, 2508.00401). Completes the founding-team map.",
       "tags": [
         "the-blanket",
@@ -1770,6 +1770,20 @@
         "pymdp",
         "tooling",
         "infrastructure"
+      ]
+    },
+    {
+      "name": "Alexander Tschantz",
+      "from_dossier": "toon-van-de-maele",
+      "discovered_at": "2026-06-18",
+      "priority": "P1",
+      "status": "pending",
+      "context": "VERSES (with Christopher Buckley); co-author on BOTH VBGS and AXIOM — the world-models thrust. Open question: did he join The Blanket or stay at VERSES? If he left to the spinout, likely co-founder-grade.",
+      "tags": [
+        "active-inference",
+        "world-models",
+        "verses",
+        "ghent-sussex"
       ]
     }
   ]

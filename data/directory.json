@@ -1,7 +1,43 @@
 {
- "generated": "2026-06-17",
- "count": 264,
+ "generated": "2026-06-18",
+ "count": 265,
  "people": [
+  {
+   "slug": "toon-van-de-maele",
+   "name": "Toon Van de Maele",
+   "tier": 0,
+   "role": "Co-Founder & Head of AI, The Blanket (stealth active-inference robotics, VERSES spinout). The world-model/perception half of the founding core (complements Pezzato's control half). 1st author VBGS + Nature Comms'24. Ghent/imec PhD. Belgian.",
+   "spike": "T0 — active pursuit (VERIFIED co-founder, pre-funding, inception window). Co-Founder & Head of AI of The Blanket (theblanket.ai) — VERIFIED to his own LinkedIn headline ('Co-Founder, Head of AI', start Jun 2026, authenticated pull) + Scholar affiliation flip to The Blanket (email-verified). Clears the same two-source test as Pezzato → verified, NOT hedged like Verbelen. The world-model/perception brain to Pezzato's manipulation/control half — the two title-verified technical co-founders. Spike = Bayesian/deep-generative world models for active inference: 1st author VBGS 'Variational Bayes Gaussian Splatting' (arXiv 2410.03592 — closed-form conjugate variational update, continual 3D from streaming, no replay buffer; his cleanest), 1st author Nature Communications'24 (hierarchical active inference, hippocampal-prefrontal, ~26c), 2nd author AXIOM (arXiv 2505.24784 — object-centric world model, learns Atari-style games in <10k steps gradient-free; the literal 'think-before-act' artifact). Ghent/imec PhD 'Active Inference for Scene Understanding' (2024; Dhoedt + Verbelen) → VERSES → The Blanket. Scholar Q1gb8ScAAAAJ h-9, 334c. Calibrate: solid-not-superstar cites; Neural Networks'21 (107c) is 3rd-author. Belgian (NOT Indian). T0.",
+   "tags": [
+    "founders",
+    "stealth-founder",
+    "world-models",
+    "active-inference",
+    "the-blanket",
+    "robotics",
+    "tu-ghent",
+    "ex-verses",
+    "free-energy"
+   ],
+   "cluster": null,
+   "signals": [
+    "stealth",
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "2026-06-18",
+   "channel": null,
+   "twitter": "toonvdm",
+   "linkedin": "toon-van-de-maele-779897107",
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
+  },
   {
    "slug": "andrei-tyrin",
    "name": "Andrei Tyrin",
