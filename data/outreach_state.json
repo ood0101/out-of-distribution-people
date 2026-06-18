@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-06-17T18:37:34+00:00",
+  "last_built": "2026-06-18T11:38:25+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -2785,15 +2785,15 @@
         "stealth-founder",
         "robotics",
         "active-inference",
-        "the-blanket",
         "manipulation",
+        "model-predictive-control",
+        "the-blanket",
         "tu-delft",
-        "ex-verses",
         "free-energy"
       ],
       "indian": false,
       "delta": false,
-      "one_liner": "",
+      "one_liner": "One of a dozen people worldwide who took active inference",
       "signals": {
         "tag_stealth_founder": true,
         "tag_founders": true,
@@ -8964,13 +8964,12 @@
         "computer-vision",
         "jepa",
         "lecun",
-        "heng-ji",
         "uiuc",
         "blender-lab"
       ],
       "indian": true,
       "delta": false,
-      "one_liner": "",
+      "one_liner": "The idea worth watching:",
       "signals": {
         "tag_stealth_founder": false,
         "tag_founders": false,
@@ -9653,16 +9652,16 @@
         "researchers",
         "indian",
         "active-inference",
-        "the-blanket",
-        "free-energy",
-        "oxford",
         "theory-of-mind",
+        "multi-agent",
+        "the-blanket",
+        "oxford",
         "friston",
-        "ex-verses"
+        "free-energy"
       ],
       "indian": true,
       "delta": false,
-      "one_liner": "Oxford-trained active-inference researcher (DPhil Experimental Psychology, 2024;",
+      "one_liner": "The work to watch is",
       "signals": {
         "tag_stealth_founder": false,
         "tag_founders": false,
@@ -12367,15 +12366,15 @@
         "stealth-founder",
         "active-inference",
         "robotics",
-        "the-blanket",
-        "free-energy",
         "iwai",
-        "ex-verses",
+        "the-blanket",
+        "distributed-systems",
+        "free-energy",
         "ghent"
       ],
       "indian": false,
       "delta": false,
-      "one_liner": "",
+      "one_liner": "To a meaningful degree,",
       "signals": {
         "tag_stealth_founder": true,
         "tag_founders": true,
@@ -12419,16 +12418,16 @@
         "founders",
         "stealth-founder",
         "world-models",
+        "gaussian-splatting",
+        "bayesian-ml",
         "active-inference",
         "the-blanket",
-        "robotics",
-        "tu-ghent",
         "ex-verses",
         "free-energy"
       ],
       "indian": false,
       "delta": false,
-      "one_liner": "",
+      "one_liner": "A Bayesian world-model researcher whose edge is a single repeated instinct:",
       "signals": {
         "tag_stealth_founder": true,
         "tag_founders": true,
@@ -12437,7 +12436,7 @@
         "phrase_raising": false,
         "phrase_founded": false
       },
-      "last_git_touch": "2026-06-18T00:06:34+05:30",
+      "last_git_touch": "2026-06-18T16:54:19+05:30",
       "needs_triage": false,
       "emails": [],
       "email_primary": null,

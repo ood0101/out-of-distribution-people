@@ -4,7 +4,9 @@
 This document defines the standard operating procedure for research agents that build dossiers for an inception-stage VC identifying the most talented people who are truly out of distribution — BEFORE they're obvious to the market.
 
 ## Core Principle
-**Every dossier must answer one question: should I build a relationship with this person right now, and if so, what's my angle?** Everything else is supporting evidence for that answer.
+**Every dossier must answer one question: what is the *alpha* — the specific, rare, hard-to-replicate edge in this person's actual work, and is it genuinely special *measured against the closest comparable work*?** That is the judgment, and it is what the dossier is organized around.
+
+Whether someone is "building right now," just reached out, or just started a company is an **actionability filter** — it sets the tier and decides whether to reach out — it is **NOT a measure of the person.** Lots of people start companies and are reachable; that alone is not signal. Do not let the tier/inflection question become the spine of the dossier (the historical failure mode: the whole document drifts into justifying a tier, and "are they founding" stands in for "are they exceptional"). **Center the alpha. Demote tier/timing to a quiet tag and a one-line factual status.** Everything else is supporting evidence for the alpha.
 
 ---
 
@@ -12,13 +14,15 @@ This document defines the standard operating procedure for research agents that 
 
 When researching a new person, launch ALL SIX agents simultaneously. Total time = slowest agent (~5 min), not sum of all agents.
 
-### Agent 1: Technical Deep Dive
-**Mission:** Find the specific, evidence-backed reason this person is extraordinary.
+### Agent 1: The Alpha (Technical Deep Dive)
+**Mission:** Find, articulate, and STRESS-TEST the *alpha* — the one specific, rare, hard-to-replicate edge in their actual work — and prove (or disprove) it's special by benchmarking against the closest comparable work. This is the most important agent; its output is the spine of the dossier.
 
 **Instructions:**
+- **State the alpha in one sentence:** the non-obvious thing they can do / have done that the 20 people who look similar on paper cannot. Then back it with evidence.
+- **Benchmark it.** Name the 2–3 closest comparable works/methods/people. Is their contribution actually first / SOTA / structurally novel, or incremental dressed up? Be specific about the mechanism of the edge (the "closed-form Bayesian update," the "single causal assumption," etc.), not just that it's "impressive."
 - What did they specifically build? Find benchmark numbers, model sizes, SWE-bench scores, citation counts, GitHub stars
-- What was their EXACT role? Architect? Team lead? One of many contributors? Find evidence (commit history, paper authorship position, press quotes)
-- How does their work compare to the top 5 competitors on specific metrics?
+- What was their EXACT role? Architect? Team lead? One of many contributors? Find evidence (commit history, paper authorship position, press quotes) — credit by authorship position; do not over-credit middle/last authorship
+- **Calibrate honestly, in this section:** what about the alpha is validated vs. unproven? A thin or early-career alpha must read as thin — the alpha-first frame should EXPOSE when the answer is "not much special yet," not paper over it.
 - Find papers, code repos, technical blog posts
 - NO CLAIMS WITHOUT NUMBERS. If you can't find a benchmark, say "benchmark not publicly available" — don't substitute a vague superlative
 
@@ -130,23 +134,22 @@ For each person surfaced, provide:
 
 ---
 
-## Synthesis: Investment-Thesis-First Format
+## Synthesis: Alpha-First Format
 
-After all 6 agents return, I (the orchestrator) synthesize into this structure:
+After the agents return, synthesize into this structure. The dossier is organized to answer **what's special about the work, vs. the field** — NOT to justify a tier. Gold-standard example: `people/toon-van-de-maele.html`.
 
 ### Page Structure (in order)
 
-1. **One-liner** — Who they are in one dense sentence
-2. **Investment Thesis** (2-3 sentences) — Why this person, why now, what's the angle
-3. **The Spike** — The specific, evidence-backed thing that makes them extraordinary. Must contain numbers/benchmarks, not adjectives
-4. **Growth Trajectory** — Dated milestones with acceleration analysis
-5. **What They'd Build** — Market thesis, competitive landscape, likely approach
-6. **Primary Sources** — Direct quotes from their tweets/blog/talks
-7. **Network Map** — Key collaborators, likely co-founders, advisor lineage
-8. **Timeline & Signals** — When might they be in market? What to watch for?
-9. **Risks** — What could make this not work out?
-10. **Background** — Compressed to 3-5 sentences
-11. **Notes** — Raw intelligence bullets for reference
+1. **One-liner** — Lead with the **alpha** (the rare edge in the work), stated densely. Put role/status as a short *trailing* clause (e.g. *"Status: co-founder & Head of AI of X (stealth, pre-funding)"*) — never as the headline.
+2. **The Alpha** (the lead section) — The single most differentiated thing about their work, stated precisely and **benchmarked against the 2–3 closest comparables**: actually first / SOTA / structurally novel, or incremental? Name the comparable work; name the *mechanism* of the edge. Put the honest calibration (validated vs. not) **here**, not as an afterthought. The section the whole dossier exists to support.
+3. **How it stacks up** — A tight table: *their work │ closest comparable │ the edge that's actually theirs.* Makes "vs. things which are similar" explicit. (Fold into prose only if there's genuinely a single comparison.)
+4. **The Spike — the evidence behind the alpha** — Authorship-precise: papers with position (1st/2nd/middle/last), venue, year, cites. Numbers, not adjectives. This *feeds* the alpha; it is not the headline.
+5. **Origin & Trajectory** — Dated milestones, education/lineage, the root of the spike (see Human Layers).
+6. **Status & timing** (demoted, factual) — One short block: current role, founding/stealth status (verified vs. reported), reachability, the outreach angle. **NO tier-justification prose.** The tier rides along only as a quiet tag for the table (see Tier Assignment).
+7. **Network Map & Recursive Discoveries** — Collaborators, likely co-founders, advisor lineage, recursive leads with priority.
+8. **Notes** — Verification + calibration bullets (what's confirmed, what's hedged, what's NOT padded).
+
+Plus the **Human Layers** (Origin-Spike + Life-Texture) per their section below.
 
 ### What to EXCLUDE
 - Coursework projects (every Stanford MS student does these)
@@ -160,7 +163,7 @@ After all 6 agents return, I (the orchestrator) synthesize into this structure:
 
 ## Tier Assignment
 
-After synthesis, assign a tier:
+Tier is a **quiet triage/sorting tag for the directory table — it is NOT the dossier's organizing principle.** Assign it, store it in the canonical `tier-N` tag span (the table reads it), and otherwise keep it out of the dossier prose: a one-line factual "Status & timing" block replaces every "T0 because…" paragraph. Tier answers *when/whether to act*; the dossier answers *how special the work is*. The two are orthogonal — a thin-alpha person can be T0 (about to found) and a world-class alpha can be T3 (settled, no inflection); say both honestly and never let the tier inflate or deflate the alpha read.
 
 - **Tier 0 (Active Pursuit):** Person is likely to start a company within 6 months. Evidence: departure signals, active thesis development, VC engagement, bio changes. ACTION: Reach out now.
 - **Tier 1 (High Conviction):** Extraordinary person who would be backable if they started today, but no immediate signal they're about to. ACTION: Build relationship, check monthly.

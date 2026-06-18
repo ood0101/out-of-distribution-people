@@ -15,7 +15,7 @@
 
   <div class="profile-header">
     <h1>Ninad Daithankar</h1>
-    <p class="one-liner"><strong><span style="color:var(--accent)">Co-first author (equal contribution with <a href="alexi-gladstone.html">Alexi Gladstone</a>) on TDV &mdash; self-supervised video representation learning &mdash; alongside Yann LeCun and Heng Ji</span> (UIUC BLENDER Lab), submitted to NeurIPS 2026.</strong> A <strong>UIUC CS Master&rsquo;s (Aug 2024&ndash;Dec 2025)</strong> whose entire master&rsquo;s thesis became <strong>a co-first paper in LeCun&rsquo;s JEPA / world-models line</strong> &mdash; he owns the codebase. Before UIUC: <strong>3 years as a data-virtualization software engineer at eQ Technologic (Pune)</strong>, SPPU CS undergrad (GPA 9.1). Indian-origin. <strong>The whole case is one rare artifact; there is no company and no inflection trigger yet.</strong> <strong>T2 &mdash; track, relationship-build now while his path is genuinely undecided (he is openly on the job market); upgrade the instant a founding signal appears.</strong></p>
+    <p class="one-liner"><strong>The idea worth watching: <span style="color:var(--accent)">a single causal assumption &mdash; &ldquo;the past predicts the future&rdquo; &mdash; replacing the whole hand-tuned augmentation pipeline</span> in self-supervised video representation learning (TDV).</strong> A clean, genuinely novel framing in Yann LeCun&rsquo;s JEPA / world-models line, where he is co-first author and code owner &mdash; but it is <em>one</em> paper, co-led, days old, and unvalidated; that&rsquo;s the honest size of the alpha today. Indian-origin; UIUC CS MS &rsquo;25; ex-3yr SWE (eQ Technologic, Pune). <em>Status: post-MS, in Heng Ji&rsquo;s BLENDER Lab, openly on the job market &mdash; no company, path undecided.</em></p>
     <div class="tags">
       <span class="tag" style="background:#eee;color:#555;">tier-2: tracking</span>
       <span class="tag">researchers</span>
@@ -25,7 +25,6 @@
       <span class="tag">computer-vision</span>
       <span class="tag">jepa</span>
       <span class="tag">lecun</span>
-      <span class="tag">heng-ji</span>
       <span class="tag">uiuc</span>
       <span class="tag">blender-lab</span>
     </div>
@@ -38,134 +37,78 @@
     </div>
   </div>
 
-  <!-- INVESTMENT THESIS -->
+  <!-- THE ALPHA -->
   <div class="spike-box" style="border-left-color:#999;">
-    <div class="label">&#9670; Investment Thesis &mdash; T2 (Track, Relationship-Build Now)</div>
+    <div class="label">&#9670; The Alpha &mdash; what&rsquo;s actually special, measured honestly</div>
     <p>
-      Ninad Daithankar is exactly on-thesis on <em>caliber</em> &mdash; a deeply technical young researcher whose master&rsquo;s work landed squarely in
-      <strong>Yann LeCun&rsquo;s JEPA / world-models program</strong>, the corner of self-supervised learning the owner most wants to be early to. The single
-      hard credential: <strong>co-first authorship (equal contribution) on <a href="https://arxiv.org/abs/2606.15956">&ldquo;You Don&rsquo;t Need Strong
-      Assumptions: Visual Representation Learning via Temporal Differences&rdquo;</a></strong> (TDV), with <strong>Yann LeCun</strong> and his advisor
-      <strong>Heng Ji</strong> on the byline, submitted <strong>June 14 2026</strong> and under review at <strong>NeurIPS 2026</strong>. For a master&rsquo;s
-      student to be equal-contribution lead &mdash; and the code owner (<a href="https://github.com/ninaddaithankar/tdv">github.com/ninaddaithankar/tdv</a>) &mdash;
-      on a paper in that lineage is a real, rare signal. That paper is the whole case, stated plainly.
+      The distinctive idea is <strong>TDV (Temporal Differences in Vision)</strong>: where the dominant self-supervised methods learn visual representations by engineering elaborate
+      <strong>augmentation / masking / cropping</strong> pipelines, TDV throws them out and uses <strong>one causal assumption</strong> &mdash; it jointly trains an image encoder and a motion encoder so that
+      <em>the current frame&rsquo;s representation plus the encoded motion equals the next frame&rsquo;s representation.</em> &ldquo;The past predicts the future&rdquo; <em>is</em> the training signal. That&rsquo;s a
+      clean, minimal, genuinely different framing, and it sits squarely in <strong>Yann LeCun&rsquo;s JEPA / energy-based world-models</strong> program.
     </p>
     <p style="margin-top:0.6rem;">
-      <strong>Calibrate it honestly &mdash; this is T2, not higher.</strong> (1) <strong>It is one artifact.</strong> His only other indexed paper is undergrad
-      filler (an IRJET cloud-cover paper, 2021); there is no Google Scholar profile yet and TDV is days old, so citations are uninformative. (2) <strong>The
-      &ldquo;makes GPUs go brrr&rdquo; identity is a tagline, not a track record</strong> &mdash; across 39 repos there is <em>no</em> original CUDA / kernel /
-      inference-systems work; the GPU repos are eval harnesses and from-scratch learning reimplementations (nanoGPT, Stable Diffusion). If the interest is an
-      ML-systems spike, the evidence does not yet support one. (3) The LeCun credit is genuine but <strong>LeCun is the 3rd of 4 authors (NYU side), a
-      contributing collaborator, not a tight personal mentorship</strong> &mdash; and the co-first credit is <em>shared</em> with the more-accomplished Gladstone
-      (sole first author of Energy-Based Transformers, ICLR 2026 Oral &mdash; already in this index at <a href="alexi-gladstone.html">T1</a>).
+      <strong>Now size the alpha honestly &mdash; this is where the lens matters.</strong> (1) It is <strong>one paper, days old</strong> (submitted 14 Jun 2026, under review at NeurIPS&rsquo;26), with
+      <strong>no peer review and no independent reproduction</strong> &mdash; the claimed wins (match DINO/iBOT on segmentation, beat them on optical flow / stereo depth) are <em>author-stated</em>, not yet results.
+      (2) The credit is <strong>shared</strong> &mdash; co-first with <a href="alexi-gladstone.html">Alexi Gladstone</a> (the more accomplished of the two, already in this index), with LeCun 3rd (a contributing
+      collaborator, not a personal mentor). (3) His other indexed paper is undergrad IRJET filler; there is no Scholar profile yet. So the precise read: <strong>a promising, clean idea in a hot line &mdash;
+      co-led, brand new, unproven.</strong> Real, but do not inflate it into a track record.
     </p>
-    <p style="margin-top:0.6rem;">
-      <strong>The honest read on tier &mdash; T2, but the timing hook is real.</strong> There is <strong>no company, no founding signal, no frontier-lab
-      move</strong> anywhere across his site, GitHub, blog, or r&eacute;sum&eacute; &mdash; the negative finding is clean and it is what caps the tier. What makes
-      him worth opening a relationship <em>now</em> rather than filing and forgetting is the <strong>open window</strong>: he <strong>graduated ~6 months ago
-      (Dec 2025), is not enrolled in a PhD, and is unattached to any company</strong> &mdash; his own site header literally reads <em>&ldquo;I&rsquo;m on the job
-      market! If you know a role I might be a good fit for, hit me up!&rdquo;</em> The next 6&ndash;12 months are unwritten (PhD vs. industry research vs.,
-      conceivably, building). Lead with the work and the world-models tension, not money or a logo. <strong>Re-tier to T0/T1</strong> the moment a founding
-      signal, a co-founder pairing, or a &ldquo;left to build&rdquo; move appears. Check ~quarterly; immediately on any inflection.
+    <p style="margin-top:0.6rem;" class="small muted">
+      <strong>One thing that is NOT the alpha:</strong> &ldquo;making gpus go brrr&rdquo; is a bio tagline, not a systems record &mdash; across 39 repos there is no original CUDA/kernel work, only eval harnesses
+      and from-scratch learning reimplementations (nanoGPT, Stable Diffusion). If you&rsquo;re reading him as an ML-systems person, the evidence isn&rsquo;t there; the alpha is the <em>idea</em> (TDV), not the infra.
     </p>
   </div>
 
-  <!-- THE SPIKE -->
+  <!-- HOW IT STACKS UP -->
   <section>
-    <h2>The Spike &mdash; With Evidence (authorship-precise)</h2>
+    <h2>How it stacks up (the work vs. the closest comparable)</h2>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>His work</td><td>Closest comparable</td><td>The edge (and the caveat)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>TDV</strong> &mdash; SSL video reps (co-1st author)</td><td>DINO / iBOT (augmentation + masking SSL); I-JEPA (LeCun); VideoMAE</td><td><strong>Augmentation-free</strong>, one causal assumption (past&rarr;future). Caveat: unproven, 0 cites, credit shared with Gladstone.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>&ldquo;GPUs go brrr&rdquo;</strong> repos</td><td>Real kernel/inference engineers</td><td>No edge &mdash; eval harnesses + nanoGPT/SD reimplementations, not original systems work. Flagged so it isn&rsquo;t over-read.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Trajectory</strong> (not an alpha, but notable)</td><td>Typical CS MS students</td><td>3yr enterprise SWE &rarr; co-first with LeCun within ~18 months of starting the MS &mdash; genuine acceleration.</td></tr>
+    </table>
+  </section>
 
-    <h3>The one load-bearing paper: TDV (co-first with LeCun &amp; Heng Ji)</h3>
-    <p>
-      <strong>&ldquo;You Don&rsquo;t Need Strong Assumptions: Visual Representation Learning via Temporal Differences&rdquo;</strong> &mdash;
-      <a href="https://arxiv.org/abs/2606.15956">arXiv:2606.15956</a>, submitted <strong>14 June 2026</strong>, under review at <strong>NeurIPS 2026</strong>.
-      Byline verbatim (verified against arXiv&rsquo;s own citation metadata, the project page, and the repo):
-      <strong>Ninad Daithankar* &middot; Alexi Gladstone* &middot; Yann LeCun &middot; Heng Ji</strong> (* = equal contribution;
-      Daithankar / Gladstone / Ji = UIUC, LeCun = NYU).
-    </p>
+  <!-- THE SPIKE: EVIDENCE -->
+  <section>
+    <h2>The Spike &mdash; the evidence behind the alpha (authorship-precise)</h2>
     <ul>
-      <li class="small"><strong>His role:</strong> <strong>co-first author and code owner</strong> &mdash; the repo lives on his account
-        (<a href="https://github.com/ninaddaithankar/tdv">github.com/ninaddaithankar/tdv</a>, ~28&#9733;). This is his master&rsquo;s-thesis work in Heng Ji&rsquo;s BLENDER Lab.</li>
-      <li class="small"><strong>What it does (verified quote):</strong> TDV <em>&ldquo;jointly trains an image encoder and a motion encoder so that the current
-        frame&rsquo;s representation plus the encoded motion equals the next frame&rsquo;s representation.&rdquo;</em> The pitch: a single causal assumption
-        (&ldquo;the past predicts the future&rdquo;) replaces augmentations / masking / cropping. It sits squarely in LeCun&rsquo;s JEPA / energy-based,
-        world-models-without-text agenda (note his <code>le-wm</code> &ldquo;LeWorldModel&rdquo; fork).</li>
-      <li class="small"><strong>Claimed results (UNVERIFIED &mdash; author-stated, no peer review or third-party reproduction; paper is days old):</strong> matches
-        DINO and iBOT on segmentation and <em>surpasses</em> them on optical flow and stereo depth (SSv2 / ImageNet / Ego4D / Kinetics for training; Sintel /
-        SceneFlow / ADE20K / Cityscapes for eval). Treat as a claim, not a result, until NeurIPS review or independent reproduction.</li>
-    </ul>
-
-    <h3>Calibrating the rest &mdash; what is NOT a spike (stated so we don&rsquo;t over-credit)</h3>
-    <ul>
-      <li class="small"><strong>&ldquo;making gpus go brrr&rdquo; is a bio line, not a systems record.</strong> All 39 repos enumerated: <em>no</em> original
-        CUDA / Triton / kernel / custom-inference artifacts. The named repos break down as research/eval plumbing (<code>dino-with-online-knn</code>,
-        <code>ibot-with-online-knn</code>, <code>mmsegmentation-tdv</code> &mdash; eval harnesses he wrote around TDV) and <strong>learning reimplementations</strong>
-        (<code>scratch-stable-diffusion</code>, <code>nano-gpt-impl</code>, an MIT 6.824 map-reduce lab). Good engineering; not novel systems research.</li>
-      <li class="small"><strong>The other indexed paper is undergrad filler.</strong> &ldquo;Cloud Cover Forecasting Using LSTM and GANs&rdquo; (IRJET, 2021, a
-        low-tier non-selective Indian journal), 1st-listed of 5, from Sinhgad/SPPU. Minimal signal; noted for completeness, not credited.</li>
-      <li class="small"><strong>No Google Scholar profile yet</strong> (TDV not indexed; 0 cites = uninformative, not low-impact). Semantic Scholar author
-        <code>2119067930</code>, h-index 0. The signal here is <em>authorship position and lineage</em>, explicitly not citation metrics.</li>
+      <li class="small"><strong>&ldquo;You Don&rsquo;t Need Strong Assumptions: Visual Representation Learning via Temporal Differences&rdquo;</strong> (TDV) &mdash; <a href="https://arxiv.org/abs/2606.15956">arXiv 2606.15956</a>, submitted 14 Jun 2026, under review NeurIPS&rsquo;26. Byline: <strong>Daithankar* &middot; <a href="alexi-gladstone.html">Gladstone</a>* &middot; Yann LeCun &middot; Heng Ji</strong> (* equal). His role: <strong>co-first author + code owner</strong> (<a href="https://github.com/ninaddaithankar/tdv">repo</a>, ~28&#9733;). arXiv ID verified by direct fetch.</li>
+      <li class="small"><strong>Claimed results (UNVERIFIED):</strong> matches DINO/iBOT on segmentation, surpasses on optical flow + stereo depth. Author-stated, days-old, no peer review. Treat as a claim.</li>
+      <li class="small"><strong>Other indexed paper:</strong> &ldquo;Cloud Cover Forecasting Using LSTM and GANs&rdquo; (IRJET 2021) &mdash; undergrad filler, noted not credited. <strong>No Google Scholar profile yet</strong> (0 cites = days-old, not low-impact).</li>
     </ul>
   </section>
 
-  <!-- THE READ -->
-  <div class="spike-box" style="border-left-color:#6b5b95;">
-    <div class="label">&#9670; The Read &mdash; interpretation, not fact</div>
-    <p>
-      The tell is that he taught himself <em>into</em> LeCun&rsquo;s exact research area <strong>before</strong> co-authoring with him. His own blog walks through
-      energy-based models from Hopfield networks forward, in his own voice (<em>&ldquo;so that in a few months when my biological neural net starts pruning the
-      connections&hellip; I can quickly skim this&rdquo;</em>); another essay cleanly disentangles AI / AGI / ASI. His site self-description:
-      <em>&ldquo;extremely curious about what makes us intelligent, and how we could replicate it &hellip; interested in world models, continual learning,
-      neuroscience &amp; psychology&rdquo;</em> &mdash; and the GitHub bio&rsquo;s <em>&ldquo;would love to understand what goes on inside my brain cells&rdquo;</em>
-      reads as a genuine neuroscience pull, not a throwaway.
-    </p>
-    <p style="margin-top:0.6rem;">
-      <strong>Our read:</strong> he is a <strong>late-accelerating, fundamentals-first researcher</strong> &mdash; a 3-year enterprise SWE who went back for a
-      master&rsquo;s and, inside ~18 months, made himself equal-contribution lead on a LeCun paper. The optimization target looks like <em>understanding
-      intelligence</em>, with world-models / JEPA as the chosen vehicle. <strong>Why it matters:</strong> if he founds, it will most likely be downstream of a
-      research conviction (a world-model / continual-learning bet), not a product itch &mdash; so the way in is the problem, never the pitch.
-      <strong>Falsifiers:</strong> if he takes a pure-application industry role and goes quiet on research, or if the &ldquo;brain cells / neuroscience&rdquo;
-      framing turns out to be aesthetic rather than a live constraint on what he chooses next.
-    </p>
-  </div>
-
-  <!-- HUMAN LAYERS: ORIGIN -->
+  <!-- ORIGIN -->
   <section>
-    <h2>Origin &amp; Early Spike</h2>
-    <p class="small muted">The honest origin story here is <strong>acceleration, not a teenage-prodigy pedigree</strong>: there is no olympiad / JEE-rank / competitive-programming record, and his site&rsquo;s Awards section is empty. The &ldquo;see it early&rdquo; evidence is a steady academic record plus a fast, self-directed pivot into frontier research.</p>
+    <h2>Origin &amp; Trajectory</h2>
     <ul>
-      <li class="small"><strong>Undergrad:</strong> <strong>Savitribai Phule Pune University (SPPU)</strong> &mdash; B.E. Computer Science, <strong>2017&ndash;2021, GPA 9.1/10</strong> (his own site source, <code>Education.tsx</code>). Coursework includes High Performance Computing &mdash; the seed of the GPU interest. Anchors him as <strong>Indian-origin, Pune</strong>.</li>
-      <li class="small"><strong>The 3-year industry chapter:</strong> <strong>eQ Technologic (Pune), Software Engineer, Data Virtualization, Aug 2021&ndash;Jul 2024.</strong> Built enterprise data-integration connectors (Java/Python) for a Fortune-100 aerospace customer. He is <em>not</em> a fresh-out-of-undergrad student &mdash; he is ~27, with real production-engineering reps before the research pivot. The gap is the story: a working SWE who chose to go all-in on research.</li>
-      <li class="small"><strong>Master&rsquo;s:</strong> <strong>UIUC (Siebel School of Computing &amp; Data Science), MS Computer Science, Aug 2024&ndash;Dec 2025, GPA ~3.9/4.</strong> Coursework includes &ldquo;Advances in Cognitive Science,&rdquo; &ldquo;Deep Learning for Computer Vision,&rdquo; &ldquo;Deep Generative Models&rdquo; &mdash; consistent with the world-models / neuroscience bent. Joined Heng Ji&rsquo;s BLENDER Lab on arrival; TDV is that work.</li>
-      <li class="small"><strong>Competition signals (JEE / IOI / ICPC / Codeforces / KVPY / ISEF, etc.): NONE found</strong> &mdash; stated plainly. His <code>Awards.tsx</code> is empty; no rating, no rank surfaced anywhere. The spike is recent and output-shaped, not a from-childhood medal trail.</li>
+      <li class="small"><strong>SPPU (Savitribai Phule Pune University)</strong> &mdash; B.E. CS, 2017&ndash;2021, GPA 9.1. No olympiad / JEE-rank / competitive-programming record (his Awards section is empty) &mdash; the origin is acceleration, not a teenage-prodigy pedigree.</li>
+      <li class="small"><strong>eQ Technologic (Pune), Software Engineer, Data Virtualization, Aug 2021&ndash;Jul 2024</strong> (~3 yrs, Fortune-100 aerospace customer) &mdash; a working SWE who chose to go all-in on research, ~27.</li>
+      <li class="small"><strong>UIUC (Siebel School), MS CS, Aug 2024&ndash;Dec 2025</strong> &rarr; Heng Ji&rsquo;s BLENDER Lab; TDV is that work. Stated interests: world models, continual learning, neuroscience (&ldquo;what goes on inside my brain cells&rdquo;) &mdash; and he taught himself <em>into</em> LeCun&rsquo;s area before co-authoring with him.</li>
     </ul>
   </section>
 
-  <!-- HUMAN LAYERS: TEXTURE -->
+  <!-- STATUS & TIMING -->
   <section>
-    <h2>Life &amp; Texture</h2>
-    <p class="small muted">All sourced to <em>his own CS site</em> (<code>Misc.tsx</code> / <code>Header.tsx</code>). <strong>Disambiguation:</strong> a different person of the same name is a Pune Santoor (Indian classical) musician with separate, music-branded handles (instagram &ldquo;&hellip;.santoor&rdquo;). The music interests below are the CS person&rsquo;s own stated hobbies, on his CS site &mdash; not the musician&rsquo;s career. The shared Pune origin is a coincidence of a common Marathi surname.</p>
-    <ul>
-      <li class="small"><strong>Distance running (current):</strong> training for a sub-60-minute 10K (current PR ~68 min); wants to run a marathon &mdash; calls it <em>&ldquo;meditation in motion.&rdquo;</em></li>
-      <li class="small"><strong>Cricket:</strong> grew up playing; school U-12 / U-14 interschool teams; played for eQ&rsquo;s team as a batting all-rounder.</li>
-      <li class="small"><strong>Music (his own hobby, on his CS site):</strong> self-taught <strong>piano</strong> (started in undergrad, inspired by Yiruma&rsquo;s &ldquo;River Flows in You&rdquo;) and <strong>Bansuri</strong> (Indian flute); loves Indian + Western classical (Bhimsen Joshi, Hariprasad Chaurasia, Schubert, Beethoven, Mahler, Hans Zimmer).</li>
-      <li class="small"><strong>Reachability:</strong> <strong>no public Twitter/X</strong> (the slot is commented out in his site source). Active channels: <a href="https://www.linkedin.com/in/ninaddaithankar/">LinkedIn</a>, <a href="https://github.com/ninaddaithankar">GitHub</a>, and a Weights &amp; Biases profile. His site header openly invites contact (&ldquo;on the job market&hellip; hit me up&rdquo;). A UIUC NetID-based university address almost certainly exists but was <em>not</em> primary-source verified (<em>do not assert it</em>); <strong>LinkedIn or his site is the clean way in.</strong></li>
-      <li class="small"><strong>Outreach hook:</strong> lead with the world-models tension &mdash; the self-taught-into-LeCun&rsquo;s-area throughline and the &ldquo;what makes us intelligent / brain cells&rdquo; obsession. The warmest, least-transactional opener references the <em>research</em>, acknowledges the open window, and offers the work, not a logo.</li>
-    </ul>
+    <h2>Status &amp; timing</h2>
+    <p class="small">
+      Post-MS (graduated Dec 2025), attached to Heng Ji&rsquo;s BLENDER Lab, <strong>not enrolled in a PhD, unattached to any company</strong> &mdash; his site header reads <em>&ldquo;I&rsquo;m on the job market.&rdquo;</em>
+      No founding signal anywhere; path genuinely undecided (PhD vs. industry research vs. conceivably building). The reason to open a relationship now is the <strong>open window</strong>, not an inflection &mdash;
+      lead with the work and the world-models tension (he reached LeCun&rsquo;s area on his own), never money or a logo. If a founding / co-founder / &ldquo;left to build&rdquo; move appears, the timing re-tiers.
+    </p>
   </section>
 
   <!-- NETWORK MAP -->
   <section id="net">
     <h2>Network Map &amp; Recursive Discoveries</h2>
-    <p class="small muted">The network value here arguably exceeds Ninad&rsquo;s own tier: his co-first author is already indexed at T1, and the BLENDER Lab surfaced a stronger near-term inflection profile (Chi Han). The lab is the recursive goldmine.</p>
     <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
       <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Person</td><td>Tie</td><td>Why it matters</td></tr>
-      <tr style="border-bottom:1px solid var(--border)"><td><strong><a href="alexi-gladstone.html">Alexi Gladstone</a></strong></td><td>TDV co-first author; informal advisor</td><td><strong>Already in index (T1).</strong> Sole 1st author of Energy-Based Transformers (ICLR 2026 Oral, ~633&#9733;, featured in The Batch); LeCun co-author; Meta + Palantir interns. The owner&rsquo;s exact energy-based / world-models thesis. The single most valuable edge in this dossier.</td></tr>
-      <tr style="border-bottom:1px solid var(--border)"><td><strong>Yann LeCun</strong></td><td>TDV co-author (NYU)</td><td>Not a target &mdash; the <em>edge</em> is the asset: it places Ninad and Gladstone inside the LeCun / JEPA lineage. External EBM anchor to know: <strong>Yilun Du</strong> (Harvard Kempner, ex-DeepMind/OpenAI).</td></tr>
-      <tr style="border-bottom:1px solid var(--border)"><td><strong>Heng Ji</strong></td><td>Advisor (UIUC BLENDER Lab)</td><td>Amazon Scholar; large, high-output lab &mdash; the recursive-discovery vein for this cluster.</td></tr>
-      <tr style="border-bottom:1px solid var(--border)"><td><strong>Chi Han</strong></td><td>BLENDER Lab PhD</td><td><strong>Recursive P0.</strong> Graduating June 2026, unplaced; flagship mCLM (3B chemical LM beating GPT-5 on synthesizability, ICLR 2026 Oral); Tsinghua Yao Class. A <em>stronger</em> near-term inflection than Ninad &mdash; credible AI-for-science spin-out, reachable now.</td></tr>
-      <tr style="border-bottom:1px solid var(--border)"><td><strong>Sahil Shah</strong></td><td>Incoming UIUC PhD (video)</td><td><strong>Recursive P1</strong>, likely <code>indian</code>. ECCV 2024 Oral + CVPR 2025 + AAAI 2026; NVIDIA &amp; Tesla internships. Pure video-understanding fit; multi-year track.</td></tr>
-      <tr style="border-bottom:1px solid var(--border)"><td><strong>Aditi Tiwari</strong></td><td>BLENDER Lab</td><td><strong>Recursive P2</strong>, <code>indian</code>. NeurIPS 2025 Spotlight (360&deg; firefighting video); Adobe Research.</td></tr>
-      <tr style="border-bottom:1px solid var(--border)"><td><strong>Xingyao Wang</strong></td><td>BLENDER Lab alum</td><td>Network node (not a pursuit): co-founder/CAO of All Hands AI (OpenHands, ~50k&#9733;) &mdash; well past inception. Marks the lab&rsquo;s founder-producing track record.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong><a href="alexi-gladstone.html">Alexi Gladstone</a></strong></td><td>TDV co-first author; informal advisor</td><td><strong>In index (T1).</strong> Sole 1st author of Energy-Based Transformers (ICLR&rsquo;26 Oral); the more-accomplished of the pair &mdash; the most valuable edge here.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Chi Han</strong></td><td>BLENDER Lab PhD</td><td><strong>Recursive P0</strong> &mdash; graduating June 2026 unplaced; mCLM beats GPT-5 on synthesizability (ICLR&rsquo;26 Oral); a stronger near-term profile than Ninad.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Sahil Shah</strong></td><td>Incoming UIUC PhD (video)</td><td><strong>Recursive P1</strong>, likely indian. ECCV&rsquo;24 Oral + CVPR&rsquo;25; NVIDIA + Tesla interns.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Heng Ji</strong> / <strong>Yann LeCun</strong></td><td>Advisor / co-author</td><td>The BLENDER lab + the LeCun-JEPA edge; the latter is the network asset, not a mentorship.</td></tr>
     </table>
   </section>
 
@@ -173,16 +116,15 @@
   <section>
     <h2>Notes</h2>
     <ul>
-      <li class="small"><strong>Tier T2, no urgency seed.</strong> High caliber, no inflection trigger. Track / relationship-build; re-tier to T0/T1 on any founding, co-founder-pairing, or &ldquo;left to build&rdquo; signal, or a declined-PhD-for-a-company move. Check ~quarterly.</li>
-      <li class="small"><strong>Gate cleared + verified:</strong> TDV co-first authorship CONFIRMED (arXiv citation metadata + project page + repo, three independent sources); arXiv ID <strong>2606.15956 resolves (HTTP 200, title + 14-Jun-2026 date + author order verified by direct fetch)</strong> &mdash; not an echoed hallucination. UIUC MS + eQ Technologic + SPPU CONFIRMED via his own r&eacute;sum&eacute;/site source.</li>
-      <li class="small"><strong>Calibrated, not padded:</strong> co-first is <em>shared</em> with Gladstone; LeCun is 3rd/4th (NYU collaborator, not personal mentor); &ldquo;GPUs go brrr&rdquo; has no kernel/systems artifact behind it; the only other paper is IRJET undergrad filler. The case is exactly one artifact &mdash; said plainly.</li>
-      <li class="small"><strong>Disambiguation RESOLVED:</strong> the Pune Santoor musician &ldquo;Ninad (Dhananjay) Daithankar&rdquo; is a <em>different person</em> (music-branded handles). Every fact here traces to the CS person (<code>github.com/ninaddaithankar</code>, the TDV byline, his CS site). No music-career facts attached.</li>
-      <li class="small"><strong>Recursive discoveries logged:</strong> Chi Han (P0 &mdash; arguably the higher-priority follow-up), Sahil Shah (P1, indian), Aditi Tiwari (P2, indian). Alexi Gladstone already dossiered (T1); Xingyao Wang / Yilun Du indexed as network nodes.</li>
+      <li class="small"><strong>Verification:</strong> TDV co-first authorship confirmed (arXiv metadata + project page + repo); arXiv 2606.15956 resolves (direct fetch). UIUC MS + eQ + SPPU confirmed via his own r&eacute;sum&eacute;/site.</li>
+      <li class="small"><strong>Calibration:</strong> the alpha is the TDV <em>idea</em> &mdash; shared, brand-new, unproven. Not a systems person (&ldquo;GPUs go brrr&rdquo; is a tagline). One substantive paper. Said plainly.</li>
+      <li class="small"><strong>Disambiguation:</strong> the Pune Santoor musician &ldquo;Ninad Daithankar&rdquo; is a different person; every fact here traces to the CS person.</li>
+      <li class="small"><strong>Recursive discoveries logged:</strong> Chi Han (P0), Sahil Shah (P1, indian), Aditi Tiwari (P2, indian). Gladstone already dossiered (T1).</li>
     </ul>
   </section>
 
   <footer>
-    researched: 2026-06-17 &middot; dropped LinkedIn lead &middot; primary sources: arxiv.org/abs/2606.15956 (citation metadata, direct fetch), temporal-difference-vision.github.io, github.com/ninaddaithankar (+ /tdv), ninaddaithankar.github.io (r&eacute;sum&eacute; + site source), Semantic Scholar 2119067930 &middot; <a href="../index.html">back to index</a>
+    researched: 2026-06-17 &middot; alpha-first format &middot; primary sources: arxiv.org/abs/2606.15956 (direct fetch), temporal-difference-vision.github.io, github.com/ninaddaithankar, ninaddaithankar.github.io (r&eacute;sum&eacute;), Semantic Scholar 2119067930 &middot; <a href="../index.html">back to index</a>
   </footer>
 
 </body>

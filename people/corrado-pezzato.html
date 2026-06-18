@@ -15,17 +15,17 @@
 
   <div class="profile-header">
     <h1>Corrado Pezzato</h1>
-    <p class="one-liner"><strong><span style="color:var(--accent)">Co-Founder &amp; Head of Robotics of <a href="https://theblanket.ai/">The Blanket</a></span> &mdash; a stealth <strong>active-inference robotics</strong> startup (&ldquo;Robots that think before they act&rdquo;), a 2026 spin-out of the VERSES robotics team that just co-founded out of stealth.</strong> The <strong>technical robotics core</strong>: TU Delft Cognitive Robotics PhD (defended Jan 2024, Wisse + Hern&aacute;ndez Corbato), <strong>first author on the applied active-inference-for-manipulation line</strong> &mdash; a novel AI adaptive controller (RA-L 2020), Active Inference + Behavior Trees (IEEE T-RO 2023), and sampling-based MPC on parallel physics sims (RA-L 2025) &mdash; which <em>is</em> the company&rsquo;s product thesis. Italian. <strong>T0 &mdash; verified co-founder at inception, pre-funding, reach out now.</strong></p>
+    <p class="one-liner"><strong>One of a dozen people worldwide who took active inference <span style="color:var(--accent)">from theory to actually-working robot controllers</span> &mdash; and his specific edge is fusing it with sampling-based MPC on massively-parallel physics sims, so manipulation becomes reactive and data-efficient with <em>no policy training</em>.</strong> First author on the line that proves it: a novel active-inference adaptive controller (RA-L 2020), Active Inference + Behavior Trees (IEEE T-RO 2023), and sampling-based MPC on parallel sims (RA-L 2025). Italian; TU Delft Cognitive Robotics PhD. <em>Status: co-founder &amp; Head of Robotics of <a href="https://theblanket.ai/">The Blanket</a> (stealth active-inference robotics, pre-funding) &mdash; his PhD thesis, productized.</em></p>
     <div class="tags">
       <span class="tag" style="background:#f3d9d4;color:var(--accent);">tier-0: active pursuit</span>
       <span class="tag">founders</span>
       <span class="tag">stealth-founder</span>
       <span class="tag">robotics</span>
       <span class="tag">active-inference</span>
-      <span class="tag">the-blanket</span>
       <span class="tag">manipulation</span>
+      <span class="tag">model-predictive-control</span>
+      <span class="tag">the-blanket</span>
       <span class="tag">tu-delft</span>
-      <span class="tag">ex-verses</span>
       <span class="tag">free-energy</span>
     </div>
     <div class="links">
@@ -37,63 +37,51 @@
     </div>
   </div>
 
-  <!-- INVESTMENT THESIS -->
+  <!-- THE ALPHA -->
   <div class="spike-box">
-    <div class="label">&#9670; Investment Thesis &mdash; T0 (Active Pursuit)</div>
+    <div class="label">&#9670; The Alpha &mdash; what&rsquo;s actually special, measured against the field</div>
     <p>
-      Corrado Pezzato is a <strong>clean inception-stage founding moment in a genuinely out-of-distribution corner of robotics.</strong> His own LinkedIn headline reads, verbatim,
-      <strong>&ldquo;Co-Founder and Head of Robotics at The Blanket&rdquo;</strong> &mdash; corroborated by his Google Scholar affiliation flipping from <em>VERSES Research Lab</em> to <em>The Blanket</em>.
-      <a href="https://theblanket.ai/">The Blanket</a> is a <strong>stealth, pre-funding active-inference robotics startup</strong> (&ldquo;Robots that think before they act&rdquo;; product
-      <em>auto&middot;motion</em> &mdash; zero-programming robot deployment, operational in hours, online self-calibration, human-in-the-loop when uncertain) that <strong>spun out of the VERSES
-      robotics team</strong> in 2026. The company&rsquo;s own site openly solicits investors. This is exactly the pre-company / just-co-founded moment the fund targets.
+      Active inference has a thousand theory papers and almost no working robots. Pezzato is in the <strong>small set who actually closed that gap</strong> &mdash; and his distinct edge is a specific
+      mechanism: <strong>use a massively-parallel physics simulator <em>as</em> the dynamics model and roll out thousands of futures in parallel (sampling-based MPC / MPPI), under an active-inference
+      objective</strong>, so a robot does <strong>contact-rich manipulation reactively, online, with no policy training and no per-task reprogramming.</strong>
     </p>
     <p style="margin-top:0.6rem;">
-      The spike is the <strong>tightest possible fit between the founder&rsquo;s research and the product.</strong> Pezzato is <strong>first author on the applied active-inference-for-manipulation
-      line</strong> that <em>is</em> auto&middot;motion: <strong>&ldquo;A novel adaptive controller for robot manipulators based on active inference&rdquo;</strong> (RA-L 2020, ~135 cites, his most-cited);
-      <strong>&ldquo;Active Inference and Behavior Trees for Reactive Action Planning and Execution in Robotics&rdquo;</strong> (<strong>IEEE Transactions on Robotics 2023</strong>, ~72 cites &mdash; the
-      field&rsquo;s top journal, first author); and <strong>&ldquo;Sampling-based MPC leveraging parallelizable physics simulations&rdquo;</strong> (RA-L 2025, already ~66 cites &mdash; the rate-of-change
-      signal). The throughline &mdash; fusing active inference with sampling-based MPC (MPPI) on physics simulators for contact-rich manipulation &mdash; is precisely what The Blanket sells. He is
-      one of perhaps a dozen people globally credible to commercialize this.
+      Why that&rsquo;s the non-obvious move: the field forces a choice between <strong>learned policies</strong> (RL / imitation / the VLA wave &mdash; powerful but data-hungry and brittle when the world
+      changes) and <strong>classical model-based control</strong> (MPC / task-and-motion planning &mdash; principled but slow to re-plan and bad at contact). Pezzato&rsquo;s line dissolves the tradeoff:
+      the simulator is the model (no model to hand-specify, no data to collect), parallel sampling makes it fast enough to be reactive, and it handles contact because the physics engine does. His
+      RA-L 2025 paper on this is already at <strong>~66 cites in well under a year</strong> &mdash; the rate-of-change tell &mdash; and it is, almost literally, <em>auto&middot;motion</em>.
     </p>
     <p style="margin-top:0.6rem;">
-      <strong>The honest read on tier &mdash; T0, reach out now.</strong> Verified co-founder, real and narrow technical moat, left VERSES (the active-inference company) to build the productized
-      version of his own thesis, company pre-funding. The differentiation is the bet itself: a <strong>model-based reasoning layer (data-efficient, online-adaptive, uncertainty-aware)</strong>
-      against the data-hungry VLA / foundation-model wave (Physical Intelligence, Skild). <strong>Open questions for the first call</strong> (do not weaken the case): the rest of the founding team
-      &mdash; a CEO co-founder almost certainly exists but is not publicly named (strongest lead: <a href="riddhi-jain-pitliya.html">Riddhi Jain Pitliya</a>) &mdash; and whether the
-      &ldquo;Fiamma Robotics&rdquo; entity on his LinkedIn (Jan 2026&ndash;present, Delft) is The Blanket&rsquo;s legal vehicle or his own consulting shell. Neither dents the thesis.
+      The second strand is <strong>Active Inference + Behavior Trees</strong> (T-RO 2023): reward-free, reactive task execution that recovers from failures and is interpretable &mdash; behavior trees giving
+      structure, active inference giving the online adaptation. Same instinct as the company: <strong>model-based, data-efficient, reactive</strong>, the deliberate antithesis of the data-hungry
+      end-to-end wave.
+    </p>
+    <p style="margin-top:0.6rem;" class="small muted">
+      <strong>Calibrated honestly:</strong> 653 cites / h-10 is solid, not a citation superstar; the field-defining survey (2112.01871) is <strong>3rd-of-11</strong>, he doesn&rsquo;t lead it. The alpha is the
+      <em>first-author</em> controller line (RA-L 2020 / T-RO 2023 / RA-L 2025), where he is one of the genuinely few credible to ship this &mdash; not the citation total.
     </p>
   </div>
 
-  <!-- THE BLANKET CLUSTER -->
-  <div class="spike-box" style="border-left-color:#2f6f4f;">
-    <div class="label">&#9670; The Blanket &mdash; the cluster (treat as one target)</div>
-    <p class="small">
-      The Blanket is a <strong>~5-person founding group, all ex-VERSES active-inference researchers</strong>, surfaced together. The founding-team paper is
-      <strong>arXiv 2507.17338, &ldquo;Mobile Manipulation with Active Inference for Long-Horizon Rearrangement Tasks&rdquo;</strong> (submitted 23 Jul 2025; verified) &mdash; authored by
-      <strong>Pezzato (1st) &middot; <a href="#net">&Ccedil;atal</a> &middot; Van de Maele &middot; <a href="riddhi-jain-pitliya.html">Pitliya</a> &middot; <a href="tim-verbelen.html">Verbelen</a> (senior)</strong> &mdash;
-      and <em>that author group is the company.</em> Map: <strong><a href="tim-verbelen.html">Tim Verbelen</a></strong> (senior research anchor / IWAI founder; reported Co-Founder &amp; CTO),
-      <strong>Pezzato</strong> (Head of Robotics), <strong>Toon Van de Maele</strong> (Head of AI), <strong>Ozan &Ccedil;atal</strong> (likely co-founder), and
-      <strong><a href="riddhi-jain-pitliya.html">Riddhi Jain Pitliya</a></strong> (early member; the strongest CEO lead, unconfirmed).
-    </p>
-  </div>
-
-  <!-- THE SPIKE -->
+  <!-- HOW IT STACKS UP -->
   <section>
-    <h2>The Spike &mdash; With Evidence (authorship-precise)</h2>
-    <p>
-      Scholar (KNMc_NsAAAAJ): <strong>653 cites, h-index 10, i10-11.</strong> His genuine spike is <strong>first-author applied active inference + sampling-based MPC for robot manipulation</strong> &mdash;
-      he is among the small set who actually built and published <em>working robot controllers</em> in this paradigm, not just theory.
-    </p>
+    <h2>How it stacks up (the work vs. the closest comparable)</h2>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>His work</td><td>Closest comparable</td><td>The edge that&rsquo;s actually his</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Sampling-based MPC on parallel sims</strong> (RA-L 2025, 1st)</td><td>Learned manipulation (RL / imitation / VLA: RT-2, &pi;0); classical MPC / TAMP</td><td><strong>Simulator-as-model + parallel rollouts</strong> &rarr; reactive, contact-rich manipulation with <em>no training and no hand-built model</em>.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Active Inference + Behavior Trees</strong> (T-RO 2023, 1st)</td><td>Hand-coded behavior trees; RL task policies</td><td>Reward-free, <strong>reactive + failure-recovering</strong> task execution that stays interpretable.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Active-inference adaptive controller</strong> (RA-L 2020, 1st)</td><td>Classical adaptive / impedance control</td><td>First to cast manipulator adaptive control as active inference &mdash; the foundation of the whole program.</td></tr>
+    </table>
+  </section>
+
+  <!-- THE SPIKE: EVIDENCE -->
+  <section>
+    <h2>The Spike &mdash; the evidence behind the alpha (authorship-precise)</h2>
+    <p>Scholar (KNMc_NsAAAAJ): <strong>653 cites, h-index 10, i10-11.</strong> The first-author controller line that backs the alpha:</p>
     <ul>
-      <li class="small"><strong>A novel adaptive controller for robot manipulators based on active inference</strong> &mdash; <strong>1st author</strong> (Pezzato, Ferrari, Hern&aacute;ndez Corbato),
-        <strong>RA-L 2020, ~135 cites.</strong> His most-cited work; the foundation of the program.</li>
-      <li class="small"><strong>Active Inference and Behavior Trees for Reactive Action Planning and Execution in Robotics</strong> &mdash; <strong>1st author</strong> (Pezzato, Hern&aacute;ndez Corbato, Bonhof, Wisse),
-        <strong>IEEE Transactions on Robotics (T-RO) 2023, ~72 cites.</strong> First-author in robotics&rsquo; flagship journal &mdash; the load-bearing credential.</li>
-      <li class="small"><strong>Sampling-based MPC leveraging parallelizable physics simulations</strong> &mdash; <strong>1st author</strong>, <strong>RA-L 2025, ~66 cites already</strong> (fast-rising).
-        Active-inference-flavored MPPI on Isaac Gym for contact-rich tasks &mdash; maps one-to-one onto <em>auto&middot;motion</em>. His own framing (ICRA): <em>&ldquo;a super simple idea that turns out to be
-        extremely powerful for contact rich tasks! And it&rsquo;s open-source!&rdquo;</em></li>
-      <li class="small"><strong>Active Inference in Robotics and Artificial Agents: Survey and Challenges</strong> &mdash; <strong>3rd of 11</strong> (Lanillos lead; arXiv 2112.01871, 2021, ~203 cites).
-        Calibrated: he sits <em>on</em> the field-defining survey but does not lead it &mdash; do not over-credit.</li>
+      <li class="small"><strong>A novel adaptive controller for robot manipulators based on active inference</strong> &mdash; <strong>1st author</strong> (Pezzato, Ferrari, Hern&aacute;ndez Corbato), <strong>RA-L 2020, ~135 cites</strong> (his most-cited).</li>
+      <li class="small"><strong>Active Inference and Behavior Trees for Reactive Action Planning and Execution in Robotics</strong> &mdash; <strong>1st author</strong> (Pezzato, Hern&aacute;ndez Corbato, Bonhof, Wisse), <strong>IEEE T-RO 2023, ~72 cites</strong> (robotics&rsquo; flagship journal).</li>
+      <li class="small"><strong>Sampling-based MPC leveraging parallelizable physics simulations</strong> &mdash; <strong>1st author</strong>, <strong>RA-L 2025, ~66 cites already</strong> (fast-rising). His ICRA framing: <em>&ldquo;a super simple idea that turns out to be extremely powerful for contact rich tasks! And it&rsquo;s open-source!&rdquo;</em></li>
+      <li class="small"><strong>Active Inference in Robotics and Artificial Agents: Survey and Challenges</strong> &mdash; <strong>3rd of 11</strong> (Lanillos lead; arXiv 2112.01871, 2021, ~203 cites). On it, not leading it.</li>
     </ul>
   </section>
 
@@ -101,28 +89,41 @@
   <section>
     <h2>Origin &amp; Trajectory</h2>
     <ul>
-      <li class="small"><strong>Undergrad:</strong> Universit&agrave; di Bologna (Italy). <strong>PhD: TU Delft Cognitive Robotics, 2019&ndash;Jan 2024</strong> (defended 9 Jan 2024); promotor <strong>Martijn Wisse</strong>,
-        copromotor <strong>Carlos Hern&aacute;ndez Corbato</strong>. Thesis: <em>&ldquo;Exploring Active Inference and Model Predictive Path Integral Control: A Journey from Low-Level Commands to Task and Motion Planning.&rdquo;</em>
-        A recognized robot-learning group (not a CLAUDE.md critical lab, but well-regarded).</li>
-      <li class="small"><strong>VERSES</strong> (Karl Friston&rsquo;s active-inference company), Robotics Research Engineer, ~2024&ndash;2025 (exact tenure fuzzy) &rarr; <strong>The Blanket, Co-Founder &amp; Head of Robotics, ~Jan 2026&ndash;present.</strong>
-        The inflection: he left the commercial active-inference company to start the one productizing his exact PhD thesis.</li>
-      <li class="small"><strong>Italian-origin</strong> (NOT Indian &mdash; no <code>indian</code> tag). Based in Delft, Netherlands. Open-source builder: maintains <code>github.com/cpezzato</code> (incl. <code>discrete_active_inference</code>).
-        X bio: <em>&ldquo;Never settle, Roboticist, PhD.&rdquo;</em></li>
+      <li class="small"><strong>Undergrad:</strong> Universit&agrave; di Bologna. <strong>PhD: TU Delft Cognitive Robotics, 2019&ndash;Jan 2024</strong> (defended 9 Jan 2024); promotor <strong>Martijn Wisse</strong>, copromotor <strong>Carlos Hern&aacute;ndez Corbato</strong>. Thesis: <em>&ldquo;Exploring Active Inference and Model Predictive Path Integral Control: A Journey from Low-Level Commands to Task and Motion Planning&rdquo;</em> &mdash; i.e. the thesis IS the company.</li>
+      <li class="small"><strong>VERSES</strong> (Karl Friston&rsquo;s active-inference company), Robotics Research Engineer, ~2024&ndash;2025 &rarr; left to build The Blanket.</li>
+      <li class="small"><strong>Italian</strong> (Delft-based). NOT Indian &mdash; no <code>indian</code> tag. Open-source builder: <code>github.com/cpezzato</code> (incl. <code>discrete_active_inference</code>). X bio: <em>&ldquo;Never settle, Roboticist, PhD.&rdquo;</em></li>
     </ul>
   </section>
+
+  <!-- STATUS & TIMING -->
+  <section>
+    <h2>Status &amp; timing</h2>
+    <p class="small">
+      <strong>Co-Founder &amp; Head of Robotics of <a href="https://theblanket.ai/">The Blanket</a></strong> &mdash; verified to his own LinkedIn headline + Scholar affiliation flip (VERSES &rarr; The Blanket).
+      The control/manipulation half of the founding core (with <a href="toon-van-de-maele.html">Toon Van de Maele</a> on world models). Company is <strong>stealth and pre-funding</strong> (soliciting investors on its site).
+      <strong>Reachable now.</strong> Lead with the sampling-MPC / contact-rich-manipulation work. Open: the CEO seat (lead: <a href="riddhi-jain-pitliya.html">Pitliya</a>, unconfirmed) and whether &ldquo;Fiamma Robotics&rdquo; on his LinkedIn is The Blanket&rsquo;s entity or a consulting shell.
+    </p>
+  </section>
+
+  <!-- THE BLANKET CLUSTER -->
+  <div class="spike-box" style="border-left-color:#2f6f4f;">
+    <div class="label">&#9670; The Blanket &mdash; the cluster (context)</div>
+    <p class="small">
+      A ~5-person founding group, all ex-VERSES active-inference researchers. Founding-team paper: <strong>arXiv 2507.17338</strong> &mdash; <strong>Pezzato (1st) &middot; &Ccedil;atal &middot; <a href="toon-van-de-maele.html">Van de Maele</a> &middot; <a href="riddhi-jain-pitliya.html">Pitliya</a> &middot; <a href="tim-verbelen.html">Verbelen</a> (senior).</strong>
+      Title-verified technical co-founders: <strong>Pezzato</strong> (control) + <strong><a href="toon-van-de-maele.html">Van de Maele</a></strong> (world models). Plus <strong><a href="tim-verbelen.html">Verbelen</a></strong> (senior anchor / IWAI founder), <strong>Ozan &Ccedil;atal</strong> (likely co-founder), <strong><a href="riddhi-jain-pitliya.html">Riddhi Jain Pitliya</a></strong> (early member; CEO lead, unconfirmed).
+    </p>
+  </div>
 
   <!-- NETWORK MAP -->
   <section id="net">
     <h2>Network Map &amp; Recursive Discoveries</h2>
     <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
       <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Person</td><td>Tie</td><td>Why it matters</td></tr>
-      <tr style="border-bottom:1px solid var(--border)"><td><strong><a href="tim-verbelen.html">Tim Verbelen</a></strong></td><td>The Blanket co-founder (senior); founding-paper senior author</td><td><strong>In index (T0).</strong> IWAI founder, h-35 &mdash; the research center of gravity. The senior anchor of the cluster.</td></tr>
-      <tr style="border-bottom:1px solid var(--border)"><td><strong><a href="riddhi-jain-pitliya.html">Riddhi Jain Pitliya</a></strong></td><td>The Blanket early member; ToM paper 1st author</td><td><strong>In index (T2).</strong> Oxford/Friston; <strong>strongest CEO lead</strong> (unconfirmed). Indian-origin.</td></tr>
-      <tr style="border-bottom:1px solid var(--border)"><td><strong>Toon Van de Maele</strong></td><td>The Blanket, Head of AI (Ghent)</td><td><strong>Recursive P0</strong> &mdash; reported co-founder; completes the founding-team map. Active inference + world models.</td></tr>
-      <tr style="border-bottom:1px solid var(--border)"><td><strong>Ozan &Ccedil;atal</strong></td><td>The Blanket, likely co-founder (Ghent)</td><td><strong>Recursive P1</strong> &mdash; ex-VERSES; on both founding papers. Confirm title + departure.</td></tr>
-      <tr style="border-bottom:1px solid var(--border)"><td><strong>Pablo Lanillos</strong></td><td>Survey lead author</td><td><strong>Recursive P1</strong> &mdash; central node of the active-inference-in-robotics network; possible lab-founder watch.</td></tr>
-      <tr style="border-bottom:1px solid var(--border)"><td><strong>Mohamed Baioumy</strong></td><td>Oxford (Hawes lab); frequent co-author</td><td><strong>Recursive P2</strong> &mdash; active inference + fault-tolerant control; check if building.</td></tr>
-      <tr style="border-bottom:1px solid var(--border)"><td><strong>Wisse / Hern&aacute;ndez Corbato</strong></td><td>TU Delft PhD advisors</td><td>Cognitive Robotics lineage; the academic root of the manipulation work.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong><a href="toon-van-de-maele.html">Toon Van de Maele</a></strong></td><td>Co-founder (Head of AI)</td><td><strong>In index (T0).</strong> The world-model half to his control half &mdash; the verified founding core.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong><a href="tim-verbelen.html">Tim Verbelen</a></strong></td><td>Senior anchor / IWAI founder</td><td><strong>In index (T0).</strong> The field&rsquo;s convener; senior author across the founding papers.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Elia Trevisan / Yuezhe Zhang</strong></td><td>His MPPI / sampling-MPC co-authors (TU Delft)</td><td><strong>Recursive P2</strong> &mdash; the parallel-sim-control thread; check trajectories.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Pablo Lanillos</strong></td><td>Survey lead author</td><td><strong>Recursive P1</strong> &mdash; central node of active-inference-in-robotics; lab-founder watch.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Wisse / Hern&aacute;ndez Corbato</strong></td><td>TU Delft PhD advisors</td><td>The Cognitive Robotics lineage &mdash; the academic root of the controller line.</td></tr>
     </table>
   </section>
 
@@ -130,16 +131,14 @@
   <section>
     <h2>Notes</h2>
     <ul>
-      <li class="small"><strong>Tier T0, seed urgency.</strong> Verified co-founder of a stealth, pre-funding company in the inception window. Reach out now &mdash; lead with the work (active-inference + sampling-MPC for manipulation), not money or a logo.</li>
-      <li class="small"><strong>Gate cleared + verified:</strong> co-founder status CONFIRMED (own LinkedIn headline + Scholar affiliation flip, two source types). Founding-team paper arXiv 2507.17338 verified by direct fetch (HTTP 200, author order, 23-Jul-2025). T-RO 2023 + RA-L 2020/2025 first-authorships verified.</li>
-      <li class="small"><strong>Calibrated, not padded:</strong> the survey (2112.01871) is 3rd-of-11, not lead. ~653 cites / h-10 is solid-not-superstar; the spike is first-author <em>applied</em> robot controllers, not citation volume.</li>
-      <li class="small"><strong>Open: the CEO / rest of the cap table.</strong> &ldquo;Fiamma Robotics&rdquo; (his LinkedIn, Jan 2026&ndash;present) is unresolved &mdash; The Blanket&rsquo;s entity or his consulting vehicle. Resolve in the first conversation.</li>
-      <li class="small"><strong>Recursive discoveries logged:</strong> Toon Van de Maele (P0), Ozan &Ccedil;atal (P1), Pablo Lanillos (P1), Mohamed Baioumy (P2). The whole Blanket founding team is the highest-value follow-up.</li>
+      <li class="small"><strong>Verification:</strong> co-founder status confirmed (own LinkedIn headline + Scholar affiliation flip, two source types). Founding paper arXiv 2507.17338 verified by direct fetch; T-RO 2023 + RA-L 2020/2025 first-authorships verified.</li>
+      <li class="small"><strong>Calibration:</strong> the alpha is the first-author <em>applied-control</em> line, benchmarked above &mdash; not citation volume. Survey is 3rd-of-11; don&rsquo;t over-credit.</li>
+      <li class="small"><strong>Recursive discoveries logged:</strong> Pablo Lanillos (P1), Mohamed Baioumy (P2), Elia Trevisan / Yuezhe Zhang (P2). The whole Blanket founding team is the highest-value follow-up.</li>
     </ul>
   </section>
 
   <footer>
-    researched: 2026-06-17 &middot; dropped LinkedIn lead (Blanket cluster) &middot; primary sources: theblanket.ai, LinkedIn (/in/corrado-pezzato), Scholar (KNMc_NsAAAAJ), TU Delft dissertation, arXiv 2011.09756 (T-RO), 2112.01871 (survey), 2507.17338 (founding paper, direct fetch), github.com/cpezzato &middot; <a href="../index.html">back to index</a>
+    researched: 2026-06-17 &middot; alpha-first format &middot; primary sources: theblanket.ai, LinkedIn (/in/corrado-pezzato), Scholar (KNMc_NsAAAAJ), TU Delft dissertation, arXiv 2011.09756 (T-RO), 2112.01871 (survey), 2507.17338 (founding paper), github.com/cpezzato &middot; <a href="../index.html">back to index</a>
   </footer>
 
 </body>
