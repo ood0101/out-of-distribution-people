@@ -22,6 +22,7 @@ Usage:
 """
 from __future__ import annotations
 import json
+import re
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
@@ -29,6 +30,26 @@ STATE = REPO / "data" / "outreach_state.json"
 BLURBS = REPO / "data" / "blurbs.json"
 PEOPLE = REPO / "people"
 OUT = REPO / "data" / "directory.json"
+
+# "researched: YYYY-MM-DD" in a dossier footer = when the PERSON was added.
+# This is the honest recency signal for the Feed (vs. git-commit time, which a
+# typo-fix re-floats). Fall back to git-touch when a dossier has no stamp.
+_RESEARCHED_RE = re.compile(r"researched:\s*(\d{4}-\d{2}-\d{2})")
+_added_cache: dict[str, str] = {}
+
+
+def added_date(slug: str, fallback: str) -> str:
+    if slug in _added_cache:
+        return _added_cache[slug]
+    val = fallback
+    try:
+        m = _RESEARCHED_RE.search((PEOPLE / f"{slug}.html").read_text())
+        if m:
+            val = m.group(1)
+    except OSError:
+        pass
+    _added_cache[slug] = val
+    return val
 
 
 def signal_list(sig: dict | None) -> list[str]:
@@ -72,7 +93,8 @@ def main():
             "status": e.get("status") or "not-contacted",
             "last_contacted": e.get("last_contacted"),
             "next_action_date": e.get("next_action_date"),
-            "updated": (e.get("last_git_touch") or "")[:10],   # YYYY-MM-DD
+            "updated": (e.get("last_git_touch") or "")[:10],   # YYYY-MM-DD (last edit)
+            "added": added_date(slug, (e.get("last_git_touch") or "")[:10]),  # researched date
             "channel": e.get("channel"),
             "twitter": e.get("twitter_handle"),
             "linkedin": e.get("linkedin_slug"),

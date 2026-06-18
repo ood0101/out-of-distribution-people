@@ -1,102 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Out of Distribution People &mdash; Directory</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body.dir-body { max-width: 1180px; }
-    /* sticky top bar */
-    .dir-top { position: sticky; top: 0; z-index: 50; background: var(--bg);
-      border-bottom: 1px solid var(--border); margin: 0 -2rem 0.7rem; padding: 0.6rem 2rem; }
-    .dir-top-row { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; flex-wrap: wrap; }
-    .dir-title { font-family: var(--mono); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--fg-muted); }
-    .dir-top-links { display: flex; gap: 1.1rem; font-family: var(--mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; }
-    .dir-top-links a { color: var(--fg-muted); text-decoration: none; padding-bottom: 0.15rem; border-bottom: 1px solid transparent; }
-    .dir-top-links a:hover, .dir-top-links a.cur { color: var(--accent); border-bottom-color: var(--accent); }
-    /* page heading — compact, single row */
-    .dir-head { display: flex; align-items: baseline; justify-content: space-between; gap: 0.8rem 1.2rem; flex-wrap: wrap; margin: 0.1rem 0 0.6rem; }
-    .dir-head h1 { font-size: 1.35rem; margin: 0; line-height: 1.1; }
-    .dir-head .subtitle { font-size: 0.78rem; margin: 0; color: var(--fg-muted); font-style: italic; }
-    /* controls */
-    .dir-search { width: 100%; box-sizing: border-box; padding: 0.5rem 0.75rem; font-size: 0.9rem;
-      font-family: var(--mono); border: 1px solid var(--border); border-radius: 4px; background: #fff; color: var(--fg); margin-bottom: 0.5rem; }
-    .dir-search:focus { outline: none; border-color: var(--accent); }
-    /* quick presets */
-    .dir-quick { display: flex; flex-wrap: wrap; gap: 0.4rem; align-items: center; margin-bottom: 0.5rem; }
-    .preset { font-family: var(--mono); font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.05em;
-      padding: 0.28rem 0.6rem; border-radius: 4px; cursor: pointer; user-select: none; border: 1px solid var(--accent); color: var(--accent); background: #fff; }
-    .preset:hover { background: var(--accent); color: #fff; }
-    .preset.is-on { background: var(--accent); color: #fff; }
-    .preset.clear { border-color: var(--border); color: var(--fg-muted); }
-    .preset.clear:hover { border-color: var(--fg); background: var(--fg); color: #fff; }
-    .dir-filters { display: flex; flex-wrap: wrap; gap: 0.3rem 0.4rem; align-items: center; margin-bottom: 0.35rem; }
-    .pill { font-family: var(--mono); font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.04em;
-      padding: 0.18rem 0.5rem; border: 1px solid var(--border); border-radius: 999px; background: #fff; color: var(--fg-muted); cursor: pointer; user-select: none; }
-    .pill:hover { border-color: var(--accent); color: var(--accent); }
-    .pill.active { background: var(--fg); color: #fff; border-color: var(--fg); }
-    .pill.active.tier-T0 { background: #c43d2e; border-color: #c43d2e; }
-    .pill.active.tier-T1 { background: #d98324; border-color: #d98324; }
-    .pill.active.tier-T2 { background: #6b7280; border-color: #6b7280; }
-    .pill-sep { width: 1px; height: 15px; background: var(--border); margin: 0 0.3rem; }
-    .pill-label { font-family: var(--mono); font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--fg-faint); margin-right: 0.1rem; min-width: 3.1em; }
-    .dir-meta { font-family: var(--mono); font-size: 0.72rem; color: var(--fg-faint); margin: 0.35rem 0 0.5rem; }
-    /* table */
-    table.dir-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
-    .dir-table thead th { position: sticky; top: 44px; background: var(--bg); z-index: 5;
-      text-align: left; font-family: var(--mono); font-size: 0.62rem; text-transform: uppercase; letter-spacing: 0.08em;
-      color: var(--fg-faint); font-weight: 600; padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--border); cursor: pointer; white-space: nowrap; }
-    .dir-table thead th.nosort { cursor: default; }
-    .dir-table thead th:hover:not(.nosort) { color: var(--accent); }
-    .dir-table thead th .arr { color: var(--accent); }
-    .dir-table tbody tr { border-bottom: 1px solid var(--border-light); cursor: pointer; }
-    .dir-table tbody tr:hover { background: #f2f1ec; }
-    .dir-table td { padding: 0.3rem 0.6rem; vertical-align: top; }
-    .c-tier { width: 44px; white-space: nowrap; }
-    .t-chip { display: inline-block; font-family: var(--mono); font-size: 0.6rem; font-weight: 700; letter-spacing: 0.04em;
-      color: #fff; padding: 0.1rem 0.32rem; border-radius: 2px; vertical-align: middle; }
-    .t-chip.t0 { background: #c43d2e; } .t-chip.t1 { background: #d98324; }
-    .t-chip.t2 { background: #6b7280; } .t-chip.t3 { background: #b8b8b0; }
-    .t-chip.tnone { background: #d8d8d2; color: #777; }
-    .c-person { min-width: 280px; }
-    .p-line { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.3rem; }
-    .p-name { font-weight: 600; color: var(--fg); white-space: nowrap; }
-    .p-name .indian-dot { color: var(--accent); font-size: 0.62rem; vertical-align: middle; }
-    .p-role { color: var(--fg-muted); font-size: 0.76rem; margin-top: 0.05rem; max-width: 540px;
-      white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-    .p-role .cl { font-family: var(--mono); font-size: 0.66rem; color: var(--fg-faint); }
-    .sig { display: inline-block; font-family: var(--mono); font-size: 0.55rem; text-transform: uppercase; letter-spacing: 0.04em;
-      padding: 0.05rem 0.3rem; border-radius: 2px; }
-    .sig-stealth { background: #fbeae0; color: #b4571f; } .sig-departed { background: #fde8e6; color: #c43d2e; }
-    .sig-raising { background: #e6f0e9; color: #2f6f4f; } .sig-founder { background: #ece4f5; color: #5b4b8a; }
-    .c-status { white-space: nowrap; font-size: 0.76rem; }
-    .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 0.35rem; vertical-align: middle; }
-    .dot-not-contacted { background: #cfcfc8; } .dot-contacted { background: #d98324; }
-    .dot-replied { background: #2f6f4f; } .dot-meeting { background: #2f6f4f; } .dot-passed { background: #cf6f6f; }
-    .c-status .sub { color: var(--fg-faint); font-size: 0.66rem; font-family: var(--mono); margin-top: 0.1rem; }
-    .c-upd { white-space: nowrap; font-family: var(--mono); font-size: 0.72rem; color: var(--fg-faint); }
-    .c-act { white-space: nowrap; text-align: right; }
-    .act { display: inline-block; font-family: var(--mono); font-size: 0.66rem; text-decoration: none; border: 1px solid var(--border);
-      border-radius: 3px; padding: 0.1rem 0.32rem; margin-left: 0.2rem; color: var(--fg-muted); }
-    .act:hover { border-color: var(--accent); color: var(--accent); }
-    .urgency-flag { color: var(--accent); font-weight: 700; margin-left: 0.2rem; }
-    .dir-empty { padding: 2rem; text-align: center; color: var(--fg-faint); font-style: italic; }
-    /* hide heavier columns on narrow screens */
-    @media (max-width: 820px) {
-      .c-upd { display: none; }
-      .dir-table thead th.h-upd { display: none; }
-      .p-role { white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
-    }
-    @media (max-width: 600px) {
-      .dir-top { margin: 0 -1rem 0.6rem; padding: 0.55rem 1rem; }
-      .c-status { display: none; } .dir-table thead th.h-status { display: none; }
-    }
-    .recent-updates { margin-top: 2.5rem; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Out of Distribution People &mdash; Directory</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* ── Directory "Feed" — single-column cards, newest-first (Recent / Earlier) ── */
+body.dir-body{max-width:1180px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 0 5rem}
+
+/* shared top nav (matches today.html / .dir-top) */
+.dir-top{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:1px solid var(--border);margin:0 -2rem 0;padding:0.6rem 2rem}
+.dir-top-row{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.dir-title{font-family:var(--mono);font-size:0.8rem;text-transform:uppercase;letter-spacing:0.12em;color:var(--fg-muted)}
+.dir-top-links{display:flex;gap:1.1rem;font-family:var(--mono);font-size:0.72rem;text-transform:uppercase;letter-spacing:0.08em}
+.dir-top-links a{color:var(--fg-muted);text-decoration:none;padding-bottom:0.15rem;border-bottom:1px solid transparent}
+.dir-top-links a:hover,.dir-top-links a.cur{color:var(--accent);border-bottom-color:var(--accent)}
+
+.hero{display:flex;justify-content:space-between;align-items:flex-end;margin:1.9rem 0 .3rem;gap:1rem}
+.hero h1{font-family:var(--serif);font-size:2.3rem;font-weight:400;letter-spacing:-.01em}
+.hero .sub{font-style:italic;color:var(--fg-muted);font-size:.9rem;text-align:right;max-width:400px}
+
+/* light control bar — one row */
+.controls{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;margin:1.1rem 0 .4rem}
+.srch{flex:1;min-width:240px;font-family:var(--mono);font-size:.85rem;padding:.6rem .8rem;border:1px solid var(--border);border-radius:7px;background:#fff;color:var(--fg)}
+.srch::placeholder{color:var(--fg-faint)}
+.qchip{font-family:var(--mono);font-size:.7rem;letter-spacing:.04em;text-transform:uppercase;padding:.42rem .7rem;border:1px solid var(--border);border-radius:20px;background:#fff;color:var(--fg-muted);cursor:pointer;user-select:none}
+.qchip:hover{border-color:var(--accent);color:var(--accent)}
+.qchip.on{background:var(--fg);color:#fff;border-color:var(--fg)}
+.qchip.on.t0{background:var(--accent);border-color:var(--accent)}
+.count{font-family:var(--mono);font-size:.72rem;color:var(--fg-faint);margin:.2rem 0 1.4rem;letter-spacing:.03em}
+
+/* section divider (Recent / Earlier) */
+.fdiv{display:flex;align-items:center;gap:.7rem;margin:1.8rem 0 1rem}
+.fdiv h2{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--fg-muted);font-weight:600;white-space:nowrap}
+.fdiv .ln{flex:1;height:1px;background:var(--border)}
+.fdiv .n{font-family:var(--mono);font-size:.68rem;color:#fff;background:var(--fg-faint);border-radius:20px;padding:.05rem .5rem}
+.fdiv.recent h2{color:var(--accent)}
+.fdiv.recent .n{background:var(--accent)}
+
+/* the card */
+.card{display:block;cursor:pointer;text-decoration:none;color:inherit;background:var(--card-bg);border:1px solid var(--card-border);border-radius:9px;padding:.85rem 1.05rem;margin-bottom:.7rem;transition:border-color .12s,box-shadow .12s;box-shadow:0 1px 2px rgba(0,0,0,.02)}
+.card:hover{border-color:#d8d8d4;box-shadow:0 2px 10px rgba(0,0,0,.05)}
+.card.is-new{border-left:3px solid var(--accent)}
+.crow{display:flex;align-items:baseline;gap:.6rem}
+.tier{font-family:var(--mono);font-size:.64rem;font-weight:700;letter-spacing:.03em;color:#fff;background:var(--accent);border-radius:4px;padding:.14rem .4rem;flex-shrink:0}
+.tier.t1{background:#b8503f}.tier.t2{background:#c79a5b}.tier.t3{background:#9a9a96}.tier.tx{background:#c9c9c4}
+.cname{font-family:var(--serif);font-size:1.16rem;font-weight:600}
+.dot{width:7px;height:7px;border-radius:50%;display:inline-block;flex-shrink:0}
+.dot.s-notcontacted{background:#c9c9c4}.dot.s-contacted{background:#d99a2b}.dot.s-replied{background:#3a7d44}.dot.s-passed{background:#c43d2e}
+.cstatus{font-family:var(--mono);font-size:.66rem;color:var(--fg-faint);letter-spacing:.02em}
+.cmeta{margin-left:auto;display:flex;align-items:center;gap:.55rem;flex-shrink:0}
+.cupd{font-family:var(--mono);font-size:.66rem;color:var(--fg-faint)}
+.cspike{font-size:.9rem;line-height:1.5;color:#2a2a2a;margin:.35rem 0 .5rem;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.cfoot{display:flex;align-items:center;gap:.34rem;flex-wrap:wrap}
+.chip{font-family:var(--mono);font-size:.6rem;letter-spacing:.04em;text-transform:uppercase;padding:.12rem .42rem;border-radius:3px;background:var(--tag-bg);color:var(--tag-fg)}
+.chip.stealth{background:#f0e0dd;color:var(--accent)}.chip.departed{background:#fdf2d6;color:#9c6500}
+.chip.raising{background:#dfeede;color:#3a6a2a}.chip.founder{background:#e8eef5;color:#3a5a7a}
+.chip.indian{background:#fbeee6;color:#b5651d}.chip.cluster{background:transparent;color:var(--fg-faint);border:1px solid var(--border)}
+.reach{margin-left:auto;display:flex;gap:.3rem}
+.rb{font-family:var(--mono);font-size:.66rem;width:24px;height:22px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--border);border-radius:5px;color:var(--fg-muted);text-decoration:none;background:#fff}
+.rb:hover{border-color:var(--accent);color:var(--accent)}
+.ffoot{font-family:var(--mono);font-size:.66rem;color:var(--fg-faint);text-align:center;margin-top:2.5rem;letter-spacing:.04em;line-height:1.9}
+.ffoot a{color:var(--fg-muted)}
+@media(max-width:600px){.cmeta .cupd{display:none}}
+</style>
 </head>
 <body class="dir-body">
 
+<div class="wrap">
   <div class="dir-top">
     <div class="dir-top-row">
       <span class="dir-title">Out of Distribution People</span>
@@ -108,366 +81,125 @@
     </div>
   </div>
 
-  <div class="dir-head">
-    <h1>People Repository</h1>
-    <p class="subtitle">Exceptional builders, researchers, and outliers &mdash; click any row to open the dossier.</p>
+  <div style="padding:0 2rem">
+    <div class="hero">
+      <h1>People Repository</h1>
+      <div class="sub">The garden, newest first &mdash; click any card to open the dossier.</div>
+    </div>
+
+    <div class="controls">
+      <input class="srch" id="q" placeholder="Search name, role, company, tag, cluster…">
+      <span class="qchip on" data-tier="all">All</span>
+      <span class="qchip" data-tier="0">T0</span>
+      <span class="qchip" data-tier="1">T1</span>
+      <span class="qchip" data-tier="2">T2</span>
+      <span class="qchip" data-flag="indian">● Indian</span>
+      <span class="qchip" data-flag="notcontacted">Not contacted</span>
+      <span class="qchip" data-flag="hidedelta">Hide Delta</span>
+    </div>
+    <div class="count" id="count">…</div>
+
+    <div id="feed"></div>
+
+    <div class="ffoot">
+      data regenerated by the morning ritual &middot; <a href="today.html">the desk</a> &middot; <a href="delta-fellows.html">Delta fellows</a><br>
+      newest-first by researched date · the feed is the changelog
+    </div>
   </div>
+</div>
 
-  <input type="text" id="dir-search" class="dir-search" placeholder="Search name, role, company, tag, cluster&hellip;" autocomplete="off" />
+<script>
+var DATA=[], state={tier:'all', q:'', indian:false, notcontacted:false, hidedelta:false};
+var RECENT_DAYS=14;   // "Recent" = researched within this many days of the newest dossier
+function esc(s){return (s==null?'':String(s)).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+function tierClass(t){t=String(t); return t==='0'?'':t==='1'?'t1':t==='2'?'t2':t==='3'?'t3':'tx';}
+function tierLabel(t){t=String(t); return (t==='0'||t==='1'||t==='2'||t==='3')?('T'+t):'—';}
+function recencyDate(p){return p.added||p.updated||'';}
+function daysAgo(iso){ if(!iso) return 99999; var d=new Date(iso+'T00:00:00'); return Math.round((Date.now()-d)/864e5); }
+function stripTier(s){return (s||'').replace(/^\s*T\d\s*[—–-]\s*/,'');}  // drop redundant "T0 — " prefix
 
-  <div class="dir-quick">
-    <span class="preset" id="preset-triage" title="T0 founders you have not contacted yet">&#9889; Daily Triage &mdash; T0 &middot; not contacted</span>
-    <span class="preset clear" id="preset-clear" style="display:none;">&#10005; Clear filters</span>
-  </div>
+fetch('data/directory.json',{cache:'no-store'}).then(r=>r.json()).then(function(d){
+  DATA = Array.isArray(d)?d:(d.people||d.rows||[]);
+  DATA.sort(function(a,b){
+    var u=(recencyDate(b)).localeCompare(recencyDate(a)); if(u) return u;
+    return (String(a.tier)).localeCompare(String(b.tier));
+  });
+  render();
+}).catch(function(err){
+  document.getElementById('feed').innerHTML='<p style="color:var(--fg-faint)">Couldn\'t load data/directory.json — run <code>python3 data/build_directory.py</code>. ('+esc(err.message)+')</p>';
+});
 
-  <div class="dir-filters" id="tier-filters"><span class="pill-label">Tier</span></div>
-  <div class="dir-filters" id="signal-filters"><span class="pill-label">Signal</span></div>
-  <div class="dir-filters" id="meta-filters"><span class="pill-label">Status</span></div>
-
-  <div class="dir-meta" id="dir-meta">loading&hellip;</div>
-
-  <table class="dir-table">
-    <thead>
-      <tr>
-        <th class="c-tier" data-sort="tier">Tier <span class="arr"></span></th>
-        <th class="c-person" data-sort="name">Person <span class="arr"></span></th>
-        <th class="h-status" data-sort="status">Status <span class="arr"></span></th>
-        <th class="h-upd" data-sort="updated">Updated <span class="arr"></span></th>
-        <th class="nosort">Reach</th>
-      </tr>
-    </thead>
-    <tbody id="dir-body"></tbody>
-  </table>
-  <div class="dir-empty" id="dir-empty" style="display:none;">No one matches those filters.</div>
-
-  <details class="recent-updates">
-    <summary>&#9670; Recent Updates &mdash; <span id="updates-count">&hellip;</span> latest changes</summary>
-    <ul>
-      <li><span class="update-date">Jun 18</span><span class="update-badge new">NEW &middot; T0</span> <a href="people/toon-van-de-maele.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Toon Van de Maele</a> &mdash; <strong>the 2nd verified technical co-founder of <a href="people/corrado-pezzato.html">The Blanket</a></strong> (Co-Founder &amp; Head of AI &mdash; title VERIFIED to his own LinkedIn headline + Scholar flip, the Pezzato two-source test; unlike Verbelen, not hedged). The <strong>world-model/perception half</strong> of the founding core to Pezzato&rsquo;s control half. Spike: <strong>1st author VBGS</strong> (Variational Bayes Gaussian Splatting, arXiv 2410.03592) + <strong>1st author Nature Communications&rsquo;24</strong> (active inference); 2nd author <strong>AXIOM</strong> (object-centric world model, learns Atari-style games gradient-free). Ghent/imec PhD (&ldquo;Active Inference for Scene Understanding,&rdquo; 2024; Dhoedt + Verbelen) &rarr; VERSES &rarr; The Blanket. Belgian. <strong>T0 &mdash; reach out now.</strong> Recursive P0 now dossiered; completes the verified founding core (Pezzato control + Van de Maele world models). New recursive: Alexander Tschantz (P1, VBGS+AXIOM co-author)…</li>
-      <li><span class="update-date">Jun 17</span><span class="update-badge new">NEW &middot; CLUSTER &middot; T0&times;2</span> <strong>The Blanket</strong> (theblanket.ai) &mdash; a stealth, pre-funding <strong>active-inference robotics</strong> startup (&ldquo;Robots that think before they act&rdquo;; product <em>auto&middot;motion</em>), a 2026 spin-out of the VERSES robotics team. The Friston/free-energy paradigm applied to robotics &mdash; an <em>out-of-distribution</em> bet vs the data-hungry VLA wave. 3 dossiers from one drop (2 LinkedIn + 1 Scholar): <a href="people/corrado-pezzato.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Corrado Pezzato</a> <strong>(T0)</strong> &mdash; VERIFIED Co-Founder &amp; Head of Robotics; first-author T-RO&rsquo;23/RA-L&rsquo;20/&rsquo;25 manipulation line that IS the product. <a href="people/tim-verbelen.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Tim Verbelen</a> <strong>(T0)</strong> &mdash; IWAI founder, h-35, senior author on the founding papers; title hedged (LinkedIn reports Co-Founder/CTO, OpenReview says Principal Researcher &mdash; reported, not confirmed). <a href="people/riddhi-jain-pitliya.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Riddhi Jain Pitliya</a> <strong>(T2, indian)</strong> &mdash; Oxford/Friston, 1st-author ToM paper; early member but founder status UNVERIFIED (caught + corrected the &ldquo;CEO&rdquo; over-claim &mdash; it traced to an adjacent comment-card). Strongest CEO lead &rarr; T0 on confirmation. Founding paper arXiv 2507.17338 (verified). Recursive: Toon Van de Maele (P0), Ozan &Ccedil;atal (P1), Pablo Lanillos (P1)…</li>
-      <li><span class="update-date">Jun 17</span><span class="update-badge new">NEW &middot; T0</span> <a href="people/maruan-al-shedivat.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Maruan Al-Shedivat</a> &mdash; <strong>CMU/Eric Xing ML PhD, ex-OpenAI + ex-Google Research, who led ML research at <a href="people/daniel-zeng.html">Genesis Molecular AI</a> (the Pearl all-atom structure model) and just left to build in stealth.</strong> His own site (updated Jun 12 2026) headers <strong>&ldquo;Building @ Stealth&rdquo;</strong> in NYC &mdash; &ldquo;autonomous systems at the AI&times;Science intersection&rdquo;; Scholar affiliation reads &ldquo;Stealth,&rdquo; the Genesis team page 404s. Genuine spike: <strong>1st author ICLR&rsquo;18 ahead of Sutskever/Mordatch/Abbeel</strong> (DBLP-confirmed) + last-author PI slot on Triangle Multiplication. <strong>T0 &mdash; no raise/named entity = the inception window is open, reach out now.</strong> Honesty: founder-vs-joiner UNCONFIRMED (#1 outreach Q); &ldquo;led Pearl&rdquo; is self-described (senior contributor, not sole lead); not Indian (Moscow/MSU→KAUST→CMU). Recursive: the ex-Genesis cluster &mdash; <strong><a href="people/daniel-zeng.html">Daniel Zeng</a> also left (~Jun 2026), corrected stale stub &rarr; T3 watch</strong> (passive, between-jobs); Sergey Edunov (ex-FAIR) now Genesis CTO…</li>
-      <li><span class="update-date">Jun 17</span><span class="update-badge new">NEW &middot; T3</span> <a href="people/georgia-channing.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Georgia Channing</a> &mdash; ML-for-Science lead at <strong>Hugging Face</strong> + Oxford DPhil under <strong>Philip Torr</strong> (Torr Vision Group). Genuinely technical, established 1st author (clean lead on arXiv:2410.07436) &mdash; but <strong>no inflection</strong>: both roles freshly-started and framed through 2028, zero founding/stealth/departure signal (adversarial sweep, ~0.88 conf the negative holds). HF isn&rsquo;t a tracked-departure lab; &ldquo;DeepMind Scholar&rdquo; was a <em>scholarship</em>, not employment. <strong>T3 &mdash; index + watch, not active pursuit (no outreach). The real asset is the community she runs: <a href="people/georgia-channing.html#net">Hugging Science</a></strong> (~7,000-member open-source AI-for-Science movement) &mdash; a sourcing vein to mine for members who ARE at an inflection. Not Indian…</li>
-      <li><span class="update-date">Jun 17</span><span class="update-badge new">NEW &middot; T2</span> <a href="people/ninad-daithankar.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Ninad Daithankar</a> &mdash; <strong>co-first author (equal contribution w/ <a href="people/alexi-gladstone.html">Alexi Gladstone</a>, already T1) on TDV</strong> &mdash; &ldquo;You Don&rsquo;t Need Strong Assumptions&rdquo; (arXiv 2606.15956, submitted 14 Jun 2026, under review NeurIPS&rsquo;26) &mdash; <strong>with Yann LeCun &amp; Heng Ji</strong>, squarely in LeCun&rsquo;s JEPA/world-models line; he owns the codebase. UIUC CS MS &rsquo;25; ex-3yr SWE (eQ Technologic, Pune); SPPU undergrad. Indian. <strong>The whole case is one rare artifact; no company, no inflection trigger.</strong> Calibrated: ONE substantive paper (other is IRJET undergrad filler), &ldquo;makes GPUs go brrr&rdquo; is a tagline (no original kernel/systems work), LeCun is 3rd/4th + the co-first is shared with the stronger Gladstone. <strong>T2 &mdash; track, relationship-build now while undecided (openly &ldquo;on the job market&rdquo;); upgrade on any founding signal.</strong> Recursive: Chi Han (P0, BLENDER, graduating unplaced, mCLM beats GPT-5 on synthesizability)…</li>
-      <li><span class="update-date">Jun 17</span><span class="update-badge new">NEW &middot; T0</span> <a href="people/andrei-tyrin.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Andrei Tyrin</a> &mdash; <strong>the genuinely-technical (ML/agentic) co-founder of <a href="people/daniil-boiko.html">Onepot AI</a></strong>, the other half of the Daniil Boiko bet (Onepot is now a 2-founder node). Owns the <strong>LLM-orchestration / agentic-coordination / long-horizon synthesis-planning</strong> layer; MIT CS → Schr&ouml;dinger → Genesis Therapeutics → wet-lab co-founder; 1st author &ldquo;Digitization of molecular complexity with ML&rdquo; (Chem Sci&rsquo;25) + onepot CORE. T0 &mdash; just-funded but the inception-size allocation is still writable, reach out now (alongside Boiko). <strong>Russian (Ananikov lineage), not Indian.</strong> Honesty: ~29 cites (spike = engineering+credentials), no formal CTO title, &ldquo;met Boiko at MSU&rdquo; is a hypothesis (verified = Ananikov Lab). <strong>Topprasad Kapri = PASS</strong> (synthetic/medicinal chemist, off-thesis). <strong>Youngseog Chung = PASS</strong> (settled at Microsoft AI pretraining, no inflection)…</li>
-      <li><span class="update-date">Jun 17</span><span class="update-badge new">3 DROPS &middot; T1+2 PASS</span> <a href="people/daniil-boiko.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Daniil Boiko</a> (T0) &mdash; 1st author of <strong>Coscientist</strong> (Nature&rsquo;23, the seminal autonomous-chemistry agent), now co-founder/CEO of <strong>Onepot AI</strong> ($13M, Fifty Years + Zaremba + Jeff Dean). T0 active pursuit &mdash; lead window&rsquo;s gone but an inception-size allocation is still writable (owner&rsquo;s call), reach out now. <strong>Dünya Baradari = PASS</strong> (real tech, but Augmentation Lab is a nonprofit residency, not a fundable co). <strong>Zeno Fox (zenofox) = PASS</strong> &mdash; operator-CEO, no spike; <strong>the real find is his CTO Swathi Manda</strong> (MIT PhD, Nature Comms, likely Indian &mdash; queued P1)…</li>
-      <li><span class="update-date">Jun 12</span><span class="update-badge new">NEW &middot; T0</span> <a href="people/gaurav-bharaj.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Gaurav Bharaj</a> &mdash; <strong>serial generative-media founder, just left and building in stealth.</strong> Co-founder &amp; Chief Scientist of <strong>Reality Defender</strong> (deepfake detection, $52M) + CSO Flawless AI + VP Research AI Foundation; departed 2025 (&ldquo;a new chapter begins&rdquo;), GitHub bio now &ldquo;Perpetual AI&rdquo; (SF), tracked &ldquo;building in stealth.&rdquo; Harvard CS PhD (Pfister), StyleRig/FML neural-rendering lineage. T0 &mdash; reach out now; the company (name/topic) is the open crack (&ldquo;Perpetual AI&rdquo; didn&rsquo;t resolve to a domain). Indian…</li>
-      <li><span class="update-date">Jun 12</span><span class="update-badge new">NEW &middot; T2</span> <a href="people/shiwali-mohan.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Shiwali Mohan</a> &mdash; senior neuro-symbolic agent-architectures researcher (PhD under John Laird/Soar; DARPA PI; built Rosie + HYDRA) whose <strong>LinkedIn flipped to &ldquo;Stealth &mdash; Agent Architectures&rdquo;</strong> &mdash; a real post-lab inflection (left PARC→SRI→TRI). But founding is <em>unconfirmed</em> (no company/co-founder found) and she&rsquo;s a 15-yr senior/classical-AI profile &mdash; edge case. T2 &mdash; watch; resolve to T1 if a company+raise confirms, T3 if &ldquo;Stealth&rdquo; is an undisclosed employer. Indian. Joins the reliable/verified-agents cluster (OLO DIN, Nada Amin)…</li>
-      <li><span class="update-date">Jun 12</span><span class="update-badge new">NEW &middot; T2</span> <a href="people/vidhi-jain.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Vidhi Jain</a> &mdash; just-graduated CMU Robotics PhD (Bisk) + ex-OpenAI AI-for-Science, <strong>on the market right now</strong> (&ldquo;actively looking for new opportunities&rdquo;). 1st author <strong>Vid2Robot</strong> (RSS&rsquo;24, robot policies from human video); at OpenAI did RL-post-training w/ verifiable rewards for chip-design code-gen. BITS Pilani, Indian. T2 &mdash; she&rsquo;s <em>job-seeking, not founding</em> (no building signal), but the post-OpenAI window is when a founder-curious researcher decides &mdash; watch closely, relationship-build now. One hop from the robotics-VLA cluster (Pannag Sanketi is her co-author)…</li>
-      <li><span class="update-date">Jun 12</span><span class="update-badge new">NEW &middot; T3</span> <a href="people/vsevolod-voropaev.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Vsevolod Voropaev</a> + <a href="people/nick-malozemov.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Nick Malozemov</a> &mdash; two ex-Isara founding engineers on <a href="people/dmitrii-galatenko.html" style="font-weight:600;text-decoration:none;color:var(--fg);">OLO DIN</a>&rsquo;s team who <strong>cracked its stealth wedge</strong>: their GitHub/talks reveal OLO DIN is building <strong>agent-harness + verifiable-reward-environment infra for reliable multi-agent systems</strong> (not a chatbot). Both T3 (early engineers, not the bet). Also confirmed Galatenko&rsquo;s &ldquo;ICPC Challenge first prize&rdquo; is a relabeled Huawei <em>math</em> cup &mdash; embellishment. Updated the OLO DIN dossier with the wedge + team map…</li>
-      <li><span class="update-date">Jun 12</span><span class="update-badge new">NEW &middot; T2/T3</span> <a href="people/gavin-leech.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Gavin Leech</a> (T2) + <a href="people/misha-yagudin.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Misha Yagudin</a> (T3) &mdash; the two operators running <a href="people/dmitrii-galatenko.html" style="font-weight:600;text-decoration:none;color:var(--fg);">OLO DIN</a> (Galatenko&rsquo;s alignment venture). Leech = co-author of <em>The Scaling Era</em> (Stripe Press, w/ Dwarkesh) + Arb Research founder &mdash; credible AI-safety/forecasting, but <strong>adjacent-not-core</strong> (not a frontier-ML builder). Yagudin = elite Samotsvety forecaster, <strong>no technical spike</strong> &rarr; T3 network node (value: Eli Lifland, Nu&ntilde;o Sempere). The technical-founder bet stays Galatenko…</li>
-      <li><span class="update-date">Jun 12</span><span class="update-badge new">NEW &middot; T2</span> <a href="people/mihir-bafna.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Mihir Bafna</a> &mdash; 2nd-yr MIT CSAIL PhD (Bonnie Berger) + embedded ML researcher at Liquid AI; co-first <strong>SwitchCraft (ICML&rsquo;26)</strong> + sole-first DynaProt (ICLR&rsquo;26) on programmatic protein design. Indian, comp-bio family pedigree (Vineet Bafna/Boundless Bio). Steep trajectory but <strong>no founding signal</strong> (PhD yr 2) &rarr; T2 track. The nearer-term inflection is his co-first <strong>Bowen Jing</strong> (just finished MIT PhD, DiffDock author &mdash; post-PhD founding moment now; queued P1)…</li>
-      <li><span class="update-date">Jun 12</span><span class="update-badge new">NEW &middot; T2</span> <a href="people/dmitrii-galatenko.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Dmitrii Galatenko</a> &mdash; <strong>overturns an earlier PASS.</strong> ~20yo Cambridge maths undergrad (IMO 2022 Silver) &mdash; a Companies House PSC filing confirms he founded <strong>OLO DIN UK LTD</strong> (inc. 29 Jan 2026), an <strong>AI-alignment / agent-reliability</strong> venture (olodin.com). The thread: he was a director of <strong>Isara</strong> (OpenAI-backed agent-swarm, $94M/$650M) until the day before; co-founders are Arb/Samotsvety forecasters. T2 &mdash; T1 if he&rsquo;s full-time. <em>(Initial pass missed the company filing &mdash; owner caught it.)</em>…</li>
-      <li><span class="update-date">Jun 12</span><span class="update-badge new">NEW &middot; T1</span> <a href="people/nada-amin.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Nada Amin</a> &mdash; Harvard CS prof (EPFL PhD on the core Scala team under Odersky; her <strong>DOT calculus underpins Scala 3</strong>) who <strong>just co-founded Midspiral</strong> &mdash; &ldquo;the correctness layer for AI-generated software&rdquo; (compiles LLM-written TypeScript to Lean&nbsp;4/Dafny to <em>prove</em> it correct). Hands-on + pre-hype (her MCTS-verification repo predates the company). T1 &mdash; reach out now; T0 if it&rsquo;s her full-time leap. Honest catch: 56K Scholar cites is a Cytoscape outlier, real impact h-25. Not Indian…</li>
-      <li><span class="update-date">Jun 11</span><span class="update-badge new">NEW &middot; T0</span> <a href="people/abhinav-shrivastava.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Abhinav Shrivastava</a> &mdash; UMD CV professor (h-53) <strong>+ Co-Founder &amp; CEO of a stealth &ldquo;AI-native video infrastructure&rdquo; startup</strong> (own site + LinkedIn, verbatim). Likely wedge = his <strong>NeRV&rarr;NeRV-Diffusion &ldquo;video-as-neural-weights&rdquo;</strong> line (an infra/substrate bet, not another generator); students already at Luma AI + a stealth video co. Same advisor (Abhinav Gupta) as Raunaq. Company fully dark. Indian. T0 &mdash; reach out now…</li>
-      <li><span class="update-date">Jun 11</span><span class="update-badge new">NEW &middot; T1</span> <a href="people/jiayi-pan.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Jiayi Pan</a> &mdash; just <strong>left xAI</strong> (Grok-4 RL team, part of the post-SpaceX exodus); site now reads &ldquo;I am building language model agents.&rdquo; Author of <strong>TinyZero</strong> (13.2K&#9733; &mdash; first open R1-Zero repro, &lt;$30); BAIR/Suhr agentic-RL (SWE-Gym, OpenHands). Company UNCONFIRMED &mdash; <strong>read @jiayi_pirate to flip to T0.</strong> Chinese-origin. T1…</li>
-      <li><span class="update-date">Jun 11</span><span class="update-badge new">NEW &middot; T2</span> <a href="people/shikhar-bahl.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Shikhar Bahl</a> &mdash; founding-team Research Scientist at <strong>Skild AI</strong> (~$14B, Jan 2026 SoftBank). Owns the &ldquo;watch humans &rarr; robots learn in the wild&rdquo; line (VRB/WHIRL); CMU Pathak/Gupta cohort. Not foundable now (no departure signal) &mdash; T2 track + strong recursive node; flip to T0 if he leaves Skild. Indian…</li>
-      <li><span class="update-date">Jun 11</span><span class="update-badge new">NEW &middot; T0</span> <a href="people/russ-tedrake.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Russ Tedrake</a> &mdash; <strong>one of the most famous roboticists alive just left TRI to found a stealth Physical-AI startup</strong> (productizing Large Behavior Models for industry), kept his MIT chair. Verified: his MIT page reads &ldquo;Founder of a Stealth Startup in Physical AI,&rdquo; The Robot Report calls him &ldquo;former SVP,&rdquo; TRI profile 404&rsquo;d. Creator of Drake + the underactuated-robotics course; ran TRI&rsquo;s Diffusion Policy &rarr; LBM program 10 yrs. Name/cap table dark. T0 &mdash; access-gated (warm, pre-legible path; no cold pitch). <em>(from a background task; load-bearing claim verified by me.)</em>…</li>
-      <li><span class="update-date">Jun 11</span><span class="update-badge new">NEW &middot; T2</span> <a href="people/luca-weihs.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Luca Weihs</a> &mdash; UC Berkeley Math valedictorian who built the field&rsquo;s embodied-AI substrate (<strong>AI2-THOR</strong>); &ldquo;something new&rdquo; resolved <em>and closed</em> &mdash; co-founded <strong>Vercept</strong> (computer-use agents, Nov 2024) with Ross Girshick + Matt Deitke, <strong>Anthropic acquihired it Feb 2026</strong>, now at Anthropic. T2 departure-watch. <strong>The prize is the network:</strong> the 4-founder cell split across 2 labs &mdash; <strong>Matt Deitke &rarr; Meta on ~$250M</strong> is the highest-priority T0-the-moment-he-leaves watch…</li>
-      <li><span class="update-date">Jun 11</span><span class="update-badge new">NEW &middot; T0</span> <a href="people/amanpreet-singh.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Amanpreet Singh</a> &mdash; left his own funded company (<strong>co-founder &amp; CTO of Contextual AI</strong>, Douwe Kiela&rsquo;s RAG startup) and is in founder-mode: LinkedIn reads <strong>&ldquo;something new | hiring founding&hellip;&rdquo; · Stealth, SF</strong>. Ex-Meta FAIR (MMF/Pythia, TextVQA 1st-author, FLAVA) + HuggingFace. ~30K cites, h-32; IIT Roorkee &rarr; NYU. <strong>Indian.</strong> T0 &mdash; repeat venture-scale founder hiring a founding team; confirm entity/co-founder fast. (No company name/domain/thesis public yet; CTO-not-CEO so whether he leads is open.)…</li>
-      <li><span class="update-date">Jun 11</span><span class="update-badge new">NEW &middot; T2</span> <a href="people/preetum-nakkiran.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Preetum Nakkiran</a> &mdash; deep-learning theorist (<strong>Deep Double Descent</strong>, sole 1st-author; calibration). Site reads &ldquo;Founding Member of Technical Staff, Mirendil&rdquo; + &ldquo;left Apple to build Mirendil&rdquo; &mdash; <strong>but verify-before-tier caught it: he&rsquo;s an early hire, not a founder.</strong> Mirendil was founded by his ex-Brain host Behnam Neyshabur + Harsh Mehta (ex-Anthropic) and is raising $175M at ~$1B (a16z+Kleiner) = already funded, no inception entry. T2 track; re-rate if he solo-departs or ships his peer-review idea. Indian/Tamil-origin = hypothesis only…</li>
-      <li><span class="update-date">Jun 11</span><span class="update-badge new">NEW &middot; T1</span> <a href="people/chris-fifty.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Chris Fifty</a> &mdash; Stanford CS PhD in <strong>2.5 years (dept record)</strong>, co-advised by <strong>Christopher Ré</strong> + Sebastian Thrun; ex-Google Brain. 1st-author <strong>ICLR 2025 Oral</strong> (the &ldquo;rotation trick&rdquo; for vector quantization &mdash; VQ straight-through estimator reframed as parallel transport) + NeurIPS&#8217;21 Spotlight (w/ Chelsea Finn). <strong>2&times; founder, now &ldquo;between things&rdquo;</strong> after a post-grad company disintegrated &mdash; grinding a contrarian latent-space-LM bet (&ldquo;English isn&rsquo;t the right substrate for machines to think in&rdquo;). 70.3 Ironman. Field hasn&rsquo;t found him (zero podcasts). <strong>T1 &mdash; reach out now; flip to T0 the moment latent-LM becomes a company.</strong> Honesty: disintegrated co is unnamed; &ldquo;now at Apple&rdquo; = hallucination…</li>
-      <li><span class="update-date">Jun 11</span><span class="update-badge new">NEW &middot; T0</span> <a href="people/michael-luo.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Michael Luo</a> &mdash; Berkeley EECS PhD (Ion Stoica, Sky Lab; done Fall 2025); left Google DeepMind and <strong>site says &ldquo;I am currently building a stealth startup&hellip; efficient serving and post-training.&rdquo;</strong> 1st author on the whole Agentica line: DeepScaleR-1.5B (beats o1-preview), DeepCoder-14B (o3-mini level), DeepSWE-32B (SOTA open-weight SWE agent), rLLM framework (5.6K&#8239;stars, pushed today) + Autellix (NSDI'26 serving). ~2,169 cites, h-19. Thesis literally &ldquo;From Serving to Training.&rdquo; <strong>Verified building-now; but company name/co-founders/funding are genuinely not public (0 Form D, no org, no press)</strong> &mdash; get in before the name. Chinese-origin, NOT Indian. Likely-but-unconfirmed co-founder: <a href="people/sijun-tan.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Sijun Tan</a> (still mid-PhD). T0 &mdash; reach now via Stoica/rLLM community…</li>
-      <li><span class="update-date">Jun 10</span><span class="update-badge new">NEW &middot; T2</span> <a href="people/kyle-lo.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Kyle Lo</a> &mdash; data architect of the fully-open-LLM movement (co-led OLMo; S2ORC/Dolma/olmOCR; ~25K cites, h-50). Site says &ldquo;working on something new&rdquo; &mdash; <strong>but verify-before-tier caught it: not a startup, he joined Microsoft AI MAI Superintelligence</strong> with the OLMo core (GeekWire). T2 departure-watch, not foundable now. NOT a PhD; data-lead not 1st-author; not Indian. The foundable diaspora name is <strong>Nathan Lambert</strong> (P1 recursive)…</li>
-      <li><span class="update-date">Jun 9</span><span class="update-badge new">NEW &middot; T0</span> <a href="people/emmett-bicker.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Emmett Bicker</a> &mdash; ~19yo solo founder of Aster (asterlab.ai, &ldquo;first AI-native AI research lab,&rdquo; YC S26); dropped out &rarr; ~1yr RL researcher at Magic &rarr; sole-authored arXiv founder. Real pedigree (Nature Comms co-author as a HS-er; merged kernel record in Keller Jordan&rsquo;s modded-nanogpt). <strong>Claims run hot</strong> (3 adversarial verifiers: 1/5 SOTA claims confirmed, TriMul not actually SOTA, autonomy thesis least-verified). Owner call: T0 &mdash; pursue now alongside YC, price the hype…</li>
-      <li><span class="update-date">Jun 9</span><span class="update-badge new">NEW &middot; T0</span> <a href="people/raunaq-bhirangi.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Raunaq Bhirangi</a> &mdash; CONFIRMED stealth-robotics co-founder (NYU CILVR / Pinto; CMU PhD '24); creator of the ReSkin&rarr;AnySkin&rarr;eFlesh tactile-sensor stack. <strong>Cracked the company name: raunaq@indexrobots.ai &rarr; &ldquo;Index Robots&rdquo; (domain registered Sept 2025, verified).</strong> Suspected co-founder of <a href="people/siddhant-haldar.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Siddhant Haldar</a>'s same company (strong, unconfirmed). IIT Bombay, JEE AIR 348. Indian. Reach out NOW…</li>
-      <li><span class="update-date">Jun 3</span><span class="update-badge new">NEW &middot; T1</span> <a href="people/ellen-xu.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Ellen Xu</a> &mdash; Stanford CS undergrad ('27); embodied RL at comma.ai + Tesla Autopilot; Polychromic RL (ICLR'26, Finn+Sadigh). Teen: Kawasaki-disease CNN (Scientific Reports), Regeneron STS 3rd. Serial builder, anti-convergence. Loop dossier 5/5 — loop complete…</li>
-      <li><span class="update-date">Jun 3</span><span class="update-badge new">NEW &middot; T1</span> <a href="people/aayush-karan.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Aayush Karan</a> &mdash; 3rd-yr Harvard CS PhD (Sitan Chen + Yilun Du); 1st-author "Reasoning with Sampling" (ICLR'26 Oral). Polymath: solved a 30-yr knot-theory problem at 17, Nature Methods RNA, generative-ML theory. Soros/Davidson. Indian. Loop dossier 4/5…</li>
-      <li><span class="update-date">Jun 3</span><span class="update-badge new">NEW &middot; T1</span> <a href="people/cade-gordon.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Cade Gordon</a> &mdash; MTS at Anthropic (pretraining); deferred a Stanford PhD. Core author LAION-5B + OpenCLIP; 1st-author protein-LM (ICLR'25, Abbeel). Hertz'25, Berkeley BS in 2.5yr. Frontier-lab insider, departure-watch. Loop dossier 3/5…</li>
-      <li><span class="update-date">Jun 3</span><span class="update-badge new">NEW &middot; T1</span> <a href="people/isha-puri.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Isha Puri</a> &mdash; MIT CSAIL PhD (Kim + Ghassemi); 1st-author Rollout Roulette (NeurIPS'25) — particle-filter test-time scaling, Qwen-7B→o1 in 32 rollouts. Joining DeepMind; NeurIPS'25 Assistant PC. Indian. Loop dossier 2/5…</li>
-      <li><span class="update-date">Jun 3</span><span class="update-badge new">NEW &middot; T1</span> <a href="people/owen-dugan.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Owen Dugan</a> &mdash; Stanford CS PhD in Chris Ré's Hazy lab; MIT physics BS in 2.5yr; 1st-author ICML'23 + NeurIPS'24 + a 1st-author Hazy paper with Ré; 2 granted patents as a teen. First dossier from the gated discovery loop (Hertz+RSI+Davidson 3-pool hit)…</li>
-      <li><span class="update-date">Jun 3</span><span class="update-badge upgraded">HUMAN LAYERS</span> Added <strong>Origin &amp; Early Spike</strong> + <strong>Life &amp; Texture</strong> sections to <a href="people/benjamin-spector.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Ben Spector</a>, <a href="people/kunvar-thaman.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Kunvar Thaman</a>, <a href="people/mason-wang.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Mason Wang</a>, <a href="people/siddhant-haldar.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Siddhant Haldar</a> — early-spike origin + life-outside-work. New SOP layers. Corrections: Kunvar co-built (not founded) the mech-interp Discord; Mason is at Neuralink (not pre-founding)…</li>
-      <li><span class="update-date">Jun 3</span><span class="update-badge new">NEW &middot; T2</span> <a href="people/josh-meier.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Josh Meier</a> &mdash; Co-Founder of Chai Discovery (protein-structure AI; Thrive/OpenAI/Dimension). Canonical child-prodigy origin: led a 15-person teen biotech to an FDA presentation at 16, Intel STS 4th. Chai funded = T2 track. Showcase for the new origin/texture layers…</li>
-      <li><span class="update-date">Jun 3</span><span class="update-badge new">NEW &middot; T2</span> <a href="people/tanvir-bhathal.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Tanvir Bhathal</a> &mdash; Stanford CS/EE undergrad ('27), Hazy Research (Chris Ré) + Scaling Intelligence orbit. Promising but no inflection; WebSight "beats OpenAI" is unverified self-report. Indian. Track, watch ~2027 grad…</li>
-      <li><span class="update-date">Jun 3</span><span class="update-badge new">NEW &middot; T1</span> <a href="people/mason-wang.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Mason Wang</a> &mdash; 2× technical founder (Tilde CTO + Hazel CTO at 17, $2M Pear). PiTorch (LLM on bare-metal Pi Zero). Corrected: not pre-founding — now at Stanford + Neuralink "Conceptual Telepathy" team. Watch; T0 when he leaves to found…</li>
-      <li><span class="update-date">Jun 3</span><span class="update-badge new">NEW &middot; T1</span> <a href="people/dhruv-pai.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Dhruv Pai</a> &mdash; ~22yo Stanford math+CS, Tilde Co-Founder/Chief Scientist. Regeneron STS + ISEF ×2 + Presidential Scholar. Indian. The technical-research half of Tilde (the spike the CEO lacked). Relationship-build…</li>
-      <li><span class="update-date">Jun 3</span><span class="update-badge new">NEW &middot; T2</span> <a href="people/benjamin-keigwin.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Benjamin Keigwin</a> &mdash; Co-Founder/CEO of Tilde Research (mech-interp lab, $8M Khosla seed). On-thesis but already funded = past inception; personal research record thin. Track, not pursue. Co-founder Dhruv Pai flagged…</li>
-      <li><span class="update-date">May 31</span><span class="update-badge new">NEW &middot; T0</span> <a href="people/scott-reed.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Scott Reed</a> &mdash; "Currently building something new" (his own site + LinkedIn now reads "Something new," Atlanta Metro) = explicit stealth/founding signal. One of the most senior…</li>
-      <li><span class="update-date">May 30</span><span class="update-badge new">NEW &middot; T2</span> <a href="people/suraj-nair.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Suraj Nair</a> &mdash; Founding-team Research Scientist at Physical Intelligence ($5.6B; pi-0 / pi-0.5; founders Karol Hausman, Sergey Levine, Chelsea Finn, Brian Ichter, Lachy Groom)…</li>
-      <li><span class="update-date">Jun 3</span><span class="update-badge new">NEW &middot; T2</span> <a href="people/alberto-taiuti.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Alberto Taiuti</a> &mdash; Co-Founder/CEO of Reactor (real-time world-models infra), out of stealth May 28 with $59M led by Lightspeed = past our inception window. Frontier thesis, ex-Apple Vision Pro + founding-team Luma. Track, don&rsquo;t pursue…</li>
-      <li><span class="update-date">Jun 2</span><span class="update-badge new">NEW &middot; T0</span> <a href="people/siddhant-haldar.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Siddhant Haldar</a> &mdash; Co-Founder &amp; CTO of a stealth robotics startup (Dec 2025), straight out of NYU CILVR / Lerrel Pinto. First author on the data-efficiency award line (FISH, BAKU, Point Policy)…</li>
-      <li><span class="update-date">May 30</span><span class="update-badge new">NEW &middot; T0</span> <a href="people/pannag-sanketi.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Pannag R. Sanketi</a> &mdash; Just departed Google DeepMind (one of the 20 tracked companies in CLAUDE.md) for a stealth robotics + AI startup — LinkedIn now reads "Stealth Startup · Robotic…</li>
-      <li><span class="update-date">May 30</span><span class="update-badge new">NEW &middot; T2</span> <a href="people/chenglei-si.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Chenglei Si</a> &mdash; 3rd-year Stanford NLP PhD (Tatsu Hashimoto + Diyi Yang), the leading empirical authority on "can AI generate novel research ideas." "Can LLMs Generate Novel Res…</li>
-      <li><span class="update-date">May 30</span><span class="update-badge new">NEW &middot; T2</span> <a href="people/siddharth-karamcheti.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Siddharth Karamcheti</a> &mdash; Stanford CS PhD (completed 2025), co-advised by Percy Liang + Dorsa Sadigh — now incoming Assistant Professor of Interactive Computing at Georgia Tech (Fall 202…</li>
-      <li><span class="update-date">May 30</span><span class="update-badge new">NEW &middot; T2</span> <a href="people/aryaman-arora.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Aryaman Arora</a> &mdash; 3rd-year CS PhD at Stanford NLP, co-advised by Christopher Potts + Dan Jurafsky; mechanistic-interpretability researcher and rare researcher-who-also-builds. Co…</li>
-      <li><span class="update-date">May 29</span><span class="update-badge new">NEW &middot; T1</span> <a href="people/vikram-sundar.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Vikram Sundar</a> &mdash; ML Scientist at Generate:Biomedicines (Flagship; largest biotech Series C of 2023 at $273M, new investors Amgen + NVIDIA; ~$700M raised since 2020). Just comple…</li>
-      <li><span class="update-date">May 28</span><span class="update-badge new">NEW &middot; T1</span> <a href="people/karan-singhal.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Karan Singhal</a> &mdash; Head of Health AI + AGI Benefits at OpenAI (one of the 20 tracked companies in CLAUDE.md), the FIRST AMIE-cluster departure from Google DeepMind. Co-equal first…</li>
-      <li><span class="update-date">May 28</span><span class="update-badge new">NEW &middot; T1</span> <a href="people/augustus-odena.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Augustus Odena</a> &mdash; Co-founder of Arda (AI-for-manufacturing, identity confirmed Feb 25 2026 via The Information / Stephanie Palazzolo). Founding team: Bob McGrew (ex-OpenAI Chief…</li>
-      <li><span class="update-date">May 28</span><span class="update-badge new">NEW &middot; T1</span> <a href="people/vivek-natarajan.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Vivek Natarajan</a> &mdash; Research Lead at Google DeepMind (one of the 20 tracked companies in CLAUDE.md), the canonical world-class healthcare AI researcher. Lead researcher on the 4 mo…</li>
-      <li><span class="update-date">May 28</span><span class="update-badge new">NEW &middot; T1</span> <a href="people/cynthia-chen.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Cynthia Chen</a> &mdash; Agent Software Engineer at Decagon ($4.5B Series D Jan 28 2026, Coatue + Index $250M; ~300 employees; first tender offer Mar 4 2026). One of first ~10 engineers…</li>
-      <li><span class="update-date">May 27</span><span class="update-badge new">NEW &middot; T0</span> <a href="people/kushal-kedia.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Kushal Kedia</a> &mdash; Cornell CS PhD candidate graduating May 2026 (5 weeks out), advised by Sanjiban Choudhury (Cornell CS + ML Researcher at Aurora; ONR Young Investigator 2024 + O…</li>
-      <li><span class="update-date">May 27</span><span class="update-badge new">NEW &middot; T2</span> <a href="people/tanishq-kumar.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Tanishq Kumar</a> &mdash; 1st-year Stanford CS PhD (Sep 2025), co-advised by Percy Liang + Tatsu Hashimoto — the densest advisor pair in Stanford CS. Recursive discovery from Aditi Raghu…</li>
-      <li><span class="update-date">May 27</span><span class="update-badge new">NEW &middot; T0</span> <a href="people/joshua-dillon.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Joshua V. Dillon</a> &mdash; Co-founder of rekursiv.ai (stealth, Mountain View, AI Scientists category), paired with Dan Kondratyuk (VideoPoet 1st author, ICML 2024 Best Paper). Creator and…</li>
-      <li><span class="update-date">May 26</span><span class="update-badge new">NEW &middot; T0</span> <a href="people/dan-kondratyuk.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Dan Kondratyuk</a> &mdash; Co-founder of rekursiv.ai (stealth, Mountain View, tagline "Autonomously Create Knowledge"). Co-founded with Joshua V. Dillon (engineering lead, TensorFlow Prob…</li>
-      <li><span class="update-date">May 26</span><span class="update-badge new">NEW &middot; SURGICAL ROBOTICS</span> <a href="people/blanca-villanueva.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Blanca Villanueva</a> &mdash; Founder & CEO of a stealth co at "autonomous robotics + biomedical AI" (LinkedIn headline, May 2026, 803 followers, pre-launch). Stanford School of Medicine aff…</li>
-      <li><span class="update-date">May 26</span><span class="update-badge new">NEW &middot; STEALTH HUMANOID</span> <a href="people/weiying-wang.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Weiying Wang</a> &mdash; Stealth humanoid robotics founder, Cambridge MA. LinkedIn headline: "Building humanoid that reasons the physical world, Harvard PhD in Robotics, ex-Zoox, 3D Per…</li>
-      <li><span class="update-date">May 26</span><span class="update-badge new">NEW &middot; TRAJECTORY CO-FOUNDER</span> <a href="people/michael-elabd.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Michael Hany Elabd</a> &mdash; Co-Founder, Director & CFO of Trajectory Technologies, Inc. (CA stock corp filed Nov 3 2025, "the platform for continual learning") alongside Ronak Malde (CEO)…</li>
-      <li><span class="update-date">May 26</span><span class="update-badge new">NEW &middot; TRAJECTORY CO-FOUNDER</span> <a href="people/arjun-karanam.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Arjun Karanam</a> &mdash; Co-Founder, Secretary & Director of Trajectory Technologies, Inc. (CA stock corp filed Nov 3 2025, "the platform for continual learning") alongside Ronak Malde…</li>
-      <li><span class="update-date">May 26</span><span class="update-badge new">NEW &middot; NETWORK HUB</span> <a href="people/chenfeng-xu.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Chenfeng Xu</a> &mdash; Incoming Assistant Professor, UT Austin CS (Fall 2026) + Researcher at Together AI (Tri Dao's company). UC Berkeley PhD 2025, co-advised by Kurt Keutzer (EECS…</li>
-      <li><span class="update-date">May 25</span><span class="update-badge new">NEW &middot; DUAL ROLE</span> <a href="people/jennifer-zhai.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Jennifer Yichen Zhai</a> &mdash; Co-Founder & GP, Coho Deeptech (SF AI & science fund, founded Jan 2022 w/ Elvis Zhang, ~32 investments; portfolio: Cartesia, Higgsfield, Bland, Sahara AI, Solve…</li>
-      <li><span class="update-date">May 25</span><span class="update-badge new">NEW &middot; DIFFUSION CLUSTER</span> <a href="people/saksham-consul.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Saksham Consul</a> &mdash; Member of Technical Staff — Training, Black Forest Labs (the FLUX team; the Rombach/Esser/Blattmann lab that built Stable Diffusion; $300M Series B at $3.25B po…</li>
-      <li><span class="update-date">May 21</span><span class="update-badge new">NEW &middot; ARCHITECTURE</span> <a href="people/mayank-mishra.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Mayank Mishra</a> &mdash; 1st-year UC Berkeley EECS PhD (Aug 2025–), co-advised by Tri Dao + Joseph Gonzalez + Ion Stoica — the strongest possible Berkeley architecture-and-systems advis…</li>
-      <li><span class="update-date">May 21</span><span class="update-badge new">NEW &middot; NETWORK HUB</span> <a href="people/aditi-raghunathan.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Aditi Raghunathan</a> &mdash; Assistant Professor, CMU CS + MLD. Leads the AI Reliability Lab. Stanford CS PhD '21 under Percy Liang (CLAUDE.md critical-lab) — Arthur Samuel Best Thesis Awar…</li>
-      <li><span class="update-date">May 21</span><span class="update-badge new">NEW &middot; DIFFUSION</span> <a href="people/jiaming-song.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Jiaming Song</a> &mdash; Chief Scientist, Luma AI (since Jul 2023) — leads Dream Machine, Ray2, Ray3, Genie. 1st author of DDIM (ICLR 2021) — the accelerated-sampling algorithm under ev…</li>
-      <li><span class="update-date">May 21</span><span class="update-badge new">NEW &middot; T0</span> <a href="people/shivani-poddar.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Shivani Poddar</a> &mdash; Founder, Stealth AI (venture-backed) — building agentic AI for commerce. Departed Google ~Jan 2026 from Head of Engineering, Jules — Google's autonomous coding…</li>
-      <li><span class="update-date">May 20</span><span class="update-badge new">NEW &middot; GENMO</span> <a href="people/ajay-jain.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Ajay Jain</a> &mdash; Co-Founder & CTO, Genmo. 2nd author on DDPM (NeurIPS 2020) — the foundational paper of the modern diffusion era, ~40,013 Scholar citations (~86% of his 46,282 t…</li>
-      <li><span class="update-date">May 12</span><span class="update-badge new">NEW &middot; T0</span> <a href="people/alex-shan.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Alex Shan</a> &mdash; CEO & Co-Founder, Judgment Labs — just closed $32M combined Seed + Series A led by Lightspeed (May 12, 2026), with Nova Global, SV Angel, Valor Equity Partners…</li>
-      <li><span class="update-date">May 12</span><span class="update-badge new">NEW &middot; IMO GOLD</span> <a href="people/rushil-mathur.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Rushil Mathur</a> &mdash; IMO 2024 Gold representing India (rank ~29/609, one of 4 Indian golds in India's historic best-ever 4th-place finish, 167 pts). Oxford Math+CS, St John's — 1st…</li>
-      <li><span class="update-date">Apr 13</span><span class="update-badge new">NEW &middot; MECHINTERP</span> <a href="people/kunvar-thaman.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Kunvar Thaman</a> &mdash; Solo-author at ICML 2026 (Reward Hacking Benchmark: Measuring Exploits in LLM Agents with Tool Use) — 16-page paper, 13 frontier models tested (OpenAI, Anthropi…</li>
-      <li><span class="update-date">Apr 13</span><span class="update-badge new">NEW &middot; REASONING</span> <a href="people/kanishk-gandhi.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Kanishk Gandhi</a> &mdash; Stanford CS PhD under Noah Goodman (CoCoLab) + Dorsa Sadigh + Tobias Gerstenberg. Sole 1st author on Cognitive Behaviors that Enable Self-Improving Reasoners (C…</li>
-      <li><span class="update-date">Apr 13</span><span class="update-badge new">NEW &middot; ARCHITECTURE</span> <a href="people/sukjun-hwang.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Sukjun Hwang</a> &mdash; CMU ML PhD student under Albert Gu (Mamba/S4, Cartesia CTO). 1st author on H-Net (ICLR 2026, 846 GitHub stars) — the byte-level tokenizer-killer architecture (0…</li>
-      <li><span class="update-date">Apr 13</span><span class="update-badge new">NEW &middot; CARTESIA</span> <a href="people/brandon-wang.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Brandon Wang</a> &mdash; 2nd author on H-Net (Hwang, Wang, Gu — ICLR 2026, Cartesia/CMU) — the byte-level architecture beating BPE Transformers (0.743 vs 0.756 BPB at 760M, 58.2% vs 55…</li>
-      <li><span class="update-date">Apr 13</span><span class="update-badge new">NEW &middot; HAZY</span> <a href="people/neel-guha.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Neel Guha</a> &mdash; Final-year Stanford JD/PhD (Chris R&eacute;). First author on LegalBench (NeurIPS 23, the benchmark Vals VLAIR used to rank Harvey + CoCounsel), Smoothie (NeurI…</li>
-      <li><span class="update-date">Apr 13</span><span class="update-badge new">NEW</span> <a href="people/takeru-miyato.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Takeru Miyato</a> &mdash; PhD T&uuml;bingen (Geiger) + co-advised by Max Welling. Part-time Preferred Networks since 2016. Google Brain intern under Ian Goodfellow + Andrew M. Dai (2016)…</li>
-      <li><span class="update-date">Apr 13</span><span class="update-badge new">NEW &middot; HAZY</span> <a href="people/ishan-khare.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Ishan Khare</a> &mdash; Stanford CS MS, Hazy Research (Chris R&eacute;). 3 top-venue papers in 12 mo: Smoothie (NeurIPS 24 — +27pt label-free LLM routing), WONDERBREAD (w/ Wornow), Age…</li>
-      <li><span class="update-date">Apr 13</span><span class="update-badge new">NEW &middot; PEER</span> <a href="people/shri-kolanukuduru.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Shri Kolanukuduru</a> &mdash; Investing Partner, Category Ventures ($160M Fund I, Villi Iltchev). Prev Insight (early-stage AI infra/dev-tools/sec), Pioneer (Daniel Gross day-0 $20K/2%), HFT…</li>
-      <li><span class="update-date">Apr 13</span><span class="update-badge new">NEW &middot; LP</span> <a href="people/jessie-jia-guo.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Jessie Jia Guo</a> &mdash; Investment Partner, Next Legacy ($3.5B FoF). Emerging Leaders Fund ($1-5M into emerging managers). Kauffman Fellow. Bridge Funding Global board. Peking U + UC D…</li>
-      <li><span class="update-date">Apr 7</span><span class="update-badge new">NEW &middot; CLUSTER</span> <a href="people/lovish-madaan.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Lovish Madaan</a> &mdash; PhD Meta MSL + UCL NLP. Co-lead ScaleRL (ICLR 2026 Oral, 400K+ GPU-hr) — 3rd ScaleRL co-author in repo w/ Devvrit Khatri & Rishabh Tiwari. First-author PDR (+11…</li>
-      <li><span class="update-date">Apr 7</span><span class="update-badge new">NEW &middot; PORTFOLIO</span> <a href="people/abhay-mitra.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Abhay Mitra</a> &mdash; CEO &amp; Co-Founder, Effective AI. Prev CTO Nirvana Insurance ($1.5B, $260M+ raised). Rubrik (pre-IPO). IIT Delhi CS. Second-time founder. Indian.</li>
-      <li><span class="update-date">Apr 7</span><span class="update-badge new">NEW &middot; PORTFOLIO</span> <a href="people/kunal-singhal.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Kunal Singhal</a> &mdash; CTO &amp; Co-Founder, Effective AI. 2x ICPC World Finalist (India). IOI 2012. INMO topper. Facebook, Grammarly, WisdomAI. IIT Delhi. Indian.</li>
-      <li><span class="update-date">Apr 7</span><span class="update-badge new">NEW &middot; LP</span> <a href="people/sameer-gandhi.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Sameer Gandhi</a> &mdash; Partner at Accel (25+ yrs). Board: Perplexity ($14B), CrowdStrike, Freshworks. Anthropic Series G. MIT EE/CS + Stanford GSB. Led Flipkart from seed. Indian-Amer…</li>
-      <li><span class="update-date">Apr 3</span><span class="update-badge new">NEW</span> <a href="people/samuel-stanton.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Samuel Stanton</a> &mdash; Co-founded Coefficient Bio, acquired by Anthropic ~$400M (today). NYU PhD (Wilson). Genentech lab-in-the-loop. 620+ cites. Departure watch.</li>
-      <li><span class="update-date">Apr 3</span><span class="update-badge new">NEW</span> <a href="people/roshan-rao.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Roshan Rao</a> &mdash; Co-founder EvolutionaryScale. ESM/ESMFold/ESM3 (Science cover, 98B params). 11,400+ cites. Berkeley PhD (Abbeel + Canny). CZ Biohub. Indian.</li>
-      <li><span class="update-date">Mar 31</span><span class="update-badge upgraded">UPGRADED T3&rarr;T1</span> <a href="people/mei.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Mei Z. (@multiply_matrix)</a> &mdash; Pre-seed AI investor. First check into Standard Intelligence, Etched ($5B), MatX ($500M B), RadixArk (SGLang, $400M), Mirendil (ex-Anthropic, $1B). $6B+ portfol…</li>
-      <li><span class="update-date">Mar 31</span><span class="update-badge new">NEW</span> <a href="people/rohil-badkundri.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Rohil Badkundri</a> &mdash; ESM3 co-author (Science cover, 98B params, 900+ cites). EvolutionaryScale &rarr; CZ Biohub acquisition &rarr; now &ldquo;Building.&rdquo; Clinical trial AI. Harvard &rsquo;24. Indian.</li>
-      <li><span class="update-date">Mar 30</span><span class="update-badge new">NEW</span> <a href="people/ritvik-singh.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Ritvik Singh</a> &mdash; Built NVIDIA ORBIT/Isaac Lab (6.8k stars). First RGB-only dexterous grasping (93% real-world). Abbeel+Malik PhD. 855 cites. Indian.</li>
-      <li><span class="update-date">Mar 30</span><span class="update-badge new">NEW</span> <a href="people/kawin-ethayarajh.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Kawin Ethayarajh</a> &mdash; Created KTO (ICML 2024 Spotlight). SHP dataset in Llama-2. ICML 2022 Outstanding Paper. UChicago Booth professor. 3,200+ cites. Sri Lankan Tamil. Indian.</li>
-      <li><span class="update-date">Mar 30</span><span class="update-badge new">NEW</span> <a href="people/akshat-bubna.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Akshat Bubna</a> &mdash; First Indian IOI gold ever (2014). Co-Founder &amp; CTO Modal Labs ($1.1B, talks at $2.5B). ~$50M ARR. MIT. Scale AI alum. Indian.</li>
-      <li><span class="update-date">Apr 7</span><span class="update-badge new">NEW</span> <a href="people/rishabh-tiwari.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Rishabh Tiwari</a> &mdash; Berkeley PhD/Keutzer (SqueezeAILab). QuantSpec ~2.5x speedup, on Apple ML Research. ICLR first-author as undergrad. 2yr DeepMind. RS Intern Meta. Indian.</li>
-      <li><span class="update-date">Mar 30</span><span class="update-badge new">NEW</span> <a href="people/himanshu-gaurav-singh.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Himanshu Gaurav Singh</a> &mdash; JEE Advanced AIR 2/161K. IJSO Gold. APhO Silver. Abbeel+Malik PhD. Robot learning. Gorakhpur, UP. Indian.</li>
-      <li><span class="update-date">Mar 30</span><span class="update-badge new">NEW</span> <a href="people/shubham-goel.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Shubham Goel</a> &mdash; IChO Silver + JEE AIR 6/150K. Malik PhD. 3D human reconstruction SOTA. xAI. Indian.</li>
-      <li><span class="update-date">Mar 30</span><span class="update-badge new">NEW</span> <a href="people/amrith-setlur.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Amrith Setlur</a> &mdash; 7+ top-venue papers in 18 months. Test-time compute pioneer. e3 Best Paper. CMU. Indian.</li>
-      <li><span class="update-date">Mar 30</span><span class="update-badge new">NEW</span> <a href="people/karan-dalal.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Karan Dalal</a> &mdash; TTT layers architect (4,700+ stars). Prior founder at 16 ($1.6M). Berkeley/Stanford. Indian.</li>
-      <li><span class="update-date">Mar 29</span><span class="update-badge new">NEW</span> <a href="people/rahul-ravishankar.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Rahul Ravishankar</a> &mdash; Left xAI Feb 13, 2 weeks after co-author Zeeshan Patel. CVPR + ICCV 2025. Grok 3.5 pretraining. Malik lab. Indian. Strong co-founding signal.</li>
-      <li><span class="update-date">Mar 27</span><span class="update-badge upgraded">TIER 0</span> <a href="people/michael-wornow.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Michael Wornow</a> &mdash; Co-founded Kinetic Systems (healthcare AI). Chris R&eacute; + Nigam Shah. Actively hiring.</li>
-      <li><span class="update-date">Mar 27</span><span class="update-badge new">NEW</span> <a href="people/spruce-campbell.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Spruce Campbell</a> &mdash; Left OpenAI &rarr; MIT physics/bio. BAFTA at 12. Mantis AI spin-out.</li>
-      <li><span class="update-date">Mar 27</span><span class="update-badge new">NEW</span> <a href="people/alexi-gladstone.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Alexi Gladstone</a> &mdash; Energy-Based Transformers (35% higher scaling). LeCun on committee.</li>
-      <li><span class="update-date">Mar 27</span><span class="update-badge new">NEW</span> <a href="people/matthew-yang.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Matthew Yang</a> &mdash; 3 best papers at ICML/ICLR as CMU MS student. Test-time compute frontier.</li>
-      <li><span class="update-date">Mar 27</span><span class="update-badge new">NEW</span> <a href="people/zeyneb-kaya.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Zeyneb Kaya</a> &mdash; YC founder (Topological). Physics CAD 1930x faster. Regen STS 5th.</li>
-      <li><span class="update-date">Mar 27</span><span class="update-badge new">NEW</span> <a href="people/thijs-simonian.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Thijs Simonian</a> &mdash; Employee #5 at $1.7B LMArena. Video Arena 200K+ votes.</li>
-      <li><span class="update-date">Mar 27</span><span class="update-badge new">NEW</span> <a href="people/jaeyeon-kim.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Jaeyeon Kim</a> &mdash; ICML Outstanding Paper (1/6). IMO finalist. Harvard PhD.</li>
-      <li><span class="update-date">Mar 27</span><span class="update-badge corrected">CORRECTED</span> <a href="people/lillian-sun.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Lillian Sun</a> &mdash; Downgraded T1&rarr;T2. ICML Outstanding Paper claim was false (liked post, didn&rsquo;t win).</li>
-      <li><span class="update-date">Mar 27</span><span class="update-badge new">NEW</span> <a href="people/gashon-hussein.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Gashon Hussein</a> &mdash; Physical Intelligence researcher. pi-0.6 co-author. Neo Scholar.</li>
-      <li><span class="update-date">Mar 27</span><span class="update-badge new">NEW</span> <a href="people/laker-newhouse.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Laker Newhouse</a> &mdash; Muon optimizer (now in production at trillion-param scale). MIT Math.</li>
-      <li><span class="update-date">Mar 27</span><span class="update-badge new">NEW</span> <a href="people/ally-nakamura.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Ally Nakamura</a> &mdash; Masason Scholar. Catapult Technologies (PearX S24). Stanford AI.</li>
-      <li><span class="update-date">Mar 27</span><span class="update-badge new">NEW</span> <a href="people/sudarshan-nambiar.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Sudarshan Nambiar</a> &mdash; Conway founding eng. KP + First Round + BoxGroup. Indian.</li>
-      <li><span class="update-date">Mar 27</span><span class="update-badge new">NEW</span> <a href="people/ameen-patel.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Ameen Patel</a> &mdash; INTELLECT-3 co-author (106B SOTA). Prime Intellect. Indian.</li>
-      <li><span class="update-date">Mar 27</span><span class="update-badge new">NEW</span> <a href="people/niklas-muennighoff.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Niklas Muennighoff</a> &mdash; 23.5K citations. MTEB creator. s1. Knight-Hennessy Scholar.</li>
-      <li><span class="update-date">Mar 27</span><span class="update-badge new">NEW</span> <a href="people/luke-melas-kyriazi.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Luke Melas-Kyriazi</a> &mdash; Rhodes Scholar. Oxford PhD. 30+ papers. Now at Cursor ($29.3B).</li>
-      <li><span class="update-date">Mar 27</span><span class="update-badge new">NEW</span> <a href="people/sijun-tan.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Sijun Tan</a> &mdash; rLLM lead (5.3K stars). DeepScaleR beats o1-preview. Co-lead went stealth.</li>
-      <li><span class="update-date">Mar 27</span><span class="update-badge new">NEW</span> <a href="people/dan-biderman.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Dan Biderman</a> &mdash; Chris R&eacute; lab postdoc. LoRA paper. Minions. Founder factory.</li>
-      <li><span class="update-date">Mar 27</span><span class="update-badge new">NEW</span> <a href="people/devvrit-khatri.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Devvrit Khatri</a> &mdash; ScaleRL (ICLR Oral). DiskANN. Joining Reflection AI ($2B). Indian.</li>
-      <li><span class="update-date">Mar 27</span><span class="update-badge new">NEW</span> <a href="people/shreyas-sreenivas.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Shreyas Sreenivas</a> &mdash; Exa founding eng. Vector DB in Rust. $12M ARR. Indian (Bangalore).</li>
-      <li><span class="update-date">Mar 27</span><span class="update-badge new">NEW</span> <a href="people/aditya-gupta.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Aditya Gupta</a> &mdash; Chess NM + USACO Plat. 2 acquisitions by 20. Percy Liang. Indian.</li>
-      <li><span class="update-date">Mar 27</span><span class="update-badge new">NEW</span> <a href="people/kevin-lu.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Kevin Lu</a> &mdash; Decision Transformer (1,951 cites). Pieter Abbeel. Thinking Machines.</li>
-      <li><span class="update-date">Mar 26</span><span class="update-badge upgraded">UPGRADED</span> <a href="people/zeeshan-patel.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Zeeshan Patel</a> &mdash; Full 5-agent SOP. Aurora architecture. Grok Imagine 1.245B/month. Network map (22 people).</li>
-      <li><span class="update-date">Mar 26</span><span class="update-badge upgraded">UPGRADED</span> <a href="people/ronak-malde.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Ronak Malde</a> &mdash; Full 5-agent SOP. SWE-1 flow awareness. Continual learning thesis with tweets. Windsurf cohort mapped (20 people).</li>
-      <li><span class="update-date">Mar 26</span><span class="update-badge new">NEW</span> <a href="people/kshitij-sodani.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Kshitij Sodani</a> &mdash; 2x IOI Gold (youngest ever). Codeforces IGM. MIT CS. Kota, Rajasthan. Indian.</li>
-      <li><span class="update-date">Mar 30</span><span class="update-badge new">NEW</span> <a href="people/ritvik-kapila.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Ritvik Kapila</a> &mdash; NeoSigma co-founder. Essential AI (Vaswani). 24T token dataset. IIT Delhi. UCSD 4.0. Indian.</li>
-      <li><span class="update-date">Mar 26</span><span class="update-badge new">NEW</span> <a href="people/gauri-gupta.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Gauri Gupta</a> &mdash; NeoSigma founder. MIT PhD dropout. IIT Delhi. Pre-seed. Indian.</li>
-      <li><span class="update-date">Mar 26</span><span class="update-badge new">NEW</span> <a href="people/rohan-kalahasty.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Rohan Kalahasty</a> &mdash; a37 founder. Caltech dropout. 2nd-time founder ($1.3M at 17). Indian.</li>
-      <li><span class="update-date">Mar 26</span><span class="update-badge new">NEW</span> <a href="people/ishaan-javali.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Ishaan Javali</a> &mdash; NeurIPS Best Paper as undergrad. ISEF 1st. Princeton. Indian.</li>
-      <li><span class="update-date">Mar 26</span><span class="update-badge new">NEW</span> <a href="people/suvansh-sanjeev.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Suvansh Sanjeev</a> &mdash; OpenAI (GPT-5). CMU PhD dropout. Prior founder. Indian.</li>
-      <li><span class="update-date">Mar 26</span><span class="update-badge new">NEW</span> <a href="people/rohin-garg.html" style="font-weight:600;text-decoration:none;color:var(--fg);">Rohin Garg</a> &mdash; IOI Gold #12. Character.AI. MIT CS. Indian.</li>
-    </ul>
-  </details>
-
-  <footer style="margin-top:2.5rem;">
-    <span id="dir-foot">&mdash;</span> &middot; data regenerated by the morning ritual &middot;
-    <a href="today.html">the desk</a> &middot; <a href="delta-fellows.html">144 Delta fellows</a>
-  </footer>
-
-  <script>
-  (function () {
-    var TIERS = [['T0','0'],['T1','1'],['T2','2'],['T3','3'],['—','none']];
-    var SIGNALS = ['stealth','departed','raising','founder'];
-    var STATUSES = ['not-contacted','contacted','replied','meeting','passed'];
-    var DEFAULT_STATE = { q:'', tier:'all', signals:{}, status:'all', indian:false, urgency:false, delta:'all',
-                          sortKey:'tier', sortDir:1 };
-    var state = JSON.parse(JSON.stringify(DEFAULT_STATE));
-    var DATA = [], body = document.getElementById('dir-body'),
-        meta = document.getElementById('dir-meta'), empty = document.getElementById('dir-empty');
-
-    function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
-    function tierChip(t){
-      if (t===null||t===undefined) return '<span class="t-chip tnone">—</span>';
-      return '<span class="t-chip t'+t+'">T'+t+'</span>';
-    }
-    function tierRank(t){ return (t===null||t===undefined)?9:t; }
-
-    function anyFilterActive(){
-      return state.q || state.tier!=='all' || state.status!=='all' || state.indian ||
-             state.urgency || state.delta!=='all' || Object.values(state.signals).some(Boolean);
-    }
-
-    function matches(p){
-      if (state.tier!=='all'){ var tv = (p.tier===null||p.tier===undefined)?'none':String(p.tier); if (tv!==state.tier) return false; }
-      var act = Object.keys(state.signals).filter(function(k){return state.signals[k];});
-      if (act.length && !act.every(function(s){return (p.signals||[]).indexOf(s)>=0;})) return false;
-      if (state.status!=='all' && p.status!==state.status) return false;
-      if (state.indian && !p.indian) return false;
-      if (state.delta==='only' && !p.delta) return false;
-      if (state.delta==='hide' && p.delta) return false;
-      if (state.urgency && !p.urgency) return false;
-      if (state.q){
-        var hay = (p.name+' '+p.role+' '+p.spike+' '+(p.tags||[]).join(' ')+' '+(p.cluster||'')+' '+(p.signals||[]).join(' ')).toLowerCase();
-        if (hay.indexOf(state.q)<0) return false;
-      }
-      return true;
-    }
-
-    function sortRows(rows){
-      var k = state.sortKey, d = state.sortDir;
-      rows.sort(function(a,b){
-        var av, bv;
-        if (k==='tier'){ av=tierRank(a.tier); bv=tierRank(b.tier);
-          if (av!==bv) return (av-bv)*d;
-          // within a tier: flagged-urgent first, then most-recently updated
-          if (!!a.urgency !== !!b.urgency) return (b.urgency?1:0)-(a.urgency?1:0);
-          return (b.updated||'').localeCompare(a.updated||''); }
-        if (k==='name'){ return a.name.localeCompare(b.name)*d; }
-        if (k==='status'){ av=STATUSES.indexOf(a.status); bv=STATUSES.indexOf(b.status);
-          if (av!==bv) return (av-bv)*d;
-          return tierRank(a.tier)-tierRank(b.tier); }
-        if (k==='updated'){ return (a.updated||'').localeCompare(b.updated||'')*d*-1; }
-        return 0;
-      });
-      return rows;
-    }
-
-    function rowHTML(p){
-      var sigs = (p.signals||[]).map(function(s){return '<span class="sig sig-'+s+'">'+s+'</span>';}).join(' ');
-      // Person cell folds the old "Why" column: role is the always-present descriptor,
-      // the investment "why" (spike) is preserved as a hover tooltip (full text in the dossier).
-      var desc = p.role || p.spike || '';
-      var why  = p.spike || p.role || '';
-      var clHTML = p.cluster ? ' <span class="cl">'+esc(p.cluster)+'</span>' : '';
-      var acts = '';
-      if (p.twitter) acts += '<a class="act" href="https://twitter.com/'+encodeURIComponent(p.twitter)+'" target="_blank" rel="noopener" data-stop title="@'+esc(p.twitter)+'">𝕏</a>';
-      if (p.linkedin) acts += '<a class="act" href="https://linkedin.com/in/'+encodeURIComponent(p.linkedin)+'" target="_blank" rel="noopener" data-stop title="LinkedIn">in</a>';
-      if (p.gmail_url) acts += '<a class="act" href="'+esc(p.gmail_url)+'" target="_blank" rel="noopener" data-stop title="'+esc(p.email||'email')+'">✉</a>';
-      else if (p.email) acts += '<a class="act" href="mailto:'+esc(p.email)+'" data-stop title="'+esc(p.email)+'">✉</a>';
-      var sub = p.last_contacted ? ('contacted '+p.last_contacted) : (p.next_action_date ? ('by '+p.next_action_date) : '');
-      return ''+
-        '<td class="c-tier">'+tierChip(p.tier)+(p.urgency?'<span class="urgency-flag" title="urgency set">!</span>':'')+'</td>'+
-        '<td class="c-person">'+
-          '<div class="p-line"><span class="p-name">'+esc(p.name)+(p.indian?' <span class="indian-dot" title="Indian / Indian-origin">●</span>':'')+'</span>'+sigs+'</div>'+
-          (desc?'<div class="p-role" title="'+esc(why)+'">'+esc(desc)+clHTML+'</div>':'')+'</td>'+
-        '<td class="c-status h-status"><span class="dot dot-'+p.status+'"></span>'+p.status+(sub?'<div class="sub">'+esc(sub)+'</div>':'')+'</td>'+
-        '<td class="c-upd h-upd">'+(p.updated||'—')+'</td>'+
-        '<td class="c-act">'+acts+'</td>';
-    }
-
-    function render(){
-      var rows = DATA.filter(matches);
-      sortRows(rows);
-      body.innerHTML = '';
-      empty.style.display = rows.length ? 'none' : 'block';
-      var frag = document.createDocumentFragment();
-      rows.forEach(function(p){
-        var tr = document.createElement('tr');
-        tr.className = 'dir-row';
-        tr.innerHTML = rowHTML(p);
-        tr.addEventListener('click', function(ev){
-          if (ev.target.closest('[data-stop]')) return;   // let action links work
-          window.location.href = 'people/'+p.slug+'.html';
-        });
-        frag.appendChild(tr);
-      });
-      body.appendChild(frag);
-      var filtered = anyFilterActive();
-      meta.textContent = rows.length + ' of ' + DATA.length + ' people' + (filtered ? '  (filtered)' : '');
-      document.getElementById('preset-clear').style.display = filtered ? '' : 'none';
-      // triage preset reflects whether its exact filter combo is live
-      var triageOn = (state.tier==='0' && state.status==='not-contacted');
-      document.getElementById('preset-triage').classList.toggle('is-on', triageOn);
-      // header arrows
-      document.querySelectorAll('.dir-table th[data-sort]').forEach(function(th){
-        var a = th.querySelector('.arr');
-        if (th.dataset.sort===state.sortKey) a.textContent = state.sortDir>0?'▲':'▼'; else a.textContent='';
-      });
-    }
-
-    function buildFilters(){
-      var tf = document.getElementById('tier-filters');
-      var present = {}; DATA.forEach(function(p){ present[(p.tier===null||p.tier===undefined)?'none':String(p.tier)]=true; });
-      var allP = mkPill('All', false, function(){ state.tier='all'; syncAll(); render(); }); allP.dataset.tier='all'; tf.appendChild(allP);
-      TIERS.forEach(function(t){
-        if (!present[t[1]]) return;
-        var n = DATA.filter(function(p){return ((p.tier===null||p.tier===undefined)?'none':String(p.tier))===t[1];}).length;
-        var pill = mkPill(t[0]+' ('+n+')', false, function(){ state.tier=t[1]; syncAll(); render(); });
-        if (t[1]!=='none') pill.classList.add('tier-T'+t[1]);
-        pill.dataset.tier=t[1];
-        tf.appendChild(pill);
-      });
-      var sf = document.getElementById('signal-filters');
-      SIGNALS.forEach(function(s){
-        var n = DATA.filter(function(p){return (p.signals||[]).indexOf(s)>=0;}).length;
-        if (!n) return;
-        var pill = mkPill(s+' ('+n+')', false, function(){ state.signals[s]=!state.signals[s]; syncAll(); render(); });
-        pill.dataset.sig=s; sf.appendChild(pill);
-      });
-      var mf = document.getElementById('meta-filters');
-      var allS = mkPill('All', false, function(){ state.status='all'; syncAll(); render(); }); allS.dataset.st='all'; mf.appendChild(allS);
-      STATUSES.forEach(function(s){
-        var n = DATA.filter(function(p){return p.status===s;}).length; if (!n) return;
-        var pill = mkPill(s+' ('+n+')', false, function(){ state.status=s; syncAll(); render(); }); pill.dataset.st=s; mf.appendChild(pill);
-      });
-      mf.appendChild(sep());
-      var pu = mkPill('★ urgency', false, function(){ state.urgency=!state.urgency; syncAll(); render(); }); pu.dataset.flag='urgency'; mf.appendChild(pu);
-      var pi = mkPill('● indian', false, function(){ state.indian=!state.indian; syncAll(); render(); }); pi.dataset.flag='indian'; mf.appendChild(pi);
-      var pd = mkPill('hide delta', false, function(){ state.delta = state.delta==='hide'?'all':'hide'; syncAll(); render(); }); pd.dataset.flag='delta'; mf.appendChild(pd);
-      syncAll();
-    }
-
-    // Single source of truth for pill UI -> derives every pill's active class from `state`.
-    function syncAll(){
-      document.querySelectorAll('#tier-filters .pill').forEach(function(p){
-        p.classList.toggle('active', (p.dataset.tier||'all')===state.tier); });
-      document.querySelectorAll('#signal-filters .pill').forEach(function(p){
-        p.classList.toggle('active', !!state.signals[p.dataset.sig]); });
-      document.querySelectorAll('#meta-filters .pill[data-st]').forEach(function(p){
-        p.classList.toggle('active', p.dataset.st===state.status); });
-      document.querySelectorAll('#meta-filters .pill[data-flag]').forEach(function(p){
-        var f=p.dataset.flag;
-        var on = f==='urgency'?state.urgency : f==='indian'?state.indian : (state.delta==='hide');
-        p.classList.toggle('active', on); });
-    }
-
-    function resetFilters(){
-      var sk=state.sortKey, sd=state.sortDir;
-      state = JSON.parse(JSON.stringify(DEFAULT_STATE));
-      state.sortKey=sk; state.sortDir=sd;             // keep the user's current sort
-      document.getElementById('dir-search').value='';
-      syncAll(); render();
-    }
-
-    function mkPill(label, active, fn){ var b=document.createElement('span'); b.className='pill'+(active?' active':''); b.textContent=label; b.addEventListener('click', fn); return b; }
-    function sep(){ var s=document.createElement('span'); s.className='pill-sep'; return s; }
-
-    document.getElementById('dir-search').addEventListener('input', function(e){ state.q=e.target.value.toLowerCase().trim(); render(); });
-    document.getElementById('preset-triage').addEventListener('click', function(){
-      var on = (state.tier==='0' && state.status==='not-contacted');
-      if (on){ state.tier='all'; state.status='all'; }   // toggle off
-      else   { state.tier='0';  state.status='not-contacted'; }
-      syncAll(); render();
-    });
-    document.getElementById('preset-clear').addEventListener('click', resetFilters);
-    document.querySelectorAll('.dir-table th[data-sort]').forEach(function(th){
-      th.addEventListener('click', function(){ var k=th.dataset.sort;
-        if (state.sortKey===k) state.sortDir*=-1; else { state.sortKey=k; state.sortDir = 1; }
-        render(); });
-    });
-
-    fetch('data/directory.json?t=' + Date.now()).then(function(r){return r.json();}).then(function(j){
-      DATA = j.people || [];
-      buildFilters(); render();
-      document.getElementById('dir-foot').textContent = DATA.length + ' people indexed';
-      var uc = document.getElementById('updates-count'); if (uc) uc.textContent = document.querySelectorAll('.recent-updates li').length;
-    }).catch(function(err){
-      meta.textContent = 'Could not load directory.json — run: python3 data/build_directory.py';
-      console.error(err);
-    });
-  })();
-  </script>
+function matches(p){
+  if(state.tier!=='all' && String(p.tier)!==state.tier) return false;
+  if(state.indian && !(p.indian===true||p.indian==='True'||p.indian==='true')) return false;
+  if(state.notcontacted && p.status && p.status!=='not-contacted') return false;
+  if(state.hidedelta && (p.delta===true||p.delta==='True')) return false;
+  if(state.q){
+    var hay=((p.name||'')+' '+(p.role||'')+' '+(p.spike||'')+' '+((p.tags||[]).join(' '))+' '+(p.cluster||'')+' '+((p.signals||[]).join(' '))).toLowerCase();
+    if(hay.indexOf(state.q)<0) return false;
+  }
+  return true;
+}
+function reachBtns(p){
+  var b='';
+  if(p.twitter) b+='<a class="rb" href="https://twitter.com/'+esc(p.twitter)+'" target="_blank" rel="noopener" title="@'+esc(p.twitter)+'" onclick="event.stopPropagation()">𝕏</a>';
+  if(p.linkedin) b+='<a class="rb" href="https://www.linkedin.com/in/'+esc(p.linkedin)+'" target="_blank" rel="noopener" title="LinkedIn" onclick="event.stopPropagation()">in</a>';
+  if(p.gmail_url||p.email) b+='<a class="rb" href="'+esc(p.gmail_url||('mailto:'+p.email))+'" target="_blank" rel="noopener" title="Email" onclick="event.stopPropagation()">✉</a>';
+  return b;
+}
+function sigChips(p){
+  var out='';
+  (p.signals||[]).forEach(function(s){ out+='<span class="chip '+esc(s)+'">'+esc(s)+'</span>'; });
+  if(p.indian===true||p.indian==='True') out+='<span class="chip indian">indian</span>';
+  if(p.cluster) out+='<span class="chip cluster">'+esc(p.cluster)+'</span>';
+  return out;
+}
+function card(p){
+  var statusKey=(p.status||'not-contacted').replace(/-/g,'');
+  var statusTxt=(p.status||'not-contacted')+(p.last_contacted?(' · '+p.last_contacted):'');
+  var isNew=daysAgo(recencyDate(p))<=14;
+  return '<div class="card '+(isNew?'is-new':'')+'" data-href="people/'+esc(p.slug)+'.html">'+
+    '<div class="crow">'+
+      '<span class="tier '+tierClass(p.tier)+'">'+tierLabel(p.tier)+'</span>'+
+      '<span class="cname">'+esc(p.name)+'</span>'+
+      '<span class="dot s-'+statusKey+'"></span><span class="cstatus">'+esc(statusTxt)+'</span>'+
+      '<span class="cmeta"><span class="cupd">'+esc(recencyDate(p))+'</span></span>'+
+    '</div>'+
+    '<div class="cspike">'+esc(stripTier(p.spike)||p.role||'')+'</div>'+
+    '<div class="cfoot">'+sigChips(p)+'<span class="reach">'+reachBtns(p)+'</span></div>'+
+  '</div>';
+}
+function render(){
+  var rows=DATA.filter(matches);
+  var newest=rows.length?daysAgo(recencyDate(rows[0])):0;
+  var cutoff=newest+RECENT_DAYS;
+  var recent=rows.filter(function(p){return daysAgo(recencyDate(p))<=cutoff;});
+  var earlier=rows.filter(function(p){return daysAgo(recencyDate(p))>cutoff;});
+  var html='';
+  if(recent.length){
+    html+='<div class="fdiv recent"><h2>Recent</h2><span class="n">'+recent.length+'</span><span class="ln"></span></div>'+recent.map(card).join('');
+  }
+  if(earlier.length){
+    html+='<div class="fdiv"><h2>Earlier</h2><span class="n">'+earlier.length+'</span><span class="ln"></span></div>'+earlier.map(card).join('');
+  }
+  document.getElementById('feed').innerHTML=html||'<p style="color:var(--fg-faint)">No matches.</p>';
+  document.getElementById('count').textContent=rows.length+' of '+DATA.length+' people · newest first';
+}
+document.getElementById('feed').addEventListener('click',function(e){
+  if(e.target.closest('.rb')) return;
+  var c=e.target.closest('.card'); if(c&&c.dataset.href) location.href=c.dataset.href;
+});
+document.getElementById('q').addEventListener('input',function(e){state.q=e.target.value.toLowerCase().trim();render();});
+document.querySelectorAll('.qchip').forEach(function(el){
+  el.addEventListener('click',function(){
+    if(el.dataset.tier){
+      document.querySelectorAll('.qchip[data-tier]').forEach(x=>x.classList.remove('on','t0'));
+      el.classList.add('on'); if(el.dataset.tier==='0') el.classList.add('t0');
+      state.tier=el.dataset.tier;
+    } else if(el.dataset.flag){ el.classList.toggle('on'); state[el.dataset.flag]=el.classList.contains('on'); }
+    render();
+  });
+});
+</script>
 </body>
 </html>
