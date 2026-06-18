@@ -15,82 +15,84 @@
 
   <div class="profile-header">
     <h1>Toon Van de Maele</h1>
-    <p class="one-liner"><strong><span style="color:var(--accent)">Co-Founder &amp; Head of AI of <a href="https://theblanket.ai/">The Blanket</a></span> &mdash; the stealth <strong>active-inference robotics</strong> startup (&ldquo;Robots that think before they act&rdquo;), a 2026 spin-out of the VERSES robotics team.</strong> The <strong>world-model / perception brain</strong> of the founding core (complementing <a href="corrado-pezzato.html">Pezzato</a>&rsquo;s manipulation-control half): <strong>first author on VBGS (Variational Bayes Gaussian Splatting)</strong> and on a <strong>Nature Communications 2024</strong> active-inference paper; 2nd author on <strong>AXIOM</strong> (the object-centric world model that learns Atari-style games in minutes, gradient-free). Ghent / imec PhD (&ldquo;Active Inference for Scene Understanding,&rdquo; 2024; Dhoedt + <a href="tim-verbelen.html">Verbelen</a>) &rarr; VERSES &rarr; The Blanket. Belgian. <strong>T0 &mdash; verified co-founder at inception, pre-funding, reach out now.</strong></p>
+    <p class="one-liner"><strong>A Bayesian world-model researcher whose edge is a single repeated instinct: <span style="color:var(--accent)">replace learned/optimized heuristics with explicit probabilistic structure, so the property you want falls out by construction.</span></strong> First author of <strong>VBGS</strong> &mdash; which reframes 3D Gaussian Splatting as variational inference with a <strong>closed-form update</strong>, making it natively continual (learns 3D from a stream, no replay buffer) where vanilla 3DGS and online-GS heuristics can&rsquo;t. Second author of <strong>AXIOM</strong> (object-centric world model that learns Atari-style games in &lt;10k steps, gradient-free); first author of a <strong>Nature Communications 2024</strong> active-inference paper. Ghent / imec PhD (Dhoedt + <a href="tim-verbelen.html">Verbelen</a>). <em>Status: co-founder &amp; Head of AI of <a href="https://theblanket.ai/">The Blanket</a> (stealth active-inference robotics, pre-funding).</em></p>
     <div class="tags">
       <span class="tag" style="background:#f3d9d4;color:var(--accent);">tier-0: active pursuit</span>
       <span class="tag">founders</span>
       <span class="tag">stealth-founder</span>
       <span class="tag">world-models</span>
+      <span class="tag">gaussian-splatting</span>
+      <span class="tag">bayesian-ml</span>
       <span class="tag">active-inference</span>
       <span class="tag">the-blanket</span>
-      <span class="tag">robotics</span>
-      <span class="tag">tu-ghent</span>
       <span class="tag">ex-verses</span>
       <span class="tag">free-energy</span>
     </div>
     <div class="links">
-      <a href="https://theblanket.ai/">theblanket.ai</a>
       <a href="https://toonvdm.github.io/">toonvdm.github.io</a>
       <a href="https://scholar.google.com/citations?user=Q1gb8ScAAAAJ">google scholar (h-9, 334 cites)</a>
       <a href="https://github.com/toonvdm">github (@toonvdm)</a>
       <a href="https://x.com/toonvdm">twitter/x (@toonvdm)</a>
       <a href="https://www.linkedin.com/in/toon-van-de-maele-779897107/">linkedin</a>
       <a href="https://orcid.org/0000-0001-7583-3291">orcid</a>
+      <a href="https://theblanket.ai/">theblanket.ai</a>
     </div>
   </div>
 
-  <!-- INVESTMENT THESIS -->
+  <!-- THE ALPHA -->
   <div class="spike-box">
-    <div class="label">&#9670; Investment Thesis &mdash; T0 (Active Pursuit)</div>
+    <div class="label">&#9670; The Alpha &mdash; what&rsquo;s actually special, measured against the field</div>
     <p>
-      Toon Van de Maele is the <strong>second verified technical co-founder of <a href="https://theblanket.ai/">The Blanket</a></strong> &mdash; and the one who completes the
-      founding thesis. His title is <strong>confirmed to his own primary source</strong>: his LinkedIn headline reads <strong>&ldquo;Co-Founder, Head of AI&rdquo;</strong> (start June 2026, Ghent),
-      corroborated by his Google Scholar affiliation flipping to <strong>The Blanket</strong> (email-verified at theblanket.ai). That clears the same two-source test that confirmed
-      <a href="corrado-pezzato.html">Corrado Pezzato</a> &mdash; so, unlike <a href="tim-verbelen.html">Verbelen</a> (whose title we had to hedge), Toon&rsquo;s co-founder status is <em>verified, not reported.</em>
+      The edge is not a title and not a citation count &mdash; it is a <strong>specific, repeated technical instinct</strong>: where most of the field reaches for scale + gradient descent,
+      Toon reaches for <strong>explicit probabilistic structure</strong>, and gets the property he wants (continual learning, sample efficiency, calibrated uncertainty) <em>by construction</em> rather than
+      by bolting on heuristics. It shows up cleanest in the work he leads.
     </p>
     <p style="margin-top:0.6rem;">
-      The reason he matters is the <strong>complementarity</strong>. The Blanket&rsquo;s pitch &mdash; &ldquo;robots that think before they act&rdquo; &mdash; needs two halves: a <strong>world model
-      / perception</strong> (what is the scene, what will happen) and a <strong>controller / manipulation</strong> (what to do). Pezzato owns the second; <strong>Toon owns the first.</strong> His spike is
-      <strong>deep generative / Bayesian world models for active inference</strong>, and he is <em>first author</em> on the flagship work: <strong>VBGS &mdash; Variational Bayes Gaussian Splatting</strong>
-      (arXiv 2410.03592), which reformulates 3D Gaussian-splat training as variational inference with a closed-form conjugate update, enabling <strong>continual 3D learning from streaming data with
-      no replay buffer</strong>. He is also 2nd author on <strong>AXIOM</strong> (arXiv 2505.24784), VERSES&rsquo; object-centric world model that learns Atari-style games in <strong>&lt;10,000 steps,
-      gradient-free</strong> &mdash; the most literal expression of the &ldquo;model-based, think-first&rdquo; bet &mdash; and <strong>first author on a Nature Communications 2024</strong> active-inference paper.
+      <strong>VBGS (1st author) &mdash; the load-bearing example.</strong> 3D Gaussian Splatting (3DGS, Kerbl et al., SIGGRAPH 2023) is the dominant fast-3D-reconstruction method, but it is trained by
+      gradient descent over the <em>whole</em> image set at once &mdash; feed it a stream and it catastrophically forgets. The standard fixes (online / incremental 3DGS for SLAM) <em>patch</em> this with
+      keyframe replay, anchoring, or pruning heuristics. <strong>VBGS dissolves the problem instead of patching it:</strong> it reformulates Gaussian-splat fitting as <em>variational Bayesian inference</em>,
+      and because the model is conjugate that yields a <strong>closed-form update</strong> for the Gaussians. A closed-form posterior update is inherently incremental &mdash; each new view updates the belief
+      <em>exactly</em> &mdash; so the scene is learned <strong>continually from a stream, with no replay buffer and no catastrophic forgetting, as a property of the formulation.</strong> That is the
+      non-obvious move, and it is precisely the kind of thing you do <em>not</em> reach if your first instinct is SGD.
     </p>
     <p style="margin-top:0.6rem;">
-      <strong>The honest read on tier &mdash; T0, reach out now.</strong> Verified co-founder of a stealth, pre-funding company in the inception window, with a narrow-and-real spike (first-author world
-      models) that maps one-to-one onto his role (Head of AI). Calibrate the numbers, not the signal: <strong>334 cites / h-9</strong> is solid-not-superstar &mdash; but the value is being the
-      <em>first-author world-models person</em> in a small field, paired with a verified manipulation co-founder. The differentiated bet is the same cluster thesis: a <strong>model-based, data-efficient,
-      uncertainty-aware reasoning layer</strong> versus the data-hungry VLA / foundation-model wave (Physical Intelligence, Skild). Lead with VBGS / AXIOM and the world-model framing.
+      <strong>AXIOM (2nd author) &mdash; the same instinct, different domain.</strong> An object-centric, <em>expanding</em> world model that learns Atari-style games in <strong>&lt;10,000 interactions,
+      gradient-free</strong>. Model-free deep RL (DQN/PPO) needs millions of frames; even strong model-based RL (DreamerV3) is gradient-trained and neither object-centric nor structure-growing. AXIOM&rsquo;s
+      sample efficiency comes from the same place as VBGS &mdash; a structured, growable probabilistic model doing the work that scale + backprop do elsewhere.
+    </p>
+    <p style="margin-top:0.6rem;">
+      <strong>Why this is &ldquo;out of distribution.&rdquo;</strong> The center of mass in ML is scale and gradient descent. Toon&rsquo;s actual track record is a contrarian, coherent bet that <strong>exact
+      inference over the right structure beats learned heuristics</strong> for exactly the properties embodied AI needs. That bet is unfashionable, which is what makes it interesting &mdash; and it is the same
+      bet the company is built on.
+    </p>
+    <p style="margin-top:0.6rem;" class="small muted">
+      <strong>Calibrated honestly:</strong> VBGS is a 2024 method &mdash; the claim is <em>structural novelty + a clean continual-learning property</em> (validated by the math and released code), <em>not</em>
+      &ldquo;beats 3DGS on every static benchmark&rdquo; or broad adoption (it has neither yet). AXIOM is 2nd-author (Heins leads); Neural Networks 2021 (his most-cited, ~107) is 3rd-author. The alpha is the
+      first-author <em>structural</em> work, not the citation total (334, h-9 &mdash; solid, not a superstar).
     </p>
   </div>
 
-  <!-- THE BLANKET CLUSTER -->
-  <div class="spike-box" style="border-left-color:#2f6f4f;">
-    <div class="label">&#9670; The Blanket &mdash; the cluster (treat as one target)</div>
-    <p class="small">
-      A <strong>~5-person founding group, all ex-VERSES active-inference researchers.</strong> Founding-team paper: <strong>arXiv 2507.17338</strong> (mobile manipulation w/ active inference,
-      23 Jul 2025) &mdash; <strong><a href="corrado-pezzato.html">Pezzato</a> (1st) &middot; &Ccedil;atal &middot; Van de Maele (3rd) &middot; <a href="riddhi-jain-pitliya.html">Pitliya</a> &middot; <a href="tim-verbelen.html">Verbelen</a> (senior).</strong>
-      Verified-co-founder core: <strong><a href="corrado-pezzato.html">Pezzato</a></strong> (Head of Robotics &mdash; control) + <strong>Van de Maele</strong> (Head of AI &mdash; world models). Plus
-      <strong><a href="tim-verbelen.html">Verbelen</a></strong> (senior anchor / IWAI founder; reported CTO), <strong>Ozan &Ccedil;atal</strong> (likely co-founder), and
-      <strong><a href="riddhi-jain-pitliya.html">Riddhi Jain Pitliya</a></strong> (early member; strongest CEO lead, unconfirmed).
-    </p>
-  </div>
-
-  <!-- THE SPIKE -->
+  <!-- HOW IT STACKS UP -->
   <section>
-    <h2>The Spike &mdash; With Evidence (authorship-precise)</h2>
-    <p>
-      Scholar (Q1gb8ScAAAAJ): <strong>334 cites, h-index 9, i10-9.</strong> His genuine spike is <strong>Bayesian / deep-generative world models for active inference</strong> &mdash; and, rare in this field, he is <em>first author</em> on the flagship world-model paper.
-    </p>
+    <h2>How it stacks up (the work vs. the closest comparable)</h2>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>His work</td><td>Closest comparable</td><td>The edge that&rsquo;s actually his</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>VBGS</strong> &mdash; continual 3D (1st author)</td><td>3DGS (Kerbl 2023); online/incremental-GS for SLAM</td><td>Closed-form <strong>Bayesian</strong> update &rarr; continual-<em>by-construction</em>, no replay buffer, no forgetting (vs heuristic patches).</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>AXIOM</strong> &mdash; sample-efficient world model (2nd author)</td><td>DreamerV3 (model-based RL); DQN/PPO (model-free)</td><td>Learns in <strong>&lt;10k steps, gradient-free</strong>, object-centric + expanding &mdash; structure-learning, not backprop-at-scale.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Nature Comms 2024</strong> &mdash; spatial alternation (1st author)</td><td>Standard RL / connectionist models of hippocampal tasks</td><td>A generative <strong>active-inference</strong> account of a hippocampal&ndash;prefrontal circuit &mdash; 1st author in a Nature journal.</td></tr>
+    </table>
+  </section>
+
+  <!-- THE SPIKE: EVIDENCE -->
+  <section>
+    <h2>The Spike &mdash; the evidence behind the alpha (authorship-precise)</h2>
+    <p>Scholar (Q1gb8ScAAAAJ): <strong>334 cites, h-index 9, i10-9.</strong> The record that backs the alpha, stated by authorship position:</p>
     <ul>
-      <li class="small"><strong>VBGS &mdash; Variational Bayes Gaussian Splatting</strong> (arXiv 2410.03592, 2024) &mdash; <strong>1st author</strong> (Van de Maele, &Ccedil;atal, Tschantz, Buckley, Verbelen).
-        Closed-form conjugate variational update for 3D Gaussian splatting &rarr; continual learning from streaming data, no replay buffer. Code at <code>github.com/VersesTech/vbgs</code>. <strong>His cleanest, most differentiated spike.</strong></li>
-      <li class="small"><strong>AXIOM &mdash; object-centric expanding world model</strong> (arXiv 2505.24784, May 2025) &mdash; <strong>2nd author</strong> (Heins 1st; with Pezzato, &Ccedil;atal, Friston, Verbelen, Buckley).
-        Learns Atari-style games in <strong>&lt;10,000 steps, gradient-free.</strong> The most literal &ldquo;think-before-you-act&rdquo; artifact &mdash; maps directly onto auto&middot;motion.</li>
-      <li class="small"><strong>A hierarchical active inference model of spatial alternation tasks</strong> (hippocampal&ndash;prefrontal circuit) &mdash; <strong>1st author, Nature Communications 15 (2024), ~26 cites.</strong>
-        A genuine first-author Nature-family paper &mdash; a stronger credential than the cite count alone implies.</li>
+      <li class="small"><strong>VBGS &mdash; Variational Bayes Gaussian Splatting</strong> (arXiv 2410.03592, 2024) &mdash; <strong>1st author</strong> (Van de Maele, &Ccedil;atal, Tschantz, Buckley, Verbelen). Code: <code>github.com/VersesTech/vbgs</code>.</li>
+      <li class="small"><strong>AXIOM &mdash; object-centric expanding world model</strong> (arXiv 2505.24784, May 2025) &mdash; <strong>2nd author</strong> (Heins 1st; with Pezzato, &Ccedil;atal, Friston, Verbelen, Buckley).</li>
+      <li class="small"><strong>A hierarchical active inference model of spatial alternation tasks</strong> &mdash; <strong>1st author, Nature Communications 15 (2024), ~26 cites.</strong></li>
       <li class="small"><strong>Active vision for robot manipulators using the free energy principle</strong> &mdash; <strong>1st author</strong>, Frontiers in Neurorobotics 2021, ~39 cites.</li>
-      <li class="small"><strong>Robot navigation as hierarchical active inference</strong> &mdash; 3rd author, Neural Networks 2021, ~107 cites (his most-cited). Calibration: he is <em>on</em> it, does not lead it.</li>
+      <li class="small"><strong>Robot navigation as hierarchical active inference</strong> &mdash; 3rd author, Neural Networks 2021, ~107 cites (his most-cited; on it, does not lead it).</li>
     </ul>
   </section>
 
@@ -98,24 +100,42 @@
   <section>
     <h2>Origin &amp; Trajectory</h2>
     <ul>
-      <li class="small"><strong>PhD: Ghent University / imec IDLab</strong> &mdash; dissertation <em>&ldquo;Active Inference for Scene Understanding&rdquo;</em> (2024); promotor <strong>Bart Dhoedt</strong>, co-promotor
-        <strong><a href="tim-verbelen.html">Tim Verbelen</a></strong> (the same group that produced Verbelen and &Ccedil;atal). Confirmed via his site (toonvdm.github.io) + UGent biblio. Master of Engineering, UGent, before the PhD.</li>
-      <li class="small"><strong>VERSES</strong> (Karl Friston&rsquo;s active-inference company) &mdash; Research Engineer, ~2024&ndash;2026 (the VBGS / AXIOM world-models output) &rarr; <strong>The Blanket, Co-Founder &amp; Head of AI, Jun 2026&ndash;present.</strong></li>
-      <li class="small"><strong>Belgian</strong> (Ghent-based; Flemish Region). NOT Indian &mdash; no <code>indian</code> tag. Reachable: site + email on toonvdm.github.io, GitHub <code>toonvdm</code> (active-inference repos), X <code>@toonvdm</code>.</li>
+      <li class="small"><strong>PhD: Ghent University / imec IDLab</strong> &mdash; dissertation <em>&ldquo;Active Inference for Scene Understanding&rdquo;</em> (2024); promotor <strong>Bart Dhoedt</strong>, co-promotor <strong><a href="tim-verbelen.html">Tim Verbelen</a></strong> (the group that also produced Verbelen and &Ccedil;atal). Master of Engineering, UGent, before the PhD.</li>
+      <li class="small"><strong>VERSES</strong> (Karl Friston&rsquo;s active-inference company) &mdash; Research Engineer, ~2024&ndash;2026 (the VBGS / AXIOM world-models output).</li>
+      <li class="small"><strong>Belgian</strong> (Ghent-based). NOT Indian &mdash; no <code>indian</code> tag. Reachable: site + email on toonvdm.github.io, GitHub <code>toonvdm</code>, X <code>@toonvdm</code>.</li>
     </ul>
   </section>
+
+  <!-- STATUS & TIMING (replaces tier-justification) -->
+  <section>
+    <h2>Status &amp; timing</h2>
+    <p class="small">
+      <strong>Co-Founder &amp; Head of AI of <a href="https://theblanket.ai/">The Blanket</a></strong> &mdash; the world-model/perception half of the founding core (with <a href="corrado-pezzato.html">Corrado Pezzato</a> on control).
+      Title verified to his own LinkedIn headline (&ldquo;Co-Founder, Head of AI,&rdquo; start Jun 2026) + Scholar affiliation flip to The Blanket (email-verified) &mdash; the same two-source test that confirmed Pezzato.
+      The company is <strong>stealth and pre-funding</strong> (soliciting investors on its own site). <strong>Reachable now.</strong> Lead with VBGS / AXIOM and the world-model framing, not money or a logo.
+    </p>
+  </section>
+
+  <!-- THE BLANKET CLUSTER -->
+  <div class="spike-box" style="border-left-color:#2f6f4f;">
+    <div class="label">&#9670; The Blanket &mdash; the cluster (context)</div>
+    <p class="small">
+      A ~5-person founding group, all ex-VERSES active-inference researchers. Founding-team paper: <strong>arXiv 2507.17338</strong> &mdash; <strong><a href="corrado-pezzato.html">Pezzato</a> (1st) &middot; &Ccedil;atal &middot; Van de Maele (3rd) &middot; <a href="riddhi-jain-pitliya.html">Pitliya</a> &middot; <a href="tim-verbelen.html">Verbelen</a> (senior).</strong>
+      Title-verified technical co-founders: <strong><a href="corrado-pezzato.html">Pezzato</a></strong> (control) + <strong>Van de Maele</strong> (world models). Plus <strong><a href="tim-verbelen.html">Verbelen</a></strong> (senior anchor / IWAI founder),
+      <strong>Ozan &Ccedil;atal</strong> (likely co-founder), <strong><a href="riddhi-jain-pitliya.html">Riddhi Jain Pitliya</a></strong> (early member; CEO lead, unconfirmed).
+    </p>
+  </div>
 
   <!-- NETWORK MAP -->
   <section id="net">
     <h2>Network Map &amp; Recursive Discoveries</h2>
     <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
       <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Person</td><td>Tie</td><td>Why it matters</td></tr>
-      <tr style="border-bottom:1px solid var(--border)"><td><strong><a href="corrado-pezzato.html">Corrado Pezzato</a></strong></td><td>The Blanket co-founder (Head of Robotics)</td><td><strong>In index (T0).</strong> The control/manipulation half to Toon&rsquo;s world-model half &mdash; the verified founding core.</td></tr>
-      <tr style="border-bottom:1px solid var(--border)"><td><strong><a href="tim-verbelen.html">Tim Verbelen</a></strong></td><td>His PhD co-promotor; The Blanket senior anchor</td><td><strong>In index (T0).</strong> IWAI founder, h-35; his advisor and co-author across VBGS/AXIOM/founding papers.</td></tr>
-      <tr style="border-bottom:1px solid var(--border)"><td><strong><a href="riddhi-jain-pitliya.html">Riddhi Jain Pitliya</a></strong></td><td>The Blanket early member</td><td><strong>In index (T2).</strong> Oxford/Friston; strongest CEO lead (unconfirmed). Indian-origin.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Alexander Tschantz</strong></td><td>VERSES; co-author on BOTH VBGS and AXIOM</td><td><strong>Recursive P1</strong> &mdash; the world-models thrust at VERSES (w/ Buckley). At The Blanket or still VERSES? If he left, likely co-founder-grade.</td></tr>
       <tr style="border-bottom:1px solid var(--border)"><td><strong>Ozan &Ccedil;atal</strong></td><td>The Blanket; VBGS + both founding-paper co-author</td><td><strong>Recursive P1</strong> &mdash; ex-VERSES, Ghent; likely co-founder. Confirm exact title + departure.</td></tr>
-      <tr style="border-bottom:1px solid var(--border)"><td><strong>Alexander Tschantz</strong></td><td>VERSES; VBGS + AXIOM co-author</td><td><strong>Recursive P1</strong> &mdash; the world-models thrust at VERSES (w/ Buckley). Check if he joined The Blanket or stayed.</td></tr>
-      <tr style="border-bottom:1px solid var(--border)"><td><strong>Conor Heins</strong></td><td>AXIOM 1st author; pymdp lead</td><td><strong>Recursive P2</strong> &mdash; lead on the object-centric world model + the field&rsquo;s tooling. Check founding intent.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Conor Heins</strong></td><td>AXIOM 1st author; pymdp lead</td><td><strong>Recursive P2</strong> &mdash; lead on the object-centric world model + the field&rsquo;s tooling.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Christopher Buckley</strong></td><td>Senior author on VBGS + AXIOM (Sussex/VERSES)</td><td>Network node &mdash; the academic anchor of this world-models line.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong><a href="corrado-pezzato.html">Pezzato</a> / <a href="tim-verbelen.html">Verbelen</a> / <a href="riddhi-jain-pitliya.html">Pitliya</a></strong></td><td>The Blanket co-founders / members</td><td>Already in index. The cluster.</td></tr>
     </table>
   </section>
 
@@ -123,16 +143,14 @@
   <section>
     <h2>Notes</h2>
     <ul>
-      <li class="small"><strong>Tier T0, seed urgency.</strong> Verified co-founder of a stealth, pre-funding company in the inception window. Reach out now &mdash; lead with VBGS / AXIOM and the world-model framing, not money or a logo.</li>
-      <li class="small"><strong>Gate cleared + verified:</strong> co-founder status CONFIRMED to his own LinkedIn headline (&ldquo;Co-Founder, Head of AI,&rdquo; start Jun 2026, via authenticated pull) + Scholar affiliation flip to The Blanket (email-verified). VBGS (2410.03592) + AXIOM (2505.24784) authorship verified by direct fetch. The earlier &ldquo;Research Engineer &mdash; VERSES&rdquo; snippet was a stale Google cache.</li>
-      <li class="small"><strong>Calibrated, not padded:</strong> 334 cites / h-9 is solid-not-superstar; Neural Networks 2021 (107c) is 3rd-author, not lead. The spike is first-author <em>world models</em> (VBGS, Nature Comms), not citation volume.</li>
-      <li class="small"><strong>Completes the verified founding core:</strong> Pezzato (control) + Van de Maele (world models) are the two title-verified technical co-founders. The CEO seat is still open (strongest lead: <a href="riddhi-jain-pitliya.html">Pitliya</a>, unconfirmed).</li>
-      <li class="small"><strong>Recursive discoveries logged:</strong> Ozan &Ccedil;atal (P1), Alexander Tschantz (P1), Conor Heins (P2).</li>
+      <li class="small"><strong>Verification:</strong> co-founder title confirmed to his own LinkedIn headline (authenticated pull) + Scholar affiliation flip to The Blanket (email-verified). VBGS (2410.03592) + AXIOM (2505.24784) authorship verified by direct fetch. The earlier &ldquo;Research Engineer &mdash; VERSES&rdquo; web snippet was a stale Google cache.</li>
+      <li class="small"><strong>Calibration:</strong> the alpha is the first-author <em>structural</em> work (VBGS, Nature Comms), benchmarked above &mdash; not the citation total. AXIOM is 2nd-author; Neural Networks 2021 (107c) is 3rd-author. Said plainly so the edge isn&rsquo;t over-read.</li>
+      <li class="small"><strong>Recursive discoveries logged:</strong> Alexander Tschantz (P1), Ozan &Ccedil;atal (P1), Conor Heins (P2).</li>
     </ul>
   </section>
 
   <footer>
-    researched: 2026-06-18 &middot; recursive from the Blanket cluster (P0 &rarr; dossiered) &middot; primary sources: theblanket.ai, LinkedIn (/in/toon-van-de-maele-779897107, title via authenticated pull), Scholar (Q1gb8ScAAAAJ, email-verified theblanket.ai), toonvdm.github.io, UGent biblio (PhD 2024), arXiv 2410.03592 (VBGS) + 2505.24784 (AXIOM) + 2507.17338 (founding paper), Nature Communications 2024 &middot; <a href="../index.html">back to index</a>
+    researched: 2026-06-18 &middot; recursive from the Blanket cluster &middot; <strong>alpha-first format (gold standard)</strong> &middot; primary sources: arXiv 2410.03592 (VBGS) + 2505.24784 (AXIOM) + 2507.17338, Nature Communications 2024, Scholar (Q1gb8ScAAAAJ, email-verified theblanket.ai), toonvdm.github.io, UGent biblio (PhD 2024), LinkedIn (title via authenticated pull) &middot; <a href="../index.html">back to index</a>
   </footer>
 
 </body>
