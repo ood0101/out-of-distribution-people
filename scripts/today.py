@@ -124,6 +124,8 @@ def days_since(iso: str | None) -> int:
         return 9999
     try:
         dt = datetime.fromisoformat(iso.replace("Z", "+00:00"))
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
         return (datetime.now(timezone.utc) - dt).days
     except ValueError:
         return 9999
