@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-06-18T11:40:49+00:00",
+  "last_built": "2026-06-22T10:35:56+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -1096,11 +1096,11 @@
       "twitter_handle": "apsdehal",
       "linkedin_slug": "apsdehal",
       "github_handle": "apsdehal",
-      "status": "not-contacted",
-      "last_contacted": null,
-      "next_action_date": null,
+      "status": "contacted",
+      "last_contacted": "2026-06-19",
+      "next_action_date": "2026-07-03",
       "response": null,
-      "notes": "Dossier compiled 2026-06-11. Departure self-stated across site/GitHub/LinkedIn; date est. H1 2026, unconfirmed. Company entity/co-founder/thesis still open.",
+      "notes": "Dossier compiled 2026-06-11. Departure self-stated across site/GitHub/LinkedIn; date est. H1 2026, unconfirmed. Company entity/co-founder/thesis still open.\n[2026-06-19] sent via linkedin",
       "urgency_decay_date": null,
       "urgency_reason": "T0 ACTIVE PURSUIT. Repeat venture-scale founder at maximal inflection: just LEFT his OWN funded company (Founder & CTO of Contextual AI, co-founded 2023 w/ Douwe Kiela; $20M seed Bain, $80M Series A) and is ACTIVELY HIRING A FOUNDING TEAM (LinkedIn 'something new | hiring founding…', status Stealth SF). Opportunity cost (walking from own equity/CTO seat) > a salaried departure = stronger conviction. VERIFIED co-founder+CTO (Equilar 'Founder, CTO', Crunchbase, Businesswire Jun 7 2023, Bain memo). Departure VERIFIED self-stated (site/GitHub/LinkedIn flip + nyu.edu Scholar email), DATE unconfirmed (~H1 2026). Indian-origin (Amanpreet Singh Dehal, Una HP; IIT Roorkee BS→NYU MS). Tech bar cleared overwhelmingly: MMF/Pythia maintainer (5.6k★, VQA'18 win), 1st-author TextVQA+FLAVA, 2nd-author GLUE(10.8K)/SuperGLUE, co-author BLOOM/OBELICS/GritLM/OLMoE; ~30.3K cites h32. OPEN: no entity/domain/co-founder/thesis yet — 'hiring founding' is the one hard founder datum; if joining/advising not founding → T1. X auth-walled. Reach now, pre-announce, while team is forming.",
       "channel": "linkedin",
@@ -1109,7 +1109,13 @@
       "email_override": null,
       "outreach_subject_override": null,
       "outreach_body_override": null,
-      "channels_attempted": []
+      "channels_attempted": [
+        {
+          "channel": "linkedin",
+          "date": "2026-06-19",
+          "note": ""
+        }
+      ]
     },
     "ameen-patel": {
       "name": "Ameen Patel",
@@ -8051,6 +8057,59 @@
       "outreach_body_override": null,
       "channels_attempted": []
     },
+    "michael-domarkas": {
+      "name": "Michael Domarkas",
+      "tier": 1,
+      "tier_label": "tier-1: high conviction",
+      "category": "outreach",
+      "tags": [
+        "young-talent",
+        "biocomputing",
+        "organoids",
+        "bci",
+        "neuromorphic",
+        "emergent-ventures",
+        "new-science",
+        "cambridge",
+        "quantihack"
+      ],
+      "indian": false,
+      "delta": false,
+      "one_liner": "A genuinely rare",
+      "signals": {
+        "tag_stealth_founder": false,
+        "tag_founders": false,
+        "phrase_stealth": false,
+        "phrase_departed": false,
+        "phrase_raising": false,
+        "phrase_founded": false
+      },
+      "last_git_touch": "2026-06-22T16:04:23+05:30",
+      "needs_triage": false,
+      "emails": [],
+      "email_primary": null,
+      "email_primary_kind": null,
+      "outreach_subject": null,
+      "outreach_body_preview": null,
+      "gmail_url": null,
+      "twitter_handle": "apralky",
+      "linkedin_slug": null,
+      "github_handle": null,
+      "status": "not-contacted",
+      "last_contacted": null,
+      "next_action_date": null,
+      "response": null,
+      "notes": "",
+      "urgency_decay_date": null,
+      "urgency_reason": null,
+      "channel": null,
+      "next_action": null,
+      "cluster": null,
+      "email_override": null,
+      "outreach_subject_override": null,
+      "outreach_body_override": null,
+      "channels_attempted": []
+    },
     "michael-elabd": {
       "name": "Michael Hany Elabd",
       "tier": 1,
@@ -9029,7 +9088,7 @@
         "phrase_raising": false,
         "phrase_founded": false
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-06-18T17:11:47+05:30",
       "needs_triage": false,
       "emails": [],
       "email_primary": null,
@@ -9679,11 +9738,11 @@
       "twitter_handle": "raunaqmb",
       "linkedin_slug": "raunaq-bhirangi",
       "github_handle": "raunaqbhirangi",
-      "status": "not-contacted",
-      "last_contacted": null,
-      "next_action_date": null,
+      "status": "contacted",
+      "last_contacted": "2026-06-19",
+      "next_action_date": "2026-07-03",
       "response": null,
-      "notes": "",
+      "notes": "\n[2026-06-19] sent via twitter",
       "urgency_decay_date": null,
       "urgency_reason": "CONFIRMED T0 STEALTH-ROBOTICS CO-FOUNDER, BUILDING NOW, PRE-NAME. Advisor Lerrel Pinto's lab page lists him verbatim as 'co-founder of a stealth robotics company'; LinkedIn 'Building something new in Robotics+AI'; site 'I am currently working on a new company in AI/robotics.' COMPANY NAME CRACKED (high-confidence): his own site contact email is raunaq@indexrobots.ai -> 'Index Robots' (NOT press-confirmed; no public site/Form D/funding signal = pre-name inception window). Founding ~late 2025 (Aug 2025 Wayback snapshot still said 'postdoc, no company'; pivot after that, consistent w/ Haldar Dec 2025). SPIKE = the leading low-cost magnetic tactile-sensing stack in academic robotics: ReSkin (CoRL 2021 Oral, co-1st w/ Tess Hellebrekers, ~$6, 122 stars) -> AnySkin (ICRA 2025, 1st author; FIRST uncalibrated tactile sensor with cross-instance policy transfer = the tactile-data-reuse unlock, 78 stars) -> eFlesh (2025, 3D-printable, <$5 magnets, 363 stars). Thesis: contact-rich generalist manipulation needs cheap/durable/data-reusable touch ('touch is conspicuously absent'). Scholar ~463c h-11; real signal is open-hardware ADOPTION. LINEAGE: NYU CILVR / Lerrel Pinto = most prolific robotics-founder lab in academia (Denis Yarats->Perplexity CTO, Pinto->Fauna->Amazon + ARI->Meta, Adeniji->Grounded Superintelligence). CMU Robotics PhD '24 (Abhinav Gupta + Carmel Majidi/Soft Machines); Meta AI visiting researcher (tactile, w/ Hellebrekers/Vikash Kumar); IIT Bombay ME, JEE Adv 2014 AIR 348; Bengaluru. INDIAN-ORIGIN. LOAD-BEARING OPEN QUESTION: is Index Robots the SAME company as Siddhant Haldar's (T0)? STRONG HYPOTHESIS (both listed identically on Pinto's page, identical verbatim site line, constant co-authorship, complementary tactile-hardware vs policy/IL) but NOT independently confirmed (no shared roster/Form D; lab pattern is also SEPARATE spinouts; the indexrobots.ai email is Raunaq's). RESOLVE in conversation. HONESTY: 'co-founder' label is Pinto-page + LinkedIn (own CV stale, no title); 'ICRA 2025 Best Paper' for AnySkin is self-reported (verified = RSS 2025 workshop best paper). RISKS: (1) fully stealth, company thesis inferred; (2) full-time status (NYU postdoc still on CV); (3) exact title/role (co-founder + hardware lead? CEO?).",
       "channel": "twitter",
@@ -9692,7 +9751,13 @@
       "email_override": null,
       "outreach_subject_override": null,
       "outreach_body_override": null,
-      "channels_attempted": []
+      "channels_attempted": [
+        {
+          "channel": "twitter",
+          "date": "2026-06-19",
+          "note": ""
+        }
+      ]
     },
     "riddhi-jain-pitliya": {
       "name": "Riddhi Jain Pitliya",
@@ -11472,11 +11537,11 @@
       "twitter_handle": "haldar_siddhant",
       "linkedin_slug": null,
       "github_handle": "siddhanthaldar",
-      "status": "not-contacted",
-      "last_contacted": null,
-      "next_action_date": null,
+      "status": "contacted",
+      "last_contacted": "2026-06-19",
+      "next_action_date": "2026-07-03",
       "response": null,
-      "notes": "",
+      "notes": "\n[2026-06-19] sent via twitter",
       "urgency_decay_date": null,
       "urgency_reason": "CLEAN T0 FOUNDING MOMENT, DOUBLE-SOURCED. Own resume lists top entry verbatim 'Stealth Startup | Co-Founder & CTO | Dec 2025-Present'; Lerrel Pinto's lab page independently lists him as 'co-founder of a stealth robotics company.' Just finished PhD at NYU Courant CILVR Lab (2021-2025) under LERREL PINTO = one of the strongest robotics-founder labs in academia (Denis Yarats->Perplexity CTO, Pinto->Fauna->Amazon Mar26 + ARI->Meta May26, Ademi Adeniji->Grounded Superintelligence, Raunaq Bhirangi->stealth robotics co). FIRST AUTHOR on the data-efficiency award line: ROT/'Watch and Match' (CoRL 2022 Oral, Best Paper Finalist, ~116c) = optimal-transport reward matching for fast reward-free imitation; FISH/'Teach a Robot to FISH' (RSS 2023 Best Student Paper, ~117c) = manipulation from ~1 MINUTE of demos; BAKU (NeurIPS 2024, sole 1st, ~117c) = efficient multi-task policy transformer; Point Policy (CoRL 2025, sole 1st, ~45c) = human-to-robot transfer with ZERO robot teleop. Co-author Open X-Embodiment (ICRA 2024 Best Paper). THROUGHLINE (dissertation 'Data-Efficient Generalization for Robotics'): algorithmic sample-efficiency -> efficient architectures -> ELIMINATING ROBOT DATA via human demos (key points / egocentric video / tactile: Point Policy, Point Bridge, EgoZero, Feel the Force). = the robot-data-bottleneck thesis the whole VLA wave is funding. IIT Kharagpur Dual Degree EE (CGPA 9.08; CS minor 9.63); Software Team Lead Team AGV (2nd/43 IGVC 2018). Interns: NVIDIA Seattle Robotics Lab (Mandlekar/Narang, from Jun25), Nuro behavior-ML (2023); UW visiting (Fox/Gupta, 2025). INDIAN-ORIGIN (Garden High Kolkata; hometown Kolkata inferred). CITATION HONESTY: 2,461 total / h-12 dominated by Open X-Embodiment (~1,684, large collab); real first-author spike ~400c. COMPANY NOT PUBLIC as of Jun 2026: no name/Crunchbase/Form D/funding signal = pre-name inception opportunity. CO-FOUNDER HYPOTHESIS (strong, unconfirmed): Raunaq Bhirangi (NYU postdoc, identical 'stealth robotics co' descriptor, AnySkin tactile sensors, Haldar's most frequent recent co-author; complementary policy/IL vs tactile-hardware). DO NOT CONFLATE with Pinto's own Fauna/ARI exits (separate ventures). RISKS: (1) fully stealth, thesis inferred; (2) first-time founder, CTO not CEO (separate CEO co-founder likely); (3) capital-intensive crowded category (PI $5.6B, Skild, Generalist); (4) NVIDIA intern line overlaps Dec25 founder line, confirm full-time. [UPDATE Jun 2026 — COMPANY NAME LIKELY CRACKED: co-founder lead Raunaq Bhirangi (now indexed, T0) exposes raunaq@indexrobots.ai on his site -> 'Index Robots' is high-confidence BHIRANGI's company. IF Haldar co-founded the same entity (strong hypothesis: identical Pinto-page descriptor + constant co-authorship + complementary policy/IL vs tactile-hardware; NOT independently confirmed for Haldar, no shared roster/Form D, lab pattern also = separate spinouts) then Haldar's company = Index Robots. Treat as leading candidate name, verify in conversation.]",
       "channel": "twitter",
@@ -11485,7 +11550,13 @@
       "email_override": null,
       "outreach_subject_override": null,
       "outreach_body_override": null,
-      "channels_attempted": []
+      "channels_attempted": [
+        {
+          "channel": "twitter",
+          "date": "2026-06-19",
+          "note": ""
+        }
+      ]
     },
     "siddharth-karamcheti": {
       "name": "Siddharth Karamcheti",

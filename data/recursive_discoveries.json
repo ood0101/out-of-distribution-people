@@ -1785,6 +1785,64 @@
         "verses",
         "ghent-sussex"
       ]
+    },
+    {
+      "name": "Samarth Jajoo",
+      "from_dossier": "michael-domarkas",
+      "discovered_at": "2026-06-18",
+      "priority": "P1",
+      "status": "pending",
+      "context": "New Science 2024 fellow (same cohort as Domarkas). Berkeley CS/cog-sci/molecular-bio; ML×bio (protein engineering); ex-Popvax, ex-Prosper Robotics. On-thesis ML-for-bio young talent. Indian-origin.",
+      "tags": [
+        "new-science",
+        "ml-bio",
+        "protein-engineering",
+        "berkeley",
+        "indian"
+      ]
+    },
+    {
+      "name": "Seyone Chithrananda",
+      "from_dossier": "michael-domarkas",
+      "discovered_at": "2026-06-18",
+      "priority": "P1",
+      "status": "pending",
+      "context": "New Science 2024 fellow. Berkeley→Stanford bioeng; ML×bio (protein evolution, RNA design); co-organized BioML seminar, ran ML@Berkeley research — very well-networked young ML-bio researcher.",
+      "tags": [
+        "new-science",
+        "ml-bio",
+        "protein",
+        "stanford",
+        "berkeley"
+      ]
+    },
+    {
+      "name": "Andy Kong",
+      "from_dossier": "michael-domarkas",
+      "discovered_at": "2026-06-18",
+      "priority": "P2",
+      "status": "pending",
+      "context": "New Science 2024 fellow, working on 'Human Implants' — directly adjacent to Domarkas's BCI / in-vivo integration angle. Worth a look for the implant/BCI thesis.",
+      "tags": [
+        "new-science",
+        "bci",
+        "implants",
+        "neurotech"
+      ]
+    },
+    {
+      "name": "Mike Ferguson",
+      "from_dossier": "michael-domarkas",
+      "discovered_at": "2026-06-18",
+      "priority": "P2",
+      "status": "pending",
+      "context": "New Science 2024 fellow; developmental biology + tissue engineering — adjacent to organoids. Cohort node for the bio-frontier vein.",
+      "tags": [
+        "new-science",
+        "tissue-engineering",
+        "developmental-biology",
+        "organoids"
+      ]
     }
   ]
 }

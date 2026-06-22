@@ -1,6 +1,6 @@
 {
- "generated": "2026-06-18",
- "count": 266,
+ "generated": "2026-06-22",
+ "count": 267,
  "people": [
   {
    "slug": "corrado-pezzato",
@@ -311,9 +311,9 @@
     "departed",
     "founder"
    ],
-   "status": "not-contacted",
-   "last_contacted": null,
-   "next_action_date": null,
+   "status": "contacted",
+   "last_contacted": "2026-06-19",
+   "next_action_date": "2026-07-03",
    "updated": "2026-06-11",
    "added": "2026-06-11",
    "channel": "linkedin",
@@ -458,9 +458,9 @@
     "stealth",
     "founder"
    ],
-   "status": "not-contacted",
-   "last_contacted": null,
-   "next_action_date": null,
+   "status": "contacted",
+   "last_contacted": "2026-06-19",
+   "next_action_date": "2026-07-03",
    "updated": "2026-06-10",
    "added": "2026-06-09",
    "channel": "twitter",
@@ -496,9 +496,9 @@
     "departed",
     "founder"
    ],
-   "status": "not-contacted",
-   "last_contacted": null,
-   "next_action_date": null,
+   "status": "contacted",
+   "last_contacted": "2026-06-19",
+   "next_action_date": "2026-07-03",
    "updated": "2026-06-10",
    "added": "2026-06-02",
    "channel": "twitter",
@@ -928,6 +928,40 @@
    "delta": false,
    "needs_triage": false,
    "urgency": true
+  },
+  {
+   "slug": "michael-domarkas",
+   "name": "Michael Domarkas",
+   "tier": 1,
+   "role": "~19, Cambridge Natural Sciences; Emergent Ventures + New Science fellow (only HS fellow in his cohort); founded/ran QuantiHack (Anthropic/Jane Street/Optiver/Hummingbird sponsors). Self-labels 'Organoid Computing Researcher' — but verified work is conventional organoid neuroscience, not compute. UK, Lithuanian surname.",
+   "spike": "T1 — conviction on TRAJECTORY + convening, NOT on shipped work (alpha-first, deliberately honest). The real alpha: rare pedigree intersection (Emergent Ventures 38th cohort + New Science 2024 — the ONLY high-schooler in the cohort — + Cambridge NatSci) PLUS demonstrated convening — he founded/ran QuantiHack (800+ entrants; sponsors Anthropic, Jane Street, Optiver, Hummingbird VC, EF — landing that roster at 17-19 is the strongest concrete artifact). THE HONEST GAP: his 'Deeptech Founder / Organoid Computing Researcher' self-brand outruns the record — the only third-party research description (New Science) is conventional organoid neuroscience for Alzheimer's, NOT the organoids-as-compute category (Cortical Labs DishBrain/CL1, FinalSpark). Zero publications (OpenAlex), zero public code (GitHub 404), blog password-gated, no lab affiliation. Frontier Computing Ltd (Companies House #17255584, incorporated 2 Jun 2026, sole director name+birth-year matching, generic R&D SIC) = high-confidence INFERENCE he started a company, NOT self-confirmed and NOT established as the bio-compute vehicle. X @apralky ('yung macro', ~34.5K) is a macro/AI-political-economy essayist persona, not a research feed (single-source). ~19, Lithuanian surname, NOT Indian. Re-tier T0 only if Frontier confirmed = his bio-compute company. T1.",
+   "tags": [
+    "young-talent",
+    "biocomputing",
+    "organoids",
+    "bci",
+    "neuromorphic",
+    "emergent-ventures",
+    "new-science",
+    "cambridge",
+    "quantihack"
+   ],
+   "cluster": null,
+   "signals": [],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "2026-06-22",
+   "added": "2026-06-18",
+   "channel": null,
+   "twitter": "apralky",
+   "linkedin": null,
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
   },
   {
    "slug": "nada-amin",
@@ -3050,40 +3084,6 @@
    "urgency": false
   },
   {
-   "slug": "noah-ziems",
-   "name": "Noah Ziems",
-   "tier": 2,
-   "role": "Notre Dame CS PhD (2022–2026, graduating this year) in Meng Jiang's DM2 lab; now Visiting PhD Student at MIT with Omar Khattab (DSPy/ColBERT). Core contributor to DSPy + author/maintainer of Arbor (DSPy's RL-post-training framework). NOT Indian (German-origin surname).",
-   "spike": "T2 — track + relationship-build now. Dual-natured spike (builder + lead researcher): CORE CONTRIBUTOR to DSPy (Stanford NLP, 35k★, 5M+ monthly downloads) + author/maintainer of Arbor, his own 'framework for optimizing DSPy programs with RL' (GRPO/RL/SFT/DPO) — the post-training infra under GEPA ('Reflective prompt evolution outperforms RL', 2025, ~373c). Research: generalization of GRPO to modular multi-prompt LLM programs (composes RL training + automatic prompt optimization, +~11% accuracy). Now visiting MIT working directly with Omar Khattab (DSPy lead). AUTHORSHIP (precise): genuine 1st author on 'LLMs are Built-in Autoregressive Search Engines' (ACL 2023, ~83c) + 'Security Vulnerability Detection Using NLP' (INFOCOM 2021, ~122c); but his two HIGHEST-cited recent papers (GEPA ~373c; LLM-as-Judge ~201c) he is NOT 1st author on (middle/2nd). 851 total cites, h-index 7 — spike is ecosystem ownership + Khattab network, not citation volume. INFLECTION: graduating 2026, on the market — but NO founding/stealth signal found (site/GitHub/search clean) — job-deciding researcher, not founder-in-motion (Vidhi Jain shape). T1 case is legit (DSPy core contributor + owns RL layer + Khattab = 'would-back-if-he-starts'); upgrade to T1 on conviction, T0 on any founding signal. NOT Indian. RECURSIVE: Omar Khattab orbit, DSPy/GEPA core-builder cluster (Lakshya Agrawal), Meng Jiang graduating students, Caleb Ziems (Stanford NLP, likely relative). T2.",
-   "tags": [
-    "relationship-build",
-    "graduating-phd",
-    "llm-agents",
-    "dspy",
-    "rl-post-training",
-    "notre-dame",
-    "mit"
-   ],
-   "cluster": "llm-agents",
-   "signals": [
-    "stealth"
-   ],
-   "status": "not-contacted",
-   "last_contacted": null,
-   "next_action_date": null,
-   "updated": "",
-   "added": "2026-06-18",
-   "channel": "x",
-   "twitter": "noahziems",
-   "linkedin": "noah-ziems-b42482132",
-   "email": null,
-   "gmail_url": null,
-   "indian": false,
-   "delta": false,
-   "needs_triage": false,
-   "urgency": false
-  },
-  {
    "slug": "ninad-daithankar",
    "name": "Ninad Daithankar",
    "tier": 2,
@@ -3113,6 +3113,40 @@
    "email": null,
    "gmail_url": null,
    "indian": true,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
+  },
+  {
+   "slug": "noah-ziems",
+   "name": "Noah Ziems",
+   "tier": 2,
+   "role": "Notre Dame CS PhD (2022–2026, graduating this year) in Meng Jiang's DM2 lab; now Visiting PhD Student at MIT with Omar Khattab (DSPy/ColBERT). Core contributor to DSPy + author/maintainer of Arbor (DSPy's RL-post-training framework). NOT Indian (German-origin surname).",
+   "spike": "T2 — track + relationship-build now. Dual-natured spike (builder + lead researcher): CORE CONTRIBUTOR to DSPy (Stanford NLP, 35k★, 5M+ monthly downloads) + author/maintainer of Arbor, his own 'framework for optimizing DSPy programs with RL' (GRPO/RL/SFT/DPO) — the post-training infra under GEPA ('Reflective prompt evolution outperforms RL', 2025, ~373c). Research: generalization of GRPO to modular multi-prompt LLM programs (composes RL training + automatic prompt optimization, +~11% accuracy). Now visiting MIT working directly with Omar Khattab (DSPy lead). AUTHORSHIP (precise): genuine 1st author on 'LLMs are Built-in Autoregressive Search Engines' (ACL 2023, ~83c) + 'Security Vulnerability Detection Using NLP' (INFOCOM 2021, ~122c); but his two HIGHEST-cited recent papers (GEPA ~373c; LLM-as-Judge ~201c) he is NOT 1st author on (middle/2nd). 851 total cites, h-index 7 — spike is ecosystem ownership + Khattab network, not citation volume. INFLECTION: graduating 2026, on the market — but NO founding/stealth signal found (site/GitHub/search clean) — job-deciding researcher, not founder-in-motion (Vidhi Jain shape). T1 case is legit (DSPy core contributor + owns RL layer + Khattab = 'would-back-if-he-starts'); upgrade to T1 on conviction, T0 on any founding signal. NOT Indian. RECURSIVE: Omar Khattab orbit, DSPy/GEPA core-builder cluster (Lakshya Agrawal), Meng Jiang graduating students, Caleb Ziems (Stanford NLP, likely relative). T2.",
+   "tags": [
+    "relationship-build",
+    "graduating-phd",
+    "llm-agents",
+    "dspy",
+    "rl-post-training",
+    "notre-dame",
+    "mit"
+   ],
+   "cluster": "llm-agents",
+   "signals": [
+    "stealth"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "2026-06-18",
+   "added": "2026-06-18",
+   "channel": "x",
+   "twitter": "noahziems",
+   "linkedin": "noah-ziems-b42482132",
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
    "delta": false,
    "needs_triage": false,
    "urgency": false
