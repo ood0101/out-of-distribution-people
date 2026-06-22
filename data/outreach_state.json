@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-06-22T10:35:56+00:00",
+  "last_built": "2026-06-22T10:39:24+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -8059,10 +8059,12 @@
     },
     "michael-domarkas": {
       "name": "Michael Domarkas",
-      "tier": 1,
-      "tier_label": "tier-1: high conviction",
+      "tier": 0,
+      "tier_label": "tier-0: active pursuit",
       "category": "outreach",
       "tags": [
+        "founders",
+        "stealth-founder",
         "young-talent",
         "biocomputing",
         "organoids",
@@ -8077,9 +8079,9 @@
       "delta": false,
       "one_liner": "A genuinely rare",
       "signals": {
-        "tag_stealth_founder": false,
-        "tag_founders": false,
-        "phrase_stealth": false,
+        "tag_stealth_founder": true,
+        "tag_founders": true,
+        "phrase_stealth": true,
         "phrase_departed": false,
         "phrase_raising": false,
         "phrase_founded": false
