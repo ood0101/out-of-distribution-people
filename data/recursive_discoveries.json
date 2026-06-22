@@ -1843,6 +1843,22 @@
         "developmental-biology",
         "organoids"
       ]
+    },
+    {
+      "name": "Suspended Reason (pseudonym)",
+      "from_dossier": "dmitrii-galatenko",
+      "discovered_at": "2026-06-18",
+      "context": "Postrationalist essayist (suspendedreason.github.io) who self-reports 'philosophy of measurement work for Olo Din' — independent third-party corroboration that OLO DIN is live and building an interdisciplinary measurement/eval bench (maps onto the verifiable-reward/eval-harness wedge). PASS as a direct bet (writer/theorist, not a technical founder, no inflection). Logged purely as network corroboration of the Olo Din node. Co-founded 'Not Nothing press' with Cristóbal Sciutto (Stanford CS BS+MS, creative technologist at Reduct — also off-thesis/PASS).",
+      "priority": "P3",
+      "status": "indexed",
+      "tags": [
+        "olo-din",
+        "corroboration",
+        "measurement-eval",
+        "postrationalist",
+        "pass",
+        "network-node"
+      ]
     }
   ]
 }
