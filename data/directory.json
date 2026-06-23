@@ -1,6 +1,6 @@
 {
  "generated": "2026-06-23",
- "count": 268,
+ "count": 269,
  "people": [
   {
    "slug": "michael-domarkas",
@@ -4284,6 +4284,41 @@
    "indian": false,
    "delta": false,
    "needs_triage": false,
+   "urgency": false
+  },
+  {
+   "slug": "ananthan-sadagopan",
+   "name": "Ananthan Sadagopan",
+   "tier": null,
+   "role": "Harvard chem-bio PhD (entered at 20, youngest in class), co-mentored by William Gibson + Benjamin Ebert (Dana-Farber/Broad). IChO 2020 gold + 2025 Hertz + 2026 Soros + MIT chem+bio in 3yr. Programmable proteome control (relocalize/toggle/exploit). Indian (Tamil/Chennai).",
+   "spike": "The alpha: a chemical biologist building a toolkit for PROGRAMMABLE PROTEOME CONTROL — relocalize a protein, toggle a gene on/off, or exploit a mutant's overabundance to deliver a poison — first-authoring it before his PhD ends. FLAGSHIP INVERSION (Nat Chem Biol, co-1st w/ Gibson; did the synthesis+molbio): drugs mutant p53 — most-mutated gene in cancer, 45yr 'undruggable' — by WEAPONIZING ITS OWN PILE-UP, not degrading it: a p53-Y220C–PLK1 ternary complex concentrates a PLK1 toxin selectively in TP53-mutant cells (abundance-as-AND-gate). NOT a degrader — a conceptual twist on the whole induced-proximity field (vs PROTACs / molecular glues / Amgen LYMTACs). Toolkit breadth: BRD4-carrier nuclear relocalization (JACS'23, 2nd), a transactivation↔repression toggle (bioRxiv'26, co-1st), + a dry-lab spike (sole-1st Cell Systems as a SOPHOMORE; TrPLet ML virtual-CRISPR screen predicting dependencies from RNA-seq alone). PEDIGREE four-stack: IChO 2020 GOLD rank-12/235, You Be the Chemist national champ, 2025 Hertz, 2026 Soros. CALIBRATE: 2nd-yr PhD; senior weight = Gibson + Schreiber/Meyerson/Ebert; p53 novelty is the proximity/payload twist not the Y220C binder; ~1.3K cites partly inflated by middle-author work (DeepDEP, Cell'24 2nd) — first-author body is the real spike. Indian.",
+   "tags": [
+    "researchers",
+    "indian",
+    "chemical-biology",
+    "induced-proximity",
+    "protein-degradation",
+    "drug-discovery",
+    "cancer-bio",
+    "gibson-lab",
+    "hertz-fellow",
+    "icho-gold"
+   ],
+   "cluster": null,
+   "signals": [],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "2026-06-23",
+   "added": "2026-06-23",
+   "channel": null,
+   "twitter": "sadagopan_a",
+   "linkedin": "ananthan-sadagopan",
+   "email": null,
+   "gmail_url": null,
+   "indian": true,
+   "delta": false,
+   "needs_triage": true,
    "urgency": false
   },
   {
