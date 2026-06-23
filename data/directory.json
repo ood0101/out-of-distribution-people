@@ -1,6 +1,6 @@
 {
- "generated": "2026-06-22",
- "count": 267,
+ "generated": "2026-06-23",
+ "count": 268,
  "people": [
   {
    "slug": "michael-domarkas",
@@ -32,7 +32,7 @@
    "updated": "2026-06-22",
    "added": "2026-06-18",
    "channel": null,
-   "twitter": "apralky",
+   "twitter": null,
    "linkedin": null,
    "email": null,
    "gmail_url": null,
@@ -3089,6 +3089,43 @@
    "urgency": false
   },
   {
+   "slug": "dmitrii-galatenko",
+   "name": "Dmitrii Galatenko",
+   "tier": 2,
+   "role": "Founder & controlling owner (sole PSC 75%+) of OLO DIN UK LTD — an AI-alignment / reliable-autonomous-systems venture (olodin.com), incorporated 29 Jan 2026. ~20yo Cambridge (Trinity) maths undergrad, IMO 2022 Silver. Co-directors: Gavin Leech + Misha Yagudin (Arb Research / Samotsvety). German-raised, Russian-origin. NOT Indian.",
+   "spike": "T2 — track (T1 the moment he's confirmed full-time + a technical artifact). OVERTURNS an earlier PASS: a UK Companies House PSC filing (primary source) confirms the inflection I'd said was missing — OLO DIN UK LTD (16999093), inc. 29 Jan 2026, Galatenko sole PSC. (Initial research literally saw the Altrincham filing and waved it past as 'a dormant student-company' — a flag-then-ignore miss the owner caught.) WHAT IT IS: AI-alignment / agent-reliability — olodin.com 'steering the path to increasingly capable and reliable autonomous systems for the benefit of humanity' (NOT the 'online school' he'd mused about). On-thesis, pre-product. THE THREAD: he was a director of ISARA Laboratories UK Ltd — the OpenAI-backed agent-swarm startup ($94M/$650M) — until 28 Jan 2026, the day before incorporating OLO DIN; co-founders are AI-safety forecasters Gavin Leech (Arb Research) + Misha Yagudin (Samotsvety). WHY T2 NOT T1: (1) resigned the OLO DIN directorship 20 May 2026 while keeping 75%+ — full-time? ambiguous (still mid-degree at Cambridge); (2) pre-product/zero traction/no funding; (3) co-founders are forecasters not infra builders. Spike: IMO 2022 Silver (verified) + Cambridge Trinity maths + the Isara proximity. CALIBRATION: CF 'grandmaster' (real max ~2422, below 2600 IGM) + 'ICPC first prize' (unverified) overstated — not credited. Isara substantive role unverified beyond the filing. T2.",
+   "tags": [
+    "founders",
+    "just-founded",
+    "ai-safety",
+    "agentic",
+    "alignment",
+    "cambridge",
+    "imo",
+    "olo-din",
+    "isara-orbit"
+   ],
+   "cluster": "ai-safety-agentic",
+   "signals": [
+    "stealth",
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "2026-06-22",
+   "added": "2026-06-12",
+   "channel": "linkedin",
+   "twitter": null,
+   "linkedin": "dmitrii-galatenko-740799211",
+   "email": "hi@olodin.com",
+   "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hi%40olodin.com&su=Isara%20%26rarr%3B%20OLO%20DIN%2C%20and%20which%20reliability%20problem&body=Hi%20Dmitrii%20%E2%80%94%20I%20invest%20at%20inception%20and%20noticed%20you%20started%20OLO%20DIN%20around%20%22reliable%20autonomous%20systems%22%20almost%20the%20day%20you%20stepped%20out%20of%20Isara%27s%20orbit%2C%20now%20with%20Gavin%20and%20Misha.%20That%20timing%20is%20the%20interesting%20part%20to%20me%3A%20agent%20swarms%20break%20on%20coordination%20and%20reliability%20long%20before%20capability%2C%20and%20it%20sounds%20like%20you%20saw%20that%20up%20close.%20Curious%20where%20your%20wedge%20lands%20%E2%80%94%20alignment/reliability%20of%20agent%0Aswarms%0A%28the%20Isara-shaped%20problem%29%2C%20or%20evals/forecasting%20tooling%20for%20autonomous%20systems%3F%20I%20can%20write%20a%20%24500K%E2%80%93%241M%20first%20check%20and%20move%20fast%2C%20and%20I%27d%20rather%20be%20useful%20early%20than%20pitch%20you.%20What%20are%20you%20building%20%E2%80%94%20and%20is%20this%20the%20full-time%20thing%3F%0A%0A%E2%80%94%20Vansh",
+   "indian": false,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
+  },
+  {
    "slug": "ninad-daithankar",
    "name": "Ninad Daithankar",
    "tier": 2,
@@ -3261,43 +3298,6 @@
    "delta": false,
    "needs_triage": false,
    "urgency": true
-  },
-  {
-   "slug": "dmitrii-galatenko",
-   "name": "Dmitrii Galatenko",
-   "tier": 2,
-   "role": "Founder & controlling owner (sole PSC 75%+) of OLO DIN UK LTD — an AI-alignment / reliable-autonomous-systems venture (olodin.com), incorporated 29 Jan 2026. ~20yo Cambridge (Trinity) maths undergrad, IMO 2022 Silver. Co-directors: Gavin Leech + Misha Yagudin (Arb Research / Samotsvety). German-raised, Russian-origin. NOT Indian.",
-   "spike": "T2 — track (T1 the moment he's confirmed full-time + a technical artifact). OVERTURNS an earlier PASS: a UK Companies House PSC filing (primary source) confirms the inflection I'd said was missing — OLO DIN UK LTD (16999093), inc. 29 Jan 2026, Galatenko sole PSC. (Initial research literally saw the Altrincham filing and waved it past as 'a dormant student-company' — a flag-then-ignore miss the owner caught.) WHAT IT IS: AI-alignment / agent-reliability — olodin.com 'steering the path to increasingly capable and reliable autonomous systems for the benefit of humanity' (NOT the 'online school' he'd mused about). On-thesis, pre-product. THE THREAD: he was a director of ISARA Laboratories UK Ltd — the OpenAI-backed agent-swarm startup ($94M/$650M) — until 28 Jan 2026, the day before incorporating OLO DIN; co-founders are AI-safety forecasters Gavin Leech (Arb Research) + Misha Yagudin (Samotsvety). WHY T2 NOT T1: (1) resigned the OLO DIN directorship 20 May 2026 while keeping 75%+ — full-time? ambiguous (still mid-degree at Cambridge); (2) pre-product/zero traction/no funding; (3) co-founders are forecasters not infra builders. Spike: IMO 2022 Silver (verified) + Cambridge Trinity maths + the Isara proximity. CALIBRATION: CF 'grandmaster' (real max ~2422, below 2600 IGM) + 'ICPC first prize' (unverified) overstated — not credited. Isara substantive role unverified beyond the filing. T2.",
-   "tags": [
-    "founders",
-    "just-founded",
-    "ai-safety",
-    "agentic",
-    "alignment",
-    "cambridge",
-    "imo",
-    "olo-din",
-    "isara-orbit"
-   ],
-   "cluster": "ai-safety-agentic",
-   "signals": [
-    "stealth",
-    "founder"
-   ],
-   "status": "not-contacted",
-   "last_contacted": null,
-   "next_action_date": null,
-   "updated": "2026-06-12",
-   "added": "2026-06-12",
-   "channel": "linkedin",
-   "twitter": null,
-   "linkedin": "dmitrii-galatenko-740799211",
-   "email": "hi@olodin.com",
-   "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=hi%40olodin.com&su=Isara%20%26rarr%3B%20OLO%20DIN%2C%20and%20which%20reliability%20problem&body=Hi%20Dmitrii%20%E2%80%94%20I%20invest%20at%20inception%20and%20noticed%20you%20started%20OLO%20DIN%20around%20%22reliable%20autonomous%20systems%22%20almost%20the%20day%20you%20stepped%20out%20of%20Isara%27s%20orbit%2C%20now%20with%20Gavin%20and%20Misha.%20That%20timing%20is%20the%20interesting%20part%20to%20me%3A%20agent%20swarms%20break%20on%20coordination%20and%20reliability%20long%20before%20capability%2C%20and%20it%20sounds%20like%20you%20saw%20that%20up%20close.%20Curious%20where%20your%20wedge%20lands%20%E2%80%94%20alignment/reliability%20of%20agent%0Aswarms%0A%28the%20Isara-shaped%20problem%29%2C%20or%20evals/forecasting%20tooling%20for%20autonomous%20systems%3F%20I%20can%20write%20a%20%24500K%E2%80%93%241M%20first%20check%20and%20move%20fast%2C%20and%20I%27d%20rather%20be%20useful%20early%20than%20pitch%20you.%20What%20are%20you%20building%20%E2%80%94%20and%20is%20this%20the%20full-time%20thing%3F%0A%0A%E2%80%94%20Vansh",
-   "indian": false,
-   "delta": false,
-   "needs_triage": false,
-   "urgency": false
   },
   {
    "slug": "gavin-leech",
@@ -4284,6 +4284,41 @@
    "indian": false,
    "delta": false,
    "needs_triage": false,
+   "urgency": false
+  },
+  {
+   "slug": "samar-khanna",
+   "name": "Samar Khanna",
+   "tier": null,
+   "role": "Founding ML research scientist at Inception (Stefano Ermon's diffusion-LLM startup, $50M seed); 1st author of Mercury — the first commercial diffusion LLM. Ex-Stanford MS (Ermon)/Cornell BS. Indian-origin (Mumbai/DAIS).",
+   "spike": "The alpha is a through-line almost nobody connects: diffusion + foundation models for REAL-WORLD GENERALIZATION, first-authored at each modality jump — SatMAE (NeurIPS'22, co-1st, ~713c, the standard satellite-ML backbone) → DiffusionSat (ICLR'24, 1st, first generative foundation model for satellite imagery) → ExPLoRA (ICML'25, 1st, cheap domain-shift ViT adaptation) → Mercury (1st, Inception's commercial dLLM). Rare: holds BOTH muscles — foundation-model-pretraining-under-domain-shift + discrete-diffusion generation — and Mercury is their intersection. CALIBRATE: research spike real + first-authored; Mercury throughput real (~1109 tok/s H100, 'up to 10x faster') but honest dLLM catch — weak on hard reasoning (LiveCodeBench 17-25), so 'SOTA on the speed-quality frontier', not 'best model'; ~1.8K cites/h-9 partly inflated by middle-author papers (DDBM 3rd, Geographically-Biased 2nd) — first-authored ~1000+c is the real spike; NO PhD (1st-author ICLR/NeurIPS during/right after MS). EXCITED ABOUT (his words): 'performance per unit of time is a key metric of intelligence' (quote-replied Noam Brown); pinned tweet — diffusion lets you spend test-time compute refining tokens in PARALLEL. WORKING ON NOW: Mercury 2 ('first reasoning dLLM'), real-time subagents. Indian.",
+   "tags": [
+    "researchers",
+    "indian",
+    "diffusion-llm",
+    "diffusion-models",
+    "foundation-models",
+    "inception",
+    "ermon-lab",
+    "geospatial-ai",
+    "stanford",
+    "cornell"
+   ],
+   "cluster": null,
+   "signals": [],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "2026-06-23",
+   "added": "2026-06-23",
+   "channel": null,
+   "twitter": "samar_a_khanna",
+   "linkedin": "samar-khanna-133b8190",
+   "email": null,
+   "gmail_url": null,
+   "indian": true,
+   "delta": false,
+   "needs_triage": true,
    "urgency": false
   },
   {
