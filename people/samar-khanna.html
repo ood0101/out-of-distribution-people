@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Samar Khanna &mdash; Out of Distribution People</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="site-title">Out of Distribution People</div>
+    <div class="breadcrumb"><a href="../index.html">/ index</a> / samar-khanna</div>
+  </nav>
+
+  <div class="profile-header">
+    <h1>Samar Khanna</h1>
+    <p class="one-liner"><strong>The rare researcher who made <span style="color:var(--accent)">&ldquo;diffusion + foundation models for real-world generalization&rdquo; a career thesis &mdash; and first-authored the proof at each modality jump</span>: SatMAE (the standard satellite-imagery backbone) &rarr; DiffusionSat (the first generative foundation model for satellite imagery) &rarr; now Mercury, the first commercial diffusion LLM.</strong> First author of the <strong>Mercury</strong> technical report. <em>Status: founding ML research scientist at <a href="https://www.inceptionlabs.ai/">Inception</a> (Stefano Ermon&rsquo;s diffusion-LLM startup, $50M seed). Stanford MS CS (Ermon) / Cornell BS. Indian-origin (Mumbai / DAIS).</em></p>
+    <div class="tags">
+      <span class="tag">researchers</span>
+      <span class="tag">indian</span>
+      <span class="tag">diffusion-llm</span>
+      <span class="tag">diffusion-models</span>
+      <span class="tag">foundation-models</span>
+      <span class="tag">inception</span>
+      <span class="tag">ermon-lab</span>
+      <span class="tag">geospatial-ai</span>
+      <span class="tag">stanford</span>
+      <span class="tag">cornell</span>
+    </div>
+    <div class="links">
+      <a href="https://www.samarkhanna.com/">samarkhanna.com</a>
+      <a href="https://scholar.google.com/citations?user=DPHEQsMAAAAJ">google scholar (h-9, ~1.8K cites)</a>
+      <a href="https://arxiv.org/abs/2506.17298">Mercury (arXiv 2506.17298)</a>
+      <a href="https://github.com/samar-khanna">github (@samar-khanna)</a>
+      <a href="https://x.com/samar_a_khanna">twitter/x (@samar_a_khanna)</a>
+      <a href="https://www.linkedin.com/in/samar-khanna-133b8190/">linkedin</a>
+    </div>
+  </div>
+
+  <!-- THE ALPHA -->
+  <div class="spike-box">
+    <div class="label">&#9670; The Alpha &mdash; what&rsquo;s actually special, measured against the field</div>
+    <p>
+      The through-line is the alpha. Most people will read him as &ldquo;the Mercury guy&rdquo; or &ldquo;the satellite-ML guy&rdquo; &mdash; both miss it. His actual thesis, in his own words, is
+      <strong>&ldquo;making ML models generalize effectively to new, real-world data&rdquo;</strong> &mdash; and he has pursued it by treating <strong>diffusion + foundation-model pretraining as a general
+      modeling tool across modalities</strong>, first-authoring the field-defining artifact at <em>each</em> jump:
+    </p>
+    <ul>
+      <li class="small"><strong>Pixels:</strong> <strong>SatMAE</strong> (NeurIPS 2022, co-1st, <strong>~713 cites</strong>) &mdash; the masked-pretraining backbone the remote-sensing-ML field now benchmarks against; then <strong>DiffusionSat</strong> (ICLR 2024, sole 1st, ~254 cites) &mdash; the <strong>first generative foundation model for satellite imagery</strong> (conditions on lat/long/timestamp/GSD instead of scarce captions).</li>
+      <li class="small"><strong>Domain shift:</strong> <strong>ExPLoRA</strong> (ICML 2025, sole 1st) &mdash; extended pretraining that moves a ViT across a domain gap at <strong>&lt;10% of params, +up to 8% top-1.</strong> This is <em>literally</em> his stated mission as a method.</li>
+      <li class="small"><strong>Language:</strong> <strong>Mercury</strong> (arXiv 2506.17298, 1st author) &mdash; Inception&rsquo;s commercial diffusion LLM. Same person, same diffusion-as-general-tool instinct, two years after DiffusionSat.</li>
+    </ul>
+    <p style="margin-top:0.4rem;">
+      The non-obvious edge: <strong>he holds both muscles at once</strong> &mdash; foundation-model-pretraining-under-domain-shift <em>and</em> discrete-diffusion generation &mdash; and Mercury is exactly their intersection (a Transformer that denoises many tokens in parallel rather than autoregressing left-to-right). Very few people have first-authored across that whole arc.
+    </p>
+    <p style="margin-top:0.6rem;" class="small muted">
+      <strong>Calibrated honestly:</strong> the research spike is real and <em>first-authored</em>. Mercury&rsquo;s throughput claims are real (~1,109 tok/s on H100, &ldquo;up to 10&times; faster&rdquo;) but carry the honest dLLM catch &mdash; weak on hard reasoning (LiveCodeBench 17&ndash;25), so the pitch is &ldquo;SOTA on the <em>speed-quality frontier</em>,&rdquo; not &ldquo;best model.&rdquo; His ~1.8K Scholar cites are partly inflated by middle-author papers (DDBM 3rd; &ldquo;LLMs are Geographically Biased&rdquo; 2nd) &mdash; but the <strong>first-authored portion alone (~1,000+ cites) is the attributable spike.</strong> No PhD; the first-author ICLR/NeurIPS run landed during/right after his MS.
+    </p>
+  </div>
+
+  <!-- HOW IT STACKS UP -->
+  <section>
+    <h2>How it stacks up (the work vs. the closest comparable)</h2>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>His work</td><td>Closest comparable</td><td>The edge that&rsquo;s actually his</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Mercury</strong> &mdash; commercial dLLM (1st author)</td><td>Gemini Diffusion + DiffusionGemma (Google); LLaDA (academic)</td><td><strong>First to commercialize</strong> a diffusion LLM, and SOTA on the speed-quality frontier on <em>real apps</em> (Copilot Arena: 1st on latency, tied-2nd quality). Independent startup vs. Google&rsquo;s infra.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>DiffusionSat</strong> (ICLR&rsquo;24, 1st)</td><td>Stable Diffusion (no geo-conditioning); prior remote-sensing GANs</td><td><strong>First generative foundation model for satellite imagery</strong> &mdash; metadata-conditioned, does temporal generation + super-res + inpainting.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>SatMAE</strong> (NeurIPS&rsquo;22, co-1st)</td><td>Vanilla MAE; ImageNet-pretrained ViTs on satellite data</td><td>Group-channel + temporal masking for <strong>multi-spectral/temporal</strong> imagery &mdash; the standard geospatial backbone (~713 cites).</td></tr>
+    </table>
+  </section>
+
+  <!-- THE SPIKE: EVIDENCE -->
+  <section>
+    <h2>The Spike &mdash; the evidence (authorship-precise)</h2>
+    <p>Scholar (DPHEQsMAAAAJ): <strong>~1,785 cites, h-index 9.</strong> The first-authored line that backs the alpha:</p>
+    <ul>
+      <li class="small"><strong>Mercury: Ultra-Fast Language Models Based on Diffusion</strong> &mdash; <strong>1st author</strong> (after &ldquo;Inception Labs&rdquo;; senior authors Ermon/Grover/Kuleshov last), arXiv 2506.17298, 2025.</li>
+      <li class="small"><strong>ExPLoRA</strong> &mdash; <strong>sole 1st author</strong>, ICML 2025.</li>
+      <li class="small"><strong>DiffusionSat</strong> &mdash; <strong>sole 1st author</strong>, ICLR 2024, ~254 cites.</li>
+      <li class="small"><strong>SatMAE</strong> &mdash; <strong>co-1st author</strong> (w/ Yezhen Cong), NeurIPS 2022, ~713 cites (his most-cited; a genuine spike for a master&rsquo;s-era researcher).</li>
+      <li class="small"><strong>Do NOT over-credit (middle/non-first):</strong> Denoising Diffusion Bridge Models (DDBM, ICLR&rsquo;24, 3rd of 4, ~204c &mdash; but shows he was <em>inside</em> Ermon&rsquo;s core diffusion-theory group); &ldquo;LLMs are Geographically Biased&rdquo; (ICML&rsquo;24, 2nd); GeoLLM / TEOChat (middle).</li>
+    </ul>
+  </section>
+
+  <!-- CAREER TRAJECTORY -->
+  <section>
+    <h2>Career Trajectory &mdash; the rate of change is the story</h2>
+    <p class="small">From co-2nd-author on SatMAE (2022) to first-author / co-inventor of the product a $50M-seed company is built on (2025), in ~3 years &mdash; <strong>without a PhD</strong>, with the first-author ICLR/NeurIPS papers landing during and right after the MS.</p>
+    <ul>
+      <li class="small"><strong>Cornell BS CS</strong> (ECE minor), Aug 2017&ndash;Dec 2020, <strong>summa / highest honors, compressed to 3.5 yrs</strong>; +1-semester MEng (2021). Research w/ Dean <strong>Kavita Bala</strong> + <strong>Bharath Hariharan</strong>; Co-Head TA of Intro ML. Interns: Uber ATG (&times;2).</li>
+      <li class="small"><strong>Stanford MS CS</strong>, 2021&ndash;2023, <strong>&ldquo;Distinction in Research&rdquo;</strong>; RA in SAIL under <strong>Stefano Ermon</strong> (+ SustainLab: Lobell, Burke). $100K Google Cloud / Stanford HAI grant (for DiffusionSat). NVIDIA intern. Head TA, CS221 (ran 15 TAs, 250+ students).</li>
+      <li class="small"><strong>Aurora Innovation</strong>, ML Engineer (perception, long-range 3D detection), Aug 2023&ndash;Sep 2024 &mdash; a real-world-systems detour, not a straight academic line.</li>
+      <li class="small"><strong>Inception</strong>, founding ML research scientist, Sep 2024&ndash;present. &ldquo;Co-invented Mercury.&rdquo;</li>
+    </ul>
+  </section>
+
+  <!-- WHAT HE'S EXCITED ABOUT + WORKING ON NOW -->
+  <section>
+    <h2>What He&rsquo;s Excited About + Working On Now</h2>
+    <ul>
+      <li class="small"><strong>The standing thesis (verbatim, his site):</strong> <em>&ldquo;making ML models generalize effectively to new, real-world data, especially to solve societally relevant tasks such as sustainability.&rdquo;</em> The sustainability application has receded; the <em>generalization-of-generative-models</em> engine got redirected into language.</li>
+      <li class="small"><strong>His sharpest current conviction (verbatim, pinned tweet):</strong> <em>&ldquo;Diffusion reasoning models enable a meaningfully different design space: you can spend test-time compute not just on generating more tokens, but also refining them in parallel. Most reasoning models think one step at a time. Diffusion changes this.&rdquo;</em></li>
+      <li class="small"><strong>The hill he&rsquo;ll defend (verbatim, quote-replying Noam Brown):</strong> <em>&ldquo;performance per unit of time is a key metric of intelligence&rdquo;</em> &mdash; dLLMs can spend more test-time compute within the same wall-clock. That he picked this fight with <em>Mr. test-time-compute himself</em> tells you it&rsquo;s what most animates him.</li>
+      <li class="small"><strong>Still curiosity-driven, not just product:</strong> co-author on <strong>&ldquo;Squeezed Diffusion Models&rdquo;</strong> (Aug 2025) &mdash; anisotropic noise along the data&rsquo;s principal component, inspired by <em>quantum squeezed states / Heisenberg uncertainty.</em> He does theory-flavored diffusion on the side.</li>
+      <li class="small"><strong>Working on now (CONFIRMED):</strong> Mercury 2 (&ldquo;first reasoning dLLM&rdquo;), Mercury Edit 2, the Mercury Coder family; amplifying Inception&rsquo;s <strong>&ldquo;real-time subagents&rdquo;</strong> thesis (diffusion owns the high-frequency subagent layer &mdash; routing, summarizing, context-prep). <strong>INFERRED:</strong> parallel test-time <em>reasoning</em> for diffusion (his pinned-tweet frontier); possibly a multimodal dLLM (his DiffusionSat pedigree) &mdash; unconfirmed, pose as a question.</li>
+    </ul>
+  </section>
+
+  <!-- HUMAN LAYERS -->
+  <section>
+    <h2>Origin &amp; Early Spike</h2>
+    <ul>
+      <li class="small"><strong>Raised &amp; schooled in Mumbai, India</strong> &mdash; <strong>Dhirubhai Ambani International School (DAIS)</strong>, the elite IB school (named in the DAIS achievement archive). <strong>IBDP &ldquo;World Topper,&rdquo; perfect 45/45 (2017)</strong> (DAIS&rsquo;s 2017 results confirm 8 perfect-45s that year). Then to Cornell, Aug 2017. <strong>Indian-origin CONFIRMED</strong> (refutes the &ldquo;US-raised&rdquo; read).</li>
+      <li class="small"><strong>Service streak:</strong> 2 years volunteering teaching kindergarten kids via <strong>The Akanksha Foundation</strong> (Mumbai education NGO), pre-Cornell; later NeurIPS 2022 education-outreach group leader. No olympiad/competition record &mdash; his early spike is academic-topper + elite-school, not the competition circuit.</li>
+    </ul>
+    <h2>Life &amp; Texture</h2>
+    <ul>
+      <li class="small"><strong>He clearly loves teaching</strong> &mdash; Co-Head TA at Cornell, Head TA of Stanford&rsquo;s CS221 running 15 TAs; reviewer for NeurIPS/ICLR/ICML. A mentor-shaped person.</li>
+      <li class="small"><strong>Interests (his site, generic):</strong> swimming, tennis, reading, movies. No specific public team/Letterboxd/blog surfaced &mdash; not asserting a hook that isn&rsquo;t sourced. <strong>Voice:</strong> terse, technically precise, low-ego; ~513 X followers (not an influencer &mdash; engage the <em>work</em>, not a &ldquo;platform&rdquo;).</li>
+    </ul>
+  </section>
+
+  <!-- OUTREACH ANGLES -->
+  <div class="spike-box" style="border-left-color:#2f6f4f;">
+    <div class="label">&#9733; Outreach Angles &mdash; the way in (pick one)</div>
+    <ol style="margin:0; padding-left:1.1rem;">
+      <li class="small" style="margin-bottom:0.5rem;"><strong>The old-thesis-meets-new-work bridge (strongest &mdash; almost nobody will do this).</strong>
+        <em>Hook:</em> his pre-Inception satellite work (DiffusionSat / ExPLoRA = generalization under domain shift). <em>Why it lands:</em> everyone reaching out leads with Mercury; connecting his <em>satellite</em> foundation-model thesis to the diffusion-LLM is the &ldquo;he actually read me&rdquo; signal.
+        <em>The ask:</em> a genuine question &mdash; <strong>&ldquo;you moved the same generalization engine from satellite pixels to language tokens &mdash; was diffusion the constant, or was it generalization? Does parallel refinement actually help OOD robustness, or only latency?&rdquo;</strong> Coffee / compare-notes, no pitch.</li>
+      <li class="small" style="margin-bottom:0.5rem;"><strong>The Noam-Brown reframe (take his own bet seriously).</strong>
+        <em>Hook:</em> his line <em>&ldquo;performance per unit of time is a key metric of intelligence.&rdquo;</em> <em>Why it lands:</em> it&rsquo;s the hill he chose to defend publicly; pushing it toward <em>quality</em> (not just speed) respects the real intellectual bet. <em>The ask:</em> name the landscape to prove you&rsquo;re serious (Gemini Diffusion / DiffusionGemma, LLaDA, the Groq/Cerebras hardware-speed path) and ask where parallel test-time refinement buys <em>better</em> answers, not just faster ones.</li>
+      <li class="small"><strong>The subagent-layer operator angle.</strong>
+        <em>Hook:</em> Inception&rsquo;s &ldquo;real-time subagents&rdquo; thesis + the Augment Code result he amplified (82% latency cut, 90% cost cut). <em>Why it lands:</em> shows you see where dLLMs create company-shaped opportunities. <em>The ask:</em> once the subagent <em>model</em> is fast enough, what breaks first &mdash; eval, routing, orchestration? (Good if Vansh wants to signal the investor lens without pitching.)</li>
+    </ol>
+    <p class="small muted" style="margin-top:0.5rem;"><strong>Tone / don&rsquo;t-misstep:</strong> do NOT parrot &ldquo;10&times; faster than GPT/Claude&rdquo; uncritically &mdash; he knows the LiveCodeBench/quality catch better than anyone. Credibility comes from naming the <em>bidirectional-infilling</em> structural advantage + the speed-quality-frontier framing, and acknowledging the Gemini-Diffusion competitive pressure. The ask is connection / a sharp question &mdash; <strong>not capital.</strong> Channel: X DM @samar_a_khanna (engages on ideas) or email (@inceptionlabs.ai).</p>
+  </div>
+
+  <!-- NETWORK MAP -->
+  <section id="net">
+    <h2>Network Map &amp; Recursive Discoveries</h2>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Person</td><td>Tie</td><td>Why it matters</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Linqi (Alex) Zhou</strong></td><td>Ermon PhD; DDBM 1st author (Samar co-author)</td><td><strong>Recursive P0</strong> &mdash; founder (Apparate &rarr; Luma acq.) now Research Scientist at OpenAI; Inductive Moment Matching (ICML&rsquo;25 Oral). A generative-modeling star with a direct Samar co-authorship.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Aditya Grover</strong></td><td>Inception Co-founder &amp; CTO; ex-Ermon PhD</td><td><strong>Recursive P1</strong>, India-origin. UCLA prof; the commercial+academic operator at the center of the diffusion-LLM bet.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Siddhant Kharbanda</strong></td><td>Inception founding ML research engineer; #2 on Mercury</td><td><strong>Recursive P1</strong>, India-origin (BITS Pilani &rarr; UCLA). Peer-level founding technical hire &mdash; the &ldquo;early, pre-surface&rdquo; profile.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Rohin Manvi</strong></td><td>Stanford; GeoLLM / Geographically-Biased 1st author (Samar 2nd)</td><td><strong>Recursive P2</strong> &mdash; prolific young geospatial-LLM + adaptive-inference researcher; his most frequent non-Inception collaborator.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Stefano Ermon</strong> / <strong>Volodymyr Kuleshov</strong></td><td>Inception co-founders; his advisors/leads</td><td>Diffusion co-inventor (Ermon) + Cornell-Tech diffusion-for-sequences (Kuleshov). The lineage, not targets.</td></tr>
+    </table>
+  </section>
+
+  <!-- NOTES -->
+  <section>
+    <h2>Notes</h2>
+    <ul>
+      <li class="small"><strong>Verification:</strong> Mercury 1st-authorship CONFIRMED (Scholar + arXiv author order + his CV &ldquo;co-invented Mercury&rdquo;). Indian-origin CONFIRMED (DAIS Mumbai archive + Akanksha + IGCSE/IBDP). $100K HAI grant CONFIRMED. SatMAE 713 / DiffusionSat 254 cite counts verified on Scholar.</li>
+      <li class="small"><strong>Calibration:</strong> alpha = first-authored diffusion/foundation-model line across modalities; cite total partly inflated by middle-author papers (said plainly). Mercury throughput real; the reasoning-quality catch real. No PhD.</li>
+      <li class="small"><strong>Recursive discoveries logged:</strong> Linqi Zhou (P0), Aditya Grover (P1, indian), Siddhant Kharbanda (P1, indian), Rohin Manvi (P2). The Inception founding bench + Ermon geospatial cohort is a rich vein.</li>
+    </ul>
+  </section>
+
+  <footer>
+    researched: 2026-06-23 &middot; intel&rarr;outreach format &middot; primary sources: samarkhanna.com (+ /cv), Scholar (DPHEQsMAAAAJ), arXiv 2506.17298 (Mercury) / 2312.03606 (DiffusionSat) / 2406.10973 (ExPLoRA) / 2207.08051 (SatMAE), x.com/@samar_a_khanna (pinned + Noam Brown reply), inceptionlabs.ai, DAIS Mumbai archive &middot; <a href="../index.html">back to index</a>
+  </footer>
+
+</body>
+</html>
