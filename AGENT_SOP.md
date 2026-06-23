@@ -1,12 +1,21 @@
 # Agent SOP: Out of Distribution People Research System
 
 ## Purpose
-This document defines the standard operating procedure for research agents that build dossiers for an inception-stage VC identifying the most talented people who are truly out of distribution — BEFORE they're obvious to the market.
+This document defines the SOP for research agents that build **deep-intel dossiers on people the owner has decided to reach out to.** The owner sends a person's social profile (LinkedIn / X / personal site / Google Scholar / Substack / blog); the agents search everything public and return everything the owner needs to **reach out to that person in a way that makes them feel the sender genuinely did the work** — quickly absorbed their work and engaged with the real substance of it.
+
+**This is NOT a founder-screening system.** We do not rank people by "probability they're starting a company," we do not *score* runs on startup-likelihood, and we do not gate research on founder-vs-not. Every person the owner sends is already a reach-out target — the decision is made upstream, by the owner. The job is **intel + the way in**, not a verdict on whether someone is fundable.
 
 ## Core Principle
-**Every dossier must answer one question: what is the *alpha* — the specific, rare, hard-to-replicate edge in this person's actual work, and is it genuinely special *measured against the closest comparable work*?** That is the judgment, and it is what the dossier is organized around.
+**Every dossier exists to do two things: (1) understand the person deeply, and (2) arm a specific, meaningful outreach.** Concretely, every dossier delivers these six outputs:
 
-Whether someone is "building right now," just reached out, or just started a company is an **actionability filter** — it sets the tier and decides whether to reach out — it is **NOT a measure of the person.** Lots of people start companies and are reachable; that alone is not signal. Do not let the tier/inflection question become the spine of the dossier (the historical failure mode: the whole document drifts into justifying a tier, and "are they founding" stands in for "are they exceptional"). **Center the alpha. Demote tier/timing to a quiet tag and a one-line factual status.** Everything else is supporting evidence for the alpha.
+1. **Career trajectory** — the path, with dated milestones and the rate of change.
+2. **The spike (the alpha)** — the specific, rare edge in their actual work, benchmarked against the closest comparable work. This is the most important *substance* output (the alpha-first discipline below stands) — but it is now **one pillar of six, not the whole frame.**
+3. **What they're excited about** — the research, problems, and ideas they're genuinely drawn to, from their own words (papers, talks, posts, blog, podcasts).
+4. **What they're likely working on now** — their current focus and most of what they're actually doing day-to-day.
+5. **The human layers** — origin/early-spike, life/texture, and the read (see those sections). These power the warmest, least-templated outreach.
+6. **1–3 outreach directions** — concrete, specific angles for *how* the owner should reach out. **This is the deliverable everything else feeds** (see "Outreach Angles").
+
+We no longer assign or argue a tier, and we do not score founder-probability. (Tier remains only as a dormant data field so legacy scripts don't break — it is not shown, not computed, not part of the dossier. See "Tier — Retired.")
 
 ---
 
@@ -43,19 +52,17 @@ When researching a new person, launch ALL SIX agents simultaneously. Total time 
 
 **Quality bar:** This section should contain at least 3 direct quotes from the person's own words. If it contains zero quotes, it's failed.
 
-### Agent 3: Investment Context & Market
-**Mission:** Frame this person as an investment opportunity, not a biography.
+### Agent 3: Excitements & Current Work
+**Mission:** Figure out what this person is genuinely *excited about* and what they're *actually working on right now* — the two things that make an outreach feel like it came from someone paying attention. NOT a market/investment memo.
 
 **Instructions:**
-- What would they build if they started a company? What's the market? TAM?
-- Name the 5 closest competitors or comparable companies. How would this person's approach differ?
-- Which VCs are active in this space? Who would likely lead a round?
-- What's the likely valuation range based on comparable raises? (e.g., "Windsurf alumni + frontier model training experience → comparable to [X] who raised $Y at $Z valuation")
-- Timeline: How long have they been at current company? What's the typical tenure before departure? Any non-compete considerations?
-- Risk factors: What could make this person NOT interesting? (stays at big co forever, goes back to academia, thesis doesn't pan out)
-- Network: Who would they recruit? Who are their most likely co-founders?
+- **What are they excited about?** The problems, questions, and ideas they keep returning to. Mine their own words: recent papers' framing/motivation sections, talk abstracts, X threads, blog/Substack posts, podcast answers. What do they write/talk about *unprompted*?
+- **What are they likely working on now?** Their current role and its actual focus; the direction their last 2-3 outputs point; an unfinished thread they've hinted at; what their lab/team/company is pushing on. Distinguish *confirmed* (stated) from *inferred* (a reasonable read of the trajectory) — say which.
+- **The open problem they'd want to talk about.** If you reached out, what one technical/research question would light them up? (This becomes raw material for the outreach angles.)
+- **The landscape, only as context for the conversation** — the 2-3 nearest efforts/approaches/people in their space, so the outreach can show real understanding. NOT TAM, NOT valuation, NOT "who would lead the round."
+- **Tensions / contrarian takes** they hold — a belief they've stated that cuts against the consensus in their field. These are gold for a genuine opening.
 
-**Quality bar:** A partner at a VC firm should be able to use this section to write an investment memo. If it reads like a Wikipedia article, it's failed.
+**Quality bar:** After reading this section, the owner should be able to ask the person one question that makes them think "this person actually gets what I care about." If it reads like a market map, it's failed.
 
 ### Agent 4: Background & Credentials
 **Mission:** Compressed biographical context.
@@ -134,22 +141,24 @@ For each person surfaced, provide:
 
 ---
 
-## Synthesis: Alpha-First Format
+## Synthesis: The Dossier
 
-After the agents return, synthesize into this structure. The dossier is organized to answer **what's special about the work, vs. the field** — NOT to justify a tier. Gold-standard example: `people/toon-van-de-maele.html`.
+After the agents return, synthesize into this structure. The dossier exists to **understand the person and arm a meaningful outreach** — it culminates in the Outreach Angles. Gold-standard example for the alpha/format: `people/toon-van-de-maele.html`.
 
 ### Page Structure (in order)
 
-1. **One-liner** — Lead with the **alpha** (the rare edge in the work), stated densely. Put role/status as a short *trailing* clause (e.g. *"Status: co-founder & Head of AI of X (stealth, pre-funding)"*) — never as the headline.
-2. **The Alpha** (the lead section) — The single most differentiated thing about their work, stated precisely and **benchmarked against the 2–3 closest comparables**: actually first / SOTA / structurally novel, or incremental? Name the comparable work; name the *mechanism* of the edge. Put the honest calibration (validated vs. not) **here**, not as an afterthought. The section the whole dossier exists to support.
-3. **How it stacks up** — A tight table: *their work │ closest comparable │ the edge that's actually theirs.* Makes "vs. things which are similar" explicit. (Fold into prose only if there's genuinely a single comparison.)
-4. **The Spike — the evidence behind the alpha** — Authorship-precise: papers with position (1st/2nd/middle/last), venue, year, cites. Numbers, not adjectives. This *feeds* the alpha; it is not the headline.
-5. **Origin & Trajectory** — Dated milestones, education/lineage, the root of the spike (see Human Layers).
-6. **Status & timing** (demoted, factual) — One short block: current role, founding/stealth status (verified vs. reported), reachability, the outreach angle. **NO tier-justification prose.** The tier rides along only as a quiet tag for the table (see Tier Assignment).
-7. **Network Map & Recursive Discoveries** — Collaborators, likely co-founders, advisor lineage, recursive leads with priority.
-8. **Notes** — Verification + calibration bullets (what's confirmed, what's hedged, what's NOT padded).
+1. **One-liner** — Lead with the **spike/alpha** (the rare edge in the work), stated densely. Add a short *factual* status clause (current role) — no tier, no "founder probability."
+2. **The Alpha** (lead substance section) — The single most differentiated thing about their work, stated precisely and **benchmarked against the 2–3 closest comparables**: actually first / SOTA / structurally novel, or incremental? Name the comparable work; name the *mechanism* of the edge. Honest calibration (validated vs. not) goes **here**.
+3. **How it stacks up** — A tight table: *their work │ closest comparable │ the edge that's actually theirs.* (Fold into prose only if there's genuinely one comparison.)
+4. **The Spike — the evidence** — Authorship-precise: papers with position (1st/2nd/middle/last), venue, year, cites. Numbers, not adjectives.
+5. **Career Trajectory** — Dated milestones and the rate of change (acceleration/escalation vs. peers). Education/lineage; the root of the spike (see Human Layers).
+6. **What They're Excited About + Working On Now** — From their own words: the problems/ideas they're drawn to, their current focus, the open question they'd light up about. Mark *confirmed* vs. *inferred*. (Agent 3's output — the heart of a relevant outreach.)
+7. **Human Layers** — Origin & Early Spike, Life & Texture, The Read (per their sections below). The warmest, least-templated material.
+8. **★ Outreach Angles (1–3)** — **The deliverable.** 1-3 concrete, specific ways to open a conversation, each built on something real from above (a paper finding, a contrarian take, a shared problem, an origin detail). See "Outreach Angles" below for the standard. This is what the whole dossier is for.
+9. **Network Map & Recursive Discoveries** — Collaborators, advisor lineage, co-located relationships, recursive leads.
+10. **Notes** — Verification + calibration bullets (what's confirmed, what's hedged, what's NOT padded).
 
-Plus the **Human Layers** (Origin-Spike + Life-Texture) per their section below.
+No "Status & timing / tier" section, no founder-probability prose. A one-line factual status (role / company / "recently moved to X") belongs in the one-liner, nothing more.
 
 ### What to EXCLUDE
 - Coursework projects (every Stanford MS student does these)
@@ -161,14 +170,11 @@ Plus the **Human Layers** (Origin-Spike + Life-Texture) per their section below.
 
 ---
 
-## Tier Assignment
+## Tier — Retired
 
-Tier is a **quiet triage/sorting tag for the directory table — it is NOT the dossier's organizing principle.** Assign it, store it in the canonical `tier-N` tag span (the table reads it), and otherwise keep it out of the dossier prose: a one-line factual "Status & timing" block replaces every "T0 because…" paragraph. Tier answers *when/whether to act*; the dossier answers *how special the work is*. The two are orthogonal — a thin-alpha person can be T0 (about to found) and a world-class alpha can be T3 (settled, no inflection); say both honestly and never let the tier inflate or deflate the alpha read.
+**We no longer tier people.** Every person the owner sends is a reach-out target; ranking them by founder-probability is exactly what this system stopped doing. Do **not** add a `tier-N` tag to new dossiers, do **not** write tier prose, and do **not** run any founder-probability scoring (`scripts/suggest_urgency.py` is deprecated for this reason).
 
-- **Tier 0 (Active Pursuit):** Person is likely to start a company within 6 months. Evidence: departure signals, active thesis development, VC engagement, bio changes. ACTION: Reach out now.
-- **Tier 1 (High Conviction):** Extraordinary person who would be backable if they started today, but no immediate signal they're about to. ACTION: Build relationship, check monthly.
-- **Tier 2 (Tracking):** Interesting trajectory, worth watching. Not yet at inflection point. ACTION: Index, check quarterly.
-- **Tier 3 (Indexed):** Part of a cohort or competition result. Minimal individual research. ACTION: Store, re-evaluate if they surface again.
+The `tier` field still exists, dormant, in `outreach_state.json` / `directory.json` only so the ~13 legacy build scripts don't error on a missing key. It renders as nothing (the feed has a neutral fallback). Treat it as removed. If a person's status genuinely matters for the outreach (e.g. "just left X," "stealth, pre-funding"), say it as a plain factual clause in the one-liner — not a tier.
 
 ---
 
@@ -203,16 +209,26 @@ Tier is a **quiet triage/sorting tag for the directory table — it is NOT the d
 
 ---
 
-## Outreach Email Guidelines
+## Outreach Angles & Email
 
-Every dossier includes an outreach email draft. The email must be **ultra-high substance** — it should make the person feel that the sender has genuinely put in the work and deeply understands the specific problem or belief they are working on. This is the VC's primary differentiator.
+The dossier's culminating output is **1–3 outreach angles** — distinct, specific ways in — followed by a drafted email for the strongest one. This is the whole point of the system: arm the owner to reach out so the person feels he genuinely engaged with their work.
 
-### Structure (strict order)
+### Outreach Angles — the standard (give the owner 1–3 to choose from)
+Each angle names three things:
+- **The hook** — a specific, real thing: a paper finding/mechanism, a contrarian take they hold, a problem they're excited about or stuck on, an origin/texture detail. NOT "your impressive work."
+- **Why it lands** — what about *this* person makes this the way in. It must be something only someone who actually studied them would say.
+- **The ask** — the natural next step *for this person*: a sharp question, a coffee, a useful intro, a thought-partner exchange. **A check/raise is ONE possible ask among many — use it only when they're genuinely building and raising; it is never the default.** Most people you research are not raising; the ask is connection, not capital.
 
+The best angle usually falls out of **The Read** (the way in) or **What-They're-Excited-About**. Lead with the problem and the work, never the fund.
+
+### Email draft (for the strongest angle)
+Ultra-high substance — it should make the person feel the sender genuinely did the work and understands the specific thing they care about.
+
+**Structure (strict order):**
 1. **Who am I?** — One sentence. "I'm Vansh, Partner at Boldcap."
-2. **Why am I reaching out?** — Demonstrate deep domain knowledge of their specific area. Name companies, approaches, and technical tradeoffs in their space. Show you've done the research.
-3. **What do I know about YOU specifically?** — The intrinsic insight. Reference their specific technical thesis, a specific paper finding, a specific metric, or a specific decision they made. This must be something only someone who genuinely studied their work would know. NOT generic ("your impressive background") — SPECIFIC ("your TOTO finding that video models scale at L(C) = 7.32 × C^{-0.0378} vs GPT-3's 0.0480 exponent").
-4. **Next steps** — Casual, low-pressure. "Not sure if you're raising — would love to chat." Offer to write a check with a specific range if appropriate.
+2. **Why am I reaching out?** — Demonstrate deep, specific knowledge of *their* area. Name the real approaches/tradeoffs/people in their space. Show you've done the research.
+3. **What do I know about YOU specifically?** — The intrinsic insight. A specific paper finding, mechanism, metric, or decision they made — something only a genuine reader of their work would know. NOT "your impressive background" — SPECIFIC (e.g. "your TOTO finding that video models scale at L(C)=7.32×C^−0.0378 vs GPT-3's 0.0480 exponent").
+4. **The ask** — Casual, low-pressure, and *fitted to them*: a specific question, a coffee, an intro, or "would love to compare notes." Offer a check/raise **only** if they're actually building and raising and it fits — otherwise the ask is connection.
 
 ### Tone
 - **Short.** 4-6 sentences max after the greeting. The bio founder example email is the gold standard length.
@@ -239,7 +255,7 @@ I've been going deep on [their specific area] — [show landscape: name 3-5 comp
 
 [The intrinsic thing you know about THEM — specific paper finding, specific metric, specific technical decision that shows you've done the work.] [Why this matters / what it unlocks.]
 
-Not sure if you're raising — would love to chat either way. [Specific offer: "I can write $X-$Y and move fast" OR "happy to meet in the Bay Area."]
+[The fitted ask — pick what suits THIS person: a sharp question on their work / "would love to compare notes" / "in the Bay soon, coffee?" / a useful intro. Capital ask ONLY if they're building and raising.]
 
 Vansh
 ```
@@ -298,14 +314,14 @@ Every "yes" generates ~5-10 new discoveries → queue grows → next triage → 
 
 Before any dossier page goes live, verify:
 
-- [ ] Investment thesis is in the first 3 sentences
+- [ ] The spike/alpha is in the first 3 sentences, benchmarked against the closest comparable
 - [ ] The spike contains at least one specific number or benchmark
 - [ ] At least 2 direct quotes from the person's own words
-- [ ] Competitive landscape names at least 3 comparables
-- [ ] Growth trajectory has dated milestones
+- [ ] "What they're excited about / working on now" is grounded in their own words (confirmed vs. inferred marked)
+- [ ] **1–3 outreach angles, each with a real hook + a fitted ask** (the deliverable — never skip this)
+- [ ] Career trajectory has dated milestones
 - [ ] No coursework projects or LinkedIn filler
-- [ ] Background section is ≤5 sentences
-- [ ] Tier is assigned with rationale
+- [ ] NO tier, NO founder-probability prose, NO forced capital ask
 - [ ] Recursive discovery surfaced at least 2 connected people
 - [ ] Indian demographic flag checked
 

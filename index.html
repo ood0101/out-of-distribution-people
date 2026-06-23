@@ -89,10 +89,6 @@ body.dir-body{max-width:1180px}
 
     <div class="controls">
       <input class="srch" id="q" placeholder="Search name, role, company, tag, cluster…">
-      <span class="qchip on" data-tier="all">All</span>
-      <span class="qchip" data-tier="0">T0</span>
-      <span class="qchip" data-tier="1">T1</span>
-      <span class="qchip" data-tier="2">T2</span>
       <span class="qchip" data-flag="indian">● Indian</span>
       <span class="qchip" data-flag="notcontacted">Not contacted</span>
       <span class="qchip" data-flag="hidedelta">Hide Delta</span>
@@ -116,7 +112,12 @@ function tierClass(t){t=String(t); return t==='0'?'':t==='1'?'t1':t==='2'?'t2':t
 function tierLabel(t){t=String(t); return (t==='0'||t==='1'||t==='2'||t==='3')?('T'+t):'—';}
 function recencyDate(p){return p.added||p.updated||'';}
 function daysAgo(iso){ if(!iso) return 99999; var d=new Date(iso+'T00:00:00'); return Math.round((Date.now()-d)/864e5); }
-function stripTier(s){return (s||'').replace(/^\s*T\d\s*[—–-]\s*/,'');}  // drop redundant "T0 — " prefix
+function stripTier(s){  // strip leading tier preamble from legacy blurbs (tier is retired)
+  s=(s||'').trim();
+  s=s.replace(/^\s*(?:tier-?\s*)?T[0-3]\b\s*(?:\([^)]*\))?\s*[—–:.\-]+\s*/i,'');      // "T0 — ", "T0 (…). "
+  s=s.replace(/^\s*(active pursuit|high conviction|tracking|track|indexed)\b\s*(?:\([^)]*\))?\s*[—–:.\-]+\s*/i,'');  // bare label words
+  return s.trim();
+}
 
 fetch('data/directory.json',{cache:'no-store'}).then(r=>r.json()).then(function(d){
   DATA = Array.isArray(d)?d:(d.people||d.rows||[]);
@@ -160,7 +161,6 @@ function card(p){
   var isNew=daysAgo(recencyDate(p))<=14;
   return '<div class="card '+(isNew?'is-new':'')+'" data-href="people/'+esc(p.slug)+'.html">'+
     '<div class="crow">'+
-      '<span class="tier '+tierClass(p.tier)+'">'+tierLabel(p.tier)+'</span>'+
       '<span class="cname">'+esc(p.name)+'</span>'+
       '<span class="dot s-'+statusKey+'"></span><span class="cstatus">'+esc(statusTxt)+'</span>'+
       '<span class="cmeta"><span class="cupd">'+esc(recencyDate(p))+'</span></span>'+
