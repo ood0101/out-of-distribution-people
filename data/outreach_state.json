@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-06-28T15:42:35+00:00",
+  "last_built": "2026-06-28T15:49:39+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -168,7 +168,7 @@
         "phrase_raising": false,
         "phrase_founded": false
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-06-28T21:13:38+05:30",
       "needs_triage": false,
       "emails": [
         "ab.nsit@gmail.com"
@@ -7843,6 +7843,57 @@
       "channel": null,
       "next_action": null,
       "cluster": null,
+      "email_override": null,
+      "outreach_subject_override": null,
+      "outreach_body_override": null,
+      "channels_attempted": []
+    },
+    "marley-xiong": {
+      "name": "Marley Xiong",
+      "tier": 1,
+      "tier_label": "tier-1: high conviction",
+      "category": "outreach",
+      "tags": [
+        "founders",
+        "neurotech",
+        "bci",
+        "deep-tech",
+        "neural-decoding",
+        "active-inflection",
+        "mcgill"
+      ],
+      "indian": false,
+      "delta": false,
+      "one_liner": "Co-founder of",
+      "signals": {
+        "tag_stealth_founder": false,
+        "tag_founders": true,
+        "phrase_stealth": false,
+        "phrase_departed": false,
+        "phrase_raising": false,
+        "phrase_founded": true
+      },
+      "last_git_touch": null,
+      "needs_triage": false,
+      "emails": [],
+      "email_primary": null,
+      "email_primary_kind": null,
+      "outreach_subject": "ULM through an intact skull — the bandwidth path after the vascular map",
+      "outreach_body_preview": "Hi Marley — I invest at inception and the Aleph result genuinely stopped me: a 3D ULM map of a living brain through the skull, with the code and dataset actually posted, is a different category from the usual neurotech demo. Most of the non-invasive field is either implanted (Precision, Science Corp…",
+      "gmail_url": null,
+      "twitter_handle": "_marleyx",
+      "linkedin_slug": "marley-xiong",
+      "github_handle": null,
+      "status": "not-contacted",
+      "last_contacted": null,
+      "next_action_date": null,
+      "response": null,
+      "notes": "",
+      "urgency_decay_date": "2026-08-31",
+      "urgency_reason": "T1 — high conviction (path to T0). Exceptional out-of-distribution founder at an ACTIVE inflection: co-founder of Aleph Neuro, shipped a WORLD-FIRST through-skull 3D ULM brain image (~100× CT volumetric res; code+dataset released) + Butterfly Network Embedded™ partner, Jun 2026. McGill CS + neural-decoding research, then self-taught ultrasound physics. NOT Indian. FLAGS: (1) domain = neurotech/BCI, adjacent to core AI/ML (owner's call → T0 pursue vs track); (2) funding stage undisclosed (inception window maybe open, unverified).",
+      "channel": "x",
+      "next_action": "DECISION FIRST (owner): is non-invasive BCI on-thesis? If yes → escalate to T0, reach out NOW (X @_marleyx) with the drafted note (transcranial 3D ULM + released artifacts → vascular-to-functional-decoding question; name landscape Precision/Science Corp/Merge vs Openwater/Forest/Kernel); $500K-$1M, confirm the funding window is open. If strictly-LLM/agents → hold as a high-quality track. Either way: research co-founder Raffi Hotter next (Aleph is a 2-founder node).",
+      "cluster": "neurotech-bci",
       "email_override": null,
       "outreach_subject_override": null,
       "outreach_body_override": null,

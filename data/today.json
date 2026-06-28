@@ -1,17 +1,17 @@
 {
-  "built_at": "2026-06-28T15:43:05+00:00",
+  "built_at": "2026-06-28T15:49:39+00:00",
   "date": "2026-06-28",
   "stats": {
     "t0": 27,
-    "t1": 60,
+    "t1": 61,
     "in_flight": 11,
-    "pool": 130
+    "pool": 131
   },
   "pipeline": {
     "funnel": [
       {
         "status": "not-contacted",
-        "n": 284
+        "n": 285
       },
       {
         "status": "contacted",
@@ -127,7 +127,7 @@
         "dossier": "people/mayank-mishra.html"
       }
     ],
-    "total": 369
+    "total": 370
   },
   "replies": [],
   "followups": [
@@ -314,6 +314,37 @@
       "dossier": "people/maruan-al-shedivat.html"
     },
     {
+      "slug": "aayush-bansal",
+      "name": "Aayush Bansal",
+      "tier": 0,
+      "score": 695,
+      "chips": [
+        "stealth",
+        "departed",
+        "founder",
+        "indian"
+      ],
+      "window": {
+        "text": "pre-name · open",
+        "kind": "open"
+      },
+      "why_now": "T0 FOUNDING NOW, PRE-RAISE. Departure-to-found, triple-sourced: CV 'Founder & CEO, Stealth Startup' + homepage 'I am building new things' + CMU Swartz VentureBridge '26 ('an idea in stealth'). LEFT the ~$1.5B SpreeAI try-on unicorn (thriving, not a flameout)…",
+      "do_this": "EMAIL ab.nsit@gmail.com (or X DM @aayushbansal — gated). Subject: 'Open4D -> Physical AI, the 12-year through-line.' Lead with the 4D-world/unsupervised-exemplar thesis as the through-line of his arc…",
+      "channel": "email",
+      "draft": {
+        "subject": "Open4D &rarr; Physical AI, the 12-year through-line",
+        "body": "Hi Aayush — I invest at inception and spend my time around the world-models / physical-AI frontier (the Physical Intelligence crowd, the neural-rendering lineage now inside Luma/Runway). What made me reach out is that your new thing isn't a pivot — it's the same bet you've pulled since Open4D and Re…"
+      },
+      "link": {
+        "label": "✉ email",
+        "url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ab.nsit%40gmail.com"
+      },
+      "twitter": "aayushbansal",
+      "linkedin": "aayush-bansal-cmu",
+      "email": "ab.nsit@gmail.com",
+      "dossier": "people/aayush-bansal.html"
+    },
+    {
       "slug": "gaurav-bharaj",
       "name": "Gaurav Bharaj",
       "tier": 0,
@@ -372,37 +403,6 @@
       "dossier": "people/russ-tedrake.html"
     },
     {
-      "slug": "aayush-bansal",
-      "name": "Aayush Bansal",
-      "tier": 0,
-      "score": 645,
-      "chips": [
-        "stealth",
-        "departed",
-        "founder",
-        "indian"
-      ],
-      "window": {
-        "text": "pre-name · open",
-        "kind": "open"
-      },
-      "why_now": "T0 FOUNDING NOW, PRE-RAISE. Departure-to-found, triple-sourced: CV 'Founder & CEO, Stealth Startup' + homepage 'I am building new things' + CMU Swartz VentureBridge '26 ('an idea in stealth'). LEFT the ~$1.5B SpreeAI try-on unicorn (thriving, not a flameout)…",
-      "do_this": "EMAIL ab.nsit@gmail.com (or X DM @aayushbansal — gated). Subject: 'Open4D -> Physical AI, the 12-year through-line.' Lead with the 4D-world/unsupervised-exemplar thesis as the through-line of his arc…",
-      "channel": "email",
-      "draft": {
-        "subject": "Open4D &rarr; Physical AI, the 12-year through-line",
-        "body": "Hi Aayush — I invest at inception and spend my time around the world-models / physical-AI frontier (the Physical Intelligence crowd, the neural-rendering lineage now inside Luma/Runway). What made me reach out is that your new thing isn't a pivot — it's the same bet you've pulled since Open4D and Re…"
-      },
-      "link": {
-        "label": "✉ email",
-        "url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ab.nsit%40gmail.com"
-      },
-      "twitter": "aayushbansal",
-      "linkedin": "aayush-bansal-cmu",
-      "email": "ab.nsit@gmail.com",
-      "dossier": "people/aayush-bansal.html"
-    },
-    {
       "slug": "pannag-sanketi",
       "name": "Pannag R. Sanketi",
       "tier": 0,
@@ -446,6 +446,34 @@
       "source_url": "https://www.aayushbansal.xyz/",
       "source_kind": "own_site",
       "delta": 75,
+      "hot": true,
+      "has_dossier": true
+    },
+    {
+      "slug": "marley-xiong",
+      "name": "Marley Xiong",
+      "tier": 1,
+      "date": "2026-06-18",
+      "days_ago": 10,
+      "type": "founding listed",
+      "text": "Co-founder of Aleph Neuro (alephneuro.com) — non-invasive brain interfaces; with Raffi Hotter",
+      "source_url": "https://alephneuro.com",
+      "source_kind": "lab_page",
+      "delta": 73,
+      "hot": true,
+      "has_dossier": true
+    },
+    {
+      "slug": "marley-xiong",
+      "name": "Marley Xiong",
+      "tier": 1,
+      "date": "2026-06-25",
+      "days_ago": 10,
+      "type": "research shipped",
+      "text": "Aleph Neuro shipped world-first 3D ULM image of a living human brain through an intact skull (~100× CT volumetric res); code+dataset released;…",
+      "source_url": "https://www.businesswire.com/news/home/20260625817511/en/",
+      "source_kind": "news",
+      "delta": 40,
       "hot": true,
       "has_dossier": true
     },
@@ -516,34 +544,6 @@
       "source_url": "https://github.com/gauravbharaj",
       "source_kind": "github",
       "delta": 64,
-      "hot": true,
-      "has_dossier": true
-    },
-    {
-      "slug": "gaurav-bharaj",
-      "name": "Gaurav Bharaj",
-      "tier": 0,
-      "date": "2026-05-13",
-      "days_ago": 16,
-      "type": "departure",
-      "text": "Left Reality Defender (co-founder & Chief Scientist) — LinkedIn 'a new chapter begins' post; site past-tenses RD, no current employer",
-      "source_url": "https://gauravbharaj.github.io/",
-      "source_kind": "own_site",
-      "delta": 62,
-      "hot": true,
-      "has_dossier": true
-    },
-    {
-      "slug": "nada-amin",
-      "name": "Nada Amin",
-      "tier": 1,
-      "date": "2026-05-01",
-      "days_ago": 16,
-      "type": "founding listed",
-      "text": "Co-founded Midspiral ('correctness layer for AI-generated software'; LemmaScript/lemmafit/claimcheck) — midspiral.com lists her as Cofounder w/…",
-      "source_url": "https://midspiral.com/",
-      "source_kind": "own_site",
-      "delta": 59,
       "hot": true,
       "has_dossier": true
     }

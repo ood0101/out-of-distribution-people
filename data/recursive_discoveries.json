@@ -1859,6 +1859,22 @@
         "pass",
         "network-node"
       ]
+    },
+    {
+      "name": "Raffi Hotter",
+      "from_dossier": "marley-xiong",
+      "discovered_at": "2026-06-18",
+      "context": "Co-founder of Aleph Neuro with Marley Xiong (T1) — co-built the world-first through-skull 3D ULM brain image + the McGill mind-controlled wheelchair (won top prize). Aleph is a 2-founder node; Hotter is almost certainly comparably exceptional (the other technical half). Research + tier next. X @raffi_hotter.",
+      "priority": "P1",
+      "status": "pending",
+      "tags": [
+        "aleph-neuro",
+        "bci",
+        "neurotech",
+        "mcgill",
+        "co-founder",
+        "2-founder-node"
+      ]
     }
   ]
 }

@@ -616,6 +616,30 @@
       "source_kind": "own_site",
       "confidence": 0.92,
       "note": "domain (Physical AI/4D world models) corroborated via LinkedIn summaries, not verbatim; no Form D/raise found"
+    },
+    {
+      "date": "2026-06-25",
+      "observed": "2026-06-18",
+      "slug": "marley-xiong",
+      "type": "research_shipped",
+      "direction": 1,
+      "value": "Aleph Neuro shipped world-first 3D ULM image of a living human brain through an intact skull (~100× CT volumetric res); code+dataset released; Butterfly Network Embedded™ partner",
+      "source_url": "https://www.businesswire.com/news/home/20260625817511/en/",
+      "source_kind": "news",
+      "confidence": 0.92,
+      "note": "active inflection — founder shipping a verified world-first result"
+    },
+    {
+      "date": "2026-06-18",
+      "observed": "2026-06-18",
+      "slug": "marley-xiong",
+      "type": "founding_listed",
+      "direction": 1,
+      "value": "Co-founder of Aleph Neuro (alephneuro.com) — non-invasive brain interfaces; with Raffi Hotter",
+      "source_url": "https://alephneuro.com",
+      "source_kind": "lab_page",
+      "confidence": 0.9,
+      "note": "founder of a fresh deep-tech/BCI lab; funding stage undisclosed"
     }
   ]
 }

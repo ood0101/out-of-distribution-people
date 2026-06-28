@@ -1,6 +1,6 @@
 {
- "generated": "2026-06-23",
- "count": 270,
+ "generated": "2026-06-28",
+ "count": 271,
  "people": [
   {
    "slug": "aayush-bansal",
@@ -29,7 +29,7 @@
    "status": "not-contacted",
    "last_contacted": null,
    "next_action_date": null,
-   "updated": "",
+   "updated": "2026-06-28",
    "added": "2026-06-18",
    "channel": "email",
    "twitter": "aayushbansal",
@@ -1003,6 +1003,40 @@
    "email": null,
    "gmail_url": null,
    "indian": true,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": true
+  },
+  {
+   "slug": "marley-xiong",
+   "name": "Marley Xiong",
+   "tier": 1,
+   "role": "Co-founder of Aleph Neuro (alephneuro.com) — a research lab building non-invasive brain interfaces 'for the telepathic future.' McGill CS + neural-decoding research, then self-taught physics/ultrasound. NOT Indian (Chinese/Hmong-origin surname).",
+   "spike": "T1 — high conviction (clean path to T0). Textbook out-of-distribution founder at an ACTIVE inflection. Co-founded Aleph Neuro with Raffi Hotter ('9 friends, lab at home') and in Jun 2026 shipped the WORLD'S FIRST 3D ultrasound-localization-microscopy image of a living human brain THROUGH AN INTACT SKULL (~100× the volumetric resolution of comparable CT; 'MRI-level detail' without drilling) — with processing CODE + DATASET released on GitHub + a technical blog. Credible industrial validation: Butterfly Network (BFLY) Embedded™ partner (BusinessWire 25 Jun 2026, on Ultrasound-on-Chip). PEDIGREE: McGill (School of CS) + co-author 'Decoding Visual Imagery via fNIRS' (arXiv 2406.07662) + prior McGill BCI w/ Hotter (mind-controlled wheelchair won top prize), then self-taught the ultrasound/EM physics. RATE-OF-CHANGE is the signal (idea→novel hardware physics→world-first result in months). FLAGS: (1) DOMAIN — non-invasive neurotech/BCI, adjacent to core AI/ML (the AI is the neural-decoding layer); owner's call whether to pursue (T0) or track. (2) FUNDING stage UNDISCLOSED (no raise found; 'lab at home' framing suggests inception window may be open — unverified). (3) 'world-first/most-detailed' is the team's own 'to our knowledge' claim — verified-substantive (code+data+Butterfly) but attribute it. NOT Indian. RECURSIVE: Aleph is a 2-founder node — research Raffi Hotter (@raffi_hotter) next; + the '9 friends' early team, Butterfly partner ecosystem, McGill BCI lineage. T1.",
+   "tags": [
+    "founders",
+    "neurotech",
+    "bci",
+    "deep-tech",
+    "neural-decoding",
+    "active-inflection",
+    "mcgill"
+   ],
+   "cluster": "neurotech-bci",
+   "signals": [
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "",
+   "added": "2026-06-18",
+   "channel": "x",
+   "twitter": "_marleyx",
+   "linkedin": "marley-xiong",
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
    "delta": false,
    "needs_triage": false,
    "urgency": true
