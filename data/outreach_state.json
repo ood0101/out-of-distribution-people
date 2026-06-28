@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-06-28T15:49:39+00:00",
+  "last_built": "2026-06-28T15:58:03+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -7550,6 +7550,63 @@
       "outreach_body_override": null,
       "channels_attempted": []
     },
+    "lev-chizhov": {
+      "name": "Lev Chizhov",
+      "tier": null,
+      "tier_label": null,
+      "category": null,
+      "tags": [
+        "founder",
+        "neurotech",
+        "bci",
+        "functional-ultrasound",
+        "ai-ml-wedge",
+        "physics-olympiad",
+        "new-science-fellow",
+        "russian",
+        "ai-agents",
+        "ood"
+      ],
+      "indian": false,
+      "delta": false,
+      "one_liner": "A ~22-year-old Russian physicist–hacker who, with 4 others and",
+      "signals": {
+        "tag_stealth_founder": false,
+        "tag_founders": false,
+        "phrase_stealth": false,
+        "phrase_departed": false,
+        "phrase_raising": false,
+        "phrase_founded": true
+      },
+      "last_git_touch": null,
+      "needs_triage": true,
+      "emails": [
+        "careers@alephneuro.com",
+        "lc@lev.la"
+      ],
+      "email_primary": "careers@alephneuro.com",
+      "email_primary_kind": "company",
+      "outreach_subject": "the 0.1%, and ML-on-raw-ultrasound as the real Aleph",
+      "outreach_body_preview": "Hi Lev — I invest at inception and Aleph is the cleanest version of a thesis I keep landing on. Everyone's resharing the brain image, but the line that actually matters is yours: the probe takes in terabytes/hour and the pipeline keeps 0.1% — \"end-to-end ML, trained on large enough datasets, will re…",
+      "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=careers%40alephneuro.com&su=the%200.1%25%2C%20and%20ML-on-raw-ultrasound%20as%20the%20real%20Aleph&body=Hi%20Lev%20%E2%80%94%20I%20invest%20at%20inception%20and%20Aleph%20is%20the%20cleanest%20version%20of%20a%20thesis%20I%20keep%20landing%20on.%20Everyone%27s%20resharing%20the%20brain%20image%2C%20but%20the%20line%20that%20actually%20matters%20is%20yours%3A%20the%20probe%20takes%20in%20terabytes/hour%20and%20the%20pipeline%20keeps%200.1%25%20%E2%80%94%20%22end-to-end%20ML%2C%20trained%20on%20large%20enough%20datasets%2C%20will%20recover%20far%20more%20signal.%22%20That%27s%20the%20real%20company%20%E2%80%94%20the%20noninvasive-ultrasound%20demo%20is%20the%20cold-start%20for%20a%20neurovascular-ultrasound%20foundation%20model%20and%20learned%20decoding%20%28the%20MindEye-in-latents%20endgame%29%2C%20and%20the%20commodity%20Butterfly%20chip%20is%20the%20data-collection%20edge%20Iconeus/Forest/Openwater%20can%27t%20copy.%20Clippinator%20%26rarr%3B%20Aleph%20is%20the%20same%20move%20twice%3A%20throw%20learning%20at%20high-dimensional%20signal%20everyone%20else%20hand-engineers.%20I%20can%20write%20%24500K%E2%80%93%241M%20and%20move%20fast%2C%20and%20I%27d%20rather%20be%20useful%20on%20the%20ML/decoding%20side%20than%20pitch%20you%20%E2%80%94%20how%20much%20of%20the%20team%27s%20work%20right%20now%20is%20decoding%20vs.%20reconstruction%2C%20and%20how%20big%20does%20the%20dataset%20have%20to%20get%20before%20learned%20beats%20hand-engineered%20fUS%3F%0A%0A%E2%80%94%20Vansh",
+      "twitter_handle": "levchizhov",
+      "linkedin_slug": "ennucore",
+      "github_handle": "ennucore",
+      "status": "not-contacted",
+      "last_contacted": null,
+      "next_action_date": null,
+      "response": null,
+      "notes": "",
+      "urgency_decay_date": null,
+      "urgency_reason": null,
+      "channel": null,
+      "next_action": null,
+      "cluster": null,
+      "email_override": null,
+      "outreach_subject_override": null,
+      "outreach_body_override": null,
+      "channels_attempted": []
+    },
     "liam-mcnamara": {
       "name": "Liam McNamara",
       "tier": null,
@@ -7850,8 +7907,8 @@
     },
     "marley-xiong": {
       "name": "Marley Xiong",
-      "tier": 1,
-      "tier_label": "tier-1: high conviction",
+      "tier": 0,
+      "tier_label": "tier-0: active pursuit",
       "category": "outreach",
       "tags": [
         "founders",
@@ -7873,7 +7930,7 @@
         "phrase_raising": false,
         "phrase_founded": true
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-06-28T21:20:04+05:30",
       "needs_triage": false,
       "emails": [],
       "email_primary": null,
@@ -7890,9 +7947,9 @@
       "response": null,
       "notes": "",
       "urgency_decay_date": "2026-08-31",
-      "urgency_reason": "T1 — high conviction (path to T0). Exceptional out-of-distribution founder at an ACTIVE inflection: co-founder of Aleph Neuro, shipped a WORLD-FIRST through-skull 3D ULM brain image (~100× CT volumetric res; code+dataset released) + Butterfly Network Embedded™ partner, Jun 2026. McGill CS + neural-decoding research, then self-taught ultrasound physics. NOT Indian. FLAGS: (1) domain = neurotech/BCI, adjacent to core AI/ML (owner's call → T0 pursue vs track); (2) funding stage undisclosed (inception window maybe open, unverified).",
+      "urgency_reason": "T0 — active pursuit (owner confirmed BCI is on-thesis, 18 Jun 2026). Exceptional out-of-distribution founder at an ACTIVE inflection: co-founder of Aleph Neuro, shipped a WORLD-FIRST through-skull 3D ULM brain image (~100× CT volumetric res; code+dataset released) + Butterfly Network Embedded™ partner, Jun 2026. McGill CS + neural-decoding research, then self-taught ultrasound physics. NOT Indian. Funding stage undisclosed — confirm the inception window before assuming an allocation is writable.",
       "channel": "x",
-      "next_action": "DECISION FIRST (owner): is non-invasive BCI on-thesis? If yes → escalate to T0, reach out NOW (X @_marleyx) with the drafted note (transcranial 3D ULM + released artifacts → vascular-to-functional-decoding question; name landscape Precision/Science Corp/Merge vs Openwater/Forest/Kernel); $500K-$1M, confirm the funding window is open. If strictly-LLM/agents → hold as a high-quality track. Either way: research co-founder Raffi Hotter next (Aleph is a 2-founder node).",
+      "next_action": "Reach out NOW (X @_marleyx) with the drafted transcranial-ULM note (released artifacts → vascular-to-functional-decoding question; landscape Precision/Science Corp/Merge vs Openwater/Forest/Kernel); $500K-$1M, confirm the funding window is open. Research co-founder Raffi Hotter (Aleph is a 2-founder node).",
       "cluster": "neurotech-bci",
       "email_override": null,
       "outreach_subject_override": null,

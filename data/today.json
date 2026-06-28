@@ -1,9 +1,9 @@
 {
-  "built_at": "2026-06-28T15:49:39+00:00",
+  "built_at": "2026-06-28T15:58:03+00:00",
   "date": "2026-06-28",
   "stats": {
-    "t0": 27,
-    "t1": 61,
+    "t0": 28,
+    "t1": 60,
     "in_flight": 11,
     "pool": 131
   },
@@ -11,7 +11,7 @@
     "funnel": [
       {
         "status": "not-contacted",
-        "n": 285
+        "n": 286
       },
       {
         "status": "contacted",
@@ -127,7 +127,7 @@
         "dossier": "people/mayank-mishra.html"
       }
     ],
-    "total": 370
+    "total": 371
   },
   "replies": [],
   "followups": [
@@ -376,6 +376,31 @@
       "dossier": "people/gaurav-bharaj.html"
     },
     {
+      "slug": "marley-xiong",
+      "name": "Marley Xiong",
+      "tier": 0,
+      "score": 680,
+      "chips": [
+        "founder"
+      ],
+      "window": {
+        "text": "closes 2026-08-31",
+        "kind": "open"
+      },
+      "why_now": "T0 — active pursuit (owner confirmed BCI is on-thesis, 18 Jun 2026). Exceptional out-of-distribution founder at an ACTIVE inflection: co-founder of Aleph Neuro, shipped a WORLD-FIRST through-skull 3D ULM brain image (~100× CT volumetric res; code+dataset…",
+      "do_this": "Reach out NOW (X @_marleyx) with the drafted transcranial-ULM note (released artifacts → vascular-to-functional-decoding question; landscape Precision/Science Corp/Merge vs Openwater/Forest/Kernel);…",
+      "channel": "x",
+      "draft": {
+        "subject": "ULM through an intact skull — the bandwidth path after the vascular map",
+        "body": "Hi Marley — I invest at inception and the Aleph result genuinely stopped me: a 3D ULM map of a living brain through the skull, with the code and dataset actually posted, is a different category from the usual neurotech demo. Most of the non-invasive field is either implanted (Precision, Science Corp…"
+      },
+      "link": null,
+      "twitter": "_marleyx",
+      "linkedin": "marley-xiong",
+      "email": null,
+      "dossier": "people/marley-xiong.html"
+    },
+    {
       "slug": "russ-tedrake",
       "name": "Russ Tedrake",
       "tier": 0,
@@ -401,37 +426,6 @@
       "linkedin": null,
       "email": null,
       "dossier": "people/russ-tedrake.html"
-    },
-    {
-      "slug": "pannag-sanketi",
-      "name": "Pannag R. Sanketi",
-      "tier": 0,
-      "score": 639,
-      "chips": [
-        "stealth",
-        "departed",
-        "founder",
-        "indian"
-      ],
-      "window": {
-        "text": "pre-name · open",
-        "kind": "open"
-      },
-      "why_now": "Senior DeepMind Robotics departure (Senior Staff SWE / TLM) to stealth robotics+AI. FOUNDED Open X-Embodiment / RT-X ('ImageNet for robotics', 21+ labs), RT-2 co-author, led human-level Table Tennis robot. 14,858 cites, h-30. LinkedIn flipped to 'Stealth…",
-      "do_this": "LinkedIn DM pannag-sanketi (or X DM @pannag_) — subj 'The ImageNet-for-robotics bet, now as a company'; lead with the data-substrate edge (21 labs -> RT-X) vs Physical Intelligence/Skild/Generalist,…",
-      "channel": "linkedin",
-      "draft": {
-        "subject": "the part none of the robotics companies started from",
-        "body": "Hi Pannag — SAS-Prompt read to me like the honest next step after RT-X: once you've pooled cross-embodiment data, the self-improvement loop on top of it becomes the real bottleneck. I invest at inception and have spent serious time on the post-DeepMind wave (Physical Intelligence, Skild, Generalist, Figure's Helix) — and the part none of them started from is the thing you actually pulled off: getting 21 competing labs to pool their data is rarer than any single model. I'd love to hear how you're weighing the data flywheel against the dynamic-control gap your table-tennis work exposed — 45% vs. humans is the most honest agility number anyone's published. I can write $500K–$1M, but mostly I'd just like to know what you're building. — Vansh"
-      },
-      "link": {
-        "label": "in/pannag-sanketi",
-        "url": "https://linkedin.com/in/pannag-sanketi/"
-      },
-      "twitter": "pannag_",
-      "linkedin": "pannag-sanketi",
-      "email": null,
-      "dossier": "people/pannag-sanketi.html"
     }
   ],
   "signals": [
@@ -452,7 +446,7 @@
     {
       "slug": "marley-xiong",
       "name": "Marley Xiong",
-      "tier": 1,
+      "tier": 0,
       "date": "2026-06-18",
       "days_ago": 10,
       "type": "founding listed",
@@ -466,7 +460,7 @@
     {
       "slug": "marley-xiong",
       "name": "Marley Xiong",
-      "tier": 1,
+      "tier": 0,
       "date": "2026-06-25",
       "days_ago": 10,
       "type": "research shipped",
@@ -549,7 +543,7 @@
     }
   ],
   "triage": {
-    "pending": 119,
+    "pending": 120,
     "highlights": [
       {
         "name": "Sumith Kulal",

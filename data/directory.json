@@ -1,6 +1,6 @@
 {
  "generated": "2026-06-28",
- "count": 271,
+ "count": 272,
  "people": [
   {
    "slug": "aayush-bansal",
@@ -37,6 +37,40 @@
    "email": "ab.nsit@gmail.com",
    "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ab.nsit%40gmail.com&su=Open4D%20%26rarr%3B%20Physical%20AI%2C%20the%2012-year%20through-line&body=Hi%20Aayush%20%E2%80%94%20I%20invest%20at%20inception%20and%20spend%20my%20time%20around%20the%20world-models%20/%20physical-AI%20frontier%20%28the%20Physical%20Intelligence%20crowd%2C%20the%20neural-rendering%20lineage%20now%20inside%20Luma/Runway%29.%20What%20made%20me%20reach%20out%20is%20that%20your%20new%20thing%20isn%27t%20a%20pivot%20%E2%80%94%20it%27s%20the%20same%20bet%20you%27ve%20pulled%20since%20Open4D%20and%20Recycle-GAN%3A%20learn%20the%204D%20world%20from%20sparse%2C%20unconstrained%2C%20unsupervised%20samples.%20And%20unlike%20most%20researchers%20chasing%20this%2C%20you%20already%20shipped%20the%20commercial%20version%20%E2%80%94%20you%20led%20the%20org%20whose%20try-on/video%20models%20took%20SpreeAI%20to%20a%20unicorn%2C%20then%20left%20it%20to%20build.%20That%20combination%20%28the%204D-world%20thesis%20%2B%20proven%20research-to-product%29%20is%20exactly%20what%20I%20want%20to%20back.%20I%20can%20write%20%24500K%E2%80%93%241M%20and%20move%20fast%2C%20and%20I%27d%20rather%20be%20useful%20early%20than%20pitch%20you.%20What%27s%20the%20wedge%20%E2%80%94%20is%20it%20the%20world%20model%20itself%2C%20or%20the%20first%20application%20on%20top%20of%20it%3F%0A%0A%E2%80%94%20Vansh",
    "indian": true,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": true
+  },
+  {
+   "slug": "marley-xiong",
+   "name": "Marley Xiong",
+   "tier": 0,
+   "role": "Co-founder of Aleph Neuro (alephneuro.com) — a research lab building non-invasive brain interfaces 'for the telepathic future.' McGill CS + neural-decoding research, then self-taught physics/ultrasound. NOT Indian (Chinese/Hmong-origin surname).",
+   "spike": "T0 — active pursuit (owner confirmed BCI is on-thesis; reach out now). Textbook out-of-distribution founder at an ACTIVE inflection. Co-founded Aleph Neuro with Raffi Hotter ('9 friends, lab at home') and in Jun 2026 shipped the WORLD'S FIRST 3D ultrasound-localization-microscopy image of a living human brain THROUGH AN INTACT SKULL (~100× the volumetric resolution of comparable CT; 'MRI-level detail' without drilling) — with processing CODE + DATASET released on GitHub + a technical blog. Credible industrial validation: Butterfly Network (BFLY) Embedded™ partner (BusinessWire 25 Jun 2026, on Ultrasound-on-Chip). PEDIGREE: McGill (School of CS) + co-author 'Decoding Visual Imagery via fNIRS' (arXiv 2406.07662) + prior McGill BCI w/ Hotter (mind-controlled wheelchair won top prize), then self-taught the ultrasound/EM physics. RATE-OF-CHANGE is the signal (idea→novel hardware physics→world-first result in months). FLAGS: (1) DOMAIN — non-invasive neurotech/BCI, adjacent to core AI/ML (the AI is the neural-decoding layer); RESOLVED — owner confirmed on-thesis: T0 active pursuit, reach out now. (2) FUNDING stage UNDISCLOSED (no raise found; 'lab at home' framing suggests inception window may be open — unverified). (3) 'world-first/most-detailed' is the team's own 'to our knowledge' claim — verified-substantive (code+data+Butterfly) but attribute it. NOT Indian. RECURSIVE: Aleph is a 2-founder node — research Raffi Hotter (@raffi_hotter) next; + the '9 friends' early team, Butterfly partner ecosystem, McGill BCI lineage. T0.",
+   "tags": [
+    "founders",
+    "neurotech",
+    "bci",
+    "deep-tech",
+    "neural-decoding",
+    "active-inflection",
+    "mcgill"
+   ],
+   "cluster": "neurotech-bci",
+   "signals": [
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "2026-06-28",
+   "added": "2026-06-18",
+   "channel": "x",
+   "twitter": "_marleyx",
+   "linkedin": "marley-xiong",
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
    "delta": false,
    "needs_triage": false,
    "urgency": true
@@ -1003,40 +1037,6 @@
    "email": null,
    "gmail_url": null,
    "indian": true,
-   "delta": false,
-   "needs_triage": false,
-   "urgency": true
-  },
-  {
-   "slug": "marley-xiong",
-   "name": "Marley Xiong",
-   "tier": 1,
-   "role": "Co-founder of Aleph Neuro (alephneuro.com) — a research lab building non-invasive brain interfaces 'for the telepathic future.' McGill CS + neural-decoding research, then self-taught physics/ultrasound. NOT Indian (Chinese/Hmong-origin surname).",
-   "spike": "T1 — high conviction (clean path to T0). Textbook out-of-distribution founder at an ACTIVE inflection. Co-founded Aleph Neuro with Raffi Hotter ('9 friends, lab at home') and in Jun 2026 shipped the WORLD'S FIRST 3D ultrasound-localization-microscopy image of a living human brain THROUGH AN INTACT SKULL (~100× the volumetric resolution of comparable CT; 'MRI-level detail' without drilling) — with processing CODE + DATASET released on GitHub + a technical blog. Credible industrial validation: Butterfly Network (BFLY) Embedded™ partner (BusinessWire 25 Jun 2026, on Ultrasound-on-Chip). PEDIGREE: McGill (School of CS) + co-author 'Decoding Visual Imagery via fNIRS' (arXiv 2406.07662) + prior McGill BCI w/ Hotter (mind-controlled wheelchair won top prize), then self-taught the ultrasound/EM physics. RATE-OF-CHANGE is the signal (idea→novel hardware physics→world-first result in months). FLAGS: (1) DOMAIN — non-invasive neurotech/BCI, adjacent to core AI/ML (the AI is the neural-decoding layer); owner's call whether to pursue (T0) or track. (2) FUNDING stage UNDISCLOSED (no raise found; 'lab at home' framing suggests inception window may be open — unverified). (3) 'world-first/most-detailed' is the team's own 'to our knowledge' claim — verified-substantive (code+data+Butterfly) but attribute it. NOT Indian. RECURSIVE: Aleph is a 2-founder node — research Raffi Hotter (@raffi_hotter) next; + the '9 friends' early team, Butterfly partner ecosystem, McGill BCI lineage. T1.",
-   "tags": [
-    "founders",
-    "neurotech",
-    "bci",
-    "deep-tech",
-    "neural-decoding",
-    "active-inflection",
-    "mcgill"
-   ],
-   "cluster": "neurotech-bci",
-   "signals": [
-    "founder"
-   ],
-   "status": "not-contacted",
-   "last_contacted": null,
-   "next_action_date": null,
-   "updated": "",
-   "added": "2026-06-18",
-   "channel": "x",
-   "twitter": "_marleyx",
-   "linkedin": "marley-xiong",
-   "email": null,
-   "gmail_url": null,
-   "indian": false,
    "delta": false,
    "needs_triage": false,
    "urgency": true
@@ -4357,6 +4357,43 @@
    "indian": false,
    "delta": false,
    "needs_triage": false,
+   "urgency": false
+  },
+  {
+   "slug": "lev-chizhov",
+   "name": "Lev Chizhov",
+   "tier": null,
+   "role": "Co-founder of Aleph (alephneuro.com) — noninvasive functional-ultrasound brain imaging, launched publicly 25 Jun 2026, SF. The physics + AI-agents half of a 5-person no-lab team (neuro-imaging domain expert = co-founder Raffi Hotter, ex-Adam Cohen lab / Google X). Built Clippinator (multi-agent GPT-4 programmer, ~409★). New Science 2025 fellow (neurotech). IZhO gold; St. Petersburg Lyceum 239 → MIPT → École Polytechnique → ETH. Russian. NOT Indian.",
+   "spike": "VERIFIED co-founder (x.com/levchizhov bio: 'co-founder @alephneuro'; launch thread names @_marleyx @raffi_hotter @levchizhov @thomas_rribeiro @jffbrwn2) of a company that went public 3 days ago: claims the highest-resolution noninvasive 3D images of living human brain vasculature, via Butterfly ultrasound-on-chip + microbubble super-resolution localization. THE ALPHA is NOT the physics (functional-ultrasound / ULM is established academic work — Tanter/Demené, Iconeus) — it's three things at once: (1) a COST INVERSION as a wedge (a commodity ~$2K ultrasound chip vs an MRI room), (2) the STATED AI/ML second act — their own blog: 'the pipeline compresses to 0.1%… end-to-end ML, trained on large enough datasets, will recover far more signal' + 'the world's largest dataset of neurovascular ultrasound' + MindEye/decode-in-latents as the north star (ML Engineer is the FIRST of 10 open roles), and (3) achievement-despite-no-scaffolding ('Doing science outside the context of a lab turned out to be easier than we thought'; 5 people; ~4 months, domain reg 8 Feb → public 25 Jun 2026). Maxes the owner's loves: competition pedigree, no-scaffolding, rate-of-change. ON-THESIS = PARTIAL (the whole debate): the verifiable artifact TODAY is a hardware/imaging demo built on others' physics; the AI/ML core (learned signal recovery + neural decoding on a proprietary dataset) is aspirational — stated and staffed, not yet shipped. Lev personally is the physics/software half (Clippinator is real AI-agents-systems credibility), NOT the neuro anchor (Raffi Hotter is). NOT a PASS: founders frame it as a data + learned-decoding company, not pure hardware. HONESTY: Scholar = 1 paper, NON-first-author, on metamaterials (22 cites, h-index 1) — unrelated to neuro; the spike is physics-olympiad + AI-agents-systems, not citation volume. IPhO = top-15 SELECTION, not a medal (IZhO gold is the headline). FUNDING UNCONFIRMED: no Form D (EDGAR full-text = 0 hits under 'Aleph Neuro' AND 'Alegria Neurotech'), no Crunchbase round; likely angel/SAFE + New Science grant; a priced round may be imminent off the launch but is not on record. 'Alegria Neurotech' (his Scholar affiliation; domain reg Apr 2024, predates the Aleph domain) = likely the earlier working name that rebranded — legal tie UNCONFIRMED (a Form D could be filed under 'Alegria'). Title = co-founder VERIFIED, CEO/CTO/chief-scientist split unknown. Age ~22 inferred (2021 olympiads + undergrad timeline). TIER READ: T1 leaning T0 — reach out NOW (launch is hot) regardless of label. Gate A (founding/full-time) = clean YES. Gate B (AI/ML-frontier core) = partial. Resolve both in one call (open with the 0.1%→ML wedge; ask whether Lev owns the ML/decoding stack and whether a round is open) → if yes+yes, promote to T0. RECURSIVE: Raffi Hotter (P0 — dossier NEXT; the domain spike, ex-Cohen lab/Google X), the 3 other Aleph co-founders (P1: @_marleyx, Thomas Ribeiro, @jffbrwn2), Alexey Guzey + New Science '25 cohort (P1 — OOD-founder factory, anti-academia, russian-diaspora hub; co-fellow Kalashnikov does bio/physics/AI), Timofey Fedoseev + Sergei Bogdanov (Clippinator, P2).",
+   "tags": [
+    "founder",
+    "neurotech",
+    "bci",
+    "functional-ultrasound",
+    "ai-ml-wedge",
+    "physics-olympiad",
+    "new-science-fellow",
+    "russian",
+    "ai-agents",
+    "ood"
+   ],
+   "cluster": null,
+   "signals": [
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "",
+   "added": "2026-06-28",
+   "channel": null,
+   "twitter": "levchizhov",
+   "linkedin": "ennucore",
+   "email": "careers@alephneuro.com",
+   "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=careers%40alephneuro.com&su=the%200.1%25%2C%20and%20ML-on-raw-ultrasound%20as%20the%20real%20Aleph&body=Hi%20Lev%20%E2%80%94%20I%20invest%20at%20inception%20and%20Aleph%20is%20the%20cleanest%20version%20of%20a%20thesis%20I%20keep%20landing%20on.%20Everyone%27s%20resharing%20the%20brain%20image%2C%20but%20the%20line%20that%20actually%20matters%20is%20yours%3A%20the%20probe%20takes%20in%20terabytes/hour%20and%20the%20pipeline%20keeps%200.1%25%20%E2%80%94%20%22end-to-end%20ML%2C%20trained%20on%20large%20enough%20datasets%2C%20will%20recover%20far%20more%20signal.%22%20That%27s%20the%20real%20company%20%E2%80%94%20the%20noninvasive-ultrasound%20demo%20is%20the%20cold-start%20for%20a%20neurovascular-ultrasound%20foundation%20model%20and%20learned%20decoding%20%28the%20MindEye-in-latents%20endgame%29%2C%20and%20the%20commodity%20Butterfly%20chip%20is%20the%20data-collection%20edge%20Iconeus/Forest/Openwater%20can%27t%20copy.%20Clippinator%20%26rarr%3B%20Aleph%20is%20the%20same%20move%20twice%3A%20throw%20learning%20at%20high-dimensional%20signal%20everyone%20else%20hand-engineers.%20I%20can%20write%20%24500K%E2%80%93%241M%20and%20move%20fast%2C%20and%20I%27d%20rather%20be%20useful%20on%20the%20ML/decoding%20side%20than%20pitch%20you%20%E2%80%94%20how%20much%20of%20the%20team%27s%20work%20right%20now%20is%20decoding%20vs.%20reconstruction%2C%20and%20how%20big%20does%20the%20dataset%20have%20to%20get%20before%20learned%20beats%20hand-engineered%20fUS%3F%0A%0A%E2%80%94%20Vansh",
+   "indian": false,
+   "delta": false,
+   "needs_triage": true,
    "urgency": false
   },
   {
