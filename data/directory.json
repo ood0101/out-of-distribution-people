@@ -1,7 +1,46 @@
 {
  "generated": "2026-06-23",
- "count": 269,
+ "count": 270,
  "people": [
+  {
+   "slug": "aayush-bansal",
+   "name": "Aayush Bansal",
+   "tier": 0,
+   "role": "Founder & CEO of a stealth startup (Physical AI / 4D world models) — just left the ~$1.5B SpreeAI try-on unicorn to found it. CMU Robotics PhD (4D audio-visual; Deva Ramanan + Yaser Sheikh), ex-Meta Reality Labs (avatars/neural rendering), ex-SpreeAI Principal Research Scientist. NSIT/Delhi. Indian.",
+   "spike": "T0 — founding NOW, pre-raise (reach out now). Departure-to-found, triple-sourced: CV header 'Founder & CEO, Stealth Startup' + homepage 'I am building new things' + CMU Swartz VentureBridge '26 ('an idea in stealth'). New domain = physically-intelligent 4D world models / Physical AI (corroborated via LinkedIn summaries, NOT verbatim — confirm). 12-year arc through the lineage now being commercialized: Recycle-GAN (ECCV'18, 1st author, 410★ — ancestor of controllable video gen), Open4D/4D-visualization (CVPR'20, 1st, CMU front-page), PixelNN, OpenShapes (CVPR'19 Best Paper Finalist). Meta Reality Labs (Sheikh/Zollhöfer): VR-NeRF, KeypointNeRF, EgoHumans (ICCV'23 Distinguished). At SpreeAI led the research org whose try-on/video models drove the ~$1.5B valuation — the rare researcher who ALSO shipped the commercial version. Scholar ~2.3K cites h-15. Uber Presidential + Qualcomm + Snap fellowships; CVPR/ECCV/AAAI'26 Area Chair. NSIT E-Cell President '10-11 (founder DNA). NOT IIT. HONESTY: no Form D/raise/co-founder found (pre-seed); domain corroborated-not-quoted; X gated. Network: Abhinav Shrivastava (CMU/Gupta orbit, also stealth video founder). T0.",
+   "tags": [
+    "founders",
+    "stealth-founder",
+    "departed",
+    "indian",
+    "physical-ai",
+    "world-models",
+    "neural-rendering",
+    "computer-vision",
+    "cmu",
+    "ex-meta-reality-labs"
+   ],
+   "cluster": "video-gen",
+   "signals": [
+    "stealth",
+    "departed",
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "",
+   "added": "2026-06-18",
+   "channel": "email",
+   "twitter": "aayushbansal",
+   "linkedin": "aayush-bansal-cmu",
+   "email": "ab.nsit@gmail.com",
+   "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ab.nsit%40gmail.com&su=Open4D%20%26rarr%3B%20Physical%20AI%2C%20the%2012-year%20through-line&body=Hi%20Aayush%20%E2%80%94%20I%20invest%20at%20inception%20and%20spend%20my%20time%20around%20the%20world-models%20/%20physical-AI%20frontier%20%28the%20Physical%20Intelligence%20crowd%2C%20the%20neural-rendering%20lineage%20now%20inside%20Luma/Runway%29.%20What%20made%20me%20reach%20out%20is%20that%20your%20new%20thing%20isn%27t%20a%20pivot%20%E2%80%94%20it%27s%20the%20same%20bet%20you%27ve%20pulled%20since%20Open4D%20and%20Recycle-GAN%3A%20learn%20the%204D%20world%20from%20sparse%2C%20unconstrained%2C%20unsupervised%20samples.%20And%20unlike%20most%20researchers%20chasing%20this%2C%20you%20already%20shipped%20the%20commercial%20version%20%E2%80%94%20you%20led%20the%20org%20whose%20try-on/video%20models%20took%20SpreeAI%20to%20a%20unicorn%2C%20then%20left%20it%20to%20build.%20That%20combination%20%28the%204D-world%20thesis%20%2B%20proven%20research-to-product%29%20is%20exactly%20what%20I%20want%20to%20back.%20I%20can%20write%20%24500K%E2%80%93%241M%20and%20move%20fast%2C%20and%20I%27d%20rather%20be%20useful%20early%20than%20pitch%20you.%20What%27s%20the%20wedge%20%E2%80%94%20is%20it%20the%20world%20model%20itself%2C%20or%20the%20first%20application%20on%20top%20of%20it%3F%0A%0A%E2%80%94%20Vansh",
+   "indian": true,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": true
+  },
   {
    "slug": "michael-domarkas",
    "name": "Michael Domarkas",

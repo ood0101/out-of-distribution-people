@@ -604,6 +604,18 @@
       "source_kind": "lab_page",
       "confidence": 0.85,
       "note": "real departure but between-jobs/passive, NOT a confirmed inflection — T3 watch"
+    },
+    {
+      "date": "2026-06-18",
+      "observed": "2026-06-18",
+      "slug": "aayush-bansal",
+      "type": "founding_listed",
+      "direction": 1,
+      "value": "Founder & CEO of a stealth Physical-AI/4D-world-models startup — CV + homepage + CMU VentureBridge '26; left the ~$1.5B SpreeAI try-on unicorn to found it",
+      "source_url": "https://www.aayushbansal.xyz/",
+      "source_kind": "own_site",
+      "confidence": 0.92,
+      "note": "domain (Physical AI/4D world models) corroborated via LinkedIn summaries, not verbatim; no Form D/raise found"
     }
   ]
 }

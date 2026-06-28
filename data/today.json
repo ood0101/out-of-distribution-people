@@ -1,21 +1,21 @@
 {
-  "built_at": "2026-06-18T11:41:14+00:00",
-  "date": "2026-06-18",
+  "built_at": "2026-06-28T15:43:05+00:00",
+  "date": "2026-06-28",
   "stats": {
-    "t0": 25,
+    "t0": 27,
     "t1": 60,
-    "in_flight": 8,
-    "pool": 131
+    "in_flight": 11,
+    "pool": 130
   },
   "pipeline": {
     "funnel": [
       {
         "status": "not-contacted",
-        "n": 283
+        "n": 284
       },
       {
         "status": "contacted",
-        "n": 8
+        "n": 11
       },
       {
         "status": "passed",
@@ -33,7 +33,7 @@
         "tier": 0,
         "channel": "twitter",
         "last_contacted": "2026-05-26",
-        "days_since": 23,
+        "days_since": 33,
         "dossier": "people/shivani-poddar.html"
       },
       {
@@ -42,7 +42,7 @@
         "tier": 0,
         "channel": "warm-intro",
         "last_contacted": "2026-05-27",
-        "days_since": 22,
+        "days_since": 32,
         "dossier": "people/blanca-villanueva.html"
       },
       {
@@ -51,7 +51,7 @@
         "tier": 0,
         "channel": "linkedin",
         "last_contacted": "2026-05-27",
-        "days_since": 22,
+        "days_since": 32,
         "dossier": "people/dan-kondratyuk.html"
       },
       {
@@ -60,7 +60,7 @@
         "tier": 0,
         "channel": "linkedin",
         "last_contacted": "2026-05-27",
-        "days_since": 22,
+        "days_since": 32,
         "dossier": "people/joshua-dillon.html"
       },
       {
@@ -69,7 +69,7 @@
         "tier": 0,
         "channel": "email",
         "last_contacted": "2026-05-27",
-        "days_since": 22,
+        "days_since": 32,
         "dossier": "people/michael-wornow.html"
       },
       {
@@ -78,8 +78,35 @@
         "tier": 0,
         "channel": "linkedin",
         "last_contacted": "2026-05-27",
-        "days_since": 22,
+        "days_since": 32,
         "dossier": "people/weiying-wang.html"
+      },
+      {
+        "slug": "amanpreet-singh",
+        "name": "Amanpreet Singh",
+        "tier": 0,
+        "channel": "linkedin",
+        "last_contacted": "2026-06-19",
+        "days_since": 9,
+        "dossier": "people/amanpreet-singh.html"
+      },
+      {
+        "slug": "raunaq-bhirangi",
+        "name": "Raunaq Bhirangi",
+        "tier": 0,
+        "channel": "twitter",
+        "last_contacted": "2026-06-19",
+        "days_since": 9,
+        "dossier": "people/raunaq-bhirangi.html"
+      },
+      {
+        "slug": "siddhant-haldar",
+        "name": "Siddhant Haldar",
+        "tier": 0,
+        "channel": "twitter",
+        "last_contacted": "2026-06-19",
+        "days_since": 9,
+        "dossier": "people/siddhant-haldar.html"
       },
       {
         "slug": "ajay-jain",
@@ -87,7 +114,7 @@
         "tier": 1,
         "channel": "twitter",
         "last_contacted": "2026-05-27",
-        "days_since": 22,
+        "days_since": 32,
         "dossier": "people/ajay-jain.html"
       },
       {
@@ -96,11 +123,11 @@
         "tier": 1,
         "channel": "twitter",
         "last_contacted": "2026-05-27",
-        "days_since": 22,
+        "days_since": 32,
         "dossier": "people/mayank-mishra.html"
       }
     ],
-    "total": 365
+    "total": 369
   },
   "replies": [],
   "followups": [
@@ -110,7 +137,7 @@
       "tier": 0,
       "channel": "twitter",
       "last_contacted": "2026-05-26",
-      "overdue_days": 9,
+      "overdue_days": 19,
       "touches": 0,
       "dossier": "people/shivani-poddar.html",
       "link": {
@@ -124,7 +151,7 @@
       "tier": 0,
       "channel": "warm-intro",
       "last_contacted": "2026-05-27",
-      "overdue_days": 8,
+      "overdue_days": 18,
       "touches": 1,
       "dossier": "people/blanca-villanueva.html",
       "link": {
@@ -138,7 +165,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-05-27",
-      "overdue_days": 8,
+      "overdue_days": 18,
       "touches": 0,
       "dossier": "people/dan-kondratyuk.html",
       "link": {
@@ -152,7 +179,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-05-27",
-      "overdue_days": 8,
+      "overdue_days": 18,
       "touches": 0,
       "dossier": "people/joshua-dillon.html",
       "link": {
@@ -166,7 +193,7 @@
       "tier": 0,
       "channel": "email",
       "last_contacted": "2026-05-27",
-      "overdue_days": 8,
+      "overdue_days": 18,
       "touches": 1,
       "dossier": "people/michael-wornow.html",
       "link": {
@@ -180,7 +207,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-05-27",
-      "overdue_days": 8,
+      "overdue_days": 18,
       "touches": 0,
       "dossier": "people/weiying-wang.html",
       "link": {
@@ -189,12 +216,54 @@
       }
     },
     {
+      "slug": "amanpreet-singh",
+      "name": "Amanpreet Singh",
+      "tier": 0,
+      "channel": "linkedin",
+      "last_contacted": "2026-06-19",
+      "overdue_days": 0,
+      "touches": 1,
+      "dossier": "people/amanpreet-singh.html",
+      "link": {
+        "label": "in/apsdehal",
+        "url": "https://linkedin.com/in/apsdehal/"
+      }
+    },
+    {
+      "slug": "raunaq-bhirangi",
+      "name": "Raunaq Bhirangi",
+      "tier": 0,
+      "channel": "twitter",
+      "last_contacted": "2026-06-19",
+      "overdue_days": 0,
+      "touches": 1,
+      "dossier": "people/raunaq-bhirangi.html",
+      "link": {
+        "label": "𝕏 @raunaqmb",
+        "url": "https://twitter.com/messages/compose?recipient_screen_name=raunaqmb"
+      }
+    },
+    {
+      "slug": "siddhant-haldar",
+      "name": "Siddhant Haldar",
+      "tier": 0,
+      "channel": "twitter",
+      "last_contacted": "2026-06-19",
+      "overdue_days": 0,
+      "touches": 1,
+      "dossier": "people/siddhant-haldar.html",
+      "link": {
+        "label": "𝕏 @haldar_siddhant",
+        "url": "https://twitter.com/messages/compose?recipient_screen_name=haldar_siddhant"
+      }
+    },
+    {
       "slug": "ajay-jain",
       "name": "Ajay Jain",
       "tier": 1,
       "channel": "twitter",
       "last_contacted": "2026-05-27",
-      "overdue_days": 8,
+      "overdue_days": 18,
       "touches": 1,
       "dossier": "people/ajay-jain.html",
       "link": {
@@ -208,7 +277,7 @@
       "tier": 1,
       "channel": "twitter",
       "last_contacted": "2026-05-27",
-      "overdue_days": 8,
+      "overdue_days": 18,
       "touches": 1,
       "dossier": "people/mayank-mishra.html",
       "link": {
@@ -222,7 +291,7 @@
       "slug": "maruan-al-shedivat",
       "name": "Maruan Al-Shedivat",
       "tier": 0,
-      "score": 737,
+      "score": 716,
       "chips": [
         "stealth",
         "departed"
@@ -248,7 +317,7 @@
       "slug": "gaurav-bharaj",
       "name": "Gaurav Bharaj",
       "tier": 0,
-      "score": 718,
+      "score": 688,
       "chips": [
         "stealth",
         "departed",
@@ -279,7 +348,7 @@
       "slug": "russ-tedrake",
       "name": "Russ Tedrake",
       "tier": 0,
-      "score": 684,
+      "score": 649,
       "chips": [
         "stealth",
         "departed",
@@ -303,10 +372,10 @@
       "dossier": "people/russ-tedrake.html"
     },
     {
-      "slug": "amanpreet-singh",
-      "name": "Amanpreet Singh",
+      "slug": "aayush-bansal",
+      "name": "Aayush Bansal",
       "tier": 0,
-      "score": 678,
+      "score": 645,
       "chips": [
         "stealth",
         "departed",
@@ -317,26 +386,30 @@
         "text": "pre-name · open",
         "kind": "open"
       },
-      "why_now": "T0 ACTIVE PURSUIT. Repeat venture-scale founder at maximal inflection: just LEFT his OWN funded company (Founder & CTO of Contextual AI, co-founded 2023 w/ Douwe Kiela; $20M seed Bain, $80M Series A) and is ACTIVELY HIRING A FOUNDING TEAM (LinkedIn 'something…",
-      "do_this": "DM/InMail on LinkedIn (apsdehal) or email — he's in founder-hiring mode so responsive. Subject: lead with 'system over models' + the verification-generation asymmetry from Weaviate Pod #114, and…",
-      "channel": "linkedin",
-      "draft": null,
-      "link": {
-        "label": "in/apsdehal",
-        "url": "https://linkedin.com/in/apsdehal/"
+      "why_now": "T0 FOUNDING NOW, PRE-RAISE. Departure-to-found, triple-sourced: CV 'Founder & CEO, Stealth Startup' + homepage 'I am building new things' + CMU Swartz VentureBridge '26 ('an idea in stealth'). LEFT the ~$1.5B SpreeAI try-on unicorn (thriving, not a flameout)…",
+      "do_this": "EMAIL ab.nsit@gmail.com (or X DM @aayushbansal — gated). Subject: 'Open4D -> Physical AI, the 12-year through-line.' Lead with the 4D-world/unsupervised-exemplar thesis as the through-line of his arc…",
+      "channel": "email",
+      "draft": {
+        "subject": "Open4D &rarr; Physical AI, the 12-year through-line",
+        "body": "Hi Aayush — I invest at inception and spend my time around the world-models / physical-AI frontier (the Physical Intelligence crowd, the neural-rendering lineage now inside Luma/Runway). What made me reach out is that your new thing isn't a pivot — it's the same bet you've pulled since Open4D and Re…"
       },
-      "twitter": "apsdehal",
-      "linkedin": "apsdehal",
-      "email": null,
-      "dossier": "people/amanpreet-singh.html"
+      "link": {
+        "label": "✉ email",
+        "url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ab.nsit%40gmail.com"
+      },
+      "twitter": "aayushbansal",
+      "linkedin": "aayush-bansal-cmu",
+      "email": "ab.nsit@gmail.com",
+      "dossier": "people/aayush-bansal.html"
     },
     {
-      "slug": "abhinav-shrivastava",
-      "name": "Abhinav Shrivastava",
+      "slug": "pannag-sanketi",
+      "name": "Pannag R. Sanketi",
       "tier": 0,
-      "score": 657,
+      "score": 639,
       "chips": [
         "stealth",
+        "departed",
         "founder",
         "indian"
       ],
@@ -344,35 +417,49 @@
         "text": "pre-name · open",
         "kind": "open"
       },
-      "why_now": "T0 (lean) — Co-Founder & CEO of a stealth 'AI-native video infrastructure' co (own site + LinkedIn, verbatim). Likely wedge = video-as-neural-weights INFRA (NeRV→NeRV-Diffusion), not a generator. Scholar h-53 ~20K cites; CMU/Abhinav-Gupta lineage (shared w/…",
-      "do_this": "EMAIL abhinav@cs.umd.edu (or X DM @abhi2610). Lead with video-as-weights (NeRV-Diffusion 'generate weights, decode to video') as an INFRA bet vs Luma/Runway/Pika/Genmo; note the Luma student…",
-      "channel": "email",
+      "why_now": "Senior DeepMind Robotics departure (Senior Staff SWE / TLM) to stealth robotics+AI. FOUNDED Open X-Embodiment / RT-X ('ImageNet for robotics', 21+ labs), RT-2 co-author, led human-level Table Tennis robot. 14,858 cites, h-30. LinkedIn flipped to 'Stealth…",
+      "do_this": "LinkedIn DM pannag-sanketi (or X DM @pannag_) — subj 'The ImageNet-for-robotics bet, now as a company'; lead with the data-substrate edge (21 labs -> RT-X) vs Physical Intelligence/Skild/Generalist,…",
+      "channel": "linkedin",
       "draft": {
-        "subject": "Video-as-weights as the infra bet",
-        "body": "Hi Abhinav — I invest at inception and spend my time around the video-model wave (Luma, Runway, Pika, Genmo on the generation side). What made me reach out is that \"AI-native video infrastructure\" from you reads as a different bet than another generator: your NeRV &rarr; NeRV-Diffusion line treats a…"
+        "subject": "the part none of the robotics companies started from",
+        "body": "Hi Pannag — SAS-Prompt read to me like the honest next step after RT-X: once you've pooled cross-embodiment data, the self-improvement loop on top of it becomes the real bottleneck. I invest at inception and have spent serious time on the post-DeepMind wave (Physical Intelligence, Skild, Generalist, Figure's Helix) — and the part none of them started from is the thing you actually pulled off: getting 21 competing labs to pool their data is rarer than any single model. I'd love to hear how you're weighing the data flywheel against the dynamic-control gap your table-tennis work exposed — 45% vs. humans is the most honest agility number anyone's published. I can write $500K–$1M, but mostly I'd just like to know what you're building. — Vansh"
       },
       "link": {
-        "label": "✉ email",
-        "url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=abhinav%40cs.umd.edu"
+        "label": "in/pannag-sanketi",
+        "url": "https://linkedin.com/in/pannag-sanketi/"
       },
-      "twitter": "abhi2610",
-      "linkedin": "abhi2610",
-      "email": "abhinav@cs.umd.edu",
-      "dossier": "people/abhinav-shrivastava.html"
+      "twitter": "pannag_",
+      "linkedin": "pannag-sanketi",
+      "email": null,
+      "dossier": "people/pannag-sanketi.html"
     }
   ],
   "signals": [
+    {
+      "slug": "aayush-bansal",
+      "name": "Aayush Bansal",
+      "tier": 0,
+      "date": "2026-06-18",
+      "days_ago": 10,
+      "type": "founding listed",
+      "text": "Founder & CEO of a stealth Physical-AI/4D-world-models startup — CV + homepage + CMU VentureBridge '26; left the ~$1.5B SpreeAI try-on unicorn to…",
+      "source_url": "https://www.aayushbansal.xyz/",
+      "source_kind": "own_site",
+      "delta": 75,
+      "hot": true,
+      "has_dossier": true
+    },
     {
       "slug": "maruan-al-shedivat",
       "name": "Maruan Al-Shedivat",
       "tier": 0,
       "date": "2026-06-12",
-      "days_ago": 1,
+      "days_ago": 11,
       "type": "departure",
       "text": "Left Genesis Molecular AI (Head of ML Research, Pearl all-atom structure team) — Genesis now past-tense on his site; team page 404s",
       "source_url": "https://maruan.alshedivat.com/",
       "source_kind": "lab_page",
-      "delta": 74,
+      "delta": 70,
       "hot": true,
       "has_dossier": true
     },
@@ -381,12 +468,12 @@
       "name": "Daniel Zeng",
       "tier": 3,
       "date": "2026-06-12",
-      "days_ago": 1,
+      "days_ago": 11,
       "type": "departure",
       "text": "Left Genesis Molecular AI (~Jun 2026, site past-tense Jun-12-2026) — but page is passive ('I am an ML researcher and engineer'), no stealth/building…",
       "source_url": "https://danielzeng.com/",
       "source_kind": "lab_page",
-      "delta": 70,
+      "delta": 66,
       "hot": true,
       "has_dossier": true
     },
@@ -395,12 +482,12 @@
       "name": "Maruan Al-Shedivat",
       "tier": 0,
       "date": "2026-06-12",
-      "days_ago": 1,
+      "days_ago": 11,
       "type": "bio change",
       "text": "Site + Scholar → 'Building @ Stealth' (NYC): 'autonomous systems at the AI × Science intersection.' No named entity/raise yet — inception window open.",
       "source_url": "https://scholar.google.com/citations?user=iUe4TdgAAAAJ",
       "source_kind": "x_bio",
-      "delta": 66,
+      "delta": 59,
       "hot": true,
       "has_dossier": true
     },
@@ -409,12 +496,12 @@
       "name": "Andrei Tyrin",
       "tier": 0,
       "date": "2025-11-19",
-      "days_ago": 1,
+      "days_ago": 11,
       "type": "incorporation filing",
       "text": "Co-founder of Onepot AI (autonomous AI-chemist; ML/agentic half) — $13M out of stealth Nov 19 2025 (Fifty Years lead; Zaremba + Jeff Dean angels)",
       "source_url": "https://onepot.ai",
       "source_kind": "news",
-      "delta": 8,
+      "delta": 7,
       "hot": false,
       "has_dossier": true
     },
@@ -422,22 +509,8 @@
       "slug": "gaurav-bharaj",
       "name": "Gaurav Bharaj",
       "tier": 0,
-      "date": "2026-05-13",
-      "days_ago": 6,
-      "type": "departure",
-      "text": "Left Reality Defender (co-founder & Chief Scientist) — LinkedIn 'a new chapter begins' post; site past-tenses RD, no current employer",
-      "source_url": "https://gauravbharaj.github.io/",
-      "source_kind": "own_site",
-      "delta": 66,
-      "hot": true,
-      "has_dossier": true
-    },
-    {
-      "slug": "gaurav-bharaj",
-      "name": "Gaurav Bharaj",
-      "tier": 0,
       "date": "2026-09-01",
-      "days_ago": 6,
+      "days_ago": 16,
       "type": "bio change",
       "text": "GitHub bio 'Perpetual AI' (SF) + StealthCoSpy tracker 'now building in Stealth Mode' — repeat founder building in stealth; company UNCONFIRMED…",
       "source_url": "https://github.com/gauravbharaj",
@@ -447,36 +520,36 @@
       "has_dossier": true
     },
     {
-      "slug": "nada-amin",
-      "name": "Nada Amin",
-      "tier": 1,
-      "date": "2026-05-01",
-      "days_ago": 6,
-      "type": "founding listed",
-      "text": "Co-founded Midspiral ('correctness layer for AI-generated software'; LemmaScript/lemmafit/claimcheck) — midspiral.com lists her as Cofounder w/…",
-      "source_url": "https://midspiral.com/",
+      "slug": "gaurav-bharaj",
+      "name": "Gaurav Bharaj",
+      "tier": 0,
+      "date": "2026-05-13",
+      "days_ago": 16,
+      "type": "departure",
+      "text": "Left Reality Defender (co-founder & Chief Scientist) — LinkedIn 'a new chapter begins' post; site past-tenses RD, no current employer",
+      "source_url": "https://gauravbharaj.github.io/",
       "source_kind": "own_site",
-      "delta": 61,
+      "delta": 62,
       "hot": true,
       "has_dossier": true
     },
     {
-      "slug": "vidhi-jain",
-      "name": "Vidhi Jain",
-      "tier": 2,
-      "date": "2026-03-01",
-      "days_ago": 6,
-      "type": "departure",
-      "text": "Left OpenAI (AI-for-Science, ~8mo) ~Mar 2026; finished CMU PhD Aug 2025; 'actively looking for new opportunities in robotics and AI' — on the market…",
-      "source_url": "https://vidhijain.github.io/",
+      "slug": "nada-amin",
+      "name": "Nada Amin",
+      "tier": 1,
+      "date": "2026-05-01",
+      "days_ago": 16,
+      "type": "founding listed",
+      "text": "Co-founded Midspiral ('correctness layer for AI-generated software'; LemmaScript/lemmafit/claimcheck) — midspiral.com lists her as Cofounder w/…",
+      "source_url": "https://midspiral.com/",
       "source_kind": "own_site",
-      "delta": 38,
-      "hot": false,
+      "delta": 59,
+      "hot": true,
       "has_dossier": true
     }
   ],
   "triage": {
-    "pending": 115,
+    "pending": 119,
     "highlights": [
       {
         "name": "Sumith Kulal",
