@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-06-28T16:01:57+00:00",
+  "last_built": "2026-06-28T16:02:58+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -9727,9 +9727,9 @@
     },
     "raffi-hotter": {
       "name": "Raffi Hotter",
-      "tier": null,
-      "tier_label": null,
-      "category": null,
+      "tier": 0,
+      "tier_label": "tier-0: active pursuit",
+      "category": "outreach",
       "tags": [
         "founders",
         "neurotech",
@@ -9754,7 +9754,7 @@
         "phrase_founded": false
       },
       "last_git_touch": "2026-06-28T21:31:01+05:30",
-      "needs_triage": true,
+      "needs_triage": false,
       "emails": [
         "raphael.hotter@gmail.com"
       ],
@@ -9771,11 +9771,11 @@
       "next_action_date": null,
       "response": null,
       "notes": "",
-      "urgency_decay_date": null,
-      "urgency_reason": null,
-      "channel": null,
-      "next_action": null,
-      "cluster": null,
+      "urgency_decay_date": "2026-08-31",
+      "urgency_reason": "T0 — active pursuit (owner confirmed BCI/Aleph cluster on-thesis, 18 Jun 2026). Co-founder of Aleph Neuro (with Marley Xiong, T0) — the just-launched transcranial-ultrasound BCI lab that shipped a world-first through-skull 3D ULM brain image (Jun 2026, Butterfly Network partner). Elite arc: ISEF 2018 Physics 2nd (Canada) → Pioneer 2018 portable brain scanner → Adam Cohen lab (Harvard) + Google X neuro → Aleph. Serial neurotech-talent convener (School 2.0). No disclosed round = inception window open. Canadian, NOT Indian. Honesty: the launch artifact is a team result (he's #2 committer on the ULM pipeline, substantive DSP/calibration — not solo genius); thin Scholar by design (builder not academic).",
+      "channel": "x",
+      "next_action": "Reach out NOW (X DM @raffi_hotter — he engages on physics — or raphael.hotter@gmail.com), ALONGSIDE Marley Xiong (backing Aleph backs both). Lead physics-first (his 2022 'Questions related to BCIs' post asked the exact wave-physics questions Aleph now answers — 'software glasses for ultrasound'); name landscape (Forest, Openwater, Kernel vs Neuralink/Precision/Synchron). $500K-$1M, confirm the funding window. Don't call Curius his; don't overclaim 'telepathy' as shipped.",
+      "cluster": "neurotech-bci",
       "email_override": null,
       "outreach_subject_override": null,
       "outreach_body_override": null,
@@ -12793,6 +12793,61 @@
       "twitter_handle": null,
       "linkedin_slug": "thijsdev",
       "github_handle": "tandpfun",
+      "status": "not-contacted",
+      "last_contacted": null,
+      "next_action_date": null,
+      "response": null,
+      "notes": "",
+      "urgency_decay_date": null,
+      "urgency_reason": null,
+      "channel": null,
+      "next_action": null,
+      "cluster": null,
+      "email_override": null,
+      "outreach_subject_override": null,
+      "outreach_body_override": null,
+      "channels_attempted": []
+    },
+    "thomas-ribeiro": {
+      "name": "Thomas Ribeiro",
+      "tier": 2,
+      "tier_label": "tier-2: tracking",
+      "category": "outreach",
+      "tags": [
+        "neurotech",
+        "bci",
+        "ultrasound",
+        "founding-team",
+        "just-launched",
+        "aleph-neuro",
+        "isef",
+        "network-brainhack",
+        "recursive-node"
+      ],
+      "indian": false,
+      "delta": false,
+      "one_liner": "",
+      "signals": {
+        "tag_stealth_founder": false,
+        "tag_founders": false,
+        "phrase_stealth": false,
+        "phrase_departed": false,
+        "phrase_raising": true,
+        "phrase_founded": false
+      },
+      "last_git_touch": null,
+      "needs_triage": false,
+      "emails": [
+        "ribeirothomas28@gmail.com"
+      ],
+      "email_primary": "ribeirothomas28@gmail.com",
+      "email_primary_kind": "personal",
+      "outreach_subject": null,
+      "outreach_body_preview": null,
+      "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ribeirothomas28%40gmail.com",
+      "twitter_handle": "thomas_rribeiro",
+      "linkedin_slug": "tribeiro1",
+      "github_handle": "thomasrribeiro",
       "status": "not-contacted",
       "last_contacted": null,
       "next_action_date": null,

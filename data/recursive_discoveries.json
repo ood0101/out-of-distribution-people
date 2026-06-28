@@ -1866,7 +1866,7 @@
       "discovered_at": "2026-06-18",
       "context": "Co-founder of Aleph Neuro with Marley Xiong (T1) — co-built the world-first through-skull 3D ULM brain image + the McGill mind-controlled wheelchair (won top prize). Aleph is a 2-founder node; Hotter is almost certainly comparably exceptional (the other technical half). Research + tier next. X @raffi_hotter.",
       "priority": "P1",
-      "status": "pending",
+      "status": "dossiered",
       "tags": [
         "aleph-neuro",
         "bci",
@@ -1874,6 +1874,51 @@
         "mcgill",
         "co-founder",
         "2-founder-node"
+      ]
+    },
+    {
+      "name": "Santi Aranguri",
+      "from_dossier": "raffi-hotter",
+      "discovered_at": "2026-06-18",
+      "context": "School 2.0 alum. Diffusion-model scaling laws / phase transitions; NYU PhD ON LEAVE (inflection). His work was used by Anthropic to eval Claude Sonnet 4.5 (ICLR'25). Argentine. Strong on-thesis ML researcher at an inflection — research + tier.",
+      "priority": "P1",
+      "status": "pending",
+      "tags": [
+        "school-2.0",
+        "scaling-laws",
+        "diffusion",
+        "nyu",
+        "on-leave",
+        "ml-theory"
+      ]
+    },
+    {
+      "name": "Kesava Kirupa Dinakaran",
+      "from_dossier": "raffi-hotter",
+      "discovered_at": "2026-06-18",
+      "context": "School 2.0 alum. CEO of Luminai (ex-DigitalBrain, YC S20, ~$16M raised); 2× Rubik's Cube world-record holder; exceptional-outlier story. Indian.",
+      "priority": "P2",
+      "status": "pending",
+      "tags": [
+        "school-2.0",
+        "luminai",
+        "founder",
+        "indian",
+        "exceptional-outlier"
+      ]
+    },
+    {
+      "name": "Thomas Ribeiro",
+      "from_dossier": "raffi-hotter",
+      "discovered_at": "2026-06-18",
+      "context": "Aleph team; co-built the original 2018 '$1,000 portable brain scanner' (Pioneer) with Raffi. Same launch, same inception window — part of the Aleph founding cluster.",
+      "priority": "P1",
+      "status": "pending",
+      "tags": [
+        "aleph-neuro",
+        "bci",
+        "pioneer",
+        "founding-cluster"
       ]
     }
   ]

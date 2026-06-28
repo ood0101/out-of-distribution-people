@@ -1,6 +1,6 @@
 {
  "generated": "2026-06-28",
- "count": 273,
+ "count": 274,
  "people": [
   {
    "slug": "aayush-bansal",
@@ -70,6 +70,43 @@
    "linkedin": "marley-xiong",
    "email": null,
    "gmail_url": null,
+   "indian": false,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": true
+  },
+  {
+   "slug": "raffi-hotter",
+   "name": "Raffi Hotter",
+   "tier": 0,
+   "role": "Co-founder of Aleph Neuro — transcranial-ultrasound brain interfaces — which just launched (Jun 2026) by imaging a living brain through the intact skull. Physics-grade neuro-instrumentation builder + serial community-builder (School 2.0). McGill math+CS+physics; ex-Adam Cohen lab (Harvard) + Google X. Canadian.",
+   "spike": "Co-founder of Aleph Neuro (alephneuro.com) — transcranial-ultrasound BCI — which JUST LAUNCHED (~Jun 25 2026) by imaging a living human brain THROUGH THE INTACT SKULL at super-resolution (ULM + FDA microbubbles, on Butterfly's Ultrasound-on-Chip; ~5-person team; NO disclosed round = inception window). THE ALPHA (calibrated honestly): NOT a solo physics genius — an AND: capable neuro-instrumentation/DSP builder + serial neurotech-talent CONVENER + unusual physics taste, and that catalysis shipped a world-first. The genuinely rare thing = the BLOG→COMPANY SPINE: in his 2022 'Questions related to BCIs' post he wrote down the EXACT wave-physics questions Aleph now answers ('why is ultrasound attenuation lower… how important is the diploe layer in scattering') then built the answer. Signature move: 'software glasses for ultrasound' (computation fixes transcranial aberration, not better hardware). 8-yr arc: ISEF Canada 2nd-Physics → Pioneer '$1000 portable brain scanner' (2018) → led EEG wheelchair as a freshman (IEEE SMC'19, ~35c) → Adam Cohen lab Harvard (Luminos bioRxiv'25) → Aleph. CALIBRATE: he's #2 committer on the team result (not lead); telepathy = aspiration, shipped = vascular imaging; ~41 Scholar cites (builder not academic — the spike is shipping + convening + taste). Founder of School 2.0 (26-30p NM group house). Canadian, NOT Indian.",
+   "tags": [
+    "founders",
+    "neurotech",
+    "bci",
+    "ultrasound",
+    "aleph-neuro",
+    "builder",
+    "community-builder",
+    "harvard",
+    "mcgill",
+    "canadian"
+   ],
+   "cluster": "neurotech-bci",
+   "signals": [
+    "founder"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "2026-06-28",
+   "added": "2026-06-23",
+   "channel": "x",
+   "twitter": "raffi_hotter",
+   "linkedin": "raffi-hotter",
+   "email": "raphael.hotter@gmail.com",
+   "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=raphael.hotter%40gmail.com",
    "indian": false,
    "delta": false,
    "needs_triage": false,
@@ -3162,6 +3199,42 @@
    "urgency": false
   },
   {
+   "slug": "thomas-ribeiro",
+   "name": "Thomas Ribeiro",
+   "tier": 2,
+   "role": "",
+   "spike": "",
+   "tags": [
+    "neurotech",
+    "bci",
+    "ultrasound",
+    "founding-team",
+    "just-launched",
+    "aleph-neuro",
+    "isef",
+    "network-brainhack",
+    "recursive-node"
+   ],
+   "cluster": null,
+   "signals": [
+    "raising"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "",
+   "added": "2026-06-28",
+   "channel": null,
+   "twitter": "thomas_rribeiro",
+   "linkedin": "tribeiro1",
+   "email": "ribeirothomas28@gmail.com",
+   "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ribeirothomas28%40gmail.com",
+   "indian": false,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
+  },
+  {
    "slug": "dmitrii-galatenko",
    "name": "Dmitrii Galatenko",
    "tier": 2,
@@ -4391,43 +4464,6 @@
    "linkedin": "ennucore",
    "email": "careers@alephneuro.com",
    "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=careers%40alephneuro.com&su=the%200.1%25%2C%20and%20ML-on-raw-ultrasound%20as%20the%20real%20Aleph&body=Hi%20Lev%20%E2%80%94%20I%20invest%20at%20inception%20and%20Aleph%20is%20the%20cleanest%20version%20of%20a%20thesis%20I%20keep%20landing%20on.%20Everyone%27s%20resharing%20the%20brain%20image%2C%20but%20the%20line%20that%20actually%20matters%20is%20yours%3A%20the%20probe%20takes%20in%20terabytes/hour%20and%20the%20pipeline%20keeps%200.1%25%20%E2%80%94%20%22end-to-end%20ML%2C%20trained%20on%20large%20enough%20datasets%2C%20will%20recover%20far%20more%20signal.%22%20That%27s%20the%20real%20company%20%E2%80%94%20the%20noninvasive-ultrasound%20demo%20is%20the%20cold-start%20for%20a%20neurovascular-ultrasound%20foundation%20model%20and%20learned%20decoding%20%28the%20MindEye-in-latents%20endgame%29%2C%20and%20the%20commodity%20Butterfly%20chip%20is%20the%20data-collection%20edge%20Iconeus/Forest/Openwater%20can%27t%20copy.%20Clippinator%20%26rarr%3B%20Aleph%20is%20the%20same%20move%20twice%3A%20throw%20learning%20at%20high-dimensional%20signal%20everyone%20else%20hand-engineers.%20I%20can%20write%20%24500K%E2%80%93%241M%20and%20move%20fast%2C%20and%20I%27d%20rather%20be%20useful%20on%20the%20ML/decoding%20side%20than%20pitch%20you%20%E2%80%94%20how%20much%20of%20the%20team%27s%20work%20right%20now%20is%20decoding%20vs.%20reconstruction%2C%20and%20how%20big%20does%20the%20dataset%20have%20to%20get%20before%20learned%20beats%20hand-engineered%20fUS%3F%0A%0A%E2%80%94%20Vansh",
-   "indian": false,
-   "delta": false,
-   "needs_triage": true,
-   "urgency": false
-  },
-  {
-   "slug": "raffi-hotter",
-   "name": "Raffi Hotter",
-   "tier": null,
-   "role": "Co-founder of Aleph Neuro — transcranial-ultrasound brain interfaces — which just launched (Jun 2026) by imaging a living brain through the intact skull. Physics-grade neuro-instrumentation builder + serial community-builder (School 2.0). McGill math+CS+physics; ex-Adam Cohen lab (Harvard) + Google X. Canadian.",
-   "spike": "Co-founder of Aleph Neuro (alephneuro.com) — transcranial-ultrasound BCI — which JUST LAUNCHED (~Jun 25 2026) by imaging a living human brain THROUGH THE INTACT SKULL at super-resolution (ULM + FDA microbubbles, on Butterfly's Ultrasound-on-Chip; ~5-person team; NO disclosed round = inception window). THE ALPHA (calibrated honestly): NOT a solo physics genius — an AND: capable neuro-instrumentation/DSP builder + serial neurotech-talent CONVENER + unusual physics taste, and that catalysis shipped a world-first. The genuinely rare thing = the BLOG→COMPANY SPINE: in his 2022 'Questions related to BCIs' post he wrote down the EXACT wave-physics questions Aleph now answers ('why is ultrasound attenuation lower… how important is the diploe layer in scattering') then built the answer. Signature move: 'software glasses for ultrasound' (computation fixes transcranial aberration, not better hardware). 8-yr arc: ISEF Canada 2nd-Physics → Pioneer '$1000 portable brain scanner' (2018) → led EEG wheelchair as a freshman (IEEE SMC'19, ~35c) → Adam Cohen lab Harvard (Luminos bioRxiv'25) → Aleph. CALIBRATE: he's #2 committer on the team result (not lead); telepathy = aspiration, shipped = vascular imaging; ~41 Scholar cites (builder not academic — the spike is shipping + convening + taste). Founder of School 2.0 (26-30p NM group house). Canadian, NOT Indian.",
-   "tags": [
-    "founders",
-    "neurotech",
-    "bci",
-    "ultrasound",
-    "aleph-neuro",
-    "builder",
-    "community-builder",
-    "harvard",
-    "mcgill",
-    "canadian"
-   ],
-   "cluster": null,
-   "signals": [
-    "founder"
-   ],
-   "status": "not-contacted",
-   "last_contacted": null,
-   "next_action_date": null,
-   "updated": "2026-06-28",
-   "added": "2026-06-23",
-   "channel": null,
-   "twitter": "raffi_hotter",
-   "linkedin": "raffi-hotter",
-   "email": "raphael.hotter@gmail.com",
-   "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=raphael.hotter%40gmail.com",
    "indian": false,
    "delta": false,
    "needs_triage": true,
