@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lev Chizhov &mdash; Out of Distribution People</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="site-title">Out of Distribution People</div>
+    <div class="breadcrumb"><a href="../index.html">/ index</a> / lev-chizhov</div>
+  </nav>
+
+  <div class="profile-header">
+    <h1>Lev Chizhov</h1>
+    <p class="one-liner"><strong>A ~22-year-old Russian physicist&ndash;hacker who, with 4 others and <span style="color:var(--accent)">no lab, no PhD, and no permission</span>, built what they claim are the highest-resolution 3D images of a living human brain ever taken from <em>outside</em> the skull &mdash; using a ~$2K ultrasound chip instead of an MRI room.</strong> Co-founder of <strong>Aleph</strong> (alephneuro.com), launched publicly <strong>25 Jun 2026</strong>, "a research lab working on new modalities of brain interfacing." The thesis is the OOD part: <em>imaging neural activity with ultrasound</em> as the cheap, scalable substrate for a future BCI &mdash; with <strong>end-to-end ML on the raw signal as the explicit second act.</strong> <em>Status: full-time co-founder in San Francisco (the "studying at MIPT / accepted to &Eacute;cole Polytechnique" on his old site is stale). New Science 2025 fellow (neurotech). IZhO gold &middot; Wolfram SRI '24 &middot; Amgen Scholars '22. Russian-origin (St. Petersburg, Lyceum 239 &rarr; MIPT). NOT Indian.</em></p>
+    <div class="tags">
+      <span class="tag" style="background:#f3d9d4;color:var(--accent);">tier-0: active pursuit</span>
+      <span class="tag">founder</span>
+      <span class="tag">neurotech</span>
+      <span class="tag">bci</span>
+      <span class="tag">functional-ultrasound</span>
+      <span class="tag">ai-ml-wedge</span>
+      <span class="tag">physics-olympiad</span>
+      <span class="tag">new-science-fellow</span>
+      <span class="tag">russian</span>
+      <span class="tag">ai-agents</span>
+      <span class="tag">ood</span>
+    </div>
+    <div class="links">
+      <a href="https://lev.la/">lev.la (personal, stale)</a>
+      <a href="https://ennucore.com/">ennucore.com</a>
+      <a href="https://alephneuro.com/">alephneuro.com (the company)</a>
+      <a href="https://x.com/levchizhov">twitter/x (@levchizhov &mdash; active)</a>
+      <a href="https://x.com/alephneuro">x (@alephneuro)</a>
+      <a href="https://github.com/ennucore">github (@ennucore)</a>
+      <a href="https://scholar.google.com/citations?user=_ZlS3TgAAAAJ">google scholar</a>
+      <a href="https://www.linkedin.com/in/ennucore/">linkedin</a>
+      <a href="mailto:lc@lev.la">lc@lev.la</a>
+    </div>
+  </div>
+
+  <!-- THE ALPHA -->
+  <div class="spike-box">
+    <div class="label">&#9670; The Alpha &mdash; what&rsquo;s actually special, measured against the field</div>
+    <p>
+      The alpha is <strong>NOT the ultrasound physics</strong> (functional ultrasound / fUS and microbubble super-resolution localization are established academic techniques &mdash; Mickael Tanter / Charlie Demen&eacute; at Physics for Medicine Paris; the 2015 ULM Nature paper). The alpha is the <strong>combination of three things almost nobody else is doing at once:</strong>
+    </p>
+    <p style="margin-top:0.6rem;">
+      <strong>(1) A cost/scale inversion as a deliberate wedge.</strong> The incumbent BCI world is invasive electrodes (Neuralink, Precision Neuroscience, Paradromics) or room-scale machines (MRI, MEG). Aleph&rsquo;s bet is that a <strong>commodity ultrasound-on-chip</strong> (Butterfly Network&rsquo;s Embedded&trade; program &mdash; a handheld probe that costs ~$2K, not $1M) is the substrate that makes neural imaging <em>cheap and scalable enough to put on everyone</em>. They claim <em>"MRI-level detail&hellip; without drilling or the bulk of an MRI machine"</em> and a 3D vascular volume <strong>"100&times; greater volumetrically than comparable CT."</strong> Whether or not that headline survives scrutiny, the <em>strategic framing</em> &mdash; ride a Moore&rsquo;s-law-y consumer chip into neuro &mdash; is the venture-shaped insight.
+    </p>
+    <p style="margin-top:0.6rem;">
+      <strong>(2) The AI/ML second act &mdash; stated, not yet built (this is the on-thesis crux).</strong> Their own blog is explicit that today&rsquo;s result is signal processing, and that the <em>real</em> play is learned: <em>&ldquo;A standard ultrasound probe receives terabytes of data per hour, but the typical processing pipeline compresses this down to just 0.1% of the original. It&rsquo;s built on hand-engineered features&hellip; We believe end-to-end machine learning, trained on large enough datasets, will recover far more signal.&rdquo;</em> They are <strong>&ldquo;building the world&rsquo;s largest dataset of neurovascular ultrasound&rdquo;</strong> and explicitly cite <strong>MindEye</strong> (fMRI&rarr;image reconstruction) as the north star &mdash; <em>&ldquo;communicate in latents&mdash;the raw thoughts that words attempt to capture.&rdquo;</em> That is a <strong>data-moat + neural-decoding foundation-model</strong> thesis wearing a hardware demo as its cold-start. The careers page lists <strong>Machine Learning Engineer first</strong> of 10 roles.
+    </p>
+    <p style="margin-top:0.6rem;">
+      <strong>(3) &ldquo;Achievement despite no scaffolding&rdquo; in its purest form.</strong> His verbatim tell: <em>&ldquo;Doing science outside of the context of a lab turned out to be easier than we thought - it&rsquo;s been so fun!&rdquo;</em> &mdash; a 5-person team with no institution, no PhDs required, self-experimenting (he got <em>&ldquo;an improvised last-minute fade haircut for better signal quality&hellip; to see inside your brain&rdquo;</em>), open-sourcing the data and code, and producing a result that got a national-medtech-press launch in <strong>~4 months</strong> (domain registered 8 Feb 2026 &rarr; public 25 Jun 2026). This is the owner&rsquo;s exact taste: rate-of-change + no permission.
+    </p>
+    <p style="margin-top:0.6rem;" class="small muted">
+      <strong>Calibrated honestly (where the alpha is thin):</strong> The <em>current</em>, verifiable artifact is a hardware/imaging demo, and the science it&rsquo;s built on (fUS, ULM) is not theirs. The AI/ML core that would make this on-thesis for this fund is <strong>aspirational</strong> &mdash; stated in a blog post, staffed by a job opening, not yet shipped. Lev personally is <strong>not</strong> the neuro-imaging domain expert on the team (that&rsquo;s co-founder <strong>Raffi Hotter</strong> &mdash; ex-Adam Cohen lab @ Harvard, ex-Google X neurotech); Lev&rsquo;s spike is <strong>physics + AI-agents/software</strong> (Clippinator). His research record is thin and young (1 paper, not first author, on metamaterials &mdash; unrelated to neuro). So: real venture, real OOD founder energy, genuine AI/ML <em>intent</em> &mdash; but read this as a <strong>frontier-neurotech company with an AI/ML wedge</strong>, not (yet) an AI/ML-foundation-model company. The tier call below turns entirely on how you weight that.
+    </p>
+  </div>
+
+  <!-- HOW IT STACKS UP -->
+  <section>
+    <h2>How it stacks up (the bet vs. the closest comparables)</h2>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Aleph&rsquo;s approach</td><td>Closest comparable</td><td>The edge (and the catch)</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Non-invasive functional ultrasound</strong> via commodity chip (Butterfly Embedded)</td><td><strong>Invasive electrodes</strong>: Neuralink, Precision Neuroscience, Paradromics, Synchron</td><td><strong>No surgery, mass-market price.</strong> Catch: hemodynamic (blood-flow) signal is slower &amp; lower-res than spikes; reading <em>through</em> the skull is hard.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>fUS / ULM super-resolution vascular imaging</strong></td><td><strong>Iconeus</strong> (Tanter/Demen&eacute; spinout, Paris) &mdash; the fUS incumbent; academic ULM groups</td><td>Aleph&rsquo;s differentiation is <strong>cheap chip + ML-on-raw-signal + consumer ambition</strong>, not the physics (which is Iconeus/academia&rsquo;s). Catch: the core technique isn&rsquo;t novel to them.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>&ldquo;Read thoughts as latents&rdquo; / neural decoding</strong> (stated future)</td><td><strong>MindEye, Meta brain2text</strong>, Tang/Huth semantic decoding (all fMRI/MEG-based)</td><td>If the imaging substrate is cheap &amp; wearable, the decoder has a <strong>data-collection advantage</strong> incumbents (stuck in MRI rooms) lack. Catch: not built yet.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Functional ultrasound as a wearable</strong> (long-term)</td><td><strong>Openwater</strong> (Mary Lou Jepsen, near-IR), <strong>Kernel</strong> (fNIRS/MEG), <strong>Forest Neurotech</strong> (implanted fUS)</td><td>Closest in spirit to Openwater/Forest. Aleph is non-invasive (vs Forest) and ultrasound (vs Openwater&rsquo;s optics). Catch: a crowded, capital-heavy frontier.</td></tr>
+    </table>
+  </section>
+
+  <!-- THE SPIKE: EVIDENCE -->
+  <section>
+    <h2>The Spike &mdash; the evidence (authorship- and source-precise)</h2>
+    <ul>
+      <li class="small"><strong>The Aleph launch (VERIFIED, x.com/alephneuro, 25&ndash;27 Jun 2026):</strong> highest-resolution noninvasive 3D images of living human brain vasculature, via FDA-approved microbubbles + sub-wavelength bubble-localization over a ~4-min acquisition. Company tagline: <em>&ldquo;A research lab working on new modalities of brain interfacing.&rdquo;</em> Data + code open-sourced. Covered by MassDevice, MPO, Medical Design &amp; Development; Butterfly Network (NYSE: BFLY) issued a partner press release (CEO Joseph DeVivo quote). <em>(Press = real; note BFLY has an incentive to amplify a customer of its Embedded program.)</em></li>
+      <li class="small"><strong>Olympiad pedigree (VERIFIED, lev.la + Wolfram bio):</strong> <strong>IZhO gold</strong> (Int&rsquo;l Zhautykov Olympiad, physics), <strong>IEPhO silver</strong>, <strong>RMPh silver</strong>, Russian National Physics Olympiad prize-winner, and <strong>IPhO selection (top-15 in Russia)</strong> &mdash; national-team caliber but <em>not</em> an IPhO medal; don&rsquo;t overstate. Also: National Technological Initiative Olympiad (Water Robotics) absolute winner.</li>
+      <li class="small"><strong>Clippinator (VERIFIED, github.com/ennucore/clippinator, ~409&#9733;):</strong> a multi-agent GPT-4 AI programmer &mdash; a &ldquo;Taskmaster&rdquo; orchestrator delegating to specialized &ldquo;minion&rdquo; agents (Architect, Writer, QA, DevOps). Built with <strong>Timofey Fedoseev</strong>, contributions by <strong>Sergei Bogdanov</strong>. This is the real <em>AI/ML-systems</em> evidence on Lev personally &mdash; he was doing autonomous-agent orchestration in early 2023, before it was a category. (Also: <em>Cadmium</em>, ~21&#9733;, &ldquo;CAD models at the speed of thought&hellip; GPT-4.&rdquo;)</li>
+      <li class="small"><strong>Scholar (_ZlS3TgAAAAJ) &mdash; thin/young, do not over-credit:</strong> 1 listed paper, <strong>22 cites, h-index 1.</strong> &ldquo;Spectral physical unclonable functions&hellip;&rdquo;, <em>Nature Communications</em> 2025 &mdash; <strong>not first author</strong> (Sandomirskii 1st; Lev mid-list), and it&rsquo;s <strong>metamaterials/optics, unrelated to neuro</strong>. Profile affiliation reads <strong>&ldquo;Alegria Neurotech&rdquo;</strong>, verified email <strong>ethz.ch</strong> &mdash; the ETH tie + an earlier working name (see Notes).</li>
+      <li class="small"><strong>Wolfram SRI 2024 (VERIFIED):</strong> Fundamental Physics track; project &ldquo;Motion and relativity in Wolfram models.&rdquo; <strong>Amgen Scholars 2022:</strong> computational neuroscience (his first neuro exposure). His self-description: <em>&ldquo;a wide range of interests, from fundamental physics to neuroscience and IT products&rdquo;</em> &mdash; the polymath arc, in his own words.</li>
+    </ul>
+  </section>
+
+  <!-- CAREER TRAJECTORY -->
+  <section>
+    <h2>Career Trajectory &mdash; the acceleration is the whole story</h2>
+    <p class="small">Physics olympiad kid (2021) &rarr; metamaterials/optics research + Amgen comp-neuro (2022) &rarr; ships a 400&#9733; multi-agent AI programmer (2023) &rarr; Wolfram SRI + New Science fellow (2024&ndash;25) &rarr; <strong>co-founds a no-lab neurotech company and launches a headline result (2026)</strong>. The arc compresses physics &rarr; neuro &rarr; AI-agents &rarr; neurotech-founder in ~4 years.</p>
+    <ul>
+      <li class="small"><strong>St. Petersburg, Russia</strong> &mdash; <strong>Presidential Physics-Mathematics Lyceum No. 239</strong> (the elite St. Pb feeder; Perelman&rsquo;s alma mater) &rarr; <strong>MIPT</strong> (Phys-tech, DGAP) &rarr; <strong>&Eacute;cole Polytechnique</strong> &rarr; <strong>ETH Zurich</strong> (the Scholar email + metamaterials work place him at ETH). <em>The education chain is real but the &ldquo;currently studying&rdquo; framing on lev.la is stale &mdash; he is now full-time on Aleph in SF.</em></li>
+      <li class="small"><strong>New Science 2025 fellow (neurotech)</strong> &mdash; Alexey Guzey&rsquo;s anti-academia research institution, alongside Maggie Li (tissue eng), Kiran Kling (climate), Kyrylo Kalashnikov (bio/physics/AI), Ryan Hassan (philosophy of sci). <em>This is the incubation vehicle &amp; the &ldquo;OOD&rdquo; institutional home &mdash; New Science exists precisely to fund science </em>outside<em> universities/NIH. It&rsquo;s a fellowship/grant, not a VC round.</em></li>
+      <li class="small"><strong>Aleph</strong> &mdash; co-founder, San Francisco. Domain registered <strong>8 Feb 2026</strong> (Vercel-hosted), public launch <strong>25 Jun 2026</strong>. Team of 5 (see Network Map). Actively hiring across ML / ultrasound / SW / physics / neuro.</li>
+    </ul>
+  </section>
+
+  <!-- WHAT HE'S WORKING ON / EXCITED ABOUT -->
+  <section>
+    <h2>What He&rsquo;s Working On + Excited About (verbatim)</h2>
+    <ul>
+      <li class="small"><strong>The mission (Aleph site, verbatim):</strong> <em>&ldquo;We&rsquo;re a research lab working on new interfaces for the brain. We think our telepathic future is both imminent and wonderful.&rdquo;</em> &mdash; and <em>&ldquo;The next step is to communicate in latents&mdash;the raw thoughts that words attempt to capture.&rdquo;</em></li>
+      <li class="small"><strong>The contrarian wedge (X, verbatim, 148 likes):</strong> <em>&ldquo;If you pivoted to AI from crypto a couple years ago, consider looking into ultrasound now.&rdquo;</em> &mdash; he is explicitly framing ultrasound-neuro as <em>the next frontier after the AI wave</em>, which is both the pitch and the recruiting hook.</li>
+      <li class="small"><strong>The no-lab ethos (X, verbatim):</strong> <em>&ldquo;Doing science outside of the context of a lab turned out to be easier than we thought - it&rsquo;s been so fun!&rdquo;</em></li>
+      <li class="small"><strong>The ML thesis (blog, verbatim):</strong> <em>&ldquo;We believe end-to-end machine learning, trained on large enough datasets, will recover far more signal&rdquo;</em> &mdash; today the pipeline throws away 99.9% of the raw probe data; the bet is that learned models on the world&rsquo;s largest neurovascular-ultrasound dataset recover it. <strong>This sentence is the on-thesis case.</strong></li>
+      <li class="small"><strong>Self-experimenter texture (X, verbatim):</strong> the <em>&ldquo;fade haircut for better signal quality&rdquo;</em>; and trying a mouse skin-transparency gel <em>&ldquo;on ourselves&hellip; to this day, our skin remains embarrassingly opaque.&rdquo;</em> Builder-on-himself energy.</li>
+    </ul>
+  </section>
+
+  <!-- HUMAN LAYERS -->
+  <section>
+    <h2>Origin &amp; Early Spike</h2>
+    <ul>
+      <li class="small"><strong>Russian-origin, CONFIRMED (NOT Indian):</strong> Lyceum 239 (St. Petersburg) &rarr; MIPT; Russian National Physics Olympiad; IZhO/IEPhO/RMPh. Tag <code>russian</code>. (Same Russian-technical-diaspora vein as Andrei Tyrin in the index &mdash; potential network adjacency.)</li>
+      <li class="small"><strong>The polymath signal is the early tell:</strong> physics olympiad + Water-Robotics olympiad winner + a music-school background (oboe and piano) + a BioCAD bioinformatics course + JetBrains Summer ML School. Breadth &rarr; he keeps jumping fields and shipping in each.</li>
+      <li class="small"><strong>&ldquo;IT projects serving tens of thousands of users&rdquo;</strong> (his bio) + a 400&#9733; open-source agent framework as a ~19-20 y/o &mdash; the &ldquo;builds real things people use&rdquo; spike predates the company.</li>
+    </ul>
+    <h2>Life &amp; Texture</h2>
+    <ul>
+      <li class="small"><strong>Voice:</strong> playful, first-principles, recruiting-forward. ~3.5K followers on @levchizhov (the active handle; @ennucore is now a near-empty placeholder pointing to it). Posts read as a founder in launch-mode, not a careful academic.</li>
+      <li class="small"><strong>Music:</strong> oboe + piano (music school) &mdash; the &ldquo;physicist and musician&rdquo; self-label on ennucore.com. Single-source (his own bio); fine as color, not load-bearing.</li>
+    </ul>
+  </section>
+
+  <!-- OUTREACH ANGLES -->
+  <div class="spike-box" style="border-left-color:#2f6f4f;">
+    <div class="label">&#9733; Outreach Angles &mdash; the way in (pick one)</div>
+    <ol style="margin:0; padding-left:1.1rem;">
+      <li class="small" style="margin-bottom:0.5rem;"><strong>The ML-recovers-the-99.9% wedge (strongest &mdash; proves you read past the press).</strong>
+        <em>Hook:</em> <strong>&ldquo;Everyone&rsquo;s sharing the brain image; the line that actually matters is &lsquo;the pipeline compresses to 0.1% &mdash; end-to-end ML will recover far more signal.&rsquo; That&rsquo;s the real company: the imaging demo is the cold-start for a neurovascular-ultrasound foundation model.&rdquo;</strong> <em>Why it lands:</em> it shows you understand the hardware is the wedge, not the product, and that the data moat is the asset &mdash; and it speaks his language (Clippinator, MindEye, latents). <em>The ask:</em> how big does the dataset need to get before learned decoding beats hand-engineered fUS? Compare notes.</li>
+      <li class="small" style="margin-bottom:0.5rem;"><strong>The cost-curve / &ldquo;ultrasound is the new AI&rdquo; framing (his own pitch, mirrored back).</strong>
+        <em>Hook:</em> quote his <em>&ldquo;pivoted to AI from crypto&hellip; look into ultrasound now&rdquo;</em> and name the landscape precisely &mdash; Iconeus (the fUS incumbent), Forest Neurotech (implanted fUS), Openwater (Jepsen, optics), Kernel &mdash; then: <em>&ldquo;the Butterfly-chip cost inversion is the part incumbents can&rsquo;t copy.&rdquo;</em> <em>Why it lands:</em> shows you mapped the field and grasped the strategic (not just technical) bet. <em>The ask:</em> is the moat the chip access, the dataset, or the decoder?</li>
+      <li class="small"><strong>The agent-builder-turned-neurotech-founder angle (connects his two spikes).</strong>
+        <em>Hook:</em> Clippinator &rarr; Aleph &mdash; <em>&ldquo;you went from orchestrating multi-agent LLMs to orchestrating microbubbles; the through-line is &lsquo;throw learning at high-dimensional signal everyone else hand-engineers.&rsquo;&rdquo;</em> <em>Why it lands:</em> almost no one will connect the GitHub work to the company. <em>The ask:</em> how much of the ML team&rsquo;s work is decoding vs. reconstruction right now?</li>
+    </ol>
+    <p class="small muted" style="margin-top:0.5rem;"><strong>Tone / don&rsquo;t-misstep:</strong> He is mid-launch &mdash; <em>lots</em> of inbound right now; differentiate with the <strong>0.1%&rarr;ML line</strong> and the <strong>named landscape</strong>, not congratulations on the image. Do NOT pitch this as &ldquo;a neurotech hardware deal&rdquo; to him &mdash; he frames it as an AI/data company; meet him there. <strong>Honest internal note:</strong> the round picture is unconfirmed (no Form D, no Crunchbase; New Science fellow). If he&rsquo;s pre-priced-round, the &ldquo;$500K&ndash;$1M, move fast&rdquo; offer is live; if a lead/round already closed off the launch, position for the next one. Channel: X DM @levchizhov, or lc@lev.la / careers@alephneuro.com.</p>
+  </div>
+
+  <!-- DRAFT OUTREACH EMAIL -->
+  <section>
+    <h2>Draft outreach email</h2>
+    <div style="border:1px solid var(--border); border-radius:6px; padding:0.9rem 1.1rem; background:#fff;">
+      <p style="font-size:0.88rem; white-space:pre-line;">Subject: the 0.1%, and ML-on-raw-ultrasound as the real Aleph
+
+Hi Lev &mdash; I invest at inception and Aleph is the cleanest version of a thesis I keep landing on. Everyone&rsquo;s resharing the brain image, but the line that actually matters is yours: the probe takes in terabytes/hour and the pipeline keeps 0.1% &mdash; &ldquo;end-to-end ML, trained on large enough datasets, will recover far more signal.&rdquo; That&rsquo;s the real company &mdash; the noninvasive-ultrasound demo is the cold-start for a neurovascular-ultrasound foundation model and learned decoding (the MindEye-in-latents endgame), and the commodity Butterfly chip is the data-collection edge Iconeus/Forest/Openwater can&rsquo;t copy. Clippinator &rarr; Aleph is the same move twice: throw learning at high-dimensional signal everyone else hand-engineers. I can write $500K&ndash;$1M and move fast, and I&rsquo;d rather be useful on the ML/decoding side than pitch you &mdash; how much of the team&rsquo;s work right now is decoding vs. reconstruction, and how big does the dataset have to get before learned beats hand-engineered fUS?
+
+&mdash; Vansh</p>
+    </div>
+    <p class="small muted" style="margin-top:0.5rem;"><strong>Why this works:</strong> leads with his own load-bearing sentence (the 0.1%&rarr;ML line), reframes the hardware demo as a data-moat / foundation-model play (meeting him where he frames the company), names the real competitive set (Iconeus, Forest, Openwater) + the chip-cost edge, and connects his prior spike (Clippinator agents) to the company &mdash; proof of homework, not a scrape. Honest about the allocation. Ends on a genuine technical question he&rsquo;ll have a strong opinion on. Channel: X DM @levchizhov / lc@lev.la. Signed Vansh.</p>
+  </section>
+
+  <!-- NETWORK MAP -->
+  <section id="net">
+    <h2>Network Map &amp; Recursive Discoveries (the team is the alpha-multiplier)</h2>
+    <p class="small">The launch thread names the full founding team verbatim: <em>&ldquo;our team of renegade physicists and engineers <strong>@_marleyx @raffi_hotter @levchizhov @thomas_rribeiro @jffbrwn2</strong>.&rdquo;</em> Recommend dossiering Raffi Hotter next &mdash; he, not Lev, is the neuro-imaging domain spike.</p>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Person</td><td>Tie</td><td>Why it matters</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Raffi Hotter</strong> (@raffi_hotter)</td><td>Aleph co-founder; the domain expert</td><td><strong>Recursive P0.</strong> Math/CS/physics; built neurotech instrumentation in <strong>Adam Cohen&rsquo;s lab (Harvard)</strong>, neurotech at <strong>Google X</strong>; led a mind-controlled-wheelchair team (NeuroTechX winner); publicly cataloguing &ldquo;all physical properties of the brain &times; ways to modulate them.&rdquo; rhotter.com. <strong>The single strongest node here.</strong></td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>&ldquo;Marley&rdquo;</strong> (@_marleyx), <strong>Thomas Ribeiro</strong> (@thomas_rribeiro), <strong>@jffbrwn2</strong> (Jeff Brown?)</td><td>Aleph co-founders</td><td><strong>Recursive P1.</strong> The other 3 of 5. Backgrounds unconfirmed &mdash; worth a pass each (physicists/engineers per the thread).</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Alexey Guzey</strong></td><td>New Science founder (Lev = 2025 fellow)</td><td><strong>Recursive P1 + ecosystem key.</strong> New Science is an OOD-founder factory (anti-academia, life-sci). The other 2025 fellows (Kalashnikov &mdash; bio/physics/<strong>AI</strong>; Maggie Li &mdash; tissue eng) are leads. <code>russian</code>-diaspora hub.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Timofey Fedoseev / Sergei Bogdanov</strong></td><td>Clippinator co-author / contributor</td><td><strong>Recursive P2.</strong> His AI-agents collaborators &mdash; same Russian-technical builder vein; check current work.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Adam Cohen (Harvard)</strong> / <strong>Mickael Tanter (Iconeus)</strong></td><td>Lineage, not targets</td><td>Cohen = Raffi&rsquo;s lab lineage (optical neuro-imaging, Optopatch). Tanter/Demen&eacute; = the fUS/ULM academic source &amp; the competitive incumbent (Iconeus, Forest Neurotech).</td></tr>
+    </table>
+  </section>
+
+  <!-- NOTES / VERIFICATION -->
+  <section>
+    <h2>Notes &mdash; verification ledger</h2>
+    <ul>
+      <li class="small"><strong>VERIFIED-with-URL:</strong> Co-founder of Aleph (x.com/levchizhov bio: <em>&ldquo;co-founder @alephneuro&rdquo;</em>; launch thread names him). Company = noninvasive functional-ultrasound brain imaging, SF, launched 25 Jun 2026 (alephneuro.com, MassDevice, BusinessWire/BFLY). ML-as-second-act (alephneuro.com/blog/ultrasound-brain). New Science 2025 fellow (newscience.org). IZhO gold + IPhO top-15-selection (lev.la, Wolfram). Clippinator ~409&#9733; (github.com/ennucore/clippinator). 1 Nature Comms paper, non-first-author, metamaterials (Scholar _ZlS3TgAAAAJ). Russian / Lyceum 239 / MIPT (lev.la). Domain reg 8 Feb 2026 (Verisign RDAP).</li>
+      <li class="small"><strong>UNCONFIRMED (flag, don&rsquo;t assert):</strong> <strong>Funding/stage</strong> &mdash; <em>no Form D under &ldquo;Aleph Neuro&rdquo; or &ldquo;Alegria Neurotech&rdquo; (EDGAR full-text = 0 hits), no Crunchbase round found.</em> Likely angel/SAFE and/or New Science-grant-funded; a priced round may be imminent off the launch but is not on record. &middot; <strong>Exact title</strong> (co-founder VERIFIED; CEO/CTO/Chief-Scientist split unknown). &middot; <strong>&ldquo;Alegria Neurotech&rdquo; = the same entity</strong> &mdash; strongly implied (his Scholar affiliation; alegrianeurotech.com registered Apr 2024, predating the Aleph domain &rarr; likely the earlier working name that rebranded), but the legal tie is not confirmed via EDGAR/registrant. A Form D, if any, could be filed under &ldquo;Alegria.&rdquo; &middot; <strong>Exact age</strong> (~22 inferred from 2021 olympiads + undergrad timeline). &middot; Co-founder identities beyond Raffi Hotter.</li>
+      <li class="small"><strong>Corrections / don&rsquo;t-overstate:</strong> IPhO = <em>selection/top-15</em>, not a medal &mdash; IZhO gold is the headline. The ultrasound <em>physics</em> (fUS, ULM, microbubbles) is established academic work, not invented by Aleph &mdash; their novelty is the chip-cost wedge + ML ambition + the no-lab execution. Lev&rsquo;s own research record is thin and <em>not</em> in neuro; his personal spike is physics + AI-agents. Butterfly&rsquo;s press release is a partner amplifying its own customer &mdash; weight accordingly.</li>
+      <li class="small"><strong>Recursive discoveries logged:</strong> Raffi Hotter (P0 &mdash; dossier next), the 3 other Aleph co-founders (P1), Alexey Guzey + New Science 2025 cohort (P1, ecosystem), Fedoseev/Bogdanov (P2). The New-Science and Russian-technical-diaspora veins are rich.</li>
+    </ul>
+  </section>
+
+  <!-- TIER READ -->
+  <div class="spike-box" style="border-left-color:#c43d2e;">
+    <div class="label">&#9670; Tier Read &mdash; explicit reasoning</div>
+    <p class="small"><strong>Call: T0 &mdash; active pursuit (reach out this week, while the launch is hot).</strong> Promoted from this dossier&rsquo;s original &ldquo;T1, leaning T0&rdquo; on the <em>portfolio-level pursue decision</em> below &mdash; not because Lev&rsquo;s individual record cleared the bar on its own.</p>
+    <p class="small" style="margin-top:0.4rem;"><strong>(A) Founding now / full-time?</strong> &mdash; <strong>YES, cleanly.</strong> Verified co-founder of a company that launched days ago, full-time in SF; the &ldquo;still an undergrad&rdquo; framing is stale. Textbook inflection. <strong>(B) On-thesis?</strong> &mdash; <strong>CLOSED at the portfolio level.</strong> The owner confirmed Aleph Neuro is on-thesis (18 Jun 2026) and took both co-founders <strong>Marley Xiong and Raffi Hotter to T0</strong> &mdash; the company is being actively pursued. The earlier &ldquo;is functional-ultrasound AI/ML-frontier <em>enough</em>&rdquo; debate is settled by that decision, and reinforced by the founders&rsquo; own data + learned-decoding framing (the 0.1%&rarr;ML thesis, &ldquo;largest neurovascular-ultrasound dataset,&rdquo; MindEye, ML-engineer-hired-first), the IZhO-gold pedigree, and the no-lab / 5-people / 4-months rate-of-change.</p>
+    <p class="small" style="margin-top:0.4rem;"><strong>What T0 does NOT pre-clear (open diligence &mdash; resolve in the first conversation):</strong> the pursue decision backs the <em>company</em>; it does not certify each co-founder&rsquo;s individual spike. Lev is one of five and <em>not</em> the neuro-domain anchor (Raffi Hotter is), and his personal research record is thin (1 non-first-author metamaterials paper, unrelated to neuro) &mdash; his real credibility is <strong>Clippinator (~409&#9733; multi-agent AI programmer) + olympiad physics</strong>, i.e. the physics / AI-software half. So the live question is <strong>what Lev specifically owns on the ML/decoding stack</strong>. Open with the 0.1%&rarr;ML wedge and ask exactly that (and what the round looks like). This is diligence to run, not a reason to wait &mdash; the action at T0 or T1 is identical: reach out now.</p>
+  </div>
+
+  <footer>
+    researched: 2026-06-28 &middot; intel&rarr;outreach format &middot; primary sources: alephneuro.com (+/blog/ultrasound-brain, /careers), x.com/@levchizhov + @alephneuro launch thread, lev.la, ennucore.com, Wolfram SRI '24 alumni bio, newscience.org, github.com/ennucore/clippinator, Scholar _ZlS3TgAAAAJ, MassDevice/MPO/BusinessWire(BFLY), SEC EDGAR full-text (0 Form D), Verisign RDAP &middot; <a href="../index.html">back to index</a>
+  </footer>
+
+</body>
+</html>

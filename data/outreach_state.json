@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-06-28T16:02:58+00:00",
+  "last_built": "2026-06-29T05:59:08+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -7552,9 +7552,9 @@
     },
     "lev-chizhov": {
       "name": "Lev Chizhov",
-      "tier": null,
-      "tier_label": null,
-      "category": null,
+      "tier": 0,
+      "tier_label": "tier-0: active pursuit",
+      "category": "outreach",
       "tags": [
         "founder",
         "neurotech",
@@ -7579,7 +7579,7 @@
         "phrase_founded": true
       },
       "last_git_touch": null,
-      "needs_triage": true,
+      "needs_triage": false,
       "emails": [
         "careers@alephneuro.com",
         "lc@lev.la"
@@ -7597,11 +7597,11 @@
       "next_action_date": null,
       "response": null,
       "notes": "",
-      "urgency_decay_date": null,
-      "urgency_reason": null,
-      "channel": null,
-      "next_action": null,
-      "cluster": null,
+      "urgency_decay_date": "2026-08-31",
+      "urgency_reason": "T0 — active pursuit (owner confirmed Aleph Neuro on-thesis, 18 Jun 2026; co-founders Marley Xiong + Raffi Hotter both T0). Verified full-time co-founder of Aleph (alephneuro.com), which launched 25 Jun 2026 with a world-first noninvasive 3D ULM image of a living human brain's vasculature; the stated second act is ML-on-raw-ultrasound (pipeline keeps 0.1% → 'end-to-end ML recovers far more signal') + neural decoding (MindEye-in-latents). Lev's personal spike = Clippinator (~409★ multi-agent AI programmer, early 2023) + IZhO-gold physics — the physics/AI-software half; he is NOT the neuro-domain anchor (Raffi is). Russian-origin, NOT Indian. Funding stage unconfirmed (no Form D under Aleph/Alegria); confirm the inception window is open.",
+      "channel": "x",
+      "next_action": "Reach out NOW (X DM @levchizhov; fallback lc@lev.la) with the 0.1%→ML wedge: the imaging demo is the cold-start for a neurovascular-ultrasound foundation model + learned decoding; name the landscape (Iconeus / Forest Neurotech / Openwater / Kernel) + the Butterfly-chip cost edge, and connect Clippinator→Aleph. OPEN DILIGENCE for the first call: what does Lev specifically own on the ML/decoding stack, and what does the round look like. $500K–$1M, move fast.",
+      "cluster": "neurotech-bci",
       "email_override": null,
       "outreach_subject_override": null,
       "outreach_body_override": null,
@@ -9753,7 +9753,7 @@
         "phrase_raising": false,
         "phrase_founded": false
       },
-      "last_git_touch": "2026-06-28T21:31:01+05:30",
+      "last_git_touch": "2026-06-28T21:33:21+05:30",
       "needs_triage": false,
       "emails": [
         "raphael.hotter@gmail.com"
@@ -12832,7 +12832,7 @@
         "tag_founders": false,
         "phrase_stealth": false,
         "phrase_departed": false,
-        "phrase_raising": true,
+        "phrase_raising": false,
         "phrase_founded": false
       },
       "last_git_touch": null,
@@ -12855,9 +12855,9 @@
       "notes": "",
       "urgency_decay_date": null,
       "urgency_reason": null,
-      "channel": null,
-      "next_action": null,
-      "cluster": null,
+      "channel": "twitter",
+      "next_action": "TRACK + reach out to LEARN (not pitch). X DM @thomas_rribeiro (or ribeirothomas28@gmail.com). Lead with the olfactory-ultrasound novelty + the 10,000x-channels-vs-EEG thesis + the $1,000 Axon→Aleph arc. RESOLVE: (1) who's Aleph's founder/CEO [likely Lev Chizhov], (2) have they raised / is there allocation [Jun 25 was a tech reveal], (3) ML-decode vs ultrasound-hardware roadmap split. NOTE: neurotech/BCI = ML-ADJACENT not core AI/ML — owner's-mandate call. HIGHER-VALUE NODE: Lev Chizhov (likely Aleph CEO) — assess/back HIM if Aleph is in-thesis.",
+      "cluster": "neurotech",
       "email_override": null,
       "outreach_subject_override": null,
       "outreach_body_override": null,

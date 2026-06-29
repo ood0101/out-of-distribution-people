@@ -664,6 +664,30 @@
       "source_kind": "lab_page",
       "confidence": 0.92,
       "note": "inception window open; reach out alongside Marley Xiong"
+    },
+    {
+      "date": "2026-06-18",
+      "observed": "2026-06-29",
+      "slug": "lev-chizhov",
+      "type": "founding_listed",
+      "direction": 1,
+      "value": "Co-founder of Aleph (alephneuro.com) — noninvasive functional-ultrasound brain interfaces; X bio 'co-founder @alephneuro'; launch thread names him",
+      "source_url": "https://x.com/levchizhov",
+      "source_kind": "own_site",
+      "confidence": 0.92,
+      "note": "inception window open (no Form D under Aleph/Alegria); reach out alongside Marley Xiong + Raffi Hotter"
+    },
+    {
+      "date": "2026-06-25",
+      "observed": "2026-06-29",
+      "slug": "lev-chizhov",
+      "type": "research_shipped",
+      "direction": 1,
+      "value": "Co-founder; Aleph launched world-first noninvasive 3D ULM brain-vasculature image (Jun 2026; Butterfly Network Embedded partner; code+dataset released)",
+      "source_url": "https://www.businesswire.com/news/home/20260625817511/en/",
+      "source_kind": "news",
+      "confidence": 0.9,
+      "note": "active inflection — co-founder of a just-launched lab shipping a world-first (team result); ML-on-raw-ultrasound is the stated second act"
     }
   ]
 }
