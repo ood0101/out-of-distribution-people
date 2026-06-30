@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-06-29T05:59:08+00:00",
+  "last_built": "2026-06-30T08:20:40+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -3707,6 +3707,62 @@
       "channel": "linkedin",
       "next_action": null,
       "cluster": "ai-safety-agentic",
+      "email_override": null,
+      "outreach_subject_override": null,
+      "outreach_body_override": null,
+      "channels_attempted": []
+    },
+    "douglas-yao": {
+      "name": "Douglas Yao",
+      "tier": 0,
+      "tier_label": "tier-0: active pursuit",
+      "category": "outreach",
+      "tags": [
+        "founder",
+        "ai-drug-discovery",
+        "biotech",
+        "alzheimers",
+        "solo-founder",
+        "garage-biotech",
+        "computational-biology",
+        "harvard",
+        "bio-acc",
+        "ood"
+      ],
+      "indian": false,
+      "delta": false,
+      "one_liner": "A Harvard statistical-genetics PhD who, in ~18 months and with",
+      "signals": {
+        "tag_stealth_founder": false,
+        "tag_founders": false,
+        "phrase_stealth": false,
+        "phrase_departed": false,
+        "phrase_raising": true,
+        "phrase_founded": false
+      },
+      "last_git_touch": null,
+      "needs_triage": false,
+      "emails": [
+        "douglasyao2@gmail.com"
+      ],
+      "email_primary": "douglasyao2@gmail.com",
+      "email_primary_kind": "personal",
+      "outreach_subject": "the 1/1000 part stops at IND-enabling — and GalR2 vs GalR1",
+      "outreach_body_preview": "Hi Doug — I invest at inception and Pace is the cleanest version of a thesis I keep circling. I read it the way you frame it, not the way the timeline does: trials are the bottleneck, AI is for the cheap discovery half, and the real edge is running the Janssen \"many cheap analogs, fast animal readou…",
+      "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=douglasyao2%40gmail.com&su=the%201/1000%20part%20stops%20at%20IND-enabling%20%E2%80%94%20and%20GalR2%20vs%20GalR1&body=Hi%20Doug%20%E2%80%94%20I%20invest%20at%20inception%20and%20Pace%20is%20the%20cleanest%20version%20of%20a%20thesis%20I%20keep%20circling.%20I%20read%20it%20the%20way%20you%20frame%20it%2C%20not%20the%20way%20the%20timeline%20does%3A%20trials%20are%20the%20bottleneck%2C%20AI%20is%20for%20the%20cheap%20discovery%20half%2C%20and%20the%20real%20edge%20is%20running%20the%20Janssen%20%22many%20cheap%20analogs%2C%20fast%20animal%20readouts%22%20loop%20at%20a%20cost%20structure%20nobody%20else%20has.%20The%20thing%20that%0Aisn%27t%0A1/1000-cost%20is%20exactly%20where%20you%20are%20now%20%E2%80%94%20GLP%20tox%20%2B%20GMP/CMC%20for%20IND-enabling%2C%20times%20two%20programs%20%E2%80%94%20which%20is%20the%20one%20place%20savings%20run%20out.%20That%20gap%20is%20a%20near-perfect%20fit%20for%20a%20fast%20%24500K%E2%80%93%241M%2C%20and%20I%27d%20rather%20fund%20the%20IND-enabling%20gap%20and%20help%20you%20keep%20PAC-832%20and%20PAC-336%20on%20the%20same%20clock%20than%20pitch%20you.%20On%20the%20science%20I%27d%20push%20on%20one%20thing%2C%20because%20it%27s%20the%20whole%20bet%3A%20what%27s%20your%20evidence%20the%20compensatory%20basal-forebrain%20protection%20is%20GalR2-mediated%20%28so%20PAC-832%20spares%20it%29%20rather%20than%20GalR1%20%E2%80%94%20and%20how%20do%20you%20de-risk%20lowering%20seizure%20threshold%3F%20Sch%20202596%20and%20HT-2157%20died%20on%20manufacturability%20and%20tox%3B%20the%20mechanism-direction%20question%20is%20the%20one%20I%27d%20want%20to%20be%20wrong%20about%20together.%0A%0A%E2%80%94%20Vansh",
+      "twitter_handle": "douglasyaody",
+      "linkedin_slug": "douglas-yao-739142133",
+      "github_handle": "douglasyao",
+      "status": "not-contacted",
+      "last_contacted": null,
+      "next_action_date": null,
+      "response": null,
+      "notes": "",
+      "urgency_decay_date": "2026-08-31",
+      "urgency_reason": "T0 — active pursuit (reach out NOW; single-conversation-to-disqualify, NOT a conviction buy). Exceptional out-of-distribution operator at a HOT active inflection: Harvard statistical-genetics PhD (Alkes Price lab; 1st-author Nat Genetics 2020 + Nat Biotech 2023) who in ~18 months taught himself medicinal chemistry and drove an Alzheimer's asset (PAC-832, selective GalR1 antagonist) to IND-enabling studies — self-funded, ~1/1000 cost — via Pace Pharmaceuticals (2nd asset PAC-336, schizophrenia). Viral launch 27 Jun 2026 (~947K views). NOT raising yet, but IND-enabling tox+GMP across 2 programs (~$1-3M each) is impossible on savings = capital wall in months = the inception window; $500K-1M fits the gap. HONESTY (back the OPERATOR, not the molecule): asset is contrarian-but-unvalidated; 'world-first selective GalR1 antagonist' is an overclaim (RWJ-57408/Sch202596 preceded it); the safety package is THREAD-ONLY, not in the preprint; the AI-design moat is undisclosed (likely LLM-analoging); efficacy is a symptomatic scopolamine model; GalR1-KO seizure risk. NOT Indian (East-Asian/Chinese-American). No Form D (EDGAR 0 hits).",
+      "channel": "email",
+      "next_action": "Reach out NOW — email douglasyao2@gmail.com with the drafted long-form note (or X DM @DouglasYaoDY; he's mid-launch + 'always down to chat'). Lead with lean/Janssen economics + the capital wall (NOT 'AI-native drug discovery' — he'd reject that frame), the galanin-field specificity (Sch202596 / RWJ-57408 / HT-2157), and the load-bearing GalR2-vs-GalR1 + seizure-threshold question. $500K-1M for the IND-enabling gap. ONE conversation to disqualify: is the AI-design method real or LLM-analoging? willingness-to-dilute? independent data QC? med-chem/CMC co-founder gap?",
+      "cluster": "ai-bio",
       "email_override": null,
       "outreach_subject_override": null,
       "outreach_body_override": null,
@@ -7578,7 +7634,7 @@
         "phrase_raising": false,
         "phrase_founded": true
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-06-29T11:32:25+05:30",
       "needs_triage": false,
       "emails": [
         "careers@alephneuro.com",
@@ -12835,7 +12891,7 @@
         "phrase_raising": false,
         "phrase_founded": false
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-06-29T11:32:25+05:30",
       "needs_triage": false,
       "emails": [
         "ribeirothomas28@gmail.com"

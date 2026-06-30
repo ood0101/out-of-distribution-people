@@ -688,6 +688,30 @@
       "source_kind": "news",
       "confidence": 0.9,
       "note": "active inflection — co-founder of a just-launched lab shipping a world-first (team result); ML-on-raw-ultrasound is the stated second act"
+    },
+    {
+      "date": "2026-06-27",
+      "observed": "2026-06-30",
+      "slug": "douglas-yao",
+      "type": "founding_listed",
+      "direction": 1,
+      "value": "Founder of Pace Pharmaceuticals (pacepharmaceuticals.com) — AI-native, garage-scale drug discovery; 2-asset pipeline (PAC-832 Alzheimer's, PAC-336 schizophrenia)",
+      "source_url": "https://pacepharmaceuticals.com/about/",
+      "source_kind": "own_site",
+      "confidence": 0.9,
+      "note": "incorporation unconfirmed (no public record), no Form D (EDGAR 0 hits); capital wall imminent (IND-enabling on savings is impossible) = inception window"
+    },
+    {
+      "date": "2026-06-27",
+      "observed": "2026-06-30",
+      "slug": "douglas-yao",
+      "type": "research_shipped",
+      "direction": 1,
+      "value": "Launched PAC-832 (selective GalR1 antagonist for Alzheimer's), AI-designed + garage-synthesized + CRO mouse efficacy; viral 16-tweet thread (~947K views); stated in IND-enabling studies",
+      "source_url": "https://x.com/DouglasYaoDY/status/2070904914050797582",
+      "source_kind": "own_site",
+      "confidence": 0.85,
+      "note": "HONESTY: data self-published/unreplicated; safety claims thread-only not in preprint; 'world-first' is an overclaim; symptomatic (scopolamine) efficacy model — back the operator, not the asset on faith"
     }
   ]
 }

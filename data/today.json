@@ -1,17 +1,17 @@
 {
-  "built_at": "2026-06-29T05:59:08+00:00",
-  "date": "2026-06-29",
+  "built_at": "2026-06-30T08:21:28+00:00",
+  "date": "2026-06-30",
   "stats": {
-    "t0": 30,
+    "t0": 31,
     "t1": 60,
     "in_flight": 11,
-    "pool": 134
+    "pool": 135
   },
   "pipeline": {
     "funnel": [
       {
         "status": "not-contacted",
-        "n": 288
+        "n": 289
       },
       {
         "status": "contacted",
@@ -33,7 +33,7 @@
         "tier": 0,
         "channel": "twitter",
         "last_contacted": "2026-05-26",
-        "days_since": 34,
+        "days_since": 35,
         "dossier": "people/shivani-poddar.html"
       },
       {
@@ -42,7 +42,7 @@
         "tier": 0,
         "channel": "warm-intro",
         "last_contacted": "2026-05-27",
-        "days_since": 33,
+        "days_since": 34,
         "dossier": "people/blanca-villanueva.html"
       },
       {
@@ -51,7 +51,7 @@
         "tier": 0,
         "channel": "linkedin",
         "last_contacted": "2026-05-27",
-        "days_since": 33,
+        "days_since": 34,
         "dossier": "people/dan-kondratyuk.html"
       },
       {
@@ -60,7 +60,7 @@
         "tier": 0,
         "channel": "linkedin",
         "last_contacted": "2026-05-27",
-        "days_since": 33,
+        "days_since": 34,
         "dossier": "people/joshua-dillon.html"
       },
       {
@@ -69,7 +69,7 @@
         "tier": 0,
         "channel": "email",
         "last_contacted": "2026-05-27",
-        "days_since": 33,
+        "days_since": 34,
         "dossier": "people/michael-wornow.html"
       },
       {
@@ -78,7 +78,7 @@
         "tier": 0,
         "channel": "linkedin",
         "last_contacted": "2026-05-27",
-        "days_since": 33,
+        "days_since": 34,
         "dossier": "people/weiying-wang.html"
       },
       {
@@ -87,7 +87,7 @@
         "tier": 0,
         "channel": "linkedin",
         "last_contacted": "2026-06-19",
-        "days_since": 10,
+        "days_since": 11,
         "dossier": "people/amanpreet-singh.html"
       },
       {
@@ -96,7 +96,7 @@
         "tier": 0,
         "channel": "twitter",
         "last_contacted": "2026-06-19",
-        "days_since": 10,
+        "days_since": 11,
         "dossier": "people/raunaq-bhirangi.html"
       },
       {
@@ -105,7 +105,7 @@
         "tier": 0,
         "channel": "twitter",
         "last_contacted": "2026-06-19",
-        "days_since": 10,
+        "days_since": 11,
         "dossier": "people/siddhant-haldar.html"
       },
       {
@@ -114,7 +114,7 @@
         "tier": 1,
         "channel": "twitter",
         "last_contacted": "2026-05-27",
-        "days_since": 33,
+        "days_since": 34,
         "dossier": "people/ajay-jain.html"
       },
       {
@@ -123,11 +123,11 @@
         "tier": 1,
         "channel": "twitter",
         "last_contacted": "2026-05-27",
-        "days_since": 33,
+        "days_since": 34,
         "dossier": "people/mayank-mishra.html"
       }
     ],
-    "total": 373
+    "total": 374
   },
   "replies": [],
   "followups": [
@@ -137,7 +137,7 @@
       "tier": 0,
       "channel": "twitter",
       "last_contacted": "2026-05-26",
-      "overdue_days": 20,
+      "overdue_days": 21,
       "touches": 0,
       "dossier": "people/shivani-poddar.html",
       "link": {
@@ -151,7 +151,7 @@
       "tier": 0,
       "channel": "warm-intro",
       "last_contacted": "2026-05-27",
-      "overdue_days": 19,
+      "overdue_days": 20,
       "touches": 1,
       "dossier": "people/blanca-villanueva.html",
       "link": {
@@ -165,7 +165,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-05-27",
-      "overdue_days": 19,
+      "overdue_days": 20,
       "touches": 0,
       "dossier": "people/dan-kondratyuk.html",
       "link": {
@@ -179,7 +179,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-05-27",
-      "overdue_days": 19,
+      "overdue_days": 20,
       "touches": 0,
       "dossier": "people/joshua-dillon.html",
       "link": {
@@ -193,7 +193,7 @@
       "tier": 0,
       "channel": "email",
       "last_contacted": "2026-05-27",
-      "overdue_days": 19,
+      "overdue_days": 20,
       "touches": 1,
       "dossier": "people/michael-wornow.html",
       "link": {
@@ -207,7 +207,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-05-27",
-      "overdue_days": 19,
+      "overdue_days": 20,
       "touches": 0,
       "dossier": "people/weiying-wang.html",
       "link": {
@@ -263,7 +263,7 @@
       "tier": 1,
       "channel": "twitter",
       "last_contacted": "2026-05-27",
-      "overdue_days": 19,
+      "overdue_days": 20,
       "touches": 1,
       "dossier": "people/ajay-jain.html",
       "link": {
@@ -277,7 +277,7 @@
       "tier": 1,
       "channel": "twitter",
       "last_contacted": "2026-05-27",
-      "overdue_days": 19,
+      "overdue_days": 20,
       "touches": 1,
       "dossier": "people/mayank-mishra.html",
       "link": {
@@ -317,7 +317,7 @@
       "slug": "aayush-bansal",
       "name": "Aayush Bansal",
       "tier": 0,
-      "score": 694,
+      "score": 693,
       "chips": [
         "stealth",
         "departed",
@@ -348,7 +348,7 @@
       "slug": "gaurav-bharaj",
       "name": "Gaurav Bharaj",
       "tier": 0,
-      "score": 688,
+      "score": 687,
       "chips": [
         "stealth",
         "departed",
@@ -379,7 +379,7 @@
       "slug": "marley-xiong",
       "name": "Marley Xiong",
       "tier": 0,
-      "score": 680,
+      "score": 679,
       "chips": [
         "founder"
       ],
@@ -401,40 +401,69 @@
       "dossier": "people/marley-xiong.html"
     },
     {
-      "slug": "russ-tedrake",
-      "name": "Russ Tedrake",
+      "slug": "lev-chizhov",
+      "name": "Lev Chizhov",
       "tier": 0,
-      "score": 648,
+      "score": 660,
       "chips": [
-        "stealth",
-        "departed",
         "founder"
       ],
       "window": {
-        "text": "pre-name · open",
+        "text": "closes 2026-08-31",
         "kind": "open"
       },
-      "why_now": "T0 FOUNDING NOW, PRE-NAME (access-gated). MIT page verbatim 'Founder of a Stealth Startup in Physical AI (more soon!)'; LEFT TRI (bio past-tense, The Robot Report 'former TRI SVP'), kept MIT. Builds LBMs-for-industry. Owns Diffusion Policy→LBM (Science…",
-      "do_this": "WARM INTRO via MIT CSAIL / Drake-RSS-CoRL community / TRI alumni / mutual LP (cold is too late). X DM @RussTedrake fallback ('checks email rarely'). RESOLVE: company name, co-founders…",
-      "channel": "warm-intro",
-      "draft": null,
-      "link": {
-        "label": "𝕏 @russtedrake",
-        "url": "https://twitter.com/russtedrake"
+      "why_now": "T0 — active pursuit (owner confirmed Aleph Neuro on-thesis, 18 Jun 2026; co-founders Marley Xiong + Raffi Hotter both T0). Verified full-time co-founder of Aleph (alephneuro.com), which launched 25 Jun 2026 with a world-first noninvasive 3D ULM image of a…",
+      "do_this": "Reach out NOW (X DM @levchizhov; fallback lc@lev.la) with the 0.1%→ML wedge: the imaging demo is the cold-start for a neurovascular-ultrasound foundation model + learned decoding; name the landscape…",
+      "channel": "x",
+      "draft": {
+        "subject": "the 0.1%, and ML-on-raw-ultrasound as the real Aleph",
+        "body": "Hi Lev — I invest at inception and Aleph is the cleanest version of a thesis I keep landing on. Everyone's resharing the brain image, but the line that actually matters is yours: the probe takes in terabytes/hour and the pipeline keeps 0.1% — \"end-to-end ML, trained on large enough datasets, will re…"
       },
-      "twitter": "russtedrake",
-      "linkedin": null,
-      "email": null,
-      "dossier": "people/russ-tedrake.html"
+      "link": {
+        "label": "✉ email",
+        "url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=careers%40alephneuro.com"
+      },
+      "twitter": "levchizhov",
+      "linkedin": "ennucore",
+      "email": "careers@alephneuro.com",
+      "dossier": "people/lev-chizhov.html"
     }
   ],
   "signals": [
+    {
+      "slug": "douglas-yao",
+      "name": "Douglas Yao",
+      "tier": 0,
+      "date": "2026-06-27",
+      "days_ago": 0,
+      "type": "founding listed",
+      "text": "Founder of Pace Pharmaceuticals (pacepharmaceuticals.com) — AI-native, garage-scale drug discovery; 2-asset pipeline (PAC-832 Alzheimer's, PAC-336…",
+      "source_url": "https://pacepharmaceuticals.com/about/",
+      "source_kind": "own_site",
+      "delta": 75,
+      "hot": true,
+      "has_dossier": true
+    },
+    {
+      "slug": "douglas-yao",
+      "name": "Douglas Yao",
+      "tier": 0,
+      "date": "2026-06-27",
+      "days_ago": 0,
+      "type": "research shipped",
+      "text": "Launched PAC-832 (selective GalR1 antagonist for Alzheimer's), AI-designed + garage-synthesized + CRO mouse efficacy; viral 16-tweet thread (~947K…",
+      "source_url": "https://x.com/DouglasYaoDY/status/2070904914050797582",
+      "source_kind": "own_site",
+      "delta": 37,
+      "hot": false,
+      "has_dossier": true
+    },
     {
       "slug": "lev-chizhov",
       "name": "Lev Chizhov",
       "tier": 0,
       "date": "2026-06-18",
-      "days_ago": 0,
+      "days_ago": 1,
       "type": "founding listed",
       "text": "Co-founder of Aleph (alephneuro.com) — noninvasive functional-ultrasound brain interfaces; X bio 'co-founder @alephneuro'; launch thread names him",
       "source_url": "https://x.com/levchizhov",
@@ -448,7 +477,7 @@
       "name": "Lev Chizhov",
       "tier": 0,
       "date": "2026-06-25",
-      "days_ago": 0,
+      "days_ago": 1,
       "type": "research shipped",
       "text": "Co-founder; Aleph launched world-first noninvasive 3D ULM brain-vasculature image (Jun 2026; Butterfly Network Embedded partner; code+dataset…",
       "source_url": "https://www.businesswire.com/news/home/20260625817511/en/",
@@ -462,7 +491,7 @@
       "name": "Aayush Bansal",
       "tier": 0,
       "date": "2026-06-18",
-      "days_ago": 11,
+      "days_ago": 12,
       "type": "founding listed",
       "text": "Founder & CEO of a stealth Physical-AI/4D-world-models startup — CV + homepage + CMU VentureBridge '26; left the ~$1.5B SpreeAI try-on unicorn to…",
       "source_url": "https://www.aayushbansal.xyz/",
@@ -476,7 +505,7 @@
       "name": "Raffi Hotter",
       "tier": 0,
       "date": "2026-06-18",
-      "days_ago": 11,
+      "days_ago": 12,
       "type": "founding listed",
       "text": "Co-founder of Aleph Neuro (X bio 'co-founder @alephneuro'); just-launched, no disclosed round",
       "source_url": "https://alephneuro.com",
@@ -490,12 +519,12 @@
       "name": "Marley Xiong",
       "tier": 0,
       "date": "2026-06-18",
-      "days_ago": 11,
+      "days_ago": 12,
       "type": "founding listed",
       "text": "Co-founder of Aleph Neuro (alephneuro.com) — non-invasive brain interfaces; with Raffi Hotter",
       "source_url": "https://alephneuro.com",
       "source_kind": "lab_page",
-      "delta": 73,
+      "delta": 72,
       "hot": true,
       "has_dossier": true
     },
@@ -504,41 +533,13 @@
       "name": "Marley Xiong",
       "tier": 0,
       "date": "2026-06-25",
-      "days_ago": 11,
+      "days_ago": 12,
       "type": "research shipped",
       "text": "Aleph Neuro shipped world-first 3D ULM image of a living human brain through an intact skull (~100× CT volumetric res); code+dataset released;…",
       "source_url": "https://www.businesswire.com/news/home/20260625817511/en/",
       "source_kind": "news",
       "delta": 40,
-      "hot": true,
-      "has_dossier": true
-    },
-    {
-      "slug": "raffi-hotter",
-      "name": "Raffi Hotter",
-      "tier": 0,
-      "date": "2026-06-25",
-      "days_ago": 11,
-      "type": "research shipped",
-      "text": "Co-founder; Aleph Neuro shipped world-first through-skull 3D ULM brain image (Jun 2026; Butterfly Network Embedded partner)",
-      "source_url": "https://www.businesswire.com/news/home/20260625817511/en/",
-      "source_kind": "news",
-      "delta": 39,
       "hot": false,
-      "has_dossier": true
-    },
-    {
-      "slug": "maruan-al-shedivat",
-      "name": "Maruan Al-Shedivat",
-      "tier": 0,
-      "date": "2026-06-12",
-      "days_ago": 12,
-      "type": "departure",
-      "text": "Left Genesis Molecular AI (Head of ML Research, Pearl all-atom structure team) — Genesis now past-tense on his site; team page 404s",
-      "source_url": "https://maruan.alshedivat.com/",
-      "source_kind": "lab_page",
-      "delta": 69,
-      "hot": true,
       "has_dossier": true
     }
   ],
