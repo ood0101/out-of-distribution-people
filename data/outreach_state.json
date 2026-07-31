@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-06-30T08:20:40+00:00",
+  "last_built": "2026-07-31T09:50:35+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -3712,6 +3712,60 @@
       "outreach_body_override": null,
       "channels_attempted": []
     },
+    "dong-hyuk-woo": {
+      "name": "Dong Hyuk Woo",
+      "tier": 0,
+      "tier_label": "tier-0: active pursuit",
+      "category": "outreach",
+      "tags": [
+        "ex-google-tpu",
+        "ai-silicon",
+        "inference-chips",
+        "edge-tpu",
+        "semiconductors",
+        "departed",
+        "in-transition",
+        "network-hub",
+        "korean",
+        "ood"
+      ],
+      "indian": false,
+      "delta": false,
+      "one_liner": "A core architect of Google's",
+      "signals": {
+        "tag_stealth_founder": false,
+        "tag_founders": false,
+        "phrase_stealth": true,
+        "phrase_departed": true,
+        "phrase_raising": false,
+        "phrase_founded": false
+      },
+      "last_git_touch": null,
+      "needs_triage": false,
+      "emails": [],
+      "email_primary": null,
+      "email_primary_kind": null,
+      "outreach_subject": null,
+      "outreach_body_preview": null,
+      "gmail_url": null,
+      "twitter_handle": null,
+      "linkedin_slug": "donghyukwoo",
+      "github_handle": null,
+      "status": "not-contacted",
+      "last_contacted": null,
+      "next_action_date": null,
+      "response": null,
+      "notes": "",
+      "urgency_decay_date": "2026-09-30",
+      "urgency_reason": "T0 — reach out NOW (free agent in transition as of ~Jul 2026), but to LEARN + build, NOT a conviction buy. Core ex-Google Edge/on-device TPU architect (1-of-4 on the compute-tile patent w/ Temam/Narayanaswami/Khaitan; Coral, Pixel Neural Core, Google Tensor, Gemini Nano) who then ran Samsung's AGI Computing Lab as SVP (Mach-1 inference chip, Gaia 4nm) and LEFT Samsung Jul 2026 into an undisclosed 'stealth' destination (ETNews 21 Jul 2026, SINGLE primary source). Founding-caliber + dead-on-thesis (AI inference silicon). THE GATE: did he FOUND or JOIN? Source says he received offers FROM startups → base case JOINING (a senior silicon hire is not an inception check); founded → directly-backable T0, joined → strong-T1 relationship + high-prob future founder. Network-hub alpha (robust to the gate): Narayanaswami→OpenAI, Khaitan→Meta, Temam→DeepMind, + the un-acquired Groq cohort (Nvidia ~$20B deal). Korean, NOT Indian. DISCARD confabulations: NOT Amazon/Annapurna, NOT KAIST prof, NOT Nvidia/Tensor-G5, NOT Microsoft PM.",
+      "channel": "linkedin",
+      "next_action": "Reach out NOW via LinkedIn (linkedin.com/in/donghyukwoo/) or a warm intro (Georgia Tech / ex-Google-silicon graph) — NO public email on file. Peer-level, no hard pitch: lead with the inference-economics landscape (his 'affordable/sustainable' AGI thesis; MatX / Groq-into-Nvidia / Etched / OpenAI-Broadcom) and the ONE honest question — founded his own thing, or joined a team? If founded → offer first $500K-1M + to help pull his old cell together. If joined → pivot to relationship + treat as a diaspora node. First conversation also confirms the single-source departure and opens the Groq-diaspora recursive targets (Narayanaswami/OpenAI, the un-acquired Groq engineers).",
+      "cluster": "ai-silicon",
+      "email_override": null,
+      "outreach_subject_override": null,
+      "outreach_body_override": null,
+      "channels_attempted": []
+    },
     "douglas-yao": {
       "name": "Douglas Yao",
       "tier": 0,
@@ -3740,7 +3794,7 @@
         "phrase_raising": true,
         "phrase_founded": false
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-06-30T13:52:16+05:30",
       "needs_triage": false,
       "emails": [
         "douglasyao2@gmail.com"

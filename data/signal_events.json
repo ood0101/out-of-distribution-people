@@ -712,6 +712,18 @@
       "source_kind": "own_site",
       "confidence": 0.85,
       "note": "HONESTY: data self-published/unreplicated; safety claims thread-only not in preprint; 'world-first' is an overclaim; symptomatic (scopolamine) efficacy model — back the operator, not the asset on faith"
+    },
+    {
+      "date": "2026-07-21",
+      "observed": "2026-07-31",
+      "slug": "dong-hyuk-woo",
+      "type": "departure",
+      "direction": 1,
+      "value": "Left Samsung Semiconductor (SVP, founding head of the AGI Computing Lab — Mach-1 LLM-inference chip, Gaia 4nm) → undisclosed 'stealth' destination; reportedly scouted by Silicon Valley startups",
+      "source_url": "https://www.etnews.com/20260721000215",
+      "source_kind": "news",
+      "confidence": 0.7,
+      "note": "SINGLE primary source (ETNews, ~10 days old, no English/2nd-outlet confirmation yet); founding-vs-joining UNKNOWN (source says offers FROM startups → base case joining); confirm in first contact"
     }
   ]
 }

@@ -1,7 +1,45 @@
 {
- "generated": "2026-06-29",
- "count": 275,
+ "generated": "2026-06-30",
+ "count": 276,
  "people": [
+  {
+   "slug": "dong-hyuk-woo",
+   "name": "Dong Hyuk Woo",
+   "tier": 0,
+   "role": "Core architect of Google's Edge / on-device TPU (1-of-4 on the 'neural-network compute tile' patent, w/ Temam, Narayanaswami, Khaitan; shipped Coral, Pixel Neural Core, Google Tensor, Gemini Nano), then SVP running Samsung's AGI inference-silicon lab (Mach-1, Gaia 4nm) — who, per a Jul 2026 Korean-trade scoop, just left Samsung into an undisclosed 'stealth' destination. Korean (SNU → Georgia Tech PhD). NOT Indian.",
+   "spike": "T0 — reach out NOW (free agent in transition this week), but to LEARN + build, NOT a conviction buy. THE ALPHA is twofold: (1) a founding-caliber AI-inference-silicon architect at a LIVE departure — edge-TPU core (1-of-4 on the compute-tile patent), Gemini Nano, then ran Samsung's AGI Computing Lab as SVP (Mach-1 LLM-inference chip, Gaia 4nm); more senior + more shipped-silicon than the ex-Google-TPU MatX founders; (2) a living index into the edge-TPU diaspora, ROBUST to whatever HE does next — co-inventors Narayanaswami→OpenAI, Khaitan→Meta, Temam→DeepMind, + the un-acquired Groq cohort loosed by Nvidia's ~$20B deal. THE GATE (single-conversation-to-disqualify): did he FOUND or JOIN? The one source says he received offers FROM startups → base case is JOINING (a senior silicon hire ≠ an inception check); founded → directly-backable T0, joined → strong-T1 relationship + high-prob future founder; reach-out action is identical either way. HONESTY: the departure is SINGLE-SOURCE (ETNews, ~10 days old, no English/2nd-outlet yet — confirm in first contact); he's edge/on-device TPU core NOT Cloud TPU v1 (don't say 'co-invented the TPU'); 'wrote the Edge TPU compiler' is self-reported; he's repeatedly chosen big-org over founding (base rate = joining). DISCARD confabulations this profile attracts: NOT Amazon/Annapurna, NOT KAIST prof, NOT Nvidia/Tensor-G5, NOT Microsoft PM (multiple D.H. Woos + summary-model inventions). Korean, NOT Indian. Why T0 regardless: the network-hub value is real + time-sensitive. RECURSIVE: un-acquired Groq cohort (P0), Narayanaswami/OpenAI (P0), Khaitan/Meta, Positron, Rivos, GT 3D-IC cluster.",
+   "tags": [
+    "ex-google-tpu",
+    "ai-silicon",
+    "inference-chips",
+    "edge-tpu",
+    "semiconductors",
+    "departed",
+    "in-transition",
+    "network-hub",
+    "korean",
+    "ood"
+   ],
+   "cluster": "ai-silicon",
+   "signals": [
+    "stealth",
+    "departed"
+   ],
+   "status": "not-contacted",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "",
+   "added": "2026-07-31",
+   "channel": "linkedin",
+   "twitter": null,
+   "linkedin": "donghyukwoo",
+   "email": null,
+   "gmail_url": null,
+   "indian": false,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": true
+  },
   {
    "slug": "douglas-yao",
    "name": "Douglas Yao",
@@ -27,7 +65,7 @@
    "status": "not-contacted",
    "last_contacted": null,
    "next_action_date": null,
-   "updated": "",
+   "updated": "2026-06-30",
    "added": "2026-06-30",
    "channel": "email",
    "twitter": "douglasyaody",

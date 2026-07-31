@@ -1,17 +1,17 @@
 {
-  "built_at": "2026-06-30T08:21:28+00:00",
-  "date": "2026-06-30",
+  "built_at": "2026-07-31T09:51:08+00:00",
+  "date": "2026-07-31",
   "stats": {
-    "t0": 31,
+    "t0": 32,
     "t1": 60,
     "in_flight": 11,
-    "pool": 135
+    "pool": 136
   },
   "pipeline": {
     "funnel": [
       {
         "status": "not-contacted",
-        "n": 289
+        "n": 290
       },
       {
         "status": "contacted",
@@ -33,7 +33,7 @@
         "tier": 0,
         "channel": "twitter",
         "last_contacted": "2026-05-26",
-        "days_since": 35,
+        "days_since": 66,
         "dossier": "people/shivani-poddar.html"
       },
       {
@@ -42,7 +42,7 @@
         "tier": 0,
         "channel": "warm-intro",
         "last_contacted": "2026-05-27",
-        "days_since": 34,
+        "days_since": 65,
         "dossier": "people/blanca-villanueva.html"
       },
       {
@@ -51,7 +51,7 @@
         "tier": 0,
         "channel": "linkedin",
         "last_contacted": "2026-05-27",
-        "days_since": 34,
+        "days_since": 65,
         "dossier": "people/dan-kondratyuk.html"
       },
       {
@@ -60,7 +60,7 @@
         "tier": 0,
         "channel": "linkedin",
         "last_contacted": "2026-05-27",
-        "days_since": 34,
+        "days_since": 65,
         "dossier": "people/joshua-dillon.html"
       },
       {
@@ -69,7 +69,7 @@
         "tier": 0,
         "channel": "email",
         "last_contacted": "2026-05-27",
-        "days_since": 34,
+        "days_since": 65,
         "dossier": "people/michael-wornow.html"
       },
       {
@@ -78,7 +78,7 @@
         "tier": 0,
         "channel": "linkedin",
         "last_contacted": "2026-05-27",
-        "days_since": 34,
+        "days_since": 65,
         "dossier": "people/weiying-wang.html"
       },
       {
@@ -87,7 +87,7 @@
         "tier": 0,
         "channel": "linkedin",
         "last_contacted": "2026-06-19",
-        "days_since": 11,
+        "days_since": 42,
         "dossier": "people/amanpreet-singh.html"
       },
       {
@@ -96,7 +96,7 @@
         "tier": 0,
         "channel": "twitter",
         "last_contacted": "2026-06-19",
-        "days_since": 11,
+        "days_since": 42,
         "dossier": "people/raunaq-bhirangi.html"
       },
       {
@@ -105,7 +105,7 @@
         "tier": 0,
         "channel": "twitter",
         "last_contacted": "2026-06-19",
-        "days_since": 11,
+        "days_since": 42,
         "dossier": "people/siddhant-haldar.html"
       },
       {
@@ -114,7 +114,7 @@
         "tier": 1,
         "channel": "twitter",
         "last_contacted": "2026-05-27",
-        "days_since": 34,
+        "days_since": 65,
         "dossier": "people/ajay-jain.html"
       },
       {
@@ -123,11 +123,11 @@
         "tier": 1,
         "channel": "twitter",
         "last_contacted": "2026-05-27",
-        "days_since": 34,
+        "days_since": 65,
         "dossier": "people/mayank-mishra.html"
       }
     ],
-    "total": 374
+    "total": 375
   },
   "replies": [],
   "followups": [
@@ -137,7 +137,7 @@
       "tier": 0,
       "channel": "twitter",
       "last_contacted": "2026-05-26",
-      "overdue_days": 21,
+      "overdue_days": 52,
       "touches": 0,
       "dossier": "people/shivani-poddar.html",
       "link": {
@@ -151,7 +151,7 @@
       "tier": 0,
       "channel": "warm-intro",
       "last_contacted": "2026-05-27",
-      "overdue_days": 20,
+      "overdue_days": 51,
       "touches": 1,
       "dossier": "people/blanca-villanueva.html",
       "link": {
@@ -165,7 +165,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-05-27",
-      "overdue_days": 20,
+      "overdue_days": 51,
       "touches": 0,
       "dossier": "people/dan-kondratyuk.html",
       "link": {
@@ -179,7 +179,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-05-27",
-      "overdue_days": 20,
+      "overdue_days": 51,
       "touches": 0,
       "dossier": "people/joshua-dillon.html",
       "link": {
@@ -193,7 +193,7 @@
       "tier": 0,
       "channel": "email",
       "last_contacted": "2026-05-27",
-      "overdue_days": 20,
+      "overdue_days": 51,
       "touches": 1,
       "dossier": "people/michael-wornow.html",
       "link": {
@@ -207,7 +207,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-05-27",
-      "overdue_days": 20,
+      "overdue_days": 51,
       "touches": 0,
       "dossier": "people/weiying-wang.html",
       "link": {
@@ -221,7 +221,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-06-19",
-      "overdue_days": 0,
+      "overdue_days": 28,
       "touches": 1,
       "dossier": "people/amanpreet-singh.html",
       "link": {
@@ -235,7 +235,7 @@
       "tier": 0,
       "channel": "twitter",
       "last_contacted": "2026-06-19",
-      "overdue_days": 0,
+      "overdue_days": 28,
       "touches": 1,
       "dossier": "people/raunaq-bhirangi.html",
       "link": {
@@ -249,7 +249,7 @@
       "tier": 0,
       "channel": "twitter",
       "last_contacted": "2026-06-19",
-      "overdue_days": 0,
+      "overdue_days": 28,
       "touches": 1,
       "dossier": "people/siddhant-haldar.html",
       "link": {
@@ -263,7 +263,7 @@
       "tier": 1,
       "channel": "twitter",
       "last_contacted": "2026-05-27",
-      "overdue_days": 20,
+      "overdue_days": 51,
       "touches": 1,
       "dossier": "people/ajay-jain.html",
       "link": {
@@ -277,7 +277,7 @@
       "tier": 1,
       "channel": "twitter",
       "last_contacted": "2026-05-27",
-      "overdue_days": 20,
+      "overdue_days": 51,
       "touches": 1,
       "dossier": "people/mayank-mishra.html",
       "link": {
@@ -291,14 +291,14 @@
       "slug": "maruan-al-shedivat",
       "name": "Maruan Al-Shedivat",
       "tier": 0,
-      "score": 717,
+      "score": 708,
       "chips": [
         "stealth",
         "departed"
       ],
       "window": {
         "text": "closes 2026-08-15",
-        "kind": "open"
+        "kind": "soon"
       },
       "why_now": "T0 — active pursuit. JUST left Genesis Molecular AI (led ML research on the Pearl all-atom structure model) and his own site (updated Jun 12 2026) now headers 'Building @ Stealth' in NYC — 'autonomous systems at the AI × Science intersection.' No raise, no…",
       "do_this": "Reach out NOW (X @… / LinkedIn / via maruan.alshedivat.com). Lead with his thesis ('autonomous systems at the AI×Science intersection') + the verifiable 2017…",
@@ -314,41 +314,10 @@
       "dossier": "people/maruan-al-shedivat.html"
     },
     {
-      "slug": "aayush-bansal",
-      "name": "Aayush Bansal",
-      "tier": 0,
-      "score": 693,
-      "chips": [
-        "stealth",
-        "departed",
-        "founder",
-        "indian"
-      ],
-      "window": {
-        "text": "pre-name · open",
-        "kind": "open"
-      },
-      "why_now": "T0 FOUNDING NOW, PRE-RAISE. Departure-to-found, triple-sourced: CV 'Founder & CEO, Stealth Startup' + homepage 'I am building new things' + CMU Swartz VentureBridge '26 ('an idea in stealth'). LEFT the ~$1.5B SpreeAI try-on unicorn (thriving, not a flameout)…",
-      "do_this": "EMAIL ab.nsit@gmail.com (or X DM @aayushbansal — gated). Subject: 'Open4D -> Physical AI, the 12-year through-line.' Lead with the 4D-world/unsupervised-exemplar thesis as the through-line of his arc…",
-      "channel": "email",
-      "draft": {
-        "subject": "Open4D &rarr; Physical AI, the 12-year through-line",
-        "body": "Hi Aayush — I invest at inception and spend my time around the world-models / physical-AI frontier (the Physical Intelligence crowd, the neural-rendering lineage now inside Luma/Runway). What made me reach out is that your new thing isn't a pivot — it's the same bet you've pulled since Open4D and Re…"
-      },
-      "link": {
-        "label": "✉ email",
-        "url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ab.nsit%40gmail.com"
-      },
-      "twitter": "aayushbansal",
-      "linkedin": "aayush-bansal-cmu",
-      "email": "ab.nsit@gmail.com",
-      "dossier": "people/aayush-bansal.html"
-    },
-    {
       "slug": "gaurav-bharaj",
       "name": "Gaurav Bharaj",
       "tier": 0,
-      "score": 687,
+      "score": 665,
       "chips": [
         "stealth",
         "departed",
@@ -379,7 +348,7 @@
       "slug": "marley-xiong",
       "name": "Marley Xiong",
       "tier": 0,
-      "score": 679,
+      "score": 643,
       "chips": [
         "founder"
       ],
@@ -401,145 +370,78 @@
       "dossier": "people/marley-xiong.html"
     },
     {
-      "slug": "lev-chizhov",
-      "name": "Lev Chizhov",
+      "slug": "aayush-bansal",
+      "name": "Aayush Bansal",
       "tier": 0,
-      "score": 660,
+      "score": 634,
       "chips": [
-        "founder"
+        "stealth",
+        "departed",
+        "founder",
+        "indian"
+      ],
+      "window": {
+        "text": "pre-name · open",
+        "kind": "open"
+      },
+      "why_now": "T0 FOUNDING NOW, PRE-RAISE. Departure-to-found, triple-sourced: CV 'Founder & CEO, Stealth Startup' + homepage 'I am building new things' + CMU Swartz VentureBridge '26 ('an idea in stealth'). LEFT the ~$1.5B SpreeAI try-on unicorn (thriving, not a flameout)…",
+      "do_this": "EMAIL ab.nsit@gmail.com (or X DM @aayushbansal — gated). Subject: 'Open4D -> Physical AI, the 12-year through-line.' Lead with the 4D-world/unsupervised-exemplar thesis as the through-line of his arc…",
+      "channel": "email",
+      "draft": {
+        "subject": "Open4D &rarr; Physical AI, the 12-year through-line",
+        "body": "Hi Aayush — I invest at inception and spend my time around the world-models / physical-AI frontier (the Physical Intelligence crowd, the neural-rendering lineage now inside Luma/Runway). What made me reach out is that your new thing isn't a pivot — it's the same bet you've pulled since Open4D and Re…"
+      },
+      "link": {
+        "label": "✉ email",
+        "url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ab.nsit%40gmail.com"
+      },
+      "twitter": "aayushbansal",
+      "linkedin": "aayush-bansal-cmu",
+      "email": "ab.nsit@gmail.com",
+      "dossier": "people/aayush-bansal.html"
+    },
+    {
+      "slug": "douglas-yao",
+      "name": "Douglas Yao",
+      "tier": 0,
+      "score": 634,
+      "chips": [
+        "raising"
       ],
       "window": {
         "text": "closes 2026-08-31",
         "kind": "open"
       },
-      "why_now": "T0 — active pursuit (owner confirmed Aleph Neuro on-thesis, 18 Jun 2026; co-founders Marley Xiong + Raffi Hotter both T0). Verified full-time co-founder of Aleph (alephneuro.com), which launched 25 Jun 2026 with a world-first noninvasive 3D ULM image of a…",
-      "do_this": "Reach out NOW (X DM @levchizhov; fallback lc@lev.la) with the 0.1%→ML wedge: the imaging demo is the cold-start for a neurovascular-ultrasound foundation model + learned decoding; name the landscape…",
-      "channel": "x",
+      "why_now": "T0 — active pursuit (reach out NOW; single-conversation-to-disqualify, NOT a conviction buy). Exceptional out-of-distribution operator at a HOT active inflection: Harvard statistical-genetics PhD (Alkes Price lab; 1st-author Nat Genetics 2020 + Nat Biotech…",
+      "do_this": "Reach out NOW — email douglasyao2@gmail.com with the drafted long-form note (or X DM @DouglasYaoDY; he's mid-launch + 'always down to chat'). Lead with lean/Janssen economics + the capital wall (NOT…",
+      "channel": "email",
       "draft": {
-        "subject": "the 0.1%, and ML-on-raw-ultrasound as the real Aleph",
-        "body": "Hi Lev — I invest at inception and Aleph is the cleanest version of a thesis I keep landing on. Everyone's resharing the brain image, but the line that actually matters is yours: the probe takes in terabytes/hour and the pipeline keeps 0.1% — \"end-to-end ML, trained on large enough datasets, will re…"
+        "subject": "the 1/1000 part stops at IND-enabling — and GalR2 vs GalR1",
+        "body": "Hi Doug — I invest at inception and Pace is the cleanest version of a thesis I keep circling. I read it the way you frame it, not the way the timeline does: trials are the bottleneck, AI is for the cheap discovery half, and the real edge is running the Janssen \"many cheap analogs, fast animal readou…"
       },
       "link": {
         "label": "✉ email",
-        "url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=careers%40alephneuro.com"
+        "url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=douglasyao2%40gmail.com"
       },
-      "twitter": "levchizhov",
-      "linkedin": "ennucore",
-      "email": "careers@alephneuro.com",
-      "dossier": "people/lev-chizhov.html"
+      "twitter": "douglasyaody",
+      "linkedin": "douglas-yao-739142133",
+      "email": "douglasyao2@gmail.com",
+      "dossier": "people/douglas-yao.html"
     }
   ],
   "signals": [
     {
-      "slug": "douglas-yao",
-      "name": "Douglas Yao",
+      "slug": "dong-hyuk-woo",
+      "name": "Dong Hyuk Woo",
       "tier": 0,
-      "date": "2026-06-27",
+      "date": "2026-07-21",
       "days_ago": 0,
-      "type": "founding listed",
-      "text": "Founder of Pace Pharmaceuticals (pacepharmaceuticals.com) — AI-native, garage-scale drug discovery; 2-asset pipeline (PAC-832 Alzheimer's, PAC-336…",
-      "source_url": "https://pacepharmaceuticals.com/about/",
-      "source_kind": "own_site",
-      "delta": 75,
-      "hot": true,
-      "has_dossier": true
-    },
-    {
-      "slug": "douglas-yao",
-      "name": "Douglas Yao",
-      "tier": 0,
-      "date": "2026-06-27",
-      "days_ago": 0,
-      "type": "research shipped",
-      "text": "Launched PAC-832 (selective GalR1 antagonist for Alzheimer's), AI-designed + garage-synthesized + CRO mouse efficacy; viral 16-tweet thread (~947K…",
-      "source_url": "https://x.com/DouglasYaoDY/status/2070904914050797582",
-      "source_kind": "own_site",
-      "delta": 37,
-      "hot": false,
-      "has_dossier": true
-    },
-    {
-      "slug": "lev-chizhov",
-      "name": "Lev Chizhov",
-      "tier": 0,
-      "date": "2026-06-18",
-      "days_ago": 1,
-      "type": "founding listed",
-      "text": "Co-founder of Aleph (alephneuro.com) — noninvasive functional-ultrasound brain interfaces; X bio 'co-founder @alephneuro'; launch thread names him",
-      "source_url": "https://x.com/levchizhov",
-      "source_kind": "own_site",
-      "delta": 74,
-      "hot": true,
-      "has_dossier": true
-    },
-    {
-      "slug": "lev-chizhov",
-      "name": "Lev Chizhov",
-      "tier": 0,
-      "date": "2026-06-25",
-      "days_ago": 1,
-      "type": "research shipped",
-      "text": "Co-founder; Aleph launched world-first noninvasive 3D ULM brain-vasculature image (Jun 2026; Butterfly Network Embedded partner; code+dataset…",
-      "source_url": "https://www.businesswire.com/news/home/20260625817511/en/",
+      "type": "departure",
+      "text": "Left Samsung Semiconductor (SVP, founding head of the AGI Computing Lab — Mach-1 LLM-inference chip, Gaia 4nm) → undisclosed 'stealth' destination;…",
+      "source_url": "https://www.etnews.com/20260721000215",
       "source_kind": "news",
-      "delta": 39,
-      "hot": false,
-      "has_dossier": true
-    },
-    {
-      "slug": "aayush-bansal",
-      "name": "Aayush Bansal",
-      "tier": 0,
-      "date": "2026-06-18",
-      "days_ago": 12,
-      "type": "founding listed",
-      "text": "Founder & CEO of a stealth Physical-AI/4D-world-models startup — CV + homepage + CMU VentureBridge '26; left the ~$1.5B SpreeAI try-on unicorn to…",
-      "source_url": "https://www.aayushbansal.xyz/",
-      "source_kind": "own_site",
-      "delta": 74,
+      "delta": 56,
       "hot": true,
-      "has_dossier": true
-    },
-    {
-      "slug": "raffi-hotter",
-      "name": "Raffi Hotter",
-      "tier": 0,
-      "date": "2026-06-18",
-      "days_ago": 12,
-      "type": "founding listed",
-      "text": "Co-founder of Aleph Neuro (X bio 'co-founder @alephneuro'); just-launched, no disclosed round",
-      "source_url": "https://alephneuro.com",
-      "source_kind": "lab_page",
-      "delta": 74,
-      "hot": true,
-      "has_dossier": true
-    },
-    {
-      "slug": "marley-xiong",
-      "name": "Marley Xiong",
-      "tier": 0,
-      "date": "2026-06-18",
-      "days_ago": 12,
-      "type": "founding listed",
-      "text": "Co-founder of Aleph Neuro (alephneuro.com) — non-invasive brain interfaces; with Raffi Hotter",
-      "source_url": "https://alephneuro.com",
-      "source_kind": "lab_page",
-      "delta": 72,
-      "hot": true,
-      "has_dossier": true
-    },
-    {
-      "slug": "marley-xiong",
-      "name": "Marley Xiong",
-      "tier": 0,
-      "date": "2026-06-25",
-      "days_ago": 12,
-      "type": "research shipped",
-      "text": "Aleph Neuro shipped world-first 3D ULM image of a living human brain through an intact skull (~100× CT volumetric res); code+dataset released;…",
-      "source_url": "https://www.businesswire.com/news/home/20260625817511/en/",
-      "source_kind": "news",
-      "delta": 40,
-      "hot": false,
       "has_dossier": true
     }
   ],
