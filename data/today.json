@@ -1,6 +1,6 @@
 {
-  "built_at": "2026-07-31T09:51:08+00:00",
-  "date": "2026-07-31",
+  "built_at": "2026-08-05T09:10:11+00:00",
+  "date": "2026-08-05",
   "stats": {
     "t0": 32,
     "t1": 60,
@@ -23,7 +23,7 @@
       },
       {
         "status": "indexed",
-        "n": 70
+        "n": 71
       }
     ],
     "in_flight": [
@@ -33,7 +33,7 @@
         "tier": 0,
         "channel": "twitter",
         "last_contacted": "2026-05-26",
-        "days_since": 66,
+        "days_since": 71,
         "dossier": "people/shivani-poddar.html"
       },
       {
@@ -42,7 +42,7 @@
         "tier": 0,
         "channel": "warm-intro",
         "last_contacted": "2026-05-27",
-        "days_since": 65,
+        "days_since": 70,
         "dossier": "people/blanca-villanueva.html"
       },
       {
@@ -51,7 +51,7 @@
         "tier": 0,
         "channel": "linkedin",
         "last_contacted": "2026-05-27",
-        "days_since": 65,
+        "days_since": 70,
         "dossier": "people/dan-kondratyuk.html"
       },
       {
@@ -60,7 +60,7 @@
         "tier": 0,
         "channel": "linkedin",
         "last_contacted": "2026-05-27",
-        "days_since": 65,
+        "days_since": 70,
         "dossier": "people/joshua-dillon.html"
       },
       {
@@ -69,7 +69,7 @@
         "tier": 0,
         "channel": "email",
         "last_contacted": "2026-05-27",
-        "days_since": 65,
+        "days_since": 70,
         "dossier": "people/michael-wornow.html"
       },
       {
@@ -78,7 +78,7 @@
         "tier": 0,
         "channel": "linkedin",
         "last_contacted": "2026-05-27",
-        "days_since": 65,
+        "days_since": 70,
         "dossier": "people/weiying-wang.html"
       },
       {
@@ -87,7 +87,7 @@
         "tier": 0,
         "channel": "linkedin",
         "last_contacted": "2026-06-19",
-        "days_since": 42,
+        "days_since": 47,
         "dossier": "people/amanpreet-singh.html"
       },
       {
@@ -96,7 +96,7 @@
         "tier": 0,
         "channel": "twitter",
         "last_contacted": "2026-06-19",
-        "days_since": 42,
+        "days_since": 47,
         "dossier": "people/raunaq-bhirangi.html"
       },
       {
@@ -105,7 +105,7 @@
         "tier": 0,
         "channel": "twitter",
         "last_contacted": "2026-06-19",
-        "days_since": 42,
+        "days_since": 47,
         "dossier": "people/siddhant-haldar.html"
       },
       {
@@ -114,7 +114,7 @@
         "tier": 1,
         "channel": "twitter",
         "last_contacted": "2026-05-27",
-        "days_since": 65,
+        "days_since": 70,
         "dossier": "people/ajay-jain.html"
       },
       {
@@ -123,11 +123,11 @@
         "tier": 1,
         "channel": "twitter",
         "last_contacted": "2026-05-27",
-        "days_since": 65,
+        "days_since": 70,
         "dossier": "people/mayank-mishra.html"
       }
     ],
-    "total": 375
+    "total": 376
   },
   "replies": [],
   "followups": [
@@ -137,7 +137,7 @@
       "tier": 0,
       "channel": "twitter",
       "last_contacted": "2026-05-26",
-      "overdue_days": 52,
+      "overdue_days": 57,
       "touches": 0,
       "dossier": "people/shivani-poddar.html",
       "link": {
@@ -151,7 +151,7 @@
       "tier": 0,
       "channel": "warm-intro",
       "last_contacted": "2026-05-27",
-      "overdue_days": 51,
+      "overdue_days": 56,
       "touches": 1,
       "dossier": "people/blanca-villanueva.html",
       "link": {
@@ -165,7 +165,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-05-27",
-      "overdue_days": 51,
+      "overdue_days": 56,
       "touches": 0,
       "dossier": "people/dan-kondratyuk.html",
       "link": {
@@ -179,7 +179,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-05-27",
-      "overdue_days": 51,
+      "overdue_days": 56,
       "touches": 0,
       "dossier": "people/joshua-dillon.html",
       "link": {
@@ -193,7 +193,7 @@
       "tier": 0,
       "channel": "email",
       "last_contacted": "2026-05-27",
-      "overdue_days": 51,
+      "overdue_days": 56,
       "touches": 1,
       "dossier": "people/michael-wornow.html",
       "link": {
@@ -207,7 +207,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-05-27",
-      "overdue_days": 51,
+      "overdue_days": 56,
       "touches": 0,
       "dossier": "people/weiying-wang.html",
       "link": {
@@ -221,7 +221,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-06-19",
-      "overdue_days": 28,
+      "overdue_days": 33,
       "touches": 1,
       "dossier": "people/amanpreet-singh.html",
       "link": {
@@ -235,7 +235,7 @@
       "tier": 0,
       "channel": "twitter",
       "last_contacted": "2026-06-19",
-      "overdue_days": 28,
+      "overdue_days": 33,
       "touches": 1,
       "dossier": "people/raunaq-bhirangi.html",
       "link": {
@@ -249,7 +249,7 @@
       "tier": 0,
       "channel": "twitter",
       "last_contacted": "2026-06-19",
-      "overdue_days": 28,
+      "overdue_days": 33,
       "touches": 1,
       "dossier": "people/siddhant-haldar.html",
       "link": {
@@ -263,7 +263,7 @@
       "tier": 1,
       "channel": "twitter",
       "last_contacted": "2026-05-27",
-      "overdue_days": 51,
+      "overdue_days": 56,
       "touches": 1,
       "dossier": "people/ajay-jain.html",
       "link": {
@@ -277,7 +277,7 @@
       "tier": 1,
       "channel": "twitter",
       "last_contacted": "2026-05-27",
-      "overdue_days": 51,
+      "overdue_days": 56,
       "touches": 1,
       "dossier": "people/mayank-mishra.html",
       "link": {
@@ -291,7 +291,7 @@
       "slug": "maruan-al-shedivat",
       "name": "Maruan Al-Shedivat",
       "tier": 0,
-      "score": 708,
+      "score": 709,
       "chips": [
         "stealth",
         "departed"
@@ -317,7 +317,7 @@
       "slug": "gaurav-bharaj",
       "name": "Gaurav Bharaj",
       "tier": 0,
-      "score": 665,
+      "score": 664,
       "chips": [
         "stealth",
         "departed",
@@ -345,10 +345,36 @@
       "dossier": "people/gaurav-bharaj.html"
     },
     {
+      "slug": "dong-hyuk-woo",
+      "name": "Dong Hyuk Woo",
+      "tier": 0,
+      "score": 650,
+      "chips": [
+        "stealth",
+        "departed"
+      ],
+      "window": {
+        "text": "closes 2026-09-30",
+        "kind": "open"
+      },
+      "why_now": "T0 — reach out NOW (free agent in transition as of ~Jul 2026), but to LEARN + build, NOT a conviction buy. Core ex-Google Edge/on-device TPU architect (1-of-4 on the compute-tile patent w/ Temam/Narayanaswami/Khaitan; Coral, Pixel Neural Core, Google Tensor,…",
+      "do_this": "Reach out NOW via LinkedIn (linkedin.com/in/donghyukwoo/) or a warm intro (Georgia Tech / ex-Google-silicon graph) — NO public email on file. Peer-level, no hard pitch: lead with the…",
+      "channel": "linkedin",
+      "draft": null,
+      "link": {
+        "label": "in/donghyukwoo",
+        "url": "https://linkedin.com/in/donghyukwoo/"
+      },
+      "twitter": null,
+      "linkedin": "donghyukwoo",
+      "email": null,
+      "dossier": "people/dong-hyuk-woo.html"
+    },
+    {
       "slug": "marley-xiong",
       "name": "Marley Xiong",
       "tier": 0,
-      "score": 643,
+      "score": 646,
       "chips": [
         "founder"
       ],
@@ -370,41 +396,10 @@
       "dossier": "people/marley-xiong.html"
     },
     {
-      "slug": "aayush-bansal",
-      "name": "Aayush Bansal",
-      "tier": 0,
-      "score": 634,
-      "chips": [
-        "stealth",
-        "departed",
-        "founder",
-        "indian"
-      ],
-      "window": {
-        "text": "pre-name · open",
-        "kind": "open"
-      },
-      "why_now": "T0 FOUNDING NOW, PRE-RAISE. Departure-to-found, triple-sourced: CV 'Founder & CEO, Stealth Startup' + homepage 'I am building new things' + CMU Swartz VentureBridge '26 ('an idea in stealth'). LEFT the ~$1.5B SpreeAI try-on unicorn (thriving, not a flameout)…",
-      "do_this": "EMAIL ab.nsit@gmail.com (or X DM @aayushbansal — gated). Subject: 'Open4D -> Physical AI, the 12-year through-line.' Lead with the 4D-world/unsupervised-exemplar thesis as the through-line of his arc…",
-      "channel": "email",
-      "draft": {
-        "subject": "Open4D &rarr; Physical AI, the 12-year through-line",
-        "body": "Hi Aayush — I invest at inception and spend my time around the world-models / physical-AI frontier (the Physical Intelligence crowd, the neural-rendering lineage now inside Luma/Runway). What made me reach out is that your new thing isn't a pivot — it's the same bet you've pulled since Open4D and Re…"
-      },
-      "link": {
-        "label": "✉ email",
-        "url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ab.nsit%40gmail.com"
-      },
-      "twitter": "aayushbansal",
-      "linkedin": "aayush-bansal-cmu",
-      "email": "ab.nsit@gmail.com",
-      "dossier": "people/aayush-bansal.html"
-    },
-    {
       "slug": "douglas-yao",
       "name": "Douglas Yao",
       "tier": 0,
-      "score": 634,
+      "score": 636,
       "chips": [
         "raising"
       ],
@@ -435,12 +430,12 @@
       "name": "Dong Hyuk Woo",
       "tier": 0,
       "date": "2026-07-21",
-      "days_ago": 0,
+      "days_ago": 5,
       "type": "departure",
       "text": "Left Samsung Semiconductor (SVP, founding head of the AGI Computing Lab — Mach-1 LLM-inference chip, Gaia 4nm) → undisclosed 'stealth' destination;…",
       "source_url": "https://www.etnews.com/20260721000215",
       "source_kind": "news",
-      "delta": 56,
+      "delta": 55,
       "hot": true,
       "has_dossier": true
     }

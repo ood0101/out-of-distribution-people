@@ -1,6 +1,6 @@
 {
- "generated": "2026-06-30",
- "count": 276,
+ "generated": "2026-07-31",
+ "count": 277,
  "people": [
   {
    "slug": "dong-hyuk-woo",
@@ -28,7 +28,7 @@
    "status": "not-contacted",
    "last_contacted": null,
    "next_action_date": null,
-   "updated": "",
+   "updated": "2026-07-31",
    "added": "2026-07-31",
    "channel": "linkedin",
    "twitter": null,
@@ -4375,6 +4375,43 @@
    "email": null,
    "gmail_url": null,
    "indian": false,
+   "delta": false,
+   "needs_triage": false,
+   "urgency": false
+  },
+  {
+   "slug": "ankit-garg",
+   "name": "Ankit Garg",
+   "tier": 3,
+   "role": "Celebrated algebraic-complexity theorist (operator scaling / GGOW FOCS 2016 — first deterministic poly-time non-commutative rational identity testing; the Brascamp-Lieb / geodesic-optimization line with Wigderson), now pivoting to neural-retrieval efficiency at MSR India. IIT Delhi → Princeton (Braverman). Indian.",
+   "spike": "T3 — INDEXED, not pursued (watch for an MSR departure). Exceptional theorist + Indian (sourcing thesis) + high-trust network node — but NO inflection: stable Senior Researcher at MSR India ~8 yrs (since 2018), actively publishing MSR research as of Nov 2025, dormant non-professional X, no competition pedigree; the neural-retrieval 'pivot' (arXiv 2511.16106, +1.28% recall BEIR) is incremental research, not a product/company. THE ALPHA (why banked): operator scaling (GGOW FOCS 2016) is a program-launching result — first deterministic poly-time for non-commutative RIT / the word problem for the free skew field; bridged PIT + invariant theory + geodesic-convex optimization; launched a line with Wigderson (Turing'23). Real ML-foundations reach (his top-cited work = distributed-estimation lower bounds w/ Braverman/Woodruff). HONEST calibration: deep-SUBFIELD landmark, not a mega-result; upper-tier mid-career theorist, not field-dominating; no major individual prize confirmed; frontier-ML output is old-or-thin. FLIP-TRIGGER: departs MSR → re-evaluate immediately. NETWORK WATCHLIST (the nearer-term value — his orbit is academia/frontier-lab-dense, NOT founder-dense): Prateek Jain (MSR-India→Google DeepMind India, co-leads Gemini long-term research — P0 future-departure watch), Praneeth Netrapalli (ex-MSR India→GDM), Zeyuan Allen-Zhu (Meta FAIR, direct co-author, airing FAIR friction — weak watch), Kirankumar Shiragur (MSR, young/mobile), advisor Mark Braverman (past founder Zetawire→Google). Adjacent founder vein one hop out (NOT co-authors, verify separately): MSR-India→Sarvam AI / AI4Bharat. DISAMBIG: dblp pid 98/516 is a DIFFERENT Ankit Garg; no competition pedigree (namesakes = a police officer + eng managers). Indian.",
+   "tags": [
+    "indian",
+    "complexity-theory",
+    "operator-scaling",
+    "ml-theory",
+    "neural-retrieval",
+    "msr-india",
+    "iit-delhi",
+    "network-node",
+    "watch-for-departure"
+   ],
+   "cluster": "ml-theory",
+   "signals": [
+    "stealth",
+    "founder"
+   ],
+   "status": "indexed",
+   "last_contacted": null,
+   "next_action_date": null,
+   "updated": "",
+   "added": "2026-08-05",
+   "channel": null,
+   "twitter": "ankit_garg06",
+   "linkedin": null,
+   "email": "garga@microsoft.com",
+   "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=garga%40microsoft.com",
+   "indian": true,
    "delta": false,
    "needs_triage": false,
    "urgency": false

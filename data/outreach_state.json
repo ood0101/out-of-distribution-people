@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-07-31T09:50:35+00:00",
+  "last_built": "2026-08-05T09:10:11+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -1469,6 +1469,61 @@
       "channel": null,
       "next_action": null,
       "cluster": null,
+      "email_override": null,
+      "outreach_subject_override": null,
+      "outreach_body_override": null,
+      "channels_attempted": []
+    },
+    "ankit-garg": {
+      "name": "Ankit Garg",
+      "tier": 3,
+      "tier_label": "tier-3: indexed",
+      "category": "outreach",
+      "tags": [
+        "indian",
+        "complexity-theory",
+        "operator-scaling",
+        "ml-theory",
+        "neural-retrieval",
+        "msr-india",
+        "iit-delhi",
+        "network-node",
+        "watch-for-departure"
+      ],
+      "indian": true,
+      "delta": false,
+      "one_liner": "A celebrated algebraic-complexity theorist — author of the first deterministic polynomial-time algorithm for non-commutative rational identity testing (operator scaling, GGOW FOCS 2016) — now credibly pivoting toward applied ML (neural retrieval) at Microsoft Research India.",
+      "signals": {
+        "tag_stealth_founder": false,
+        "tag_founders": false,
+        "phrase_stealth": true,
+        "phrase_departed": false,
+        "phrase_raising": false,
+        "phrase_founded": true
+      },
+      "last_git_touch": null,
+      "needs_triage": false,
+      "emails": [
+        "garga@microsoft.com"
+      ],
+      "email_primary": "garga@microsoft.com",
+      "email_primary_kind": "company",
+      "outreach_subject": null,
+      "outreach_body_preview": null,
+      "gmail_url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=garga%40microsoft.com",
+      "twitter_handle": "ankit_garg06",
+      "linkedin_slug": null,
+      "github_handle": null,
+      "status": "indexed",
+      "last_contacted": null,
+      "next_action_date": null,
+      "response": null,
+      "notes": "",
+      "urgency_decay_date": null,
+      "urgency_reason": null,
+      "channel": null,
+      "next_action": "MONITOR — no active outreach. Re-trigger immediately on any MSR-India departure / founder / frontier-lab move. Network value: warm node into algebraic-complexity + the Indian-TCS→Google-DeepMind pipeline (Prateek Jain, Praneeth Netrapalli).",
+      "cluster": "ml-theory",
       "email_override": null,
       "outreach_subject_override": null,
       "outreach_body_override": null,
@@ -3740,7 +3795,7 @@
         "phrase_raising": false,
         "phrase_founded": false
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-07-31T15:21:53+05:30",
       "needs_triage": false,
       "emails": [],
       "email_primary": null,
