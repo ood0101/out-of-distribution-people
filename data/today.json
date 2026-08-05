@@ -1,17 +1,17 @@
 {
-  "built_at": "2026-08-05T09:10:11+00:00",
+  "built_at": "2026-08-05T09:23:23+00:00",
   "date": "2026-08-05",
   "stats": {
     "t0": 32,
-    "t1": 60,
+    "t1": 61,
     "in_flight": 11,
-    "pool": 136
+    "pool": 137
   },
   "pipeline": {
     "funnel": [
       {
         "status": "not-contacted",
-        "n": 290
+        "n": 291
       },
       {
         "status": "contacted",
@@ -127,7 +127,7 @@
         "dossier": "people/mayank-mishra.html"
       }
     ],
-    "total": 376
+    "total": 377
   },
   "replies": [],
   "followups": [
@@ -438,6 +438,19 @@
       "delta": 55,
       "hot": true,
       "has_dossier": true
+    },
+    {
+      "slug": "ankit-garg",
+      "name": "Ankit Garg",
+      "tier": 3,
+      "date": "2026-08-05",
+      "days_ago": 0,
+      "type": "dossier updated",
+      "text": "A celebrated algebraic-complexity theorist — author of the first deterministic polynomial-time algorithm for non-commutative rational identity…",
+      "source_url": null,
+      "source_kind": "git",
+      "delta": null,
+      "hot": false
     }
   ],
   "triage": {
