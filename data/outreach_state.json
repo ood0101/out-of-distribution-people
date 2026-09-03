@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "last_built": "2026-08-05T09:23:23+00:00",
+  "last_built": "2026-09-03T11:59:01+00:00",
   "people": {
     "aadi-nashikkar": {
       "name": "Aadi Nashikkar",
@@ -75,7 +75,7 @@
         "phrase_raising": false,
         "phrase_founded": false
       },
-      "last_git_touch": null,
+      "last_git_touch": "2026-08-05T14:53:47+05:30",
       "needs_triage": false,
       "emails": [
         "achowdhery@alumni.stanford.edu"
@@ -1524,6 +1524,59 @@
       "channel": null,
       "next_action": null,
       "cluster": null,
+      "email_override": null,
+      "outreach_subject_override": null,
+      "outreach_body_override": null,
+      "channels_attempted": []
+    },
+    "anima-anandkumar": {
+      "name": "Anima Anandkumar",
+      "tier": 0,
+      "tier_label": "tier-0: active pursuit",
+      "category": "outreach",
+      "tags": [
+        "indian",
+        "physics-ai",
+        "neural-operators",
+        "frontier-ai",
+        "ai4science",
+        "founder",
+        "ex-nvidia",
+        "caltech",
+        "ood"
+      ],
+      "indian": true,
+      "delta": false,
+      "one_liner": "The principal architect of",
+      "signals": {
+        "tag_stealth_founder": false,
+        "tag_founders": false,
+        "phrase_stealth": true,
+        "phrase_departed": true,
+        "phrase_raising": false,
+        "phrase_founded": true
+      },
+      "last_git_touch": null,
+      "needs_triage": false,
+      "emails": [],
+      "email_primary": null,
+      "email_primary_kind": null,
+      "outreach_subject": "cross-physics uplift — the benchmark, not the 5T headline",
+      "outreach_body_preview": "Hi Anima — I invest at inception and I've followed operator learning since FNO, so Accelerated Understanding is the launch I've been waiting for someone to have the standing to do: putting physics, not language, at the center. The parts I think are genuinely under-appreciated are the ones the press …",
+      "gmail_url": null,
+      "twitter_handle": "animaanandkumar",
+      "linkedin_slug": null,
+      "github_handle": null,
+      "status": "not-contacted",
+      "last_contacted": null,
+      "next_action_date": null,
+      "response": null,
+      "notes": "",
+      "urgency_decay_date": "2026-10-15",
+      "urgency_reason": "T0 — reach out NOW (Accelerated Understanding came out of stealth 25 Aug 2026; 9-day-old founding, dead-on-thesis frontier physics-AI + Indian-origin), but HONESTLY for the relationship + a long-shot allocation, NOT a modelable inception check. The central figure of neural operators (FNO; ~81K cites, h-108), ex-NVIDIA Sr Director, Caltech Bren Prof; turned down LEADING Bezos's $12B Prometheus (35% stake, $2B terms) = maximal conviction. ALLOCATION: door technically open (no syndicated round, no Form D, 2-founder co, compute-partnered) BUT frontier-lab cost tier + her stature → any raise will be large/oversubscribed/strategic-led where a $500K-1M is immaterial/access-gated. HONESTY: make-or-break 'cross-physics generalization' claim is the field's central UNSOLVED problem asserted with NO benchmark; no customers/revenue; PhysicsX ($2.4B) further along; her biggest cites are ironically transformers; NOT a clean lab-departure. Indian (Mysore/IIT Madras).",
+      "channel": "x",
+      "next_action": "Reach out NOW — X @AnimaAnandkumar or a warm intro via the AI4Science / ex-NVIDIA graph. Lead with the ONE diligence question that proves peer-level understanding: a held-out cross-physics generalization benchmark vs per-task FNO/graph-net/numerical baselines ('cross-physics uplift' is the whole company, currently only 'observed'). Meet her nature-centric physics thesis; be honest a $500K-1M is immaterial at her scale (relationship + long-shot strategic, not a lead). THE REAL YIELD = mine the recursive diaspora: Kamyar Azizzadenesheli (→Prometheus), watch Jean Kossaifi + Guanzhi Wang (NVIDIA), Jaideep Pathak (Indian); + gettable comps Astrus / Maieutic (Indian) / Silurian / Causal Labs.",
+      "cluster": "physics-ai",
       "email_override": null,
       "outreach_subject_override": null,
       "outreach_body_override": null,

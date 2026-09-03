@@ -1,17 +1,17 @@
 {
-  "built_at": "2026-08-05T09:23:23+00:00",
-  "date": "2026-08-05",
+  "built_at": "2026-09-03T11:59:01+00:00",
+  "date": "2026-09-03",
   "stats": {
-    "t0": 32,
+    "t0": 33,
     "t1": 61,
     "in_flight": 11,
-    "pool": 137
+    "pool": 138
   },
   "pipeline": {
     "funnel": [
       {
         "status": "not-contacted",
-        "n": 291
+        "n": 292
       },
       {
         "status": "contacted",
@@ -33,7 +33,7 @@
         "tier": 0,
         "channel": "twitter",
         "last_contacted": "2026-05-26",
-        "days_since": 71,
+        "days_since": 100,
         "dossier": "people/shivani-poddar.html"
       },
       {
@@ -42,7 +42,7 @@
         "tier": 0,
         "channel": "warm-intro",
         "last_contacted": "2026-05-27",
-        "days_since": 70,
+        "days_since": 99,
         "dossier": "people/blanca-villanueva.html"
       },
       {
@@ -51,7 +51,7 @@
         "tier": 0,
         "channel": "linkedin",
         "last_contacted": "2026-05-27",
-        "days_since": 70,
+        "days_since": 99,
         "dossier": "people/dan-kondratyuk.html"
       },
       {
@@ -60,7 +60,7 @@
         "tier": 0,
         "channel": "linkedin",
         "last_contacted": "2026-05-27",
-        "days_since": 70,
+        "days_since": 99,
         "dossier": "people/joshua-dillon.html"
       },
       {
@@ -69,7 +69,7 @@
         "tier": 0,
         "channel": "email",
         "last_contacted": "2026-05-27",
-        "days_since": 70,
+        "days_since": 99,
         "dossier": "people/michael-wornow.html"
       },
       {
@@ -78,7 +78,7 @@
         "tier": 0,
         "channel": "linkedin",
         "last_contacted": "2026-05-27",
-        "days_since": 70,
+        "days_since": 99,
         "dossier": "people/weiying-wang.html"
       },
       {
@@ -87,7 +87,7 @@
         "tier": 0,
         "channel": "linkedin",
         "last_contacted": "2026-06-19",
-        "days_since": 47,
+        "days_since": 76,
         "dossier": "people/amanpreet-singh.html"
       },
       {
@@ -96,7 +96,7 @@
         "tier": 0,
         "channel": "twitter",
         "last_contacted": "2026-06-19",
-        "days_since": 47,
+        "days_since": 76,
         "dossier": "people/raunaq-bhirangi.html"
       },
       {
@@ -105,7 +105,7 @@
         "tier": 0,
         "channel": "twitter",
         "last_contacted": "2026-06-19",
-        "days_since": 47,
+        "days_since": 76,
         "dossier": "people/siddhant-haldar.html"
       },
       {
@@ -114,7 +114,7 @@
         "tier": 1,
         "channel": "twitter",
         "last_contacted": "2026-05-27",
-        "days_since": 70,
+        "days_since": 99,
         "dossier": "people/ajay-jain.html"
       },
       {
@@ -123,11 +123,11 @@
         "tier": 1,
         "channel": "twitter",
         "last_contacted": "2026-05-27",
-        "days_since": 70,
+        "days_since": 99,
         "dossier": "people/mayank-mishra.html"
       }
     ],
-    "total": 377
+    "total": 378
   },
   "replies": [],
   "followups": [
@@ -137,7 +137,7 @@
       "tier": 0,
       "channel": "twitter",
       "last_contacted": "2026-05-26",
-      "overdue_days": 57,
+      "overdue_days": 86,
       "touches": 0,
       "dossier": "people/shivani-poddar.html",
       "link": {
@@ -151,7 +151,7 @@
       "tier": 0,
       "channel": "warm-intro",
       "last_contacted": "2026-05-27",
-      "overdue_days": 56,
+      "overdue_days": 85,
       "touches": 1,
       "dossier": "people/blanca-villanueva.html",
       "link": {
@@ -165,7 +165,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-05-27",
-      "overdue_days": 56,
+      "overdue_days": 85,
       "touches": 0,
       "dossier": "people/dan-kondratyuk.html",
       "link": {
@@ -179,7 +179,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-05-27",
-      "overdue_days": 56,
+      "overdue_days": 85,
       "touches": 0,
       "dossier": "people/joshua-dillon.html",
       "link": {
@@ -193,7 +193,7 @@
       "tier": 0,
       "channel": "email",
       "last_contacted": "2026-05-27",
-      "overdue_days": 56,
+      "overdue_days": 85,
       "touches": 1,
       "dossier": "people/michael-wornow.html",
       "link": {
@@ -207,7 +207,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-05-27",
-      "overdue_days": 56,
+      "overdue_days": 85,
       "touches": 0,
       "dossier": "people/weiying-wang.html",
       "link": {
@@ -221,7 +221,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-06-19",
-      "overdue_days": 33,
+      "overdue_days": 62,
       "touches": 1,
       "dossier": "people/amanpreet-singh.html",
       "link": {
@@ -235,7 +235,7 @@
       "tier": 0,
       "channel": "twitter",
       "last_contacted": "2026-06-19",
-      "overdue_days": 33,
+      "overdue_days": 62,
       "touches": 1,
       "dossier": "people/raunaq-bhirangi.html",
       "link": {
@@ -249,7 +249,7 @@
       "tier": 0,
       "channel": "twitter",
       "last_contacted": "2026-06-19",
-      "overdue_days": 33,
+      "overdue_days": 62,
       "touches": 1,
       "dossier": "people/siddhant-haldar.html",
       "link": {
@@ -263,7 +263,7 @@
       "tier": 1,
       "channel": "twitter",
       "last_contacted": "2026-05-27",
-      "overdue_days": 56,
+      "overdue_days": 85,
       "touches": 1,
       "dossier": "people/ajay-jain.html",
       "link": {
@@ -277,7 +277,7 @@
       "tier": 1,
       "channel": "twitter",
       "last_contacted": "2026-05-27",
-      "overdue_days": 56,
+      "overdue_days": 85,
       "touches": 1,
       "dossier": "people/mayank-mishra.html",
       "link": {
@@ -288,36 +288,38 @@
   ],
   "today5": [
     {
-      "slug": "maruan-al-shedivat",
-      "name": "Maruan Al-Shedivat",
+      "slug": "anima-anandkumar",
+      "name": "Anima Anandkumar",
       "tier": 0,
-      "score": 709,
+      "score": 686,
       "chips": [
         "stealth",
-        "departed"
+        "departed",
+        "founder",
+        "indian"
       ],
       "window": {
-        "text": "closes 2026-08-15",
-        "kind": "soon"
+        "text": "closes 2026-10-15",
+        "kind": "open"
       },
-      "why_now": "T0 — active pursuit. JUST left Genesis Molecular AI (led ML research on the Pearl all-atom structure model) and his own site (updated Jun 12 2026) now headers 'Building @ Stealth' in NYC — 'autonomous systems at the AI × Science intersection.' No raise, no…",
-      "do_this": "Reach out NOW (X @… / LinkedIn / via maruan.alshedivat.com). Lead with his thesis ('autonomous systems at the AI×Science intersection') + the verifiable 2017…",
+      "why_now": "T0 — reach out NOW (Accelerated Understanding came out of stealth 25 Aug 2026; 9-day-old founding, dead-on-thesis frontier physics-AI + Indian-origin), but HONESTLY for the relationship + a long-shot allocation, NOT a modelable inception check. The central…",
+      "do_this": "Reach out NOW — X @AnimaAnandkumar or a warm intro via the AI4Science / ex-NVIDIA graph. Lead with the ONE diligence question that proves peer-level understanding: a held-out cross-physics…",
       "channel": "x",
       "draft": {
-        "subject": "autonomous systems at the AI &times; Science intersection — after Pearl",
-        "body": "Hi Maruan — I invest at inception and your jump to \"Building @ Stealth\" caught my eye, because the leap you describe — from an all-atom structure model like Pearl to\nautonomous systems that solve problems at the AI&times;Science intersection\n— is the part I think is most underbuilt. The structure la…"
+        "subject": "cross-physics uplift — the benchmark, not the 5T headline",
+        "body": "Hi Anima — I invest at inception and I've followed operator learning since FNO, so Accelerated Understanding is the launch I've been waiting for someone to have the standing to do: putting physics, not language, at the center. The parts I think are genuinely under-appreciated are the ones the press …"
       },
       "link": null,
-      "twitter": null,
-      "linkedin": "alshedivat",
+      "twitter": "animaanandkumar",
+      "linkedin": null,
       "email": null,
-      "dossier": "people/maruan-al-shedivat.html"
+      "dossier": "people/anima-anandkumar.html"
     },
     {
       "slug": "gaurav-bharaj",
       "name": "Gaurav Bharaj",
       "tier": 0,
-      "score": 664,
+      "score": 655,
       "chips": [
         "stealth",
         "departed",
@@ -345,10 +347,41 @@
       "dossier": "people/gaurav-bharaj.html"
     },
     {
+      "slug": "aayush-bansal",
+      "name": "Aayush Bansal",
+      "tier": 0,
+      "score": 625,
+      "chips": [
+        "stealth",
+        "departed",
+        "founder",
+        "indian"
+      ],
+      "window": {
+        "text": "pre-name · open",
+        "kind": "open"
+      },
+      "why_now": "T0 FOUNDING NOW, PRE-RAISE. Departure-to-found, triple-sourced: CV 'Founder & CEO, Stealth Startup' + homepage 'I am building new things' + CMU Swartz VentureBridge '26 ('an idea in stealth'). LEFT the ~$1.5B SpreeAI try-on unicorn (thriving, not a flameout)…",
+      "do_this": "EMAIL ab.nsit@gmail.com (or X DM @aayushbansal — gated). Subject: 'Open4D -> Physical AI, the 12-year through-line.' Lead with the 4D-world/unsupervised-exemplar thesis as the through-line of his arc…",
+      "channel": "email",
+      "draft": {
+        "subject": "Open4D &rarr; Physical AI, the 12-year through-line",
+        "body": "Hi Aayush — I invest at inception and spend my time around the world-models / physical-AI frontier (the Physical Intelligence crowd, the neural-rendering lineage now inside Luma/Runway). What made me reach out is that your new thing isn't a pivot — it's the same bet you've pulled since Open4D and Re…"
+      },
+      "link": {
+        "label": "✉ email",
+        "url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=ab.nsit%40gmail.com"
+      },
+      "twitter": "aayushbansal",
+      "linkedin": "aayush-bansal-cmu",
+      "email": "ab.nsit@gmail.com",
+      "dossier": "people/aayush-bansal.html"
+    },
+    {
       "slug": "dong-hyuk-woo",
       "name": "Dong Hyuk Woo",
       "tier": 0,
-      "score": 650,
+      "score": 624,
       "chips": [
         "stealth",
         "departed"
@@ -371,86 +404,50 @@
       "dossier": "people/dong-hyuk-woo.html"
     },
     {
-      "slug": "marley-xiong",
-      "name": "Marley Xiong",
+      "slug": "scott-reed",
+      "name": "Scott Reed",
       "tier": 0,
-      "score": 646,
+      "score": 612,
       "chips": [
+        "stealth",
+        "departed",
         "founder"
       ],
       "window": {
-        "text": "closes 2026-08-31",
+        "text": "pre-name · open",
         "kind": "open"
       },
-      "why_now": "T0 — active pursuit (owner confirmed BCI is on-thesis, 18 Jun 2026). Exceptional out-of-distribution founder at an ACTIVE inflection: co-founder of Aleph Neuro, shipped a WORLD-FIRST through-skull 3D ULM brain image (~100× CT volumetric res; code+dataset…",
-      "do_this": "Reach out NOW (X @_marleyx) with the drafted transcranial-ULM note (released artifacts → vascular-to-functional-decoding question; landscape Precision/Science Corp/Merge vs Openwater/Forest/Kernel);…",
-      "channel": "x",
+      "why_now": "ONE OF THE MOST SENIOR RESEARCHER-DEPARTURES IN THE REPO + explicit founding signal. Site + LinkedIn both say 'building something new' / 'Something new' (Atlanta Metro). Just left NVIDIA (one of 20 tracked) where he was PRINCIPAL RESEARCH SCIENTIST + FOUNDING…",
+      "do_this": "DM @scott_e_reed (fallback LinkedIn reedscott); STRONGEST path = warm intro via Jim Fan (Exceptional 100, GEAR co-lead). Subject: 'GATO's generalist thesis, now as a company.' Lead with the GATO…",
+      "channel": "twitter",
       "draft": {
-        "subject": "ULM through an intact skull — the bandwidth path after the vascular map",
-        "body": "Hi Marley — I invest at inception and the Aleph result genuinely stopped me: a 3D ULM map of a living brain through the skull, with the code and dataset actually posted, is a different category from the usual neurotech demo. Most of the non-invasive field is either implanted (Precision, Science Corp…"
-      },
-      "link": null,
-      "twitter": "_marleyx",
-      "linkedin": "marley-xiong",
-      "email": null,
-      "dossier": "people/marley-xiong.html"
-    },
-    {
-      "slug": "douglas-yao",
-      "name": "Douglas Yao",
-      "tier": 0,
-      "score": 636,
-      "chips": [
-        "raising"
-      ],
-      "window": {
-        "text": "closes 2026-08-31",
-        "kind": "open"
-      },
-      "why_now": "T0 — active pursuit (reach out NOW; single-conversation-to-disqualify, NOT a conviction buy). Exceptional out-of-distribution operator at a HOT active inflection: Harvard statistical-genetics PhD (Alkes Price lab; 1st-author Nat Genetics 2020 + Nat Biotech…",
-      "do_this": "Reach out NOW — email douglasyao2@gmail.com with the drafted long-form note (or X DM @DouglasYaoDY; he's mid-launch + 'always down to chat'). Lead with lean/Janssen economics + the capital wall (NOT…",
-      "channel": "email",
-      "draft": {
-        "subject": "the 1/1000 part stops at IND-enabling — and GalR2 vs GalR1",
-        "body": "Hi Doug — I invest at inception and Pace is the cleanest version of a thesis I keep circling. I read it the way you frame it, not the way the timeline does: trials are the bottleneck, AI is for the cheap discovery half, and the real edge is running the Janssen \"many cheap analogs, fast animal readou…"
+        "subject": "World Action Models, and where the representation lives",
+        "body": "Hi Scott — I partner with out-of-distribution people solving truly hard problems in AI, and I saw you're building something new. World Action Models stuck with me — the policy emerging from predicting how the world evolves, rather than trained separately like VLAs or GATO. I think that's the right frame. Where my head goes next is the representation: DreamZero and Cosmos predict in video space, but the JEPA bet is to predict in latent space instead — throw away the pixel detail that doesn't matter and model the abstract dynamics. I'm genuinely curious whether you see video as the representation that works, or a stepping stone toward predicting in representation space. (WAM almost feels like your 2016 generative work and the GATO thesis finally fused.) I write $500K–$1M at inception, but mostly I'd love to hear how you're thinking about it. — Vansh"
       },
       "link": {
-        "label": "✉ email",
-        "url": "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=douglasyao2%40gmail.com"
+        "label": "𝕏 @scott_e_reed",
+        "url": "https://twitter.com/messages/compose?recipient_screen_name=scott_e_reed"
       },
-      "twitter": "douglasyaody",
-      "linkedin": "douglas-yao-739142133",
-      "email": "douglasyao2@gmail.com",
-      "dossier": "people/douglas-yao.html"
+      "twitter": "scott_e_reed",
+      "linkedin": "reedscott",
+      "email": "scott.ellison.reed@gmail.com",
+      "dossier": "people/scott-reed.html"
     }
   ],
   "signals": [
     {
-      "slug": "dong-hyuk-woo",
-      "name": "Dong Hyuk Woo",
+      "slug": "anima-anandkumar",
+      "name": "Anima Anandkumar",
       "tier": 0,
-      "date": "2026-07-21",
-      "days_ago": 5,
-      "type": "departure",
-      "text": "Left Samsung Semiconductor (SVP, founding head of the AGI Computing Lab — Mach-1 LLM-inference chip, Gaia 4nm) → undisclosed 'stealth' destination;…",
-      "source_url": "https://www.etnews.com/20260721000215",
-      "source_kind": "news",
-      "delta": 55,
+      "date": "2026-08-25",
+      "days_ago": 0,
+      "type": "founding listed",
+      "text": "Co-founded Accelerated Understanding Inc. (out of stealth 25 Aug 2026) — non-transformer neural-operator 'physics AI'; turned down leading Bezos's…",
+      "source_url": "https://acceleratedunderstanding.com/",
+      "source_kind": "own_site",
+      "delta": 77,
       "hot": true,
       "has_dossier": true
-    },
-    {
-      "slug": "ankit-garg",
-      "name": "Ankit Garg",
-      "tier": 3,
-      "date": "2026-08-05",
-      "days_ago": 0,
-      "type": "dossier updated",
-      "text": "A celebrated algebraic-complexity theorist — author of the first deterministic polynomial-time algorithm for non-commutative rational identity…",
-      "source_url": null,
-      "source_kind": "git",
-      "delta": null,
-      "hot": false
     }
   ],
   "triage": {

@@ -724,6 +724,18 @@
       "source_kind": "news",
       "confidence": 0.7,
       "note": "SINGLE primary source (ETNews, ~10 days old, no English/2nd-outlet confirmation yet); founding-vs-joining UNKNOWN (source says offers FROM startups → base case joining); confirm in first contact"
+    },
+    {
+      "date": "2026-08-25",
+      "observed": "2026-09-03",
+      "slug": "anima-anandkumar",
+      "type": "founding_listed",
+      "direction": 1,
+      "value": "Co-founded Accelerated Understanding Inc. (out of stealth 25 Aug 2026) — non-transformer neural-operator 'physics AI'; turned down leading Bezos's $12B Project Prometheus",
+      "source_url": "https://acceleratedunderstanding.com/",
+      "source_kind": "own_site",
+      "confidence": 0.95,
+      "note": "fresh founding, dead-on-thesis; allocation caveat — frontier-lab cost tier means a sub-$1M check is likely immaterial; the recursive diaspora is the realistic yield"
     }
   ]
 }
