@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ljubisa Bajic &mdash; Out of Distribution People</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="site-title">Out of Distribution People</div>
+    <div class="breadcrumb"><a href="../index.html">/ index</a> / ljubisa-bajic</div>
+  </nav>
+
+  <div class="profile-header">
+    <h1>Ljubisa Bajic</h1>
+    <p class="one-liner"><strong>Two-time AI-chip founder &mdash; co-founded <span style="color:var(--accent)">Tenstorrent</span> (2016, in his Toronto basement; Grayskull/Wormhole; later a $6.2B company) and then <span style="color:var(--accent)">Taalas</span> (Sep 2023), which hardwires an entire LLM into silicon: HC1 is a reticle-limit 815&nbsp;mm&sup2; N6 die with Llama&nbsp;3.1&nbsp;8B&rsquo;s weights cast into a mask-ROM &ldquo;recall fabric,&rdquo; independently clocked at ~14K tok/s per user, built by <span style="color:var(--accent)">24 people on $30M</span> of $219M raised.</strong> Sold to AMD (definitive agreement Aug 6, 2026, pending). <em>Status: about to become an AMD employee under Vamsi Boppana. The signal is his pattern &mdash; he left Tenstorrent Mar 2023 and founded Taalas six months later &mdash; so the real inflection is his next exit from AMD. Serbian-origin. NOT Indian. researched: 2026-10-27.</em></p>
+    <div class="tags">
+      <span class="tag" style="background:#eee;color:#555;">tier-2: tracking</span>
+      <span class="tag">ai-silicon</span><span class="tag">repeat-founder</span><span class="tag">taalas</span><span class="tag">ex-tenstorrent</span><span class="tag">ex-amd</span><span class="tag">acquired-by-amd</span><span class="tag">departure-watch</span><span class="tag">toronto</span><span class="tag">serbian</span>
+    </div>
+    <div class="links">
+      <a href="https://taalas.com/the-path-to-ubiquitous-ai/">his launch essay (Feb 2026)</a>
+      <a href="https://ir.amd.com/news-events/press-releases/detail/1296/amd-acquires-taalas-to-advance-compute-solutions-for-rapidly-growing-ai-inference-market">AMD acquisition release</a>
+      <a href="https://www.eetimes.com/taalas-specializes-to-extremes-for-extraordinary-token-speed/">EE Times HC1 interview</a>
+      <a href="https://www.nextplatform.com/2026/02/19/taalas-etches-ai-models-onto-transistors-to-rocket-boost-inference/">Next Platform</a>
+      <a href="https://web.archive.org/web/2023/https://www.anandtech.com/show/16709/an-interview-with-tenstorrent-ceo-ljubisa-bajic-and-cto-jim-keller">AnandTech 2021 (w/ Keller)</a>
+    </div>
+  </div>
+
+  <div class="spike-box" style="border-left-color:#888;">
+    <div class="label">&#9670; Why tracking, not pursued &mdash; the AMD deal reframes the whole team</div>
+    <p class="small"><strong>Taalas is being acquired by AMD.</strong> AMD announced a definitive agreement on <strong>Aug 6, 2026</strong> (AMD IR release; terms undisclosed; "subject to customary closing conditions and regulatory approvals"; close expected Q4 2026; no completion notice in AMD&rsquo;s IR feed as of Oct 27 &mdash; the definitive check is AMD&rsquo;s Q3 results on Nov 3). Per EE Times, <em>&ldquo;Bajic and the Taalas team will join AMD under Vamsi Boppana&rsquo;s AI organization&rdquo;</em> &mdash; a full acquisition, not an acquihire; Toronto team stays. <strong>No retention/earn-out terms are public.</strong></p>
+    <p class="small" style="margin-top:0.4rem;"><strong>So nobody here is a reach-out target today.</strong> They are a <strong>post-earn-out departure cohort</strong>: a closed 20+-year AMD-Markham &rarr; Tenstorrent &rarr; Taalas unit that has moved in lockstep at every transition, now re-entering AMD (which most of them left once already). The realistic inflection is a departure ~12&ndash;24 months after close (~2028). Indexed so the fund is pre-researched and first-call when it happens.</p>
+  </div>
+
+  <div class="spike-box">
+    <div class="label">&#9670; The Alpha &mdash; measured honestly</div>
+    <p><strong>He is the only founder in the AI-chip cohort who built and scaled one unicorn (Tenstorrent) before starting a second company &mdash; and the second one shipped a reticle-limit die with 24 people and $30M.</strong> Architect of Grayskull (620&nbsp;mm&sup2;, 120 Tensix cores) and Wormhole (670&nbsp;mm&sup2;, 100G scale-out) at Tenstorrent; before that ~10 years at ATI/AMD (GPU power efficiency &mdash; Keller: <em>&ldquo;Raja Koduri actually told him later on that a lot of the power/performance improvement they got came from the work he did&rdquo;</em>), a year as Senior Architect at NVIDIA, then back to AMD as Director of IC Design working with Keller on the Zen-era reset. HC1&rsquo;s genuine step is <strong>density</strong>: a 4-bit weight stored <em>and</em> multiplied on one transistor, mask-ROM at DRAM-level density, so a whole 8B model sits on one die with zero weight movement &mdash; no HBM, no advanced packaging, air-cooled at ~200&nbsp;W, re-spun for a new model by changing <strong>two metal masks</strong> (~2-month TSMC turnaround). An Aug 2026 arXiv paper on compute-in-ROM cites HC1 as the sole commercial precedent. 14 patent families filed.</p>
+    <p style="margin-top:0.6rem;" class="small muted"><strong>Calibrated honestly:</strong> the <em>speed</em> is real (EE Times 15K+, Karl Freund 14,357, a July black-box probe ~14.2K sustained) but the marketing outran it &mdash; &ldquo;73&times; vs H200&rdquo; is a <em>batch-1 latency</em> number against a <em>3-/6-bit quality-degraded</em> model (one H200 emits more aggregate tokens than HC1 gives one user; concurrent users/chip never disclosed, so $/token claims are unverifiable). <strong>Zero named customers Feb&rarr;Aug</strong>; the spring/summer roadmap (second model, 20B/chip) shows no public evidence of shipping; a pre-revenue sale six months post-launch with ~$170M still in the bank is not what working standalone economics look like. What AMD bought is the <em>team and the 2-month model-to-silicon flow</em> &mdash; model-specific silicon as a decode-stage companion to Instinct GPUs, a feature inside a GPU roadmap, not a platform business. Back the <em>operator</em> next time; the product was a clever niche.</p>
+  </div>
+
+  <section>
+    <h2>How it stacks up (the AI-chip founder cohort, Oct 2026)</h2>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Founder / co.</td><td>Bet</td><td>Status &middot; Llama-8B tok/s per user</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Bajic / Taalas</strong></td><td>Model-specific mask-ROM ASIC (weights in silicon)</td><td>$219M raised; <strong>sold to AMD</strong>, pre-revenue, price undisclosed &middot; ~14&ndash;17K</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Feldman / Cerebras</td><td>Wafer-scale, programmable</td><td>IPO May 2026 &middot; ~2,000</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Ross / Groq</td><td>LPU, SRAM weight-stationary</td><td>NVIDIA ~$20B license + team (Dec 2025) &middot; ~600</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Uberti &amp; Zhu / Etched</td><td>Transformer-<em>architecture</em> ASIC (weights still in HBM)</td><td>$700M at $21B (Aug 2026); Sohu shipping &middot; n/a</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Pope &amp; Gunter / MatX</td><td>General LLM chip</td><td>$500M Series B (Feb 2026); ships 2027 &middot; n/a</td></tr>
+    </table>
+    <p class="small muted" style="margin-top:0.4rem;">Pattern: the market has paid for <em>fast + flexible</em> (Cerebras, Etched, Groq) and punished <em>fast + narrow</em> without scale. Taalas was the smallest-capitalized of the five, the most extreme specialization, and the first to exit.</p>
+  </section>
+
+  <section>
+    <h2>Trajectory (dated)</h2>
+    <ul>
+      <li class="small">Early 2000s &mdash; video-encoder design, Teralogic / Oak Technology. Then <strong>~10 yrs ATI &rarr; AMD</strong> (ASIC architect, power management/DSP; APU designs; 2006 ATI power-reduction patent).</li>
+      <li class="small">~1 yr <strong>NVIDIA</strong>, Senior Architect &rarr; back to <strong>AMD</strong> as Director of IC Design &amp; Architecture (Zen-era, with Jim Keller). His own line: <em>&ldquo;everybody at the time kept saying that nobody understands why I&rsquo;m only a director and why am I not a fellow.&rdquo;</em></li>
+      <li class="small"><strong>2016 &mdash; founds Tenstorrent</strong> (with Ivan Hamer, Milos Trajkovic) in his Toronto basement; Keller is the angel: <em>&ldquo;If Jim had not invested, I don&rsquo;t think we would have really gone forward.&rdquo;</em> Grayskull, Wormhole; ~300 staff, 9 sites; Series C &gt;$200M at $1B (2021, Fidelity); Keller joins as President/CTO Jan 2021.</li>
+      <li class="small"><strong>Jan 2023</strong> role swap (Keller &rarr; CEO; Bajic &rarr; President/CTO) &rarr; <strong>Mar 2023 leaves</strong> (Apr 7 release: &ldquo;scales back&rdquo; to advisor/board; Raja Koduri joins board).</li>
+      <li class="small"><strong>Sep 2023 &mdash; founds Taalas</strong> (CTO Drago Ignjatovic, COO Lejla Bajic; $12M). Feb 2024 $38M; Mar 5 2024 out of stealth at $50M (Quiet Capital, Pierre Lamond).</li>
+      <li class="small"><strong>Feb 19, 2026 &mdash; HC1 unveiled</strong> + $169M (Quiet, Fidelity, Lamond; The Logic adds Khosla, Eclipse) = $219M total; 24 employees, $30M spent.</li>
+      <li class="small"><strong>Aug 6, 2026 &mdash; AMD definitive agreement</strong> (pending). Promised Q2 reasoning model and 20B/chip never publicly shipped before the sale.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Voice &mdash; and the outreach insight almost nobody will have</h2>
+    <ul>
+      <li class="small"><strong>Launch essay (Feb 2026):</strong> <em>&ldquo;AI inference is the most critical computational workload that humanity has ever faced, and the one that stands to gain the most from specialization&hellip; the production of optimal silicon for each individual model.&rdquo;</em> &middot; <em>&ldquo;a system that does not depend on difficult or exotic technologies, no HBM, advanced packaging, 3D stacking, liquid cooling, high speed IO.&rdquo;</em> &middot; <em>&ldquo;Taalas is a precision strike, in a world where deep-tech startups approach their chosen problems like medieval armies besieging a walled city.&rdquo;</em></li>
+      <li class="small"><strong>EE Times (Feb 2026):</strong> <em>&ldquo;Essentially, we looked for ways to make painful tradeoffs in flexibility for the sake of economics and speed.&rdquo;</em> &middot; <em>&ldquo;Because we&rsquo;re hardwiring it, the margin for error is basically zero.&rdquo;</em> &middot; on a 671B model needing ~30 chips: <em>&ldquo;30 incremental tape-outs, which is the annoying part, but the tape-outs are pretty cheap.&rdquo;</em> &middot; <em>&ldquo;The big thing at the root of this idea is the assumption that the customer is willing to commit to this.&rdquo;</em></li>
+      <li class="small"><strong>Next Platform:</strong> <em>&ldquo;we can put a weight and do the multiply associated with it all in one transistor&hellip; this is not nuclear physics &ndash; it is fully digital&hellip; basically our whole effort ended up being a throwback to the 1970s.&rdquo;</em> Candor in the essay: <em>&ldquo;Our debut model is clearly not on the leading edge.&rdquo;</em></li>
+      <li class="small"><strong>The insight:</strong> Taalas is a <strong>deliberate inversion of his own 2021 thesis</strong>. At Tenstorrent he argued flexibility was the edge &mdash; <em>&ldquo;The one thing that Grayskull can do, which&hellip; most of the alternatives cannot do, is conditional computation&hellip; Adding programmability isn&rsquo;t free. We think we strike a good balance.&rdquo;</em> He then walked the entire flexibility&rarr;total-specialization arc himself. Open any future conversation there.</li>
+    </ul>
+  </section>
+
+  <section id="net">
+    <h2>Network &mdash; the Taalas roster and the Tenstorrent diaspora (the real yield)</h2>
+    <p class="small">The technical core is almost entirely the <strong>AMD-Markham &rarr; Tenstorrent-Toronto lineage</strong> &mdash; <em>&ldquo;a small group of long-time collaborators, many of whom have worked together for over two decades.&rdquo;</em> ~21&ndash;25 people, all headed into AMD with retention cliffs. <strong>Departure watch, ranked by founder-caliber &times; flight risk:</strong></p>
+    <table style="width:100%; font-size:0.8rem; border-collapse:collapse;">
+      <tr style="border-bottom:1px solid var(--border); font-weight:600;"><td>Person</td><td>Role / lineage</td><td>Read</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><a href="tony-ming-zhou.html"><strong>Tony Ming Zhou</strong></a></td><td>Fellow; compiler/runtime/perf owner; ex-NVIDIA multi-chip GPU, ex-Apple first in-house GPU, ex-AMD; one-time founder</td><td><strong>#1.</strong> The &ldquo;model &rarr; RTL in a week&rdquo; brain; most likely next Toronto AI-silicon founder.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><a href="ivan-matosevic.html"><strong>Ivan Matosevic</strong></a> &middot; <a href="aleksandar-cejkov.html"><strong>Aleksandar Cejkov</strong></a></td><td>Fellows; Tenstorrent Sr Principals 2017&ndash;24; AMD 2008/11&ndash;17; coordinated 3-Fellow exit Apr 2024</td><td><strong>#2.</strong> 15+ yrs beside Bajic/Ignjatovic &mdash; would leave <em>with</em> Bajic.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><strong>Kei-Ming K.</strong></td><td>Principal (HW/SW co-design); Tenstorrent compilers/memory arch 2019&ndash;24; <strong>Modular</strong> 2024 &rarr; back</td><td><strong>#3.</strong> Most portable skillset; only one who left the orbit and returned.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><a href="paresh-kharya.html"><strong>Paresh Kharya</strong></a></td><td>VP Products; ex-NVIDIA Sr Dir PM (Pascal&rarr;Hopper, Grace), ex-Google Cloud AI-infra PM; runs an advisory LLC concurrently</td><td><strong>#4.</strong> Indian-origin. Likely first out, to a product/CEO seat.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td><a href="lejla-bajic.html"><strong>Lejla Bajic</strong></a> &middot; <a href="drago-ignjatovic.html"><strong>Drago Ignjatovic</strong></a></td><td>Co-founders (COO / CTO); co-inventors on all 5 core patent families</td><td>Move in lockstep with him at every transition.</td></tr>
+      <tr style="border-bottom:1px solid var(--border)"><td>Badri N. Balasubramanian &middot; Neda Moniri &middot; Keivan Dabiri</td><td>Principal ASIC (ex-Maxim/ADI; <strong>Indian-origin</strong>) &middot; Staff PD (ex-Apple SoC) &middot; SWE (boomerang from Meta MTIA)</td><td>Strong ICs, lower founding signal.</td></tr>
+    </table>
+    <p class="small" style="margin-top:0.5rem;"><strong>Tenstorrent diaspora already at inflections (outside Taalas &mdash; follow-up targets):</strong> <strong>Siddharth Mehta</strong> (Founder, stealth 2026; ex-Anthropic AI-accelerator clusters; ex-Tenstorrent Sr Dir; <em>Indian-origin</em> &mdash; T0-shaped), <strong>J. Gareth Williams</strong> (Founder, stealth May 2026, Ottawa; ex-Tenstorrent Principal; second-time founder), <strong>Alexander Kvamme</strong> (Quiet Capital &mdash; Taalas lead/board &mdash; co-founding a stealth inference startup). Nodes past inception: Srikanth Arekapudi (DensityAI founding team), Hoid (Belgrade compiler diaspora, a16z Speedrun), ai&amp; (Bennett/Hara), Matthew Mattina (&rarr;Microsoft). Tenstorrent itself raised $1.5B at $6.2B (Oct 19, 2026) &mdash; watch for a post-Series-E senior-fellow exodus.</p>
+  </section>
+
+  <section>
+    <h2>How / when to engage</h2>
+    <p class="small"><strong>Not now &mdash; monitor.</strong> Trigger: any departure signal from AMD (his, or the Zhou/Matosevic/Cejkov bench), realistically ~2028. First check: AMD Q3 results Nov 3 (deal status). When it comes, open with the inversion-of-his-own-thesis insight, name the cohort (Cerebras/Groq/Etched/MatX) and the honest HC1 read, and offer a first $500K&ndash;$1M. Channel then: warm intro via the Toronto silicon graph (Keller orbit, Quiet Capital&rsquo;s Kvamme).</p>
+  </section>
+
+  <section>
+    <h2>Notes &mdash; verification ledger</h2>
+    <ul>
+      <li class="small"><strong>VERIFIED:</strong> AMD definitive agreement Aug 6 2026 (AMD IR + SEC 424B5); team joins AMD AI Group (EE Times/BetaKit); HC1 specs + $219M + 24 people/$30M (taalas.com essay, EE Times, Next Platform, Reuters via MarketScreener); Tenstorrent founding 2016, Jan 2023 swap, Mar/Apr 2023 exit (Tenstorrent release, BetaKit); independent tok/s readings (Freund 14,357; EE Times 15K+; July probe ~14.2K).</li>
+      <li class="small"><strong>UNVERIFIED / absent:</strong> deal price (undisclosed everywhere); retention/earn-out terms; deal <em>completion</em> (two aggregators claim &ldquo;completed&rdquo; with no primary source); education (U of T per a third-party profile only); the ~$750M Feb-2026 valuation (aggregator); any second model shipped before the sale.</li>
+      <li class="small"><strong>Corrections / don&rsquo;t-overstate:</strong> &ldquo;73&times; H200&rdquo; = batch-1 latency vs a 3-bit degraded model; &ldquo;1000&times; more efficient&rdquo; (site) contradicts the essay&rsquo;s own ~10&times;/20&times;/10&times; framing; zero named customers; Next Platform&rsquo;s &ldquo;left after Keller joined fall 2022&rdquo; conflicts with Tenstorrent&rsquo;s own Apr 2023 release (use the primary). Serbian-origin (Belgrade office, Serbia talk) &mdash; <strong>NOT Indian</strong>, no <code>indian</code> tag. A single trade outlet reports a family relationship among the founders; kept off this public page.</li>
+    </ul>
+  </section>
+
+  <div class="spike-box" style="border-left-color:#888;">
+    <div class="label">&#9670; Tier Read</div>
+    <p class="small"><strong>Call: T2 &mdash; tracking (post-earn-out departure watch). Anchor of the Taalas index.</strong> Exceptional and on-thesis (two AI-chip companies, one scaled to $6.2B, one shipped a reticle-limit die on $30M), but <strong>no inflection today</strong> &mdash; he is about to become an AMD employee with retention cliffs, and the product was a clever niche, not a platform. Why not T3/pass: a documented leave-and-restart pattern (Tenstorrent &rarr; six months &rarr; Taalas) plus a bench that follows him makes his <em>next</em> exit the single most predictable future founding in Toronto AI silicon. Re-evaluate on any AMD departure signal.</p>
+  </div>
+
+  <footer>researched: 2026-10-27 &middot; intel&rarr;outreach format (team index, anchor) &middot; sources: AMD IR 1296 · SEC 424B5 · taalas.com essay · EE Times (Feb + Aug 2026) · Next Platform · Reuters/MarketScreener · AnandTech 2021 · Tenstorrent Apr 2023 release · BetaKit (2023, 2024, 2026) · The Logic · LinkedIn roster (Oct 27 2026) &middot; <a href="../index.html">back to index</a></footer>
+
+</body>
+</html>

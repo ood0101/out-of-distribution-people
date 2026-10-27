@@ -1,17 +1,17 @@
 {
-  "built_at": "2026-09-03T11:59:01+00:00",
-  "date": "2026-09-03",
+  "built_at": "2026-10-27T10:09:49+00:00",
+  "date": "2026-10-27",
   "stats": {
     "t0": 33,
     "t1": 61,
     "in_flight": 11,
-    "pool": 138
+    "pool": 141
   },
   "pipeline": {
     "funnel": [
       {
         "status": "not-contacted",
-        "n": 292
+        "n": 295
       },
       {
         "status": "contacted",
@@ -23,7 +23,7 @@
       },
       {
         "status": "indexed",
-        "n": 71
+        "n": 75
       }
     ],
     "in_flight": [
@@ -33,7 +33,7 @@
         "tier": 0,
         "channel": "twitter",
         "last_contacted": "2026-05-26",
-        "days_since": 100,
+        "days_since": 154,
         "dossier": "people/shivani-poddar.html"
       },
       {
@@ -42,7 +42,7 @@
         "tier": 0,
         "channel": "warm-intro",
         "last_contacted": "2026-05-27",
-        "days_since": 99,
+        "days_since": 153,
         "dossier": "people/blanca-villanueva.html"
       },
       {
@@ -51,7 +51,7 @@
         "tier": 0,
         "channel": "linkedin",
         "last_contacted": "2026-05-27",
-        "days_since": 99,
+        "days_since": 153,
         "dossier": "people/dan-kondratyuk.html"
       },
       {
@@ -60,7 +60,7 @@
         "tier": 0,
         "channel": "linkedin",
         "last_contacted": "2026-05-27",
-        "days_since": 99,
+        "days_since": 153,
         "dossier": "people/joshua-dillon.html"
       },
       {
@@ -69,7 +69,7 @@
         "tier": 0,
         "channel": "email",
         "last_contacted": "2026-05-27",
-        "days_since": 99,
+        "days_since": 153,
         "dossier": "people/michael-wornow.html"
       },
       {
@@ -78,7 +78,7 @@
         "tier": 0,
         "channel": "linkedin",
         "last_contacted": "2026-05-27",
-        "days_since": 99,
+        "days_since": 153,
         "dossier": "people/weiying-wang.html"
       },
       {
@@ -87,7 +87,7 @@
         "tier": 0,
         "channel": "linkedin",
         "last_contacted": "2026-06-19",
-        "days_since": 76,
+        "days_since": 130,
         "dossier": "people/amanpreet-singh.html"
       },
       {
@@ -96,7 +96,7 @@
         "tier": 0,
         "channel": "twitter",
         "last_contacted": "2026-06-19",
-        "days_since": 76,
+        "days_since": 130,
         "dossier": "people/raunaq-bhirangi.html"
       },
       {
@@ -105,7 +105,7 @@
         "tier": 0,
         "channel": "twitter",
         "last_contacted": "2026-06-19",
-        "days_since": 76,
+        "days_since": 130,
         "dossier": "people/siddhant-haldar.html"
       },
       {
@@ -114,7 +114,7 @@
         "tier": 1,
         "channel": "twitter",
         "last_contacted": "2026-05-27",
-        "days_since": 99,
+        "days_since": 153,
         "dossier": "people/ajay-jain.html"
       },
       {
@@ -123,11 +123,11 @@
         "tier": 1,
         "channel": "twitter",
         "last_contacted": "2026-05-27",
-        "days_since": 99,
+        "days_since": 153,
         "dossier": "people/mayank-mishra.html"
       }
     ],
-    "total": 378
+    "total": 385
   },
   "replies": [],
   "followups": [
@@ -137,7 +137,7 @@
       "tier": 0,
       "channel": "twitter",
       "last_contacted": "2026-05-26",
-      "overdue_days": 86,
+      "overdue_days": 140,
       "touches": 0,
       "dossier": "people/shivani-poddar.html",
       "link": {
@@ -151,7 +151,7 @@
       "tier": 0,
       "channel": "warm-intro",
       "last_contacted": "2026-05-27",
-      "overdue_days": 85,
+      "overdue_days": 139,
       "touches": 1,
       "dossier": "people/blanca-villanueva.html",
       "link": {
@@ -165,7 +165,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-05-27",
-      "overdue_days": 85,
+      "overdue_days": 139,
       "touches": 0,
       "dossier": "people/dan-kondratyuk.html",
       "link": {
@@ -179,7 +179,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-05-27",
-      "overdue_days": 85,
+      "overdue_days": 139,
       "touches": 0,
       "dossier": "people/joshua-dillon.html",
       "link": {
@@ -193,7 +193,7 @@
       "tier": 0,
       "channel": "email",
       "last_contacted": "2026-05-27",
-      "overdue_days": 85,
+      "overdue_days": 139,
       "touches": 1,
       "dossier": "people/michael-wornow.html",
       "link": {
@@ -207,7 +207,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-05-27",
-      "overdue_days": 85,
+      "overdue_days": 139,
       "touches": 0,
       "dossier": "people/weiying-wang.html",
       "link": {
@@ -221,7 +221,7 @@
       "tier": 0,
       "channel": "linkedin",
       "last_contacted": "2026-06-19",
-      "overdue_days": 62,
+      "overdue_days": 116,
       "touches": 1,
       "dossier": "people/amanpreet-singh.html",
       "link": {
@@ -235,7 +235,7 @@
       "tier": 0,
       "channel": "twitter",
       "last_contacted": "2026-06-19",
-      "overdue_days": 62,
+      "overdue_days": 116,
       "touches": 1,
       "dossier": "people/raunaq-bhirangi.html",
       "link": {
@@ -249,7 +249,7 @@
       "tier": 0,
       "channel": "twitter",
       "last_contacted": "2026-06-19",
-      "overdue_days": 62,
+      "overdue_days": 116,
       "touches": 1,
       "dossier": "people/siddhant-haldar.html",
       "link": {
@@ -263,7 +263,7 @@
       "tier": 1,
       "channel": "twitter",
       "last_contacted": "2026-05-27",
-      "overdue_days": 85,
+      "overdue_days": 139,
       "touches": 1,
       "dossier": "people/ajay-jain.html",
       "link": {
@@ -277,7 +277,7 @@
       "tier": 1,
       "channel": "twitter",
       "last_contacted": "2026-05-27",
-      "overdue_days": 85,
+      "overdue_days": 139,
       "touches": 1,
       "dossier": "people/mayank-mishra.html",
       "link": {
@@ -288,38 +288,10 @@
   ],
   "today5": [
     {
-      "slug": "anima-anandkumar",
-      "name": "Anima Anandkumar",
-      "tier": 0,
-      "score": 686,
-      "chips": [
-        "stealth",
-        "departed",
-        "founder",
-        "indian"
-      ],
-      "window": {
-        "text": "closes 2026-10-15",
-        "kind": "open"
-      },
-      "why_now": "T0 — reach out NOW (Accelerated Understanding came out of stealth 25 Aug 2026; 9-day-old founding, dead-on-thesis frontier physics-AI + Indian-origin), but HONESTLY for the relationship + a long-shot allocation, NOT a modelable inception check. The central…",
-      "do_this": "Reach out NOW — X @AnimaAnandkumar or a warm intro via the AI4Science / ex-NVIDIA graph. Lead with the ONE diligence question that proves peer-level understanding: a held-out cross-physics…",
-      "channel": "x",
-      "draft": {
-        "subject": "cross-physics uplift — the benchmark, not the 5T headline",
-        "body": "Hi Anima — I invest at inception and I've followed operator learning since FNO, so Accelerated Understanding is the launch I've been waiting for someone to have the standing to do: putting physics, not language, at the center. The parts I think are genuinely under-appreciated are the ones the press …"
-      },
-      "link": null,
-      "twitter": "animaanandkumar",
-      "linkedin": null,
-      "email": null,
-      "dossier": "people/anima-anandkumar.html"
-    },
-    {
       "slug": "gaurav-bharaj",
       "name": "Gaurav Bharaj",
       "tier": 0,
-      "score": 655,
+      "score": 614,
       "chips": [
         "stealth",
         "departed",
@@ -350,7 +322,7 @@
       "slug": "aayush-bansal",
       "name": "Aayush Bansal",
       "tier": 0,
-      "score": 625,
+      "score": 613,
       "chips": [
         "stealth",
         "departed",
@@ -378,36 +350,38 @@
       "dossier": "people/aayush-bansal.html"
     },
     {
-      "slug": "dong-hyuk-woo",
-      "name": "Dong Hyuk Woo",
+      "slug": "anima-anandkumar",
+      "name": "Anima Anandkumar",
       "tier": 0,
-      "score": 624,
+      "score": 610,
       "chips": [
         "stealth",
-        "departed"
+        "departed",
+        "founder",
+        "indian"
       ],
       "window": {
-        "text": "closes 2026-09-30",
-        "kind": "open"
+        "text": "window closed 12d ago",
+        "kind": "closed"
       },
-      "why_now": "T0 — reach out NOW (free agent in transition as of ~Jul 2026), but to LEARN + build, NOT a conviction buy. Core ex-Google Edge/on-device TPU architect (1-of-4 on the compute-tile patent w/ Temam/Narayanaswami/Khaitan; Coral, Pixel Neural Core, Google Tensor,…",
-      "do_this": "Reach out NOW via LinkedIn (linkedin.com/in/donghyukwoo/) or a warm intro (Georgia Tech / ex-Google-silicon graph) — NO public email on file. Peer-level, no hard pitch: lead with the…",
-      "channel": "linkedin",
-      "draft": null,
-      "link": {
-        "label": "in/donghyukwoo",
-        "url": "https://linkedin.com/in/donghyukwoo/"
+      "why_now": "T0 — reach out NOW (Accelerated Understanding came out of stealth 25 Aug 2026; 9-day-old founding, dead-on-thesis frontier physics-AI + Indian-origin), but HONESTLY for the relationship + a long-shot allocation, NOT a modelable inception check. The central…",
+      "do_this": "Reach out NOW — X @AnimaAnandkumar or a warm intro via the AI4Science / ex-NVIDIA graph. Lead with the ONE diligence question that proves peer-level understanding: a held-out cross-physics…",
+      "channel": "x",
+      "draft": {
+        "subject": "cross-physics uplift — the benchmark, not the 5T headline",
+        "body": "Hi Anima — I invest at inception and I've followed operator learning since FNO, so Accelerated Understanding is the launch I've been waiting for someone to have the standing to do: putting physics, not language, at the center. The parts I think are genuinely under-appreciated are the ones the press …"
       },
-      "twitter": null,
-      "linkedin": "donghyukwoo",
+      "link": null,
+      "twitter": "animaanandkumar",
+      "linkedin": null,
       "email": null,
-      "dossier": "people/dong-hyuk-woo.html"
+      "dossier": "people/anima-anandkumar.html"
     },
     {
       "slug": "scott-reed",
       "name": "Scott Reed",
       "tier": 0,
-      "score": 612,
+      "score": 602,
       "chips": [
         "stealth",
         "departed",
@@ -432,24 +406,40 @@
       "linkedin": "reedscott",
       "email": "scott.ellison.reed@gmail.com",
       "dossier": "people/scott-reed.html"
-    }
-  ],
-  "signals": [
+    },
     {
-      "slug": "anima-anandkumar",
-      "name": "Anima Anandkumar",
+      "slug": "pannag-sanketi",
+      "name": "Pannag R. Sanketi",
       "tier": 0,
-      "date": "2026-08-25",
-      "days_ago": 0,
-      "type": "founding listed",
-      "text": "Co-founded Accelerated Understanding Inc. (out of stealth 25 Aug 2026) — non-transformer neural-operator 'physics AI'; turned down leading Bezos's…",
-      "source_url": "https://acceleratedunderstanding.com/",
-      "source_kind": "own_site",
-      "delta": 77,
-      "hot": true,
-      "has_dossier": true
+      "score": 597,
+      "chips": [
+        "stealth",
+        "departed",
+        "founder",
+        "indian"
+      ],
+      "window": {
+        "text": "pre-name · open",
+        "kind": "open"
+      },
+      "why_now": "Senior DeepMind Robotics departure (Senior Staff SWE / TLM) to stealth robotics+AI. FOUNDED Open X-Embodiment / RT-X ('ImageNet for robotics', 21+ labs), RT-2 co-author, led human-level Table Tennis robot. 14,858 cites, h-30. LinkedIn flipped to 'Stealth…",
+      "do_this": "LinkedIn DM pannag-sanketi (or X DM @pannag_) — subj 'The ImageNet-for-robotics bet, now as a company'; lead with the data-substrate edge (21 labs -> RT-X) vs Physical Intelligence/Skild/Generalist,…",
+      "channel": "linkedin",
+      "draft": {
+        "subject": "the part none of the robotics companies started from",
+        "body": "Hi Pannag — SAS-Prompt read to me like the honest next step after RT-X: once you've pooled cross-embodiment data, the self-improvement loop on top of it becomes the real bottleneck. I invest at inception and have spent serious time on the post-DeepMind wave (Physical Intelligence, Skild, Generalist, Figure's Helix) — and the part none of them started from is the thing you actually pulled off: getting 21 competing labs to pool their data is rarer than any single model. I'd love to hear how you're weighing the data flywheel against the dynamic-control gap your table-tennis work exposed — 45% vs. humans is the most honest agility number anyone's published. I can write $500K–$1M, but mostly I'd just like to know what you're building. — Vansh"
+      },
+      "link": {
+        "label": "in/pannag-sanketi",
+        "url": "https://linkedin.com/in/pannag-sanketi/"
+      },
+      "twitter": "pannag_",
+      "linkedin": "pannag-sanketi",
+      "email": null,
+      "dossier": "people/pannag-sanketi.html"
     }
   ],
+  "signals": [],
   "triage": {
     "pending": 122,
     "highlights": [
